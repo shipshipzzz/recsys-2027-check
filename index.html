@@ -97,6 +97,8 @@
       transition: transform .15s ease, border-color .15s ease, color .15s ease;
     }
     .ghost:hover { transform: translateY(-1px); border-color: var(--accent); color: var(--accent); }
+    a.ghost { text-decoration: none; display: inline-block; }
+    .top-actions { display: flex; gap: 8px; align-items: center; }
     header.hero { padding: 26px 0 22px; }
     .kicker {
       display: inline-flex; align-items: center; gap: 8px;
@@ -263,6 +265,86 @@
     .method ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 14px; }
     .method li { margin-bottom: 7px; }
     .method li strong { color: var(--ink-soft); }
+    .log { display: grid; gap: 14px; }
+    #changelog { scroll-margin-top: 18px; }
+    .log-day {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card-soft);
+      overflow: hidden;
+    }
+    .log-day.is-latest {
+      background: var(--card);
+      border-color: color-mix(in srgb, var(--accent) 38%, var(--line));
+    }
+    .log-head {
+      display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+      padding: 12px 16px 10px;
+      border-bottom: 1px solid var(--line-soft);
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+    .log-day > summary.log-head::-webkit-details-marker,
+    .log-day > summary.log-head::marker { display: none; }
+    .log-day:not([open]) .log-head { border-bottom: 0; }
+    .log-head::after {
+      content: "展开";
+      margin-left: auto;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--muted);
+      letter-spacing: .06em;
+    }
+    .log-day[open] .log-head::after { content: "收起"; }
+    .log-date {
+      font-family: var(--mono); font-size: 13px; font-weight: 500;
+      color: var(--accent);
+    }
+    .log-head strong { font-size: 15px; font-weight: 600; }
+    .log-n { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+    .log-sum {
+      width: 100%; margin: 2px 0 0;
+      font-size: 12.5px; color: var(--muted);
+    }
+    .log-items {
+      list-style: none; margin: 0; padding: 6px 8px 10px;
+    }
+    .log-items li {
+      display: grid;
+      grid-template-columns: 58px minmax(72px, 108px) 1fr;
+      gap: 8px;
+      align-items: start;
+      padding: 9px 8px;
+      border-bottom: 1px dashed var(--line-soft);
+      font-size: 13.3px;
+      color: var(--ink-soft);
+    }
+    .log-items li:last-child { border-bottom: 0; }
+    .log-co { font-weight: 600; color: var(--ink); font-size: 13px; }
+    .tag {
+      display: inline-block;
+      font-size: 11px; font-weight: 600;
+      border-radius: 999px;
+      padding: 2px 8px;
+      text-align: center;
+      line-height: 1.6;
+      white-space: nowrap;
+    }
+    .tag-add { background: var(--open-bg); color: var(--open); }
+    .tag-change { background: var(--see-bg); color: var(--see); }
+    .tag-warn { background: var(--intern-bg); color: var(--intern); }
+    .tag-hold { background: var(--wait-bg); color: var(--wait); }
+    .tag-same {
+      background: transparent; color: var(--muted);
+      border: 1px solid var(--line);
+    }
+    .s-rev { background: var(--hot-bg); color: var(--hot); }
+    @media (max-width: 820px) {
+      .log-items li { grid-template-columns: 52px 1fr; }
+      .log-items li .log-co { grid-column: 2; }
+      .log-items li span:last-child { grid-column: 1 / -1; }
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
@@ -428,17 +510,21 @@
   <div class="wrap">
     <div class="topbar">
       <span class="brand">RecSys · 2027 秋招核查</span>
-      <button class="ghost" id="theme-btn" type="button">深色模式</button>
+      <div class="top-actions">
+        <a class="ghost" href="#changelog">更新日志</a>
+        <button class="ghost" id="theme-btn" type="button">深色模式</button>
+      </div>
     </div>
     <header class="hero">
-      <div class="kicker">Autumn Campus · RecSys · 2026-08-17 · 第二轮深挖</div>
+      <div class="kicker">Autumn Campus · RecSys · 2026-08-20 · 第三轮对照</div>
       <h1>32 家秋招核查<em>哪些是官网亲见，哪些是转载</em></h1>
-      <p class="lede">上一版混了官网、新闻和索引页。这一轮用 Playwriter 在你本机 Chrome 里逐家打开校招站、搜「推荐」，把岗位名、毕业时间窗、投递规则抠出来。没打开成功的，会标成转载，不再假装亲见。</p>
+      <p class="lede">上一版混了官网、新闻和索引页。8/17 用 Playwriter 在本机 Chrome 里逐家打开校招站、搜「推荐」。8/20 这一轮对照快照：只改新开窗口、改期、本周必做，并记下更新日志。没打开成功的，仍标成转载，不再假装亲见。</p>
       <div class="meta">
-        <span>核查日：2026-08-17</span>
+        <span>本轮核查日：2026-08-20</span>
+        <span>快照基线：2026-08-17</span>
         <span>对象：2027 届</span>
         <span>主证据：Playwriter 官网亲见</span>
-        <span>辅证据：高校就业网 / 新闻 / 牛客</span>
+        <span>辅证据：官网 FAQ / 笔试日历 / 高校就业网 / 新闻 / 牛客</span>
       </div>
     </header>
 
@@ -450,13 +536,20 @@
       <div class="stat"><b id="n-wait">0</b><span>27 届秋招未见正式公告</span></div>
     </section>
 
+    <section class="panel" id="changelog">
+      <h2>更新日志</h2>
+      <p class="sub">按核查日看相对上一版改了什么。默认收起，点日期展开。标签：新增、变化、口径、仍未开、未改。</p>
+      <div class="log" id="log"></div>
+    </section>
+
     <section class="panel method">
       <h2>这些信息是 Playwriter 实现的吗？</h2>
       <p><strong>不完全是。</strong>第一版里不少放出时间和要求来自新闻、高校就业网、牛客转载。Boss 直聘第一次能打开，随后反爬空白，后面没有当成现场证据。这一轮才把收藏名单里的官网尽量用 Playwriter 点开。</p>
       <ul>
         <li><strong>Playwriter 亲见（本轮或上轮打开并抽出文字）</strong>：腾讯、字节、阿里、美团、快手、小米、蚂蚁、滴滴、拼多多、B 站、OPPO、得物、小红书、网易、京东首页、华为首页、vivo 校招首页、Shopee Moka、TME、微博 Moka、Soul 飞书、哈啰、360、好未来、携程校招页。</li>
         <li><strong>打开失败 / 未进职位池</strong>：百度 talent.baidu.com 两次跳 about:blank（职位原文由你从官网贴回）；华为「查看职位」要点登录；vivo / 京东搜「推荐」界面没滤干净；SHEIN 落到空 lander；Boss 不能当现场源。</li>
-        <li><strong>仍是新闻辅证</strong>：多数截止日、讯飞飞凡、作业帮、爱奇艺、唯品会、MetaApp，以及中厂补网里除去哪儿/陌陌以外的公司。</li>
+        <li><strong>8/20 第三轮</strong>：对照 8/17 快照补新开窗口和改期，优先官网 FAQ / JD / 笔试日历。没有再全量用 Playwriter 点开每一家。</li>
+        <li><strong>仍是新闻辅证</strong>：多数截止日、讯飞飞凡、作业帮、爱奇艺、MetaApp，以及中厂补网里除去哪儿/陌陌以外的公司。唯品会 8/20 按公开校招稿改成已开，未进职位池亲见。</li>
         <li><strong>截止日怎么标</strong>：官网须知原文优先；牛客/高校就业网/公众号转载会写明。超级简历自动推算的日期会标「疑平台推算」。</li>
       </ul>
     </section>
@@ -466,8 +559,8 @@
       <div class="hits">
         <div class="hit"><b>腾讯 · 搜「推荐」106 岗</b><span>正式批标题就是「算法-推荐算法方向」（应届 / 应届实习，深/北/上/广，CDG·CSIG·IEG·PCG·WXG）。青云课题含视频号 Scaling Up、微信小店生成式推荐、PCG TRS、广告推荐大模型。</span></div>
         <div class="hit"><b>字节 · 关键词「推荐」481 条（勾了 2027 校招项目）</b><span>正式岗亲见：番茄 / 头条 / 抖音 / 抖音电商&amp;直播 / TikTok Shop / TikTok 算法「推荐大模型」「短剧推荐」。ByteIntern 写明面向 2026.09–2027.08 毕业。</span></div>
-        <div class="hit"><b>快手 · 搜「推荐」15 岗</b><span>常规：推荐大模型 / 推荐模型 / 推荐算法 / 生成式推荐 / 推荐系统（8/14）。快 Star：OneRec、冷启、生产、社交生成式、视频/消息/直播推荐、Agent-短视频推荐（8/12）。</span></div>
-        <div class="hit"><b>美团 · 搜「推荐」36 岗</b><span>应届亲见【北斗】推荐大模型算法工程师（北京，更新 2026-06-03）。另有生成式推荐、拼好饭、酒旅、外卖商品搜推等实习/转正实习。</span></div>
+        <div class="hit"><b>快手 · 搜「推荐」16 岗（8/17 为 15）</b><span>8/18 新开三岗。常规：推荐大模型 / 推荐模型 / 推荐算法 / 生成式推荐 / 推荐系统。快 Star：OneRec、冷启、生产、社交生成式、视频/消息/直播推荐、Agent-短视频推荐。</span></div>
+        <div class="hit"><b>美团 · 搜「推荐」39 岗（8/17 为 36）</b><span>8/17 晚间 2027 正式启动。应届【北斗】推荐大模型仍在。新增大模型搜索推荐算法工程师（北/上，8/17 更新）。另有生成式推荐、拼好饭、酒旅、外卖商品搜推等实习/转正实习。</span></div>
         <div class="hit"><b>阿里 · 搜「推荐」7 岗</b><span>淘天/国际/高德/虎鲸/盒马搜索推荐，生成式推荐，阿里星推荐大模型。</span></div>
         <div class="hit"><b>蚂蚁 · 4 岗</b><span>搜索推荐广告算法（北/上/杭，毕业 2026-11-01～2027-10-31）；搜索推荐广告算法工程（杭州）；两条研究型实习：LLM 推荐、生成式推荐统一建模。</span></div>
         <div class="hit"><b>滴滴 · 2 岗 · 均 2026-08-13 发</b><span>起终点推荐（CTO，北京，本科+）；国际化外卖-推荐（北/上，硕士+，生成式召回/排序）。秋招可投 3 次。</span></div>
@@ -488,10 +581,11 @@
     <section class="panel">
       <h2>最近要关的窗</h2>
       <div class="hits">
-        <div class="hit"><b>8 月 23 日 · 拼多多提前批</b><span>新闻/超级简历：提前批 7/6–8/23。正式批另算。这周不投就没了。</span></div>
-        <div class="hit"><b>9 月 7 日 · 作业帮秋招；得物也有公众号稿写到这天</b><span>作业帮牛企日程 8/10–9/7。得物：公众号转载 8/10–9/7，牛企另标 10/10，先按早的投。</span></div>
-        <div class="hit"><b>9 月 15 日 12:00 · vivo 网申/初筛</b><span>同日 15:00 研发岗统一笔试。宣讲 9/1–15。毕业窗通稿：2026-08 至 2027-07。</span></div>
-        <div class="hit"><b>9 月下旬 · 去哪儿 / 滴滴未来精英 / 挚文</b><span>去哪儿岗位页到 9/30（有稿写 9/20）。滴滴未来精英到 9/23。挚文/陌陌第三方标 10/09，笔试 8/25。</span></div>
+        <div class="hit"><b>8 月 23 日 · 拼多多提前批</b><span>官网 FAQ 仍是 7/6–8/23。职位页有「常规批次」页签，但没有正式批启动公告。不要等正式批。这周不投就没了。</span></div>
+        <div class="hit"><b>8 月 25 日 · 挚文笔试；8 月 27 日 · 飞猪阿里星（第三方）</b><span>挚文推荐算法岗已开，笔试前三天查邮箱。飞猪方向对口再赶。</span></div>
+        <div class="hit"><b>9 月 7 日 · 作业帮秋招；得物倒计时仍按这天</b><span>作业帮公开日程 8/10–9/7 未改。得物：公众号曾写 9/7，聚合另有 10/10；官网技术笔试日历排到 11/01。9/7 当首轮，不当最后一天。</span></div>
+        <div class="hit"><b>9 月 15 日 12:00 · vivo 网申/初筛</b><span>同日 15:00 研发岗统一笔试。别拖到 9/15 上午。宣讲 9/1–15。毕业窗通稿：2026-08 至 2027-07。</span></div>
+        <div class="hit"><b>9 月下旬 · 去哪儿 / 滴滴未来精英 / 挚文网申 / 同花顺</b><span>去哪儿保守 9/20（岗位页有写 9/30）。滴滴未来精英到 9/23。挚文第三方 10/09。同花顺博士推荐专项第三方约 9/19。</span></div>
         <div class="hit"><b>10–11 月 · B 站 / 腾讯 / 京东 / Shopee / 米哈游</b><span>B 站牛客 10/03。腾讯牛客日程 10/11（非官网）。京东新星+新锐 11/30。Shopee 高校页 11/30、限 1 志愿。米哈游 10/31 24:00，全程只能投 1 岗。</span></div>
       </div>
     </section>
@@ -505,6 +599,7 @@
         <button class="chip" data-filter="see">官网亲见</button>
         <button class="chip" data-filter="intern">实习/专项</button>
         <button class="chip" data-filter="wait">还没正式开</button>
+        <button class="chip" data-filter="rev">本轮更新</button>
         <button class="chip" data-filter="extra">中厂补网</button>
         <input type="search" id="q" placeholder="搜公司 / 城市 / 岗位 / 职位 ID  （按 / 聚焦）" />
         <select id="sort" aria-label="排序">
@@ -527,7 +622,7 @@
 
     <footer>
       <p><strong>怎么读证据。</strong>「官网亲见」= Playwriter 打开了官方校招页并抽出原文。「部分亲见」= 首页或须知打开了，职位搜索没做成或要点登录。「新闻转载」= 没用浏览器核到原文。岗位会随时下架，投递前再点进官网。</p>
-      <p>Boss 不当现场源。百度职位原文来自你官网粘贴。这周先投：PDD 提前批（8/23）、得物/作业帮（按 9/7）、vivo（9/15）、去哪儿推荐排序、挚文推荐算法，以及腾讯/字节/快手/美团/阿里/蚂蚁/百度搜广推。</p>
+      <p>Boss 不当现场源。百度职位原文来自你官网粘贴。这周先投：PDD 提前批（8/23）、挚文笔试（8/25）、得物/作业帮（按 9/7，得物 9/7 是首轮）、vivo（9/15 当天还有笔试），以及腾讯/字节/快手/美团/阿里/蚂蚁/百度搜广推。美团新增大模型搜索推荐、快手 8/18 新岗、唯品会搜索算法、荣耀应届池，方向对口再补。</p>
     </footer>
   </div>
 
@@ -545,15 +640,15 @@
         note: "部分亲见。推荐履历可投 AI 应用/算法，但别按信息流厂准备。"
       },
       {
-        name: "拼多多", en: "PDD", status: "open", rec: "yes", src: "see",
-        opened: "官网亲见两条 2027 技术专场：大模型算法工程师 2026-05-08（标紧缺）；算法工程师 2026-07-05。搜岗位名「推荐」= 0。",
-        closes: "提前批新闻/超级简历：2026-07-06 至 2026-08-23。正式批未见截止。提前批结果不影响正式批。",
+        name: "拼多多", en: "PDD", status: "open", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "官网亲见两条 2027 技术专场：大模型算法工程师 2026-05-08（标紧缺）；算法工程师 2026-07-05。搜岗位名「推荐」= 0。8/20 职位页可见「常规批次」页签。",
+        closes: "提前批官网 FAQ 仍是 2026-07-06 至 2026-08-23。8/20 未见正式批启动公告与新截止日期。提前批结果不影响正式批。不要为了等正式批空过 8/23。",
         window: "算法工程师：2027 届，硕士及以上。大模型岗：2026.9–2027.8 获硕/博学位。",
         city: "上海",
         jobs: "算法工程师 JD 原文：用机器学习/深度学习/图计算优化 App 内外搜索、推荐、广告等。大模型岗 JD 写「AI 交互式搜索、生成式推荐、智能导购」。咨询 pddcampus@pddglobalhr.com。",
         req: "算法岗：硕士+，Linux，TF/PyTorch/Hive 加分，搜推/广告经验优先。大模型岗：扎实 ML、熟悉 GPT/DeepSeek/多模态，顶会或竞赛加分。",
         links: [["PDD 校园招聘", "https://careers.pddglobalhr.com/campus/grad"], ["算法工程师 JD", "https://careers.pddglobalhr.com/campus/grad/detail?positionId=793e8792-b686-4950-b348-281f8274c5de"]],
-        note: "官网亲见。标题不叫推荐，JD 叫。尽快投技术专场。"
+        note: "官网亲见。标题不叫推荐，JD 叫。8/23 前先投技术专场，不要等正式批。"
       },
       {
         name: "滴滴", en: "DiDi", status: "open", rec: "yes", src: "see",
@@ -589,15 +684,15 @@
         note: "官网亲见。主站 Feed 和电商推荐不是同一条故事。"
       },
       {
-        name: "美团", en: "Meituan", status: "open", rec: "yes", src: "see",
-        opened: "官网搜「推荐」= 全部校招职位 36。应届亲见【北斗】推荐大模型算法工程师，更新 2026-06-03。",
-        closes: "北斗专项牛客曾标 06-03 至 07-03（窗口或已过，岗还在）。正式批未见统一截止，按岗招满即下。",
-        window: "北斗应届按官网应届通道；大量转正实习 / 日常实习并行。",
-        city: "应届北斗：北京。部分实习含上海。",
-        jobs: "应届：【北斗】推荐大模型算法工程师（日均数十亿请求，MTGR，生成式 Agentic 推荐）。实习/转正实习：生成式推荐系统、推荐大模型、全球 Agentic 推荐、拼好饭推荐、酒旅推荐、外卖商品搜推、推荐系统研发。",
-        req: "北斗偏硕士、深度学习 / LLM4Rec。具体学历以 JD 为准。",
+        name: "美团", en: "Meituan", status: "open", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "8/17 晚间正式启动 2027。官网搜「推荐」8/20 为 39（8/17 快照 36）。应届【北斗】推荐大模型算法工程师仍在；新增大模型搜索推荐算法工程师（北/上，更新 2026-08-17）。",
+        closes: "北斗专项牛客曾标 06-03 至 07-03（窗口或已过，岗还在）。正式批未见官方统一截止，按岗招满即下。南京本地宝 10/31 不当官网死线。",
+        window: "FAQ：毕业 2026-11 至 2027-10。北斗应届走官网应届通道；大量转正实习 / 日常实习并行。",
+        city: "应届北斗：北京。大模型搜索推荐：北京 / 上海。部分实习含上海。",
+        jobs: "应届：【北斗】推荐大模型算法工程师（日均数十亿请求，MTGR，生成式 Agentic 推荐）；大模型搜索推荐算法工程师（8/17 新）。实习/转正实习：生成式推荐系统、推荐大模型、全球 Agentic 推荐、拼好饭推荐、酒旅推荐、外卖商品搜推、推荐系统研发。",
+        req: "FAQ：3 次志愿。北斗偏硕士、深度学习 / LLM4Rec。具体学历以 JD 为准。",
         links: [["美团校园搜推荐", "https://zhaopin.meituan.com/web/campus?keyword=%E6%8E%A8%E8%8D%90"]],
-        note: "官网亲见。名单里推荐岗写得最清楚的一家之一。"
+        note: "官网亲见。8/20：正式启动 + 新搜推岗。名单里推荐岗写得最清楚的一家之一。"
       },
       {
         name: "好未来", en: "TAL", status: "intern", rec: "weak", src: "see",
@@ -622,15 +717,15 @@
         note: "官网亲见后，从「实习可投」改成「先别空等」。历史搜推实习不能当现在入口。"
       },
       {
-        name: "唯品会", en: "Vipshop", status: "wait", rec: "likely", src: "news",
-        opened: "本轮未用 Playwriter 打开独立校招职位池。公开检索未见 2027 届秋招启动稿。",
-        closes: "未见 27 届秋招。26 春招/27 转正实习曾到 2026-05-31。",
-        window: "待官网更新。",
-        city: "广州为主。",
-        jobs: "电商有搜推团队，往年会放算法。今年还没现场证据。",
-        req: "待 JD。",
-        links: [["关注唯品会招聘公众号", "https://www.vip.com"]],
-        note: "新闻转载。先盯公众号，不必空等。"
+        name: "唯品会", en: "Vipshop", status: "open", rec: "likely", src: "news", rev: "2026-08-20",
+        opened: "公开稿：2027 秋招 2026-08-17 启动。搜索算法岗广州/上海。本轮未进 Moka 职位池亲见岗位名。",
+        closes: "未见统一官方截日。刚开，尽早投。",
+        window: "2027 届。",
+        city: "搜索算法：广州 / 上海。",
+        jobs: "搜索算法。未见「推荐算法」四字标题。电商搜推团队在，先按搜索岗投。",
+        req: "待 JD 原文。投递 campus.vip.com（Moka / vipshophr）。",
+        links: [["唯品会校园招聘", "https://campus.vip.com"]],
+        note: "8/20 从「还没开」改成已开。对口是搜索，不是推荐标题。"
       },
       {
         name: "蚂蚁集团", en: "Ant Group", status: "open", rec: "yes", src: "see",
@@ -644,15 +739,15 @@
         note: "官网亲见。搜推广告是支付宝侧最正统的推荐入口。"
       },
       {
-        name: "快手", en: "Kuaishou", status: "open", rec: "yes", src: "see",
-        opened: "campus.kuaishou.cn 应届池搜「推荐」= 未来第一站 15。常规岗 2026-08-14，快 Star 2026-08-12。",
+        name: "快手", en: "Kuaishou", status: "open", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "campus.kuaishou.cn 应届池搜「推荐」8/20 为 16（8/17 快照 15）。常规岗 2026-08-14，快 Star 2026-08-12，8/18 新开三岗。",
         closes: "未见官方统一截止。快 Star / 留用实习新闻写全年开。超级简历标 2027-02-08，像平台推算，勿当死线。",
         window: "筛选器可见：27届校园招聘 / 27届留用实习 / 快Star人才计划。",
         city: "北京为主，部分北京+杭州。",
         jobs: "常规：推荐大模型、推荐模型、推荐算法、生成式推荐、推荐系统。快 Star：推荐大模型、冷启、生产、OneRec、社交生成式、视频/消息/直播推荐、Agent-短视频推荐、推荐大模型训练引擎。",
         req: "本硕博。技术面加 AI Coding 的说法来自新闻，本轮未在职位卡上核到。",
         links: [["快手应届搜推荐", "https://campus.kuaishou.cn/#/campus/jobs?name=%E6%8E%A8%E8%8D%90&pageNum=1&recruitSubProjectCodes=20271779425607"]],
-        note: "官网亲见。OneRec / 生成式推荐是这周最该投的快手入口。"
+        note: "官网亲见。8/18 新岗可补投。OneRec / 生成式推荐仍是快手主入口。"
       },
       {
         name: "阿里巴巴", en: "Alibaba", status: "open", rec: "yes", src: "see",
@@ -678,7 +773,7 @@
       },
       {
         name: "京东", en: "JD", status: "open", rec: "likely", src: "mix",
-        opened: "campus.jd.com 亲见「2027校园招聘火热进行中」。新星计划简历 8月3日–11月30日；新锐之星 8月17日–11月30日（今天开网申）；TGT / 实习全年。",
+        opened: "campus.jd.com 亲见「2027校园招聘火热进行中」。新星计划简历 8月3日–11月30日；新锐之星 8月17日–11月30日；TGT / 实习全年。",
         closes: "官网原文：新星 2026-08-03 至 11-30；新锐之星 08-17 至 11-30；TET 管培 07-01 至 11-30。TGT / 实习全年。",
         window: "2027 届本硕博。TGT 含毕业两年内。",
         city: "北京及多地。职位页城市筛选项极多。",
@@ -710,15 +805,15 @@
         note: "新闻转载。不必当推荐主力。"
       },
       {
-        name: "科大讯飞", en: "iFLYTEK", status: "intern", rec: "weak", src: "news",
-        opened: "2027 届「飞凡计划」约 2026-07 启动的说法来自公开稿，本轮未进讯飞职位搜索。",
+        name: "科大讯飞", en: "iFLYTEK", status: "open", rec: "weak", src: "news", rev: "2026-08-20",
+        opened: "27 秋季校招约 2026-07-23 已启动（公开稿），8/17 快照按实习专项低估。本轮仍未进讯飞职位搜索。",
         closes: "高校就业网写「即日起」。牛企标常规校招至 2026-09-22；飞凡有标到 2026-08-30。笔试新闻：8/2 起每周一场。",
         window: "飞凡约 2025-06 至 2027-08 毕业（转载）。",
         city: "合肥为主。",
-        jobs: "核心是语音与大模型，不是信息流推荐。",
+        jobs: "核心是语音与大模型，不是信息流推荐。推荐专项仍弱。",
         req: "飞凡偏管培/领导者。",
         links: [["讯飞招聘", "https://www.iflytek.com"]],
-        note: "新闻转载。想做推荐不必强投。"
+        note: "8/20 从实习专项改成秋招已开。想做推荐不必强投。"
       },
       {
         name: "OPPO", en: "OPPO", status: "open", rec: "yes", src: "see",
@@ -740,11 +835,11 @@
         jobs: "教育推荐弱于内容/电商。9/7 前先在官网翻有没有算法/推荐，没有就别耗。",
         req: "部分岗笔试，未见笔试截日。",
         links: [["关注作业帮招聘", "https://www.zybang.com"]],
-        note: "新闻转载。推荐含量弱，但截止早，有意向这周看一眼。"
+        note: "新闻转载。推荐含量弱。8/20 再核：9/7 未改。"
       },
       {
-        name: "小红书", en: "Xiaohongshu", status: "intern", rec: "yes", src: "see",
-        opened: "job.xiaohongshu.com/campus 亲见项目仍是 REDstar（毕业 2022-09 至 2026-08）和「2026 校园招聘」（2025-09 至 2026-08）。职位搜「推荐」= 60，没有「2027 届秋招正式批」标签。",
+        name: "小红书", en: "Xiaohongshu", status: "intern", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "job.xiaohongshu.com/campus 亲见项目仍是 REDstar（毕业 2022-09 至 2026-08）和「2026 校园招聘」（2025-09 至 2026-08）。职位搜「推荐」= 60，没有「2027 届秋招正式批」标签。8/20 仍未见 27 秋季 FT。",
         closes: "27 届正式批未见，无秋招截日。实习 / Ace / REDstar 按岗招满即止。",
         window: "【27/28届】推荐算法实习生；Ace 面向在校生；REDstar 可毕业三年内。",
         city: "北京 / 上海 / 杭州。",
@@ -765,15 +860,15 @@
         note: "部分亲见失败。同类先投已经开了的 Shopee。"
       },
       {
-        name: "网易", en: "NetEase", status: "intern", rec: "yes", src: "see",
-        opened: "campus.163.com 亲见：互娱 2027、雷火 2027、互联网仍写「2026届校园招聘」。精英实习可见蛋仔 AI、智邮 27，不是云音乐推荐。",
-        closes: "互娱：7/21 起，未见官方截日（牛企有标到 09-21）。雷火新闻：网申至 2026-10-15，部分岗招满即下。互联网 27 秋招页还没换。",
-        window: "互联网正式批还停在 26 届页。云音乐推荐请另找校园/实习或社招。",
+        name: "网易", en: "NetEase", status: "intern", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "campus.163.com：互娱 2027、雷火 2027。8/20 应届菜单可见 2027 校园招聘入口，互联网首页仍未见 RecSys JD。精英实习可见蛋仔 AI、智邮 27，不是云音乐推荐。",
+        closes: "互娱：7/21 起，未见官方截日（牛企有标到 09-21）。雷火新闻：网申至 2026-10-15，部分岗招满即下。互联网推荐岗未上首页。",
+        window: "可进 2027 应届池搜算法。云音乐推荐请另找校园/实习或社招。",
         city: "杭州 / 广州 / 上海。",
-        jobs: "本轮集团校园首页没有「推荐算法」卡片。云音乐社招历史上有 LLM4REC（上轮/新闻）。互娱/雷火是游戏线。",
+        jobs: "集团校园首页仍没有「推荐算法」卡片。云音乐社招历史上有 LLM4REC（上轮/新闻）。互娱/雷火是游戏线。",
         req: "你收藏的是社会招聘，校招走 campus.163.com，游戏走 game.campus.163.com。",
         links: [["网易校园", "https://campus.163.com/"], ["互娱校招", "https://game.campus.163.com/"]],
-        note: "官网亲见：互联网 27 秋招页还没换。推荐优先盯云音乐，不要只投网易社招。"
+        note: "8/20：入口有 2027，不当已开 RecSys。推荐优先盯云音乐。"
       },
       {
         name: "爱奇艺", en: "iQIYI", status: "wait", rec: "likely", src: "news",
@@ -787,18 +882,18 @@
         note: "新闻转载。和 B 站比，这届公开进度慢一拍。"
       },
       {
-        name: "得物", en: "Dewu / Poizon", status: "open", rec: "yes", src: "see",
+        name: "得物", en: "Dewu / Poizon", status: "open", rec: "yes", src: "see", rev: "2026-08-20",
         opened: "campus.dewu.com 亲见「得物2027届校园招聘｜开箱新世界」。职位搜「推荐」= 开启新的工作 17。",
-        closes: "得物 App 招聘公众号转载：网申 2026-08-10 至 2026-09-07。牛企另有一条标到 10-10。先按 9/7 投。笔试 8 月中下旬。",
+        closes: "倒计时仍按公众号转载 2026-08-10 至 2026-09-07（首轮）。牛企另有网申到 10-10。官网 FAQ「技术笔试日历」周六/周日排到 2026-11-01（含 10/10、10/24）。9/7 不当最后一天。",
         window: "2027 届秋季校园招聘项目 + 研究型实习生。",
         city: "上海为主；搜广推工程含杭州。",
         jobs: "【27届校招】搜索/广告/推荐系统工程师（Java，偏工程）；【27届校招】AI搜推产品；【27届校招】推荐用户&导购产品；【27届校招】数据挖掘工程师（JD 写推荐/搜索系统）；研究实习：生成式召回（交易瀑布流）、社区推荐精排 Scaling。",
         req: "防诈骗提醒在官网。咨询 campus@dewu.com。",
         links: [["得物职位搜推荐", "https://campus.dewu.com/578078/position/list?keywords=%E6%8E%A8%E8%8D%90"], ["校园首页", "https://campus.dewu.com/"]],
-        note: "官网亲见。工程岗和产品岗都在，算法岗看数据挖掘 / 研究实习。"
+        note: "官网亲见。工程岗和产品岗都在。8/20：笔试日历比 9/7 长一截，早投仍划算。"
       },
       {
-        name: "vivo", en: "vivo", status: "open", rec: "likely", src: "mix",
+        name: "vivo", en: "vivo", status: "open", rec: "likely", src: "mix", rev: "2026-08-20",
         opened: "hr-campus.vivo.com 亲见秋季校园招聘 136、蓝极星 28、暑期实习 18、日常实习 74，以及 2027 届秋招/蓝极星/暑期实习公告入口。",
         closes: "通稿：网申与初筛至 2026-09-15 12:00；研发岗线上笔试当日 15:00；面试 09-20 至 09-24；Offer 10 月中下旬。宣讲 09-01 至 09-15。",
         window: "通稿：2026-08 至 2027-07 毕业。大陆看毕业证，港澳台/海外看学位证。",
@@ -806,7 +901,7 @@
         jobs: "列表可见控制算法、Agent 开发等，搜「推荐」控件被顶栏挡住，没有滤出「推荐算法」标题。应用商店/系统推荐需在 136 岗里手翻或登录后搜。",
         req: "宣讲日历页上 4 场制造专场已结束，不是研发宣讲。",
         links: [["vivo 校园", "https://hr-campus.vivo.com/"], ["秋季职位", "https://hr-campus.vivo.com/jobs"], ["集团招聘", "https://hr.vivo.com"]],
-        note: "部分亲见。秋招已开是现场的，推荐岗名不是。截止日期请自己打开 FAQ。"
+        note: "部分亲见。秋招已开是现场的，推荐岗名不是。8/20 再核：9/15 12:00 网申 + 同日 15:00 笔试，别拖到当天上午。"
       },
       {
         name: "百度", en: "Baidu", status: "open", rec: "yes", src: "paste",
@@ -820,15 +915,15 @@
         note: "岗位名和 JD 是你从官网贴的；日历、74 岗、投递次数、AIDU 年薪是通稿/牛客转载。推荐就投 J101090 / J101091，别只投用户产品里那句「个性化推荐」。"
       },
       {
-        name: "字节跳动", en: "ByteDance", status: "open", rec: "yes", src: "see",
-        opened: "jobs.bytedance.com/campus/position 亲见。勾 2027 校招项目后搜「推荐」= 开启新的工作 481。全年 4 次投递的规则来自招聘动态/新闻。",
-        closes: "官网 FAQ：全年开、招满即止。2026-08-03 至 12-31 两次投递；2027-01-01 再刷新两次。岗位随时下架，次数不是截日。",
+        name: "字节跳动", en: "ByteDance", status: "open", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "jobs.bytedance.com/campus/position 亲见。勾 2027 校招项目后搜「推荐」= 开启新的工作 481。投递次数来自官网 FAQ。",
+        closes: "官网 FAQ：投递窗 2026-08 至 2027-05-31，全年开、招满即止。可投 4 次：2026-12-31 前 2 次，2027-01-01 再刷新 2 次。12/31 是次数窗口，不是网申关窗。岗位随时下架。",
         window: "ByteIntern 原文：2026年9月–2027年8月毕业。正式岗标 2027届校园招聘 / 前沿技术。",
         city: "北京 / 上海 / 深圳 / 杭州 等，按岗不同。",
         jobs: "正式亲见：推荐大模型-番茄 A147333；TikTok Shop 推荐大模型 A124800 / 推荐算法 A01502B；今日头条推荐大模型 A23330；抖音推荐算法 A95850、推荐大模型多 ID、大模型推荐系统 A72648；抖音电商&直播推荐/推荐大模型；TikTok 大模型推荐 A176735、短剧推荐 A07519A。实习：番茄推荐大模型日常实习；抖音推荐技术 ByteIntern。",
         req: "本科及以上。已投岗位不能改。前沿技术 / Seed 是否占常规次数，以官网项目说明为准。",
         links: [["字节校园搜推荐", "https://jobs.bytedance.com/campus/position?keywords=%E6%8E%A8%E8%8D%90"], ["校园首页", "https://jobs.bytedance.com/campus"]],
-        note: "官网亲见。岗位招满下架，早投。番茄/头条/抖音/TikTok 不是同一个志愿故事。"
+        note: "官网亲见。8/20：官方窗写到 2027-05-31，不要只按年底截止理解。岗位招满下架，早投。"
       },
       {
         name: "Shopee", en: "Shopee", status: "open", rec: "yes", src: "see",
@@ -842,15 +937,15 @@
         note: "官网亲见。校招只用 Moka，不要走 shopee.cn。"
       },
       {
-        name: "新浪 / 微博", en: "Sina / Weibo", status: "wait", rec: "yes", src: "see",
-        opened: "Moka 亲见首页仍写 2026 届。搜「推荐算法」「算法」均为 0。",
+        name: "新浪 / 微博", en: "Sina / Weibo", status: "wait", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "Moka 亲见首页仍写 2026 届。搜「推荐算法」「算法」均为 0。8/20 有第三方说 8/18 秋招+广告算法，独立核官网未站住，不当新开。",
         closes: "27 届秋招未见，无截止。实习窗口多已过。",
         window: "等 27 届正式批 / 下一波实习。",
         city: "北京 / 杭州。",
         jobs: "官网校招算法空。热搜、关注流、超话是正经推荐场景，入口不在当前校招池。",
         req: "实习曾要求计算机相关、研究生优先（历史）。",
         links: [["新浪校园招聘", "https://app.mokahr.com/campus-recruitment/sina/43536"]],
-        note: "官网亲见：空的。别在 26 届页空投。"
+        note: "官网亲见：空的。8/20 不采信未核到的 8/18 通稿。"
       },
       {
         name: "腾讯音乐", en: "TME", status: "open", rec: "yes", src: "see",
@@ -864,15 +959,15 @@
         note: "官网亲见。投了腾讯 ≠ 进了 TME。"
       },
       {
-        name: "Soul", en: "Soul", status: "wait", rec: "yes", src: "see",
-        opened: "飞书招聘页上轮显示 0 个在招。",
+        name: "Soul", en: "Soul", status: "wait", rec: "yes", src: "see", rev: "2026-08-20",
+        opened: "飞书招聘页上轮显示 0 个在招。8/20 飞书现为社招，未见 27 秋招 RecSys。",
         closes: "校招池空，无截止可写。",
         window: "社招为主。",
         city: "上海 / 北京。",
         jobs: "人+内容匹配。官网空了就不要等校招稿。",
         req: "社招常见召回/粗排/精排、图模型/序列建模（Boss 索引，非现场）。",
         links: [["Soul 飞书招聘", "https://soulapp.jobs.feishu.cn/"]],
-        note: "官网亲见：空。社招另找渠道。"
+        note: "8/20：飞书是社招。27 秋招 RecSys 继续等。"
       },
       {
         name: "哈啰", en: "Hello", status: "wait", rec: "likely", src: "see",
@@ -897,7 +992,7 @@
         jobs: "AI算法工程师（推荐排序方向）：建模/特征/A/B/上线，搜推广告项目优先。旁路：AI 产品运营（目的地推荐）、小程序增长。",
         req: "Python + PyTorch/TF；分类/回归/排序/序列建模。",
         links: [["去哪儿校招搜推荐", "https://hf7l9aiqzx.jobs.feishu.cn/704852/position/list"], ["校园首页", "https://campus.qunar.com/"]],
-        note: "名单外最硬的全职推荐岗之一。窗口比大厂短。"
+        note: "名单外最硬的全职推荐岗之一。8/20 仍按保守 9/20。"
       },
       {
         name: "挚文 / 陌陌", en: "Hello Group / Momo", status: "open", rec: "yes", src: "see",
@@ -908,7 +1003,7 @@
         jobs: "个性化推荐引擎/召回/预估；用户增长智能引擎；多模态用户与内容理解。覆盖陌陌/探探泛社交。",
         req: "计算机相关优先；推荐/ML/大模型/NLP/CV 之一有实践；C++/Java/Python。",
         links: [["推荐算法 JD", "https://campus.hellogroup.com/campus-recruitment/immomo/54299/#/job/8175276b-1cfd-4256-b650-fa215d93e24d"], ["校招首页", "https://campus.hellogroup.com"]],
-        note: "官网亲见。社交推荐和短视频不是同一套，题量通常小一档。"
+        note: "官网亲见。社交推荐和短视频不是同一套。8/20 再核：笔试仍是 8/25。"
       },
       {
         name: "知乎", en: "Zhihu", status: "intern", rec: "yes", src: "news",
@@ -933,26 +1028,26 @@
         note: "分类信息搜推很经典。先走转正实习。"
       },
       {
-        name: "荣耀", en: "Honor", status: "intern", rec: "yes", src: "news",
-        opened: "高校简章标题带 2027 校园招聘，正文是实习生。有「互联网算法工程师（搜广推）」。",
-        closes: "AI&软件实习有来源写到 2026-08-12，可能已过。官网实习生页仍建议看一眼。",
-        window: "实习。未见 27 应届正式批。",
+        name: "荣耀", en: "Honor", status: "open", rec: "likely", src: "news", rev: "2026-08-20",
+        opened: "官网 2026.08.18「荣耀2027届校园招聘全球启动」。首页偏 AI/机器人。推荐算法标题未核到。此前高校简章里的搜广推是实习岗。",
+        closes: "应届池刚开，未见统一截日。尽早进池。",
+        window: "2027 届应届。实习通道仍可能并行。",
         city: "北京 / 深圳 / 上海 / 南京 / 西安。",
-        jobs: "应用市场/游戏中心/信息流的搜索、广告、推荐；召回/粗排/CTR/CVR/LTV。",
-        req: "按实习 JD。",
+        jobs: "进应届池搜算法 / 搜广推。不要按已经放出的 RecSys 专项理解。应用市场/游戏中心/信息流历史上有搜索、广告、推荐。",
+        req: "按 JD。",
         links: [["荣耀招聘", "https://www.honor.com/cn/career/"]],
-        note: "和 OPPO/vivo 同类端侧+互联网分发。"
+        note: "8/20 从实习改成应届已开。对口先搜算法岗。"
       },
       {
-        name: "同花顺", en: "Hexun / 10jqka", status: "open", rec: "yes", src: "news",
-        opened: "AIME 顶尖人才计划课题含「生成式搜索推荐」。春招曾用名生成式推荐算法工程师。",
-        closes: "第三方一处 08-09、一处 09-19。以 campus.10jqka.com.cn 为准。",
-        window: "实习/专项覆盖约 2026.1–2027.12 毕业硕博。",
+        name: "同花顺", en: "Hexun / 10jqka", status: "open", rec: "yes", src: "news", rev: "2026-08-20",
+        opened: "官网列表 8/20 见「生成式推荐算法研究员（博士专项）」。AIME 课题含「生成式搜索推荐」。春招曾用名生成式推荐算法工程师。",
+        closes: "第三方约 2026-09-19。以 campus.10jqka.com.cn 为准。",
+        window: "实习/专项覆盖约 2026.1–2027.12 毕业硕博。博士专项看该 JD。",
         city: "杭州。",
-        jobs: "生成式搜索推荐 / AI 算法类统称。",
-        req: "偏硕博。",
+        jobs: "生成式推荐算法研究员（博士专项）；生成式搜索推荐 / AI 算法类统称。硕士 RecSys 仍弱。",
+        req: "偏硕博。博士岗按专项投。",
         links: [["同花顺校招职位", "https://campus.10jqka.com.cn/job/list"]],
-        note: "金融资讯推荐，赛道窄但岗名清楚。"
+        note: "8/20：推荐向从课题名升到明确博士岗。"
       },
       {
         name: "贝壳找房", en: "Ke / Beike", status: "intern", rec: "likely", src: "news",
@@ -1007,29 +1102,29 @@
         jobs: "本轮未见推荐算法。往年春招算法含推荐/智能调度。",
         req: "先看 join.huolala.cn 还有没有技术岗。",
         links: [["货拉拉加入我们", "https://join.huolala.cn/"]],
-        note: "运力匹配是推荐近亲。技术岗放出再投。"
+        note: "运力匹配是推荐近亲。GMT 不是 RecSys。8/20 再核：GMT 9/13 未改。"
       },
       {
-        name: "饿了么 / 淘宝闪购", en: "Ele.me / Taobao Flash", status: "open", rec: "likely", src: "news",
-        opened: "随阿里 2026-08-05 启动，也可走 talent.ele.me。",
-        closes: "集团未见统一截止。第三方有写到 2027-02-01。每人 1 次、最多 2 志愿。",
+        name: "饿了么 / 淘宝闪购", en: "Ele.me / Taobao Flash", status: "open", rec: "yes", src: "news", rev: "2026-08-20",
+        opened: "随阿里 2026-08-05 启动。生成式推荐 OneRec JD 窗 2026-08-05～11/30（8/17 快照写成 likely，低估了）。也可走 talent.ele.me。",
+        closes: "该 JD 写到 2026-11-30。集团未见统一截止。每人 1 次、最多 2 志愿。",
         window: "阿里 2026-11-01 至 2027-10-31。",
         city: "上海 / 杭州 / 北京。",
-        jobs: "本轮公开偏 AI 应用算法。历史校招有「算法工程师-搜索推荐」。",
+        jobs: "生成式推荐 OneRec。历史校招还有「算法工程师-搜索推荐」。岗名也可能叫 AI 应用。",
         req: "和阿里主站分开搜「闪购/饿了么/推荐」。",
         links: [["饿了么校园", "https://talent.ele.me/campus/home?lang=zh"], ["阿里职位池", "https://campus-talent.alibaba.com/campus/index"]],
-        note: "即时零售搜推很正。岗名可能叫 AI 应用。"
+        note: "8/20 升为明确推荐岗。即时零售搜推很正。"
       },
       {
-        name: "飞猪", en: "Fliggy", status: "open", rec: "likely", src: "news",
+        name: "飞猪", en: "Fliggy", status: "open", rec: "likely", src: "news", rev: "2026-08-20",
         opened: "走阿里 2027 应届，在招业务含飞猪。另有飞猪阿里星。",
-        closes: "集团无统一截止。飞猪阿里星有来源写到 08-27。",
+        closes: "集团无统一截止。飞猪阿里星第三方仍写到 2026-08-27。",
         window: "同阿里。",
         city: "杭州。",
         jobs: "本轮公开偏多模态大模型/Agent，未见「推荐算法」四字。旅行搜推在业务里。",
         req: "阿里星/正式批规则同集团。",
         links: [["阿里校园", "https://campus-talent.alibaba.com/campus/index"]],
-        note: "和去哪儿抢同一类人，去哪儿岗名更直。"
+        note: "8/20：8/27 窗口还在。和去哪儿抢同一类人，去哪儿岗名更直。"
       },
       {
         name: "喜马拉雅", en: "Ximalaya", status: "wait", rec: "yes", src: "news",
@@ -1121,12 +1216,63 @@
       }
     ];
 
-    const TODAY = new Date(2026, 7, 17);
+    const TODAY = new Date(2026, 7, 20);
+    const CHECKED = "2026-08-20";
     const DAY = 86400000;
+
+    const KIND = {
+      add: ["新增", "tag-add"],
+      change: ["变化", "tag-change"],
+      warn: ["口径", "tag-warn"],
+      hold: ["仍未开", "tag-hold"],
+      same: ["未改", "tag-same"]
+    };
+
+    const LOG = [
+      {
+        date: "2026-08-20",
+        title: "第三轮对照",
+        summary: "相对 8/17 快照。官网 FAQ / JD / 笔试日历优先于超级简历。没有再全量 Playwriter。",
+        items: [
+          ["add", "荣耀", "官网 8/18「2027届校园招聘全球启动」。应届池已开；推荐算法标题未核到，进池搜算法。卡片从实习改为已开。"],
+          ["add", "唯品会", "公开稿 8/17 启动 2027 秋招，搜索算法广州/上海。无「推荐算法」标题。卡片从等待改为已开。"],
+          ["add", "美团", "8/17 晚间正式启动 2027。搜「推荐」36→39。新增大模型搜索推荐算法工程师（北/上）。FAQ：3 次志愿，毕业 2026-11～2027-10。勿用南京本地宝 10/31。"],
+          ["add", "快手", "8/18 新开三岗。搜「推荐」15→16。已开池可补投。"],
+          ["change", "拼多多", "提前批仍 8/23。职位页出现「常规批次」页签，但无正式批公告。不要等正式批。"],
+          ["change", "字节跳动", "官网 FAQ：投递窗至 2027-05-31；4 次机会（12/31 前 2 次，2027-01-01 刷新 2 次）。12/31 从「网申关窗」改为次数窗口。倒计时不再按 12/31。"],
+          ["change", "饿了么", "生成式推荐 OneRec JD 窗 8/05–11/30。推荐含量 likely → yes。"],
+          ["warn", "得物", "倒计时仍按 9/07。官网技术笔试日历排到 11/01（含 10/10、10/24）；聚合另有网申 10/10。9/07 当首轮，不当最后一天。"],
+          ["warn", "vivo", "再核：网申/初筛 9/15 12:00，研发笔试同日 15:00。别拖到当天上午。"],
+          ["change", "同花顺", "官网列表见生成式推荐算法研究员（博士专项）。硕士 RecSys 仍弱。第三方约 9/19。"],
+          ["change", "科大讯飞", "27 秋季约 7/23 已在招，快照按实习低估。卡片改为秋招已开。推荐专项仍弱。"],
+          ["change", "网易", "应届菜单有 2027 入口，首页仍未见 RecSys JD。不当已开推荐岗。"],
+          ["change", "Soul", "飞书招聘现为社招。27 秋招 RecSys 继续等。"],
+          ["hold", "微博", "第三方有 8/18 秋招+广告算法说法，独立核官网未站住。不当新开。"],
+          ["hold", "小红书", "仍未见 27 秋招正式批。继续实习 / Ace / REDstar。"],
+          ["same", "作业帮 / 货拉拉 / 挚文 / 去哪儿", "作业帮 9/07、货拉拉 GMT 9/13、挚文笔试 8/25、去哪儿保守 9/20，均未改。GMT 不是 RecSys。"],
+          ["same", "大厂岗量", "腾讯 / 阿里 / 蚂蚁 / 百度 / 华为 / 京东 / 小米 / 滴滴 / B站 / OPPO / Shopee 相对 8/17 基本没动。"],
+          ["hold", "仍在等 27 秋 RecSys", "携程、360、MetaApp、SHEIN、爱奇艺、哈啰、芒果TV、喜马拉雅、阅文、网易云、Keep、同程、虎牙、BOSS。"]
+        ]
+      },
+      {
+        date: "2026-08-17",
+        title: "第二轮深挖（基线）",
+        summary: "Playwriter 逐家打开校招站、搜「推荐」。建立本表、截止日倒计时和时间线。之后对照都相对这一版。",
+        items: [
+          ["add", "本表", "32 家收藏名单 + 中厂补网。官网亲见 / 部分亲见 / 新闻转载分开标。"],
+          ["add", "拼多多", "提前批 7/6–8/23。算法工程师 JD 写搜索、推荐、广告。"],
+          ["add", "腾讯 / 字节 / 快手 / 美团 / 阿里 / 蚂蚁 / 百度", "搜「推荐」岗名或 JD 抠出。美团当时 36 岗，快手 15 岗。"],
+          ["add", "得物 / 作业帮 / vivo", "得物、作业帮按 9/07；vivo 网申 9/15 12:00。"],
+          ["add", "京东新锐之星", "8/17 开网申，至 11/30。"],
+          ["hold", "小红书 / 微博 / 携程 / SHEIN", "当时即未见 27 秋招正式批。"]
+        ]
+      }
+    ];
 
     // 各家最早可信的截止日。多口径时取早的，宁可早投。null / 缺失 = 滚动或未见。
     const DUE = {
       "拼多多": "2026-08-23",
+      "飞猪": "2026-08-27",
       "作业帮": "2026-09-07",
       "得物": "2026-09-07",
       "货拉拉": "2026-09-13",
@@ -1144,8 +1290,9 @@
       "米哈游": "2026-10-31",
       "京东": "2026-11-30",
       "Shopee": "2026-11-30",
+      "饿了么 / 淘宝闪购": "2026-11-30",
       "小米": "2026-12-31",
-      "字节跳动": "2026-12-31",
+      "字节跳动": "2027-05-31",
       "百度": "2027-06-30"
     };
 
@@ -1165,13 +1312,16 @@
       ["2026-08-13", "open", "滴滴两个推荐岗"],
       ["2026-08-14", "open", "快手常规推荐岗"],
       ["2026-08-15", "open", "华为 2027 应届启动（官网）"],
-      ["2026-08-17", "open", "京东新锐之星开网申 · 今天"],
+      ["2026-08-17", "open", "京东新锐之星 · 美团2027正式启动 · 唯品会秋招"],
+      ["2026-08-18", "open", "荣耀全球启动 · 快手新开推荐岗"],
+      ["2026-08-20", "open", "第三轮核查（本页）"],
       ["2026-08-23", "close", "拼多多提前批截止"],
       ["2026-08-25", "open", "挚文 / 陌陌笔试"],
-      ["2026-09-07", "close", "作业帮 · 得物（公众号口径）"],
+      ["2026-08-27", "close", "飞猪阿里星（第三方）"],
+      ["2026-09-07", "close", "作业帮 · 得物首轮（公众号口径）"],
       ["2026-09-13", "close", "货拉拉 GMT"],
       ["2026-09-15", "close", "vivo 网申 12:00 · 研发笔试 15:00"],
-      ["2026-09-19", "close", "同花顺 AIME"],
+      ["2026-09-19", "close", "同花顺"],
       ["2026-09-20", "close", "去哪儿（岗位页写 9/30，按早的）"],
       ["2026-09-22", "close", "科大讯飞"],
       ["2026-09-23", "close", "滴滴未来精英"],
@@ -1181,8 +1331,9 @@
       ["2026-10-13", "close", "滴滴常规秋招（牛客）"],
       ["2026-10-15", "close", "网易雷火"],
       ["2026-10-31", "close", "米哈游 · 贝壳实习"],
-      ["2026-11-30", "close", "京东新星/新锐 · Shopee"],
-      ["2026-12-31", "close", "字节本窗口 2 次用完 · 小米（新闻口径）"],
+      ["2026-11-30", "close", "京东新星/新锐 · Shopee · 饿了么 OneRec"],
+      ["2026-12-31", "close", "字节第一次数窗口（2 次）用完 · 小米（新闻口径）"],
+      ["2027-05-31", "close", "字节官方投递窗（FAQ）"],
       ["2027-06-30", "close", "百度全年通道关"]
     ];
 
@@ -1224,7 +1375,8 @@
       const r = recMap[item.rec];
       const s = stMap[item.status];
       const e = srcMap[item.src];
-      return `<span class="badge ${s[1]}">${s[0]}</span><span class="badge ${r[1]}">${r[0]}</span><span class="badge ${e[1]}">${e[0]}</span>`;
+      const rev = item.rev === CHECKED ? `<span class="badge s-rev">8/20 更新</span>` : "";
+      return `<span class="badge ${s[1]}">${s[0]}</span><span class="badge ${r[1]}">${r[0]}</span><span class="badge ${e[1]}">${e[0]}</span>${rev}`;
     }
 
     function cardHTML(item, i, hidden) {
@@ -1258,6 +1410,7 @@
     }
 
     function matchFilter(item) {
+      if (filter === "rev") return item.rev === CHECKED;
       if (filter === "all" || filter === "extra") return true;
       if (filter === "urgent") {
         const m = dueMeta(item);
@@ -1298,6 +1451,24 @@
       }
       const shown = (hideCore ? 0 : coreShown) + extraShown;
       countEl.textContent = `显示 ${shown} / ${DATA.length + EXTRA.length}`;
+    }
+
+    function renderLog() {
+      document.getElementById("log").innerHTML = LOG.map((day, i) => {
+        const items = day.items.map(([kind, co, text]) => {
+          const k = KIND[kind];
+          return `<li><span class="tag ${k[1]}">${k[0]}</span><span class="log-co">${co}</span><span>${text}</span></li>`;
+        }).join("");
+        return `<details class="log-day${i === 0 ? " is-latest" : ""}">
+          <summary class="log-head">
+            <span class="log-date">${day.date}</span>
+            <strong>${day.title}</strong>
+            <span class="log-n">${day.items.length} 条</span>
+            <p class="log-sum">${day.summary}</p>
+          </summary>
+          <ul class="log-items">${items}</ul>
+        </details>`;
+      }).join("");
     }
 
     function renderRail() {
@@ -1362,6 +1533,7 @@
       }
     });
 
+    renderLog();
     renderRail();
     render();
   </script>
