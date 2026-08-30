@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--
+AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
+上下文版本：2026-08-31
+
+【用途】
+本注释供后续 AI 或维护者更新本页招聘数据、匹配理由、投递优先级和简历建议。
+它不是用于页面展示的完整简历，也不能代替对官方职位原文的核验。
+
+【候选人概况】
+- 2027 届硕士，预计 2027 年 6 月毕业。
+- 西安交通大学数学与统计学院应用统计硕士，推免，研究方向偏大数据与机器学习。
+- 重庆大学统计学本科，荣誉学院背景，GPA 3.72/4.00，CET-6 505。
+- 有头部互联网公司（快手）生产级算法实习、科研论文、全国性建模竞赛和Google ai vrp安全成果。
+- 地点可重点关注杭州、成都、西安、北京和上海，但不是唯一选择；岗位质量、专业资格和发展空间优先。
+
+【核心实习经历】
+- 快手推荐算法实习生，召回与排序算法组，2026 年 5 月至今。
+- 有完整工程链路经验：分布式训练、在线推理部署、策略开发、A/B 实验与效果分析。
+- 主要方向一：激励场景因果去偏精排。通过兴趣与激励增益解耦、置信建模、梯度隔离、域条件化序列和候选建模，提取更接近真实兴趣的排序信号，并取得线上正向收益。
+- 主要方向二：session 级长期价值强化学习排序。使用延迟留存标签训练多维 reward，以矩阵化分组和相对优势优化实时策略，覆盖同视频、同作者、同类目等长期复访目标。
+- 主要方向三：互动生态治理。做过诱导内容降权、高价值互动作者追打、多模态标签和作者向量相似度等生产策略，并取得线上正向收益。
+- 与岗位匹配时可概括方法和业务价值，但不得臆造大模型、具身智能、CUDA、编译器、金融或其他没有真实经历的能力。
+
+【科研、荣誉与技能】
+- 地震速度反演方向 IEEE TGRS 一作论文在审。工作结合状态空间模型与注意力，关注全局建模、线性复杂度、鲁棒性和物理一致性；必须始终标注 Under Review，不得写成已发表。
+- 获全国性研究生工业与经济金融大数据建模竞赛一等奖、研究生数学建模竞赛全国二等奖及研究生奖学金。
+- 有 Google AI VRP 官方确认的负责任漏洞披露经历；只作为研究、工程和安全意识的辅助证明。
+- 技术栈：PyTorch、TensorFlow、NumPy、Kafka、Git；Python、C++、Lua、R；熟悉 AI 辅助开发工具。
+- 当前简历中 SQL、Linux、数据仓库、经典表格模型和部分行业知识展示较少。只有在候选人确认真实掌握后，才可写入简历；否则只列为面试补强项。
+
+【求职范围】
+- 不把候选人限制在推荐算法、地球物理 AI 或统计岗位。
+- 可扩展到机器学习、通用算法、搜索广告、用户增长、数据科学、数据挖掘、金融科技、风控建模、量化分析、AI 平台、大数据研发、工业 AI、研究院算法、软件或数据工程等方向。
+- 核心判断是：用人单位和具体岗位是否接受应用统计、统计学、数学、数据科学、计算机、人工智能或相近专业，以及候选人的生产算法经历是否可迁移。
+- 机械、电子硬件、材料、土木、施工、生产工艺、通信设备维护等岗位原则上排除。只有当 JD 明确接受上述候选专业，且实际工作以算法、数据或软件为主时才可保留。
+- 纯柜面、营销、基层综合、行政、只做 Excel 报表或缺少建模与技术内容的岗位不作为主推。
+
+【岗位纳入硬条件】
+1. 必须找到当前真实存在且可投递的具体岗位或明确招聘入口，不能只因为公司知名或业务看似相关就收录。
+2. 必须核对招聘批次、毕业时间窗、学历、专业目录、工作地点、截止时间和投递次数限制。
+3. 主列表优先保留当前可投或即将开放且有明确动作的岗位；已截止、只有往届信息或未核到当前职位的公司只能进入观察池，并清楚标注。
+4. 专业要求不明确时标为“需二次核验”，不得默认应用统计一定可投；明确不接受相关专业时直接排除。
+5. 优先使用公司招聘官网、集团公告或官方职位池。高校就业网、公众号和招聘汇总只能作为辅证，并在 evidence/risk 中说明来源层级。
+6. 提交前再次打开官方入口确认职位仍在线；不得把搜索摘要、历史职位或聚合平台日期当成最终事实。
+
+【匹配与排序原则】
+- 匹配度不是录取概率。排序依次考虑：当前可投性、专业资格、经历可迁移性、截止紧迫度、证据可靠性、岗位质量、地点偏好和简历定制成本。
+- 大厂生产算法实习是核心优势，但不能用它掩盖专业代码、学历限制或岗位方向不符。
+- 对每个岗位说明：现在动作、优先岗位、为什么适合、风险与缺口、建议简历版本、证据状态和官方链接。
+- 可以推荐非完全对口但有合理迁移路径的岗位；必须具体解释迁移关系，不能只写“背景优秀”或“学校匹配”。
+- 明确博士限定、要求特定硬件/学科且候选人不满足的岗位，不占用主投精力。
+
+【页面维护规则】
+- 每次更新先写明核查日期，并按 Asia/Shanghai 的真实当前日期计算倒计时；不要让固定快照日期产生错误的“今天截止”或“还剩 N 天”。
+- 新增或修改 DATA 后，顶部统计应从 DATA 动态计算，不得手工填写容易漂移的数字。
+- 截止日期存在多个口径时采用更保守的较早日期，并在 risk/evidence 中保留另一口径。
+- status 建议保持统一语义：open 为当前可投，soon 为已公告待开放，verify 为当前需复核，watch 为高匹配但无当前入口，past 为本窗口已过。
+- 不修改或夸大候选人的事实，不把论文在审写成录用，不把了解或待补技能写成熟练掌握。
+- 更新结束后检查筛选数量、日期排序、外链、移动端布局、JavaScript 语法和 Git diff；未经候选人确认不要 push。
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="面向西安交通大学2027届应用统计、推荐算法实习背景的央国企精准招聘核查与投递策略。" />
+  <title>2027 届央国企精准核查 · 应用统计 × 推荐算法</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --paper:#f2f4ef;--paper2:#e7ede7;--card:#fffefb;--card2:#f7faf7;
+      --ink:#17201d;--soft:#3d4b46;--muted:#71807a;--line:#d8e0da;--line2:#e9eee9;
+      --accent:#176d68;--accent2:#dcefeb;--navy:#24516b;--navy2:#e3edf3;
+      --gold:#986816;--gold2:#f6ecd8;--red:#a43d2d;--red2:#f7e4df;
+      --green:#1d6b49;--green2:#e2f1e8;--purple:#66549a;--purple2:#eeeaf8;
+      --shadow:0 1px 2px rgba(30,50,42,.06),0 14px 34px rgba(30,50,42,.07);
+      --shadow2:0 2px 4px rgba(30,50,42,.08),0 25px 60px rgba(30,50,42,.13);
+      --serif:"Noto Serif SC","Songti SC","STSong",Georgia,serif;
+      --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+      --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+    }
+    [data-theme="dark"]{
+      color-scheme:dark;
+      --paper:#101614;--paper2:#17201d;--card:#1b2420;--card2:#202b26;
+      --ink:#eef5f1;--soft:#ccd8d1;--muted:#93a39b;--line:#314039;--line2:#29362f;
+      --accent:#70c9bf;--accent2:#173b37;--navy:#91c4e1;--navy2:#18303d;
+      --gold:#e1b765;--gold2:#382d18;--red:#f19683;--red2:#3b211c;
+      --green:#77d09e;--green2:#173323;--purple:#c4b3f0;--purple2:#2c2640;
+      --shadow:0 1px 2px rgba(0,0,0,.45);--shadow2:0 28px 62px rgba(0,0,0,.52);
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:var(--sans);line-height:1.65;background:
+      radial-gradient(1000px 520px at 8% -10%,var(--accent2),transparent 62%),
+      radial-gradient(900px 480px at 94% -5%,var(--navy2),transparent 60%),var(--paper);background-attachment:fixed;-webkit-font-smoothing:antialiased}
+    a{color:inherit}button,input,select{font:inherit}::selection{background:var(--accent);color:#fff}
+    .wrap{max-width:1320px;margin:0 auto;padding:18px 22px 90px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0}.brand{font:12px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.top-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .ghost{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--card);color:var(--soft);border-radius:999px;padding:7px 14px;cursor:pointer;box-shadow:var(--shadow);font-size:12.5px;text-decoration:none}.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+    .hero{padding:28px 0 20px}.kicker{display:inline-flex;gap:8px;align-items:center;padding:6px 12px;border-radius:999px;background:var(--accent2);color:var(--accent);font:11.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+    h1{font-family:var(--serif);font-size:clamp(36px,5.5vw,66px);font-weight:400;line-height:1.06;letter-spacing:-.02em;margin:0 0 16px}h1 em{display:block;color:var(--accent);font-style:normal}.lede{max-width:900px;color:var(--soft);font-size:16px;margin:0}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.meta span{font-size:12.5px;color:var(--muted);border:1px solid var(--line);background:color-mix(in srgb,var(--card) 72%,transparent);border-radius:999px;padding:5px 11px}
+    .profile-strip{display:grid;grid-template-columns:1.25fr repeat(4,1fr);gap:12px;margin:20px 0 24px}.profile-main,.profile-bit{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:17px 18px;box-shadow:var(--shadow)}.profile-main{background:linear-gradient(135deg,var(--card),var(--accent2))}.eyebrow{font:10.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}.profile-main strong{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.25}.profile-main p,.profile-bit p{margin:6px 0 0;color:var(--muted);font-size:12.8px}.profile-bit b{display:block;font-size:14px;color:var(--soft)}
+    .stats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:0 0 24px}.stat{position:relative;border:1px solid var(--line);background:var(--card);border-radius:15px;padding:15px 16px 14px;box-shadow:var(--shadow);overflow:hidden}.stat:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);opacity:.65}.stat b{display:block;font:38px/1 var(--serif);margin-bottom:7px}.stat span{display:block;color:var(--muted);font-size:12.4px;line-height:1.4}.stat.hot:before{background:var(--red);opacity:1}.stat.hot b{color:var(--red)}
+    .panel{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:22px 24px;margin-bottom:16px;box-shadow:var(--shadow)}.panel h2,.section-title{font:400 30px/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 7px}.panel .sub{margin:0 0 16px;color:var(--muted);font-size:13.5px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.insight{border:1px solid var(--line2);background:var(--card2);border-radius:14px;padding:14px 15px}.insight b{display:block;font-size:14px;margin-bottom:5px}.insight p{margin:0;color:var(--muted);font-size:12.8px}
+    .action-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.action{border:1px solid var(--line2);border-left:3px solid var(--accent);background:var(--card2);border-radius:13px;padding:13px 14px}.action .date{font:11px var(--mono);color:var(--accent);letter-spacing:.05em}.action b{display:block;font-size:14px;margin:3px 0 5px}.action p{margin:0;color:var(--muted);font-size:12.6px}.action.urgent{border-left-color:var(--red)}.action.urgent .date{color:var(--red)}
+    .resume-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.resume-card{border:1px solid var(--line2);background:var(--card2);border-radius:14px;padding:15px}.resume-card .v{display:inline-flex;border-radius:999px;padding:3px 9px;background:var(--accent2);color:var(--accent);font:11px var(--mono);margin-bottom:8px}.resume-card b{display:block;font-size:14px;margin-bottom:6px}.resume-card p{margin:0 0 7px;color:var(--muted);font-size:12.7px}.resume-card ul{margin:0;padding-left:17px;color:var(--soft);font-size:12.5px}.resume-card li{margin:4px 0}
+    .toolbar{position:sticky;top:0;z-index:20;margin:10px 0 20px;padding:12px 0;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2)}.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.chip,select,input[type=search]{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 13px;font-size:13px}.chip{cursor:pointer}.chip:hover{border-color:var(--accent);color:var(--accent)}.chip.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}input[type=search]{min-width:240px;outline:none}.spacer{flex:1 1 auto}.count{font:12px var(--mono);color:var(--muted);white-space:nowrap}
+    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:16px;align-items:start}.card{position:relative;border:1px solid var(--line);background:var(--card);border-radius:20px;padding:19px 21px 18px;box-shadow:var(--shadow);overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.card:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--muted)}.card.st-open:before{background:linear-gradient(90deg,var(--green),transparent)}.card.st-soon:before{background:linear-gradient(90deg,var(--navy),transparent)}.card.st-verify:before{background:linear-gradient(90deg,var(--gold),transparent)}.card.st-watch:before{background:linear-gradient(90deg,var(--purple),transparent)}.card.st-past:before{background:linear-gradient(90deg,var(--red),transparent)}.card:hover{transform:translateY(-2px);box-shadow:var(--shadow2);border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}.card.hidden{display:none}
+    .card-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.rankline{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:5px}.tier{font:11px var(--mono);border-radius:999px;padding:4px 9px;background:var(--accent2);color:var(--accent);font-weight:700}.tier.t-A\+,.tier.t-A{background:var(--navy2);color:var(--navy)}.tier.t-B\+{background:var(--gold2);color:var(--gold)}.badge{font-size:11.3px;border-radius:999px;padding:4px 8px;white-space:nowrap}.b-open{background:var(--green2);color:var(--green)}.b-soon{background:var(--navy2);color:var(--navy)}.b-verify{background:var(--gold2);color:var(--gold)}.b-watch{background:var(--purple2);color:var(--purple)}.b-past{background:var(--red2);color:var(--red)}.b-track{background:var(--card2);color:var(--muted);border:1px solid var(--line2)}.name{font:400 27px/1.15 var(--serif);margin:0}.en{font:11.5px var(--mono);color:var(--muted);margin-top:4px}.score{flex:0 0 auto;width:70px;height:70px;border-radius:50%;display:grid;place-content:center;text-align:center;border:1px solid var(--line);background:radial-gradient(circle,var(--card) 58%,var(--accent2) 60%);font:26px/1 var(--serif);color:var(--accent)}.score small{display:block;font:9px var(--mono);color:var(--muted);margin-top:3px}.fitbar{height:4px;border-radius:999px;background:var(--line2);overflow:hidden;margin:12px 0}.fitbar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--navy));border-radius:inherit}
+    .action-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;border:1px solid var(--line2);border-radius:12px;padding:9px 11px;background:var(--card2);margin-bottom:11px}.action-strip .k{font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.action-strip strong{font-size:12.8px;color:var(--soft)}.action-strip .pill{margin-left:auto;border-radius:999px;padding:3px 9px;background:var(--green2);color:var(--green);font-size:11.5px;font-weight:600}.action-strip.hot{background:var(--red2);border-color:color-mix(in srgb,var(--red) 32%,var(--line2))}.action-strip.hot .pill{background:var(--red);color:#fff}.action-strip.soon{background:var(--navy2)}.action-strip.soon .pill{background:var(--navy);color:#fff}.action-strip.watch .pill{background:var(--purple2);color:var(--purple)}.action-strip.past .pill{background:var(--red2);color:var(--red)}
+    .facts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}.fact{font-size:11.4px;color:var(--muted);border:1px solid var(--line2);background:var(--card2);border-radius:999px;padding:4px 8px}.field{margin:0 0 10px;color:var(--soft);font-size:13.5px}.field b{font:10px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-right:8px}.field.risk{padding:10px 11px;border-radius:11px;background:color-mix(in srgb,var(--gold2) 68%,var(--card));border:1px solid color-mix(in srgb,var(--gold) 16%,var(--line2))}.more{margin:2px 0 8px}.more summary{cursor:pointer;list-style:none;color:var(--accent);font-size:12.4px;padding:3px 0}.more summary::-webkit-details-marker{display:none}.more summary:after{content:" ▾"}.more[open] summary:after{content:" ▴"}.links{display:flex;gap:7px;flex-wrap:wrap;margin:11px 0 10px}.links a{text-decoration:none;border:1px solid color-mix(in srgb,var(--accent) 33%,var(--line));color:var(--accent);border-radius:999px;padding:5px 11px;font-size:12px}.links a:hover{background:var(--accent);color:#fff}.note{border-top:1px dashed var(--line);padding-top:9px;margin:0;color:var(--muted);font-size:12.4px}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:42px 0}
+    .omit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.omit{border:1px solid var(--line2);background:var(--card2);border-radius:13px;padding:13px 14px}.omit b{display:block;font-size:13.5px;margin-bottom:4px}.omit p{margin:0;color:var(--muted);font-size:12.5px}.warning{border-left:3px solid var(--red);background:var(--red2);padding:12px 14px;border-radius:12px;color:var(--soft);font-size:13px;margin-top:12px}
+    footer{margin-top:38px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.8px}footer strong{color:var(--soft)}#top-btn{position:fixed;right:22px;bottom:22px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--soft);box-shadow:var(--shadow2);cursor:pointer;opacity:0;pointer-events:none;transition:.2s;z-index:30}#top-btn.show{opacity:1;pointer-events:auto}
+    @media(max-width:1120px){.profile-strip{grid-template-columns:repeat(2,1fr)}.profile-main{grid-column:1/-1}.stats{grid-template-columns:repeat(3,1fr)}.action-grid,.resume-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:820px){.wrap{padding:14px 15px 80px}.profile-strip,.grid3,.action-grid,.resume-grid,.omit-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.panel{padding:18px 16px}.card{padding:18px 16px}.card-head{gap:8px}.score{width:62px;height:62px;font-size:23px}.name{font-size:25px}input[type=search]{min-width:100%}.spacer{display:none}.topbar{align-items:flex-start}.meta{gap:6px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+    @media print{body{background:#fff}.toolbar,.topbar,#top-btn{display:none!important}.card,.panel,.profile-main,.profile-bit,.stat{box-shadow:none;break-inside:avoid}.more>summary{display:none}.more:not([open])>*:not(summary){display:block}.cards{grid-template-columns:1fr 1fr}.wrap{max-width:none;padding:0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <span class="brand">SOE MATCH · 2027 · APPLIED STATISTICS</span>
+      <div class="top-actions"><a class="ghost" href="index.html">推荐算法核查</a><button class="ghost" id="print-btn" type="button">打印 / PDF</button><button class="ghost" id="theme-btn" type="button">深色模式</button></div>
+    </div>
+
+    <header class="hero">
+      <div class="kicker">个人简历定制 · 核查日 2026-08-21 · 匹配度不是录取概率</div>
+      <h1>2027 届央国企精准核查<em>应用统计 × 推荐算法 × 地球物理 AI</em></h1>
+      <p class="lede">这不是把央国企名单简单缩短，而是按你的真实优势重新排序：当前快手召回与排序算法实习、因果去偏、session 级 GRPO、线上 A/B 指标，以及地震速度反演一作论文。纯机械、材料、基建施工、芯片硬件、基层综合和泛数据报表岗已主动剔除。</p>
+      <div class="meta"><span>学历：西安交通大学应用统计硕士 · 2027</span><span>主线：推荐 / 排序 / 因果 / 强化学习</span><span>第二曲线：地球物理 AI</span><span>地点：支持筛选西安 / 西北</span><span>数据状态：官方优先，辅证明确标注</span></div>
+    </header>
+
+    <section class="profile-strip">
+      <div class="profile-main"><div class="eyebrow">你的市场定位</div><strong>不是“会 Python 的统计学生”，而是有线上增益、模型创新和研究成果的生产级算法候选人。</strong><p>央国企里最有价值的不是广撒网，而是同时攻：内容推荐、运营商/国资云 AI、金融科技、能源地球物理 AI。</p></div>
+      <div class="profile-bit"><div class="eyebrow">生产算法</div><b>因果去偏 + 四塔解耦</b><p>能讲观测偏差、唯一性约束、置信降权与线上效果。</p></div>
+      <div class="profile-bit"><div class="eyebrow">长期优化</div><b>session GRPO + 延迟 reward</b><p>适合强化学习、客户长期价值、留存与决策模型。</p></div>
+      <div class="profile-bit"><div class="eyebrow">行业研究</div><b>地震速度反演一作</b><p>为中国石油/石化/海油的智能物探建立差异化入口。</p></div>
+      <div class="profile-bit"><div class="eyebrow">工程与可信度</div><b>PyTorch / C++ / Kafka + 真实指标</b><p>比只做课程项目或竞赛的候选人更接近可直接上手。</p></div>
+    </section>
+
+    <section class="stats">
+      <div class="stat hot"><b id="n-urgent">0</b><span>21 天内截止或即将开放</span></div>
+      <div class="stat"><b id="n-now">15</b><span>当前有明确动作的入口</span></div>
+      <div class="stat"><b id="n-s">11</b><span>S 级高匹配入口</span></div>
+      <div class="stat"><b id="n-rg">7</b><span>推荐 / 地球物理差异化入口</span></div>
+      <div class="stat"><b id="n-xian">8</b><span>含西安 / 西北选项</span></div>
+      <div class="stat"><b id="n-watch">12</b><span>高匹配观察池 / 已过窗口</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>先做什么：按时间，而不是按公司名气</h2>
+      <p class="sub">截止日有官方与辅证两种口径；卡片里已经标明。日期越近越先完成，滚动招聘不要等“统一截止”。</p>
+      <div class="action-grid" id="action-grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>你的四条最优赛道</h2>
+      <div class="grid3">
+        <div class="insight"><b>① 内容推荐 / 用户增长：匹配度最高</b><p>咪咕、芒果TV、中国航信最能完整承接快手故事；当前开放程度不一，所以要把“高匹配”和“可投”分开看。</p></div>
+        <div class="insight"><b>② 运营商 AI / 国资云：当前机会最多</b><p>天翼云、九天、中国电信、浪潮、曙光是现阶段主攻。岗位名称未必写推荐，但生产模型能力可迁移。</p></div>
+        <div class="insight"><b>③ 金融科技：需要换语言，不需换能力</b><p>因果偏差、长期价值、置信降权和在线实验，可转译为风险策略、客户经营、模型治理与稳定性。</p></div>
+        <div class="insight"><b>④ 能源地球物理 AI：你的独有护城河</b><p>昆仑数智、BGP、中石化经纬和中海油研究总院，是大多数推荐算法候选人没有的第二曲线。</p></div>
+        <div class="insight"><b>专业代码是硬门槛</b><p>应用统计在数据/算法岗通常友好，但军工、油气研究院和电网会按专业目录筛。卡片标“风险高”的，不要靠猜。</p></div>
+        <div class="insight"><b>不要降维去投泛数据岗</b><p>只做 Excel 报表、经营统计、基层运营或综合管理，会浪费线上算法经历。除非地点或稳定性优先级极高。</p></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>不要一份简历通投：至少准备四个版本</h2>
+      <p class="sub">核心事实不变，只改变顺序、业务语言和技能强调。任何没有真实掌握的 SQL、Linux、CUDA 或金融知识都不要硬写。</p>
+      <div class="resume-grid">
+        <div class="resume-card"><span class="v">A · REC/AI</span><b>推荐算法 / 内容平台 / 云 AI</b><p>适用：天翼云、九天、咪咕、芒果TV、中国航信、浪潮、曙光。</p><ul><li>快手三项目置顶，线上指标保留</li><li>GRPO、因果去偏、序列与多目标写清</li><li>论文作为研究能力，不抢业务主线</li></ul></div>
+        <div class="resume-card"><span class="v">B · FINTECH</span><b>金融科技 / 风控 / 数据智能</b><p>适用：招银网络、人保科技、交银金科、银联数据、建信金科。</p><ul><li>“激励偏差”改为机制干预下的观测偏差</li><li>LT7 改为长期价值与延迟标签</li><li>补准备：SQL、GBDT、KS/PSI、稳定性</li></ul></div>
+        <div class="resume-card"><span class="v">C · GEO AI</span><b>智能地球物理 / 能源 AI</b><p>适用：昆仑数智、BGP、中石化经纬、中海油研究总院。</p><ul><li>论文置顶，必须保留 Under Review</li><li>强调 5 个基准集、鲁棒性、物理一致性</li><li>快手证明大规模工程与实验能力</li></ul></div>
+        <div class="resume-card"><span class="v">D · RESEARCH</span><b>研究所 / 工业 AI / 涉密单位</b><p>适用：电科、中汽中心、东风、宝信、南网数字。</p><ul><li>漏洞奖改为“负责任披露并获官方确认”</li><li>删除“绕过订阅、多账户”等敏感措辞</li><li>空间不足时删除 AI 协同开发工具行</li></ul></div>
+      </div>
+      <div class="warning"><strong>简历当前最明显的缺口：</strong>没有展示 SQL、Linux/数据仓库、经典统计/表格模型。它不代表你不会，但金融科技、工业数据和央企研发面试会默认追问。只在真实熟练时补进简历，并准备可验证的项目细节。</div>
+    </section>
+
+    <div class="toolbar">
+      <div class="filters">
+        <button class="chip active" data-filter="all">全部精选</button>
+        <button class="chip" data-filter="now">当前可行动</button>
+        <button class="chip" data-filter="urgent">21 天内</button>
+        <button class="chip" data-filter="s">S 级</button>
+        <button class="chip" data-filter="rec">内容推荐</button>
+        <button class="chip" data-filter="ai">AI / 云</button>
+        <button class="chip" data-filter="finance">金融科技</button>
+        <button class="chip" data-filter="geo">地球物理 AI</button>
+        <button class="chip" data-filter="industrial">工业 / 研究院</button>
+        <button class="chip" data-filter="xian">西安 / 西北</button>
+        <button class="chip" data-filter="watch">观察池 / 已过</button>
+        <input type="search" id="q" placeholder="搜公司 / 城市 / 岗位 / 风险（按 / 聚焦）" />
+        <select id="sort" aria-label="排序"><option value="priority">按行动优先级</option><option value="fit">按匹配度</option><option value="due">按日期</option></select>
+        <span class="spacer"></span><span class="count" id="count"></span>
+      </div>
+    </div>
+
+    <section class="cards" id="grid"></section>
+
+    <section class="panel" style="margin-top:20px">
+      <h2>故意没有整理的方向</h2>
+      <p class="sub">这不是遗漏，而是基于你的履历做的负筛选。以后若职业目标改变，再单独扩展。</p>
+      <div class="omit-grid">
+        <div class="omit"><b>机械 / 材料 / 土木 / 施工 / 生产工艺</b><p>与你的算法和统计主线缺少直接连接，央企名气不能抵消岗位错配。</p></div>
+        <div class="omit"><b>芯片硬件 / 模拟电路 / FPGA 主体岗位</b><p>只保留电科 58 所里的 AI 算法备选；没有硬件与编译器项目时不扩大。</p></div>
+        <div class="omit"><b>基层银行综合 / 柜面 / 营销 / 运营</b><p>你应优先金融科技子公司、总行科技、风控与数据，不需要用强算法履历去换泛岗位。</p></div>
+        <div class="omit"><b>纯网络维护 / 通信工程 / 安全运维</b><p>中国电信、中国移动、中国联通只筛 AI、研发、产数、数据与专业公司。</p></div>
+        <div class="omit"><b>博士限定的顶尖人才专项</b><p>你的研究能力强，但学历是硕士。明确博士限定的世界模型、首席研究、博士后类不占投递精力。</p></div>
+        <div class="omit"><b>只有 Excel / 报表的“数据分析”</b><p>除非岗位同时包含建模、算法或决策系统，否则属于明显降维。</p></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>面试叙事：同一个项目，四种说法</h2>
+      <div class="grid3">
+        <div class="insight"><b>推荐平台</b><p>“分离真实兴趣与激励增益，只用兴趣分参与在线排序；同时优化即时互动与 7 日长期复访。”</p></div>
+        <div class="insight"><b>金融科技</b><p>“处理干预机制导致的观测偏差与延迟标签，构建稳健的客户行为/长期价值模型，并通过在线实验验证。”</p></div>
+        <div class="insight"><b>工业 AI</b><p>“针对多域分布差异做条件化建模，用置信机制降低低质量样本影响，并将复杂优化转为可扩展矩阵计算。”</p></div>
+        <div class="insight"><b>能源地球物理</b><p>“将状态空间模型与注意力用于地震速度反演，兼顾全局建模、线性复杂度、鲁棒性和物理一致性。”</p></div>
+        <div class="insight"><b>研究所</b><p>“从假设、约束、训练稳定性到实验验证完整闭环；不仅做模型，也能解释可识别性与梯度隔离。”</p></div>
+        <div class="insight"><b>安全成果</b><p>“独立发现并负责任披露服务端授权漏洞，完成 PoC 验证和沟通，获官方确认与奖励。”</p></div>
+      </div>
+    </section>
+
+    <button id="top-btn" type="button" aria-label="回到顶部">↑</button>
+    <footer>
+      <p><strong>评分说明：</strong>匹配度综合了岗位内容、专业口径、当前履历可迁移性、定制成本与招聘状态，只用于安排精力，不代表录取概率。S 级观察池可能比 B+ 当前岗更适合你，但不能把未开放岗位当作可投。</p>
+      <p><strong>证据说明：</strong>官方公告/职位池优先；高校就业网、招聘汇总只补充日期和岗位摘要。卡片写“辅证、待核、往届”的内容，提交前必须回官方入口确认。</p>
+      <p>页面不包含姓名、电话、邮箱等个人信息。核查日：2026-08-21。</p>
+    </footer>
+  </div>
+
+  <script>
+    const TODAY = new Date(2026, 7, 21);
+    const DAY = 86400000;
+    const DATA = [{"name":"天翼云","en":"CTYun · 中国电信","fit":97,"tier":"S","status":"open","track":"ai","ownership":"央企专业公司","city":"北京 / 上海 / 广州 / 深圳 / 成都 / 厦门 / 西安 / 石家庄","xian":true,"due":"2026-10-03","action":"现在投；先锁算法工程师 / AI 后端 / 云计算研究员。","jobs":"算法工程师、后端开发（AI 方向）、云计算研究员、大数据开发、AI/大模型平台与云原生研发。","why":"你的快手经历不是普通“模型项目”，而是有线上 vv、互动和长期价值指标的生产级算法经历；这对国家云场景里的模型训练、评估、特征与工程落地非常有说服力。","risk":"公开口径显示每人仅 1 次投递、1 个意向，选岗成本高；不要把唯一志愿用在泛产品、交付或运维岗。10/03 为招聘转发口径，官方岗位上下线优先。","resume":"推荐/AI 版：快手三段放最前，突出因果去偏、GRPO、在线 A/B 与 PyTorch/C++；论文放后。","evidence":"国资委公告 + 官方招聘站；截止日为辅证","priority":1,"links":[["国资委启动公告","https://wap.sasac.gov.cn/n2588035/n2588325/n2588350/c35747841/content.html"],["天翼云官方网申","https://ctyun.hotjob.cn/"]],"note":"当前最适合你的央企技术入口之一：平台足够大，岗位又比集团泛招聘更聚焦。"},{"name":"招银网络科技","en":"CMB Network Technology","fit":96,"tier":"S","status":"open","track":"finance","ownership":"央企系金融科技","city":"深圳 / 杭州 / 成都","xian":false,"due":"2026-09-03","dueAlt":"第二批 2026-09-20 18:00","action":"优先赶 9/3 第一批；岗位名直接选“算法工程师”。","jobs":"算法工程师，以及与模型服务、智能风控、客户经营、数据平台相关的研发岗位。招聘专业公开包含数学类、统计学类。","why":"应用统计专业口径直接匹配；你的因果去偏、用户分层、多目标长期价值和在线实验，可以迁移成客户行为建模、营销偏差校正、生命周期价值与风险策略优化。","risk":"简历中未体现 SQL、传统表格模型与金融场景知识；面试前补齐 SQL、GBDT/LightGBM、AUC/KS/PSI、样本偏差与模型稳定性。","resume":"金融科技版：把“金币激励偏差”改写为“机制干预导致的行为观测偏差”；把 LT7 改写为长期价值/留存建模，不必堆推荐系统黑话。","evidence":"公司官网 + 招商银行官方职位页 + 高校官方转发","priority":1,"links":[["公司招聘官网","https://cmbnt.cmbchina.com/"],["招商银行校招职位","https://cmb-recruitment-mobile.paas.cmbchina.com/positionList/school?recruitmentTypeId=96574F8D-C7ED-4772-AE7C-BAC896D190C1"]],"note":"比传统银行分行科技岗更适合你；工程与算法含量更高。"},{"name":"中国移动九天人工智能","en":"China Mobile Jiutian AI","fit":95,"tier":"S","status":"verify","track":"ai","ownership":"央企 AI 专业机构","city":"北京 / 西安 / 广州 / 深圳","xian":true,"due":"2026-09-27","action":"现在核岗位；优先算法工程师 / 算法开发，避开明确博士限定岗。","jobs":"算法工程师、算法开发、AI 开发、大模型、强化学习、世界模型、数据架构等；当前公开项目同时含全职与“超级实习生”。","why":"你的 session 级 GRPO、延迟 reward、矩阵化分组和多维长期价值建模，能直接对应强化学习与模型优化叙事；西安也有工作地点。","risk":"部分大模型/世界模型岗位明确博士优先甚至博士限定。你应投“硕士可投”的通用算法与 AI 开发岗位，不要被高匹配关键词误导。9/27 为公开招聘汇总口径。","resume":"推荐/AI 版：把 GRPO 项目放第一，补一行训练规模、线上部署链路与工程性能；论文作为研究能力证明。","evidence":"中国移动官方职位入口 + 高校官方转发；截止为辅证","priority":1,"links":[["九天官方校招职位","https://job.10086.cn/touch/personal/campus/campus_job_list.html?cId=249"],["中国移动校招总入口","https://job.10086.cn/touch/personal/campus/"]],"note":"留西安与继续做前沿算法可以兼顾，但必须逐岗看学历。"},{"name":"中国电信集团 · 优才 / 研发 / 产数","en":"China Telecom","fit":94,"tier":"S","status":"soon","track":"ai","ownership":"中央企业集团统招","city":"全国；可重点筛北京 / 上海 / 成都 / 西安及专业公司","xian":true,"start":"2026-08-24","action":"8/24 开放后首日筛“研发、产数、优才计划”；不要泛投九大类。","jobs":"集团研发、产数，以及聚焦人工智能、大数据、云计算、IT/ICT、未来网络、物联网等方向的“优才计划”。","why":"西交大背景、算法线上产出、论文与竞赛共同满足“重点高校 + 技术研发 + 科研潜力”的组合；比普通数据分析岗更应冲专业公司与研究型单位。","risk":"集团职位量大且质量差异很大。网络维护、销售服务、综合支撑与目前履历不匹配；必须按单位、城市和岗位原文筛选。","resume":"研究院/AI 版：第一页只保留最强算法成果；求职意向写“人工智能算法 / 数据智能 / 研发”，不要写宽泛“数据分析”。","evidence":"中国电信集团官方公告与官方招聘网站","priority":1,"links":[["集团官方公告","https://www.chinatelecom.com.cn/ct/zp/168256.html"],["官方招聘网站","https://job.chinatelecom.com.cn/"]],"note":"公告已发，但官方明确 8/24 才开始申请。"},{"name":"中国电信人工智能研究院 TeleAI","en":"TeleAI · China Telecom AI Institute","fit":92,"tier":"A+","status":"past","track":"ai","ownership":"中央企业人工智能研究院","city":"北京 / 上海","xian":false,"due":"2026-08-15","action":"Top Talent 提前批已过；8/24 集团正式批开放后，第一时间筛人工智能公司/研究院的硕士可投岗位。","jobs":"研究员、研究科学家，以及智传网、世界模型、AI Infra、AI 安全、具身智能等前沿方向；具体以集团正式批职位池为准。","why":"session 级 GRPO 与延迟 reward 能证明强化学习和长期优化能力，Mamba 地震反演论文补足研究潜力，快手线上结果又能证明工程落地。","risk":"Top Talent 已于 8/15 结束，且研究科学家和部分前沿方向偏博士、顶会与机器人背景。你应筛硕士可投的研究员/算法工程岗位，不要因为“世界模型/强化学习”关键词就忽略实际研究域。","resume":"研究院/AI 版：GRPO 与论文并列靠前，保留 Under Review 原表述；补训练规模、实验设计与工程实现，不包装不存在的具身/LLM 经历。","evidence":"中国电信官方 Top Talent 2027 公告 + 集团正式批入口","priority":2,"links":[["TeleAI 官方 2027 公告","https://www.chinatelecom.com.cn/ct/zp/167276.html"],["中国电信招聘网站","https://job.chinatelecom.com.cn/"]],"note":"研究潜力匹配度高，但当前是“过窗后等待正式批”，不是现成可投入口。"},{"name":"浪潮集团","en":"Inspur","fit":93,"tier":"S","status":"open","track":"ai","ownership":"山东省属国企","city":"济南 / 北京 / 天津 / 青岛 / 成都 / 重庆 / 苏州等","xian":false,"due":"2026-08-31","action":"提前批本周完成；优先 AI 算法 / 大模型算法 / 具身智能算法。","jobs":"AI 算法工程师、大模型算法架构师、具身智能算法工程师，以及数据库、高性能计算和软件研发。","why":"你具备深度模型、强化学习、线上实验和 C++/Python；模型创新与工程落地两端都有证据，比只有竞赛或论文的候选人完整。","risk":"大模型/具身岗位会追问 LLM、后训练、分布式训练或视觉/机器人细节；没有真实经历的方向不要硬包装。8/31 为提前批公开口径。","resume":"推荐/AI 版：突出模型结构创新、stop-gradient、训练稳定性与纯矩阵实现；准备把推荐方法迁移到通用 AI 的解释。","evidence":"2027 官方招聘站 + 招聘转发补充截止","priority":1,"links":[["浪潮 2027 官方招聘","https://career.inspur.com/campus2027/"],["校招职位页","https://career.inspur.com/campus2027/campus.html"]],"note":"提前批不影响正式批的公开口径下，投入产出比很高。"},{"name":"中科曙光","en":"Sugon","fit":92,"tier":"A+","status":"open","track":"ai","ownership":"国资背景高科技企业","city":"北京 / 天津 / 成都及全国研发与分支机构，按岗确认","xian":false,"due":"2026-09-15","action":"本周投；优先人工智能算法 / AI 应用研发 / 模型与框架优化。","jobs":"人工智能算法、AI 应用研发、高性能计算、AI 框架优化、算法移植优化、云计算与大数据研发。","why":"快手项目能证明模型并非停留在论文：你做过训练图、特征交叉、在线排序与真实指标；C++ 也为高性能计算/框架岗位提供基础。","risk":"部分岗位更偏系统、编译器和高性能优化。若投框架方向，要补 C++、并行计算、CUDA/算子与 Linux 性能分析；9/15 为公开招聘排期。","resume":"研究院/AI 版：项目描述多写训练、部署、复杂度和性能，不只写业务指标。","evidence":"2027 官方招聘入口 + 高校/企业公众号排期","priority":2,"links":[["中科曙光校招","https://go.sugon.com/campus"]],"note":"适合“算法 + 工程”双强路线，不是纯推荐岗位。"},{"name":"中国人保科技 / 理工专项","en":"PICC Tech & STEM Track","fit":90,"tier":"A+","status":"open","track":"finance","ownership":"中央金融企业","city":"北京及全国成员单位","xian":true,"due":"2026-09-01","dueAlt":"统筹总通道至 2027-04-25；热门本级更早","action":"9/1 前先核科技/理工专项；优先人保科技、集团科技与数据岗。","jobs":"人工智能、大数据、算法、数据科学、风险量化、精算建模、网络安全与科技研发。","why":"因果去偏对应保险营销与渠道干预偏差，多目标长期价值对应客户留存与价值经营；统计学本身也比纯计算机背景更适配模型解释与风险分析。","risk":"不要因为集团总通道很长而拖延；也不要投泛保险业务或基层综合岗。金融版简历要补模型稳定性、可解释性、合规与数据质量意识。","resume":"金融科技版：线上指标保留，但把业务语言换成客户行为、风险与长期价值；突出置信降权和偏差约束。","evidence":"官方招聘门户；专项截止和本级节奏由公开招聘说明补充","priority":1,"links":[["中国人保官方招聘","https://picc.zhiye.com/"]],"note":"匹配的是“人保科技/科技类”，不是所有人保岗位。"},{"name":"交银金融科技","en":"BOCOM FinTech","fit":91,"tier":"A+","status":"verify","track":"finance","ownership":"国有银行金融科技子公司","city":"上海","xian":false,"due":"2026-09-30","action":"现在在交行官网核 2027 子公司职位；优先 AI 算法 / 数据。","jobs":"人工智能/算法、数据、研发工程师，以及智能风控、大数据分析与数字化解决方案。","why":"生产级排序、长期 reward 与在线评估，能转换成金融决策模型、客户经营和智能风控；应用统计专业也对口。","risk":"当前具体日期与岗位细节主要来自招聘转发，最终以交行官网职位状态为准。需要准备 SQL、经典统计建模、时间穿越/数据泄露和模型监控。","resume":"金融科技版：突出样本偏差、延迟标签、模型校准、稳定性和长期指标；减少“Feed/精排”术语。","evidence":"交通银行官方招聘入口 + 当前招聘转发","priority":2,"links":[["交通银行官方招聘","https://job.bankcomm.com/index.do"]],"note":"岗位方向合适，但要二次确认 2027 批次与具体截止。"},{"name":"中汽中心","en":"CATARC","fit":89,"tier":"A+","status":"open","track":"industrial","ownership":"中央企业科研机构","city":"天津为主；深圳等子机构按岗","xian":false,"action":"现在投提前批；只筛人工智能 / 智能数据分析 / 算法方向。","jobs":"人工智能、智能驾驶数据、智能数据分析、环境感知、智能座舱、信息安全等研发领域。","why":"你有统计建模、深度学习、在线实验和论文研究能力，适合智能数据分析、用户/驾驶行为建模与算法评估，明显优于机械测试类岗位。","risk":"大量岗位偏车辆工程、感知或控制，专业对口要求可能严格；不要因“人工智能”大类就投 CV/控制细分。","resume":"研究院/工业 AI 版：强调数据建模、实验设计、鲁棒性、模型评估；论文可放在快手之后。","evidence":"中汽中心官方 2027 提前批招聘页","priority":2,"links":[["中汽中心官方招聘","https://dhr.catarc.ac.cn/RedseaPlatform/zhaopin/zpChannelQrCode/campus_recruit/officeWebsite.mob"]],"note":"选对细分方向会很合适，选错会瞬间变成机械/感知错配。"},{"name":"东风汽车研发总院","en":"Dongfeng R&D Institute","fit":87,"tier":"A","status":"open","track":"industrial","ownership":"中央企业研究院","city":"武汉","xian":false,"due":"2026-10-15","action":"投 AI 与大模型开发、用户洞察及感知；不投传统整车硬件。","jobs":"AI 与大模型开发、汽车智能化研发、用户洞察及感知、数字设计等。","why":"用户兴趣、序列建模、长期留存和人群差异化建模，可迁移到车机内容、用户运营、智能座舱和客户洞察；线上工程经历是加分项。","risk":"不是典型推荐系统团队，岗位可能偏大模型应用或智能驾驶。申请前看 JD 是否真正需要机器学习/数据，而非车辆控制或感知硬件。","resume":"工业 AI 版：用“个性化建模、长期价值、行为数据”连接智能座舱与用户洞察。","evidence":"东风官方校招入口 + 官方公众号转发；10/15 为高校页面有效期","priority":2,"links":[["东风校园招聘","https://www.dfmc.com.cn/zhaopin/xiaoyuanzhaopin.html"]],"note":"匹配点在 AI/用户数据，不在汽车机械本体。"},{"name":"中国电科 50 所","en":"CETC 50","fit":86,"tier":"A","status":"open","track":"industrial","ownership":"中央企业研究所","city":"上海","xian":false,"due":"2026-10-19","action":"只投 AI 数据处理 / 算法仿真；先核专业目录是否接受统计/数学。","jobs":"AI 数据处理研究、算法仿真（AI/信号/通信）、移动通信算法仿真、应用软件开发。","why":"你有模型研发、矩阵化实现、C++/Python 与论文能力，适合算法仿真和数据研究；比纯通信系统总体岗更匹配。","risk":"专业代码、涉密要求和通信背景是主要不确定项；如果 JD 只列通信/电子/计算机且不接受数学统计，不建议硬投。10/19 为辅证。","resume":"研究院版：论文、建模竞赛与算法工程并列；删掉过度互联网化的业务词，保留方法与验证。","evidence":"中国电科官方职位池 + 研究所招聘转发","priority":2,"links":[["中国电科官方职位池","https://cetc.iguopin.com/job-campus"]],"note":"是“可投的算法研究岗”，不是因为电科两个字就通投。"},{"name":"中科芯 / 中国电科 58 所","en":"CETC 58 · ChinaKey","fit":82,"tier":"B+","status":"open","track":"industrial","ownership":"中央企业研究所","city":"无锡 / 南京 / 西安 / 武汉 / 成都","xian":true,"due":"2026-09-02","action":"仅作备选；只看 AI 算法岗，慎投 AI 编译器/GPU SDK。","jobs":"AI 算法工程师、AI 编译器、GPU SDK、传统编译器及芯片相关软件。","why":"深度学习框架、C++ 和模型实现有一定迁移性，且有西安岗位。","risk":"整体重心仍是芯片、编译器和底层软件，与你的推荐/统计主线差距明显；没有 LLVM/CUDA/编译器经验时，不要把它列为主攻。","resume":"研究院版；仅在真实具备 C++/系统能力时补充底层实现细节。","evidence":"2027 官方专题站 + 中国电科职位池","priority":3,"links":[["中科芯 2027 招聘","https://campus.51job.com/zkx2027"],["中国电科职位池","https://cetc.iguopin.com/job-campus"]],"note":"保留是因为 AI 岗与西安地点；并非强匹配。"},{"name":"联通数字科技","en":"China Unicom Digital Tech","fit":86,"tier":"A","status":"verify","track":"ai","ownership":"央企全资数字科技公司","city":"北京 / 南京 / 西安 / 杭州 / 深圳 / 成都 / 济南 / 广州等","xian":true,"action":"关注 2027 正式岗位更新；优先技术研发、AI、大数据，不投纯交付。","jobs":"技术研发、人工智能、大数据、云计算、数据智能与行业模型；公开宣讲显示多地招聘。","why":"应用统计 + 推荐算法实战适合数据智能与 AI 研发；西安也是公开工作地点之一。","risk":"联通数科很多岗位偏解决方案、项目实施和政企交付，技术含量差异大；官方职位页需逐岗二次核验。","resume":"AI/工业版：突出可落地算法、Kafka/工程协同和业务指标；把纯研究表述压缩。","evidence":"官方国聘主页/联通招聘入口 + 2027 宣讲转发","priority":2,"links":[["中国联通招聘","https://zglt.iguopin.com/job"],["联通数科国聘主页","https://www.iguopin.com/company?id=10685311791703539"]],"note":"适合选“研发型岗位”，不适合把所有数科岗位都当算法。"},{"name":"天翼物联 · 优才计划","en":"CTWing","fit":83,"tier":"B+","status":"open","track":"industrial","ownership":"央企专业公司","city":"南京等研发与业务所在地，按岗确认","xian":false,"action":"只看 AIoT 算法、数据、平台研发；通信协议/网络岗不优先。","jobs":"物联网平台、AIoT、端云协同、数据智能、网络与安全、研发测试。","why":"生产级模型和工程能力可迁移到设备/用户行为数据与平台算法，统计背景有助于异常检测和预测。","risk":"专业偏通信、物联网与电子信息，推荐算法并非核心；专项又偏重点高校硕博，需看具体专业列表。","resume":"工业 AI 版：突出异常/偏差建模、时序与在线系统，弱化内容推荐语境。","evidence":"中国电信官方 2027 优才公告","priority":3,"links":[["中国电信招聘公告栏","https://www.chinatelecom.com.cn/ct/zp/"]],"note":"可投，但优先级明显低于天翼云和九天。"},{"name":"咪咕公司","en":"Migu · China Mobile","fit":98,"tier":"S","status":"watch","track":"rec","ownership":"中国移动内容专业公司","city":"北京 / 上海 / 成都 / 杭州等，按岗","xian":false,"action":"设为重点观察；正式批一开，优先投内容推荐 / 用户增长 / 内容理解。","jobs":"视频、阅读、音乐、体育与云游戏的内容理解、个性化推荐、用户增长、多模态与内容分发。","why":"这是央国企里与你快手经历最同构的业务：内容消费、互动、长期留存、作者/内容生态与多目标排序均可直接复用。","risk":"截至核查日未看到清晰的 2027 正式批职位池；不能拿历史职位当当前可投。","resume":"推荐算法版原样强化：因果去偏、GRPO 长期价值和生态治理都能完整讲，不需要大幅翻译。","evidence":"中国移动官方公司页；正式批状态待更新","priority":1,"links":[["咪咕官方校招页","https://job.10086.cn/touch/personal/campus/campus_job_list.html?cId=85"],["中国移动校招","https://job.10086.cn/touch/personal/campus/"]],"note":"岗位一旦开放，建议放进央企方向的第一梯队。"},{"name":"芒果TV","en":"Mango TV","fit":96,"tier":"S","status":"past","track":"rec","ownership":"湖南国资文化科技平台","city":"长沙","xian":false,"due":"2026-05-20","action":"青芒窗口已过；盯 2027 正式批或补录，不要重复投过期入口。","jobs":"推荐算法工程师、大模型算法（Agent/RAG）、推荐搜索产品、广告数据策略与用户增长。","why":"内容推荐、互动治理、用户长期价值与多模态标签都高度契合；论文还能补充研究能力。","risk":"已结束的青芒计划要求 2027 届累计实习约 6 个月；当前只能观察后续正式批/补录。","resume":"推荐算法版：将生态治理与多模态诱导识别放得更靠前，贴合内容平台。","evidence":"国家大学生就业平台/官方 Moka；本轮实习已截止","priority":1,"links":[["芒果TV 官方 Moka","https://app.mokahr.com/campus-recruitment/mgtv/44490?locale=zh-CN"]],"note":"高匹配，但当前状态不是“可投”。"},{"name":"中国航信 / 航旅纵横","en":"TravelSky / Umetrip","fit":94,"tier":"S","status":"verify","track":"rec","ownership":"中央企业","city":"北京","xian":false,"action":"官方校招页存在算法岗；提交前确认项目标签是否已切到 2027。","jobs":"算法工程师，以及旅客服务、航班预测、搜索推荐、用户运营与航旅数据智能相关场景。","why":"大规模用户行为、实时场景、延迟标签与长期复访都可映射；推荐经验比通用数据分析更有优势。","risk":"官方页面列出算法岗，但年份/批次在动态职位池中需登录确认；航旅纵横当前校招页岗位较少。","resume":"推荐算法版：强调 session、复访、实时流与用户长期价值；补充对高可靠系统的理解。","evidence":"中国航信官方校园招聘页与官方网申入口","priority":2,"links":[["中国航信官方校招页","https://www.travelsky.cn/travelsky/rlzy/rczp/xyzp/A069009003001Gone1.html"],["中国航信网申","https://www.hotjob.cn/wt/travelsky/web/index"],["航旅纵横招聘","https://www.umetrip.com.cn/recruit/detail/?type=campus"]],"note":"业务非常契合，当前要解决的是批次确认而非能力匹配。"},{"name":"昆仑数智","en":"CNPC Kunlun Digital Intelligence","fit":97,"tier":"S","status":"watch","track":"geo","ownership":"中国石油专业公司","city":"北京 / 成都 / 西安 / 兰州 / 乌鲁木齐 / 雄安","xian":true,"action":"建立 2027 提醒；开放后优先 AI 算法、数据分析、AI 开发与智能油气。","jobs":"往届明确招聘 AI 算法、大模型、数据分析、AI 开发、云计算、智能油气/炼化与工业 AI，且算法/数据岗位接受统计学类。","why":"这是你最独特的交叉优势：一边有真实线上算法系统，一边有地震速度反演一作论文；统计学专业又曾在招聘目录中被明确接受。","risk":"2027 批次尚未核到；部分前沿 AI 岗偏博士，但往届也有硕士可投的算法和数据岗位。不要只投咨询/实施。","resume":"地球物理 AI 版：论文放第一段，快手放第二段；标题写“AI 算法 / 智能地球物理 / 数据智能”。","evidence":"中国石油官方网申入口 + 往届高校官方招聘简章","priority":1,"links":[["中国石油校招平台","https://zhaopin.cnpc.com.cn/"]],"note":"从个人差异化与专业口径看，是最应该提前准备的一家。"},{"name":"东方地球物理公司 BGP","en":"CNPC BGP","fit":96,"tier":"S","status":"watch","track":"geo","ownership":"中国石油直属专业公司","city":"涿州 / 北京 / 西安 / 乌鲁木齐及国内外项目地","xian":true,"action":"秋招开放后查物探技术研究中心、中油软件、AI/数学/软件岗位。","jobs":"地震资料处理解释、速度建模与反演、物探软件、计算方法、AI 与高性能计算。","why":"你的论文题目就是地震速度反演，且强调状态空间模型、全局交互、鲁棒性与物理一致性；在央企候选人中辨识度极高。","risk":"很多岗位按地球物理/勘查技术等专业代码卡人。优先找同时接受数学、人工智能、计算机或软件的岗位；不要把“应用统计”自动等同于地球物理专业。","resume":"地球物理 AI 版：论文置顶并列出 5 个基准集、复杂度与物理一致性；快手证明工程化和大规模训练能力。","evidence":"中国石油招聘平台 + BGP 官方公司入口；当前 2027 未开","priority":1,"links":[["中国石油校招平台","https://zhaopin.cnpc.com.cn/"],["BGP 官网","https://www.bgp.com.cn/"]],"note":"研究方向高度吻合，主要障碍是专业目录而不是能力。"},{"name":"中石化经纬 / 石油物探技术研究院","en":"Sinopec Jingwei & Geophysical R&D","fit":94,"tier":"S","status":"watch","track":"geo","ownership":"中国石化专业公司/研究机构","city":"青岛 / 成都 / 南京等，按单位与岗位","xian":false,"action":"9 月起重点盯中国石化统一招聘；搜“人工智能、物探、地球物理、算法”。","jobs":"往届有人工智能岗、物探技术、地质测控、地震资料处理解释与研发岗位。","why":"地震反演论文直接匹配，快手经历又能证明现代深度学习、强化学习与工程化能力，不会被局限为传统物探候选人。","risk":"经纬与各研究院是不同招聘主体；专业目录可能精确到地球物理。应用统计只能投明确接受数学/AI/数据的细分。","resume":"地球物理 AI 版；准备说明深度模型如何满足物理约束、泛化与工业可解释性。","evidence":"中国石化官方招聘入口 + 往届招聘信息；当前 2027 未开","priority":1,"links":[["中国石化招聘网","https://job.sinopec.com/"]],"note":"高度契合，但必须按单位、岗位专业表筛选。"},{"name":"中海油研究总院","en":"CNOOC Research Institute","fit":91,"tier":"A+","status":"watch","track":"geo","ownership":"中国海油研究机构","city":"北京","xian":false,"action":"秋招开放后筛地球物理、智能化、油气人工智能；先看专业要求。","jobs":"勘探地球物理、智能化与数字化、油气人工智能、数据与科研技术方向。","why":"论文方向与研究总院业务高度一致；快手的大规模模型与实验能力能补强“AI for Energy”叙事。","risk":"往届地球物理岗位通常列非常精确的专业名称，且研究总院竞争强。应用统计可能只能投智能化/AI 交叉岗。","resume":"地球物理 AI 版：论文第一，强调物理一致性；不把 Under Review 写成已发表。","evidence":"中国海油官方招聘入口 + 往届研究总院公告；当前 2027 未开","priority":2,"links":[["中国海油人才招聘","https://www.cnooc.com.cn/zyzx/"],["中国海油网申","https://cnooc.zhaopin.com/"]],"note":"研究契合度高，专业代码风险也高。"},{"name":"宝信软件","en":"Baosight","fit":89,"tier":"A+","status":"watch","track":"industrial","ownership":"中国宝武旗下国有科技企业","city":"上海 / 武汉 / 南京 / 湛江等，按岗","xian":false,"action":"正式批开放后搜 AI、数据挖掘、工业算法、智能制造。","jobs":"工业 AI、数据挖掘、生产优化、智能制造、工业互联网、大数据与算法研发。","why":"因果去偏与长期价值说明你会处理复杂观测偏差和多目标优化；论文又说明你能把深度模型用于物理场景。","risk":"工业算法岗常要求 SQL、Linux、时序/优化与现场业务理解；这些能力在当前简历中未充分展示。","resume":"工业 AI 版：突出偏差建模、优化目标、鲁棒性和工程落地；如确实熟练，补 SQL/Linux。","evidence":"公司官方入口 + 往届招聘岗位；当前 2027 未核到","priority":2,"links":[["宝信软件官网","https://www.baosight.com/"]],"note":"是“工业算法”高匹配，不是钢铁生产通用岗。"},{"name":"南网数字集团","en":"CSG Digital","fit":88,"tier":"A+","status":"past","track":"industrial","ownership":"南方电网数字化专业公司","city":"广州 / 深圳 / 贵阳等，按岗","xian":false,"action":"2027 暑期实习已过；重点盯秋招正式批与数字电网 AI 岗。","jobs":"人工智能、数据分析、数字电网、调度与预测、平台研发、网络安全。","why":"统计建模、强化学习与延迟长期指标可迁移到负荷预测、异常检测、调度优化与客户数据智能。","risk":"电力专业和项目交付岗位占比高；只选明确 AI/数据/算法岗位。此前实习窗口已结束。","resume":"工业 AI 版：强调时序、优化、可靠性和模型治理；弱化内容业务名词。","evidence":"南方电网官方招聘入口 + 已结束的 2027 实习信息","priority":2,"links":[["南方电网招聘","https://zhaopin.csg.cn/"]],"note":"值得盯正式批，但当前不是可投窗口。"},{"name":"国网信通产业集团 / 南瑞集团","en":"SGIT / NARI","fit":86,"tier":"A","status":"watch","track":"industrial","ownership":"国家电网科技产业单位","city":"北京 / 南京 / 武汉 / 成都等，按单位","xian":false,"action":"等国家电网 2027 批次；优先 AI、数据、平台和电力数字化研发。","jobs":"人工智能、数据平台、智能调度、负荷预测、工业软件、云与网络安全。","why":"方法能力适配预测、优化与数据智能；研究论文也能证明复杂物理数据建模能力。","risk":"国家电网招聘常按专业目录和考试批次管理；应用统计是否可报必须逐岗确认。很多岗位不是算法研发。","resume":"研究院/工业 AI 版：强调数学统计基础、模型鲁棒性、可解释与工程实现。","evidence":"集团官方入口与往届招聘；当前 2027 未开","priority":3,"links":[["国家电网招聘","https://zhaopin.sgcc.com.cn/"],["南瑞集团官网","https://www.nari.com/"]],"note":"适合作为电力数字化观察项，不建议提前投入大量定制成本。"},{"name":"中国银联 / 银联数据","en":"China UnionPay / CUP Data","fit":89,"tier":"A+","status":"watch","track":"finance","ownership":"国有金融基础设施/控股科技公司","city":"上海为主；分公司按岗","xian":false,"action":"等 2027 正式批；重点搜算法研究、数据挖掘、风险策略、客户行为预测。","jobs":"算法研究、数据挖掘、信用/市场风险模型、客户行为预测、精准营销、反欺诈与 AI 决策。","why":"统计专业直接对口；你的偏差校正、长期价值、用户行为和在线实验可迁移到风险/营销策略。","risk":"金融模型更看 SQL、表格数据、模型解释、稳定性和合规；深度推荐模型不是唯一优势。","resume":"金融科技版：把置信塔、自适应降权和因果约束解释为数据质量与稳健建模；补传统模型准备。","evidence":"官方招聘入口 + 往届招聘岗位；当前 2027 未开","priority":2,"links":[["中国银联招聘","https://join.unionpay.com/"],["银联数据招聘","https://cupdata.zhiye.com/"]],"note":"比普通银行柜面/运营岗更契合你的统计与算法背景。"},{"name":"建信金融科技","en":"CCB FinTech","fit":85,"tier":"A","status":"watch","track":"finance","ownership":"国有银行金融科技子公司","city":"上海 / 北京 / 厦门 / 广州 / 成都 / 武汉 / 深圳 / 苏州等","xian":false,"action":"等 2027 批次；优先人工智能、数据研发与分析，不投泛运营。","jobs":"人工智能、数据研发和分析、云计算、系统研发与金融科技产品。","why":"应用统计与深度学习背景匹配；推荐系统中对用户行为、偏差与长期价值的建模可迁移。","risk":"当前官网仍以 2026 春招信息为主；工作内容可能偏平台/项目交付。准备 SQL、Java/数据工程会提高适配度。","resume":"金融科技版：一页内保留两个最强快手项目和论文/竞赛，删除 AI 协同开发工具行。","evidence":"建设银行官方招聘页 + 往届岗位；当前 2027 未开","priority":3,"links":[["建设银行招聘","https://ccb.com/chn/job/org_index.html?orgId=8ba3bc9962e2c55501636c1220b10648&planType=XY"]],"note":"可作为金融科技第二梯队，优先级低于招银网络和银联数据。"},{"name":"中国电子云","en":"CEC Cloud","fit":84,"tier":"A","status":"watch","track":"ai","ownership":"中国电子旗下云平台","city":"北京 / 武汉 / 深圳等，按岗","xian":false,"action":"盯 2027 校招；只看算法、AI 平台、数据智能和云研发。","jobs":"云计算、AI 平台、大模型应用、数据智能、基础软件与安全可信云。","why":"生产级深度模型和算法工程能力可迁移到 AI 平台与行业应用。","risk":"不是推荐业务；部分岗位偏云基础设施、解决方案和信创交付，与你当前主线有距离。","resume":"AI/工业版：突出训练图、工程实现与模型服务，不强调作者追打等内容平台细节。","evidence":"公司官方招聘/加入页面；当前 2027 正式批未核到","priority":3,"links":[["中国电子云加入我们","https://cecloud.com/join.html"]],"note":"保留为国资云计算备选，不列第一梯队。"}];
+    const STATUS = {
+      open:["当前可投","b-open"],soon:["已公告·待开放","b-soon"],verify:["当前需二次核验","b-verify"],watch:["高匹配观察池","b-watch"],past:["本窗口已过","b-past"]
+    };
+    const TRACK = {rec:"内容推荐",ai:"AI / 云",finance:"金融科技",geo:"地球物理 AI",industrial:"工业 / 研究院"};
+    let filter="all", sortBy="priority";
+
+    function daysTo(iso){return iso?Math.round((new Date(iso+"T00:00:00")-TODAY)/DAY):null}
+    function urgency(item){
+      if(item.start){const d=daysTo(item.start);if(d>=0&&d<=7)return {cls:"soon",label:d===0?"今天开放":`${d} 天后开放`,text:item.start}}
+      if(item.due){const d=daysTo(item.due);if(d<0)return {cls:"past",label:"已过窗",text:item.due};if(d<=7)return {cls:"hot",label:d===0?"今天截止":`还剩 ${d} 天`,text:item.due};if(d<=21)return {cls:"hot",label:`还剩 ${d} 天`,text:item.due};return {cls:"",label:`还剩 ${d} 天`,text:item.due}}
+      if(item.status==="watch")return {cls:"watch",label:"等待 2027 正式批",text:"未见当前窗口"};
+      if(item.status==="past")return {cls:"past",label:"等待补录 / 正式批",text:item.due||"本窗口已过"};
+      if(item.status==="verify")return {cls:"watch",label:"今天复核职位池",text:"滚动 / 待核"};
+      return {cls:"",label:"尽早投递",text:"滚动 / 未见统一截止"};
+    }
+    function rank(item){
+      if(item.start){const d=daysTo(item.start);if(d>=0)return d-20}
+      if(item.due){const d=daysTo(item.due);if(d>=0)return d}
+      if(item.status==="open")return 40;
+      if(item.status==="verify")return 55;
+      if(item.status==="watch")return 200-(item.fit/10);
+      return 260;
+    }
+    function htmlEscape(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]))}
+    function card(item){
+      const st=STATUS[item.status], u=urgency(item);
+      const links=item.links.map(([t,h])=>`<a href="${h}" target="_blank" rel="noopener">${htmlEscape(t)}</a>`).join("");
+      const alt=item.dueAlt?` · ${htmlEscape(item.dueAlt)}`:"";
+      return `<article class="card st-${item.status}">
+        <div class="card-head"><div><div class="rankline"><span class="tier t-${item.tier}">${item.tier} 级</span><span class="badge ${st[1]}">${st[0]}</span><span class="badge b-track">${TRACK[item.track]}</span></div><h3 class="name">${htmlEscape(item.name)}</h3><div class="en">${htmlEscape(item.en)}</div></div><div class="score">${item.fit}<small>MATCH / 100</small></div></div>
+        <div class="fitbar"><i style="width:${item.fit}%"></i></div>
+        <div class="action-strip ${u.cls}"><span class="k">DATE</span><strong>${htmlEscape(u.text)}${alt}</strong><span class="pill">${htmlEscape(u.label)}</span></div>
+        <div class="facts"><span class="fact">${htmlEscape(item.ownership)}</span><span class="fact">${htmlEscape(item.city)}</span>${item.xian?'<span class="fact">含西安/西北</span>':''}</div>
+        <p class="field"><b>现在动作</b>${htmlEscape(item.action)}</p>
+        <p class="field"><b>优先岗位</b>${htmlEscape(item.jobs)}</p>
+        <p class="field"><b>为什么适合你</b>${htmlEscape(item.why)}</p>
+        <p class="field risk"><b>风险 / 缺口</b>${htmlEscape(item.risk)}</p>
+        <details class="more"><summary>展开：简历版本与证据</summary><p class="field"><b>简历版本</b>${htmlEscape(item.resume)}</p><p class="field"><b>证据状态</b>${htmlEscape(item.evidence)}</p></details>
+        <div class="links">${links}</div><p class="note">${htmlEscape(item.note)}</p>
+      </article>`;
+    }
+    function isUrgent(item){
+      const a=item.start?daysTo(item.start):null,d=item.due?daysTo(item.due):null;
+      return (a!==null&&a>=0&&a<=21)||(d!==null&&d>=0&&d<=21);
+    }
+    function match(item,q){
+      let ok=true;
+      if(filter==="now")ok=["open","soon","verify"].includes(item.status);
+      else if(filter==="urgent")ok=isUrgent(item);
+      else if(filter==="s")ok=item.tier==="S";
+      else if(["rec","ai","finance","geo","industrial"].includes(filter))ok=item.track===filter;
+      else if(filter==="xian")ok=!!item.xian;
+      else if(filter==="watch")ok=["watch","past"].includes(item.status);
+      if(!ok)return false;
+      if(!q)return true;
+      return JSON.stringify(item).toLowerCase().includes(q);
+    }
+    function sorted(list){return [...list].sort((a,b)=>sortBy==="fit"?b.fit-a.fit:sortBy==="due"?rank(a)-rank(b):(a.priority-b.priority)||rank(a)-rank(b)||b.fit-a.fit)}
+    function render(){
+      const q=document.getElementById("q").value.trim().toLowerCase();
+      const list=sorted(DATA.filter(x=>match(x,q)));
+      document.getElementById("grid").innerHTML=list.length?list.map(card).join(""):'<p class="empty">没有匹配项。换一个筛选或关键词。</p>';
+      document.getElementById("count").textContent=`显示 ${list.length} / ${DATA.length}`;
+    }
+    function renderActions(){
+      const soon=sorted(DATA.filter(isUrgent)).slice(0,8);
+      document.getElementById("action-grid").innerHTML=soon.map(x=>{const u=urgency(x);return `<div class="action ${u.cls==='hot'?'urgent':''}"><span class="date">${htmlEscape(u.text)}</span><b>${htmlEscape(x.name)}</b><p>${htmlEscape(x.action)}</p></div>`}).join("");
+      document.getElementById("n-urgent").textContent=soon.length;
+    }
+    document.querySelectorAll(".chip").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));btn.classList.add("active");filter=btn.dataset.filter;render()}));
+    document.getElementById("q").addEventListener("input",render);document.getElementById("sort").addEventListener("change",e=>{sortBy=e.target.value;render()});
+    document.addEventListener("keydown",e=>{if(e.key==="/"&&document.activeElement.id!=="q"){e.preventDefault();document.getElementById("q").focus()}});
+    document.getElementById("print-btn").addEventListener("click",()=>window.print());
+    const themeBtn=document.getElementById("theme-btn");function setTheme(t){document.documentElement.setAttribute("data-theme",t);themeBtn.textContent=t==="dark"?"浅色模式":"深色模式";try{localStorage.setItem("soe-personal-theme",t)}catch(e){}}
+    let theme="light";try{theme=localStorage.getItem("soe-personal-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}setTheme(theme);themeBtn.addEventListener("click",()=>setTheme(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark"));
+    const topBtn=document.getElementById("top-btn");topBtn.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));addEventListener("scroll",()=>topBtn.classList.toggle("show",scrollY>700),{passive:true});
+    renderActions();render();
+  </script>
+</body>
+</html>
