@@ -505,6 +505,28 @@
       .more[open] summary::after { display: none; }
     }
   </style>
+
+  <style id="incremental-enhancements">
+    /* Original stylesheet above is unchanged. Only new evidence controls and narrow-screen overflow are handled here. */
+    .audit-note{margin:0 0 12px;padding:10px 12px;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:12.3px;overflow-wrap:anywhere}
+    .audit-note.is-current{border-style:solid;border-left:3px solid var(--accent);background:var(--card-soft,var(--card2));color:var(--ink-soft,var(--soft))}
+    .audit-note strong{color:var(--accent);font-weight:600}.audit-note small{display:block;font-size:11.7px;margin-top:5px;color:var(--muted)}
+    .source-ref{font:11px var(--mono);color:var(--accent);text-decoration:none;white-space:nowrap}.source-ref:hover{text-decoration:underline}
+    .node-scope{margin:-5px 0 12px;font-size:11.8px;color:var(--muted);overflow-wrap:anywhere}.history-record{padding-top:10px;margin-top:10px;border-top:1px dashed var(--line)}
+    .history-record[open]{background:var(--card-soft,var(--card2));padding:10px;border-radius:10px}.history-record .field{font-size:12.6px}
+    .source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.source-entry{border:1px solid var(--line);border-radius:12px;padding:13px 14px;scroll-margin-top:180px;overflow-wrap:anywhere}
+    .source-entry b,.source-entry span{display:block}.source-entry b{font-size:13px}.source-entry span{font-size:11.8px;color:var(--muted);margin-top:4px}.source-entry p{font-size:12.6px;color:var(--muted);margin:8px 0}.source-entry a{font-size:12px;color:var(--accent)}
+    .source-entry:target{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft,var(--accent2))}.supplement-note{font-size:12.8px;color:var(--muted);margin:0 0 12px}.supplement-note strong{color:var(--accent)}
+    .rail-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}.rail-controls .ghost[aria-pressed=true]{background:var(--ink);color:var(--paper)}.rail-controls .count{margin-left:auto;font-size:11px}
+    .rail .date small{display:block;font-size:10.5px}.rail-note{display:block;font-size:11.6px;color:var(--muted);margin:2px 0 2px;line-height:1.55}.rail-kind{font-size:9.5px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 4px;white-space:nowrap}.rail-original{font-size:11.8px;color:var(--muted);margin:3px 0}.rail-original summary{cursor:pointer;color:var(--accent)}
+    .rail .k-unverified .dot{border-color:var(--intern,var(--gold));border-style:dashed}.rail .k-exam .dot{border-color:var(--see,var(--navy));background:var(--see-bg,var(--navy2))}.rail .k-quota .dot{border-color:var(--accent)}
+    #timeline,#audit-panel{scroll-margin-top:18px}.rail li{scroll-margin-top:180px}.rail .txt{min-width:0;overflow-wrap:anywhere}.rail li.is-past{opacity:.6}
+    .card .links a,.card .field,.card .note{overflow-wrap:anywhere}.card .links a{max-width:100%}.fact{white-space:normal;overflow-wrap:anywhere}.card-head>div:first-child{min-width:0}
+    .audit-footer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.stats .stat span{overflow-wrap:anywhere}
+    @media(max-width:820px){.topbar{flex-wrap:wrap}.top-actions{flex-wrap:wrap;gap:6px}.hits{grid-template-columns:1fr}.source-grid{grid-template-columns:1fr}.rail-controls .count{width:100%;margin:0}.due-v{font-size:13px}.ghost{white-space:normal}.filters input[type=search]{width:100%;min-width:0}.filters>*{max-width:100%}.toolbar .filters{gap:6px}}
+    @media(max-width:380px){.topbar{align-items:flex-start;flex-direction:column}.top-actions .ghost{font-size:11.5px;padding:6px 10px}.rail li{grid-template-columns:18px 59px minmax(0,1fr);gap:6px}.card{padding-left:14px;padding-right:14px}.badge{font-size:10.5px}.score{width:54px;height:54px}.name{font-size:24px}}
+    @media print{.rail-controls,.audit-footer-actions,.source-index>summary{display:none!important}.history-record:not([open]){display:none}.source-grid{grid-template-columns:1fr}.audit-note{break-inside:avoid}}
+  </style>
 </head>
 <body>
   <div class="wrap">
@@ -513,28 +535,29 @@
       <div class="top-actions">
         <a class="ghost" href="soe.html">央国企精准版</a>
         <a class="ghost" href="#changelog">更新日志</a>
+        <a class="ghost" href="#timeline">时间线</a>
         <button class="ghost" id="theme-btn" type="button">深色模式</button>
       </div>
     </div>
     <header class="hero">
-      <div class="kicker">Autumn Campus · RecSys · 2026-08-31 · 第四轮对照</div>
+      <div class="kicker">Autumn Campus · RecSys · 2026-09-13 · 原版保留复核</div>
       <h1>32 家秋招核查<em>哪些是官网亲见，哪些是转载</em></h1>
-      <p class="lede">本轮继续用本机 Chrome 复核动态校招站，并以官网职位池、FAQ 和公告为主证据。8/31 已确认携程、网易和微博 2027 正式批开放，新增度小满与 Wind；同时把校园池为空、只剩旧批次或毕业窗口冲突的入口明确降级，避免把历史岗位当成现在可投。</p>
+      <p class="lede">保留原有32家核心名单、中厂补网、官网推荐岗摘要和完整时间线；本轮回查正式批、笔试与截止口径。旧岗位细节不删除，未重核的数量与规则明确标为历史快照；新增内容沿用原卡片与分析格式。</p>
       <div class="meta">
-        <span>本轮核查日：2026-08-31</span>
+        <span>本轮核查日：2026-09-13</span>
         <span>快照基线：2026-08-17</span>
         <span>对象：2027 届</span>
-        <span>主证据：Playwriter 官网亲见</span>
+        <span>本轮证据：官网正文 / 高校 / 转载分层</span>
         <span>辅证据：官网 FAQ / 笔试日历 / 高校就业网 / 新闻 / 牛客</span>
       </div>
     </header>
 
     <section class="stats">
-      <div class="stat is-hot"><b id="n-due">0</b><span>45 天内截止，先投</span></div>
-      <div class="stat"><b id="n-open">0</b><span>秋招已开，可网申</span></div>
+      <div class="stat is-hot"><b id="n-due">0</b><span>45 天内节点（含待核）</span></div>
+      <div class="stat"><b id="n-open">0</b><span>核心本届已开（含历史证据）</span></div>
       <div class="stat"><b id="n-rec">0</b><span>明确写了推荐 / 搜广推</span></div>
-      <div class="stat"><b id="n-see">0</b><span>Playwriter 官网亲见</span></div>
-      <div class="stat"><b id="n-wait">0</b><span>27 届秋招未见正式公告</span></div>
+      <div class="stat"><b id="n-see">0</b><span>核心官网证据（含8月亲见）</span></div>
+      <div class="stat"><b id="n-wait">0</b><span>核心待开 / 待核</span></div>
     </section>
 
     <section class="panel" id="changelog">
@@ -545,6 +568,7 @@
 
     <section class="panel method">
       <h2>这些信息是 Playwriter 实现的吗？</h2>
+      <p class="supplement-note"><strong>9/13 说明：</strong>以下原版方法说明完整保留，指8月记录。本次通过网页检索、可读正文与官方附件复核，未重新使用Playwriter；旧亲见不冒充今日现场。</p>
       <p><strong>不完全是。</strong>放出时间和岗位摘要仍有一部分来自高校就业网与招聘转发；状态变化则尽量回到官网动态职位池核验。Boss 直聘的反爬空白不作为现场证据，无法进入职位池的公司也不会据此写成“可投”。</p>
       <ul>
         <li><strong>Playwriter 亲见（本轮或上轮打开并抽出文字）</strong>：腾讯、字节、阿里、美团、快手、小米、蚂蚁、滴滴、拼多多、B 站、OPPO、得物、小红书、网易、京东首页、华为首页、vivo 校招首页、Shopee Moka、TME、微博 Moka、Soul 飞书、哈啰、360、好未来、携程校招页。</li>
@@ -557,6 +581,7 @@
 
     <section class="panel">
       <h2>本轮官网亲见的推荐岗</h2>
+      <p class="sub"><strong>原版8月亲见摘要，完整保留。</strong>下列106、481、16等是原日期关键词结果，不是本轮实时岗位数；可能混有实习/社招。TME社招不可当校招证据；当前变化见卡片及本轮日志。</p>
       <div class="hits">
         <div class="hit"><b>腾讯 · 搜「推荐」106 岗</b><span>正式批标题就是「算法-推荐算法方向」（应届 / 应届实习，深/北/上/广，CDG·CSIG·IEG·PCG·WXG）。青云课题含视频号 Scaling Up、微信小店生成式推荐、PCG TRS、广告推荐大模型。</span></div>
         <div class="hit"><b>字节 · 关键词「推荐」481 条（勾了 2027 校招项目）</b><span>正式岗亲见：番茄 / 头条 / 抖音 / 抖音电商&amp;直播 / TikTok Shop / TikTok 算法「推荐大模型」「短剧推荐」。ByteIntern 写明面向 2026.09–2027.08 毕业。</span></div>
@@ -573,14 +598,20 @@
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel" id="timeline">
       <h2>2027 届时间线</h2>
-      <p class="sub">灰点是放出，红点是截止。淡掉的是已经过去的日子，高亮那条是今天。</p>
+      <p class="sub">保留全部原始节点并补充本轮事件；原节点出自8月快照，新证据标注来源。灰点为放出，红点为有本轮来源的网申节点，蓝点为笔试，虚线点为待核；专项与次数窗口单独说明。已过去的淡化，高亮是北京时间今天。</p>
+      <div class="rail-controls"><button class="ghost" type="button" data-rail-filter="all" aria-pressed="true">完整时间线</button><button class="ghost" type="button" data-rail-filter="future" aria-pressed="false">从今天起</button><button class="ghost" type="button" data-rail-filter="deadline" aria-pressed="false">网申节点</button><button class="ghost" type="button" id="jump-today">定位今天 ↓</button><span class="count" id="rail-count"></span></div>
       <ol class="rail" id="rail"></ol>
     </section>
 
     <section class="panel">
-      <h2>最近要关的窗</h2>
+      <h2>最近要关的窗</h2><p class="sub">9/13 本轮提醒：日期范围与证据一起看，不将专项/笔试混成公司截止。</p><div class="hits">
+        <div class="hit"><b>9/15 · vivo 12:00 网申 / 15:00 研发笔试</b><span>保留两节点，但时间来自高校索引与旧通稿，官网动态正文尚待确认；按个人通知准备。</span> <a class="source-ref" href="#src-R05">[R05]</a></div>
+        <div class="hit"><b>现在核 · 拼多多 / 小红书 / SHEIN 正式项目</b><span>已不适合继续等旧版“未开”。拼多多为官网页面、小红书为高校发布，SHEIN为官方索引；具体推荐JD另核。</span> <a class="source-ref" href="#src-R01">[R01]</a> <a class="source-ref" href="#src-R02">[R02]</a> <a class="source-ref" href="#src-R03">[R03]</a></div>
+        <div class="hit"><b>9/20 · 去哪儿保守复核提醒</b><span>原9/20与9/30冲突未解决，先核再投。9/13货拉拉GMT和9/19同花顺博士专项不算硕士推荐主线截止。</span></div>
+        <div class="hit"><b>10/11 有道笔试 · 10/16 雷火网申</b><span>有道10:00起笔试，以邮件为准；雷火10/16截止只适用于雷火，不外推至云音乐和网易互联网。</span> <a class="source-ref" href="#src-R06">[R06]</a> <a class="source-ref" href="#src-R07">[R07]</a></div>
+      </div><details class="more history-record"><summary>展开：原版8/31近窗摘要（完整保留，非当前提醒）</summary>
       <div class="hits">
         <div class="hit"><b>8 月 31 日新开 · 网易有道；近期新开 · 携程 / 微博</b><span>网易官网已有互联网、互娱、雷火三条 2027 项目；有道公开简章 8/31 启动。携程 8/26 开放 2027 校招并可筛出 11 个算法岗；微博当前技术项目有广告算法等 8 岗。</span></div>
         <div class="hit"><b>现在补投 · 度小满 / Wind</b><span>度小满 8/18 启动 2027，AI/机器学习方向对口。Wind 官网有“AI 算法工程师（推荐算法）”，明确接受数学/统计，但 JD 毕业年份字段与 2027 页头冲突，提交前先向 HR 核验资格。</span></div>
@@ -589,17 +620,17 @@
         <div class="hit"><b>9 月下旬 · 去哪儿 / 滴滴未来精英 / 挚文网申 / 同花顺</b><span>去哪儿保守 9/20（岗位页有写 9/30）。滴滴未来精英到 9/23。挚文第三方 10/09。同花顺博士推荐专项第三方约 9/19。</span></div>
         <div class="hit"><b>10–11 月 · B 站 / 腾讯 / 京东 / Shopee / 米哈游</b><span>B 站牛客 10/03。腾讯牛客日程 10/11（非官网）。京东新星+新锐 11/30。Shopee 高校页 11/30、限 1 志愿。米哈游 10/31 24:00，全程只能投 1 岗。</span></div>
       </div>
-    </section>
+    </details></section>
 
     <div class="toolbar">
       <div class="filters">
         <button class="chip active" data-filter="all">全部</button>
-        <button class="chip" data-filter="urgent">45 天内截止</button>
+        <button class="chip" data-filter="urgent">45 天内节点</button>
         <button class="chip" data-filter="open">秋招已开</button>
         <button class="chip" data-filter="rec">明确推荐岗</button>
         <button class="chip" data-filter="see">官网亲见</button>
         <button class="chip" data-filter="intern">实习/专项</button>
-        <button class="chip" data-filter="wait">还没正式开</button>
+        <button class="chip" data-filter="wait">待开 / 待核</button>
         <button class="chip" data-filter="rev">本轮更新</button>
         <button class="chip" data-filter="extra">中厂补网</button>
         <input type="search" id="q" placeholder="搜公司 / 城市 / 岗位 / 职位 ID  （按 / 聚焦）" />
@@ -619,12 +650,19 @@
       <div class="grid" id="extra"></div>
     </section>
 
+<section class="panel" id="audit-panel" style="margin-top:20px">
+      <h2>本轮复核与原版对照</h2>
+      <p class="sub" id="audit-count"></p>
+      <p class="supplement-note"><strong>核查日 2026-09-13 · 页面定位日 <span id="clock-date"></span>（北京时间）</strong><br>日期会随打开时间变化；招聘信息不会自动联网刷新。原版板块、卡片、评分与分析保留，旧事实与本轮证据分开。不把网页读取失败当停招，不把专业相近当资格通过。</p>
+      <details class="more source-index" id="source-index"><summary>展开：本轮来源、读取范围与未核清事项</summary><div class="source-grid" id="source-list"></div></details>
+      <div class="audit-footer-actions"><button class="ghost" type="button" id="export-btn">导出当前数据 JSON</button><a class="ghost" href="#timeline">返回时间线</a></div>
+    </section>
     <button id="top-btn" type="button" title="回到顶部" aria-label="回到顶部">↑</button>
 
-    <footer>
+    <footer><p><strong>怎么读：</strong>现有推荐岗位细节保留，当前行动以卡片的本轮说明为准。旧“官网亲见”代表原8月记录。每个节点注明批次及来源，过了某专项日期不代表全公司关闭。</p><details class="more"><summary>原版页脚与导语存档</summary><p class="lede">本轮继续用本机 Chrome 复核动态校招站，并以官网职位池、FAQ 和公告为主证据。8/31 已确认携程、网易和微博 2027 正式批开放，新增度小满与 Wind；同时把校园池为空、只剩旧批次或毕业窗口冲突的入口明确降级，避免把历史岗位当成现在可投。</p>
       <p><strong>怎么读证据。</strong>「官网亲见」= Playwriter 打开了官方校招页并抽出原文。「部分亲见」= 首页或须知打开了，职位搜索没做成或要点登录。「新闻转载」= 没用浏览器核到原文。岗位会随时下架，投递前再点进官网。</p>
       <p>Boss 不当现场源。百度职位原文来自你官网粘贴。当前先处理 9/7 作业帮/得物首轮、9/13 货拉拉、9/15 vivo、9/19–9/20 同花顺/去哪儿等近窗；同时补投刚开放的携程、网易、微博、度小满。腾讯、字节、快手、美团、阿里、蚂蚁、百度仍是搜广推主线，岗位招满即下架，不建议等统一截止。</p>
-    </footer>
+    </details></footer>
   </div>
 
   <script>
@@ -1377,205 +1415,920 @@
       ["2027-06-30", "close", "百度全年通道关"]
     ];
 
-    const grid = document.getElementById("grid");
-    const extraGrid = document.getElementById("extra");
-    const extraWrap = document.getElementById("extra-wrap");
-    const countEl = document.getElementById("count");
-    const chips = [...document.querySelectorAll(".chip")];
-    let filter = "all";
-    let sortBy = "due";
 
-    function dueMeta(item) {
-      const iso = DUE[item.name];
-      if (!iso) return { iso: null, days: null, cls: "u-none", label: "滚动 / 未见" };
-      const days = Math.round((new Date(iso + "T00:00:00") - TODAY) / DAY);
-      let cls = "u-far";
-      if (days < 0) cls = "u-past";
-      else if (days <= 14) cls = "u-hot";
-      else if (days <= 45) cls = "u-soon";
-      const label = days < 0 ? "已过窗" : days === 0 ? "今天截止" : `还剩 ${days} 天`;
-      return { iso, days, cls, label };
+    const PAGE_KIND="rec";
+    const ORIGINAL_ITEMS=JSON.parse(JSON.stringify(DATA.concat(EXTRA)));
+    const SOURCES={
+  "R01": {
+    "id": "R01",
+    "title": "拼多多官方：2027 届正式批",
+    "url": "https://careers.pddglobalhr.com/campus/grad",
+    "level": "官方正文",
+    "scope": "已读到正式批图片替代文字及常规批次；未读到动态 JD 或统一截止。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "R02": {
+    "id": "R02",
+    "title": "小红书 2027 校招 · 南开就业网",
+    "url": "https://career.nankai.edu.cn/correcruit/content/id/118684.html",
+    "level": "高校发布",
+    "scope": "9/11 本届招聘页正文已核；详细招聘海报及动态 JD 未逐项核验。",
+    "published": "2026-09-11",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "R03": {
+    "id": "R03",
+    "title": "SHEIN 中国招聘官网",
+    "url": "https://careers.shein.cn/",
+    "level": "官方索引",
+    "scope": "检索索引出现 2027 届校园岗位；正文动态列表未读全，不引用 54 岗为实时数量。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "搜索索引；正文动态"
+  },
+  "R04": {
+    "id": "R04",
+    "title": "SHEIN Students & Graduates",
+    "url": "https://careers.shein.com/",
+    "level": "官方索引",
+    "scope": "索引写毕业 2026-09-01—2027-08-31、申请 2026-09—2027-06；仅到月，不推算具体截止日，地区项目须核。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "搜索索引；正文动态"
+  },
+  "R05": {
+    "id": "R05",
+    "title": "vivo 2027 秋招 · 暨南大学",
+    "url": "https://scdc.jnu.edu.cn/campus/view/id/1036108",
+    "level": "高校发布",
+    "scope": "正文招聘专业汇总含硕士应用统计，不代表任一算法岗；9/15 12:00 与 15:00 时间来自高校检索索引，官网动态正文未独立核全。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "正文专业汇总＋高校检索索引"
+  },
+  "R06": {
+    "id": "R06",
+    "title": "网易有道 2027 招聘简章 · 南开",
+    "url": "https://career.nankai.edu.cn/correcruit/content/id/117401.html",
+    "level": "高校发布",
+    "scope": "8/31 起、招满即止；10/11 10:00 起为笔试；列大模型、算法应用和 AI 研发。",
+    "published": "2026-09-01",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "R07": {
+    "id": "R07",
+    "title": "网易游戏雷火 2027 · 南科大",
+    "url": "https://career.sustech.edu.cn/detail/online?id=3595299",
+    "level": "高校发布",
+    "scope": "雷火网申至 10/16，未写时刻；杭州/成都，含 Agent 与强化学习。非网易集团统一截止。",
+    "published": "2026-09-04",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "R08": {
+    "id": "R08",
+    "title": "网易云音乐 2027 · 公告转载",
+    "url": "https://m.nj.bendibao.com/job/182875.shtm?src=amap",
+    "level": "第三方转载",
+    "scope": "含搜推广算法、数据挖掘；2026.9—2027.8 毕业，招满即止；本轮未直读对应官方 JD。",
+    "published": "2026-09-03",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "R09": {
+    "id": "R09",
+    "title": "字节跳动官方 2027 FAQ",
+    "url": "https://jobs.bytedance.com/campus/m/page-6272Gc",
+    "level": "官方正文",
+    "scope": "网申 2026-08—2027-05-31；2026 年内 2 次、2027-01-01 再刷新 2 次；毕业后无全职工作经验。岗位存量未重数。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "R10": {
+    "id": "R10",
+    "title": "腾讯官方招聘首页",
+    "url": "https://join.qq.com/",
+    "level": "官方索引",
+    "scope": "索引可见 2027 招聘公告及 8/11 发布；106 岗、10/11 截止未在本轮正文重核。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "搜索索引；正文动态"
+  },
+  "R11": {
+    "id": "R11",
+    "title": "小米官方校园招聘",
+    "url": "https://hr.xiaomi.com/website/campus.html",
+    "level": "官方索引",
+    "scope": "本届项目仍有官方索引；须知页本轮空正文，2027-06 月底沿用原文件 FAQ 记录而非新核。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "搜索索引；须知空正文"
+  },
+  "R12": {
+    "id": "R12",
+    "title": "字节校园招聘入口",
+    "url": "https://jobs.bytedance.com/campus",
+    "level": "官方正文",
+    "scope": "入口文字可读；具体推荐岗位编号与数量未逐一重验。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S01": {
+    "id": "S01",
+    "title": "九天人工智能 2027 秋招 · 南开",
+    "url": "https://career.nankai.edu.cn/correcruit/content/id/118392.html",
+    "level": "高校发布",
+    "scope": "9/9 简章已核：硕士及以上，AI开发、算法开发，北京/西安/深圳/广州。未明示应用统计代码、截止及志愿数。",
+    "published": "2026-09-09",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S02": {
+    "id": "S02",
+    "title": "昆仑数智本届秋招 · 中国石油公告转载",
+    "url": "https://www.gaoxiaojob.com/announcement/detail/430411.html",
+    "level": "第三方转载",
+    "scope": "岗位 27011687/27011688 列统计学；硕博；9/9—10/15 23:59:59。官方原链读取失败，专业资格须回原站确认。",
+    "published": "2026-09-11",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S03": {
+    "id": "S03",
+    "title": "昆仑数智官方原公告",
+    "url": "https://zhaopin.cnpc.com.cn/web/recruitInfoshow.html?id=8b8b6c9ea07c29cc01a07fc4f1030033",
+    "level": "入口待核",
+    "scope": "由转载提供的原始链接，本轮正文未读成；不作为新核实正文。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "打开失败"
+  },
+  "S04": {
+    "id": "S04",
+    "title": "东方地球物理 BGP · 中国石油公告转载",
+    "url": "https://www.gaoxiaojob.com/announcement/detail/430387.html",
+    "level": "第三方转载",
+    "scope": "面向 2027 等；9/9—10/15 23:59:59；硕士 CET6≥425，专业需求附件未读到，不确认应用统计可报。",
+    "published": "2026-09-11",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S05": {
+    "id": "S05",
+    "title": "招银网络科技 2027 · 高顿转载",
+    "url": "https://www.gwy.com/yhzp/411752.html",
+    "level": "第三方转载",
+    "scope": "第一批 9/3 18:00、第二批 9/20 18:00；依简历面试地点安排，不等于前一批申请者自动重投。",
+    "published": "2026-08-19",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S06": {
+    "id": "S06",
+    "title": "招银网络科技招聘 · 东北大学秦皇岛分校",
+    "url": "https://job.neuq.edu.cn/campus/view/id/861548",
+    "level": "高校发布",
+    "scope": "本届招聘页及算法岗位列表；页面专业映射不替代招聘系统中的学位/代码认定。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S07": {
+    "id": "S07",
+    "title": "浪潮集团 2027 · 南开",
+    "url": "https://career.nankai.edu.cn/correcruit/content/id/117451.html",
+    "level": "高校发布",
+    "scope": "9/1 简章列 AI 算法、软件研发；未写全公司统一截止。旧 8/31 只作提前批记录。",
+    "published": "2026-09-01",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S08": {
+    "id": "S08",
+    "title": "建信金融科技 2027 官方公告",
+    "url": "https://job1.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
+    "level": "官方索引",
+    "scope": "官网检索索引支持 10/8 24:00 及数理统计类；正文请求超时，完整条件另参考 S09。",
+    "published": "2026-09-04",
+    "checked": "2026-09-13",
+    "access": "搜索索引；正文超时"
+  },
+  "S09": {
+    "id": "S09",
+    "title": "建信金融科技 2027 公告转载",
+    "url": "https://www.yinhangzhaopin.com/jsyh/2026-09-04/224901.htm",
+    "level": "第三方转载",
+    "scope": "科技类专项人才；数理统计类；国内毕业 2027.1—7；最多两志愿，截止前可改两次；10/8 24:00，笔试选信息技术类。",
+    "published": "2026-09-04",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S10": {
+    "id": "S10",
+    "title": "中国银行官方 2027 全球校招公告",
+    "url": "https://www.boc.cn/aboutboc/bi4/202609/t20260903_25689311.html",
+    "level": "官方正文",
+    "scope": "数字资产运营中心数据分析、审计数据分析员；10/9 24:00；最多五个平行岗位，另有一级机构限额。",
+    "published": "2026-09-03",
+    "checked": "2026-09-13",
+    "access": "网页正文"
+  },
+  "S11": {
+    "id": "S11",
+    "title": "中国银行官方 2027 招聘条件 PDF",
+    "url": "https://pic.bankofchina.com/bocappd/appform/202609/P020260903517985334320.pdf",
+    "level": "官方附件",
+    "scope": "正文与第3/4/7页图像核验：审计分部列统计，数字资产中心按学科门类；毕业2026.1.1—2027.7.31且毕业后首次就业；具体岗位仍有细则。",
+    "published": "2026-09-03",
+    "checked": "2026-09-13",
+    "access": "PDF文字＋第3/4/7页截图"
+  },
+  "S12": {
+    "id": "S12",
+    "title": "中国联通 2027 官方国聘",
+    "url": "https://zglt.iguopin.com/",
+    "level": "官方索引",
+    "scope": "索引已出现联通数字科技招聘单位/岗位，不能再用8/31空池概括；适合应用统计的算法JD尚未核成。",
+    "published": "未标明",
+    "checked": "2026-09-13",
+    "access": "搜索索引；正文动态"
+  },
+  "H01": {
+    "id": "H01",
+    "title": "原始推荐算法 HTML · 8月快照",
+    "url": "",
+    "level": "用户原文件",
+    "scope": "保留原始字段、55条卡片、40条时间线节点及3轮日志；其官网亲见描述不是本轮现场核验。",
+    "published": "2026-08-31",
+    "checked": "2026-09-13",
+    "access": "用户上传文件"
+  },
+  "H02": {
+    "id": "H02",
+    "title": "原始央国企 HTML · 8月快照",
+    "url": "",
+    "level": "用户原文件",
+    "scope": "保留28条卡片、评分、五个原有分析板块及维护注释；论文仍为 Under Review。",
+    "published": "2026-08-31",
+    "checked": "2026-09-13",
+    "access": "用户上传文件"
+  }
+};
+    const REC_PATCHES={
+  "拼多多": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R01"
+      ],
+      "summary": "官方页面已切换至 2027 届正式批；8/23 仅对应历史提前批，不再代表全公司已过窗。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "官方正文"
+    },
+    "rev": "2026-09-13",
+    "status": "open",
+    "closes": "2027 正式批未见统一截止。8/23 为提前批历史节点；具体岗位随需求调整。",
+    "opened": "9/13 复核：官网页面显示「2027届校招正式批」和常规批次/研发专场。",
+    "note": "保留原算法与大模型 JD 细节；这两条历史职位是否仍在线，需进入正式批逐岗确认。"
+  },
+  "小红书": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R02"
+      ],
+      "summary": "9/11 高校正式发布 2027 校招页面，原「只有2026/实习」结论已过时；岗位数量未重数。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "高校发布"
+    },
+    "rev": "2026-09-13",
+    "status": "open",
+    "src": "news",
+    "opened": "南开就业网 9/11 发布小红书2027届校园招聘；本硕博。正式项目已公告，动态岗位详情仍需官网确认。",
+    "closes": "未核到本届统一截止；不要沿用2026页的截止和2志愿规则。",
+    "window": "本届为2027校招；具体毕业窗口请看2027项目JD，原REDstar毕业窗只作历史。",
+    "note": "正式批与 Ace / REDstar / 日常实习分开看。原推荐岗位清单完整保留，但本轮不保证其数量或在线状态。"
+  },
+  "SHEIN": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R03",
+        "R04"
+      ],
+      "summary": "中国官网索引已见 2027 校园岗位，国际毕业生页面索引也有本届窗口；不再用旧空站判断停招。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "官方索引"
+    },
+    "rev": "2026-09-13",
+    "status": "open",
+    "src": "mix",
+    "opened": "9/13 复核到中国招聘官网2027校园职位索引；动态列表未完整读取。",
+    "closes": "国际毕业生页索引为 2026-09 至 2027-06 接受申请；不精确到天，且不能直接套用所有中国岗位。",
+    "window": "国际毕业生页面索引：2026-09-01 至 2027-08-31；中国岗位以具体2027项目为准。",
+    "jobs": "当前可确认本届项目；具体搜索/推荐/广告算法JD尚未直读。原「跨境搜推」是业务匹配分析，不等于本届具名职位。",
+    "links": [
+      [
+        "SHEIN 中国招聘",
+        "https://careers.shein.cn/"
+      ],
+      [
+        "国际毕业生入口",
+        "https://careers.shein.com/"
+      ]
+    ],
+    "note": "已修正入口；只确认项目级线索，未声称具体推荐岗可提交。"
+  },
+  "网易": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R06",
+        "R07",
+        "R08"
+      ],
+      "summary": "保留集团卡片，新增/保留有道与雷火独立卡，云音乐单列；各自规则不混为集团截止。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "高校发布"
+    },
+    "rev": "2026-09-13",
+    "closes": "没有已核实的网易集团统一截止。雷火项目为10/16；有道和云音乐公开简章均按招满即止。",
+    "jobs": "有道：大模型、算法应用、AI全栈/数据；雷火：Agent与强化学习、用户个性化Agent；云音乐转载列搜推广与数据挖掘。具体选业务线。",
+    "note": "旧网易集团项目描述保留在原记录中；本届岗位与日期按独立子项目核对。"
+  },
+  "vivo": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R05"
+      ],
+      "summary": "本届高校招聘页专业汇总含硕士应用统计。9/15 12:00网申与15:00研发笔试分开保留为待官网复核节点。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "高校发布"
+    },
+    "rev": "2026-09-13",
+    "closes": "高校检索索引及原通稿：9/15 12:00网申/初筛，15:00研发岗笔试。官方动态正文未重核全；个人通知及当前官网优先。",
+    "note": "专业汇总接受应用统计，不等于每个AI/推荐职位均接受。9/15两项均保留在时间线，不把笔试当截止。"
+  },
+  "字节跳动": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R09",
+        "R12"
+      ],
+      "summary": "官方FAQ本轮正文重核：投递至2027-05-31，2026年2次、2027-01-01刷新2次；481条仍是8月快照。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "官方正文"
+    },
+    "rev": "2026-09-13",
+    "closes": "官网FAQ：2026-08至2027-05-31接受校招投递。2026-08-03—12-31两次机会，2027-01-01刷新两次。12/31不是整场网申截止。",
+    "window": "官方FAQ：2026年9月至2027年8月毕业，且最高学历毕业后无全职工作经验。",
+    "req": "每年两志愿彼此独立；默认先处理较早申请。成功投递后不可换岗；修改简历不自动同步既有投递。具体JD另核。",
+    "note": "本轮核的是项目、毕业窗和志愿规则；原具体推荐岗位ID、数量全部保留但未逐一重验。"
+  },
+  "腾讯": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R10"
+      ],
+      "summary": "官网索引仍见2027项目；保留原推荐岗细节，但106条和第三方10/11不写成本轮官网已核。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "官方索引"
+    },
+    "rev": "2026-09-13",
+    "note": "本轮仅项目索引；原106个推荐岗位、宽毕业窗等字段保留为历史快照，提交前点开相应JD与FAQ。"
+  },
+  "小米": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R11"
+      ],
+      "summary": "官方仍有2027项目索引，须知本轮空正文；修正原DUE把新闻12/31当硬截止的问题。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "官方索引"
+    },
+    "rev": "2026-09-13",
+    "closes": "原版官网须知记录：2026-08-10至2027-06月底；12/31只是新闻口径。两者均保留，不设新的精确日倒计时，提交前复核官网须知。"
+  },
+  "网易云音乐": {
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R08"
+      ],
+      "summary": "本届音乐事业部公告转载列出搜推广算法与数据挖掘；不再显示「互联网仍是2026」。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "第三方转载"
+    },
+    "rev": "2026-09-13",
+    "status": "open",
+    "src": "news",
+    "opened": "9/3 公告转载显示2027届云音乐招聘已启动；本轮重读转载，尚未直读对应官方JD。",
+    "closes": "转载写明不设网申统一截止、招满即止；不要用聚合平台自动日期。",
+    "window": "转载：2026年9月至2027年8月毕业。",
+    "city": "杭州 / 北京 / 广州（本届项目范围，按岗）",
+    "jobs": "人工智能：搜推广算法、大模型算法、音频算法；技术：数据挖掘、全栈开发。进网易互联网2027项目选择音乐事业部。",
+    "note": "明确标第三方转载，原历史搜推广线索也保留；岗位在线与学历专业需要在官方池复核。"
+  },
+  "得物": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "closes": "原9/7是公众号转载首轮；原官网笔试日历排至11/1。不能据9/7判整场已关；新统一截止未核成。",
+    "note": "保留原17条关键词结果及具名岗位作为8月快照。新批次、岗位在线状态仍须官网确认。"
+  },
+  "作业帮": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "status": "verify",
+    "closes": "原转载9/7节点已过；本轮没有确认续投或全部关闭。旧日程保留，但不作为今天可投的证明。",
+    "note": "本次只校正旧截止的解释，未重新打开具体算法JD。"
+  },
+  "百度": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "closes": "原版来源只稳定到“2027年6月”，6/1与6/30存在冲突；不推算6/30为官方硬截止。原全年通道、每周笔试等细节保留待核。",
+    "note": "用户提供的官网JD和职位ID全部保留；本轮须知页没有完整正文，未取得新的岗位或日期证明。"
+  },
+  "Wind 万得": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "status": "verify",
+    "note": "2027页头与2024—2025毕业字段的冲突仍未解决；推荐JD内容保留，但不能据此确认个人可投。"
+  },
+  "去哪儿": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "closes": "原9/20与9/30两种转载口径未解决。9/20只作保守投递/复核提醒，不称官方截止；原具体推荐排序JD保留。"
+  },
+  "同花顺": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "en": "iFinD / 10jqka",
+    "note": "更正原英文误写Hexun。原生成式推荐为博士专项；硕士须另找非博士限定JD，9/19只保留待核节点。"
+  },
+  "货拉拉": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "closes": "原9/13属于GMT管培专项，并非算法校招截止。时间线保留该记录，排除出推荐算法硬截止统计。"
+  },
+  "飞猪": {
+    "audit": {
+      "checked": null,
+      "refs": [
+        "H01"
+      ],
+      "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+      "scope": "原版口径修正",
+      "level": "用户原文件"
+    },
+    "rev": "2026-09-13",
+    "closes": "原8/27是阿里星专项转载节点，不代表飞猪所有2027应届岗位截止；保留历史，不用它判全公司关闭。"
+  }
+};
+    const REC_ADDITIONS=[
+  {
+    "name": "网易有道",
+    "en": "NetEase Youdao",
+    "status": "open",
+    "rec": "likely",
+    "src": "news",
+    "rev": "2026-09-13",
+    "opened": "用人单位9/1发布简章，8/31起网申。",
+    "closes": "招满即止；10/11 10:00起为笔试，不是网申截止，个人通知优先。",
+    "window": "2026年9月至2027年8月毕业。",
+    "city": "算法主要北京 / 杭州；其他类别另有成都等。",
+    "jobs": "算法应用工程师、AI全栈工程师（数据方向）、大模型算法、视觉/多模态与语音交互算法，AI infra（C++）。未独立核到传统推荐岗名。",
+    "req": "算法与技术逐岗看专业/学历；博士后专项不占硕士主投。只能按网申系统正式提交。",
+    "links": [
+      [
+        "网易校招",
+        "https://campus.163.com/"
+      ],
+      [
+        "有道招聘简章",
+        "https://career.nankai.edu.cn/correcruit/content/id/117401.html"
+      ]
+    ],
+    "note": "保留上一版新增条目。A/B、工程与模型训练可迁移，不包装没有的LLM或语音经历。",
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R06"
+      ],
+      "summary": "有道独立卡：起始、毕业窗、岗位类及笔试日程本轮重核。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "高校发布"
     }
-
-    function rank(item) {
-      const m = dueMeta(item);
-      if (m.days === null) return 1e6;
-      if (m.days < 0) return 5e5 - m.days;
-      return m.days;
+  },
+  {
+    "name": "网易游戏雷火",
+    "en": "NetEase Leihuo",
+    "status": "open",
+    "rec": "likely",
+    "src": "news",
+    "rev": "2026-09-13",
+    "opened": "9/4用人单位高校简章已核，面向2027届。",
+    "closes": "10/16网申截止，招满即止；简章未给具体时刻。不适用于整个网易集团。",
+    "window": "2026-09-01 至 2027-08-31。",
+    "city": "杭州 / 成都。",
+    "jobs": "Agent智能体与强化学习、用户个性化Agent、LLM Agent、游戏AI与大数据平台等；需逐岗核硕士资格。",
+    "req": "强化学习经历有可迁移性，但不是所有职位都做信息流推荐；具身、控制、机器人岗不靠关键词硬投。",
+    "links": [
+      [
+        "雷火校园招聘",
+        "https://leihuo.163.com/campus/"
+      ],
+      [
+        "本届高校简章",
+        "https://career.sustech.edu.cn/detail/online?id=3595299"
+      ]
+    ],
+    "note": "保留上一版新增条目。单列项目截止与模型研究方向，不覆盖原网易卡。",
+    "audit": {
+      "checked": "2026-09-13",
+      "refs": [
+        "R07"
+      ],
+      "summary": "雷火10/16仅适用于本子项目，日期精确到日、无明确时刻。",
+      "scope": "项目已核；具体岗位仍须复核",
+      "level": "高校发布"
     }
-
-    function sortList(list) {
-      return sortBy === "due" ? [...list].sort((a, b) => rank(a) - rank(b)) : list;
+  }
+];
+    const REC_DEADLINES={
+  "拼多多": null,
+  "小红书": null,
+  "SHEIN": null,
+  "网易": null,
+  "网易云音乐": null,
+  "得物": null,
+  "作业帮": null,
+  "百度": null,
+  "Wind 万得": null,
+  "飞猪": null,
+  "小米": null,
+  "vivo": {
+    "date": "2026-09-15",
+    "time": "12:00",
+    "kind": "deadline",
+    "scope": "网申 / 初筛",
+    "confidence": "pending",
+    "refs": [
+      "R05"
+    ],
+    "note": "高校索引/旧通稿；官网时刻待确认"
+  },
+  "字节跳动": {
+    "date": "2027-05-31",
+    "time": null,
+    "kind": "deadline",
+    "scope": "2027 校招投递窗口",
+    "confidence": "confirmed",
+    "refs": [
+      "R09"
+    ],
+    "note": "官方FAQ；未给日内时刻"
+  },
+  "去哪儿": {
+    "date": "2026-09-20",
+    "time": null,
+    "kind": "advisory",
+    "scope": "保守复核 / 投递提醒",
+    "confidence": "pending",
+    "refs": [
+      "H01"
+    ],
+    "note": "9/20与9/30冲突，非官方截止"
+  },
+  "货拉拉": {
+    "date": "2026-09-13",
+    "time": null,
+    "kind": "special",
+    "scope": "GMT管培专项（非推荐算法）",
+    "confidence": "pending",
+    "refs": [
+      "H01"
+    ],
+    "note": "原转载节点"
+  },
+  "同花顺": {
+    "date": "2026-09-19",
+    "time": null,
+    "kind": "special",
+    "scope": "博士推荐专项（硕士不主投）",
+    "confidence": "pending",
+    "refs": [
+      "H01"
+    ],
+    "note": "原第三方日期"
+  },
+  "网易有道": null,
+  "网易游戏雷火": {
+    "date": "2026-10-16",
+    "time": null,
+    "kind": "deadline",
+    "scope": "雷火2027网申",
+    "confidence": "supported",
+    "refs": [
+      "R07"
+    ],
+    "note": "用人单位高校简章；未给日内时刻"
+  }
+};
+    DATA.concat(EXTRA).forEach(x=>Object.assign(x,REC_PATCHES[x.name]||{}));
+    EXTRA.push(...REC_ADDITIONS);
+    const ALL_ITEMS=DATA.concat(EXTRA);
+    LOG.unshift({
+  "date": "2026-09-13",
+  "title": "第六轮：原版布局恢复＋重点信息复核",
+  "summary": "保留所有原模块、55条原卡片、40个原时间线节点和三轮旧日志；保留上版新增2个子项目。本轮正文与索引分别标识。",
+  "items": [
+    [
+      "change",
+      "版式与时间线",
+      "回到原暖色双栏卡片与原板块顺序。原时间线40条全部保留，新增9条事件和北京时间今天定位，默认完整展示。"
+    ],
+    [
+      "change",
+      "字节跳动",
+      "官网FAQ正文重核：2027-05-31投递窗口；12/31年度次数窗口，1/1刷新2次。"
+    ],
+    [
+      "change",
+      "拼多多 / 小红书 / SHEIN",
+      "拼多多正式批官网已显示；小红书9/11高校页面已发布；SHEIN本届为官方索引证据，动态JD未重数。"
+    ],
+    [
+      "add",
+      "有道 / 雷火 / 云音乐",
+      "保留上一版独立子项目；有道10/11 10:00是笔试，雷火10/16仅自身截止，云音乐为转载搜推广岗位。"
+    ],
+    [
+      "warn",
+      "旧日期与岗位数量",
+      "所有旧日期、数量与岗位详情保留；未重核的加历史标签。货拉拉GMT、同花顺博士专项不算硕士推荐算法紧急截止。"
+    ],
+    [
+      "same",
+      "原始细节",
+      "保留32家核心、23条原补网及原三轮日志；每张原卡均可展开完整8月记录。"
+    ]
+  ]
+});
+// Incremental maintenance helpers. All original data is retained in ORIGINAL_*.
+const RECHECKED = "2026-09-13";
+const TZ = "Asia/Shanghai";
+function escapeHTML(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function chinaDay(value=new Date()){
+ const p=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(value);
+ return ['year','month','day'].map(k=>p.find(x=>x.type===k).value).join('-');
+}
+function dayDistance(iso,now=new Date()){
+ return iso?Math.round((Date.parse(iso+'T00:00:00+08:00')-Date.parse(chinaDay(now)+'T00:00:00+08:00'))/86400000):null;
+}
+function deadlineEpoch(ev){
+ if(!ev||!ev.date)return null;
+ // A missing clock time is not asserted as an official 23:59 cutoff.
+ // End-of-day below is only used to turn the calendar-day badge after that date ends.
+ if(!ev.time||ev.time==='24:00')return Date.parse(ev.date+'T00:00:00+08:00')+86400000;
+ return Date.parse(ev.date+'T'+(ev.time.length===5?ev.time+':00':ev.time)+'+08:00');
+}
+function timeState(ev,now=new Date()){
+ if(!ev||!ev.date)return {days:null,expired:false,label:'未见统一截止',cls:'u-none'};
+ const days=dayDistance(ev.date,now),end=deadlineEpoch(ev),expired=now.getTime()>=end;
+ const pending=!['confirmed','supported'].includes(ev.confidence),special=['special','advisory'].includes(ev.kind);
+ let label=expired?(pending||special?'原节点已过':'该窗口已过'):days===0?(pending?'今天节点·待核':ev.time?'今天 '+ev.time:'今天节点·时刻未注明'):`${days} 天后${pending?'·待核':''}`;
+ if(!expired&&days>0&&!pending&&!special)label=`还剩 ${days} 天`;
+ let cls=expired?'u-past':pending||special?'u-none':days<=14?'u-hot':days<=45?'u-soon':'u-far';
+ return {days,expired,label,cls,iso:ev.date,event:ev};
+}
+function sourceRefs(ids=[]){return ids.map(id=>`<a class="source-ref" href="#src-${escapeHTML(id)}" title="查看证据范围">[${escapeHTML(id)}]</a>`).join(' ');}
+function auditHTML(item){
+ const a=item.audit||{},fresh=a.checked===RECHECKED;
+ return `<div class="audit-note${fresh?' is-current':''}"><strong>${fresh?'9/13 复核':'历史记录 / 口径说明'}</strong> ${escapeHTML(a.summary||'原8月快照完整保留；本轮未重新核对该公司职位池与规则。')} ${sourceRefs(a.refs||[PAGE_KIND==='rec'?'H01':'H02'])}<small>${escapeHTML(fresh?a.scope||'本届信息已核；岗位在线与个人资格另核':'未注明本轮核实的岗位数量、条件与规则仍属历史信息，不代表今天在线。')}</small></div>`;
+}
+function originalCard(item){return ORIGINAL_ITEMS.find(x=>x.name===item.name)||null;}
+function historyHTML(item){
+ const old=originalCard(item);if(!old)return '';
+ const labels={status:'原状态',src:'原来源',rec:'原推荐标签',opened:'何时放出',closes:'何时结束',window:'毕业窗口',city:'城市',jobs:'岗位情况',req:'硬性要求',note:'原备注',due:'原日期',dueAlt:'原补充日期',action:'原现在动作',why:'为什么适合',risk:'风险 / 缺口',resume:'简历版本',evidence:'原证据状态',fit:'原匹配分',tier:'原等级',ownership:'单位类型'};
+ const fields=Object.keys(labels).filter(k=>old[k]!==undefined&&old[k]!==null).map(k=>`<p class="field"><b>${labels[k]}</b>${escapeHTML(old[k])}</p>`).join('');
+ const links=(old.links||[]).map(([t,h])=>`<a href="${escapeHTML(h)}" target="_blank" rel="noopener noreferrer">${escapeHTML(t)}</a>`).join('');
+ return `<details class="more history-record"><summary>原始记录完整保留 · 8月快照（非当前结论）</summary>${fields}${links?'<div class="links">'+links+'</div>':''}</details>`;
+}
+function currentSearchText(item){
+ // History is available for reading but must not cause false matches in city/status filters.
+ const keys=['name','en','opened','closes','window','city','jobs','req','note','action','why','risk','resume','evidence','ownership'];
+ return keys.map(k=>item[k]||'').join(' ').toLowerCase();
+}
+function textMatch(item,q){return q.trim().toLowerCase().split(/\s+/).filter(Boolean).every(t=>currentSearchText(item).includes(t));}
+function itemLinks(item){
+ const links=[...(item.links||[])];
+ for(const id of item.audit?.refs||[]){const s=SOURCES[id];if(s?.url&&!links.some(x=>x[1]===s.url))links.push([id+' · '+s.title,s.url]);}
+ return links.map(([t,h])=>`<a href="${escapeHTML(h)}" target="_blank" rel="noopener noreferrer">${escapeHTML(t)}</a>`).join('');
+}
+function renderSources(){
+ const ids=PAGE_KIND==='rec'?Object.keys(SOURCES).filter(x=>x.startsWith('R')||x==='H01'):Object.keys(SOURCES).filter(x=>x.startsWith('S')||x==='H02');
+ document.getElementById('source-list').innerHTML=ids.map(id=>{const s=SOURCES[id];return `<article class="source-entry" id="src-${id}"><b>${id} · ${escapeHTML(s.title)}</b><span>${escapeHTML(s.level)} · ${escapeHTML(s.access)} · 复核 ${s.checked}</span><p>${escapeHTML(s.scope)}</p>${s.url?`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">打开原来源 ↗</a>`:'<span>原内容见各卡片的“原始记录”；原文件亦随更新包附上。</span>'}</article>`}).join('');
+ const count=ALL_ITEMS.filter(x=>x.audit?.checked===RECHECKED).length;
+ document.getElementById('audit-count').textContent=`共 ${ALL_ITEMS.length} 条记录；${count} 条取得本轮网页/索引证据，其余保留原信息或仅校正口径。`;
+}
+function revealHash(){
+ const id=decodeURIComponent(location.hash.slice(1));if(!id)return;
+ const target=document.getElementById(id);if(!target)return;
+ for(let n=target.parentElement;n;n=n.parentElement)if(n.tagName==='DETAILS')n.open=true;
+ requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'auto'}));
+}
+function saveJSON(){
+ const blob=new Blob([JSON.stringify({checked:RECHECKED,timezone:TZ,kind:PAGE_KIND,items:ALL_ITEMS,originalItems:ORIGINAL_ITEMS,sources:SOURCES,timeline:PAGE_KIND==='rec'?buildRail():null},null,2)],{type:'application/json;charset=utf-8'});
+ const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=PAGE_KIND+'_data_'+RECHECKED+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function setupCommon(){
+ renderSources();addEventListener('hashchange',revealHash);revealHash();
+ document.getElementById('export-btn').addEventListener('click',saveJSON);
+ document.getElementById('q').setAttribute('aria-label','搜索公司、城市、岗位与关键词');
+ document.querySelectorAll('.filters .chip').forEach(b=>b.setAttribute('aria-pressed',b.classList.contains('active')?'true':'false'));
+ document.getElementById('clock-date').textContent=chinaDay();
+}
+    const grid = document.getElementById('grid'),extraGrid=document.getElementById('extra'),extraWrap=document.getElementById('extra-wrap'),countEl=document.getElementById('count');
+    const chips=[...document.querySelectorAll('.filters .chip')];
+    let filter='all',sortBy='due',railFilter='all';
+    function deadlineFor(item){
+      if(Object.prototype.hasOwnProperty.call(REC_DEADLINES,item.name))return REC_DEADLINES[item.name];
+      const date=DUE[item.name];
+      return date?{date,time:null,kind:'advisory',scope:'原版日期（待复核）',confidence:'pending',refs:['H01'],note:'保留原节点，但不当本轮已核实的公司统一截止'}:null;
     }
-
-    function badge(item) {
-      const recMap = { yes: ["明确推荐岗", "s-open"], likely: ["算法里可能有推荐", "s-intern"], weak: ["推荐含量弱", "s-weak"] };
-      const stMap = { open: ["秋招已开", "s-open"], intern: ["实习/专项", "s-intern"], wait: ["未见27秋招公告", "s-wait"] };
-      const srcMap = { see: ["官网亲见", "s-see"], mix: ["部分亲见", "s-intern"], news: ["新闻转载", "s-wait"], paste: ["官网原文（你贴的）", "s-paste"] };
-      const r = recMap[item.rec];
-      const s = stMap[item.status];
-      const e = srcMap[item.src];
-      const rev = item.rev === CHECKED ? `<span class="badge s-rev">8/20 更新</span>` : "";
-      return `<span class="badge ${s[1]}">${s[0]}</span><span class="badge ${r[1]}">${r[0]}</span><span class="badge ${e[1]}">${e[0]}</span>${rev}`;
+    function dueMeta(item){return timeState(deadlineFor(item));}
+    function rank(item){const m=dueMeta(item);if(m.days===null)return 1e6;if(m.expired)return 5e5-m.days;return m.days+(m.event.kind==='special'?100000:0);}
+    function sortList(list){return sortBy==='due'?[...list].sort((a,b)=>rank(a)-rank(b)):list;}
+    function badge(item){
+      const r={yes:['明确推荐岗','s-open'],likely:['算法里可能有推荐','s-intern'],weak:['推荐含量弱','s-weak']}[item.rec]||['方向待核','s-wait'];
+      const st={open:['秋招已开','s-open'],intern:['实习/专项','s-intern'],wait:['未见本届新证据','s-wait'],verify:['当前需复核','s-intern']}[item.status];
+      const src={see:['官网亲见·8月','s-see'],mix:['部分亲见·原记录','s-intern'],news:['公开转载','s-wait'],paste:['官网原文·你贴的','s-paste']}[item.src]||['待核','s-wait'];
+      const recent=item.audit?.checked===RECHECKED;
+      const stage=st[0]+(!recent&&item.status==='open'?'·历史':'');
+      return `<span class="badge ${st[1]}">${stage}</span><span class="badge ${r[1]}">${r[0]}</span><span class="badge ${src[1]}">${src[0]}</span>${item.rev===RECHECKED?`<span class="badge s-rev">9/13 ${recent?'复核':'口径'}</span>`:''}`;
     }
-
-    function cardHTML(item, i, hidden) {
-      const links = item.links.map(([t, href]) => `<a href="${href}" target="_blank" rel="noopener">${t}</a>`).join("");
-      const m = dueMeta(item);
-      return `<article class="card st-${item.status}${hidden ? " hidden" : ""}" data-i="${i}">
-          <div class="top">
-            <div>
-              <h3 class="name">${item.name}</h3>
-              <div class="en">${item.en}</div>
-            </div>
-            <div class="badges">${badge(item)}</div>
-          </div>
-          <div class="due ${m.cls}">
-            <span class="due-k">截止</span>
-            <span class="due-v">${m.iso || "滚动 / 招满即止"}</span>
-            <span class="due-pill">${m.label}</span>
-          </div>
-          <p class="field"><b>何时结束</b>${item.closes || "未见统一截止"}</p>
-          <p class="field"><b>岗位情况</b>${item.jobs}</p>
-          <details class="more">
-            <summary>展开：放出时间 · 毕业窗 · 城市 · 硬性要求</summary>
-            <p class="field"><b>何时放出</b>${item.opened}</p>
-            <p class="field"><b>毕业时间</b>${item.window}</p>
-            <p class="field"><b>城市</b>${item.city}</p>
-            <p class="field"><b>硬性要求</b>${item.req}</p>
-          </details>
-          <div class="links">${links}</div>
-          <p class="note">${item.note}</p>
-        </article>`;
+    function cardHTML(item,i,hidden){
+      const m=dueMeta(item),ev=deadlineFor(item),date=ev?ev.date+(ev.time?' '+ev.time:''):'滚动 / 截止待核';
+      return `<article class="card st-${item.status}${hidden?' hidden':''}" data-i="${i}" data-name="${escapeHTML(item.name)}">
+        <div class="top"><div><h3 class="name">${escapeHTML(item.name)}</h3><div class="en">${escapeHTML(item.en)}</div></div><div class="badges">${badge(item)}</div></div>
+        <div class="due ${m.cls}"><span class="due-k">${ev?.confidence==='pending'?'待核节点':'截止 / 节点'}</span><span class="due-v">${date}</span><span class="due-pill">${m.label}</span></div>
+        ${ev?`<p class="node-scope">${escapeHTML(ev.scope)} · ${escapeHTML(ev.note||'')} ${sourceRefs(ev.refs)}</p>`:''}
+        ${auditHTML(item)}
+        <p class="field"><b>何时结束</b>${escapeHTML(item.closes||'未见统一截止')}</p><p class="field"><b>岗位情况</b>${escapeHTML(item.jobs)}</p>
+        <details class="more"><summary>展开：放出时间 · 毕业窗 · 城市 · 硬性要求</summary><p class="field"><b>何时放出</b>${escapeHTML(item.opened)}</p><p class="field"><b>毕业时间</b>${escapeHTML(item.window)}</p><p class="field"><b>城市</b>${escapeHTML(item.city)}</p><p class="field"><b>硬性要求</b>${escapeHTML(item.req)}</p></details>
+        <div class="links">${itemLinks(item)}</div><p class="note">${escapeHTML(item.note)}</p>${historyHTML(item)}</article>`;
     }
-
-    function matchFilter(item) {
-      if (filter === "rev") return item.rev === CHECKED;
-      if (filter === "all" || filter === "extra") return true;
-      if (filter === "urgent") {
-        const m = dueMeta(item);
-        return m.days !== null && m.days >= 0 && m.days <= 45;
-      }
-      if (filter === "rec") return item.rec === "yes";
-      if (filter === "see") return item.src === "see";
-      return item.status === filter;
+    function matchFilter(item){
+      if(filter==='rev')return item.rev===RECHECKED;
+      if(filter==='all'||filter==='extra')return true;
+      if(filter==='urgent'){const m=dueMeta(item);return m.days!==null&&!m.expired&&m.days<=45&&m.event.kind!=='special';}
+      if(filter==='rec')return item.rec==='yes';
+      if(filter==='see')return item.src==='see'||item.audit?.level==='官方正文';
+      if(filter==='wait')return ['wait','verify'].includes(item.status);
+      return item.status===filter;
     }
-
-    function textHit(item, q) {
-      if (!q) return true;
-      return JSON.stringify(item).toLowerCase().includes(q);
+    function render(){
+      const q=document.getElementById('q').value.trim();let coreShown=0,extraShown=0;
+      grid.innerHTML=sortList(DATA).map((x,i)=>{const ok=matchFilter(x)&&textMatch(x,q);if(ok)coreShown++;return cardHTML(x,i,!ok)}).join('');
+      extraGrid.innerHTML=sortList(EXTRA).map((x,i)=>{const ok=matchFilter(x)&&textMatch(x,q);if(ok)extraShown++;return cardHTML(x,'e'+i,!ok)}).join('');
+      const hideCore=filter==='extra';grid.style.display=hideCore?'none':'';extraWrap.style.display=extraShown?'':'none';
+      if(!hideCore&&!coreShown)grid.innerHTML='<p class="empty">这一栏没有匹配的公司。换个关键词，或点「全部」。</p>';
+      countEl.textContent=`显示 ${(hideCore?0:coreShown)+extraShown} / ${ALL_ITEMS.length}`;
+      chips.forEach(b=>b.setAttribute('aria-pressed',b.dataset.filter===filter?'true':'false'));
     }
-
-    function render() {
-      const q = document.getElementById("q").value.trim().toLowerCase();
-      let coreShown = 0, extraShown = 0;
-
-      grid.innerHTML = sortList(DATA).map((item, i) => {
-        const ok = matchFilter(item) && textHit(item, q);
-        if (ok) coreShown++;
-        return cardHTML(item, i, !ok);
-      }).join("");
-
-      extraGrid.innerHTML = sortList(EXTRA).map((item, i) => {
-        const ok = matchFilter(item) && textHit(item, q);
-        if (ok) extraShown++;
-        return cardHTML(item, "e" + i, !ok);
-      }).join("");
-
-      const hideCore = filter === "extra";
-      grid.style.display = hideCore ? "none" : "";
-      extraWrap.style.display = extraShown ? "" : "none";
-
-      if (!hideCore && coreShown === 0) {
-        grid.innerHTML = `<p class="empty">这一栏没有匹配的公司。换个关键词，或点「全部」。</p>`;
-      }
-      const shown = (hideCore ? 0 : coreShown) + extraShown;
-      countEl.textContent = `显示 ${shown} / ${DATA.length + EXTRA.length}`;
+    function renderLog(){
+      document.getElementById('log').innerHTML=LOG.map((day,i)=>`<details class="log-day${i===0?' is-latest':''}"><summary class="log-head"><span class="log-date">${day.date}</span><strong>${escapeHTML(day.title)}</strong><span class="log-n">${day.items.length} 条</span><p class="log-sum">${escapeHTML(day.summary)}</p></summary><ul class="log-items">${day.items.map(([kind,co,text])=>{const k=KIND[kind];return `<li><span class="tag ${k[1]}">${k[0]}</span><span class="log-co">${escapeHTML(co)}</span><span>${escapeHTML(text)}</span></li>`}).join('')}</ul></details>`).join('');
     }
-
-    function renderLog() {
-      document.getElementById("log").innerHTML = LOG.map((day, i) => {
-        const items = day.items.map(([kind, co, text]) => {
-          const k = KIND[kind];
-          return `<li><span class="tag ${k[1]}">${k[0]}</span><span class="log-co">${co}</span><span>${text}</span></li>`;
-        }).join("");
-        return `<details class="log-day${i === 0 ? " is-latest" : ""}">
-          <summary class="log-head">
-            <span class="log-date">${day.date}</span>
-            <strong>${day.title}</strong>
-            <span class="log-n">${day.items.length} 条</span>
-            <p class="log-sum">${day.summary}</p>
-          </summary>
-          <ul class="log-items">${items}</ul>
-        </details>`;
-      }).join("");
+    function buildRail(){
+      const rows=TIMELINE.map(([iso,kind,text],i)=>{
+        let x={date:iso,kind:kind==='close'?'advisory':'open',text,originalText:text,originalIndex:i,refs:kind==='close'?['H01']:[],confidence:'pending',note:kind==='close'?'原日期保留；本轮未核成公司统一截止':''};
+        if(iso==='2026-08-25'){x.kind='exam';x.note='原版笔试节点；个人通知优先';}
+        if(iso==='2026-09-15'){x={...x,kind:'deadline',time:'12:00',text:'vivo 网申 / 初筛',refs:['R05'],note:'高校索引与原通稿；官网时刻待确认。15:00笔试另列。'};}
+        if(iso==='2026-09-13'){x.kind='special';x.note='GMT管培专项，不是推荐算法关窗';}
+        if(iso==='2026-09-19'){x.kind='special';x.note='原博士专项日期；不是硕士常规推荐岗截止';}
+        if(iso==='2026-09-20'){x.note='9/20与9/30原口径有冲突；只作保守复核/投递提醒';}
+        if(iso==='2026-09-07'){x.note='作业帮/得物原节点已过；得物为首轮，均不据此推断整家公司关闭';}
+        if(iso==='2026-08-23'){x.note='仅原提前批；PDD官网现已显示2027正式批';x.refs=['H01','R01'];}
+        if(iso==='2026-08-27'){x.kind='special';x.note='飞猪阿里星旧专项，非全部应届岗位截止';}
+        if(iso==='2026-09-23'){x.kind='special';x.note='滴滴未来精英原专项口径，常规秋招另行判断';}
+        if(iso==='2026-12-31'){x={...x,kind:'quota',text:'字节：2026年两次投递机会的年度窗口结束',refs:['R09'],confidence:'confirmed',note:'不是校招总截止；原同条小米12/31新闻口径仍留在原节点，不作硬截止。'};}
+        if(iso==='2027-05-31'){x={...x,kind:'deadline',text:'字节：官方2027校园招聘投递窗口',refs:['R09'],confidence:'confirmed',note:'官网FAQ本轮重核；日内时刻未注明，岗位可能提前招满。'};}
+        if(iso==='2027-06-30'){x.note='原表按月末落日；现只保留历史标签，未核实6/30，不生成官方倒计时';}
+        return x;
+      });
+      rows.push(
+        {date:'2026-09-01',kind:'open',text:'网易有道本届简章发布（网申8/31起）',refs:['R06'],confidence:'supported',note:'发布日期不是新的投递截止'},
+        {date:'2026-09-03',kind:'open',text:'网易云音乐2027公告转载发布',refs:['R08'],confidence:'supported',note:'音乐事业部独立申请；具体JD仍须官网核'},
+        {date:'2026-09-04',kind:'open',text:'网易游戏雷火2027高校简章发布',refs:['R07'],confidence:'supported',note:'10/16只适用雷火'},
+        {date:'2026-09-11',kind:'open',text:'小红书2027校招高校发布页已更新',refs:['R02'],confidence:'supported',note:'记录发布日，不冒充公司正式启动日'},
+        {date:'2026-09-13',kind:'review',text:'本轮重新核查 · 保留原版布局与全部历史时间线',refs:[],confidence:'confirmed',note:'官网正文 / 高校发布 / 转载 / 索引分层，不统一冒充官网亲见'},
+        {date:'2026-09-15',time:'15:00',kind:'exam',text:'vivo 研发岗线上笔试',refs:['R05'],confidence:'pending',note:'高校索引/原通稿；个人通知优先，不是网申截止'},
+        {date:'2026-10-11',time:'10:00',kind:'exam',text:'网易有道笔试安排（10:00起）',refs:['R06'],confidence:'supported',note:'岗位间可能不同；收到的笔试邮件优先'},
+        {date:'2026-10-16',kind:'deadline',text:'网易游戏雷火2027网申截止',refs:['R07'],confidence:'supported',note:'简章未写时刻；招满即止；非集团统一截止'},
+        {date:'2027-01-01',kind:'quota',text:'字节：刷新2027年度两次校招投递机会',refs:['R09'],confidence:'confirmed',note:'2026和2027机会独立；不是新批次开招承诺'},
+        {date:chinaDay(),kind:'today',text:'今天 · 北京时间',refs:[],confidence:'confirmed',note:'只更新时间定位；页面不会自动联网更新招聘数据'}
+      );
+      return rows.sort((a,b)=>a.date.localeCompare(b.date)||(a.kind==='today'?-1:b.kind==='today'?1:0)||(a.time||'00:00').localeCompare(b.time||'00:00'));
     }
-
-    function renderRail() {
-      document.getElementById("rail").innerHTML = TIMELINE.map(([iso, kind, text]) => {
-        const diff = Math.round((new Date(iso + "T00:00:00") - TODAY) / DAY);
-        const cls = [kind === "close" ? "k-close" : "k-open"];
-        if (diff < 0) cls.push("is-past");
-        if (diff === 0) cls.push("now");
-        const label = (iso.slice(0, 4) === "2027" ? "27 " : "") + iso.slice(5).replace("-", "/");
-        return `<li class="${cls.join(" ")}"><span class="dot"></span><span class="date">${label}</span><span class="txt">${text}</span></li>`;
-      }).join("");
+    function renderRail(){
+      const rows=buildRail(),today=chinaDay(),shown=rows.filter(x=>x.kind==='today'||railFilter==='all'||(railFilter==='future'?x.date>=today:x.kind==='deadline'));
+      document.getElementById('rail').innerHTML=shown.map(x=>{
+        const past=x.date<today,cls=[];if(past)cls.push('is-past');if(x.kind==='today')cls.push('now');
+        cls.push(x.kind==='deadline'?(x.confidence==='pending'?'k-unverified':'k-close'):x.kind==='exam'?'k-exam':x.kind==='quota'?'k-quota':'k-open');
+        const label=(x.date.startsWith('2027')?'27 ':'')+x.date.slice(5).replace('-','/');
+        const kindName={deadline:'网申',advisory:'待核',special:'专项',open:'放出',exam:'笔试',quota:'次数',review:'核查',today:'今天'}[x.kind];
+        const old=x.originalText&&x.originalText!==x.text?`<details class="rail-original"><summary>原节点完整保留</summary>${escapeHTML(x.originalText)}</details>`:'';
+        return `<li ${x.kind==='today'?'id="rail-today-marker" tabindex="-1"':''} class="${cls.join(' ')}" data-date="${x.date}" ${x.originalIndex!==undefined?`data-legacy-index="${x.originalIndex}"`:''}><span class="dot"></span><span class="date">${label}${x.time?'<small>'+x.time+'</small>':''}</span><span class="txt"><span class="rail-kind">${kindName}</span> ${escapeHTML(x.text)} ${sourceRefs(x.refs)}${x.note?`<small class="rail-note">${escapeHTML(x.note)}</small>`:''}${old}</span></li>`;
+      }).join('');
+      document.getElementById('rail-count').textContent=`${shown.length} / ${rows.length} 个节点 · 原40条全部保留`;
+      document.querySelectorAll('[data-rail-filter]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.railFilter===railFilter?'true':'false'));
     }
-
-    const ALL = DATA.concat(EXTRA);
-    document.getElementById("n-due").textContent = ALL.filter(d => {
-      const m = dueMeta(d);
-      return m.days !== null && m.days >= 0 && m.days <= 45;
-    }).length;
-    document.getElementById("n-open").textContent = DATA.filter(d => d.status === "open").length;
-    document.getElementById("n-rec").textContent = DATA.filter(d => d.rec === "yes").length;
-    document.getElementById("n-see").textContent = DATA.filter(d => d.src === "see").length;
-    document.getElementById("n-wait").textContent = DATA.filter(d => d.status === "wait").length;
-
-    chips.forEach(c => c.addEventListener("click", () => {
-      chips.forEach(x => x.classList.remove("active"));
-      c.classList.add("active");
-      filter = c.dataset.filter;
-      render();
-    }));
-    document.getElementById("q").addEventListener("input", render);
-    document.getElementById("sort").addEventListener("change", e => {
-      sortBy = e.target.value;
-      render();
-    });
-
-    const themeBtn = document.getElementById("theme-btn");
-    function applyTheme(t) {
-      document.documentElement.setAttribute("data-theme", t);
-      themeBtn.textContent = t === "dark" ? "浅色模式" : "深色模式";
-      try { localStorage.setItem("recsys-theme", t); } catch (e) {}
+    function renderStats(){
+      document.getElementById('n-due').textContent=ALL_ITEMS.filter(x=>{const m=dueMeta(x);return m.days!==null&&!m.expired&&m.days<=45&&m.event.kind!=='special'}).length;
+      document.getElementById('n-open').textContent=DATA.filter(x=>x.status==='open').length;
+      document.getElementById('n-rec').textContent=DATA.filter(x=>x.rec==='yes').length;
+      document.getElementById('n-see').textContent=DATA.filter(x=>x.src==='see'||x.audit?.level==='官方正文').length;
+      document.getElementById('n-wait').textContent=DATA.filter(x=>['wait','verify'].includes(x.status)).length;
     }
-    let startTheme = "light";
-    try {
-      startTheme = localStorage.getItem("recsys-theme") ||
-        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    } catch (e) {}
-    applyTheme(startTheme);
-    themeBtn.addEventListener("click", () => {
-      applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
-    });
-
-    const topBtn = document.getElementById("top-btn");
-    topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-    window.addEventListener("scroll", () => {
-      topBtn.classList.toggle("show", window.scrollY > 700);
-    }, { passive: true });
-
-    document.addEventListener("keydown", e => {
-      if (e.key === "/" && document.activeElement.id !== "q") {
-        e.preventDefault();
-        document.getElementById("q").focus();
-      }
-    });
-
-    renderLog();
-    renderRail();
-    render();
-  </script>
+    chips.forEach(c=>c.addEventListener('click',()=>{chips.forEach(x=>x.classList.remove('active'));c.classList.add('active');filter=c.dataset.filter;render();}));
+    document.getElementById('q').addEventListener('input',render);document.getElementById('sort').addEventListener('change',e=>{sortBy=e.target.value;render()});
+    document.querySelectorAll('[data-rail-filter]').forEach(b=>b.addEventListener('click',()=>{railFilter=b.dataset.railFilter;renderRail()}));
+    document.getElementById('jump-today').addEventListener('click',()=>{document.getElementById('rail-today-marker').scrollIntoView({behavior:'smooth',block:'center'});document.getElementById('rail-today-marker').focus({preventScroll:true})});
+    const themeBtn=document.getElementById('theme-btn');function applyTheme(t){document.documentElement.setAttribute('data-theme',t);themeBtn.textContent=t==='dark'?'浅色模式':'深色模式';try{localStorage.setItem('recsys-theme',t)}catch(e){}}
+    let startTheme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';try{startTheme=localStorage.getItem('recsys-theme')||startTheme}catch(e){}applyTheme(startTheme);themeBtn.addEventListener('click',()=>applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'));
+    const topBtn=document.getElementById('top-btn');topBtn.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));addEventListener('scroll',()=>topBtn.classList.toggle('show',scrollY>700),{passive:true});
+    document.addEventListener('keydown',e=>{if(e.key==='/'&&!/input|textarea|select/i.test(document.activeElement.tagName)&&!document.activeElement.isContentEditable){e.preventDefault();document.getElementById('q').focus()}});
+    renderLog();renderRail();renderStats();render();setupCommon();
+    // Re-evaluate boundaries every minute without collapsing an in-progress card expansion.
+    let tickKey=chinaDay()+':'+ALL_ITEMS.map(x=>dueMeta(x).expired?'1':'0').join('');
+    setInterval(()=>{const key=chinaDay()+':'+ALL_ITEMS.map(x=>dueMeta(x).expired?'1':'0').join('');if(key!==tickKey){tickKey=key;renderRail();renderStats();render();document.getElementById('clock-date').textContent=chinaDay()}},60000);
+    window.__QA={kind:PAGE_KIND,items:ALL_ITEMS,original:ORIGINAL_ITEMS,originalTimeline:TIMELINE,buildRail,deadlineFor,timeState,chinaDay,dayDistance,deadlineEpoch,render,renderRail};
+</script>
 </body>
 </html>
