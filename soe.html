@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
 AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
 上下文版本：2026-08-31
@@ -59,163 +59,618 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
 - 不修改或夸大候选人的事实，不把论文在审写成录用，不把了解或待补技能写成熟练掌握。
 - 更新结束后检查筛选数量、日期排序、外链、移动端布局、JavaScript 语法和 Git diff；未经候选人确认不要 push。
 -->
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="面向西安交通大学2027届应用统计、推荐算法实习背景的央国企精准招聘核查与投递策略。" />
-  <title>2027 届央国企精准核查 · 应用统计 × 推荐算法</title>
+<html lang="zh-CN" data-page-kind="soe">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="面向西安交通大学2027届应用统计、推荐算法实习背景的央国企精准招聘核查与投递策略。"
+    />
+    <title>2027 届央国企精准核查 · 应用统计 × 推荐算法</title>
 
-
-  <style id="incremental-enhancements">
-    /* Original stylesheet above is unchanged. Only new evidence controls and narrow-screen overflow are handled here. */
-    .audit-note{margin:0 0 12px;padding:10px 12px;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:12.3px;overflow-wrap:anywhere}
-    .audit-note.is-current{border-style:solid;border-left:3px solid var(--accent);background:var(--card-soft,var(--card2));color:var(--ink-soft,var(--soft))}
-    .audit-note strong{color:var(--accent);font-weight:600}.audit-note small{display:block;font-size:11.7px;margin-top:5px;color:var(--muted)}
-    .source-ref{font:11px var(--mono);color:var(--accent);text-decoration:none;white-space:nowrap}.source-ref:hover{text-decoration:underline}
-    .node-scope{margin:-5px 0 12px;font-size:11.8px;color:var(--muted);overflow-wrap:anywhere}.history-record{padding-top:10px;margin-top:10px;border-top:1px dashed var(--line)}
-    .history-record[open]{background:var(--card-soft,var(--card2));padding:10px;border-radius:10px}.history-record .field{font-size:12.6px}
-    .source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.source-entry{border:1px solid var(--line);border-radius:12px;padding:13px 14px;scroll-margin-top:180px;overflow-wrap:anywhere}
-    .source-entry b,.source-entry span{display:block}.source-entry b{font-size:13px}.source-entry span{font-size:11.8px;color:var(--muted);margin-top:4px}.source-entry p{font-size:12.6px;color:var(--muted);margin:8px 0}.source-entry a{font-size:12px;color:var(--accent)}
-    .source-entry:target{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft,var(--accent2))}.supplement-note{font-size:12.8px;color:var(--muted);margin:0 0 12px}.supplement-note strong{color:var(--accent)}
-    .rail-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}.rail-controls .ghost[aria-pressed=true]{background:var(--ink);color:var(--paper)}.rail-controls .count{margin-left:auto;font-size:11px}
-    .rail .date small{display:block;font-size:10.5px}.rail-note{display:block;font-size:11.6px;color:var(--muted);margin:2px 0 2px;line-height:1.55}.rail-kind{font-size:9.5px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 4px;white-space:nowrap}.rail-original{font-size:11.8px;color:var(--muted);margin:3px 0}.rail-original summary{cursor:pointer;color:var(--accent)}
-    .rail .k-unverified .dot{border-color:var(--intern,var(--gold));border-style:dashed}.rail .k-exam .dot{border-color:var(--see,var(--navy));background:var(--see-bg,var(--navy2))}.rail .k-quota .dot{border-color:var(--accent)}
-    #timeline,#audit-panel{scroll-margin-top:18px}.rail li{scroll-margin-top:180px}.rail .txt{min-width:0;overflow-wrap:anywhere}.rail li.is-past{opacity:.6}
-    .card .links a,.card .field,.card .note{overflow-wrap:anywhere}.card .links a{max-width:100%}.fact{white-space:normal;overflow-wrap:anywhere}.card-head>div:first-child{min-width:0}
-    .audit-footer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.stats .stat span{overflow-wrap:anywhere}
-    @media(max-width:820px){.topbar{flex-wrap:wrap}.top-actions{flex-wrap:wrap;gap:6px}.hits{grid-template-columns:1fr}.source-grid{grid-template-columns:1fr}.rail-controls .count{width:100%;margin:0}.due-v{font-size:13px}.ghost{white-space:normal}.filters input[type=search]{width:100%;min-width:0}.filters>*{max-width:100%}.toolbar .filters{gap:6px}}
-    @media(max-width:380px){.topbar{align-items:flex-start;flex-direction:column}.top-actions .ghost{font-size:11.5px;padding:6px 10px}.rail li{grid-template-columns:18px 59px minmax(0,1fr);gap:6px}.card{padding-left:14px;padding-right:14px}.badge{font-size:10.5px}.score{width:54px;height:54px}.name{font-size:24px}}
-    @media print{.rail-controls,.audit-footer-actions,.source-index>summary{display:none!important}.history-record:not([open]){display:none}.source-grid{grid-template-columns:1fr}.audit-note{break-inside:avoid}}
-  </style>
-<link rel="stylesheet" href="./src/styles/soe.css" />
-</head>
-<body>
-  <div class="wrap">
-    <div class="topbar">
-      <span class="brand">SOE MATCH · 2027 · APPLIED STATISTICS</span>
-      <div class="top-actions"><a class="ghost" href="index.html">推荐算法核查</a><a class="ghost" href="#audit-panel">本轮来源</a><button class="ghost" id="print-btn" type="button">打印 / PDF</button><button class="ghost" id="theme-btn" type="button">深色模式</button></div>
-    </div>
-
-    <header class="hero">
-      <div class="kicker">个人简历定制 · 核查日 2026-09-13 · 匹配度不是录取概率</div>
-      <h1>2027 届央国企精准核查<em>应用统计 × 推荐算法 × 地球物理 AI</em></h1>
-      <p class="lede">这不是把央国企名单简单缩短，而是按你的真实优势重新排序：当前快手召回与排序算法实习、因果去偏、session 级 GRPO、线上 A/B 指标，以及地震速度反演一作论文。纯机械、材料、基建施工、芯片硬件、基层综合和泛数据报表岗已主动剔除。</p>
-      <div class="meta"><span>学历：西安交通大学应用统计硕士 · 2027</span><span>主线：推荐 / 排序 / 因果 / 强化学习</span><span>第二曲线：地球物理 AI</span><span>地点：支持筛选西安 / 西北</span><span>数据状态：官方优先，辅证明确标注</span></div>
-    </header>
-
-    <section class="profile-strip">
-      <div class="profile-main"><div class="eyebrow">你的市场定位</div><strong>不是“会 Python 的统计学生”，而是有线上增益、模型创新和研究成果的生产级算法候选人。</strong><p>央国企里最有价值的不是广撒网，而是同时攻：内容推荐、运营商/国资云 AI、金融科技、能源地球物理 AI。</p></div>
-      <div class="profile-bit"><div class="eyebrow">生产算法</div><b>因果去偏 + 四塔解耦</b><p>能讲观测偏差、唯一性约束、置信降权与线上效果。</p></div>
-      <div class="profile-bit"><div class="eyebrow">长期优化</div><b>session GRPO + 延迟 reward</b><p>适合强化学习、客户长期价值、留存与决策模型。</p></div>
-      <div class="profile-bit"><div class="eyebrow">行业研究</div><b>地震速度反演一作</b><p>为中国石油/石化/海油的智能物探建立差异化入口。论文仍为 Under Review（在审），不是已发表。</p></div>
-      <div class="profile-bit"><div class="eyebrow">工程与可信度</div><b>PyTorch / C++ / Kafka + 真实指标</b><p>比只做课程项目或竞赛的候选人更接近可直接上手。</p></div>
-    </section>
-
-    <section class="stats">
-      <div class="stat hot"><b id="n-urgent">0</b><span>21 天内有来源的时间节点</span></div>
-      <div class="stat"><b id="n-now">0</b><span>本轮有公告 / 可行动入口</span></div>
-      <div class="stat"><b id="n-s">0</b><span>S 级高匹配入口</span></div>
-      <div class="stat"><b id="n-rg">0</b><span>推荐 / 地球物理差异化入口</span></div>
-      <div class="stat"><b id="n-xian">0</b><span>含西安 / 西北选项</span></div>
-      <div class="stat"><b id="n-watch">0</b><span>待核 / 观察 / 历史未重核</span></div>
-    </section>
-
-    <section class="panel">
-      <h2>先做什么：按时间，而不是按公司名气</h2>
-      <p class="supplement-note"><strong>9/13 更新：</strong>招银网络看面试地点批次；九天、昆仑、浪潮本届简章已更新；建信金科和中行数据路线有新证据。下方保留原8/31过程说明，新动作以卡片为准。</p>
-      <details class="more"><summary>保留：8/31原版核查过程</summary><p class="sub">8/31 变化：中国电信集团正式职位池已开放；中科芯当前 46 岗。九天、联通数科官网公司页暂为 0 岗，中国航信最新校园公告仍是 2026 届；这些已降级，不再算作当前可投。未经官网站住的 9/2、9/15、10/19 等日期已从倒计时删除。</p></details>
-      <div class="action-grid" id="action-grid"></div>
-    </section>
-
-    <section class="panel">
-      <h2>你的四条最优赛道</h2>
-      <p class="sub">赛道分析沿用原版；涉及“当前开放”的句子是8/31判断。<strong>9/13修正：</strong>九天已有新简章、昆仑本届已公告、联通数科已有新索引；其余未重核者仍按观察/待核处理，不能用赛道匹配代替可投证明。</p>
-      <div class="grid3">
-        <div class="insight"><b>① 内容推荐 / 用户增长：匹配度最高</b><p>咪咕、芒果TV、中国航信最能完整承接快手故事；当前开放程度不一，所以要把“高匹配”和“可投”分开看。</p></div>
-        <div class="insight"><b>② 运营商 AI / 国资云：当前机会最多</b><p>天翼云、中国电信集团、浪潮、曙光和中科芯当前有动作；九天官网公司页暂为 0 岗，先从主攻降为待核。</p></div>
-        <div class="insight"><b>③ 金融科技：需要换语言，不需换能力</b><p>因果偏差、长期价值、置信降权和在线实验，可转译为风险策略、客户经营、模型治理与稳定性。</p></div>
-        <div class="insight"><b>④ 能源地球物理 AI：你的独有护城河</b><p>昆仑数智、BGP、中石化经纬和中海油研究总院，是大多数推荐算法候选人没有的第二曲线。</p></div>
-        <div class="insight"><b>专业代码是硬门槛</b><p>应用统计在数据/算法岗通常友好，但军工、油气研究院和电网会按专业目录筛。卡片标“风险高”的，不要靠猜。</p></div>
-        <div class="insight"><b>不要降维去投泛数据岗</b><p>只做 Excel 报表、经营统计、基层运营或综合管理，会浪费线上算法经历。除非地点或稳定性优先级极高。</p></div>
+    <style id="incremental-enhancements">
+      /* Original stylesheet above is unchanged. Only new evidence controls and narrow-screen overflow are handled here. */
+      .audit-note {
+        margin: 0 0 12px;
+        padding: 10px 12px;
+        border: 1px dashed var(--line);
+        border-radius: 10px;
+        color: var(--muted);
+        font-size: 12.3px;
+        overflow-wrap: anywhere;
+      }
+      .audit-note.is-current {
+        border-style: solid;
+        border-left: 3px solid var(--accent);
+        background: var(--card-soft, var(--card2));
+        color: var(--ink-soft, var(--soft));
+      }
+      .audit-note strong {
+        color: var(--accent);
+        font-weight: 600;
+      }
+      .audit-note small {
+        display: block;
+        font-size: 11.7px;
+        margin-top: 5px;
+        color: var(--muted);
+      }
+      .source-ref {
+        font: 11px var(--mono);
+        color: var(--accent);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .source-ref:hover {
+        text-decoration: underline;
+      }
+      .node-scope {
+        margin: -5px 0 12px;
+        font-size: 11.8px;
+        color: var(--muted);
+        overflow-wrap: anywhere;
+      }
+      .history-record {
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px dashed var(--line);
+      }
+      .history-record[open] {
+        background: var(--card-soft, var(--card2));
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .history-record .field {
+        font-size: 12.6px;
+      }
+      .source-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .source-entry {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 13px 14px;
+        scroll-margin-top: 180px;
+        overflow-wrap: anywhere;
+      }
+      .source-entry b,
+      .source-entry span {
+        display: block;
+      }
+      .source-entry b {
+        font-size: 13px;
+      }
+      .source-entry span {
+        font-size: 11.8px;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      .source-entry p {
+        font-size: 12.6px;
+        color: var(--muted);
+        margin: 8px 0;
+      }
+      .source-entry a {
+        font-size: 12px;
+        color: var(--accent);
+      }
+      .source-entry:target {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 2px var(--accent-soft, var(--accent2));
+      }
+      .supplement-note {
+        font-size: 12.8px;
+        color: var(--muted);
+        margin: 0 0 12px;
+      }
+      .supplement-note strong {
+        color: var(--accent);
+      }
+      .rail-controls {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin: 12px 0;
+      }
+      .rail-controls .ghost[aria-pressed='true'] {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      .rail-controls .count {
+        margin-left: auto;
+        font-size: 11px;
+      }
+      .rail .date small {
+        display: block;
+        font-size: 10.5px;
+      }
+      .rail-note {
+        display: block;
+        font-size: 11.6px;
+        color: var(--muted);
+        margin: 2px 0 2px;
+        line-height: 1.55;
+      }
+      .rail-kind {
+        font-size: 9.5px;
+        color: var(--muted);
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        padding: 1px 4px;
+        white-space: nowrap;
+      }
+      .rail-original {
+        font-size: 11.8px;
+        color: var(--muted);
+        margin: 3px 0;
+      }
+      .rail-original summary {
+        cursor: pointer;
+        color: var(--accent);
+      }
+      .rail .k-unverified .dot {
+        border-color: var(--intern, var(--gold));
+        border-style: dashed;
+      }
+      .rail .k-exam .dot {
+        border-color: var(--see, var(--navy));
+        background: var(--see-bg, var(--navy2));
+      }
+      .rail .k-quota .dot {
+        border-color: var(--accent);
+      }
+      #timeline,
+      #audit-panel {
+        scroll-margin-top: 18px;
+      }
+      .rail li {
+        scroll-margin-top: 180px;
+      }
+      .rail .txt {
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+      .rail li.is-past {
+        opacity: 0.6;
+      }
+      .card .links a,
+      .card .field,
+      .card .note {
+        overflow-wrap: anywhere;
+      }
+      .card .links a {
+        max-width: 100%;
+      }
+      .fact {
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+      .card-head > div:first-child {
+        min-width: 0;
+      }
+      .audit-footer-actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+      .stats .stat span {
+        overflow-wrap: anywhere;
+      }
+      @media (max-width: 820px) {
+        .topbar {
+          flex-wrap: wrap;
+        }
+        .top-actions {
+          flex-wrap: wrap;
+          gap: 6px;
+        }
+        .hits {
+          grid-template-columns: 1fr;
+        }
+        .source-grid {
+          grid-template-columns: 1fr;
+        }
+        .rail-controls .count {
+          width: 100%;
+          margin: 0;
+        }
+        .due-v {
+          font-size: 13px;
+        }
+        .ghost {
+          white-space: normal;
+        }
+        .filters input[type='search'] {
+          width: 100%;
+          min-width: 0;
+        }
+        .filters > * {
+          max-width: 100%;
+        }
+        .toolbar .filters {
+          gap: 6px;
+        }
+      }
+      @media (max-width: 380px) {
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .top-actions .ghost {
+          font-size: 11.5px;
+          padding: 6px 10px;
+        }
+        .rail li {
+          grid-template-columns: 18px 59px minmax(0, 1fr);
+          gap: 6px;
+        }
+        .card {
+          padding-left: 14px;
+          padding-right: 14px;
+        }
+        .badge {
+          font-size: 10.5px;
+        }
+        .score {
+          width: 54px;
+          height: 54px;
+        }
+        .name {
+          font-size: 24px;
+        }
+      }
+      @media print {
+        .rail-controls,
+        .audit-footer-actions,
+        .source-index > summary {
+          display: none !important;
+        }
+        .history-record:not([open]) {
+          display: none;
+        }
+        .source-grid {
+          grid-template-columns: 1fr;
+        }
+        .audit-note {
+          break-inside: avoid;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./src/styles/soe.css" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="2027 届校招招聘资料、证据核查与个人投递状态管理工作台。" />
+    <link rel="stylesheet" href="./src/styles/enterprise.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#grid">跳到招聘卡片</a>
+    <main class="wrap" id="main-content">
+      <div class="topbar">
+        <span class="brand">SOE MATCH · 2027 · APPLIED STATISTICS</span>
+        <div class="top-actions">
+          <a class="ghost" href="index.html">推荐算法核查</a
+          ><a class="ghost" href="#audit-panel">本轮来源</a
+          ><button class="ghost" id="print-btn" type="button">打印 / PDF</button
+          ><button class="ghost" id="theme-btn" type="button">深色模式</button>
+        </div>
       </div>
-    </section>
 
-    <section class="panel">
-      <h2>不要一份简历通投：至少准备四个版本</h2>
-      <p class="sub">核心事实不变，只改变顺序、业务语言和技能强调。任何没有真实掌握的 SQL、Linux、CUDA 或金融知识都不要硬写。</p>
-      <div class="resume-grid">
-        <div class="resume-card"><span class="v">A · REC/AI</span><b>推荐算法 / 内容平台 / 云 AI</b><p>适用：天翼云、九天、咪咕、芒果TV、中国航信、浪潮、曙光。</p><ul><li>快手三项目置顶，线上指标保留</li><li>GRPO、因果去偏、序列与多目标写清</li><li>论文作为研究能力，不抢业务主线</li></ul></div>
-        <div class="resume-card"><span class="v">B · FINTECH</span><b>金融科技 / 风控 / 数据智能</b><p>适用：招银网络、人保科技、交银金科、银联数据、建信金科。</p><ul><li>“激励偏差”改为机制干预下的观测偏差</li><li>LT7 改为长期价值与延迟标签</li><li>补准备：SQL、GBDT、KS/PSI、稳定性</li></ul></div>
-        <div class="resume-card"><span class="v">C · GEO AI</span><b>智能地球物理 / 能源 AI</b><p>适用：昆仑数智、BGP、中石化经纬、中海油研究总院。</p><ul><li>论文置顶，必须保留 Under Review</li><li>强调 5 个基准集、鲁棒性、物理一致性</li><li>快手证明大规模工程与实验能力</li></ul></div>
-        <div class="resume-card"><span class="v">D · RESEARCH</span><b>研究所 / 工业 AI / 涉密单位</b><p>适用：电科、中汽中心、东风、宝信、南网数字。</p><ul><li>漏洞奖改为“负责任披露并获官方确认”</li><li>删除“绕过订阅、多账户”等敏感措辞</li><li>空间不足时删除 AI 协同开发工具行</li></ul></div>
+      <header class="hero">
+        <div class="kicker">个人简历定制 · 核查日 2026-09-13 · 匹配度不是录取概率</div>
+        <h1>2027 届央国企精准核查<em>应用统计 × 推荐算法 × 地球物理 AI</em></h1>
+        <p class="lede">
+          这不是把央国企名单简单缩短，而是按你的真实优势重新排序：当前快手召回与排序算法实习、因果去偏、session
+          级 GRPO、线上 A/B
+          指标，以及地震速度反演一作论文。纯机械、材料、基建施工、芯片硬件、基层综合和泛数据报表岗已主动剔除。
+        </p>
+        <div class="meta">
+          <span>学历：西安交通大学应用统计硕士 · 2027</span
+          ><span>主线：推荐 / 排序 / 因果 / 强化学习</span><span>第二曲线：地球物理 AI</span
+          ><span>地点：支持筛选西安 / 西北</span><span>数据状态：官方优先，辅证明确标注</span>
+        </div>
+      </header>
+
+      <section class="profile-strip">
+        <div class="profile-main">
+          <div class="eyebrow">你的市场定位</div>
+          <strong
+            >不是“会 Python
+            的统计学生”，而是有线上增益、模型创新和研究成果的生产级算法候选人。</strong
+          >
+          <p>
+            央国企里最有价值的不是广撒网，而是同时攻：内容推荐、运营商/国资云
+            AI、金融科技、能源地球物理 AI。
+          </p>
+        </div>
+        <div class="profile-bit">
+          <div class="eyebrow">生产算法</div>
+          <b>因果去偏 + 四塔解耦</b>
+          <p>能讲观测偏差、唯一性约束、置信降权与线上效果。</p>
+        </div>
+        <div class="profile-bit">
+          <div class="eyebrow">长期优化</div>
+          <b>session GRPO + 延迟 reward</b>
+          <p>适合强化学习、客户长期价值、留存与决策模型。</p>
+        </div>
+        <div class="profile-bit">
+          <div class="eyebrow">行业研究</div>
+          <b>地震速度反演一作</b>
+          <p>
+            为中国石油/石化/海油的智能物探建立差异化入口。论文仍为 Under
+            Review（在审），不是已发表。
+          </p>
+        </div>
+        <div class="profile-bit">
+          <div class="eyebrow">工程与可信度</div>
+          <b>PyTorch / C++ / Kafka + 真实指标</b>
+          <p>比只做课程项目或竞赛的候选人更接近可直接上手。</p>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat hot"><b id="n-urgent">0</b><span>21 天内有来源的时间节点</span></div>
+        <div class="stat"><b id="n-now">0</b><span>本轮有公告 / 可行动入口</span></div>
+        <div class="stat"><b id="n-s">0</b><span>S 级高匹配入口</span></div>
+        <div class="stat"><b id="n-rg">0</b><span>推荐 / 地球物理差异化入口</span></div>
+        <div class="stat"><b id="n-xian">0</b><span>含西安 / 西北选项</span></div>
+        <div class="stat"><b id="n-watch">0</b><span>待核 / 观察 / 历史未重核</span></div>
+      </section>
+
+      <section class="panel">
+        <h2>先做什么：按时间，而不是按公司名气</h2>
+        <p class="supplement-note">
+          <strong>9/13 更新：</strong
+          >招银网络看面试地点批次；九天、昆仑、浪潮本届简章已更新；建信金科和中行数据路线有新证据。下方保留原8/31过程说明，新动作以卡片为准。
+        </p>
+        <details class="more">
+          <summary>保留：8/31原版核查过程</summary>
+          <p class="sub">
+            8/31 变化：中国电信集团正式职位池已开放；中科芯当前 46 岗。九天、联通数科官网公司页暂为
+            0 岗，中国航信最新校园公告仍是 2026 届；这些已降级，不再算作当前可投。未经官网站住的
+            9/2、9/15、10/19 等日期已从倒计时删除。
+          </p>
+        </details>
+        <div class="action-grid" id="action-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>你的四条最优赛道</h2>
+        <p class="sub">
+          赛道分析沿用原版；涉及“当前开放”的句子是8/31判断。<strong>9/13修正：</strong>九天已有新简章、昆仑本届已公告、联通数科已有新索引；其余未重核者仍按观察/待核处理，不能用赛道匹配代替可投证明。
+        </p>
+        <div class="grid3">
+          <div class="insight">
+            <b>① 内容推荐 / 用户增长：匹配度最高</b>
+            <p>
+              咪咕、芒果TV、中国航信最能完整承接快手故事；当前开放程度不一，所以要把“高匹配”和“可投”分开看。
+            </p>
+          </div>
+          <div class="insight">
+            <b>② 运营商 AI / 国资云：当前机会最多</b>
+            <p>
+              天翼云、中国电信集团、浪潮、曙光和中科芯当前有动作；九天官网公司页暂为 0
+              岗，先从主攻降为待核。
+            </p>
+          </div>
+          <div class="insight">
+            <b>③ 金融科技：需要换语言，不需换能力</b>
+            <p>
+              因果偏差、长期价值、置信降权和在线实验，可转译为风险策略、客户经营、模型治理与稳定性。
+            </p>
+          </div>
+          <div class="insight">
+            <b>④ 能源地球物理 AI：你的独有护城河</b>
+            <p>昆仑数智、BGP、中石化经纬和中海油研究总院，是大多数推荐算法候选人没有的第二曲线。</p>
+          </div>
+          <div class="insight">
+            <b>专业代码是硬门槛</b>
+            <p>
+              应用统计在数据/算法岗通常友好，但军工、油气研究院和电网会按专业目录筛。卡片标“风险高”的，不要靠猜。
+            </p>
+          </div>
+          <div class="insight">
+            <b>不要降维去投泛数据岗</b>
+            <p>
+              只做 Excel
+              报表、经营统计、基层运营或综合管理，会浪费线上算法经历。除非地点或稳定性优先级极高。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>不要一份简历通投：至少准备四个版本</h2>
+        <p class="sub">
+          核心事实不变，只改变顺序、业务语言和技能强调。任何没有真实掌握的 SQL、Linux、CUDA
+          或金融知识都不要硬写。
+        </p>
+        <div class="resume-grid">
+          <div class="resume-card">
+            <span class="v">A · REC/AI</span><b>推荐算法 / 内容平台 / 云 AI</b>
+            <p>适用：天翼云、九天、咪咕、芒果TV、中国航信、浪潮、曙光。</p>
+            <ul>
+              <li>快手三项目置顶，线上指标保留</li>
+              <li>GRPO、因果去偏、序列与多目标写清</li>
+              <li>论文作为研究能力，不抢业务主线</li>
+            </ul>
+          </div>
+          <div class="resume-card">
+            <span class="v">B · FINTECH</span><b>金融科技 / 风控 / 数据智能</b>
+            <p>适用：招银网络、人保科技、交银金科、银联数据、建信金科。</p>
+            <ul>
+              <li>“激励偏差”改为机制干预下的观测偏差</li>
+              <li>LT7 改为长期价值与延迟标签</li>
+              <li>补准备：SQL、GBDT、KS/PSI、稳定性</li>
+            </ul>
+          </div>
+          <div class="resume-card">
+            <span class="v">C · GEO AI</span><b>智能地球物理 / 能源 AI</b>
+            <p>适用：昆仑数智、BGP、中石化经纬、中海油研究总院。</p>
+            <ul>
+              <li>论文置顶，必须保留 Under Review</li>
+              <li>强调 5 个基准集、鲁棒性、物理一致性</li>
+              <li>快手证明大规模工程与实验能力</li>
+            </ul>
+          </div>
+          <div class="resume-card">
+            <span class="v">D · RESEARCH</span><b>研究所 / 工业 AI / 涉密单位</b>
+            <p>适用：电科、中汽中心、东风、宝信、南网数字。</p>
+            <ul>
+              <li>漏洞奖改为“负责任披露并获官方确认”</li>
+              <li>删除“绕过订阅、多账户”等敏感措辞</li>
+              <li>空间不足时删除 AI 协同开发工具行</li>
+            </ul>
+          </div>
+        </div>
+        <div class="warning">
+          <strong>简历当前最明显的缺口：</strong>没有展示
+          SQL、Linux/数据仓库、经典统计/表格模型。它不代表你不会，但金融科技、工业数据和央企研发面试会默认追问。只在真实熟练时补进简历，并准备可验证的项目细节。
+        </div>
+      </section>
+
+      <p id="app-loading" class="app-loading" role="status">正在读取招聘资料与个人工作台…</p>
+      <div class="toolbar">
+        <div class="filters">
+          <button class="chip active" data-filter="all">全部精选</button>
+          <button class="chip" data-filter="now">当前可行动</button>
+          <button class="chip" data-filter="urgent">21 天内</button>
+          <button class="chip" data-filter="s">S 级</button>
+          <button class="chip" data-filter="rec">内容推荐</button>
+          <button class="chip" data-filter="ai">AI / 云</button>
+          <button class="chip" data-filter="finance">金融科技</button>
+          <button class="chip" data-filter="geo">地球物理 AI</button>
+          <button class="chip" data-filter="industrial">工业 / 研究院</button>
+          <button class="chip" data-filter="xian">西安 / 西北</button>
+          <button class="chip" data-filter="watch">观察池 / 待核 / 已过</button
+          ><button class="chip" data-filter="rev">本轮更新</button>
+          <input type="search" id="q" placeholder="搜公司 / 城市 / 岗位 / 风险（按 / 聚焦）" />
+          <select id="sort" aria-label="排序">
+            <option value="priority">按行动优先级</option>
+            <option value="fit">按匹配度</option>
+            <option value="due">按日期</option>
+          </select>
+          <span class="spacer"></span
+          ><span
+            class="count"
+            id="count"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></span>
+        </div>
       </div>
-      <div class="warning"><strong>简历当前最明显的缺口：</strong>没有展示 SQL、Linux/数据仓库、经典统计/表格模型。它不代表你不会，但金融科技、工业数据和央企研发面试会默认追问。只在真实熟练时补进简历，并准备可验证的项目细节。</div>
-    </section>
 
-    <p id="app-loading" class="app-loading" role="status">正在读取招聘资料与个人工作台…</p>
-<div class="toolbar">
-      <div class="filters">
-        <button class="chip active" data-filter="all">全部精选</button>
-        <button class="chip" data-filter="now">当前可行动</button>
-        <button class="chip" data-filter="urgent">21 天内</button>
-        <button class="chip" data-filter="s">S 级</button>
-        <button class="chip" data-filter="rec">内容推荐</button>
-        <button class="chip" data-filter="ai">AI / 云</button>
-        <button class="chip" data-filter="finance">金融科技</button>
-        <button class="chip" data-filter="geo">地球物理 AI</button>
-        <button class="chip" data-filter="industrial">工业 / 研究院</button>
-        <button class="chip" data-filter="xian">西安 / 西北</button>
-        <button class="chip" data-filter="watch">观察池 / 待核 / 已过</button><button class="chip" data-filter="rev">本轮更新</button>
-        <input type="search" id="q" placeholder="搜公司 / 城市 / 岗位 / 风险（按 / 聚焦）" />
-        <select id="sort" aria-label="排序"><option value="priority">按行动优先级</option><option value="fit">按匹配度</option><option value="due">按日期</option></select>
-        <span class="spacer"></span><span class="count" id="count"></span>
-      </div>
-    </div>
+      <section class="cards" id="grid" tabindex="-1"></section>
 
-    <section class="cards" id="grid"></section>
+      <section class="panel" style="margin-top: 20px">
+        <h2>故意没有整理的方向</h2>
+        <p class="sub">这不是遗漏，而是基于你的履历做的负筛选。以后若职业目标改变，再单独扩展。</p>
+        <div class="omit-grid">
+          <div class="omit">
+            <b>机械 / 材料 / 土木 / 施工 / 生产工艺</b>
+            <p>与你的算法和统计主线缺少直接连接，央企名气不能抵消岗位错配。</p>
+          </div>
+          <div class="omit">
+            <b>芯片硬件 / 模拟电路 / FPGA 主体岗位</b>
+            <p>只保留电科 58 所里的 AI 算法备选；没有硬件与编译器项目时不扩大。</p>
+          </div>
+          <div class="omit">
+            <b>基层银行综合 / 柜面 / 营销 / 运营</b>
+            <p>你应优先金融科技子公司、总行科技、风控与数据，不需要用强算法履历去换泛岗位。</p>
+          </div>
+          <div class="omit">
+            <b>纯网络维护 / 通信工程 / 安全运维</b>
+            <p>中国电信、中国移动、中国联通只筛 AI、研发、产数、数据与专业公司。</p>
+          </div>
+          <div class="omit">
+            <b>博士限定的顶尖人才专项</b>
+            <p>
+              你的研究能力强，但学历是硕士。明确博士限定的世界模型、首席研究、博士后类不占投递精力。
+            </p>
+          </div>
+          <div class="omit">
+            <b>只有 Excel / 报表的“数据分析”</b>
+            <p>除非岗位同时包含建模、算法或决策系统，否则属于明显降维。</p>
+          </div>
+        </div>
+      </section>
 
-    <section class="panel" style="margin-top:20px">
-      <h2>故意没有整理的方向</h2>
-      <p class="sub">这不是遗漏，而是基于你的履历做的负筛选。以后若职业目标改变，再单独扩展。</p>
-      <div class="omit-grid">
-        <div class="omit"><b>机械 / 材料 / 土木 / 施工 / 生产工艺</b><p>与你的算法和统计主线缺少直接连接，央企名气不能抵消岗位错配。</p></div>
-        <div class="omit"><b>芯片硬件 / 模拟电路 / FPGA 主体岗位</b><p>只保留电科 58 所里的 AI 算法备选；没有硬件与编译器项目时不扩大。</p></div>
-        <div class="omit"><b>基层银行综合 / 柜面 / 营销 / 运营</b><p>你应优先金融科技子公司、总行科技、风控与数据，不需要用强算法履历去换泛岗位。</p></div>
-        <div class="omit"><b>纯网络维护 / 通信工程 / 安全运维</b><p>中国电信、中国移动、中国联通只筛 AI、研发、产数、数据与专业公司。</p></div>
-        <div class="omit"><b>博士限定的顶尖人才专项</b><p>你的研究能力强，但学历是硕士。明确博士限定的世界模型、首席研究、博士后类不占投递精力。</p></div>
-        <div class="omit"><b>只有 Excel / 报表的“数据分析”</b><p>除非岗位同时包含建模、算法或决策系统，否则属于明显降维。</p></div>
-      </div>
-    </section>
+      <section class="panel">
+        <h2>面试叙事：同一个项目，四种说法</h2>
+        <div class="grid3">
+          <div class="insight">
+            <b>推荐平台</b>
+            <p>
+              “分离真实兴趣与激励增益，只用兴趣分参与在线排序；同时优化即时互动与 7 日长期复访。”
+            </p>
+          </div>
+          <div class="insight">
+            <b>金融科技</b>
+            <p>
+              “处理干预机制导致的观测偏差与延迟标签，构建稳健的客户行为/长期价值模型，并通过在线实验验证。”
+            </p>
+          </div>
+          <div class="insight">
+            <b>工业 AI</b>
+            <p>
+              “针对多域分布差异做条件化建模，用置信机制降低低质量样本影响，并将复杂优化转为可扩展矩阵计算。”
+            </p>
+          </div>
+          <div class="insight">
+            <b>能源地球物理</b>
+            <p>
+              “将状态空间模型与注意力用于地震速度反演，兼顾全局建模、线性复杂度、鲁棒性和物理一致性。”
+            </p>
+          </div>
+          <div class="insight">
+            <b>研究所</b>
+            <p>
+              “从假设、约束、训练稳定性到实验验证完整闭环；不仅做模型，也能解释可识别性与梯度隔离。”
+            </p>
+          </div>
+          <div class="insight">
+            <b>安全成果</b>
+            <p>“独立发现并负责任披露服务端授权漏洞，完成 PoC 验证和沟通，获官方确认与奖励。”</p>
+          </div>
+        </div>
+      </section>
 
-    <section class="panel">
-      <h2>面试叙事：同一个项目，四种说法</h2>
-      <div class="grid3">
-        <div class="insight"><b>推荐平台</b><p>“分离真实兴趣与激励增益，只用兴趣分参与在线排序；同时优化即时互动与 7 日长期复访。”</p></div>
-        <div class="insight"><b>金融科技</b><p>“处理干预机制导致的观测偏差与延迟标签，构建稳健的客户行为/长期价值模型，并通过在线实验验证。”</p></div>
-        <div class="insight"><b>工业 AI</b><p>“针对多域分布差异做条件化建模，用置信机制降低低质量样本影响，并将复杂优化转为可扩展矩阵计算。”</p></div>
-        <div class="insight"><b>能源地球物理</b><p>“将状态空间模型与注意力用于地震速度反演，兼顾全局建模、线性复杂度、鲁棒性和物理一致性。”</p></div>
-        <div class="insight"><b>研究所</b><p>“从假设、约束、训练稳定性到实验验证完整闭环；不仅做模型，也能解释可识别性与梯度隔离。”</p></div>
-        <div class="insight"><b>安全成果</b><p>“独立发现并负责任披露服务端授权漏洞，完成 PoC 验证和沟通，获官方确认与奖励。”</p></div>
-      </div>
-    </section>
+      <section class="panel" id="audit-panel" style="margin-top: 20px">
+        <h2>本轮复核与原版对照</h2>
+        <p class="sub" id="audit-count"></p>
+        <p class="supplement-note">
+          <strong>核查日 2026-09-13 · 页面定位日 <span id="clock-date"></span>（北京时间）</strong
+          ><br />日期会随打开时间变化；招聘信息不会自动联网刷新。原版板块、卡片、评分与分析保留，旧事实与本轮证据分开。不把网页读取失败当停招，不把专业相近当资格通过。
+        </p>
+        <details class="more source-index" id="source-index">
+          <summary>展开：本轮来源、读取范围与未核清事项</summary>
+          <div class="source-grid" id="source-list"></div>
+        </details>
+        <div class="audit-footer-actions">
+          <button class="ghost" type="button" id="export-btn">导出当前数据 JSON</button
+          ><a class="ghost" href="#grid">返回岗位卡片</a>
+        </div>
+      </section>
+      <button id="top-btn" type="button" aria-label="回到顶部">↑</button>
+      <footer>
+        <p>
+          <strong>评分说明：</strong
+          >匹配度综合了岗位内容、专业口径、当前履历可迁移性、定制成本与招聘状态，只用于安排精力，不代表录取概率。S
+          级观察池可能比 B+ 当前岗更适合你，但不能把未开放岗位当作可投。
+        </p>
+        <p>
+          <strong>证据说明：</strong
+          >官方公告/职位池优先；高校就业网、招聘汇总只补充日期和岗位摘要。卡片写“辅证、待核、往届”的内容，提交前必须回官方入口确认。
+        </p>
+        <p>页面不包含姓名、电话、邮箱等个人信息。原版基线：2026-08-31；本轮复核：2026-09-13。</p>
+      </footer>
+    </main>
 
-<section class="panel" id="audit-panel" style="margin-top:20px">
-      <h2>本轮复核与原版对照</h2>
-      <p class="sub" id="audit-count"></p>
-      <p class="supplement-note"><strong>核查日 2026-09-13 · 页面定位日 <span id="clock-date"></span>（北京时间）</strong><br>日期会随打开时间变化；招聘信息不会自动联网刷新。原版板块、卡片、评分与分析保留，旧事实与本轮证据分开。不把网页读取失败当停招，不把专业相近当资格通过。</p>
-      <details class="more source-index" id="source-index"><summary>展开：本轮来源、读取范围与未核清事项</summary><div class="source-grid" id="source-list"></div></details>
-      <div class="audit-footer-actions"><button class="ghost" type="button" id="export-btn">导出当前数据 JSON</button><a class="ghost" href="#grid">返回岗位卡片</a></div>
-    </section>
-    <button id="top-btn" type="button" aria-label="回到顶部">↑</button>
-    <footer>
-      <p><strong>评分说明：</strong>匹配度综合了岗位内容、专业口径、当前履历可迁移性、定制成本与招聘状态，只用于安排精力，不代表录取概率。S 级观察池可能比 B+ 当前岗更适合你，但不能把未开放岗位当作可投。</p>
-      <p><strong>证据说明：</strong>官方公告/职位池优先；高校就业网、招聘汇总只补充日期和岗位摘要。卡片写“辅证、待核、往届”的内容，提交前必须回官方入口确认。</p>
-      <p>页面不包含姓名、电话、邮箱等个人信息。原版基线：2026-08-31；本轮复核：2026-09-13。</p>
-    </footer>
-  </div>
-
-  <script type="module" src="./src/pages/soe.js"></script>
-<noscript>请启用 JavaScript 以读取卡片和保存个人标记。</noscript>
-</body>
+    <script type="module" src="./src/bootstrap.js"></script>
+    <noscript>请启用 JavaScript 以读取卡片和保存个人标记。</noscript>
+  </body>
 </html>

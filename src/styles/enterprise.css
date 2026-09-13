@@ -1,0 +1,94 @@
+/* Shared interaction/accessibility rules; original palettes and layouts remain. */
+[hidden] {
+  display: none !important;
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 1000;
+  padding: 12px 18px;
+  background: var(--card);
+  color: var(--ink);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  transform: translateY(-150%);
+}
+.skip-link:focus {
+  transform: none;
+}
+#grid:focus {
+  outline: none;
+}
+#app-loading {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+@supports (content-visibility: auto) {
+  .card {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 660px;
+  }
+  .card:focus-within,
+  .card:has(details[open]) {
+    content-visibility: visible;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background-attachment: scroll;
+  }
+  button,
+  .ghost,
+  .personal-actions button {
+    min-height: 40px;
+  }
+  .personal-heading,
+  .sync-row {
+    min-width: 0;
+  }
+  .sync-row > *,
+  .identity-note {
+    overflow-wrap: anywhere;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
+  .skip-link,
+  #app-loading {
+    display: none !important;
+  }
+  .card {
+    content-visibility: visible;
+    contain: none;
+  }
+}
+
+/* AA-readable small text on the existing warm/green surfaces. */
+:root[data-page-kind='rec']:not([data-theme='dark']) {
+  --accent: #9d451b;
+  --muted: #665e53;
+}
+:root[data-page-kind='soe']:not([data-theme='dark']) {
+  --muted: #596a62;
+}
+:root .rail li.is-past {
+  opacity: 1;
+}

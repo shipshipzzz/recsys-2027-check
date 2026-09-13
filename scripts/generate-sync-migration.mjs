@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {ROOT,TABLE_NAMES,PRIMARY_KEYS,COLUMNS} from './catalog-data.mjs';
+import { ROOT, TABLE_NAMES, PRIMARY_KEYS, COLUMNS } from './catalog-data.mjs';
 
 // Generates a fixed table/column allowlist; user data is always bound as JSON, never SQL.
-const spec=Object.fromEntries(TABLE_NAMES.map(t=>[t,{columns:COLUMNS[t],keys:PRIMARY_KEYS[t]}]));
-const sql=`-- Atomic GitHub catalog synchronization. Never writes Auth or personal states.
+const spec = Object.fromEntries(
+  TABLE_NAMES.map((t) => [t, { columns: COLUMNS[t], keys: PRIMARY_KEYS[t] }]),
+);
+const sql = `-- Atomic GitHub catalog synchronization. Never writes Auth or personal states.
 -- Install once after the existing migrations. Re-running this file is safe.
 begin;
 alter table public.sources add column if not exists published text;
@@ -22,8 +24,10 @@ create table if not exists recsys_sync.releases (
 alter table recsys_sync.releases enable row level security;
 revoke all on recsys_sync.releases from public, anon, authenticated;
 grant select, insert, delete on recsys_sync.releases to service_role;
-${TABLE_NAMES.map(t=>`grant select, insert, update on public.${t} to service_role;`).join('\n')}
-${TABLE_NAMES.filter(t=>!['companies','job_entries','sources'].includes(t)).map(t=>`grant delete on public.${t} to service_role;`).join('\n')}
+${TABLE_NAMES.map((t) => `grant select, insert, update on public.${t} to service_role;`).join('\n')}
+${TABLE_NAMES.filter((t) => !['companies', 'job_entries', 'sources'].includes(t))
+  .map((t) => `grant delete on public.${t} to service_role;`)
+  .join('\n')}
 
 create or replace function public.recsys_apply_catalog(
   p_catalog jsonb,
@@ -37,7 +41,7 @@ set lock_timeout = '10s'
 as $sync$
 declare
   specs constant jsonb := '${JSON.stringify(spec)}'::jsonb;
-  ordered_tables constant text[] := array[${TABLE_NAMES.map(t=>`'${t}'`).join(',')}];
+  ordered_tables constant text[] := array[${TABLE_NAMES.map((t) => `'${t}'`).join(',')}];
   t text; cols text; key_cols text; updates text; equality text;
   incoming_row jsonb; k text; cast_count bigint; missing text;
   before_catalog jsonb := '{}'::jsonb;
@@ -163,8 +167,12 @@ comment on function public.recsys_apply_catalog(jsonb,text,bigint,boolean) is 'C
 notify pgrst,'reload schema';
 commit;
 `;
-const target=path.join(ROOT,'supabase/migrations/202609130003_catalog_sync.sql');
-if(process.argv.includes('--check')){
-  if(!fs.existsSync(target)||fs.readFileSync(target,'utf8').replaceAll('\r\n','\n')!==sql)throw new Error('Sync migration is out of date; run node scripts/generate-sync-migration.mjs');
+const target = path.join(ROOT, 'supabase/migrations/202609130003_catalog_sync.sql');
+if (process.argv.includes('--check')) {
+  if (!fs.existsSync(target) || fs.readFileSync(target, 'utf8').replaceAll('\r\n', '\n') !== sql)
+    throw new Error('Sync migration is out of date; run node scripts/generate-sync-migration.mjs');
   console.log('Sync SQL allowlist matches the data normalizer.');
-}else{fs.writeFileSync(target,sql);console.log('Generated',path.relative(ROOT,target));}
+} else {
+  fs.writeFileSync(target, sql);
+  console.log('Generated', path.relative(ROOT, target));
+}

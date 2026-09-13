@@ -2,6 +2,14 @@
 
 保留原推荐算法页和国企 / 金融科技页的视觉、筛选、来源、完整历史记录与时间线，接入 Supabase PostgreSQL、Auth 和自动生成的 REST API。
 
+## 工程质量与验收
+
+本项目保留原生 JavaScript + Vite 多页结构，采用本地快照先展示、云端异步刷新、用户状态独立同步的加载方式。页面不依赖外部字体服务。卡片按稳定 ID 复用节点，搜索支持输入法组合输入；缓存、超时、有限重试、过期响应和账号切换均有回归测试。
+
+执行 `npm run verify` 可以完成规范、格式、单元测试、数据校验、构建安全与体积预算，以及桌面/手机浏览器验收。首次安装浏览器环境执行 `npx playwright install chromium`；Windows 已安装 Chrome 时测试默认使用独立的无头 Chrome，不读取个人浏览器配置。
+
+边界、架构、测试与发布流程见 [工程维护指南](docs/engineering.md)，本轮实测记录见 [工程验收记录](docs/enterprise-validation.md)。这是代码和测试层的工程加固，不代表生产系统已取得企业级认证或可用性承诺。
+
 ## 本地维护与自动发布（新入口）
 
 日常招聘资料只维护 `data/rec.json` 和 `data/soe.json`，然后 push `main`。GitHub Actions 会校验数据与稳定 ID、测试、构建、事务同步 Supabase、完整比对云端并发布 Pages。个人投递状态和 Auth 不参与资料发布。
@@ -10,7 +18,7 @@
 
 ## 已接入的功能
 
-每张卡片顶部有「已投递」「不感兴趣」操作。两种状态都会置灰，并统一移入页面末尾的「已处理的卡片」区域，不占据前面的待处理列表。点击「恢复」会回到原来的截止日期 / 优先级排序位置，操作后也可以「撤销」。
+每张卡片顶部有「已投递」「不感兴趣」操作。两种状态都会以独立分组、标签和虚线边框区分（保持文字可读对比度），并统一移入页面末尾的「已处理的卡片」区域，不占据前面的待处理列表。点击「恢复」会回到原来的截止日期 / 优先级排序位置，操作后也可以「撤销」。
 
 「我的状态」筛选可选择全部、未处理、已投递、不感兴趣，并与原来的关键词、招聘分类和排序一起工作。推荐页核心与补充公司中的已处理卡片会统一置后；国企页的近期行动推荐也会排除已处理卡片。
 
@@ -22,7 +30,7 @@
 
 ## 本地运行
 
-使用 Node.js 22.12+（开发时使用 22.20.0）。本项目已转换为 Vite 多页项目，不再通过双击 HTML 文件运行。
+使用 Node.js 22.13+ 的 22.x 系列或 Node.js 24+（本轮本机验证使用 22.20.0）。本项目已转换为 Vite 多页项目，不再通过双击 HTML 文件运行。
 
 ```powershell
 cd "C:\Users\25759\Desktop\github项目管理\recsys-2027-check"
@@ -30,7 +38,7 @@ npm ci
 npm run dev
 ```
 
-开发入口：`http://127.0.0.1:5173/`；第二页：`http://127.0.0.1:5173/soe.html`。
+开发入口：`http://127.0.0.1:5173/recsys-2027-check/`；第二页：`http://127.0.0.1:5173/recsys-2027-check/soe.html`。
 
 生产构建和本地预览：
 
@@ -39,19 +47,19 @@ npm run build
 npm run preview
 ```
 
-预览入口：`http://127.0.0.1:4173/`。开发端口与预览端口是两个不同的浏览器存储来源，匿名身份不共享；邮箱账号可以在两个入口登录同一账号。
+预览入口：`http://127.0.0.1:4173/recsys-2027-check/`。开发端口与预览端口是两个不同的浏览器存储来源，匿名身份不共享；邮箱账号可以在两个入口登录同一账号。
 
 ## Supabase 配置
 
-当前已经连接的免费项目：
+仓库原有默认连接目标如下。本轮工程优化未重新检查或修改线上套餐、Auth 开关、回调、SMTP 或 CAPTCHA 配置：
 
-| 项目 | 值 |
-| --- | --- |
-| Organization | `recsys-2027`（Free） |
-| Project | `recsys-2027-check` |
-| Project ref | `npqrixancnwbmzcyqafx` |
-| Region | Singapore / `ap-southeast-1` |
-| API URL | `https://npqrixancnwbmzcyqafx.supabase.co` |
+| 项目         | 值                                         |
+| ------------ | ------------------------------------------ |
+| Organization | `recsys-2027`（Free）                      |
+| Project      | `recsys-2027-check`                        |
+| Project ref  | `npqrixancnwbmzcyqafx`                     |
+| Region       | Singapore / `ap-southeast-1`               |
+| API URL      | `https://npqrixancnwbmzcyqafx.supabase.co` |
 
 `src/backend.js` 已包含此项目的 **publishable key**，可以直接运行。它不是数据库密码，也不是 `service_role` / secret key。权限由数据库授权和 RLS 决定。不要把特权密钥、数据库连接密码或访问令牌放进 `VITE_*` 变量、前端代码、README 或 Git。
 
@@ -91,7 +99,7 @@ VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_YOUR_KEY
 
 ## 数据维护与回退
 
-日常请修改本地 `data/*.json` 并 push main，由 Actions 自动同步数据库；不要把 Supabase Table Editor 当作另一个日常维护源。请保留公司 / 卡片 ID，避免导致个人标记失去关联。前端刷新时优先读取云端；云端不可用时，优先显示上次成功读取的缓存，其次显示 `data/*.json` 内置只读快照，页面会明确标识数据来源。
+日常请修改本地 `data/*.json` 并 push main，由 Actions 自动同步数据库；不要把 Supabase Table Editor 当作另一个日常维护源。请保留公司 / 卡片 ID，避免导致个人标记失去关联。页面先同步展示 24 小时内且不早于内置核查版本的有效缓存，否则展示 `data/*.json` 内置只读快照；随后异步检查云端并刷新资料。公共资料不等待账号初始化，云端失败不清空已显示内容。页面明确标识数据来源，并提供「刷新招聘资料」按钮。
 
 `data/*.json` 现在是唯一日常维护源，同时用于云端同步和前端离线备份。Dashboard 的手工修改不会反向写回 Git，并可能被下一次发布覆盖。招聘网站本身不会被此项目自动爬取或核查，原核查日期和证据范围均保留。
 
@@ -109,9 +117,10 @@ supabase/seed.sql
 ## 检查与测试
 
 ```powershell
-npm test
+npm run verify
+npm run audit:prod
+# 以下为可选的真实云端只读检查，不属于隔离浏览器测试
 npm run test:cloud
-npm run build
 ```
 
 单元测试覆盖状态持久化、置后排序、恢复、快速连点、网络失败与重试、不同用户 / 标签页缓存隔离、两台设备同账号的云端收敛、Realtime 订阅按 `user_id` 过滤与清理、完整资料的数据库往返校验，以及邮箱绑定的先验证后设密码流程。
@@ -122,7 +131,7 @@ npm run build
 
 ## 部署前端（不需要购买域名）
 
-执行 `npm run build` 后，将 **`dist/` 目录**部署到 GitHub Pages、Cloudflare Pages、Vercel 或其他静态托管。不要直接发布包含裸 npm 模块导入的源码 HTML。Vite 使用相对资源路径，支持本仓库这样的子路径部署。
+执行 `npm run build` 后，将 **`dist/` 目录**部署到 GitHub Pages、Cloudflare Pages、Vercel 或其他静态托管。不要直接发布包含裸 npm 模块导入的源码 HTML。Vite 当前固定使用 `/recsys-2027-check/` 资源基路径；部署到其他路径时必须同步调整 Vite、构建策略、Pages 验证器和浏览器测试的路径约定。
 
 GitHub Pages 的原静态分支发布方式需要调整为构建后发布 `dist/`，或者使用 GitHub Actions 构建上传。其他静态平台通常设置构建命令 `npm ci && npm run build`、产物目录 `dist` 即可。部署属于单独的发布操作；本次代码开发不会自动 `git push` 或修改现有线上站点。
 
@@ -135,11 +144,15 @@ src/pages/rec.js, soe.js   原页面渲染与查询衔接
 src/styles/              原版视觉样式
 src/personal.js, .css    个人工作台和卡片操作
 src/state-store.js       持久化与待同步操作
-src/backend.js          Supabase 连接和缓存回退
+src/backend.js          公共资料与用户 Auth 分离的 Supabase 连接
+src/catalog-cache.js    有界有效期缓存与运行时数据校验
+src/bootstrap.js        分页加载、主题初始化与失败重试入口
+src/shared/             日期、搜索、渲染、分页和重试等共享基础模块
 src/catalog-model.js    数据映射和状态规则
 src/auth-actions.js     邮箱绑定和密码设置
 supabase/               表结构、种子资料与权限测试
-tests/                  无网络单元测试
+tests/                  无外部网络单元测试
+e2e/                    隔离数据的桌面/手机浏览器和无障碍测试
 scripts/                种子生成与只读云端校验
 ```
 

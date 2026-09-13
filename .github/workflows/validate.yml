@@ -7,7 +7,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -24,7 +24,14 @@ jobs:
         run: |
           npm run data:check
           node scripts/validate-catalog.mjs --base "$BASE_SHA"
+      - name: Check code conventions
+        run: |
+          npm run lint
+          npm run format:check
       - run: npm test
       - run: npm run build
       - run: npm run build:check
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test
+      - run: npm run audit:prod
       # No environment or privileged credentials; PRs never write Supabase or Pages.

@@ -17,7 +17,7 @@ jobs:
   publish:
     if: github.repository == 'shipshipzzz/recsys-2027-check' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     permissions:
       contents: read
       pages: write
@@ -50,6 +50,11 @@ jobs:
             node scripts/validate-catalog.mjs --base "$BASE_SHA"
           fi
 
+      - name: Check code conventions
+        run: |
+          npm run lint
+          npm run format:check
+
       - name: Run tests
         run: npm test
 
@@ -58,6 +63,16 @@ jobs:
         run: |
           npm run build
           npm run build:check
+
+      - name: Install browser test runtime
+        run: npx playwright install --with-deps chromium
+
+      # No production network access: browser tests use isolated fixtures.
+      - name: Verify desktop, mobile, accessibility and offline workflows
+        run: npx playwright test
+
+      - name: Audit production dependencies
+        run: npm run audit:prod
 
       - name: Atomically synchronize Supabase catalog
         env:

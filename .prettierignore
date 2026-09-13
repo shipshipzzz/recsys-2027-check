@@ -1,12 +1,10 @@
-_pw_*.js
-
 node_modules/
 dist/
-.env
-.env.*
-!.env.example
+data/
+supabase/
 .migration-backup/
-coverage/
 test-results/
-
 playwright-report/
+coverage/
+package-lock.json
+.env*
