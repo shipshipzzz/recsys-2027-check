@@ -41,9 +41,11 @@ test('realtime subscription listens only to the current user and cleans up its c
     on(type,value,handler){assert.equal(type,'postgres_changes');config=value;changeHandler=handler;return this;},
     subscribe(handler){statusHandler=handler;return this;}
   };
-  const client={channel(value){name=value;return channel;},async removeChannel(value){removed=value;return 'ok';}};
+  let authCalls=0;
+  const client={realtime:{async setAuth(){authCalls++;}},channel(value){name=value;return channel;},async removeChannel(value){removed=value;return 'ok';}};
   const changes=[],statuses=[];
-  const subscription=subscribeUserStates(client,USER,{onChange:value=>changes.push(value),onStatus:(status,error)=>statuses.push([status,error])});
+  const subscription=await subscribeUserStates(client,USER,{onChange:value=>changes.push(value),onStatus:(status,error)=>statuses.push([status,error])});
+  assert.equal(authCalls,1);
   assert.match(name,new RegExp(`^user-card-states:${USER}:`));
   assert.deepEqual(config,{event:'*',schema:'public',table:'user_card_states',filter:`user_id=eq.${USER}`});
   changeHandler({new:{entry_id:ENTRY,status:'applied'}});

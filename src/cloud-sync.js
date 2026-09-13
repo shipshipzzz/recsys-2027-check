@@ -18,7 +18,8 @@ export async function readUserStates(client,userId) {
   return data;
 }
 
-export function subscribeUserStates(client,userId,{onChange,onStatus=()=>{}}={}) {
+export async function subscribeUserStates(client,userId,{onChange,onStatus=()=>{}}={}) {
+  await client.realtime.setAuth();
   const channel=client
     .channel(`user-card-states:${userId}:${globalThis.crypto.randomUUID()}`)
     .on('postgres_changes',{

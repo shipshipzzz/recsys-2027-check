@@ -75,18 +75,24 @@ export function createPersonalManager(kind,catalog) {
     if(remotePullTimer)clearTimeout(remotePullTimer);
     remotePullTimer=setTimeout(()=>{remotePullTimer=null;void pull(target,version);},120);
   }
-  function startRealtime(target=store,version=epoch){
+  async function startRealtime(target=store,version=epoch){
     if(target.scope==='guest'||version!==epoch||store!==target)return;
     realtimeStatus='CONNECTING';update();
-    realtime=subscribeUserStates(supabase,target.scope,{
-      onChange:()=>scheduleRemotePull(target,version),
-      onStatus:(status,error)=>{
-        if(version!==epoch||store!==target)return;
-        realtimeStatus=status;update();
-        if(status==='SUBSCRIBED')scheduleRemotePull(target,version);
-        else if(error&&(status==='CHANNEL_ERROR'||status==='TIMED_OUT'))console.warn('跨设备实时同步连接异常，将继续通过刷新/聚焦重试。',error);
-      }
-    });
+    try{
+      const subscription=await subscribeUserStates(supabase,target.scope,{
+        onChange:()=>scheduleRemotePull(target,version),
+        onStatus:(status,error)=>{
+          if(version!==epoch||store!==target)return;
+          realtimeStatus=status;update();
+          if(status==='SUBSCRIBED')scheduleRemotePull(target,version);
+          else if(error&&(status==='CHANNEL_ERROR'||status==='TIMED_OUT'))console.warn('跨设备实时同步连接异常，将继续通过刷新/聚焦重试。',error);
+        }
+      });
+      if(version!==epoch||store!==target){await subscription.unsubscribe();return;}
+      realtime=subscription;
+    }catch(error){
+      if(version===epoch&&store===target){realtimeStatus='CHANNEL_ERROR';update();console.warn('跨设备实时同步初始化失败，将继续通过刷新/聚焦补拉。',error);}
+    }
   }
   async function sync(){
     if(!user)return;
@@ -106,11 +112,11 @@ export function createPersonalManager(kind,catalog) {
     const next=session?.user||null,nextId=next?.id||'guest';
     if(nextId===store.scope){
       user=next;update();
-      if(next&&!realtime)startRealtime(store,epoch);
+      if(next&&!realtime&&realtimeStatus!=='CONNECTING')void startRealtime(store,epoch);
       return ready;
     }
     user=next;const version=++epoch;await stopRealtime();attachStore(new StateStore(storage,nextId));
-    if(next)startRealtime(store,version);
+    if(next)void startRealtime(store,version);
     ready=next?pull(store,version):Promise.resolve();return ready;
   }
   async function importGuest(){
