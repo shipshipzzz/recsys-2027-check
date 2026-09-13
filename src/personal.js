@@ -3,6 +3,7 @@ import {StateStore} from './state-store.js';
 import {comparePersonal,isMuted} from './catalog-model.js';
 import './personal.css';
 import {requestEmailLink,setVerifiedPassword} from './auth-actions.js';
+import {readUserStates,subscribeUserStates,writeUserStateBatch} from './cloud-sync.js';
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={active:'未处理',applied:'已投递',uninterested:'不感兴趣'};
@@ -12,6 +13,7 @@ export function createPersonalManager(kind,catalog) {
   const storage=safeStorage(),items=catalog.ALL_ITEMS,byId=new Map(items.map(x=>[x.id,x]));
   let user=null,store=new StateStore(storage),onChange=()=>{},filter='all',lastSignature='',lastAction=null;
   let epoch=0,ready=Promise.resolve(),busy=false,lastRefresh=0,rendering=false;
+  let realtime=null,realtimeStatus='off',remotePullTimer=null;
   const panel=document.createElement('section');panel.className='personal-panel';panel.setAttribute('aria-label','个人投递工作台');
   panel.innerHTML=`<div class="personal-heading"><div><span class="personal-eyebrow">MY APPLICATIONS</span><h2>留意机会，记录进度</h2><p>已投递或不感兴趣的卡片会置灰、移到末尾；随时可以恢复。</p></div><div class="personal-summary" aria-label="个人状态统计"></div></div>
   <div class="sync-row"><span data-catalog-mode></span><span data-sync-status role="status" aria-live="polite"></span><div class="sync-buttons"><button type="button" data-enable-sync>启用云端同步</button><button type="button" data-account>邮箱登录 / 绑定</button><button type="button" data-retry hidden>重试同步</button><button type="button" data-import hidden>同步本机标记</button><button type="button" data-signout hidden>退出登录</button></div></div>
@@ -39,7 +41,8 @@ export function createPersonalManager(kind,catalog) {
     panel.querySelector('.personal-summary').innerHTML=Object.entries(counts).map(([s,n])=>`<span><b>${n}</b>${labels[s]}</span>`).join('');
     panel.querySelector('[data-catalog-mode]').textContent=({cloud:'云端招聘资料',cached:'离线缓存资料',fallback:'内置只读备份'}[catalog.connection]||'本地资料')+' · '+items.length+' 张';
     const pending=store.pendingCount();
-    let text=!user?'仅本机保存':pending?`${pending} 项待同步`:'云端已同步';
+    let text='仅本机保存';
+    if(user)text=pending?`${pending} 项待同步`:user.is_anonymous?'云端已同步 · 匿名设备账号':realtimeStatus==='SUBSCRIBED'?'云端已同步 · 跨设备实时更新':realtimeStatus==='CHANNEL_ERROR'||realtimeStatus==='TIMED_OUT'?'云端已同步 · 实时连接重试中':'云端已同步 · 跨设备同步';
     if(store.lastError)text='同步失败 · 本机记录保留';
     if(store.inFlight)text='正在同步…';
     if(store.storageError)text='浏览器阻止本地保存，请勿关闭页面';
@@ -49,7 +52,7 @@ export function createPersonalManager(kind,catalog) {
     panel.querySelector('[data-retry]').hidden=!user||(!pending&&!store.lastError);
     panel.querySelector('[data-import]').hidden=!user||!Object.values(new StateStore(storage).entries).some(e=>e.status!=='active');
     panel.querySelector('[data-account]').textContent=user?.email&&!user?.is_anonymous?'已绑定邮箱':'邮箱登录 / 绑定';
-    panel.querySelector('[data-identity-note]').textContent=!user?'无需登录即可标记。启用云端同步后，当前浏览器的标记会保存到数据库。':user.is_anonymous?'当前为匿名设备账号：刷新不会丢失，但清除浏览器数据或退出后无法找回。请绑定邮箱以跨设备使用。':`账号：${user.email} · 各账号标记独立保存。`;
+    panel.querySelector('[data-identity-note]').textContent=!user?'无需登录即可标记。启用云端同步后，当前浏览器的标记会保存到数据库。':user.is_anonymous?'当前为匿名设备账号：刷新不会丢失，但清除浏览器数据或退出后无法找回。绑定邮箱并设置密码后，才可在其他设备登录同一账号同步。':`账号：${user.email} · 在其他设备登录同一邮箱账号后会自动拉取标记；在线设备会实时更新。`;
     panel.querySelectorAll('button').forEach(b=>b.disabled=busy);
     dialog.querySelector('[value=password]').hidden=!user?.email||user?.is_anonymous;
     dialog.querySelector('[value=register]').hidden=!!user&&!user.is_anonymous;
@@ -62,29 +65,52 @@ export function createPersonalManager(kind,catalog) {
     toast.hidden=false;
   }
   function attachStore(next){store=next;next.notify=()=>{if(store===next)update();};lastSignature='';update();}
-  async function writeRemote(target,batch){
-    const {data,error}=await supabase.from('user_card_states').upsert(batch.map(e=>({user_id:target.scope,entry_id:e.entry_id,status:e.status})),{onConflict:'user_id,entry_id'}).select('entry_id,status,updated_at').abortSignal(AbortSignal.timeout(12000));
-    if(error)throw error;return data;
+  async function stopRealtime(){
+    if(remotePullTimer){clearTimeout(remotePullTimer);remotePullTimer=null;}
+    const current=realtime;realtime=null;realtimeStatus='off';
+    if(current)try{await current.unsubscribe();}catch{}
+  }
+  function scheduleRemotePull(target=store,version=epoch){
+    if(target.scope==='guest'||version!==epoch||store!==target)return;
+    if(remotePullTimer)clearTimeout(remotePullTimer);
+    remotePullTimer=setTimeout(()=>{remotePullTimer=null;void pull(target,version);},120);
+  }
+  function startRealtime(target=store,version=epoch){
+    if(target.scope==='guest'||version!==epoch||store!==target)return;
+    realtimeStatus='CONNECTING';update();
+    realtime=subscribeUserStates(supabase,target.scope,{
+      onChange:()=>scheduleRemotePull(target,version),
+      onStatus:(status,error)=>{
+        if(version!==epoch||store!==target)return;
+        realtimeStatus=status;update();
+        if(status==='SUBSCRIBED')scheduleRemotePull(target,version);
+        else if(error&&(status==='CHANNEL_ERROR'||status==='TIMED_OUT'))console.warn('跨设备实时同步连接异常，将继续通过刷新/聚焦重试。',error);
+      }
+    });
   }
   async function sync(){
     if(!user)return;
     const target=store;
-    try{await target.flush(batch=>writeRemote(target,batch));}catch(error){if(store===target)notify(readableError(error));}
+    try{await target.flush(batch=>writeUserStateBatch(supabase,target.scope,batch));}catch(error){if(store===target)notify(readableError(error));}
     update();
   }
   async function pull(target=store,version=epoch){
     if(target.scope==='guest')return;
     try{
-      const {data,error}=await supabase.from('user_card_states').select('entry_id,status,updated_at').eq('user_id',target.scope).abortSignal(AbortSignal.timeout(12000));
-      if(error)throw error;
+      const data=await readUserStates(supabase,target.scope);
       if(version!==epoch||store!==target)return;
       target.lastError=null;target.acceptRemote(data);lastRefresh=Date.now();await sync();
     }catch(error){if(store===target){target.lastError=error;update();}}
   }
-  function adoptSession(session){
+  async function adoptSession(session){
     const next=session?.user||null,nextId=next?.id||'guest';
-    if(nextId===store.scope){user=next;update();return ready;}
-    user=next;const version=++epoch;attachStore(new StateStore(storage,nextId));
+    if(nextId===store.scope){
+      user=next;update();
+      if(next&&!realtime)startRealtime(store,epoch);
+      return ready;
+    }
+    user=next;const version=++epoch;await stopRealtime();attachStore(new StateStore(storage,nextId));
+    if(next)startRealtime(store,version);
     ready=next?pull(store,version):Promise.resolve();return ready;
   }
   async function importGuest(){
@@ -151,6 +177,7 @@ export function createPersonalManager(kind,catalog) {
   window.addEventListener('storage',event=>{if(event.key===store.key){store.reload();update();void sync();}});
   window.addEventListener('online',()=>{void sync().then(()=>pull());});
   window.addEventListener('focus',()=>{if(user&&Date.now()-lastRefresh>15000)void pull();});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&user&&Date.now()-lastRefresh>15000)void pull();});
   store.notify=update;
   const manager={
     status:item=>store.status(item.id),muted:item=>isMuted(store.status(item.id)),

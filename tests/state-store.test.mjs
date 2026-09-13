@@ -54,3 +54,18 @@ test('blocked local storage is surfaced, rather than reporting persistence',()=>
  const s=new StateStore({getItem(){throw new Error('blocked');},setItem(){throw new Error('blocked');}});
  s.set(A,'applied');assert.equal(s.storageError,true);assert.equal(s.status(A),'applied');
 });
+
+test('two devices using the same account converge through cloud roundtrips',async()=>{
+ const deviceA=new StateStore(storage(),'same-user'),deviceB=new StateStore(storage(),'same-user');
+ const cloud=new Map();let tick=0;
+ const save=async batch=>batch.map(e=>{
+   const row={entry_id:e.entry_id,status:e.status,updated_at:new Date(Date.UTC(2026,8,13,0,0,++tick)).toISOString()};
+   cloud.set(e.entry_id,row);return row;
+ });
+ const snapshot=()=>[...cloud.values()];
+ deviceA.set(A,'applied');await deviceA.flush(save);
+ deviceB.acceptRemote(snapshot());assert.equal(deviceB.status(A),'applied');
+ deviceB.set(A,'uninterested');await deviceB.flush(save);
+ deviceA.acceptRemote(snapshot());assert.equal(deviceA.status(A),'uninterested');
+ assert.equal(deviceA.pendingCount(),0);assert.equal(deviceB.pendingCount(),0);
+});
