@@ -13,7 +13,8 @@
     "data:check": "node scripts/validate-catalog.mjs",
     "card:id": "node scripts/validate-catalog.mjs --id",
     "sync:cloud": "node scripts/sync-cloud.mjs",
-    "build:check": "node scripts/check-dist.mjs"
+    "build:check": "node scripts/check-dist.mjs",
+    "test:pages": "node scripts/verify-pages.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0"

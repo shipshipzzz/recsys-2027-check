@@ -79,6 +79,23 @@ npm run card:id -- soe "新公司名称"
 
 公开表：`companies`、`job_entries`、`sources`、`entry_links`、`entry_audits`、`job_sources`、`entry_deadlines`、`catalog_archives`、`timeline_events`、`change_logs`。
 
+## 部署后自动验收
+
+发布流程现在会在 Pages 部署之后继续运行 `npm run test:pages`。它使用不带账号或密钥的公开 HTTP 请求，检查线上 `release.json` 的 Git 提交和公共数据摘要，并把首页、SOE 页及所有直接引用的 JS/CSS 与本次本地构建逐字节比对，同时检查 MIME 类型。这样能识别旧部署、资源缺失以及源码被当作构建产物发布等问题。
+
+短暂的 Pages 分发延迟会触发有限次数重试；持续不一致会明确让工作流失败，不会无限转圈。该检查是公开文件验收，不等同于自动登录或跨设备交互测试。云端数据的完整比对仍由前面的 `npm run test:cloud` 独立完成。
+
+本地手动检查线上版本时，在已部署的同一提交上运行：
+
+```powershell
+npm run build
+npm run build:check
+npm run test:cloud
+npm run test:pages
+```
+
+本地有尚未发布的修改时，线上比对报不一致是预期行为。不要通过跳过测试来掩盖差异。
+
 ## 如何确认成功
 
 GitHub → Actions → `Deploy GitHub Pages` → 当前提交，确认同步、云端核对和 Pages 部署均为绿色。运行摘要会列出事务回执、Git commit、workflow run编号与各表数量。
