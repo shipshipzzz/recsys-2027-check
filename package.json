@@ -9,7 +9,11 @@
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
     "test": "node --test",
     "seed:sql": "node scripts/generate-seed.mjs",
-    "test:cloud": "node scripts/verify-cloud.mjs"
+    "test:cloud": "node scripts/verify-cloud.mjs",
+    "data:check": "node scripts/validate-catalog.mjs",
+    "card:id": "node scripts/validate-catalog.mjs --id",
+    "sync:cloud": "node scripts/sync-cloud.mjs",
+    "build:check": "node scripts/check-dist.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0"

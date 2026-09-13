@@ -26,7 +26,10 @@ export function hydrateCatalog(kind, rows, sources, archive, logs, timeline) {
   const data = {PAGE_KIND:kind,RECHECKED:archive.checked_on,DATA:[],EXTRA:[],
     ORIGINAL_ITEMS:archive.original_items,SOURCES:{},DUE:archive.legacy_due,
     TIMELINE:archive.legacy_timeline,KIND:archive.kind_labels,LOG:[],REC_DEADLINES:{},TIMELINE_EVENTS:[]};
-  for (const s of sources) data.SOURCES[s.id]={id:s.id,title:s.title,url:s.url,level:s.level,scope:s.scope,access:s.access,checked:s.checked_on};
+  for (const s of sources) {
+    data.SOURCES[s.id]={id:s.id,title:s.title,url:s.url,level:s.level,scope:s.scope,access:s.access,checked:s.checked_on};
+    if(s.published!==null && s.published!==undefined)data.SOURCES[s.id].published=s.published;
+  }
   for (const row of [...rows].sort((a,b)=>a.sort_order-b.sort_order)) {
     const company=row.companies;
     if (!company) throw new Error('公司关联资料不完整');
