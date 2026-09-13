@@ -129,3 +129,11 @@ RPC 校验、权限或约束失败：数据库整批回滚，Pages 不会继续�
 `npm run seed:sql` 仅为新实例生成本地 bootstrap SQL，不是日常发布路径，不会再改写 JSON 或 migration。
 
 以后添加全新数据库字段/表、修改 Auth/SMTP 或换 Supabase 项目属于结构/平台配置变更，需单独维护版本化 migration。已有字段内的招聘资料更新已经走自动同步，不需手工改表。
+
+## 应用统计机会池维护
+
+招聘准入以 [招聘收录与核查规范](recruitment-policy.md) 为准，不按是否做算法排除岗位。央国企卡片事实在 `data/soe.json`，专业/批次/多方向评估在 `data/soe-screening.json`，两者必须一起修改并通过 `npm run data:check`。评估绑定招聘事实摘要；事实改变后先复核来源再更新摘要，不能只重算哈希掩盖缺失审查。评估属于构建随附资料，不增加数据库迁移或更改个人状态。
+
+### 专业与地区判断配套发布
+
+央国企资料另配 data/soe-screening.json 与 data/soe-locations.json，分别维护专业/届次和地域证据，随前端构建发布。修改岗位事实后先复核再更新绑定摘要；data:check 会检测过期判断。不要将配套判断作为额外 SQL 列写入云端。地区标准见 [地区偏好规范](location-preferences.md)。

@@ -1,3 +1,4 @@
+import { SOE_TRACKS } from './soe-policy.js';
 import { finalizeCatalog } from './catalog-model.js';
 
 const RECORD = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -64,7 +65,7 @@ export function validateRuntimeCatalog(value, kind) {
         item.fit < 0 ||
         item.fit > 100 ||
         !['S', 'A+', 'A', 'B+', 'B', 'C'].includes(item.tier) ||
-        !['rec', 'ai', 'finance', 'geo', 'industrial'].includes(item.track))
+        !Object.hasOwn(SOE_TRACKS, item.track))
     )
       throw new Error('匹配分或岗位分类无效');
   }
@@ -132,6 +133,15 @@ export function createCatalogResource({
   maxAgeMs = CATALOG_CACHE_TTL,
 }) {
   validateRuntimeCatalog(fallback, kind);
+  const minimumIds = new Set([...fallback.DATA, ...(fallback.EXTRA || [])].map((item) => item.id));
+  const validateBaseline = (data) => {
+    const ids = new Set([...data.DATA, ...(data.EXTRA || [])].map((item) => item.id));
+    if (data.RECHECKED < fallback.RECHECKED || [...minimumIds].some((id) => !ids.has(id)))
+      throw new Error(
+        '云端或缓存资料版本落后于当前页面，保留完整的本地资料；待发布同步完成后重试。',
+      );
+    return data;
+  };
   const cacheKey = 'recsys:catalog:v2:' + namespace + ':' + kind;
   let current = finalizeCatalog(structuredClone(fallback));
   current.connection = 'fallback';
@@ -144,7 +154,7 @@ export function createCatalogResource({
       now() - cached.savedAt <= maxAgeMs &&
       cached.catalog.RECHECKED >= fallback.RECHECKED
     ) {
-      validateRuntimeCatalog(cached.catalog, kind);
+      validateBaseline(validateRuntimeCatalog(cached.catalog, kind));
       current = finalizeCatalog(cached.catalog);
       current.connection = 'cached';
       current.cachedAt = cached.savedAt;
@@ -169,7 +179,7 @@ export function createCatalogResource({
       if (inFlight) return inFlight;
       inFlight = (async () => {
         try {
-          const data = validateRuntimeCatalog(await fetchCatalog(), kind);
+          const data = validateBaseline(validateRuntimeCatalog(await fetchCatalog(), kind));
           current = finalizeCatalog(data);
           current.connection = 'cloud';
           current.cachedAt = now();

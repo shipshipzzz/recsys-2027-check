@@ -119,7 +119,7 @@ test('corrupt catalog storage and invalid cloud payloads keep the known-good sna
   await resource.refresh();
   assert.equal(resource.current, initial);
   assert.ok(resource.lastError);
-  assert.equal(resource.current.ALL_ITEMS.length, 29);
+  assert.equal(resource.current.ALL_ITEMS.length, catalog('soe').DATA.length);
 });
 
 test('a failed optional cache write does not turn a successful cloud fetch into failure', async () => {

@@ -1,0 +1,551 @@
+{
+  "version": 1,
+  "policyVersion": "preferred-cities-v1",
+  "entries": {
+    "soe-74afd94593431265ce3a": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "scope": "浙商食品研究员、中碳数字化运营、盈通信息化岗位；不含服从服务区调配的储备经理",
+          "refs": [
+            "S-CITY-01"
+          ],
+          "directions": [
+            "research",
+            "stats",
+            "operations",
+            "ai"
+          ]
+        },
+        {
+          "city": "",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "储备经理须服从浙江省内高速服务区调配，具体城市未确认",
+          "refs": [
+            "S-CITY-01"
+          ],
+          "directions": [
+            "operations"
+          ]
+        }
+      ],
+      "basisHash": "3dbf0194d2069340b14b7f0e3488fa2b2f91597bd1701ddd0faa65d75c2ce1fa"
+    },
+    "soe-cb0f7783542ae0067238": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "scope": "岗位表中的管培、外汇、研究、商务工作地，非按总部地址推断",
+          "refs": [
+            "S-CITY-02"
+          ],
+          "directions": [
+            "supply",
+            "research",
+            "operations",
+            "banking"
+          ]
+        },
+        {
+          "city": "重庆",
+          "province": "重庆",
+          "level": "position",
+          "scope": "仅指内贸销售工作地，不代表研究或交易岗可在重庆",
+          "refs": [
+            "S-CITY-02"
+          ],
+          "directions": [
+            "supply",
+            "operations"
+          ]
+        }
+      ],
+      "basisHash": "9180e7942afbdfd9074aa8b5416e72ecc21f57afcccdbd156efd7c55d51e8d34"
+    },
+    "soe-15e8fe78032c98f915c3": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "重庆",
+          "province": "重庆",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-03"
+          ],
+          "directions": [
+            "risk",
+            "banking",
+            "operations"
+          ]
+        },
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-03"
+          ],
+          "directions": [
+            "risk",
+            "banking",
+            "operations"
+          ]
+        },
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-03"
+          ],
+          "directions": [
+            "risk",
+            "banking",
+            "operations"
+          ]
+        }
+      ],
+      "basisHash": "1b2842854e9364ea182a569c81614aa913dfd91a35e486a53693f03f6f4c42e5"
+    },
+    "soe-15dcc83203fa8d55b59c": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "全行招聘覆盖浙江各地市，具体岗位城市未逐项核准",
+          "refs": [
+            "S-CITY-04"
+          ],
+          "directions": [
+            "banking",
+            "operations",
+            "research",
+            "software"
+          ]
+        }
+      ],
+      "basisHash": "d73b1a5a8cb0b6339cc8a8370abdab186d220bd3651de1f83a7bfdaca16a19ff"
+    },
+    "soe-28a7c75480e66ff26a24": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "温州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "嘉兴",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "湖州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "绍兴",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "金华",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "衢州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "台州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "丽水",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        },
+        {
+          "city": "舟山",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-05"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        }
+      ],
+      "basisHash": "0584f41c8f090c5d5b302c41929863fb1a60f9323d4cbb416380e7a421bd2b4a"
+    },
+    "soe-70472ac853332bba0d05": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "成都地区含主城区和所列区县，不保证所有序列均能定岗成都",
+          "refs": [
+            "S-CITY-06"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "software",
+            "operations"
+          ]
+        }
+      ],
+      "basisHash": "c96f5a6bbb83b26059f6a60b4a8b73191f0e6b95a70aed14d63349d9d8a612f6"
+    },
+    "soe-95134bdc75c0737d281e": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "中心招聘含成都分中心，具体培养方向和专业须岗位附件确认",
+          "refs": [
+            "S-CITY-07"
+          ],
+          "directions": [
+            "operations",
+            "stats",
+            "risk",
+            "finance"
+          ]
+        }
+      ],
+      "basisHash": "905d79dd6e3a5ee1e528b27c8f1714a55e6e4e2287b857b950e812e35ab123fe"
+    },
+    "soe-946c8b35a6045d05921e": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-08"
+          ],
+          "directions": [
+            "software",
+            "stats",
+            "finance"
+          ]
+        },
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-08"
+          ],
+          "directions": [
+            "software",
+            "stats",
+            "finance"
+          ]
+        },
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-08"
+          ],
+          "directions": [
+            "software",
+            "stats",
+            "finance"
+          ]
+        }
+      ],
+      "basisHash": "300f33766f09f05e7340d795f069d423a80fc0a3ec32b198913574d54fb11e11"
+    },
+    "soe-6f3da4b7ad2476020757": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "宁波",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-09"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "operations",
+            "finance"
+          ]
+        },
+        {
+          "city": "台州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "refs": [
+            "S-CITY-09"
+          ],
+          "directions": [
+            "banking",
+            "stats",
+            "operations",
+            "finance"
+          ]
+        }
+      ],
+      "basisHash": "f9b9bb6b64925f1cda3faaa0ce2fff33b7f2779bf0b41bb3966510d22104b0dc"
+    },
+    "soe-140f2087c58956d157f6": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
+          "refs": [
+            "S-CITY-10"
+          ],
+          "directions": [
+            "product"
+          ]
+        },
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
+          "refs": [
+            "S-CITY-10"
+          ],
+          "directions": [
+            "product"
+          ]
+        },
+        {
+          "city": "重庆",
+          "province": "重庆",
+          "level": "campaign",
+          "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
+          "refs": [
+            "S-CITY-10"
+          ],
+          "directions": [
+            "product"
+          ]
+        }
+      ],
+      "basisHash": "4a520fba1f1e3d737df2f9c0c8e6b8ee926029b9dd7ca69ea91bf2d8b8980b91"
+    },
+    "soe-55cb5e9670d088e4902f": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [],
+      "basisHash": "bbd11193f7a4a73c7e147c0d18e1ded0c8b7c1f620a329a07e5d907294fa60c4"
+    },
+    "soe-6f566438920bdfd0d70e": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "仅确认浙江省分行的招聘范围，未逐项核对城市与职位",
+          "refs": [
+            "S-CITY-12"
+          ],
+          "directions": [
+            "banking",
+            "operations",
+            "stats",
+            "risk"
+          ]
+        }
+      ],
+      "basisHash": "05382355aaf7f2acc19b8506e54f66047a5752640746384297989296d1450126"
+    },
+    "soe-c220d0f777ae54ac86c4": {
+      "current": true,
+      "reviewedOn": "2026-09-13",
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "scope": "仅国内业务岗；统计类行业研究的工作地在厦门",
+          "refs": [
+            "S25"
+          ],
+          "directions": [
+            "supply",
+            "product"
+          ]
+        },
+        {
+          "city": "宁波",
+          "province": "浙江",
+          "level": "position",
+          "scope": "仅国内业务岗；不是厦门行业研究工作地",
+          "refs": [
+            "S25"
+          ],
+          "directions": [
+            "supply",
+            "product"
+          ]
+        },
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "position",
+          "scope": "国内业务或贸易运营工作地，不是行业研究",
+          "refs": [
+            "S25"
+          ],
+          "directions": [
+            "supply",
+            "operations",
+            "product"
+          ]
+        }
+      ],
+      "basisHash": "2f5cc0a00252d20b24f261255d1ba83f7f139676cc126011d45a8c5604f9a860"
+    }
+  }
+}

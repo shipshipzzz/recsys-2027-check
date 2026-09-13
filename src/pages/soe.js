@@ -1,3 +1,22 @@
+import locations from '../../data/soe-locations.json';
+import {
+  LOCATION_LEVELS,
+  createLocationLookup,
+  locationBonus,
+  matchesLocation,
+  comparePreferredOpportunities,
+} from '../location-policy.js';
+import screening from '../../data/soe-screening.json';
+import {
+  SOE_TRACKS,
+  MAJOR_LEVELS,
+  CYCLES,
+  BROAD_TRACKS,
+  createAssessmentLookup,
+  hasMajorEvidence,
+  matchesAssessment,
+  canActOnNotice,
+} from '../soe-policy.js';
 import fallback from '../../data/soe.json';
 import { createPageCatalog } from '../backend.js';
 import { createPersonalManager } from '../personal.js';
@@ -5,6 +24,8 @@ import { createCatalogView } from '../shared/catalog-view.js';
 import { escapeHTML, createCardRenderer, bindSearch } from '../shared/dom.js';
 import { chinaDay, dayDistance, deadlineEpoch, timeState } from '../shared/time.js';
 
+const lookupAssessment = createAssessmentLookup(screening, fallback);
+const lookupGeography = createLocationLookup(locations, fallback);
 const resource = createPageCatalog('soe', fallback);
 let catalog = resource.current;
 let { DATA, PAGE_KIND, ORIGINAL_ITEMS } = catalog;
@@ -15,31 +36,45 @@ const personal = createPersonalManager('soe', catalog, {
   renderer,
   onRefreshCatalog: refreshCatalog,
 });
-const view = createCatalogView(() => catalog);
+const assessmentFor = (item) => lookupAssessment(item, catalog.SOURCES);
+const geographyFor = (item) => lookupGeography(item, catalog.SOURCES);
+const view = createCatalogView(
+  () => catalog,
+  () => null,
+  () => ({
+    screening: {
+      policyVersion: screening.policyVersion,
+      targetGraduationYear: screening.targetGraduationYear,
+      entries: Object.fromEntries(DATA.map((item) => [item.id, assessmentFor(item)])),
+    },
+    geography: {
+      policyVersion: locations.policyVersion,
+      entries: Object.fromEntries(DATA.map((item) => [item.id, geographyFor(item)])),
+    },
+  }),
+);
 const { sourceRefs, auditHTML, historyHTML, textMatch, itemLinks, setupCommon } = view;
 
 const STATUS = {
-  open: ['当前可行动', 'b-open'],
+  open: ['公告窗口开放 · 资格另核', 'b-open'],
   soon: ['已公告·待开放', 'b-soon'],
   verify: ['当前需二次核验', 'b-verify'],
-  watch: ['高匹配观察池', 'b-watch'],
+  watch: ['观察跟进', 'b-watch'],
   past: ['本窗口已过', 'b-past'],
 };
-const TRACK = {
-  rec: '内容推荐',
-  ai: 'AI / 云',
-  finance: '金融科技',
-  geo: '地球物理 AI',
-  industrial: '工业 / 研究院',
-};
+const TRACK = SOE_TRACKS;
+let locationFilter = 'all';
 let filter = 'all',
-  sortBy = 'priority';
+  sortBy = 'priority',
+  trackFilter = 'all',
+  majorFilter = 'all',
+  cycleFilter = 'all';
 function daysTo(iso) {
   return dayDistance(iso);
 }
 function deadlineFor(item) {
   if (!item.due) return null;
-  const fresh = item.audit?.checked === RECHECKED;
+  const fresh = item.audit?.checked === RECHECKED && assessmentFor(item).cycle === 'current';
   return {
     date: item.due,
     time: item.dueTime || null,
@@ -51,8 +86,7 @@ function deadlineFor(item) {
   };
 }
 function currentActionable(item) {
-  const m = timeState(deadlineFor(item));
-  return item.status === 'open' && item.audit?.checked === RECHECKED && !m.expired;
+  return canActOnNotice(item, assessmentFor(item));
 }
 function urgency(item) {
   const ev = deadlineFor(item);
@@ -76,7 +110,11 @@ function urgency(item) {
     return { cls: 'watch', label: '本轮未核到新入口', text: '观察 / 待更新' };
   if (item.status === 'past')
     return { cls: 'past', label: '原窗口已过', text: '等待补录 / 新批次' };
-  if (item.status === 'verify' || item.audit?.checked !== RECHECKED)
+  if (
+    item.status === 'verify' ||
+    assessmentFor(item).cycle !== 'current' ||
+    item.audit?.checked !== RECHECKED
+  )
     return { cls: 'watch', label: '先复核具体职位', text: '滚动 / 待核' };
   return { cls: '', label: '本届已公告·先核资格', text: '未见统一截止' };
 }
@@ -89,25 +127,76 @@ function rank(item) {
   if (item.status === 'watch') return 200 - item.fit / 10;
   return 260;
 }
+
+function geographicHTML(item) {
+  const geography = geographyFor(item),
+    bonus = locationBonus(geography, trackFilter);
+  if (!geography.matched)
+    return '<p class="node-scope" data-location-bonus="0">地点条件尚未完成本轮独立核验，暂不计地区加分；不代表没有偏好地区机会。</p>';
+  if (!geography.locations.length)
+    return '<p class="node-scope" data-location-bonus="0">已读工作地点未命中偏好地区，仍保留机会；考试或总部城市不会自动加分。</p>';
+  const groups = new Map();
+  for (const place of geography.locations) {
+    const key = place.level + '|' + place.scope + '|' + place.directions.join(',');
+    if (!groups.has(key)) groups.set(key, { ...place, names: [] });
+    groups.get(key).names.push(place.city || place.province + '（具体城市待核）');
+  }
+  const lines = [...groups.values()]
+    .map(
+      (place) =>
+        '<p><b>' +
+        escapeHTML(LOCATION_LEVELS[place.level]) +
+        ' · ' +
+        escapeHTML(place.names.join(' / ')) +
+        '</b><br>' +
+        escapeHTML(place.scope) +
+        '<br>适用方向：' +
+        escapeHTML(place.directions.map((key) => TRACK[key]).join(' / ')) +
+        ' ' +
+        sourceRefs(place.refs) +
+        '</p>',
+    )
+    .join('');
+  return (
+    '<div class="screening-summary location-summary" data-location-bonus="' +
+    bonus +
+    '"><strong>本入口最高地区加分 +' +
+    bonus +
+    ' 分</strong><small>同一证据档内排序加分；选择方向时只计该方向的地区依据。不是资格或录用概率。一个入口的不同岗位不可混用城市和专业条件。</small><details class="more"><summary>地区依据：适用岗位与范围</summary>' +
+    lines +
+    '</details></div>'
+  );
+}
+
 function card(item) {
   const u = urgency(item),
-    fresh = item.audit?.checked === RECHECKED,
+    assessment = assessmentFor(item),
     st = STATUS[item.status];
-  const label = !fresh && item.status === 'open' ? '原版已开·本轮待核' : st[0];
-  const alt = item.dueAlt ? ` · ${escapeHTML(item.dueAlt)}` : '';
-  return `<article class="card st-${item.status}${personal.muted(item) ? ' is-muted' : ''}" data-name="${escapeHTML(item.name)}" data-entry-id="${item.id}">
-        ${personal.controls(item)}
-        <div class="card-head"><div><div class="rankline"><span class="tier t-${item.tier}">${item.tier} 级</span><span class="badge ${st[1]}">${label}</span><span class="badge b-track">${TRACK[item.track]}</span></div><h3 class="name">${escapeHTML(item.name)}</h3><div class="en">${escapeHTML(item.en)}</div></div><div class="score">${item.fit}<small>MATCH / 100</small></div></div>
-        <div class="fitbar"><i style="width:${item.fit}%"></i></div>
-        <div class="action-strip ${u.cls}"><span class="k">DATE</span><strong>${escapeHTML(u.text)}${alt}</strong><span class="pill">${escapeHTML(u.label)}</span></div>
-        ${u.scope ? `<p class="node-scope">${escapeHTML(u.scope)} ${sourceRefs(item.audit?.refs || ['H02'])}</p>` : ''}
-        <div class="facts"><span class="fact">${escapeHTML(item.ownership)}</span><span class="fact">${escapeHTML(item.city)}</span>${item.xian ? '<span class="fact">含西安/西北</span>' : ''}</div>
-        ${auditHTML(item)}
-        <p class="field"><b>现在动作</b>${escapeHTML(item.action)}</p><p class="field"><b>优先岗位</b>${escapeHTML(item.jobs)}</p><p class="field"><b>为什么适合你</b>${escapeHTML(item.why)}</p><p class="field risk"><b>风险 / 缺口</b>${escapeHTML(item.risk)}</p>
-        <details class="more"><summary>展开：简历版本与证据</summary><p class="field"><b>简历版本</b>${escapeHTML(item.resume)}</p><p class="field"><b>证据状态</b>${escapeHTML(item.evidence)}</p></details>
-        <div class="links">${itemLinks(item)}</div><p class="note">${escapeHTML(item.note)}</p>${historyHTML(item)}</article>`;
+  const label =
+    assessment.cycle !== 'current' && item.status === 'open' ? '原记录已开 · 当前入口另核' : st[0];
+  const alt = item.dueAlt ? ' · ' + escapeHTML(item.dueAlt) : '';
+  const directions = assessment.directions
+    .map((key) => '<span class="badge b-track">' + escapeHTML(TRACK[key]) + '</span>')
+    .join('');
+  return `<article class="card st-${item.status}${personal.muted(item) ? ' is-muted' : ''}" data-name="${escapeHTML(item.name)}" data-entry-id="${item.id}" data-major="${assessment.major}" data-cycle="${assessment.cycle}" data-directions="${assessment.directions.join(' ')}">
+    ${personal.controls(item)}
+    <div class="card-head"><div><div class="rankline"><span class="tier t-${item.tier}">${item.tier} 参考</span><span class="badge ${st[1]}">${label}</span></div><h3 class="name">${escapeHTML(item.name)}</h3><div class="en">${escapeHTML(item.en)}</div></div><div class="score">${item.fit}<small>参考 / 100</small></div></div>
+    <div class="screening-directions">${directions}</div>
+    <div class="screening-summary"><div class="screening-badges"><strong data-major-label>${MAJOR_LEVELS[assessment.major]}</strong><span data-cycle-label>${CYCLES[assessment.cycle]}</span></div><p>${escapeHTML(assessment.basis)}</p><small>专业依据不等于个人全部资格通过；以具体职位与招聘方认定为准。</small></div>
+    <div class="action-strip ${u.cls}"><span class="k">DATE</span><strong>${escapeHTML(u.text)}${alt}</strong><span class="pill">${escapeHTML(u.label)}</span></div>
+    ${u.scope ? `<p class="node-scope">${escapeHTML(u.scope)} ${sourceRefs(item.audit?.refs || ['H02'])}</p>` : ''}
+    <div class="facts"><span class="fact">${escapeHTML(item.ownership)}</span><span class="fact">${escapeHTML(item.city)}</span>${item.xian ? '<span class="fact">含西安/西北</span>' : ''}</div>
+    ${geographicHTML(item)}
+    ${auditHTML(item)}
+    <p class="field"><b>现在动作</b>${escapeHTML(item.action)}</p><p class="field"><b>岗位 / 职责</b>${escapeHTML(item.jobs)}</p>
+    <p class="field"><b>专业条件</b>${escapeHTML(item.req || '具体专业要求待核')}</p><p class="field"><b>招聘对象</b>${escapeHTML(item.window || '具体毕业窗待核')}</p>
+    ${item.closes ? '<p class="field"><b>报名窗口</b>' + escapeHTML(item.closes) + '</p>' : ''}
+    <p class="field risk"><b>风险 / 取舍</b>${escapeHTML(item.risk)}</p>
+    <details class="more"><summary>展开：收录理由、简历与证据</summary><p class="field"><b>单位 / 岗位依据</b>${escapeHTML(assessment.qualityBasis)}</p><p class="field"><b>能力联系</b>${escapeHTML(item.why)}</p><p class="field"><b>简历建议</b>${escapeHTML(item.resume)}</p><p class="field"><b>证据状态</b>${escapeHTML(item.evidence)}</p></details>
+    <div class="links">${itemLinks(item)}</div><p class="note">${escapeHTML(item.note)}</p>${historyHTML(item)}</article>`;
 }
 function isUrgent(item) {
+  if (assessmentFor(item).cycle !== 'current' || item.status === 'past') return false;
   const m = timeState(deadlineFor(item));
   const d = item.start ? dayDistance(item.start) : null;
   return (
@@ -123,13 +212,26 @@ function match(item, q) {
   if (filter === 'now') ok = currentActionable(item);
   else if (filter === 'urgent') ok = isUrgent(item);
   else if (filter === 's') ok = item.tier === 'S';
-  else if (['rec', 'ai', 'finance', 'geo', 'industrial'].includes(filter))
-    ok = item.track === filter;
-  else if (filter === 'xian') ok = !!item.xian;
+  else if (Object.hasOwn(TRACK, filter)) ok = assessmentFor(item).directions.includes(filter);
+  else if (filter === 'preferred')
+    ok = matchesLocation(geographyFor(item), 'preferred', trackFilter);
+  else if (filter === 'xian') ok = matchesLocation(geographyFor(item), '西安', trackFilter);
   else if (filter === 'watch')
-    ok = ['verify', 'watch', 'past'].includes(item.status) || item.audit?.checked !== RECHECKED;
+    ok =
+      ['verify', 'watch', 'past'].includes(item.status) ||
+      assessmentFor(item).cycle !== 'current' ||
+      !hasMajorEvidence(assessmentFor(item));
   else if (filter === 'rev') ok = item.rev === RECHECKED;
-  return ok && textMatch(item, q);
+  return (
+    ok &&
+    matchesLocation(geographyFor(item), locationFilter, trackFilter) &&
+    matchesAssessment(assessmentFor(item), {
+      direction: trackFilter,
+      major: majorFilter,
+      cycle: cycleFilter,
+    }) &&
+    textMatch(item, q)
+  );
 }
 function sorted(list) {
   return [...list].sort(
@@ -139,7 +241,16 @@ function sorted(list) {
         ? b.fit - a.fit
         : sortBy === 'due'
           ? rank(a) - rank(b)
-          : a.priority - b.priority || rank(a) - rank(b) || b.fit - a.fit),
+          : comparePreferredOpportunities(
+              a,
+              b,
+              assessmentFor(a),
+              assessmentFor(b),
+              geographyFor(a),
+              geographyFor(b),
+              new Date(),
+              trackFilter,
+            )),
   );
 }
 function render() {
@@ -175,16 +286,67 @@ function renderActions() {
   document.getElementById('n-urgent').textContent = urgent.length;
 }
 function renderStats() {
+  const count = DATA.filter((item) => locationBonus(geographyFor(item)) > 0).length;
+  document.getElementById('location-count').textContent =
+    count + ' 条本届入口有已核偏好地区依据（岗位或招聘范围），其余不自动排除';
   document.getElementById('n-now').textContent = DATA.filter(currentActionable).length;
-  document.getElementById('n-s').textContent = DATA.filter((x) => x.tier === 'S').length;
-  document.getElementById('n-rg').textContent = DATA.filter((x) =>
-    ['rec', 'geo'].includes(x.track),
+  document.getElementById('n-total').textContent = DATA.length;
+  document.getElementById('n-broad').textContent = DATA.filter((item) =>
+    assessmentFor(item).directions.some((track) => BROAD_TRACKS.includes(track)),
   ).length;
-  document.getElementById('n-xian').textContent = DATA.filter((x) => x.xian).length;
+  document.getElementById('n-major').textContent = DATA.filter((item) =>
+    hasMajorEvidence(assessmentFor(item)),
+  ).length;
   document.getElementById('n-watch').textContent = DATA.filter(
-    (x) => ['verify', 'watch', 'past'].includes(x.status) || x.audit?.checked !== RECHECKED,
+    (item) =>
+      ['verify', 'watch', 'past'].includes(item.status) ||
+      assessmentFor(item).cycle !== 'current' ||
+      !hasMajorEvidence(assessmentFor(item)),
   ).length;
 }
+const filterLifetime = new AbortController();
+function populateFilter(id, choices, apply) {
+  const select = document.getElementById(id);
+  for (const [value, label] of choices) select.add(new Option(label, value));
+  select.addEventListener(
+    'change',
+    (event) => {
+      apply(event.target.value);
+      render();
+    },
+    { signal: filterLifetime.signal },
+  );
+}
+populateFilter(
+  'track-filter',
+  [['broad', '业务 / 统计 / 管理扩展'], ...Object.entries(TRACK)],
+  (value) => {
+    trackFilter = value;
+  },
+);
+populateFilter(
+  'major-filter',
+  [['supported', '有明确文字依据（非资格保证）'], ...Object.entries(MAJOR_LEVELS)],
+  (value) => {
+    majorFilter = value;
+  },
+);
+populateFilter('cycle-filter', Object.entries(CYCLES), (value) => {
+  cycleFilter = value;
+});
+populateFilter(
+  'location-filter',
+  [
+    ['preferred', '全部偏好地区（有依据）'],
+    ...['杭州', '成都', '重庆', '西安', '浙江'].map((value) => [
+      value,
+      value === '浙江' ? '浙江全省（含杭州）' : value,
+    ]),
+  ],
+  (value) => {
+    locationFilter = value;
+  },
+);
 document.querySelectorAll('.filters .chip').forEach((btn) =>
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filters .chip').forEach((x) => x.classList.remove('active'));
@@ -298,6 +460,7 @@ addEventListener('online', onCatalogOnline);
 if (import.meta.hot)
   import.meta.hot.dispose(() => {
     clearInterval(boundaryTimer);
+    filterLifetime.abort();
     disposeSearch();
     view.dispose();
     personal.dispose();

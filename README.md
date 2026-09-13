@@ -10,9 +10,13 @@
 
 边界、架构、测试与发布流程见 [工程维护指南](docs/engineering.md)，本轮实测记录见 [工程验收记录](docs/enterprise-validation.md)。这是代码和测试层的工程加固，不代表生产系统已取得企业级认证或可用性承诺。
 
+## 招聘收录标准
+
+央国企页按“应用统计有机会、单位与岗位值得考虑”收录，不再限制为算法或 AI。经营分析、银行综合/管培、保险精算、风险审计、运营市场、供应链等均可纳入；有专业依据不等于资格通过。维护前先读 [招聘收录规范](docs/recruitment-policy.md) 和根目录 `AGENTS.md`。`data/soe-screening.json` 与招聘事实一起维护、校验和发布。
+
 ## 本地维护与自动发布（新入口）
 
-日常招聘资料只维护 `data/rec.json` 和 `data/soe.json`，然后 push `main`。GitHub Actions 会校验数据与稳定 ID、测试、构建、事务同步 Supabase、完整比对云端并发布 Pages。个人投递状态和 Auth 不参与资料发布。
+招聘事实维护在 `data/rec.json` 和 `data/soe.json`；央国企专业/批次评估与地区证据分别维护在 `data/soe-screening.json`、`data/soe-locations.json`，一起通过校验后再按发布流程 push `main`。GitHub Actions 会校验数据与稳定 ID、测试、构建、事务同步 Supabase、完整比对云端并发布 Pages。个人投递状态和 Auth 不参与资料发布。
 
 完整使用、一次性 Secret 配置、归档与恢复说明见 [本地数据自动发布指南](docs/data-publishing.md)。旧 seed.sql 仅用于新实例初始化，不再是日常更新方式。
 
@@ -86,7 +90,7 @@ VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_YOUR_KEY
 
 ## 数据库设计与权限
 
-当前资料包括 **86 张卡片**（推荐页 57、国企页 29）、85 个公司实体、83 张历史卡片快照、26 个来源、49 个固定时间线节点和 4 组更新日志。动态「今天」标记在浏览器按北京时间生成，不写入固定时间线。
+当前资料包括 **111 张卡片**（推荐页 57、国企页 54）、110 个公司实体、83 张历史卡片快照、56 个来源、49 个固定时间线节点和 4 组更新日志。动态「今天」标记在浏览器按北京时间生成，不写入固定时间线。
 
 - `companies`、`job_entries`：公司及当前招聘事实；状态、城市、方向、日期、评分等均为独立 SQL 列。
 - `sources`、`entry_links`、`entry_audits`、`job_sources`、`entry_deadlines`：链接、复核与日期证据。
@@ -101,7 +105,7 @@ VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_YOUR_KEY
 
 日常请修改本地 `data/*.json` 并 push main，由 Actions 自动同步数据库；不要把 Supabase Table Editor 当作另一个日常维护源。请保留公司 / 卡片 ID，避免导致个人标记失去关联。页面先同步展示 24 小时内且不早于内置核查版本的有效缓存，否则展示 `data/*.json` 内置只读快照；随后异步检查云端并刷新资料。公共资料不等待账号初始化，云端失败不清空已显示内容。页面明确标识数据来源，并提供「刷新招聘资料」按钮。
 
-`data/*.json` 现在是唯一日常维护源，同时用于云端同步和前端离线备份。Dashboard 的手工修改不会反向写回 Git，并可能被下一次发布覆盖。招聘网站本身不会被此项目自动爬取或核查，原核查日期和证据范围均保留。
+`data/rec.json` 和 `data/soe.json` 是招聘事实的唯一日常维护源，用于云端同步和前端离线备份。专业及地区评估 JSON 随前端构建发布，不写入个人状态表；事实改变后，评估必须重新核验。Dashboard 的手工修改不会反向写回 Git，并可能被下一次发布覆盖。招聘网站本身不会被此项目自动爬取或核查，原核查日期和证据范围均保留。
 
 数据库初始化文件：
 
@@ -157,3 +161,9 @@ scripts/                种子生成与只读云端校验
 ```
 
 参考官方文档：[RLS](https://supabase.com/docs/guides/database/postgres/row-level-security)、[匿名身份与绑定](https://supabase.com/docs/guides/auth/auth-anonymous)、[SMTP 限制](https://supabase.com/docs/guides/auth/auth-smtp)。
+
+### 地区偏好与组合筛选
+
+央国企页支持杭州、成都、重庆、西安及浙江全省筛选；默认不限地区。按实际岗位地点或本届招聘范围加分，不使用总部或考试城市。一个入口的地点与岗位方向取证据交集，未完成地区核验的卡片仍保留。维护规则见 [地区偏好与证据维护](docs/location-preferences.md)，配套数据为 data/soe-locations.json。
+
+本轮扩展的实现与验收记录见 [应用统计机会池扩展记录](docs/recruitment-policy-review.md)。

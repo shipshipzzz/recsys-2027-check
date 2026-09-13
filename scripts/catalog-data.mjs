@@ -1,3 +1,4 @@
+import { SOE_TRACKS } from '../src/soe-policy.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -246,6 +247,8 @@ export function normalizeCatalogs(catalogs) {
         names.add(item.name);
         text(item.en ?? '', `${item.id}.en`);
         must(statuses.has(item.status), `${item.id}: invalid recruitment status`);
+        if (kind === 'soe')
+          must(Object.hasOwn(SOE_TRACKS, item.track), `${item.id}: invalid SOE track`);
         const companyId = 'co-' + item.id.slice(4),
           company = { id: companyId, name: item.name, english_name: item.en ?? '' };
         must(

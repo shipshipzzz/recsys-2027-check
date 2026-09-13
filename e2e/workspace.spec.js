@@ -1,3 +1,4 @@
+import { SOE_TRACKS, matchesAssessment } from '../src/soe-policy.js';
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
@@ -37,7 +38,7 @@ test.afterEach(async ({ page }) => {
 
 for (const [kind, file, count] of [
   ['rec', 'index.html', 57],
-  ['soe', 'soe.html', 29],
+  ['soe', 'soe.html', readCatalog('soe').DATA.length],
 ]) {
   async function open(page, suffix = '') {
     await page.goto(file + suffix, { waitUntil: 'domcontentloaded' });
@@ -297,6 +298,11 @@ for (const [kind, file, count] of [
       await expect(page.locator('#q')).toHaveValue('企业级回归测试专用岗位');
       await expect(page.locator('#processed-grid [data-entry-id="' + id + '"]')).toHaveCount(1);
       await expect(page.locator('.card')).toHaveCount(1);
+      if (kind === 'soe') {
+        await expect(page.locator('.card')).toHaveAttribute('data-major', 'unknown');
+        await expect(page.locator('.card')).toHaveAttribute('data-cycle', 'unverified');
+        await expect(page.locator('.screening-summary')).toContainText('招聘资料与已审核版本不同');
+      }
     },
   );
 
@@ -329,3 +335,87 @@ for (const [kind, file, count] of [
     },
   );
 }
+
+const soeBaseline = readCatalog('soe');
+const soeAssessments = JSON.parse(
+  fs.readFileSync(new URL('../data/soe-screening.json', import.meta.url), 'utf8'),
+);
+async function openSoe(page) {
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('.card')).toHaveCount(soeBaseline.DATA.length);
+  await expect(page.locator('#app-loading')).toHaveCount(0);
+}
+test('SOE: expanded directions and professional/cycle filters work independently', async ({
+  page,
+}) => {
+  await openSoe(page);
+  await expect(page.locator('#track-filter option')).toHaveCount(
+    Object.keys(SOE_TRACKS).length + 2,
+  );
+  await page.locator('#track-filter').selectOption('banking');
+  await page.locator('#major-filter').selectOption('supported');
+  await page.locator('#cycle-filter').selectOption('current');
+  const expected = soeBaseline.DATA.filter((item) =>
+    matchesAssessment(soeAssessments.entries[item.id], {
+      direction: 'banking',
+      major: 'supported',
+      cycle: 'current',
+    }),
+  );
+  expect(expected.length).toBeGreaterThan(0);
+  await expect(page.locator('.card')).toHaveCount(expected.length);
+  await expect(page.locator('[data-entry-id="soe-012f751aa0176646891e"]')).toHaveCount(1);
+  await expect(
+    page.locator('[data-entry-id="soe-012f751aa0176646891e"] .screening-summary'),
+  ).toContainText('资格');
+  await page.locator('#track-filter').selectOption('stats');
+  await expect(page.locator('[data-entry-id="soe-11e02d2dbe7515379cad"]')).toHaveCount(1);
+});
+test('SOE: business roles remain available without any algorithm requirement', async ({ page }) => {
+  await openSoe(page);
+  await page.locator('#track-filter').selectOption('supply');
+  await expect(page.locator('[data-entry-id="soe-1bc9a6c37424182099b8"]')).toHaveCount(1);
+  await expect(page.locator('[data-entry-id="soe-c220d0f777ae54ac86c4"]')).toHaveCount(1);
+  await page.locator('#track-filter').selectOption('operations');
+  await expect(page.locator('[data-entry-id="soe-f8c92726adc2c28d4be4"]')).toHaveCount(1);
+  expect(await page.locator('body').innerText()).not.toContain('不要降维去投泛数据岗');
+});
+test('SOE: conflicting cohort is not hidden but cannot pass the current-cycle filter', async ({
+  page,
+}) => {
+  await openSoe(page);
+  await page.locator('#q').fill('建发股份');
+  const card = page.locator('[data-entry-id="soe-1bc9a6c37424182099b8"]');
+  await expect(page.locator('.card')).toHaveCount(1);
+  await expect(card).toHaveAttribute('data-major', 'unrestricted');
+  await expect(card).toHaveAttribute('data-cycle', 'unverified');
+  await expect(card).toContainText('冲突');
+  await page.locator('#cycle-filter').selectOption('current');
+  await expect(page.locator('#count')).toContainText('显示 0');
+});
+test('SOE: an old cache cannot shrink the expanded list back to the original 29', async ({
+  page,
+}) => {
+  const old = structuredClone(soeBaseline);
+  old.DATA = old.DATA.slice(0, 29);
+  await page.addInitScript(
+    ({ key, data }) =>
+      localStorage.setItem(key, JSON.stringify({ version: 2, savedAt: Date.now(), catalog: data })),
+    { key: cacheKey('soe'), data: old },
+  );
+  await openSoe(page);
+  await expect(page.locator('[data-catalog-mode]')).toContainText('内置只读备份');
+});
+test('SOE: exported facts include their professional assessment and source-binding status', async ({
+  page,
+}) => {
+  await openSoe(page);
+  const downloaded = page.waitForEvent('download');
+  await page.locator('#export-btn').click();
+  const file = await downloaded,
+    exported = JSON.parse(fs.readFileSync(await file.path(), 'utf8'));
+  expect(exported.items).toHaveLength(soeBaseline.DATA.length);
+  expect(Object.keys(exported.screening.entries)).toHaveLength(soeBaseline.DATA.length);
+  expect(exported.screening.policyVersion).toBe(soeAssessments.policyVersion);
+  expect(exported.screening.entries['soe-1bc9a6c37424182099b8'].cycle).toBe('unverified');
+});

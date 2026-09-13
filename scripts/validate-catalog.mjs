@@ -1,3 +1,5 @@
+import { loadLocations, validateLocations } from './validate-locations.mjs';
+import { loadScreening, validateScreening } from './validate-screening.mjs';
 import { execFileSync } from 'node:child_process';
 import {
   ROOT,
@@ -16,6 +18,14 @@ try {
   } else {
     const local = loadCatalogs();
     let tables = normalizeCatalogs(local);
+    console.log(
+      'Screening validation passed:',
+      JSON.stringify(validateScreening(local.soe, loadScreening(ROOT))),
+    );
+    console.log(
+      'Geographic validation passed:',
+      JSON.stringify(validateLocations(local.soe, loadLocations(ROOT), loadScreening(ROOT))),
+    );
     const baseIndex = args.indexOf('--base');
     if (baseIndex >= 0) {
       const ref = args[baseIndex + 1];
