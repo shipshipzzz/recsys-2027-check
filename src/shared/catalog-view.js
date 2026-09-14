@@ -1,10 +1,12 @@
 import { escapeHTML, safeHref } from './dom.js';
 import { TZ, chinaDay } from './time.js';
+import { createPageNavigation } from './page-navigation.js';
 
 export function createCatalogView(getCatalog, buildRail = () => null, extraExport = () => ({})) {
   const lifetime = new AbortController();
   const searchCache = new WeakMap();
   let historySource, historyIndex;
+  let navigation = null;
   function sourceRefs(ids = []) {
     return ids
       .map(
@@ -130,18 +132,7 @@ export function createCatalogView(getCatalog, buildRail = () => null, extraExpor
       `共 ${ALL_ITEMS.length} 条记录；${count} 条取得本轮网页/索引证据，其余保留原信息或仅校正口径。`;
   }
   function revealHash() {
-    let id;
-    try {
-      id = decodeURIComponent(location.hash.slice(1));
-    } catch {
-      return;
-    }
-    if (!id) return;
-    const target = document.getElementById(id);
-    if (!target) return;
-    for (let n = target.parentElement; n; n = n.parentElement)
-      if (n.tagName === 'DETAILS') n.open = true;
-    requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: 'auto' }));
+    navigation?.revealHash();
   }
   function saveJSON() {
     const { RECHECKED, PAGE_KIND, ALL_ITEMS, ORIGINAL_ITEMS, SOURCES } = getCatalog();
@@ -175,8 +166,8 @@ export function createCatalogView(getCatalog, buildRail = () => null, extraExpor
   }
   function setupCommon() {
     renderSources();
-    addEventListener('hashchange', revealHash, { signal: lifetime.signal });
-    revealHash();
+    navigation?.dispose();
+    navigation = createPageNavigation();
     document
       .getElementById('export-btn')
       .addEventListener('click', saveJSON, { signal: lifetime.signal });
@@ -198,6 +189,9 @@ export function createCatalogView(getCatalog, buildRail = () => null, extraExpor
     setupCommon,
     renderSources,
     revealHash,
-    dispose: () => lifetime.abort(),
+    dispose() {
+      lifetime.abort();
+      navigation?.dispose();
+    },
   };
 }

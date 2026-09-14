@@ -40,6 +40,7 @@ export function createTimelineManager({ client, storage, namespace, catalog, anc
   const section = document.createElement('section');
   section.className = 'personal-timeline';
   section.id = 'personal-timeline';
+  section.tabIndex = -1;
   section.setAttribute('aria-labelledby', 'timeline-heading');
   section.innerHTML = `<div class="timeline-heading"><div><span class="personal-eyebrow">PERSONAL TIMELINE</span><h2 id="timeline-heading">我的时间线</h2><p>测评、笔试、面试，集中安排。两页共用；全部时间按北京时间（UTC+8）。</p></div><div class="timeline-buttons"><button type="button" data-timeline-add>新增日程</button><button type="button" data-timeline-export>导出日程</button></div></div>
     <div class="timeline-counts" data-timeline-counts aria-label="日程统计"></div>
@@ -50,7 +51,7 @@ export function createTimelineManager({ client, storage, namespace, catalog, anc
     <div class="timeline-table-wrap" data-timeline-table-wrap hidden><table class="timeline-table"><caption>个人测评、笔试和面试日程（北京时间）</caption><thead><tr><th scope="col">时间</th><th scope="col">公司 / 事项</th><th scope="col">类型</th><th scope="col">状态</th><th scope="col">操作</th></tr></thead><tbody></tbody></table></div>
     <div class="timeline-pagination"><span data-timeline-page></span><div class="timeline-buttons"><button type="button" data-timeline-prev>上一页</button><button type="button" data-timeline-next>下一页</button></div></div>
     <p class="timeline-footnote">个人安排不会改动公开招聘信息或“已投递”标记。逾期只提示待处理，不会自动标记完成；关闭网页后不发送提醒。</p>`;
-  anchor.after(section);
+  anchor.before(section);
   const dialog = document.createElement('dialog');
   dialog.className = 'timeline-dialog';
   dialog.setAttribute('aria-labelledby', 'timeline-dialog-title');
@@ -140,7 +141,7 @@ export function createTimelineManager({ client, storage, namespace, catalog, anc
     const pending = store.pendingCount();
     let state =
       store.scope === 'guest'
-        ? '仅本机保存 · 启用上方云端同步后可保存到账号'
+        ? '仅本机保存 · 在下方投递工作台启用云端同步后可保存到账号'
         : sync.hasRemote
           ? '个人日程已同步'
           : '正在读取账号日程…';

@@ -289,12 +289,23 @@
         <span class="brand">RecSys · 2027 秋招核查</span>
         <div class="top-actions">
           <a class="ghost" href="soe.html">央国企精准版</a>
-          <a class="ghost" href="#changelog">更新日志</a>
-          <a class="ghost" href="#timeline">时间线</a>
+          <a class="ghost" href="#personal-timeline">我的时间线</a>
           <button class="ghost" id="theme-btn" type="button">深色模式</button>
         </div>
       </div>
-      <header class="hero">
+      <nav class="page-directory" aria-label="页面目录" data-page-directory>
+        <span class="directory-label">目录</span>
+        <div class="directory-links">
+          <a href="#personal-timeline">我的时间线</a>
+          <a href="#personal-workspace">投递与同步</a>
+          <a href="#recruitment-overview">招聘概览</a>
+          <a href="#changelog">更新日志</a>
+          <a href="#timeline">2027 届时间线</a>
+          <a href="#job-list">招聘卡片</a>
+          <a href="#audit-panel">复核与来源</a>
+        </div>
+      </nav>
+      <header class="hero" id="recruitment-overview" tabindex="-1">
         <div class="kicker">Autumn Campus · RecSys · 2026-09-13 · 原版保留复核</div>
         <h1>32 家秋招核查<em>哪些是官网亲见，哪些是转载</em></h1>
         <p class="lede">
@@ -459,23 +470,33 @@
         </div>
       </section>
 
-      <section class="panel" id="timeline">
-        <h2>2027 届时间线</h2>
-        <p class="sub">
-          保留全部原始节点并补充本轮事件；原节点出自8月快照，新证据标注来源。灰点为放出，红点为有本轮来源的网申节点，蓝点为笔试，虚线点为待核；专项与次数窗口单独说明。已过去的淡化，高亮是北京时间今天。
-        </p>
-        <div class="rail-controls">
-          <button class="ghost" type="button" data-rail-filter="all" aria-pressed="true">
-            完整时间线</button
-          ><button class="ghost" type="button" data-rail-filter="future" aria-pressed="false">
-            从今天起</button
-          ><button class="ghost" type="button" data-rail-filter="deadline" aria-pressed="false">
-            网申节点</button
-          ><button class="ghost" type="button" id="jump-today">定位今天 ↓</button
-          ><span class="count" id="rail-count"></span>
+      <details class="panel public-timeline" id="timeline">
+        <summary aria-controls="public-timeline-content">
+          <div class="public-timeline-title">
+            <h2>2027 届时间线</h2>
+            <span>公开招聘节点与历史记录，与个人日程分开管理</span>
+          </div>
+          <span class="public-timeline-toggle" aria-hidden="true">
+            <span class="when-collapsed">展开</span><span class="when-expanded">收起</span>
+          </span>
+        </summary>
+        <div id="public-timeline-content">
+          <p class="sub">
+            保留全部原始节点并补充本轮事件；原节点出自8月快照，新证据标注来源。灰点为放出，红点为有本轮来源的网申节点，蓝点为笔试，虚线点为待核；专项与次数窗口单独说明。已过去的淡化，高亮是北京时间今天。
+          </p>
+          <div class="rail-controls">
+            <button class="ghost" type="button" data-rail-filter="all" aria-pressed="true">
+              完整时间线</button
+            ><button class="ghost" type="button" data-rail-filter="future" aria-pressed="false">
+              从今天起</button
+            ><button class="ghost" type="button" data-rail-filter="deadline" aria-pressed="false">
+              网申节点</button
+            ><button class="ghost" type="button" id="jump-today">定位今天 ↓</button
+            ><span class="count" id="rail-count"></span>
+          </div>
+          <ol class="rail" id="rail"></ol>
         </div>
-        <ol class="rail" id="rail"></ol>
-      </section>
+      </details>
 
       <section class="panel">
         <h2>最近要关的窗</h2>
@@ -563,6 +584,7 @@
       </section>
 
       <p id="app-loading" class="app-loading" role="status">正在读取招聘资料与个人工作台…</p>
+      <h2 class="catalog-heading" id="job-list" tabindex="-1">招聘卡片</h2>
       <div class="toolbar">
         <div class="filters">
           <button class="chip active" data-filter="all">全部</button>

@@ -68,11 +68,13 @@ export function createPersonalManager(
     remotePullTimer = null;
   const panel = document.createElement('section');
   panel.className = 'personal-panel';
+  panel.id = 'personal-workspace';
+  panel.tabIndex = -1;
   panel.setAttribute('aria-label', '个人投递工作台');
   panel.innerHTML = `<div class="personal-heading"><div><span class="personal-eyebrow">MY APPLICATIONS</span><h2>留意机会，记录进度</h2><p>已投递或不感兴趣的卡片会置灰、移到末尾；随时可以恢复。</p></div><div class="personal-summary" aria-label="个人状态统计"></div></div>
   <div class="sync-row"><span data-catalog-mode></span><span data-sync-status role="status" aria-live="polite"></span><div class="sync-buttons"><button type="button" data-refresh-catalog>刷新招聘资料</button><button type="button" data-enable-sync>启用云端同步</button><button type="button" data-account>邮箱登录 / 绑定</button><button type="button" data-retry hidden>重试同步</button><button type="button" data-import hidden>同步本机标记</button><button type="button" data-signout hidden>退出登录</button></div></div>
   <p class="identity-note" data-identity-note></p>`;
-  document.querySelector('.toolbar').before(panel);
+  document.querySelector('.hero').before(panel);
   const timeline = createTimelineManager({
     client: supabase,
     storage,

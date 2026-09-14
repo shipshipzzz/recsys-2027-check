@@ -329,13 +329,26 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
         <span class="brand">SOE MATCH · 2027 · APPLIED STATISTICS</span>
         <div class="top-actions">
           <a class="ghost" href="index.html">推荐算法核查</a
-          ><a class="ghost" href="#audit-panel">本轮来源</a
+          ><a class="ghost" href="#personal-timeline">我的时间线</a
           ><button class="ghost" id="print-btn" type="button">打印 / PDF</button
           ><button class="ghost" id="theme-btn" type="button">深色模式</button>
         </div>
       </div>
 
-      <header class="hero">
+      <nav class="page-directory" aria-label="页面目录" data-page-directory>
+        <span class="directory-label">目录</span>
+        <div class="directory-links">
+          <a href="#personal-timeline">我的时间线</a>
+          <a href="#personal-workspace">投递与同步</a>
+          <a href="#recruitment-overview">机会概览</a>
+          <a href="#action-plan">近期行动</a>
+          <a href="#inclusion-policy">收录标准</a>
+          <a href="#location-policy">地区偏好</a>
+          <a href="#job-list">招聘卡片</a>
+          <a href="#audit-panel">复核与来源</a>
+        </div>
+      </nav>
+      <header class="hero" id="recruitment-overview" tabindex="-1">
         <div class="kicker">个人简历定制 · 核查日 2026-09-13 · 匹配度不是录取概率</div>
         <h1>2027 届央国企机会池<em>应用统计，让选择更宽</em></h1>
         <p class="lede">
@@ -390,7 +403,7 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
         <div class="stat"><b id="n-watch">0</b><span>有待核条件 / 历史记录</span></div>
       </section>
 
-      <section class="panel">
+      <section class="panel" id="action-plan" tabindex="-1">
         <h2>先看有依据的机会，也不要漏掉待核入口</h2>
         <p class="sub">
           下面按本届窗口和专业依据提示行动；有公告不等于个人资格通过，已知截止也不等于每个岗位都在线。尚未重核的旧记录仍在完整列表中。
@@ -476,6 +489,7 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
         </p>
         <p class="sub" id="location-count" role="status" aria-live="polite"></p>
       </section>
+      <h2 class="catalog-heading" id="job-list" tabindex="-1">招聘卡片</h2>
       <div class="toolbar">
         <div class="filters">
           <button type="button" class="chip active" data-filter="all">全部机会</button>
