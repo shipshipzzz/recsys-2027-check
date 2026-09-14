@@ -4,8 +4,9 @@ import assert from 'node:assert/strict';
 import { gzipSync } from 'node:zlib';
 
 export const BUILD_BUDGETS = Object.freeze({
-  totalJavaScriptGzip: 180 * 1024,
-  pageJavaScriptGzip: 135 * 1024,
+  // Personal timeline adds shared CRUD, validation and private outbox/sync (see docs/personal-timeline.md).
+  totalJavaScriptGzip: 195 * 1024,
+  pageJavaScriptGzip: 145 * 1024,
   pageCssGzip: 16 * 1024,
   pageHtmlGzip: 14 * 1024,
 });

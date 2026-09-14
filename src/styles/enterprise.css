@@ -39,6 +39,14 @@
     content-visibility: visible;
   }
 }
+/* Keep long touch lists geometrically stable during scrolling and pointer delivery.
+   Estimated offscreen heights can move a processed-card button between down and up. */
+@media (max-width: 600px), (pointer: coarse) {
+  .card {
+    content-visibility: visible;
+    contain-intrinsic-size: none;
+  }
+}
 @media (max-width: 600px) {
   body {
     background-attachment: scroll;

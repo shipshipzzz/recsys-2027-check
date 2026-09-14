@@ -8,6 +8,7 @@ import { readUserStates, subscribeUserStates, writeUserStateBatch } from './clou
 import { escapeHTML as esc, createCardRenderer } from './shared/dom.js';
 import { createRetryScheduler, isRetryableError } from './shared/retry.js';
 import { withTimeout } from './shared/async.js';
+import { createTimelineManager } from './timeline.js';
 const labels = { active: '未处理', applied: '已投递', uninterested: '不感兴趣' };
 function safeStorage() {
   try {
@@ -72,6 +73,13 @@ export function createPersonalManager(
   <div class="sync-row"><span data-catalog-mode></span><span data-sync-status role="status" aria-live="polite"></span><div class="sync-buttons"><button type="button" data-refresh-catalog>刷新招聘资料</button><button type="button" data-enable-sync>启用云端同步</button><button type="button" data-account>邮箱登录 / 绑定</button><button type="button" data-retry hidden>重试同步</button><button type="button" data-import hidden>同步本机标记</button><button type="button" data-signout hidden>退出登录</button></div></div>
   <p class="identity-note" data-identity-note></p>`;
   document.querySelector('.toolbar').before(panel);
+  const timeline = createTimelineManager({
+    client: supabase,
+    storage,
+    namespace,
+    catalog,
+    anchor: panel,
+  });
   const filterLabel = document.createElement('label');
   filterLabel.className = 'personal-filter';
   filterLabel.innerHTML =
@@ -327,6 +335,7 @@ export function createPersonalManager(
       nextId = next?.id || 'guest';
     if (nextId === store.scope) {
       user = next;
+      timeline.setUser(next);
       update();
       if (next && !realtime && realtimeStatus !== 'CONNECTING') void startRealtime(store, epoch);
       return ready;
@@ -340,6 +349,7 @@ export function createPersonalManager(
     lastRefresh = 0;
     const stopping = stopRealtime();
     user = next;
+    timeline.setUser(next);
     attachStore(makeStore(nextId));
     const target = store;
     ready = (async () => {
@@ -386,6 +396,7 @@ export function createPersonalManager(
         if (error) throw error;
         await adoptSession(data.session);
         await importGuest();
+        await timeline.importGuest();
         notify(
           store.pendingCount()
             ? '云端账号已启用，部分标记等待同步。'
@@ -416,8 +427,8 @@ export function createPersonalManager(
     () =>
       withBusy(async () => {
         if (
-          store.pendingCount() &&
-          !confirm('还有未同步标记。退出后这些标记仍保留在此浏览器的原账号缓存中，确定退出？')
+          (store.pendingCount() || timeline.pendingCount()) &&
+          !confirm('还有未同步标记或个人日程。退出后记录仍保留在此浏览器的原账号缓存中，确定退出？')
         )
           return;
         if (
@@ -522,6 +533,13 @@ export function createPersonalManager(
   document.addEventListener(
     'click',
     (event) => {
+      const schedule =
+        event.target instanceof Element ? event.target.closest('[data-timeline-card]') : null;
+      if (schedule) {
+        const item = byId.get(schedule.dataset.timelineCard);
+        if (item) timeline.openForCard(item);
+        return;
+      }
       const button =
         event.target instanceof Element ? event.target.closest('[data-card-state]') : null;
       if (!button) return;
@@ -583,7 +601,7 @@ export function createPersonalManager(
     controls: (item) => {
       const state = store.status(item.id),
         muted = isMuted(state);
-      return `<div class="personal-actions"><span class="personal-card-state" data-testid="card-personal-status">${labels[state]}${muted ? ' · 已置后' : ''}</span><div><button type="button" data-card-id="${item.id}" data-card-state="applied" aria-pressed="${state === 'applied'}" aria-label="标记${esc(item.name)}为已投递">已投递</button><button type="button" data-card-id="${item.id}" data-card-state="uninterested" aria-pressed="${state === 'uninterested'}" aria-label="标记${esc(item.name)}为不感兴趣">不感兴趣</button>${muted ? `<button type="button" class="restore-card" data-card-id="${item.id}" data-card-state="active" aria-label="恢复${esc(item.name)}为未处理">恢复</button>` : ''}</div></div>`;
+      return `<div class="personal-actions"><span class="personal-card-state" data-testid="card-personal-status">${labels[state]}${muted ? ' · 已置后' : ''}</span><div><button type="button" data-timeline-card="${item.id}" aria-label="为${esc(item.name)}安排日程">安排日程</button><button type="button" data-card-id="${item.id}" data-card-state="applied" aria-pressed="${state === 'applied'}" aria-label="标记${esc(item.name)}为已投递">已投递</button><button type="button" data-card-id="${item.id}" data-card-state="uninterested" aria-pressed="${state === 'uninterested'}" aria-label="标记${esc(item.name)}为不感兴趣">不感兴趣</button>${muted ? `<button type="button" class="restore-card" data-card-id="${item.id}" data-card-state="active" aria-label="恢复${esc(item.name)}为未处理">恢复</button>` : ''}</div></div>`;
     },
     renderProcessed: (list, renderCard) => {
       processed.hidden = !list.length;
@@ -594,6 +612,7 @@ export function createPersonalManager(
     },
     setCatalog(next) {
       catalog = next;
+      timeline.setCatalog(next);
       items = next.ALL_ITEMS;
       byId = new Map(items.map((item) => [item.id, item]));
       lastSignature = '';
@@ -610,6 +629,7 @@ export function createPersonalManager(
       disposed = true;
       epoch++;
       lifetime.abort();
+      timeline.dispose();
       retry.cancel();
       clearTimeout(authTimer);
       authSubscription?.unsubscribe();
