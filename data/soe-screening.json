@@ -19,20 +19,20 @@
       "basisHash": "9ec2263502f734ffae64db41e4f598a9ae8d2745224a7d786f56c70a6089986c"
     },
     "soe-760d8065c74679611ff9": {
-      "major": "statistics",
+      "major": "related",
       "cycle": "current",
       "intake": 2027,
       "directions": [
-        "finance"
+        "finance",
+        "software"
       ],
-      "basis": "旧卡及 S05/S06 记录数学类、统计学类需求；应用统计专硕代码与批次仍需招聘方确认，本轮未重新读取官方动态JD。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "本届用人单位简章要求本科及以上、STEM类（科学/技术/工程/数学）。旧资料列数学/统计学类仅保留作线索；应用统计专硕及专业代码是否接受须逐岗核准，不写直接匹配。",
+      "qualityBasis": "用人单位正文明确招商银行全资科技子公司和三地研发中心，软件及算法岗位有实际业务承接；合同、定岗和具体专业须核。",
       "evidenceRefs": [
-        "S05",
-        "S06"
+        "U0916-S01"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "820d4cc17b74919d2175c8d8f56ce0ce3574df9565aecd7ab360acc498319ac1"
+      "reviewedOn": "2026-09-16",
+      "basisHash": "fa821ebc5f3fdf85e965c49211afb78c603553e9dee7e72df5094c6b78add9d1"
     },
     "soe-ad455372b0bbb2f021ce": {
       "major": "related",
@@ -456,13 +456,14 @@
         "product",
         "finance"
       ],
-      "basis": "星辰管培、客户经理、定向客服的具体岗位正文写专业不限；科技菁英列数理统计等。仍需核学历、毕业窗、岗位专业下拉及其他条件。",
+      "basis": "重新读取具体岗位正文：星辰管培、客户经理、定向客服专业不限；科技菁英创新研发/支行产品方向含数理统计类。学历、证书、专业代码和其余条件仍须逐项核准。",
       "qualityBasis": "大型银行一级分行，已列业务与管理培养路径；具体合同和轮岗定岗仍需问清。",
       "evidenceRefs": [
-        "S13"
+        "U0916-S03",
+        "U0916-S04"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "0a98659bfba7fd6cdc4890cf2a72fe4ac7754bd271701cc579163ee9d09d2c9e"
+      "reviewedOn": "2026-09-16",
+      "basisHash": "1953363d0a14151676b5e615501a5f413cbed7b2692a7aec1f4fd8d72825cc59"
     },
     "soe-56412c0e929ad53c81a8": {
       "major": "unrestricted",
@@ -739,7 +740,7 @@
       "basisHash": "ef75dbc37db299d87a2620a42988b56456627d26c3178eb3ba969caddc25b66f"
     },
     "soe-15dcc83203fa8d55b59c": {
-      "major": "related",
+      "major": "unknown",
       "cycle": "current",
       "intake": 2027,
       "directions": [
@@ -748,13 +749,14 @@
         "research",
         "software"
       ],
-      "basis": "厦门大学发布本届多序列招聘、浙江范围与10/22截止；专业要求保留为具体岗位待确认。",
+      "basis": "2027届本科及以上；正文专业要求均指向官网具体岗位。河北工大页头“专业不限”不能代替岗位条件；应用统计专硕是否可报尚未核准。 截止与境外毕业窗冲突见卡片，不影响确有2027项目的判断。",
       "qualityBasis": "区域上市银行有多条培养序列与公开流程；不同岗位考核、合同和地域差异须确认。",
       "evidenceRefs": [
-        "S-CITY-04"
+        "U0916-S05",
+        "U0916-S06"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "4d19ca54d039e77ec63c538c07665155f15ff2fdb9cf6babcd8e9dad095d3e53"
+      "reviewedOn": "2026-09-16",
+      "basisHash": "3e2ee0575209e879d90d97261c8a2899fc482955eff48e886defd0d0d3a4d924"
     },
     "soe-28a7c75480e66ff26a24": {
       "major": "statistics",
@@ -819,13 +821,13 @@
         "stats",
         "finance"
       ],
-      "basis": "转载正文明确数理统计和三座偏好城市；当前仍标原始入口/专业条件二次核验。",
+      "basis": "科技菁英专业正文列计算机、软件工程等信息科技类及数理统计类；具体学历、应用统计专硕代码及其余条件在二维码职位详情，本轮未展开。人力资源专业英才是另一条路线，不能套用。",
       "qualityBasis": "银行自主研发机构，城市和业务领域明确；合同、具体开发栈与运维安排仍需核实。",
       "evidenceRefs": [
-        "S-CITY-08"
+        "U0916-S02"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "3aa39032bb892f034c351e15bc9dd92fb7010dd517b9e573c4d7a20d87e9f905"
+      "reviewedOn": "2026-09-16",
+      "basisHash": "e3698a5b74d0a30ed638af31ac40bc65317baf2aa9b9f8397ee16ed7a22c0e2e"
     },
     "soe-6f3da4b7ad2476020757": {
       "major": "unrestricted",

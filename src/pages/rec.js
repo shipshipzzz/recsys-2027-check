@@ -72,14 +72,19 @@ function badge(item) {
     verify: ['当前需复核', 's-intern'],
   }[item.status];
   const src = {
-    see: ['官网亲见·8月', 's-see'],
+    see: [
+      item.audit?.checked === RECHECKED && item.audit?.level === '官方正文'
+        ? '官网正文·本次'
+        : '官网亲见·8月',
+      's-see',
+    ],
     mix: ['部分亲见·原记录', 's-intern'],
     news: ['公开转载', 's-wait'],
     paste: ['官网原文·你贴的', 's-paste'],
   }[item.src] || ['待核', 's-wait'];
   const recent = item.audit?.checked === RECHECKED;
   const stage = st[0] + (!recent && item.status === 'open' ? '·历史' : '');
-  return `<span class="badge ${st[1]}">${stage}</span><span class="badge ${r[1]}">${r[0]}</span><span class="badge ${src[1]}">${src[0]}</span>${item.rev === RECHECKED ? `<span class="badge s-rev">9/13 ${recent ? '复核' : '口径'}</span>` : ''}`;
+  return `<span class="badge ${st[1]}">${stage}</span><span class="badge ${r[1]}">${r[0]}</span><span class="badge ${src[1]}">${src[0]}</span>${item.rev === RECHECKED ? `<span class="badge s-rev">${escapeHTML(RECHECKED)} ${recent ? '复核' : '口径'}</span>` : ''}`;
 }
 function cardHTML(item, i, hidden) {
   const m = dueMeta(item),

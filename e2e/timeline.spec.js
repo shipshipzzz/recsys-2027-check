@@ -9,7 +9,6 @@ const namespace = 'npqrixancnwbmzcyqafx';
 const A = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa';
 const B = 'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';
 const errors = new WeakMap();
-const baseURL = 'http://127.0.0.1:4179/recsys-2027-check/';
 function fixture(overrides = {}) {
   return normalizeTimelineEvent({
     id: crypto.randomUUID(),
@@ -348,6 +347,7 @@ test('timeline: account sync, failed migration recovery, cross-device changes an
   page,
   context,
   browser,
+  baseURL,
 }) => {
   const server = new Map(),
     flags = { fail: true };

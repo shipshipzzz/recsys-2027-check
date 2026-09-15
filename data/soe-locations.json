@@ -122,15 +122,16 @@
     },
     "soe-15dcc83203fa8d55b59c": {
       "current": true,
-      "reviewedOn": "2026-09-13",
+      "reviewedOn": "2026-09-16",
       "locations": [
         {
           "city": "",
           "province": "浙江",
           "level": "campaign",
-          "scope": "全行招聘覆盖浙江各地市，具体岗位城市未逐项核准",
+          "scope": "两版本届公告均覆盖浙江各地市；只作招聘范围，具体岗位/城市及最终定岗未核",
           "refs": [
-            "S-CITY-04"
+            "U0916-S05",
+            "U0916-S06"
           ],
           "directions": [
             "banking",
@@ -140,7 +141,7 @@
           ]
         }
       ],
-      "basisHash": "d73b1a5a8cb0b6339cc8a8370abdab186d220bd3651de1f83a7bfdaca16a19ff"
+      "basisHash": "5161083489c09e212dcce373391ec594de28cb89bc8e28447b02cc82e9804d42"
     },
     "soe-28a7c75480e66ff26a24": {
       "current": true,
@@ -345,15 +346,15 @@
     },
     "soe-946c8b35a6045d05921e": {
       "current": true,
-      "reviewedOn": "2026-09-13",
+      "reviewedOn": "2026-09-16",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届科技岗位整体工作城市范围；具体职位与部门配置待核，不承诺当地一定有某细分方向",
           "refs": [
-            "S-CITY-08"
+            "U0916-S02"
           ],
           "directions": [
             "software",
@@ -365,9 +366,9 @@
           "city": "成都",
           "province": "四川",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届科技岗位整体工作城市范围；具体职位与部门配置待核，不承诺当地一定有某细分方向",
           "refs": [
-            "S-CITY-08"
+            "U0916-S02"
           ],
           "directions": [
             "software",
@@ -379,9 +380,9 @@
           "city": "西安",
           "province": "陕西",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届科技岗位整体工作城市范围；具体职位与部门配置待核，不承诺当地一定有某细分方向",
           "refs": [
-            "S-CITY-08"
+            "U0916-S02"
           ],
           "directions": [
             "software",
@@ -390,7 +391,7 @@
           ]
         }
       ],
-      "basisHash": "300f33766f09f05e7340d795f069d423a80fc0a3ec32b198913574d54fb11e11"
+      "basisHash": "caacf4820005a061174707a08d808bb7d34bfe61a578ea76454358f6f8b077fe"
     },
     "soe-6f3da4b7ad2476020757": {
       "current": true,
@@ -546,6 +547,39 @@
         }
       ],
       "basisHash": "2f5cc0a00252d20b24f261255d1ba83f7f139676cc126011d45a8c5604f9a860"
+    },
+    "soe-760d8065c74679611ff9": {
+      "current": true,
+      "reviewedOn": "2026-09-16",
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "本届五类技术岗位整体工作范围；未逐岗确认城市，不包含重庆/西安等面试站点",
+          "refs": [
+            "U0916-S01"
+          ],
+          "directions": [
+            "finance",
+            "software"
+          ]
+        },
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "本届五类技术岗位整体工作范围；未逐岗确认城市，不包含重庆/西安等面试站点",
+          "refs": [
+            "U0916-S01"
+          ],
+          "directions": [
+            "finance",
+            "software"
+          ]
+        }
+      ],
+      "basisHash": "acfa96e3c899240008f403bd4665dd43e72f8103d4f20a83cb940ecf3dad18e3"
     }
   }
 }
