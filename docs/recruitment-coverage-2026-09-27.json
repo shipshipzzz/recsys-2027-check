@@ -1,0 +1,1596 @@
+{
+  "reviewDate": "2026-09-27",
+  "baseline": "7783ebefbfe68e99ef9d55159745638e0d292dce",
+  "method": "111个原有卡片首个入口的只读HTTP探测，辅以搜索引擎检索、隔离浏览器和公开正文核对。入口HTTP成功不代表招聘开放或资格已通过；仅36条新增/更新卡片有本轮逐项事实结论，其余保留各自历史日期。",
+  "summary": {
+    "existingEntries": 111,
+    "entryProbes": 111,
+    "updatedExisting": 33,
+    "newEntries": 3,
+    "totalEntries": 114,
+    "newSources": 44
+  },
+  "entries": [
+    {
+      "id": "rec-82eaaba81d9dcc54deab",
+      "name": "华为",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://career.huawei.com/cn/campus-recruitment",
+        "checkedAt": "2026-09-27T15:20:14.351Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-effea4c9ff35497ce446",
+      "name": "拼多多",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R06"],
+      "conclusion": "2027官网列表仍可读，有AI Infra和9月新发布职位；旧算法/大模型JD仍需逐岗复核。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://careers.pddglobalhr.com/campus/grad",
+        "checkedAt": "2026-09-27T15:20:14.297Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-57b33bc4f2a1d871291f",
+      "name": "滴滴",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.didiglobal.com/campus_apply/didiglobal/96064#/jobs?keyword=%E6%8E%A8%E8%8D%90",
+        "checkedAt": "2026-09-27T15:20:20.314Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-522d3edeb64a7ca45f5e",
+      "name": "小米",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R12"],
+      "conclusion": "官网2027项目仍可读，主页行程与历史须知不能转换为新的统一截止。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://hr.xiaomi.com/website/campus.html",
+        "checkedAt": "2026-09-27T15:20:14.129Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-cfc3d445066f6e83ca1d",
+      "name": "哔哩哔哩",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R05"],
+      "conclusion": "重新读取2027首页和FAQ，核实毕业窗与两个顺序志愿；继续不使用第三方10/3倒计时。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://jobs.bilibili.com/campus/positions?name=%E6%8E%A8%E8%8D%90&type=3",
+        "checkedAt": "2026-09-27T15:20:14.498Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-cd6362472aea60ef45d5",
+      "name": "美团",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://zhaopin.meituan.com/web/campus?keyword=%E6%8E%A8%E8%8D%90",
+        "checkedAt": "2026-09-27T15:20:14.607Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-8e7a2fa63279073af1ea",
+      "name": "好未来",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://app.mokahr.com/campus-recruitment/tal/95443?locale=zh-CN#/jobs",
+        "checkedAt": "2026-09-27T15:20:15.016Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-49233b820253f8ef424c",
+      "name": "携程",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://job.ctrip.com/#/campus",
+        "checkedAt": "2026-09-27T15:20:15.329Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-8d2be68965151aec8d3b",
+      "name": "唯品会",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.vip.com",
+        "checkedAt": "2026-09-27T15:20:16.221Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-d30e5ffc0ba9150b4367",
+      "name": "蚂蚁集团",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://talent.antgroup.com/campus-full-list",
+        "checkedAt": "2026-09-27T15:20:15.362Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-b210af9eaeaa3d72cea6",
+      "name": "快手",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.kuaishou.cn/#/campus/jobs?name=%E6%8E%A8%E8%8D%90&pageNum=1&recruitSubProjectCodes=20271779425607",
+        "checkedAt": "2026-09-27T15:20:15.933Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-47c1e53c427aafb4556b",
+      "name": "阿里巴巴",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus-talent.alibaba.com/campus/position?batchId=100000760001",
+        "checkedAt": "2026-09-27T15:20:15.555Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-53874092e000069bfeda",
+      "name": "腾讯",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R01"],
+      "conclusion": "重读官方FAQ：没有统一网申截止，不能把8月建议投递期或旧10月节点当硬截止。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://join.qq.com/index.html",
+        "checkedAt": "2026-09-27T15:20:15.951Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-81baf57e05f112764536",
+      "name": "京东",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R04"],
+      "conclusion": "官网给出新星及管培的11/30项目窗口，不把全年实习或顶尖计划并入同一个截止。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://campus.jd.com/",
+        "checkedAt": "2026-09-27T15:20:16.207Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-0c8d80777a68b7da5f43",
+      "name": "360 集团",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.360.cn",
+        "checkedAt": "2026-09-27T15:20:16.425Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-f851fcc64d07c10e897f",
+      "name": "MetaApp",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.metaapp.cn",
+        "checkedAt": "2026-09-27T15:20:16.516Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-7ca2b7da6e0f8654c088",
+      "name": "科大讯飞",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R10"],
+      "conclusion": "从企业介绍页转向真实校园职位池，读到2027常规秋招和后训练/多模态等岗位。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://www.iflytek.com",
+        "checkedAt": "2026-09-27T15:20:16.626Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-e2f4e2c4b8d7cf9c17f5",
+      "name": "OPPO",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://careers.oppo.com/university/oppo/campus/post?shareId=17980",
+        "checkedAt": "2026-09-27T15:20:16.603Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-f9f525fd1bbc068eca89",
+      "name": "作业帮",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.zybang.com",
+        "checkedAt": "2026-09-27T15:20:16.698Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-d26c6a08a591011a3bf6",
+      "name": "小红书",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://job.xiaohongshu.com/campus/position?positionName=%E6%8E%A8%E8%8D%90",
+        "checkedAt": "2026-09-27T15:20:16.829Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-7eece41947255ec5b940",
+      "name": "SHEIN",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://careers.shein.cn/",
+        "checkedAt": "2026-09-27T15:20:17.025Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-a62864e8c353807bfbd8",
+      "name": "网易",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://campus.163.com/",
+        "checkedAt": "2026-09-27T15:20:17.142Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-67a67fc05f47b36e185c",
+      "name": "爱奇艺",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.iqiyi.com",
+        "checkedAt": "2026-09-27T15:20:17.080Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-0a5441b46ae534c8f353",
+      "name": "得物",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R07"],
+      "conclusion": "读到正式2027算法策略、搜推系统工程和产品岗，研究型生成式召回仍单独标为实习。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://campus.dewu.com/578078/position/list?keywords=%E6%8E%A8%E8%8D%90",
+        "checkedAt": "2026-09-27T15:20:17.858Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-69337578b2468a881543",
+      "name": "vivo",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-16",
+      "entryProbe": {
+        "url": "https://hr-campus.vivo.com/",
+        "checkedAt": "2026-09-27T15:20:17.571Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-455ece81de5605d85e54",
+      "name": "百度",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R11"],
+      "conclusion": "官网当前面向2026年9月至2027年8月毕业生；明确2027暑期实习已结束，但日常实习全年开放。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://talent.baidu.com/jobs/campus",
+        "checkedAt": "2026-09-27T15:20:17.471Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-702c213feab1671de4c5",
+      "name": "字节跳动",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R02", "U0927-R03", "U0927-R13"],
+      "conclusion": "两条2027正式推荐大模型JD已读，区分正式校招、ByteIntern和日常实习，不用检索结果总数代替职位存量。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://jobs.bytedance.com/campus/position?keywords=%E6%8E%A8%E8%8D%90",
+        "checkedAt": "2026-09-27T15:20:18.279Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-2faa8bd0603d45617e25",
+      "name": "Shopee",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://app.mokahr.com/campus_apply/shopee/2962#/jobs",
+        "checkedAt": "2026-09-27T15:20:19.011Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-eff9e9ea8520b3f339e1",
+      "name": "新浪 / 微博",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://app.mokahr.com/campus-recruitment/sina/43536",
+        "checkedAt": "2026-09-27T15:20:19.043Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-a57125f842f6dc3e62a8",
+      "name": "腾讯音乐",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://join.tencentmusic.com/campus/post/?type=10",
+        "checkedAt": "2026-09-27T15:20:20.123Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-70629416ece0407f8118",
+      "name": "Soul",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://soulapp.jobs.feishu.cn/",
+        "checkedAt": "2026-09-27T15:20:19.727Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-61240a5e55e990f64d1f",
+      "name": "哈啰",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://careers.hellobike.com/#/recruit/%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98",
+        "checkedAt": "2026-09-27T15:20:19.639Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-6ad1c8da5080c5147475",
+      "name": "度小满",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.duxiaoman.com/",
+        "checkedAt": "2026-09-27T15:20:20.541Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-f2afc6db6fcedb278b78",
+      "name": "Wind 万得",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.wind.com.cn/portal/zh/JoinUs/recruit.html?channelPositionId=1164&positionType=9002",
+        "checkedAt": "2026-09-27T15:20:20.000Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-3e94f491f99e4ae6fc2d",
+      "name": "去哪儿",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-R08", "U0927-R09"],
+      "conclusion": "确认旧官网转入飞书招聘，2027职位仍可读；9/20和9/30旧冲突节点不再置于当前卡片倒计时。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://hf7l9aiqzx.jobs.feishu.cn/704852/position/list",
+        "checkedAt": "2026-09-27T15:20:20.736Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-b44970daaf32132f230f",
+      "name": "挚文 / 陌陌",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.hellogroup.com/campus-recruitment/immomo/54299/#/job/8175276b-1cfd-4256-b650-fa215d93e24d",
+        "checkedAt": "2026-09-27T15:20:22.430Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-1bfefe0febb227479016",
+      "name": "知乎",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://app.mokahr.com/campus-recruitment/zhihu/68321#/",
+        "checkedAt": "2026-09-27T15:20:21.735Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-1b52d69cf33ddf49baea",
+      "name": "58同城",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.58.com",
+        "checkedAt": "2026-09-27T15:20:23.103Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-be548deba4a093d78e82",
+      "name": "荣耀",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.honor.com/cn/career/",
+        "checkedAt": "2026-09-27T15:20:20.973Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-99da41b4a60e34d30b0c",
+      "name": "同花顺",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.10jqka.com.cn/job/list",
+        "checkedAt": "2026-09-27T15:20:22.547Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-bbf424863d6008235248",
+      "name": "贝壳找房",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.ke.com/",
+        "checkedAt": "2026-09-27T15:20:22.095Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-7df999bb5bbab0b3e8fc",
+      "name": "芒果TV",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://app.mokahr.com/campus-recruitment/mgtv/44490?locale=zh-CN",
+        "checkedAt": "2026-09-27T15:20:23.459Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "rec-a168b06e9c219152d775",
+      "name": "传音",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://transsion.zhiye.com/campus/jobs",
+        "checkedAt": "2026-09-27T15:20:22.662Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-7b0537129aa42ab55ff5",
+      "name": "米哈游",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://jobs.mihoyo.com/",
+        "checkedAt": "2026-09-27T15:20:22.890Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-c39888bcadf8baa4acef",
+      "name": "货拉拉",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://join.huolala.cn/",
+        "checkedAt": "2026-09-27T15:20:23.393Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-7b284311bfca60467e57",
+      "name": "饿了么 / 淘宝闪购",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://talent.ele.me/campus/home?lang=zh",
+        "checkedAt": "2026-09-27T15:20:23.251Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-0f1cb9c0fcbf0dbb2924",
+      "name": "飞猪",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus-talent.alibaba.com/campus/index",
+        "checkedAt": "2026-09-27T15:20:23.264Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-ae322cc596675baf95b1",
+      "name": "喜马拉雅",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://app.mokahr.com/campus-recruitment/himalaya/92431",
+        "checkedAt": "2026-09-27T15:20:23.312Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-2475571c8383583793b8",
+      "name": "阅文 / QQ阅读",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://join.yuewen.com/school",
+        "checkedAt": "2026-09-27T15:20:23.530Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-4a366fb92e537bad20bd",
+      "name": "网易云音乐",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://campus.163.com/",
+        "checkedAt": "2026-09-27T15:20:23.426Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-183f00f483d3844e875d",
+      "name": "Keep",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://hr.keep.com/campus/jobs",
+        "checkedAt": "2026-09-27T15:20:23.743Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-44c4621de3957c4bb5b5",
+      "name": "汽车之家",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://talent.autohome.com.cn/campus_index.html",
+        "checkedAt": "2026-09-27T15:20:23.777Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-fa8c9a97f2c921bf8484",
+      "name": "同程旅行",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://join.ly.com",
+        "checkedAt": "2026-09-27T15:20:30.634Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-fcdbfc51189fecd592b0",
+      "name": "虎牙",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://hr.huya.com",
+        "checkedAt": "2026-09-27T15:20:23.839Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-d00d4d14ff02e6a29d90",
+      "name": "BOSS直聘",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.zhipin.com/campus/pc/",
+        "checkedAt": "2026-09-27T15:20:23.921Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-4d347b261c9013270a2e",
+      "name": "网易有道",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://campus.163.com/",
+        "checkedAt": "2026-09-27T15:20:23.804Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "rec-d16ff9b356f58d9af1db",
+      "name": "网易游戏雷火",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://leihuo.163.com/campus/",
+        "checkedAt": "2026-09-27T15:20:24.189Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-933afa76439b71816ede",
+      "name": "天翼云",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://wap.sasac.gov.cn/n2588035/n2588325/n2588350/c35747841/content.html",
+        "checkedAt": "2026-09-27T15:20:24.378Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-760d8065c74679611ff9",
+      "name": "招银网络科技",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S26"],
+      "conclusion": "正文两批报名窗口已过，后续面试仍进行；按批次转已过窗而非宣称全公司永久停招。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://cmbnt.cmbchina.com/",
+        "checkedAt": "2026-09-27T15:20:24.136Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-ad455372b0bbb2f021ce",
+      "name": "中国移动九天人工智能",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://campus.51job.com/zyjt/",
+        "checkedAt": "2026-09-27T15:20:25.198Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-09d0c319c855ec8c738e",
+      "name": "中国电信集团 · 优才 / 研发 / 产数",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S06"],
+      "conclusion": "补齐官方2027招聘启动与分单位规则，保留非算法业务方向；不把集团入口当个人资格已通过。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://www.chinatelecom.com.cn/ct/zp/168256.html",
+        "checkedAt": "2026-09-27T15:20:24.596Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-4ffa72152f7258fb78a2",
+      "name": "中国电信人工智能研究院 TeleAI",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.chinatelecom.com.cn/ct/zp/167276.html",
+        "checkedAt": "2026-09-27T15:20:24.648Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-d10aecb1b903d20e8fd8",
+      "name": "浪潮集团",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://career.inspur.com/campus2027/",
+        "checkedAt": "2026-09-27T15:20:29.879Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-281e1336c36307f85882",
+      "name": "中科曙光",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S05"],
+      "conclusion": "本轮找到并重读2027硕博公告，补齐届次和杭州/成都/西安招聘范围，专业仍待逐岗确认。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://go.sugon.com/campus",
+        "checkedAt": "2026-09-27T15:20:25.161Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-003d7bb92cd63869b718",
+      "name": "中国人保科技 / 理工专项",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S07"],
+      "conclusion": "用9/24新简章补充招聘分层窗口；集团总通道延续到次年不代表总部岗位仍可晚投。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://picc.zhiye.com/",
+        "checkedAt": "2026-09-27T15:20:25.418Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-e3c6ba3985ff4004365b",
+      "name": "交银金融科技",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://job.bankcomm.com/index.do",
+        "checkedAt": "2026-09-27T15:20:25.338Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-54268e0393a76722595e",
+      "name": "中汽中心",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://dhr.catarc.ac.cn/RedseaPlatform/zhaopin/zpChannelQrCode/campus_recruit/officeWebsite.mob",
+        "checkedAt": "2026-09-27T15:20:25.937Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-0a4d614aa7dd0aee16bc",
+      "name": "东风汽车研发总院",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.dfmc.com.cn/zhaopin/xiaoyuanzhaopin.html",
+        "checkedAt": "2026-09-27T15:20:27.012Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-237dd8bb2d51359a8818",
+      "name": "中国电科 50 所",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://cetc.iguopin.com/job-campus",
+        "checkedAt": "2026-09-27T15:20:26.160Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-6c88c55a7f10e63848e4",
+      "name": "中科芯 / 中国电科 58 所",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://campus.51job.com/zkx2027",
+        "checkedAt": "2026-09-27T15:20:28.087Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-b96d5b94cecc8946cc71",
+      "name": "联通数字科技",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S04"],
+      "conclusion": "补入9/21本届公告，确认当届与五城招聘范围；不将类别列表当专业不限。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://zglt.iguopin.com/job",
+        "checkedAt": "2026-09-27T15:20:27.226Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-a2ceddeff19120c77391",
+      "name": "天翼物联 · 优才计划",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.chinatelecom.com.cn/ct/zp/",
+        "checkedAt": "2026-09-27T15:20:27.342Z",
+        "status": 412,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-35812b328fb333295de9",
+      "name": "咪咕公司",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://job.10086.cn/touch/personal/campus/campus_job_list.html?cId=85",
+        "checkedAt": "2026-09-27T15:20:28.241Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-7df999bb5bbab0b3e8fc",
+      "name": "芒果TV",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://app.mokahr.com/campus-recruitment/mgtv/44490?locale=zh-CN",
+        "checkedAt": "2026-09-27T15:20:29.790Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-9f02794271f6ee22ab36",
+      "name": "中国航信 / 航旅纵横",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://wecruit.hotjob.cn/SU6358e2600dcad448466b5464/pb/index.html#/",
+        "checkedAt": "2026-09-27T15:20:28.538Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-691c283911ab1f4878af",
+      "name": "昆仑数智",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://zhaopin.cnpc.com.cn/",
+        "checkedAt": "2026-09-27T15:20:28.921Z",
+        "status": 412,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-0166e9a039513d6627bb",
+      "name": "东方地球物理公司 BGP",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://zhaopin.cnpc.com.cn/",
+        "checkedAt": "2026-09-27T15:20:29.088Z",
+        "status": 412,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-863efd948d7f8d33bfdb",
+      "name": "中石化经纬 / 石油物探技术研究院",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://job.sinopec.com/",
+        "checkedAt": "2026-09-27T15:20:29.477Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-1e49fabfeb8af3287a2b",
+      "name": "中海油研究总院",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.cnooc.com.cn/zyzx/",
+        "checkedAt": "2026-09-27T15:20:30.711Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-bd6aef6e032befbf221e",
+      "name": "宝信软件",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://www.baosight.com/",
+        "checkedAt": "2026-09-27T15:20:30.884Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-b24eccce088fab5acca4",
+      "name": "南网数字集团",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://zhaopin.csg.cn/",
+        "checkedAt": "2026-09-27T15:20:30.107Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-9144dfc3a2177c2560bf",
+      "name": "国网信通产业集团 / 南瑞集团",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://zhaopin.sgcc.com.cn/",
+        "checkedAt": "2026-09-27T15:20:30.286Z",
+        "status": 412,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-40821fd0c64459ec899d",
+      "name": "中国银联 / 银联数据",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://join.unionpay.com/",
+        "checkedAt": "2026-09-27T15:20:30.719Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-9ed0ba98e2b378d91fe7",
+      "name": "建信金融科技",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://ccb.com/chn/job/org_index.html?orgId=8ba3bc9962e2c55501636c1220b10648&planType=XY",
+        "checkedAt": "2026-09-27T15:20:30.796Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-7fe2c247fb54aac480d8",
+      "name": "中国电子云",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": null,
+      "entryProbe": {
+        "url": "https://cecloud.com/join.html",
+        "checkedAt": "2026-09-27T15:20:31.151Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-224eff4dd223d582e600",
+      "name": "中国银行 · 数据分析 / 审计数据",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S08", "U0927-S09"],
+      "conclusion": "官方公告与PDF资格交叉核对，补齐10/9 24点与机构/专业范围边界。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://www.boc.cn/aboutboc/bi4/202609/t20260903_25689311.html",
+        "checkedAt": "2026-09-27T15:20:31.008Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-012f751aa0176646891e",
+      "name": "工商银行深圳分行 · 管培 / 产品 / 综合业务",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S11"],
+      "conclusion": "重新区分深圳管培专业不限与科技菁英的数理统计要求，保留10/8本机构截止。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.cuhk.edu.cn/en/job/view/id/469442",
+        "checkedAt": "2026-09-27T15:20:31.519Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-56412c0e929ad53c81a8",
+      "name": "建设银行 · 总部经办 / 湖北通用管培",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S12"],
+      "conclusion": "补充总行经办硕士、数理统计、工作地与轮岗要求；湖北通用管培仍标明不是本轮逐岗复核范围。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://jy.tust.edu.cn/correcruit/content/id/46573.html",
+        "checkedAt": "2026-09-27T15:20:31.558Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-9ab002099e55ac2b03b6",
+      "name": "农业银行四川分行 · 综合业务 / 管理储备",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S13"],
+      "conclusion": "补齐本部与县域培养边界，审计储备需轮岗后择优，不承诺入职即审计。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.nankai.edu.cn/correcruit/content/id/118609.html",
+        "checkedAt": "2026-09-27T15:20:31.253Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-f8c92726adc2c28d4be4",
+      "name": "招商银行深圳分行 · 定向培养 / 业务运营",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S14"],
+      "conclusion": "按职位表区分不限专业的业务/管培与IT专业条件，截止精确到10/10 23:59。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.nankai.edu.cn/correcruit/content/id/117232.html",
+        "checkedAt": "2026-09-27T15:20:31.300Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-fd7572b49f9a3eb7f2b6",
+      "name": "中信银行信用卡中心 · 风险统计 / 运营研究",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S15"],
+      "conclusion": "补齐暂定10/18与境内外毕业窗，保留统计专业依据，不从宣讲安排推导截止。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://jy.tust.edu.cn/correcruit/content/id/46270.html",
+        "checkedAt": "2026-09-27T15:20:32.213Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-1df7b49623798cb2b82b",
+      "name": "南京银行 · 风险管理 / 综合培养 / 业务",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S16"],
+      "conclusion": "重读本届公告并补足10/11 24点；不把银行网点覆盖城市自动当职位工作地。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://job.tiangong.edu.cn/correcruit/content/id/55915.html",
+        "checkedAt": "2026-09-27T15:20:31.640Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-3a4e8fb9f15de5c306e9",
+      "name": "长城证券 · 研究分析 / 风险 / 客群运营",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S17"],
+      "conclusion": "确认研究、量化、风险与运营方向，月份安排不虚构10月某日截止。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.nankai.edu.cn/correcruit/content/id/117243.html",
+        "checkedAt": "2026-09-27T15:20:31.572Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-11e02d2dbe7515379cad",
+      "name": "厦门航空 · 规划财务 / 营销分析 / 管培",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S21"],
+      "conclusion": "重读统计相关岗位和GPA/外语等条件，确认分析与管培在厦门，不因有杭州分公司加分。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://job.hust.edu.cn/zpinfo1/2413786.htm",
+        "checkedAt": "2026-09-27T15:20:31.878Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-bc7d404baf298af71195",
+      "name": "北汽集团 · 市场 / 职能 / 数据分析",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S22"],
+      "conclusion": "补充2027集团岗位与专业大类；杭州子公司名称仍不能作为具体统计岗位的地区证明。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80193.html",
+        "checkedAt": "2026-09-27T15:20:31.820Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-67ba0f956e9bff32cb49",
+      "name": "岚图汽车 · 产品企划 / 经营规划 / 营销管培",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S23"],
+      "conclusion": "区分普通校招和博士追光计划，避免把博士数据科学岗当硕士通道。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.hebut.edu.cn/home/correcruit/content/id/79130.html",
+        "checkedAt": "2026-09-27T15:20:31.830Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-1bc9a6c37424182099b8",
+      "name": "建发股份 · 国内 / 进出口业务与管培",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S20"],
+      "conclusion": "重复核对后届次冲突仍存在，不能只刷新日期把它改成当前已核资格。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.hebut.edu.cn/correcruit/content/id/79950.html",
+        "checkedAt": "2026-09-27T15:20:32.020Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-c220d0f777ae54ac86c4",
+      "name": "国贸股份 · 行业研究 / 贸易运营 / 业务",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S18"],
+      "conclusion": "重读岗位级专业与工作地：统计研究在厦门，偏好地区证据只对应业务或运营。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.nankai.edu.cn/correcruit/content/id/117204.html",
+        "checkedAt": "2026-09-27T15:20:31.887Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-fc684edd781f27422e8d",
+      "name": "象屿 · 产业研究 / 风险 / 供应链运营",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S19"],
+      "conclusion": "补齐研究与财务/物流不同工作地，不把杭州/西安混配给产业研究。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://career.nankai.edu.cn/correcruit/content/id/117501.html",
+        "checkedAt": "2026-09-27T15:20:31.935Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-74afd94593431265ce3a",
+      "name": "浙江省商业集团 · 产业研究 / 运营 / 数字化",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://dhr.cncico.com:18443/postDetail/263846648516567960",
+        "checkedAt": "2026-09-27T15:20:32.412Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-cb0f7783542ae0067238",
+      "name": "浙商中拓集团 · 研究 / 交易 / 商务",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://dhr.cncico.com:18443/",
+        "checkedAt": "2026-09-27T15:20:32.443Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-15e8fe78032c98f915c3",
+      "name": "重庆三峡融资担保集团 · 管培 / 项目经理",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://www.cqsxdb.com/",
+        "checkedAt": "2026-09-27T15:20:32.377Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-15dcc83203fa8d55b59c",
+      "name": "杭州银行 · 总分行培养 / 运营",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S01", "U0927-S02", "U0927-S03"],
+      "conclusion": "官网职位级证据补齐：数据研发明确应用统计；9/30和10/25为不同岗位窗口，不再把旧公告冲突当作全部岗位无法判断。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://myjob.hzbank.com.cn/",
+        "checkedAt": "2026-09-27T15:20:32.536Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-28a7c75480e66ff26a24",
+      "name": "中国建设银行浙江省分行",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S24"],
+      "conclusion": "重新核对数理统计科技专项、浙江工作范围与基层培养；宁波不在本机构范围。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://job.ccb.com/",
+        "checkedAt": "2026-09-27T15:20:32.502Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-70472ac853332bba0d05",
+      "name": "中国建设银行四川省分行",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S25"],
+      "conclusion": "补齐四川科技专项专业、成都工作范围与部分县支行五年要求，避免忽略培养约束。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://job.ccb.com/",
+        "checkedAt": "2026-09-27T15:20:32.495Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-95134bdc75c0737d281e",
+      "name": "中国工商银行远程银行中心",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://job.icbc.com.cn/",
+        "checkedAt": "2026-09-27T15:20:32.599Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-946c8b35a6045d05921e",
+      "name": "中国工商银行软件开发中心",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S10"],
+      "conclusion": "重新核对科技菁英方向、数理统计类与七城范围，10/8为报名节点，不是后续考试日期。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": {
+        "url": "https://job.icbc.com.cn/",
+        "checkedAt": "2026-09-27T15:20:32.602Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-6f3da4b7ad2476020757",
+      "name": "招商银行宁波分行",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://cmb-recruitment-mobile.paas.cmbchina.com/recommendList?qrCodeId=B851E528-0F74-4A9F-BDBA-5CC69D605B3A",
+        "checkedAt": "2026-09-27T15:20:32.806Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-140f2087c58956d157f6",
+      "name": "申万宏源集团 / 证券",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://www.swhysc.com/",
+        "checkedAt": "2026-09-27T15:20:32.983Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-55cb5e9670d088e4902f",
+      "name": "建信人寿 · 精算 / 经营管理",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://www.ccb-life.com.cn/",
+        "checkedAt": "2026-09-27T15:20:33.243Z",
+        "status": 200,
+        "error": null
+      }
+    },
+    {
+      "id": "soe-6f566438920bdfd0d70e",
+      "name": "中国农业银行浙江省分行",
+      "reviewLevel": "entry-availability-only",
+      "sourceRefs": [],
+      "conclusion": "仅检查入口可用性；未完成本轮逐岗/专业/地区复核，不能据此认定停招或开放。",
+      "retainedAuditDate": "2026-09-13",
+      "entryProbe": {
+        "url": "https://career.abchina.com.cn/",
+        "checkedAt": "2026-09-27T15:20:32.755Z",
+        "status": null,
+        "error": "TypeError"
+      }
+    },
+    {
+      "id": "soe-b9fb017b087135609736",
+      "name": "国家开发银行 · 总行经济金融",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S27", "U0927-S28", "U0927-S29"],
+      "conclusion": "新增有统计专业及对应专业学位依据的总行经济金融入口，工作地北京；不混用西安IT条件。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": null
+    },
+    {
+      "id": "soe-e43cb34e4c801cf57150",
+      "name": "广发银行 · 风险分析 / 业务 / 金融科技",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S30"],
+      "conclusion": "新增9/17公告的风险、业务和金融科技入口，明确总分行不同截止与算法岗位工作地。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": null
+    },
+    {
+      "id": "soe-84e7d908cb72d28b63a2",
+      "name": "重庆三峡银行 · 管培 / 金融科技 / 支行业务",
+      "reviewLevel": "scoped-source-review",
+      "sourceRefs": ["U0927-S31"],
+      "conclusion": "新增重庆本地银行9/24公告，10/24截止，明确支行先从柜面培养而非纯技术路线。",
+      "retainedAuditDate": "2026-09-27",
+      "entryProbe": null
+    }
+  ]
+}

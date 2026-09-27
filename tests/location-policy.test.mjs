@@ -57,8 +57,7 @@ test('headquarters, historical and unreviewed geography receive no bonus', () =>
   assert.equal(locationBonus({ ...geo([place('杭州')]), matched: false }), 0);
 });
 test('province-only campaign evidence is not silently converted into a Hangzhou job', () => {
-  const item = find('杭州银行'),
-    value = lookup(item, catalog.SOURCES);
+  const value = geo([place('', '浙江', 'campaign')]);
   assert.equal(matchesLocation(value, '浙江'), true);
   assert.equal(matchesLocation(value, '杭州'), false);
   assert.equal(matchesLocation(value, 'all'), true);
@@ -130,4 +129,11 @@ test('a location bonus breaks a comparable score tie but cannot override qualifi
   assert.ok(
     comparePreferredOpportunities(a, b, qualified, qualified, local, remote, now, 'research') > 0,
   );
+});
+
+test('new Hangzhou Bank role evidence supports data roles but not unreviewed research locations', () => {
+  const value = lookup(find('杭州银行'), catalog.SOURCES);
+  assert.equal(matchesLocation(value, '杭州', 'stats'), true);
+  assert.equal(locationBonus(value, 'stats'), 8);
+  assert.equal(matchesLocation(value, '杭州', 'research'), false);
 });

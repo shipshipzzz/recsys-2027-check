@@ -122,38 +122,48 @@
     },
     "soe-15dcc83203fa8d55b59c": {
       "current": true,
-      "reviewedOn": "2026-09-16",
       "locations": [
         {
-          "city": "",
+          "city": "杭州",
           "province": "浙江",
-          "level": "campaign",
-          "scope": "两版本届公告均覆盖浙江各地市；只作招聘范围，具体岗位/城市及最终定岗未核",
+          "level": "position",
+          "scope": "仅总行数据研发培训生27159050的工作地，不外推所有技术岗",
           "refs": [
-            "U0916-S05",
-            "U0916-S06"
+            "U0927-S02"
+          ],
+          "directions": [
+            "stats",
+            "software",
+            "finance"
+          ]
+        },
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "scope": "仅总行培训生27158942；最终轮岗与考核定岗以公告为准",
+          "refs": [
+            "U0927-S03"
           ],
           "directions": [
             "banking",
-            "operations",
-            "research",
-            "software"
+            "operations"
           ]
         }
       ],
-      "basisHash": "5161083489c09e212dcce373391ec594de28cb89bc8e28447b02cc82e9804d42"
+      "reviewedOn": "2026-09-27",
+      "basisHash": "fe94fcd3cd5e323ba9eca80b6a2df4d49dccc08da9cfd957097ad46e562e19fd"
     },
     "soe-28a7c75480e66ff26a24": {
       "current": true,
-      "reviewedOn": "2026-09-13",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -166,9 +176,9 @@
           "city": "温州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -181,9 +191,9 @@
           "city": "嘉兴",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -196,9 +206,9 @@
           "city": "湖州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -211,9 +221,9 @@
           "city": "绍兴",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -226,9 +236,9 @@
           "city": "金华",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -241,9 +251,9 @@
           "city": "衢州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -256,9 +266,9 @@
           "city": "台州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -271,9 +281,9 @@
           "city": "丽水",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -286,9 +296,9 @@
           "city": "舟山",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+          "scope": "本届浙江省分行工作范围，不含宁波；每一序列的岗位分布及资格另核",
           "refs": [
-            "S-CITY-05"
+            "U0927-S24"
           ],
           "directions": [
             "banking",
@@ -298,19 +308,19 @@
           ]
         }
       ],
-      "basisHash": "0584f41c8f090c5d5b302c41929863fb1a60f9323d4cbb416380e7a421bd2b4a"
+      "reviewedOn": "2026-09-27",
+      "basisHash": "d00bad58aefa4fcfe4fc7189b4ec0dd461f0b35909f0b0e8969f684a132a7856"
     },
     "soe-70472ac853332bba0d05": {
       "current": true,
-      "reviewedOn": "2026-09-13",
       "locations": [
         {
           "city": "成都",
           "province": "四川",
           "level": "campaign",
-          "scope": "成都地区含主城区和所列区县，不保证所有序列均能定岗成都",
+          "scope": "成都城区及所列区县工作范围，具体机构岗位与县支行服务年限另核",
           "refs": [
-            "S-CITY-06"
+            "U0927-S25"
           ],
           "directions": [
             "banking",
@@ -320,7 +330,8 @@
           ]
         }
       ],
-      "basisHash": "c96f5a6bbb83b26059f6a60b4a8b73191f0e6b95a70aed14d63349d9d8a612f6"
+      "reviewedOn": "2026-09-27",
+      "basisHash": "78c143e2a191c8522ef3a5ee3257d244ceec021692d3a10d8d98c24389b796a4"
     },
     "soe-95134bdc75c0737d281e": {
       "current": true,
@@ -346,15 +357,14 @@
     },
     "soe-946c8b35a6045d05921e": {
       "current": true,
-      "reviewedOn": "2026-09-16",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届科技岗位整体工作城市范围；具体职位与部门配置待核，不承诺当地一定有某细分方向",
+          "scope": "软件开发中心本届七城整体范围，具体岗位与部门配置另核",
           "refs": [
-            "U0916-S02"
+            "U0927-S10"
           ],
           "directions": [
             "software",
@@ -366,9 +376,9 @@
           "city": "成都",
           "province": "四川",
           "level": "campaign",
-          "scope": "本届科技岗位整体工作城市范围；具体职位与部门配置待核，不承诺当地一定有某细分方向",
+          "scope": "软件开发中心本届七城整体范围，具体岗位与部门配置另核",
           "refs": [
-            "U0916-S02"
+            "U0927-S10"
           ],
           "directions": [
             "software",
@@ -380,9 +390,9 @@
           "city": "西安",
           "province": "陕西",
           "level": "campaign",
-          "scope": "本届科技岗位整体工作城市范围；具体职位与部门配置待核，不承诺当地一定有某细分方向",
+          "scope": "软件开发中心本届七城整体范围，具体岗位与部门配置另核",
           "refs": [
-            "U0916-S02"
+            "U0927-S10"
           ],
           "directions": [
             "software",
@@ -391,7 +401,8 @@
           ]
         }
       ],
-      "basisHash": "caacf4820005a061174707a08d808bb7d34bfe61a578ea76454358f6f8b077fe"
+      "reviewedOn": "2026-09-27",
+      "basisHash": "21fc088721296c010577286cee10297262dc802c80260b4af038fdc914e0067a"
     },
     "soe-6f3da4b7ad2476020757": {
       "current": true,
@@ -503,15 +514,14 @@
     },
     "soe-c220d0f777ae54ac86c4": {
       "current": true,
-      "reviewedOn": "2026-09-13",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
           "level": "position",
-          "scope": "仅国内业务岗；统计类行业研究的工作地在厦门",
+          "scope": "仅国内业务岗；统计类行业研究实际工作地为厦门",
           "refs": [
-            "S25"
+            "U0927-S18"
           ],
           "directions": [
             "supply",
@@ -522,9 +532,9 @@
           "city": "宁波",
           "province": "浙江",
           "level": "position",
-          "scope": "仅国内业务岗；不是厦门行业研究工作地",
+          "scope": "仅国内业务岗；统计类行业研究实际工作地为厦门",
           "refs": [
-            "S25"
+            "U0927-S18"
           ],
           "directions": [
             "supply",
@@ -535,9 +545,9 @@
           "city": "成都",
           "province": "四川",
           "level": "position",
-          "scope": "国内业务或贸易运营工作地，不是行业研究",
+          "scope": "仅国内业务或贸易运营岗位，不是统计类行业研究",
           "refs": [
-            "S25"
+            "U0927-S18"
           ],
           "directions": [
             "supply",
@@ -546,19 +556,19 @@
           ]
         }
       ],
-      "basisHash": "2f5cc0a00252d20b24f261255d1ba83f7f139676cc126011d45a8c5604f9a860"
+      "reviewedOn": "2026-09-27",
+      "basisHash": "6dd4b795f5d9fb526efef0b9583319f07a50d9c3e1b33e7727ab8dfeda73b592"
     },
     "soe-760d8065c74679611ff9": {
       "current": true,
-      "reviewedOn": "2026-09-16",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届五类技术岗位整体工作范围；未逐岗确认城市，不包含重庆/西安等面试站点",
+          "scope": "本届五类技术岗位总体工作范围，不包含重庆/西安等面试城市",
           "refs": [
-            "U0916-S01"
+            "U0927-S26"
           ],
           "directions": [
             "finance",
@@ -569,9 +579,9 @@
           "city": "成都",
           "province": "四川",
           "level": "campaign",
-          "scope": "本届五类技术岗位整体工作范围；未逐岗确认城市，不包含重庆/西安等面试站点",
+          "scope": "本届五类技术岗位总体工作范围，当前两批网申窗口已结束",
           "refs": [
-            "U0916-S01"
+            "U0927-S26"
           ],
           "directions": [
             "finance",
@@ -579,7 +589,227 @@
           ]
         }
       ],
-      "basisHash": "acfa96e3c899240008f403bd4665dd43e72f8103d4f20a83cb940ecf3dad18e3"
+      "reviewedOn": "2026-09-27",
+      "basisHash": "180471a7ed433562eb23b7de4b21e293723e40bbd31324a8daf22ddaf28dd7c0"
+    },
+    "soe-b96d5b94cecc8946cc71": {
+      "current": true,
+      "locations": [
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "仅本届五城市总体范围；不保证每一类别在每个城市均有岗位",
+          "refs": [
+            "U0927-S04"
+          ],
+          "directions": [
+            "ai",
+            "software",
+            "product",
+            "operations"
+          ]
+        },
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "campaign",
+          "scope": "仅本届五城市总体范围；不保证每一类别在每个城市均有岗位",
+          "refs": [
+            "U0927-S04"
+          ],
+          "directions": [
+            "ai",
+            "software",
+            "product",
+            "operations"
+          ]
+        }
+      ],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "d3311a33ffdb9426c137bede2923362909eb90ca78a789d97adb849fcf3ce07f"
+    },
+    "soe-281e1336c36307f85882": {
+      "current": true,
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "用人单位列明的本届总体工作范围，未逐岗证明所有方向在各城配置",
+          "refs": [
+            "U0927-S05"
+          ],
+          "directions": [
+            "ai",
+            "software",
+            "stats",
+            "product",
+            "operations"
+          ]
+        },
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "scope": "用人单位列明的本届总体工作范围，未逐岗证明所有方向在各城配置",
+          "refs": [
+            "U0927-S05"
+          ],
+          "directions": [
+            "ai",
+            "software",
+            "stats",
+            "product",
+            "operations"
+          ]
+        },
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "campaign",
+          "scope": "用人单位列明的本届总体工作范围，未逐岗证明所有方向在各城配置",
+          "refs": [
+            "U0927-S05"
+          ],
+          "directions": [
+            "ai",
+            "software",
+            "stats",
+            "product",
+            "operations"
+          ]
+        }
+      ],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "24e9f147dcbbcdc168d505077b5476c6c1262a85d69503136526b9a75b54ed27"
+    },
+    "soe-3a4e8fb9f15de5c306e9": {
+      "current": true,
+      "locations": [],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "a385d668fb930ffe17a63c2ba1ce36ca96a9eb24edde5a8f84174a87e041a21c"
+    },
+    "soe-fc684edd781f27422e8d": {
+      "current": true,
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "scope": "仅财务管理工作地；不是产业研究岗位所在地",
+          "refs": [
+            "U0927-S19"
+          ],
+          "directions": [
+            "finance"
+          ]
+        },
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "position",
+          "scope": "仅财务管理工作地；不是产业研究岗位所在地",
+          "refs": [
+            "U0927-S19"
+          ],
+          "directions": [
+            "finance"
+          ]
+        },
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "position",
+          "scope": "仅物流管理/业务岗位范围；专业需另核",
+          "refs": [
+            "U0927-S19"
+          ],
+          "directions": [
+            "supply",
+            "operations",
+            "product"
+          ]
+        }
+      ],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "871c651859e62f5738973d89eb38589471cbbe3d7699f2646d8f61504822aeea"
+    },
+    "soe-11e02d2dbe7515379cad": {
+      "current": true,
+      "locations": [],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "525f0961a660353a9204475f499ab552957c257b7adeb58e9581784444f74455"
+    },
+    "soe-67ba0f956e9bff32cb49": {
+      "current": true,
+      "locations": [
+        {
+          "city": "宁波",
+          "province": "浙江",
+          "level": "position",
+          "scope": "只对应区域财务BP，先在武汉培训轮岗，专业条件另核",
+          "refs": [
+            "U0927-S23"
+          ],
+          "directions": [
+            "finance"
+          ]
+        }
+      ],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "4e637ec9ecef0bc6265f3ea452b52e70f8ea29756363e2b6ab7b4d8a7e41b229"
+    },
+    "soe-b9fb017b087135609736": {
+      "current": true,
+      "locations": [],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "4c23198aaf0cf81a84e775ffda8cc43b0ce8ac0ae2bb8e0881a0e3a09e76d4b3"
+    },
+    "soe-e43cb34e4c801cf57150": {
+      "current": true,
+      "locations": [
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "campaign",
+          "scope": "仅分支机构总体工作范围；不把广州/佛山信用卡数据和算法岗位移到杭州",
+          "refs": [
+            "U0927-S30"
+          ],
+          "directions": [
+            "banking",
+            "risk",
+            "software",
+            "product",
+            "operations"
+          ]
+        }
+      ],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "3ccdfbb1d67e805db14234921a5855fdd55b1cfb0946526fb8970b6daf192c14"
+    },
+    "soe-84e7d908cb72d28b63a2": {
+      "current": true,
+      "locations": [
+        {
+          "city": "重庆",
+          "province": "重庆",
+          "level": "campaign",
+          "scope": "本届总行及支行招聘总体范围，具体职位和最终定岗另核",
+          "refs": [
+            "U0927-S31"
+          ],
+          "directions": [
+            "banking",
+            "finance",
+            "software",
+            "operations"
+          ]
+        }
+      ],
+      "reviewedOn": "2026-09-27",
+      "basisHash": "a9057201b087db658a5d29f7b264d40a5f7b6b8102bd8be9962d1513f21e55fc"
     }
   }
 }

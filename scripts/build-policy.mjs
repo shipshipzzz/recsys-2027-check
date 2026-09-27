@@ -4,9 +4,10 @@ import assert from 'node:assert/strict';
 import { gzipSync } from 'node:zlib';
 
 export const BUILD_BUDGETS = Object.freeze({
-  // Personal timeline adds shared CRUD, validation and private outbox/sync (see docs/personal-timeline.md).
-  totalJavaScriptGzip: 195 * 1024,
-  pageJavaScriptGzip: 145 * 1024,
+  // 2026-09-27: 44 new evidence sources and 3 cards add 7,674 gzip bytes.
+  // Keep history/offline evidence; measured baseline and revised limits are documented in the review.
+  totalJavaScriptGzip: 210 * 1024,
+  pageJavaScriptGzip: 155 * 1024,
   pageCssGzip: 16 * 1024,
   pageHtmlGzip: 14 * 1024,
 });

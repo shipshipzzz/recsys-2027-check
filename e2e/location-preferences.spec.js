@@ -30,7 +30,7 @@ test('Hangzhou filtering requires city evidence instead of a company name or hea
 }) => {
   await page.locator('#location-filter').selectOption('杭州');
   await expect(cardByName(page, '浙江省商业集团')).toHaveCount(1);
-  await expect(cardByName(page, '杭州银行 · 总分行')).toHaveCount(0);
+  await expect(cardByName(page, '杭州银行 · 总分行')).toHaveCount(1);
   await expect(cardByName(page, '建信人寿 · 精算')).toHaveCount(0);
   await page.locator('#location-filter').selectOption('浙江');
   await expect(cardByName(page, '杭州银行 · 总分行')).toHaveCount(1);
@@ -50,9 +50,9 @@ test('Chengdu Chongqing and Xian are independently filterable and keep state tra
 }) => {
   for (const city of ['成都', '重庆', '西安']) {
     await page.locator('#location-filter').selectOption(city);
-    await expect(cardByName(page, '重庆三峡')).toHaveCount(1);
+    await expect(cardByName(page, '重庆三峡融资担保集团')).toHaveCount(1);
   }
-  const card = cardByName(page, '重庆三峡');
+  const card = cardByName(page, '重庆三峡融资担保集团');
   const id = await card.getAttribute('data-entry-id');
   await card.locator('[data-card-state="applied"]').click();
   await expect(page.locator('#processed-grid [data-entry-id="' + id + '"]')).toHaveCount(1);

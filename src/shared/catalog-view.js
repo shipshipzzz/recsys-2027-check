@@ -1,6 +1,7 @@
 import { escapeHTML, safeHref } from './dom.js';
 import { TZ, chinaDay } from './time.js';
 import { createPageNavigation } from './page-navigation.js';
+import { sourceIdsForPage } from './source-index.js';
 
 export function createCatalogView(getCatalog, buildRail = () => null, extraExport = () => ({})) {
   const lifetime = new AbortController();
@@ -116,11 +117,9 @@ export function createCatalogView(getCatalog, buildRail = () => null, extraExpor
       .join('');
   }
   function renderSources() {
-    const { PAGE_KIND, SOURCES, ALL_ITEMS, RECHECKED } = getCatalog();
-    const ids =
-      PAGE_KIND === 'rec'
-        ? Object.keys(SOURCES).filter((x) => x.startsWith('R') || x === 'H01')
-        : Object.keys(SOURCES).filter((x) => x.startsWith('S') || x === 'H02');
+    const catalog = getCatalog();
+    const { SOURCES, ALL_ITEMS, RECHECKED } = catalog;
+    const ids = sourceIdsForPage(catalog);
     document.getElementById('source-list').innerHTML = ids
       .map((id) => {
         const s = SOURCES[id];

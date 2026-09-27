@@ -52,14 +52,16 @@ test('a campaign recheck does not turn old job counts or unsupported dates into 
   await expect(vivo).toContainText('不因空正文认定停招');
 });
 
-test('conflicting notices stay visible without inheriting unrestricted-major eligibility', async ({
+test('role-level evidence resolves qualifications without merging separate application windows', async ({
   page,
 }) => {
   await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
   await expect(page.locator('.card')).toHaveCount(soe.DATA.length);
   const hz = card(page, 'soe-15dcc83203fa8d55b59c');
-  await expect(hz).toHaveAttribute('data-major', 'unknown');
-  await expect(hz).toHaveClass(/st-verify/);
+  await expect(hz).toHaveAttribute('data-major', 'explicit');
+  await expect(hz).toHaveClass(/st-open/);
+  await expect(hz).toContainText('9/30');
+  await expect(hz).toContainText('多个岗位合成一个截止');
   await expect(hz).toContainText('10/22');
   await expect(hz).toContainText('10/25');
   await expect(hz).toContainText('模板字段');
@@ -83,4 +85,48 @@ test('new work-city evidence supports technical filters without borrowing interv
     await page.locator('#location-filter').selectOption(city);
     await expect(card(page, 'soe-760d8065c74679611ff9')).toHaveCount(0);
   }
+});
+
+for (const path of ['./', 'soe.html']) {
+  test(
+    path + ': every evidence link resolves, including dated U-prefixed sources',
+    async ({ page }) => {
+      await page.goto(path, { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('.source-entry').first()).toBeAttached();
+      const missing = await page
+        .locator('a.source-ref')
+        .evaluateAll((links) =>
+          links
+            .map((link) => link.getAttribute('href'))
+            .filter(
+              (href) =>
+                href?.startsWith('#src-') &&
+                !document.getElementById(decodeURIComponent(href.slice(1))),
+            ),
+        );
+      expect([...new Set(missing)]).toEqual([]);
+      await expect(page.locator('.source-entry[id^="src-U0927-"]').first()).toBeAttached();
+    },
+  );
+}
+test('expired application batches are not actionable even when later interviews continue', async ({
+  page,
+}) => {
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  const cmb = card(page, 'soe-760d8065c74679611ff9');
+  await expect(cmb).toHaveClass(/st-past/);
+  await expect(cmb).toContainText('9/29');
+  await page.locator('.chip[data-filter="now"]').click();
+  await expect(cmb).toHaveCount(0);
+});
+test('new institutions retain independent identities and do not mix role-specific cities', async ({
+  page,
+}) => {
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  const cdb = card(page, 'soe-b9fb017b087135609736');
+  await expect(cdb).toHaveAttribute('data-major', 'statistics');
+  await expect(cdb).toContainText('对应专业学位类别');
+  await expect(card(page, 'soe-84e7d908cb72d28b63a2')).toHaveAttribute('data-major', 'unknown');
+  await page.locator('#location-filter').selectOption('西安');
+  await expect(cdb).toHaveCount(0);
 });
