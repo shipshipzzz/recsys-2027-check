@@ -1,0 +1,781 @@
+{
+  "version": 1,
+  "capturedFromCommit": "f31919c2e08e62245b3675c9041228c5ca9301f9",
+  "purpose": "本轮变更前15张卡片及原评估的完整快照；不替代原始历史或个人状态。",
+  "entries": [
+    {
+      "id": "soe-933afa76439b71816ede",
+      "kind": "soe",
+      "before": {
+        "name": "天翼云",
+        "en": "CTYun · 中国电信",
+        "fit": 97,
+        "tier": "S",
+        "status": "open",
+        "track": "ai",
+        "ownership": "央企专业公司",
+        "city": "北京 / 上海 / 广州 / 深圳 / 成都 / 厦门 / 西安 / 石家庄",
+        "xian": true,
+        "due": null,
+        "action": "先核算法/AI后端具体JD及一岗限制；旧10/3仅有辅证，不作官网硬截止。",
+        "jobs": "算法工程师、后端开发（AI 方向）、云计算研究员、大数据开发、AI/大模型平台与云原生研发。",
+        "why": "你的快手经历不是普通“模型项目”，而是有线上 vv、互动和长期价值指标的生产级算法经历；这对国家云场景里的模型训练、评估、特征与工程落地非常有说服力。",
+        "risk": "原版10/3为转发口径；本轮未核到官方统一截止与全部岗位。原志愿限制及专业条件仍须提交前确认。",
+        "resume": "推荐/AI 版：快手三段放最前，突出因果去偏、GRPO、在线 A/B 与 PyTorch/C++；论文放后。",
+        "evidence": "国资委公告 + 官方招聘站；截止日为辅证",
+        "priority": 1,
+        "links": [
+          [
+            "国资委启动公告",
+            "https://wap.sasac.gov.cn/n2588035/n2588325/n2588350/c35747841/content.html"
+          ],
+          ["天翼云官方网申", "https://ctyun.hotjob.cn/"]
+        ],
+        "note": "当前最适合你的央企技术入口之一：平台足够大，岗位又比集团泛招聘更聚焦。",
+        "audit": {
+          "checked": null,
+          "refs": ["H02"],
+          "summary": "仅校正原文日期的适用范围，没有新增官网岗位在线证明。",
+          "scope": "原版口径修正",
+          "level": "用户原文件"
+        },
+        "rev": "2026-09-13",
+        "id": "soe-933afa76439b71816ede",
+        "req": "原资料尚未完整记录本届岗位专业条件；请核对应用统计专硕是否接受，不能仅凭岗位名称或单位类型认定可投。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。"
+      },
+      "screeningBefore": {
+        "major": "unknown",
+        "cycle": "unverified",
+        "intake": null,
+        "directions": ["ai"],
+        "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["H02"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "9ec2263502f734ffae64db41e4f598a9ae8d2745224a7d786f56c70a6089986c"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-4ffa72152f7258fb78a2",
+      "kind": "soe",
+      "before": {
+        "name": "中国电信人工智能研究院 TeleAI",
+        "en": "TeleAI · China Telecom AI Institute",
+        "fit": 92,
+        "tier": "A+",
+        "status": "verify",
+        "track": "ai",
+        "ownership": "中央企业人工智能研究院",
+        "city": "北京 / 上海",
+        "xian": false,
+        "due": null,
+        "action": "Top Talent 已结束；现在从集团正式职位池筛“人工智能科技公司 / 人工智能研究院”的硕士可投岗位。",
+        "jobs": "研究员、研究科学家，以及智传网、世界模型、AI Infra、AI 安全、具身智能等前沿方向；具体以集团正式批职位池为准。",
+        "why": "session 级 GRPO 与延迟 reward 能证明强化学习和长期优化能力，Mamba 地震反演论文补足研究潜力，快手线上结果又能证明工程落地。",
+        "risk": "集团当前单位列表已包含相关主体，但本轮未把具体 TeleAI 硕士岗位逐条核完；不能把过期 Top Talent 当当前入口。",
+        "resume": "研究院/AI 版：GRPO 与论文并列靠前，保留 Under Review 原表述；补训练规模、实验设计与工程实现，不包装不存在的具身/LLM 经历。",
+        "evidence": "中国电信正式批单位池已见人工智能相关主体；具体 JD 待逐岗核",
+        "priority": 2,
+        "links": [
+          ["TeleAI 官方 2027 公告", "https://www.chinatelecom.com.cn/ct/zp/167276.html"],
+          ["中国电信招聘网站", "https://job.chinatelecom.com.cn/"]
+        ],
+        "note": "从“本窗口已过”改为“正式批可复核”，但不计入官网当前可投统计。",
+        "id": "soe-4ffa72152f7258fb78a2",
+        "req": "原资料尚未完整记录本届岗位专业条件；请核对应用统计专硕是否接受，不能仅凭岗位名称或单位类型认定可投。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。",
+        "audit": {
+          "checked": null,
+          "summary": "原记录保留；本轮仅调整机会池收录标准，没有冒充新增官网核查。",
+          "scope": "旧资料归类，专业与当届条件待核。",
+          "level": "原始历史记录",
+          "refs": ["H02"]
+        }
+      },
+      "screeningBefore": {
+        "major": "unknown",
+        "cycle": "unverified",
+        "intake": null,
+        "directions": ["ai"],
+        "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["H02"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "0da36cc91c2e5f850c0d528b84534c320fe23c0c332e5910b63c798f6474dfb7"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-ad455372b0bbb2f021ce",
+      "kind": "soe",
+      "before": {
+        "name": "中国移动九天人工智能",
+        "en": "China Mobile Jiutian AI",
+        "fit": 95,
+        "tier": "S",
+        "status": "open",
+        "track": "ai",
+        "ownership": "央企 AI 专业机构",
+        "city": "北京 / 西安 / 广州 / 深圳",
+        "xian": true,
+        "due": null,
+        "action": "从本届简章指向的校园入口筛算法开发/AI开发；确认硕士与应用统计专业资格后提交。",
+        "jobs": "本届简章：AI开发岗、算法开发岗、软件开发岗、平台开发岗、产品管理岗等。硕士及以上，办公地北京/西安/深圳/广州。",
+        "why": "你的 session 级 GRPO、延迟 reward、矩阵化分组和多维长期价值建模，能直接对应强化学习与模型优化叙事；西安也有工作地点。",
+        "risk": "专业栏列计算机、数学/物理、通信/电子等，未明确应用统计专硕代码；没有统一截止，旧9/27不进硬倒计时。高级研究、博士限定岗仍要排除。",
+        "resume": "推荐/AI 版：把 GRPO 项目放第一，补一行训练规模、线上部署链路与工程性能；论文作为研究能力证明。",
+        "evidence": "S01：9/9用人单位高校简章正文；仅项目/类别已核，具体JD待核。",
+        "priority": 1,
+        "links": [
+          ["九天本届校园入口", "https://campus.51job.com/zyjt/"],
+          ["用人单位高校简章", "https://career.nankai.edu.cn/correcruit/content/id/118392.html"],
+          ["中国移动校招", "https://job.10086.cn/touch/personal/campus/"]
+        ],
+        "note": "能力匹配保留；本届已经公告，但不等于应用统计资格通过。",
+        "audit": {
+          "checked": "2026-09-13",
+          "refs": ["S01"],
+          "summary": "9/9本届用人单位简章已核；不能再用8/31旧公司页空池判断停招。",
+          "scope": "项目已核；具体岗位仍须复核",
+          "level": "高校发布"
+        },
+        "rev": "2026-09-13",
+        "id": "soe-ad455372b0bbb2f021ce",
+        "req": "沿用 S01：专业列计算机、数学/物理、通信/电子等，未明确应用统计专硕；学历硕士及以上，需确认专业范围。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。"
+      },
+      "screeningBefore": {
+        "major": "related",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["ai"],
+        "basis": "沿用 S01：专业列计算机、数学/物理、通信/电子等，未明确应用统计专硕；学历硕士及以上，需确认专业范围。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["S01"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "57b07508354736953320cdc93dc49ad892325c8c9ef0bbcd053e1ab6f97b57e6"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-d10aecb1b903d20e8fd8",
+      "kind": "soe",
+      "before": {
+        "name": "浪潮集团",
+        "en": "Inspur",
+        "fit": 93,
+        "tier": "S",
+        "status": "open",
+        "track": "ai",
+        "ownership": "山东省属国企",
+        "city": "济南 / 北京 / 天津 / 青岛 / 成都 / 重庆 / 苏州等",
+        "xian": false,
+        "due": null,
+        "action": "按当前2027招聘入口投AI算法或软件研发；不再沿用“提前批本周完成”的旧提醒。",
+        "jobs": "本届简章列AI算法工程师、大模型算法架构师、软件研发等；研发地点济南/北京/青岛/苏州/重庆等，按岗。",
+        "why": "你具备深度模型、强化学习、线上实验和 C++/Python；模型创新与工程落地两端都有证据，比只有竞赛或论文的候选人完整。",
+        "risk": "简章元数据“专业不限”不能代替每个AI岗位的要求。大模型/具身方向能力不能臆造，具体JD需要核对。",
+        "resume": "推荐/AI 版：突出模型结构创新、stop-gradient、训练稳定性与纯矩阵实现；准备把推荐方法迁移到通用 AI 的解释。",
+        "evidence": "S07：南开就业网用人单位9/1简章正文；未列统一截止。",
+        "priority": 1,
+        "links": [
+          ["浪潮 2027 官方招聘", "https://career.inspur.com/campus2027/"],
+          ["校招职位页", "https://career.inspur.com/campus2027/campus.html"]
+        ],
+        "note": "提前批不影响正式批的公开口径下，投入产出比很高。",
+        "audit": {
+          "checked": "2026-09-13",
+          "refs": ["S07"],
+          "summary": "9/1仍发布2027简章；8/31是原提前批记录，不是全公司截止。",
+          "scope": "项目已核；具体岗位仍须复核",
+          "level": "高校发布"
+        },
+        "rev": "2026-09-13",
+        "id": "soe-d10aecb1b903d20e8fd8",
+        "req": "沿用 S07 本届简章；“专业不限”的页面元数据不能替代各岗位要求，应用统计是否可报需要具体JD。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。"
+      },
+      "screeningBefore": {
+        "major": "unknown",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["ai"],
+        "basis": "沿用 S07 本届简章；“专业不限”的页面元数据不能替代各岗位要求，应用统计是否可报需要具体JD。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["S07"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "6c29c288a141d97a1f82a37394ae3bb1293f1b1ac0a83fbedbf4b8015b629af1"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-74afd94593431265ce3a",
+      "kind": "soe",
+      "before": {
+        "id": "soe-74afd94593431265ce3a",
+        "name": "浙江省商业集团 · 产业研究 / 运营 / 数字化",
+        "en": "Zhejiang Commercial Group",
+        "ownership": "浙江省交通投资集团全资子公司及其招聘单位",
+        "track": "research",
+        "status": "verify",
+        "tier": "S",
+        "fit": 92,
+        "priority": 142,
+        "city": "研究/中碳数字化运营/盈通信息化：杭州上城区；储备经理：浙江高速服务区统一调配，不保证杭州",
+        "xian": false,
+        "req": "浙商食品大豆产业研究员硕士及以上，明确列数学、统计学、应用统计等优先；盈通信息化管理列统计优先，中碳数字化运营列数据分析相关优先。储备经理本科及以上、专业不限，但须接受浙江服务区调配。不同岗位资格不可互套。",
+        "window": "2027届；精确毕业时间窗和其他条件按岗位核对。",
+        "jobs": "大豆产业研究员；数字化运营管理；信息化管理岗；储备经理（运营管理备选）。能源算法另有电力工具要求。",
+        "action": "优先核杭州研究/数字化/信息化岗位；能接受省内服务区工作和调配，再考虑储备经理。",
+        "why": "产业研究、运营指标复盘、业务信息化均可承接应用统计；不要求岗位必须开发算法。",
+        "risk": "完整转载岗位表可读，官方动态岗位页未展开；研究需补大豆产业知识，管理可能驻点和调配。储备经理表头杭州不能覆盖职责中的全省服务区要求。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "招聘转载正文；岗位专业和地点按下列范围使用，未通过个人资格审核。",
+        "note": "2026-09-13按应用统计宽口径及杭州/成都/重庆/西安/浙江偏好补充。单位名气不替代专业、合同与职责核验。",
+        "rev": "2026-09-13",
+        "links": [
+          ["研究员官方原始职位", "https://dhr.cncico.com:18443/postDetail/263846648516567960"],
+          ["数字化运营官方原始职位", "https://dhr.cncico.com:18443/postDetail/263846648516567950"],
+          ["信息化管理官方原始职位", "https://dhr.cncico.com:18443/postDetail/263846648516567956"],
+          ["储备经理官方原始职位", "https://dhr.cncico.com:18443/postDetail/263846648516567963"]
+        ],
+        "audit": {
+          "checked": "2026-09-13",
+          "summary": "岗位表明确研究员接受应用统计，其他岗位分别核条件；同一集团公告合成一张入口卡，不按子公司和岗位逐项凑数。",
+          "scope": "已读公告/岗位范围，未完成网申专业下拉目录及全部条件核准。原始动态入口/专业条件需二次核验。",
+          "level": "招聘转载正文",
+          "refs": ["S-CITY-01"]
+        }
+      },
+      "screeningBefore": {
+        "major": "explicit",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["research", "stats", "operations", "supply", "ai"],
+        "basis": "岗位表明确研究员接受应用统计，其他岗位分别核条件；同一集团公告合成一张入口卡，不按子公司和岗位逐项凑数。",
+        "qualityBasis": "省属交通集团商业运营平台，具体岗位与实际业务可核；最终合同以对应子公司为准。",
+        "evidenceRefs": ["S-CITY-01"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "51054041388b6ae22d4f66ba6eb60d2cf8267ac2be1c94614e2604de4c8d79ef"
+      },
+      "geographyBefore": {
+        "current": true,
+        "reviewedOn": "2026-09-13",
+        "locations": [
+          {
+            "city": "杭州",
+            "province": "浙江",
+            "level": "position",
+            "scope": "浙商食品研究员、中碳数字化运营、盈通信息化岗位；不含服从服务区调配的储备经理",
+            "refs": ["S-CITY-01"],
+            "directions": ["research", "stats", "operations", "ai"]
+          },
+          {
+            "city": "",
+            "province": "浙江",
+            "level": "campaign",
+            "scope": "储备经理须服从浙江省内高速服务区调配，具体城市未确认",
+            "refs": ["S-CITY-01"],
+            "directions": ["operations"]
+          }
+        ],
+        "basisHash": "3dbf0194d2069340b14b7f0e3488fa2b2f91597bd1701ddd0faa65d75c2ce1fa"
+      }
+    },
+    {
+      "id": "soe-15e8fe78032c98f915c3",
+      "kind": "soe",
+      "before": {
+        "id": "soe-15e8fe78032c98f915c3",
+        "name": "重庆三峡融资担保集团 · 管培 / 项目经理",
+        "en": "Chongqing Three Gorges Financing Guarantee",
+        "ownership": "重庆国资背景融资担保集团",
+        "track": "risk",
+        "status": "open",
+        "tier": "S",
+        "fit": 90,
+        "priority": 144,
+        "city": "重庆主城/江津/万州/黔江，成都、西安、北京、武汉、长沙、昆明",
+        "xian": true,
+        "req": "2027届：管培硕士及以上、其他项目经理本科及以上；官方正文明确专业不限且统计等优先。还须符合应届界定、金融职业操守、亲属回避等要求。",
+        "window": "2027届；精确毕业时间窗和其他条件按岗位核对。",
+        "jobs": "项目经理（含管培）：客户营销、项目尽调、风险分析、保后管理、调查报告与资料管理。",
+        "action": "9/30前核管培/项目经理对应机构，确认重庆/成都/西安实际定岗和合同，准备规定申请材料。",
+        "why": "统计分析、研究写作和风险识别可以迁移至项目评估；同时如实接受客户沟通职责。",
+        "risk": "带客户开拓和项目责任，管培轮岗后按考核及需求统筹定岗，不保证某城某部门。官方公开正文已读，但未执行资格审核。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "官方正文；岗位专业和地点按下列范围使用，未通过个人资格审核。",
+        "note": "2026-09-13按应用统计宽口径及杭州/成都/重庆/西安/浙江偏好补充。单位名气不替代专业、合同与职责核验。",
+        "rev": "2026-09-13",
+        "links": [
+          ["三峡担保集团官网", "https://www.cqsxdb.com/"],
+          ["重庆国企优聘", "https://www.cqrc.net/gzw/index/"]
+        ],
+        "audit": {
+          "checked": "2026-09-13",
+          "summary": "重庆国资委2026-08-28官方校园招聘正文已完整读取：2027、专业不限、统计类优先、城市和9/30截止均有依据。",
+          "scope": "已读公告/岗位范围，未完成网申专业下拉目录及全部条件核准。",
+          "level": "官方正文",
+          "refs": ["S-CITY-03"]
+        },
+        "due": "2026-09-30",
+        "dueScope": "本届公告报名截止，个别岗位可能提前招满"
+      },
+      "screeningBefore": {
+        "major": "unrestricted",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["risk", "banking", "operations"],
+        "basis": "重庆国资委2026-08-28官方校园招聘正文已完整读取：2027、专业不限、统计类优先、城市和9/30截止均有依据。",
+        "qualityBasis": "国资担保平台公开列出岗位职责、学历、专业及培养安排，能判断实际业务价值。",
+        "evidenceRefs": ["S-CITY-03"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "ef75dbc37db299d87a2620a42988b56456627d26c3178eb3ba969caddc25b66f"
+      },
+      "geographyBefore": {
+        "current": true,
+        "reviewedOn": "2026-09-13",
+        "locations": [
+          {
+            "city": "重庆",
+            "province": "重庆",
+            "level": "campaign",
+            "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+            "refs": ["S-CITY-03"],
+            "directions": ["risk", "banking", "operations"]
+          },
+          {
+            "city": "成都",
+            "province": "四川",
+            "level": "campaign",
+            "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+            "refs": ["S-CITY-03"],
+            "directions": ["risk", "banking", "operations"]
+          },
+          {
+            "city": "西安",
+            "province": "陕西",
+            "level": "campaign",
+            "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+            "refs": ["S-CITY-03"],
+            "directions": ["risk", "banking", "operations"]
+          }
+        ],
+        "basisHash": "1b2842854e9364ea182a569c81614aa913dfd91a35e486a53693f03f6f4c42e5"
+      }
+    },
+    {
+      "id": "soe-9ed0ba98e2b378d91fe7",
+      "kind": "soe",
+      "before": {
+        "name": "建信金融科技",
+        "en": "CCB FinTech",
+        "fit": 85,
+        "tier": "A",
+        "status": "open",
+        "track": "finance",
+        "ownership": "国有银行金融科技子公司",
+        "city": "上海 / 北京 / 厦门 / 广州 / 武汉 / 成都 / 深圳",
+        "xian": false,
+        "action": "先看“科技类专项人才”的具体工作内容，最多两志愿；合适则10/8 24:00前提交并选择信息技术类笔试。",
+        "jobs": "科技类专项人才；数理统计类等理工专业为主。不是公告已承诺的纯推荐/算法岗位，需在志愿页确认。",
+        "why": "应用统计与深度学习背景匹配；推荐系统中对用户行为、偏差与长期价值的建模可迁移。",
+        "risk": "本届公告公开计划30人。国内院校毕业2027.1—7；未与其他单位建立劳动关系；具体职位另有要求。最多2志愿，截止前可改2次，顺序调整也计一次。不要将四级门槛直接以六级替代，按系统提交所需证明。",
+        "resume": "金融科技版：一页内保留两个最强快手项目和论文/竞赛，删除 AI 协同开发工具行。",
+        "evidence": "S08官方索引支持截止/专业；S09完整转载补细则。动态岗位页未逐条核验。",
+        "priority": 3,
+        "links": [
+          [
+            "建设银行招聘",
+            "https://ccb.com/chn/job/org_index.html?orgId=8ba3bc9962e2c55501636c1220b10648&planType=XY"
+          ]
+        ],
+        "note": "保留原金融版简历与技能缺口建议；统计专业方向适配，但细分工作职责需确认。",
+        "audit": {
+          "checked": "2026-09-13",
+          "refs": ["S08", "S09"],
+          "summary": "本届官方公告索引与完整转载可互相对照；从2026春招观察项更新为2027科技类专项。",
+          "scope": "项目已核；具体岗位仍须复核",
+          "level": "官方索引"
+        },
+        "rev": "2026-09-13",
+        "due": "2026-10-08",
+        "dueTime": "24:00",
+        "dueScope": "2027秋招报名",
+        "id": "soe-9ed0ba98e2b378d91fe7",
+        "req": "沿用 S08/S09：科技类专项人才需求含数理统计类；国内2027年1—7月毕业，具体职位与应用统计专业口径另核。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。"
+      },
+      "screeningBefore": {
+        "major": "statistics",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["finance"],
+        "basis": "沿用 S08/S09：科技类专项人才需求含数理统计类；国内2027年1—7月毕业，具体职位与应用统计专业口径另核。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["S08", "S09"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "b6ee7e1603a639d8bed3c6bc614d56e7a9346ea304db8d78808fd346c622e02a"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-95134bdc75c0737d281e",
+      "kind": "soe",
+      "before": {
+        "id": "soe-95134bdc75c0737d281e",
+        "name": "中国工商银行远程银行中心",
+        "en": "ICBC Remote Banking Center",
+        "ownership": "国有大型商业银行直属业务机构",
+        "track": "operations",
+        "status": "open",
+        "tier": "A",
+        "fit": 84,
+        "priority": 148,
+        "city": "北京西城、石家庄、合肥、广州、成都；具体方向按岗位附件",
+        "xian": false,
+        "req": "高校专业概述列数学、统计、经济金融等优先，具体岗位条件在附件；须核应用统计和学历，不能把全中心概述套给每个岗位。",
+        "window": "境内外2026年1月至2027年7月毕业。",
+        "jobs": "专业英才：运营管理、客户体验、数据分析、业务规划/风险；科技菁英：数据/模型策略；服务代表为远程客服。",
+        "action": "优先核成都专业英才运营/体验或数据方向，读取附件专业要求和排班培养。",
+        "why": "实验、客户行为分析与指标监测可迁移至运营和风险；综合岗位不因非算法被排除。",
+        "risk": "原则先远程服务或线上运营轮岗；客服不包装为数据科学，统一截止未核，岗位附件未逐条展开。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "高校发布招聘正文；岗位专业和地点按下列范围使用，未通过个人资格审核。",
+        "note": "2026-09-13按应用统计宽口径及杭州/成都/重庆/西安/浙江偏好补充。单位名气不替代专业、合同与职责核验。",
+        "rev": "2026-09-13",
+        "links": [["工行官方招聘", "https://job.icbc.com.cn/"]],
+        "audit": {
+          "checked": "2026-09-13",
+          "summary": "当届正文明确多个非算法方向，专业概述统计优先；成都仅标招聘范围，不保证任何方向都在成都。",
+          "scope": "已读公告/岗位范围，未完成网申专业下拉目录及全部条件核准。",
+          "level": "高校发布招聘正文",
+          "refs": ["S-CITY-07"]
+        }
+      },
+      "screeningBefore": {
+        "major": "statistics",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["operations", "stats", "risk", "finance"],
+        "basis": "当届正文明确多个非算法方向，专业概述统计优先；成都仅标招聘范围，不保证任何方向都在成都。",
+        "qualityBasis": "银行线上业务机构有明确职责及培养方向；业务考核、排班和转岗机制仍待核。",
+        "evidenceRefs": ["S-CITY-07"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "204eaf88cc970866265b38b9a243c9977f928270c5540df973d7b6f3ca32c675"
+      },
+      "geographyBefore": {
+        "current": true,
+        "reviewedOn": "2026-09-13",
+        "locations": [
+          {
+            "city": "成都",
+            "province": "四川",
+            "level": "campaign",
+            "scope": "中心招聘含成都分中心，具体培养方向和专业须岗位附件确认",
+            "refs": ["S-CITY-07"],
+            "directions": ["operations", "stats", "risk", "finance"]
+          }
+        ],
+        "basisHash": "905d79dd6e3a5ee1e528b27c8f1714a55e6e4e2287b857b950e812e35ab123fe"
+      }
+    },
+    {
+      "id": "soe-6f3da4b7ad2476020757",
+      "kind": "soe",
+      "before": {
+        "id": "soe-6f3da4b7ad2476020757",
+        "name": "招商银行宁波分行",
+        "en": "China Merchants Bank Ningbo Branch",
+        "ownership": "招商局系国资背景股份制银行分行（非全资央企）",
+        "track": "banking",
+        "status": "open",
+        "tier": "A+",
+        "fit": 85,
+        "priority": 150,
+        "city": "宁波、台州地区，按定向岗位核工作网点",
+        "xian": false,
+        "req": "公司/零售定向培养生硕士且专业不限；数字金融列数学、统计、数据分析等；运营支持专业不限。硕士CET6≥425或替代、首次就业等按公告。",
+        "window": "境内2027-01-01至2027-07-31；境外2026-01-01至2027-07-31。",
+        "jobs": "定向培养生、数字金融、运营支持（柜面）、市场营销。",
+        "action": "比较定向培养与数字金融，核宁波/台州机构及轮岗；接受柜面或营销考核再选相应岗位。",
+        "why": "专业不限的硕士培养与统计数字金融并存，为应用统计保留业务经营路线。",
+        "risk": "有一线轮岗；运营支持是现金、结算等柜面工作，营销含客户拓展；不承诺总部定岗，未核明确统一截止。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "高校发布招聘正文；岗位专业和地点按下列范围使用，未通过个人资格审核。",
+        "note": "2026-09-13按应用统计宽口径及杭州/成都/重庆/西安/浙江偏好补充。单位名气不替代专业、合同与职责核验。",
+        "rev": "2026-09-13",
+        "links": [
+          [
+            "公告指定官方招聘",
+            "https://cmb-recruitment-mobile.paas.cmbchina.com/recommendList?qrCodeId=B851E528-0F74-4A9F-BDBA-5CC69D605B3A"
+          ]
+        ],
+        "audit": {
+          "checked": "2026-09-13",
+          "summary": "南开当届岗位表区分不限专业培养、统计数字金融与柜面；地点只确认宁波/台州招聘范围。",
+          "scope": "已读公告/岗位范围，未完成网申专业下拉目录及全部条件核准。",
+          "level": "高校发布招聘正文",
+          "refs": ["S-CITY-09"]
+        }
+      },
+      "screeningBefore": {
+        "major": "unrestricted",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["banking", "stats", "operations", "finance"],
+        "basis": "南开当届岗位表区分不限专业培养、统计数字金融与柜面；地点只确认宁波/台州招聘范围。",
+        "qualityBasis": "区域分行有多条公开培养路径和实际岗位；国资关联不能等同全资国企或固定编制。",
+        "evidenceRefs": ["S-CITY-09"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "585e959098fb5c6019fc3918ee6c1b54a46a8e7fb70e421704da980418da6a55"
+      },
+      "geographyBefore": {
+        "current": true,
+        "reviewedOn": "2026-09-13",
+        "locations": [
+          {
+            "city": "宁波",
+            "province": "浙江",
+            "level": "campaign",
+            "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+            "refs": ["S-CITY-09"],
+            "directions": ["banking", "stats", "operations", "finance"]
+          },
+          {
+            "city": "台州",
+            "province": "浙江",
+            "level": "campaign",
+            "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
+            "refs": ["S-CITY-09"],
+            "directions": ["banking", "stats", "operations", "finance"]
+          }
+        ],
+        "basisHash": "f9b9bb6b64925f1cda3faaa0ce2fff33b7f2779bf0b41bb3966510d22104b0dc"
+      }
+    },
+    {
+      "id": "soe-140f2087c58956d157f6",
+      "kind": "soe",
+      "before": {
+        "id": "soe-140f2087c58956d157f6",
+        "name": "申万宏源集团 / 证券",
+        "en": "Shenwan Hongyuan Group and Securities",
+        "ownership": "国有投资控股集团及其证券子公司",
+        "track": "research",
+        "status": "open",
+        "tier": "A+",
+        "fit": 87,
+        "priority": 151,
+        "city": "总部及分支：上海、北京、深圳、广州、杭州、南京、成都、武汉、重庆等；偏好城市未必有总部投研",
+        "xian": false,
+        "req": "硕士及以上，数理统计等相关专业按岗位；境内2027年1至7月、最高学历毕业后无全职经验。法务/财会等不因集团招统计而自动符合。",
+        "window": "境内2027年1至7月；境外2026年5月至2027年7月。",
+        "jobs": "总部投资交易/资管、合规风控、运营、金融科技；分支财富顾问。",
+        "action": "10/25前确定总部研究/风险还是偏好城市业务；总部和分支仅可合计投1岗。",
+        "why": "统计研究可迁移至市场分析、风险和运营，也可比较有培养价值的客户业务。",
+        "risk": "总部与分支职责、销售考核及城市差别大；岗位JD须核，有实习体验及留用答辩，非直接保证录用。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "高校发布招聘正文；岗位专业和地点按下列范围使用，未通过个人资格审核。",
+        "note": "2026-09-13按应用统计宽口径及杭州/成都/重庆/西安/浙江偏好补充。单位名气不替代专业、合同与职责核验。",
+        "rev": "2026-09-13",
+        "links": [["申万宏源证券官网", "https://www.swhysc.com/"]],
+        "audit": {
+          "checked": "2026-09-13",
+          "summary": "南开本届正文明确数理统计、非技术岗位与10/25截止；杭州/成都/重庆只作为招聘范围。",
+          "scope": "已读公告/岗位范围，未完成网申专业下拉目录及全部条件核准。",
+          "level": "高校发布招聘正文",
+          "refs": ["S-CITY-10"]
+        },
+        "due": "2026-10-25",
+        "dueScope": "本届公告报名截止，个别岗位可能提前招满"
+      },
+      "screeningBefore": {
+        "major": "statistics",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["research", "risk", "operations", "finance", "product"],
+        "basis": "南开本届正文明确数理统计、非技术岗位与10/25截止；杭州/成都/重庆只作为招聘范围。",
+        "qualityBasis": "国有证券集团公开多个业务序列，但具体团队、培养和考核决定岗位价值。",
+        "evidenceRefs": ["S-CITY-10"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "4afc575d5ed52ecc87436aded08b8ce39ad94515d72c9ba41f84dd95c6ef024a"
+      },
+      "geographyBefore": {
+        "current": true,
+        "reviewedOn": "2026-09-13",
+        "locations": [
+          {
+            "city": "杭州",
+            "province": "浙江",
+            "level": "campaign",
+            "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
+            "refs": ["S-CITY-10"],
+            "directions": ["product"]
+          },
+          {
+            "city": "成都",
+            "province": "四川",
+            "level": "campaign",
+            "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
+            "refs": ["S-CITY-10"],
+            "directions": ["product"]
+          },
+          {
+            "city": "重庆",
+            "province": "重庆",
+            "level": "campaign",
+            "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
+            "refs": ["S-CITY-10"],
+            "directions": ["product"]
+          }
+        ],
+        "basisHash": "4a520fba1f1e3d737df2f9c0c8e6b8ee926029b9dd7ca69ea91bf2d8b8980b91"
+      }
+    },
+    {
+      "id": "rec-b210af9eaeaa3d72cea6",
+      "kind": "rec",
+      "before": {
+        "name": "快手",
+        "en": "Kuaishou",
+        "status": "open",
+        "rec": "yes",
+        "src": "see",
+        "rev": "2026-08-20",
+        "opened": "campus.kuaishou.cn 应届池搜「推荐」8/20 为 16（8/17 快照 15）。常规岗 2026-08-14，快 Star 2026-08-12，8/18 新开三岗。",
+        "closes": "未见官方统一截止。快 Star / 留用实习新闻写全年开。超级简历标 2027-02-08，像平台推算，勿当死线。",
+        "window": "筛选器可见：27届校园招聘 / 27届留用实习 / 快Star人才计划。",
+        "city": "北京为主，部分北京+杭州。",
+        "jobs": "常规：推荐大模型、推荐模型、推荐算法、生成式推荐、推荐系统。快 Star：推荐大模型、冷启、生产、OneRec、社交生成式、视频/消息/直播推荐、Agent-短视频推荐、推荐大模型训练引擎。",
+        "req": "本硕博。技术面加 AI Coding 的说法来自新闻，本轮未在职位卡上核到。",
+        "links": [
+          [
+            "快手应届搜推荐",
+            "https://campus.kuaishou.cn/#/campus/jobs?name=%E6%8E%A8%E8%8D%90&pageNum=1&recruitSubProjectCodes=20271779425607"
+          ]
+        ],
+        "note": "官网亲见。8/18 新岗可补投。OneRec / 生成式推荐仍是快手主入口。",
+        "id": "rec-b210af9eaeaa3d72cea6"
+      }
+    },
+    {
+      "id": "rec-cd6362472aea60ef45d5",
+      "kind": "rec",
+      "before": {
+        "name": "美团",
+        "en": "Meituan",
+        "status": "open",
+        "rec": "yes",
+        "src": "see",
+        "rev": "2026-08-20",
+        "opened": "8/17 晚间正式启动 2027。官网搜「推荐」8/20 为 39（8/17 快照 36）。应届【北斗】推荐大模型算法工程师仍在；新增大模型搜索推荐算法工程师（北/上，更新 2026-08-17）。",
+        "closes": "北斗专项牛客曾标 06-03 至 07-03（窗口或已过，岗还在）。正式批未见官方统一截止，按岗招满即下。南京本地宝 10/31 不当官网死线。",
+        "window": "FAQ：毕业 2026-11 至 2027-10。北斗应届走官网应届通道；大量转正实习 / 日常实习并行。",
+        "city": "应届北斗：北京。大模型搜索推荐：北京 / 上海。部分实习含上海。",
+        "jobs": "应届：【北斗】推荐大模型算法工程师（日均数十亿请求，MTGR，生成式 Agentic 推荐）；大模型搜索推荐算法工程师（8/17 新）。实习/转正实习：生成式推荐系统、推荐大模型、全球 Agentic 推荐、拼好饭推荐、酒旅推荐、外卖商品搜推、推荐系统研发。",
+        "req": "FAQ：3 次志愿。北斗偏硕士、深度学习 / LLM4Rec。具体学历以 JD 为准。",
+        "links": [
+          ["美团校园搜推荐", "https://zhaopin.meituan.com/web/campus?keyword=%E6%8E%A8%E8%8D%90"]
+        ],
+        "note": "官网亲见。8/20：正式启动 + 新搜推岗。名单里推荐岗写得最清楚的一家之一。",
+        "id": "rec-cd6362472aea60ef45d5"
+      }
+    },
+    {
+      "id": "rec-57b33bc4f2a1d871291f",
+      "kind": "rec",
+      "before": {
+        "name": "滴滴",
+        "en": "DiDi",
+        "status": "open",
+        "rec": "yes",
+        "src": "see",
+        "opened": "官网首页大字「滴滴27届秋招正式启动」。两岗均发布于 2026-08-13。",
+        "closes": "常规秋招：招满即关；牛客日程标到 2026-10-13。未来精英：2026-07-23 至 2026-09-23。全渠道 3 次主动投递。",
+        "window": "2027 届。起终点推荐：本科及以上。国际化外卖-推荐：硕士及以上。",
+        "city": "起终点：北京。外卖推荐：北京 / 上海。",
+        "jobs": "① 27届秋招-算法工程师-起终点推荐（CTO）：上下车点召回/精排、多模态 POI、目的地检索 Agent。② 27届秋招-AI算法工程师（国际化外卖-推荐）：生成式召回、个性化排序、AI 创意分发。",
+        "req": "2027届-秋招允许投递 3 次。英语流利对外卖岗加分。咨询 campus@didiglobal.com。",
+        "links": [
+          [
+            "滴滴校招搜推荐",
+            "https://campus.didiglobal.com/campus_apply/didiglobal/96064#/jobs?keyword=%E6%8E%A8%E8%8D%90"
+          ]
+        ],
+        "note": "官网亲见，而且是真正的推荐岗，不是只写算法。",
+        "id": "rec-57b33bc4f2a1d871291f"
+      }
+    },
+    {
+      "id": "rec-82eaaba81d9dcc54deab",
+      "kind": "rec",
+      "before": {
+        "name": "华为",
+        "en": "Huawei",
+        "status": "open",
+        "rec": "likely",
+        "src": "mix",
+        "opened": "官网亲见：华为2027届应届生招聘启动，落款 2026-08-15。顶尖 AI 专项稿 2026-05-19；实习生启动 2026-03-15。",
+        "closes": "未见统一网申截止。新闻只写 8/15 启动。职位池要点登录，按岗招满即止的可能性大。",
+        "window": "国内本硕：2027-01-01 至 2027-12-31；国内博士与海外本硕博：2026-01-01 至 2027-12-31。",
+        "city": "深圳 / 北京 / 上海 / 东莞 / 杭州 / 南京 / 西安 / 武汉 / 成都 / 苏州",
+        "jobs": "首页按「应届生职位 / 实习生 / AI 专项」招，少见「推荐算法」四字。Playwriter 点「查看职位」未进列表（疑似要登录），所以没有岗位名级证据。负一屏、应用市场、资讯可能有搜推。",
+        "req": "流程：投递 → 上机/测评 → 面试 → 录用 → 签约。官网提醒勿信付费「内推实习」。",
+        "links": [["华为校园招聘（官网）", "https://career.huawei.com/cn/campus-recruitment"]],
+        "note": "部分亲见。推荐履历可投 AI 应用/算法，但别按信息流厂准备。",
+        "id": "rec-82eaaba81d9dcc54deab"
+      }
+    },
+    {
+      "id": "rec-99da41b4a60e34d30b0c",
+      "kind": "rec",
+      "before": {
+        "name": "同花顺",
+        "en": "iFinD / 10jqka",
+        "status": "open",
+        "rec": "yes",
+        "src": "news",
+        "rev": "2026-09-13",
+        "opened": "官网列表 8/20 见「生成式推荐算法研究员（博士专项）」。AIME 课题含「生成式搜索推荐」。春招曾用名生成式推荐算法工程师。",
+        "closes": "第三方约 2026-09-19。以 campus.10jqka.com.cn 为准。",
+        "window": "实习/专项覆盖约 2026.1–2027.12 毕业硕博。博士专项看该 JD。",
+        "city": "杭州。",
+        "jobs": "生成式推荐算法研究员（博士专项）；生成式搜索推荐 / AI 算法类统称。硕士 RecSys 仍弱。",
+        "req": "偏硕博。博士岗按专项投。",
+        "links": [["同花顺校招职位", "https://campus.10jqka.com.cn/job/list"]],
+        "note": "更正原英文误写Hexun。原生成式推荐为博士专项；硕士须另找非博士限定JD，9/19只保留待核节点。",
+        "audit": {
+          "checked": null,
+          "refs": ["H01"],
+          "summary": "基于原文件做口径修正；未取得本轮新的岗位在线证明。",
+          "scope": "原版口径修正",
+          "level": "用户原文件"
+        },
+        "id": "rec-99da41b4a60e34d30b0c"
+      }
+    }
+  ],
+  "deadlineOverridesBefore": {
+    "同花顺": {
+      "present": true,
+      "value": {
+        "date": "2026-09-19",
+        "time": null,
+        "kind": "special",
+        "scope": "博士推荐专项（硕士不主投）",
+        "confidence": "pending",
+        "refs": ["H01"],
+        "note": "原第三方日期"
+      },
+      "legacyDue": "2026-09-19"
+    },
+    "滴滴": {
+      "present": false,
+      "value": null,
+      "legacyDue": "2026-10-13"
+    }
+  }
+}

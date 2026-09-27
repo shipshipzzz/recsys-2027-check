@@ -1,0 +1,1211 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-09-28",
+  "timezone": "Asia/Shanghai",
+  "baseline": "f31919c2e08e62245b3675c9041228c5ca9301f9",
+  "totals": {
+    "reviewed": 15,
+    "new": 1,
+    "attempted_unresolved": 4,
+    "not_reviewed": 95
+  },
+  "metrics": {
+    "companies": 114,
+    "job_entries": 115,
+    "sources": 129,
+    "entry_links": 184,
+    "entry_audits": 84,
+    "job_sources": 158,
+    "entry_deadlines": 5,
+    "catalog_archives": 2,
+    "timeline_events": 50,
+    "change_logs": 7
+  },
+  "newSourceCount": 20,
+  "sources": [
+    {
+      "id": "U0928-S01",
+      "title": "天翼云：2027校园招聘混合职位池",
+      "url": "https://wecruit.hotjob.cn/SU62b2ae672f9d24458d72f9cc/pb/school.html",
+      "level": "官方职位列表",
+      "scope": "列表显示44条，同时包含2027超级优才和秋季校招。已读首屏15条，成都后端与产品岗位地点可见；具体学历专业JD未读到，不等同44条普通秋招。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-S02",
+      "title": "TeleAI Top Talent 2027专项启动公告",
+      "url": "https://www.chinatelecom.com.cn/ct/zp/167276.html",
+      "level": "官方专项公告",
+      "scope": "6/15公告仅证实TeleAI Top Talent 2027专项启动。可读正文未给普通秋招JD、专业、毕业窗与本轮开放截止，不把专项等同普通秋招。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-06-15"
+    },
+    {
+      "id": "U0928-S03",
+      "title": "九天2027秋招：雇主高校简章复核",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118392.html",
+      "level": "高校雇主招聘正文",
+      "scope": "硕士及以上；AI、算法、软件、平台与产品岗位，办公范围北京/西安/深圳/广州；未明确应用统计专硕、精确毕业窗或统一截止。",
+      "access": "2026-09-28；公开网页：用人单位在南开就业平台发布的招聘正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-09"
+    },
+    {
+      "id": "U0928-S04",
+      "title": "浪潮2027秋招：岗位类别与工作范围",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/117451.html",
+      "level": "高校雇主招聘正文",
+      "scope": "2027本硕博；研发/市场类别地点含重庆，职能岗位为济南/北京/苏州。页面专业概述不能替代逐岗资格；未见统一截止。",
+      "access": "2026-09-28；公开网页：用人单位在南开就业平台发布的招聘正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-01"
+    },
+    {
+      "id": "U0928-S05",
+      "title": "浙江商业集团：浙商食品研究员官方JD",
+      "url": "https://dhr.cncico.com:18443/postDetail/263846648516567960",
+      "level": "官方正文",
+      "scope": "2027、硕士以上，应用统计等优先；大豆产业研究、供需建模与期现货业务支撑；工作地杭州上城。未见具体报名截止。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-S06",
+      "title": "浙江商业集团：中碳数字化运营官方JD",
+      "url": "https://dhr.cncico.com:18443/postDetail/263846648516567950",
+      "level": "官方正文",
+      "scope": "2027、本科以上，数据分析/计算机/能源/自动化/运营管理相关优先；能源项目运营监测与数据分析，杭州上城。不能直接认定应用统计专业代码通过。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-S07",
+      "title": "浙江商业集团：盈通信息化管理官方JD",
+      "url": "https://dhr.cncico.com:18443/postDetail/263846648516567956",
+      "level": "官方正文",
+      "scope": "2027、本科以上，统计学等优先；门店经营数据、SQL/Excel、系统需求与供应商对接，杭州上城。证书是优先项。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-S08",
+      "title": "浙江商业集团：储备经理官方JD与调配要求",
+      "url": "https://dhr.cncico.com:18443/postDetail/263846648516567963",
+      "level": "官方正文",
+      "scope": "2027、本科以上、专业不限，三年培养。职责明确主要在浙江高速服务区并服从调配；页面工作地栏杭州不得覆盖此要求。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-S09",
+      "title": "三峡担保2027校园招聘：9/30截止及单岗限制",
+      "url": "https://gzw.cq.gov.cn/gqzp/202608/t20260828_15994445_wap.html",
+      "level": "官方正文",
+      "scope": "校园项目经理30人含15名管培；具体岗位专业不限、统计等优先，管培硕士其他本科。9/30截止未给时刻，最多一岗；不同于社会招聘或三峡银行。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-08-28"
+    },
+    {
+      "id": "U0928-S10",
+      "title": "建信金融科技2027：官方完整公告",
+      "url": "https://wealth.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
+      "level": "官方正文",
+      "scope": "数理统计类、本科以上；国内2027.1—7/海外2026.1—2027.7；CET4 425或替代。10/8 24:00、两志愿两次修改、信息技术类笔试。成都属工作范围，杭州/重庆/西安仅见笔试城市。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-04"
+    },
+    {
+      "id": "U0928-S11",
+      "title": "工行远程银行2027：职责、轮岗与城市",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118535.html",
+      "level": "高校雇主招聘正文",
+      "scope": "2026.1—2027.7毕业；科技菁英与专业英才原则上先远程服务/线上运营轮岗，另有服务代表；成都为工作范围。专业概述统计优先，逐岗附件与统一截止未核。",
+      "access": "2026-09-28；公开网页：用人单位在南开就业平台发布的招聘正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-10"
+    },
+    {
+      "id": "U0928-S12",
+      "title": "招商银行宁波2027：培养/数字金融/运营岗位表",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118427.html",
+      "level": "高校雇主招聘正文",
+      "scope": "公司/零售培养岗硕士不限专业；数字金融列统计等；营销/运营另有不限专业范围。国内2027.1—7，海外2026.1—2027.7，宁波/台州；未见统一截止。",
+      "access": "2026-09-28；公开网页：用人单位在南开就业平台发布的招聘正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-10"
+    },
+    {
+      "id": "U0928-S13",
+      "title": "申万宏源2027：报名测评期限与岗位流程",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/117519.html",
+      "level": "高校雇主招聘正文",
+      "scope": "正文要求硕士以上、数理统计等按岗；总部和分支限报一个岗位，子公司另按说明；网申及测评10/25截止，后续实习体验/留用答辩不是直接录用。",
+      "access": "2026-09-28；公开网页：用人单位在南开就业平台发布的招聘正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-02"
+    },
+    {
+      "id": "U0928-S14",
+      "title": "兴业银行总行2027：官方招聘公告",
+      "url": "https://www.xyyh.com.cn/cn/aboutCIB/about/jobs/2026/20260922_1.html",
+      "level": "官方正文",
+      "scope": "硕士以上；国内2027-08-31前、海外2026.1—2027.8毕业；CET6 425或对应替代条件；报名到10/25，未给时刻。管培与科技专项培养方式不同。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-22"
+    },
+    {
+      "id": "U0928-S15",
+      "title": "兴业银行总行2027：官方岗位附件（Excel）",
+      "url": "https://download.cib.com.cn/netbank/download/cn/20260922.xlsx",
+      "level": "官方正文",
+      "scope": "Sheet1第6、10、11行：FinTech/资金营运的数理统计专业及上海/福州地点；第12行杭州/成都/西安属另一个研发岗，专业不能互借。已解析单元格与合并范围。",
+      "access": "2026-09-28；Playwriter确认公告附件链接；下载官方XLSX后只读解析OOXML单元格及合并范围；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28",
+      "published": "2026-09-22"
+    },
+    {
+      "id": "U0928-R01",
+      "title": "快手2027：推荐关键词当前职位列表",
+      "url": "https://campus.kuaishou.cn/#/campus/jobs?name=推荐&pageNum=1&recruitSubProjectCodes=20271779425607",
+      "level": "官方职位列表",
+      "scope": "本次列表19条，混有常规与快Star；已读第一页10条。推荐大模型北京/杭州，直播推荐9/20等可见；未逐岗读取学历与完整JD。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-R02",
+      "title": "美团：推荐搜索结果及应届/实习分层",
+      "url": "https://zhaopin.meituan.com/web/campus?keyword=推荐",
+      "level": "官方职位列表",
+      "scope": "41条关键词结果混合应届、转正实习、日常实习；已读首屏10条。大模型搜索推荐应届在北京/上海，北斗应届推荐大模型在北京；未复核FAQ志愿及全部学历。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-R03",
+      "title": "滴滴2027秋招：国际化外卖推荐具体JD",
+      "url": "https://campus.didiglobal.com/campus_apply/didiglobal/96064#/jobs?keyword=推荐",
+      "level": "官方正文",
+      "scope": "同关键词当前1条，完整JD：2027硕士以上、计算机/AI/应用数学等优先，北京/上海，生成式推荐与SQL/Spark等要求，秋招允许3次投递。旧起终点推荐未在此结果出现，不等于全站关闭。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-R04",
+      "title": "华为2027应届招聘：毕业窗与项目分层",
+      "url": "https://career.huawei.com/cn/campus-recruitment",
+      "level": "官方正文",
+      "scope": "国内本硕2027.1.1—12.31；国内博士及海外本硕博2026.1.1—2027.12.31。读到8/15启动、专项与实习入口，未取得具体推荐JD或统一截止。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    },
+    {
+      "id": "U0928-R05",
+      "title": "同花顺2027：杭州大模型推荐及金融Agent列表",
+      "url": "https://campus.10jqka.com.cn/job/list?type=school",
+      "level": "官方职位列表",
+      "scope": "大模型推荐算法工程师标2027校园招聘/杭州并展示推荐全链路和实验职责；另有基座预训练、后训练和金融Agent岗位。未核学历门槛，标题不含博士不等于硕士可报。",
+      "access": "2026-09-28；Playwriter：用户授权浏览器、自建标签页、只读正文；未登录、未投递、未核准个人全部资格",
+      "checked": "2026-09-28"
+    }
+  ],
+  "entries": [
+    {
+      "id": "rec-82eaaba81d9dcc54deab",
+      "kind": "rec",
+      "name": "华为",
+      "outcome": "reviewed",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "明确区分国内本硕与博士/海外毕业窗；无推荐岗位级证据，不把部门范围升级为在招JD。",
+      "sourceIds": ["U0928-R04"]
+    },
+    {
+      "id": "rec-effea4c9ff35497ce446",
+      "kind": "rec",
+      "name": "拼多多",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-57b33bc4f2a1d871291f",
+      "kind": "rec",
+      "name": "滴滴",
+      "outcome": "reviewed",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "完整JD与志愿次数已读；纠正仍称两个岗位本轮均在线的旧表述。",
+      "sourceIds": ["U0928-R03"]
+    },
+    {
+      "id": "rec-522d3edeb64a7ca45f5e",
+      "kind": "rec",
+      "name": "小米",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-cfc3d445066f6e83ca1d",
+      "kind": "rec",
+      "name": "哔哩哔哩",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-cd6362472aea60ef45d5",
+      "kind": "rec",
+      "name": "美团",
+      "outcome": "reviewed",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "list",
+      "scope": "首屏公开职责与应届标签已核，41为混合结果；旧FAQ条件和专项窗口不冒充新复核。",
+      "sourceIds": ["U0928-R02"]
+    },
+    {
+      "id": "rec-8e7a2fa63279073af1ea",
+      "kind": "rec",
+      "name": "好未来",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-49233b820253f8ef424c",
+      "kind": "rec",
+      "name": "携程",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-8d2be68965151aec8d3b",
+      "kind": "rec",
+      "name": "唯品会",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-d30e5ffc0ba9150b4367",
+      "kind": "rec",
+      "name": "蚂蚁集团",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-b210af9eaeaa3d72cea6",
+      "kind": "rec",
+      "name": "快手",
+      "outcome": "reviewed",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "list",
+      "scope": "更新推荐关键词结果及具名岗位地点，区分常规与快Star，学历专业保持未逐岗确认。",
+      "sourceIds": ["U0928-R01"]
+    },
+    {
+      "id": "rec-47c1e53c427aafb4556b",
+      "kind": "rec",
+      "name": "阿里巴巴",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-53874092e000069bfeda",
+      "kind": "rec",
+      "name": "腾讯",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-81baf57e05f112764536",
+      "kind": "rec",
+      "name": "京东",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-0c8d80777a68b7da5f43",
+      "kind": "rec",
+      "name": "360 集团",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-f851fcc64d07c10e897f",
+      "kind": "rec",
+      "name": "MetaApp",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-7ca2b7da6e0f8654c088",
+      "kind": "rec",
+      "name": "科大讯飞",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-e2f4e2c4b8d7cf9c17f5",
+      "kind": "rec",
+      "name": "OPPO",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-f9f525fd1bbc068eca89",
+      "kind": "rec",
+      "name": "作业帮",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-d26c6a08a591011a3bf6",
+      "kind": "rec",
+      "name": "小红书",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "rec-7eece41947255ec5b940",
+      "kind": "rec",
+      "name": "SHEIN",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "rec-a62864e8c353807bfbd8",
+      "kind": "rec",
+      "name": "网易",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "rec-67a67fc05f47b36e185c",
+      "kind": "rec",
+      "name": "爱奇艺",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-0a5441b46ae534c8f353",
+      "kind": "rec",
+      "name": "得物",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-69337578b2468a881543",
+      "kind": "rec",
+      "name": "vivo",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-16",
+      "checked": "2026-09-16"
+    },
+    {
+      "id": "rec-455ece81de5605d85e54",
+      "kind": "rec",
+      "name": "百度",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-702c213feab1671de4c5",
+      "kind": "rec",
+      "name": "字节跳动",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-2faa8bd0603d45617e25",
+      "kind": "rec",
+      "name": "Shopee",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-eff9e9ea8520b3f339e1",
+      "kind": "rec",
+      "name": "新浪 / 微博",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-a57125f842f6dc3e62a8",
+      "kind": "rec",
+      "name": "腾讯音乐",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-70629416ece0407f8118",
+      "kind": "rec",
+      "name": "Soul",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-61240a5e55e990f64d1f",
+      "kind": "rec",
+      "name": "哈啰",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-6ad1c8da5080c5147475",
+      "kind": "rec",
+      "name": "度小满",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-f2afc6db6fcedb278b78",
+      "kind": "rec",
+      "name": "Wind 万得",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-3e94f491f99e4ae6fc2d",
+      "kind": "rec",
+      "name": "去哪儿",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "rec-b44970daaf32132f230f",
+      "kind": "rec",
+      "name": "挚文 / 陌陌",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-1bfefe0febb227479016",
+      "kind": "rec",
+      "name": "知乎",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-1b52d69cf33ddf49baea",
+      "kind": "rec",
+      "name": "58同城",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-be548deba4a093d78e82",
+      "kind": "rec",
+      "name": "荣耀",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-99da41b4a60e34d30b0c",
+      "kind": "rec",
+      "name": "同花顺",
+      "outcome": "reviewed",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "list",
+      "scope": "官方列表有2027杭州推荐岗位与职责；消除9/19作为统一窗口的误导，学历门槛明确保留待核。",
+      "sourceIds": ["U0928-R05"]
+    },
+    {
+      "id": "rec-bbf424863d6008235248",
+      "kind": "rec",
+      "name": "贝壳找房",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-7df999bb5bbab0b3e8fc",
+      "kind": "rec",
+      "name": "芒果TV",
+      "outcome": "attempted_unresolved",
+      "previousChecked": null,
+      "checked": null,
+      "scope": "官方Moka页面只读到导航，海报加载失败且未出现具体岗位；不能认定2027秋招开放或关闭。",
+      "attemptedUrls": ["https://app.mokahr.com/campus-recruitment/mgtv/44490?locale=zh-CN#/"],
+      "attemptedOn": "2026-09-28"
+    },
+    {
+      "id": "rec-a168b06e9c219152d775",
+      "kind": "rec",
+      "name": "传音",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-7b0537129aa42ab55ff5",
+      "kind": "rec",
+      "name": "米哈游",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-c39888bcadf8baa4acef",
+      "kind": "rec",
+      "name": "货拉拉",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-7b284311bfca60467e57",
+      "kind": "rec",
+      "name": "饿了么 / 淘宝闪购",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-0f1cb9c0fcbf0dbb2924",
+      "kind": "rec",
+      "name": "飞猪",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-ae322cc596675baf95b1",
+      "kind": "rec",
+      "name": "喜马拉雅",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-2475571c8383583793b8",
+      "kind": "rec",
+      "name": "阅文 / QQ阅读",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-4a366fb92e537bad20bd",
+      "kind": "rec",
+      "name": "网易云音乐",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "rec-183f00f483d3844e875d",
+      "kind": "rec",
+      "name": "Keep",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-44c4621de3957c4bb5b5",
+      "kind": "rec",
+      "name": "汽车之家",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-fa8c9a97f2c921bf8484",
+      "kind": "rec",
+      "name": "同程旅行",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-fcdbfc51189fecd592b0",
+      "kind": "rec",
+      "name": "虎牙",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-d00d4d14ff02e6a29d90",
+      "kind": "rec",
+      "name": "BOSS直聘",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "rec-4d347b261c9013270a2e",
+      "kind": "rec",
+      "name": "网易有道",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "rec-d16ff9b356f58d9af1db",
+      "kind": "rec",
+      "name": "网易游戏雷火",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "soe-933afa76439b71816ede",
+      "kind": "soe",
+      "name": "天翼云",
+      "outcome": "reviewed",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "list",
+      "scope": "由未核届次更新为2027项目有据；只确认混合职位池与具名岗位地点，未核具体专业。",
+      "sourceIds": ["U0928-S01"]
+    },
+    {
+      "id": "soe-760d8065c74679611ff9",
+      "kind": "soe",
+      "name": "招银网络科技",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-ad455372b0bbb2f021ce",
+      "kind": "soe",
+      "name": "中国移动九天人工智能",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "复核本届招聘对象、岗位与办公范围；不升级为应用统计明确可报。",
+      "sourceIds": ["U0928-S03"]
+    },
+    {
+      "id": "soe-09d0c319c855ec8c738e",
+      "kind": "soe",
+      "name": "中国电信集团 · 优才 / 研发 / 产数",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-4ffa72152f7258fb78a2",
+      "kind": "soe",
+      "name": "中国电信人工智能研究院 TeleAI",
+      "outcome": "reviewed",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "special_program",
+      "scope": "纠正原链接用途：只证明2027顶尖人才专项启动，不证明普通秋招窗口开放。",
+      "sourceIds": ["U0928-S02"]
+    },
+    {
+      "id": "soe-d10aecb1b903d20e8fd8",
+      "kind": "soe",
+      "name": "浪潮集团",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "补齐非算法方向及类别级城市范围；专业仍按具体岗位待核。",
+      "sourceIds": ["U0928-S04"]
+    },
+    {
+      "id": "soe-281e1336c36307f85882",
+      "kind": "soe",
+      "name": "中科曙光",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-003d7bb92cd63869b718",
+      "kind": "soe",
+      "name": "中国人保科技 / 理工专项",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-e3c6ba3985ff4004365b",
+      "kind": "soe",
+      "name": "交银金融科技",
+      "outcome": "attempted_unresolved",
+      "previousChecked": null,
+      "checked": null,
+      "scope": "只读到交通银行总行校园职位池，未找到交银金融科技本届具体岗位；不能借母行10/18截止或专业。",
+      "attemptedUrls": ["https://job.bankcomm.com/index.do#/school/main"],
+      "attemptedOn": "2026-09-28"
+    },
+    {
+      "id": "soe-54268e0393a76722595e",
+      "kind": "soe",
+      "name": "中汽中心",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-0a4d614aa7dd0aee16bc",
+      "kind": "soe",
+      "name": "东风汽车研发总院",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-237dd8bb2d51359a8818",
+      "kind": "soe",
+      "name": "中国电科 50 所",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-6c88c55a7f10e63848e4",
+      "kind": "soe",
+      "name": "中科芯 / 中国电科 58 所",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-b96d5b94cecc8946cc71",
+      "kind": "soe",
+      "name": "联通数字科技",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-a2ceddeff19120c77391",
+      "kind": "soe",
+      "name": "天翼物联 · 优才计划",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-35812b328fb333295de9",
+      "kind": "soe",
+      "name": "咪咕公司",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-7df999bb5bbab0b3e8fc",
+      "kind": "soe",
+      "name": "芒果TV",
+      "outcome": "attempted_unresolved",
+      "previousChecked": null,
+      "checked": null,
+      "scope": "与推荐页共用同一芒果招聘入口检查，未读到本届岗位；原专业/批次/复核日保持。",
+      "attemptedUrls": ["https://app.mokahr.com/campus-recruitment/mgtv/44490?locale=zh-CN#/"],
+      "attemptedOn": "2026-09-28"
+    },
+    {
+      "id": "soe-9f02794271f6ee22ab36",
+      "kind": "soe",
+      "name": "中国航信 / 航旅纵横",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-691c283911ab1f4878af",
+      "kind": "soe",
+      "name": "昆仑数智",
+      "outcome": "attempted_unresolved",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13",
+      "scope": "官方公告重定向systemCheck页面，412/空正文；旧转载及原核查日期保持，不据此认定停招。",
+      "attemptedUrls": [
+        "https://zhaopin.cnpc.com.cn/web/recruitInfoshow.html?id=8b8b6c9ea07c29cc01a07fc4f1030033"
+      ],
+      "attemptedOn": "2026-09-28"
+    },
+    {
+      "id": "soe-0166e9a039513d6627bb",
+      "kind": "soe",
+      "name": "东方地球物理公司 BGP",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "soe-863efd948d7f8d33bfdb",
+      "kind": "soe",
+      "name": "中石化经纬 / 石油物探技术研究院",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-1e49fabfeb8af3287a2b",
+      "kind": "soe",
+      "name": "中海油研究总院",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-bd6aef6e032befbf221e",
+      "kind": "soe",
+      "name": "宝信软件",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-b24eccce088fab5acca4",
+      "kind": "soe",
+      "name": "南网数字集团",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-9144dfc3a2177c2560bf",
+      "kind": "soe",
+      "name": "国网信通产业集团 / 南瑞集团",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-40821fd0c64459ec899d",
+      "kind": "soe",
+      "name": "中国银联 / 银联数据",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-9ed0ba98e2b378d91fe7",
+      "kind": "soe",
+      "name": "建信金融科技",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "官方完整正文补齐毕业窗、CET4、两志愿/两次修改、IT笔试与10/8 24:00；不混用笔试城市。",
+      "sourceIds": ["U0928-S10"]
+    },
+    {
+      "id": "soe-7fe2c247fb54aac480d8",
+      "kind": "soe",
+      "name": "中国电子云",
+      "outcome": "not_reviewed",
+      "previousChecked": null,
+      "checked": null
+    },
+    {
+      "id": "soe-224eff4dd223d582e600",
+      "kind": "soe",
+      "name": "中国银行 · 数据分析 / 审计数据",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-012f751aa0176646891e",
+      "kind": "soe",
+      "name": "工商银行深圳分行 · 管培 / 产品 / 综合业务",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-56412c0e929ad53c81a8",
+      "kind": "soe",
+      "name": "建设银行 · 总部经办 / 湖北通用管培",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-9ab002099e55ac2b03b6",
+      "kind": "soe",
+      "name": "农业银行四川分行 · 综合业务 / 管理储备",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-f8c92726adc2c28d4be4",
+      "kind": "soe",
+      "name": "招商银行深圳分行 · 定向培养 / 业务运营",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-fd7572b49f9a3eb7f2b6",
+      "kind": "soe",
+      "name": "中信银行信用卡中心 · 风险统计 / 运营研究",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-1df7b49623798cb2b82b",
+      "kind": "soe",
+      "name": "南京银行 · 风险管理 / 综合培养 / 业务",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-3a4e8fb9f15de5c306e9",
+      "kind": "soe",
+      "name": "长城证券 · 研究分析 / 风险 / 客群运营",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-11e02d2dbe7515379cad",
+      "kind": "soe",
+      "name": "厦门航空 · 规划财务 / 营销分析 / 管培",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-bc7d404baf298af71195",
+      "kind": "soe",
+      "name": "北汽集团 · 市场 / 职能 / 数据分析",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-67ba0f956e9bff32cb49",
+      "kind": "soe",
+      "name": "岚图汽车 · 产品企划 / 经营规划 / 营销管培",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-1bc9a6c37424182099b8",
+      "kind": "soe",
+      "name": "建发股份 · 国内 / 进出口业务与管培",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-c220d0f777ae54ac86c4",
+      "kind": "soe",
+      "name": "国贸股份 · 行业研究 / 贸易运营 / 业务",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-fc684edd781f27422e8d",
+      "kind": "soe",
+      "name": "象屿 · 产业研究 / 风险 / 供应链运营",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-74afd94593431265ce3a",
+      "kind": "soe",
+      "name": "浙江省商业集团 · 产业研究 / 运营 / 数字化",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "四份官方JD逐岗复核：应用统计研究员、统计信息化、相关运营与不限专业储备经理分开。",
+      "sourceIds": ["U0928-S05", "U0928-S06", "U0928-S07", "U0928-S08"]
+    },
+    {
+      "id": "soe-cb0f7783542ae0067238",
+      "kind": "soe",
+      "name": "浙商中拓集团 · 研究 / 交易 / 商务",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "soe-15e8fe78032c98f915c3",
+      "kind": "soe",
+      "name": "重庆三峡融资担保集团 · 管培 / 项目经理",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "核对校园公告而非社招：学历分档、专业不限、单岗限制、9/30日期及调配范围均有正文依据。",
+      "sourceIds": ["U0928-S09"]
+    },
+    {
+      "id": "soe-15dcc83203fa8d55b59c",
+      "kind": "soe",
+      "name": "杭州银行 · 总分行培养 / 运营",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-28a7c75480e66ff26a24",
+      "kind": "soe",
+      "name": "中国建设银行浙江省分行",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-70472ac853332bba0d05",
+      "kind": "soe",
+      "name": "中国建设银行四川省分行",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-95134bdc75c0737d281e",
+      "kind": "soe",
+      "name": "中国工商银行远程银行中心",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "补充两类培养岗均先远程服务/线上运营轮岗；保留成都范围而非直接算法岗位承诺。",
+      "sourceIds": ["U0928-S11"]
+    },
+    {
+      "id": "soe-946c8b35a6045d05921e",
+      "kind": "soe",
+      "name": "中国工商银行软件开发中心",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-6f3da4b7ad2476020757",
+      "kind": "soe",
+      "name": "招商银行宁波分行",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "逐类区分专业不限培养、数字金融专业条件与运营柜面职责，核对毕业窗和两地范围。",
+      "sourceIds": ["U0928-S12"]
+    },
+    {
+      "id": "soe-140f2087c58956d157f6",
+      "kind": "soe",
+      "name": "申万宏源集团 / 证券",
+      "outcome": "reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "复核硕士条件、一个总部/分支志愿、10/25网申测评截止与实习留用环节。",
+      "sourceIds": ["U0928-S13"]
+    },
+    {
+      "id": "soe-55cb5e9670d088e4902f",
+      "kind": "soe",
+      "name": "建信人寿 · 精算 / 经营管理",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "soe-6f566438920bdfd0d70e",
+      "kind": "soe",
+      "name": "中国农业银行浙江省分行",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-13",
+      "checked": "2026-09-13"
+    },
+    {
+      "id": "soe-b9fb017b087135609736",
+      "kind": "soe",
+      "name": "国家开发银行 · 总行经济金融",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-e43cb34e4c801cf57150",
+      "kind": "soe",
+      "name": "广发银行 · 风险分析 / 业务 / 金融科技",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-84e7d908cb72d28b63a2",
+      "kind": "soe",
+      "name": "重庆三峡银行 · 管培 / 金融科技 / 支行业务",
+      "outcome": "not_reviewed",
+      "previousChecked": "2026-09-27",
+      "checked": "2026-09-27"
+    },
+    {
+      "id": "soe-6b718e14071e15579098",
+      "kind": "soe",
+      "name": "兴业银行总行 · FinTech / 资金营运",
+      "outcome": "new",
+      "previousChecked": null,
+      "checked": "2026-09-28",
+      "depth": "notice_or_role",
+      "scope": "新增兴业银行总行一个机构卡；官方岗位附件逐行绑定专业和城市，避免将统计条件移到杭州/成都/西安研发。",
+      "sourceIds": ["U0928-S14", "U0928-S15"]
+    }
+  ],
+  "deadlineOverrides": [
+    {
+      "name": "同花顺",
+      "scope": "旧9/19博士专项仅保留历史，不再放进当前公司倒计时；当前截止未知。"
+    },
+    {
+      "name": "滴滴",
+      "scope": "旧第三方10/13保留历史，不当本次正式岗位的已核截止。"
+    }
+  ]
+}

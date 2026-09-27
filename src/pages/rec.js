@@ -76,7 +76,11 @@ function badge(item) {
     see: [
       item.audit?.checked === RECHECKED && item.audit?.level === '官方正文'
         ? '官网正文·本次'
-        : '官网亲见·8月',
+        : item.audit?.checked === RECHECKED
+          ? '本次官网记录'
+          : item.audit?.checked
+            ? '官网记录·' + escapeHTML(item.audit.checked)
+            : '官网记录·较早',
       's-see',
     ],
     mix: ['部分亲见·原记录', 's-intern'],

@@ -5,18 +5,20 @@
   "entries": {
     "soe-933afa76439b71816ede": {
       "major": "unknown",
-      "cycle": "unverified",
-      "intake": null,
+      "cycle": "current",
+      "intake": 2027,
       "directions": [
-        "ai"
+        "ai",
+        "software",
+        "product"
       ],
-      "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "2027项目标识与当前职位池有官方依据，但岗位专业未读成，维持unknown而非默认接受应用统计。",
+      "qualityBasis": "云计算业务的平台、研发和产品岗位可比较；不同项目资格、合同与实际职责仍需具体JD。",
       "evidenceRefs": [
-        "H02"
+        "U0928-S01"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "9ec2263502f734ffae64db41e4f598a9ae8d2745224a7d786f56c70a6089986c"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "6173018752a3cb248649f5e027b96b8e009d3a292da6ff50b4378c3a310a7948"
     },
     "soe-760d8065c74679611ff9": {
       "major": "related",
@@ -39,15 +41,17 @@
       "cycle": "current",
       "intake": 2027,
       "directions": [
-        "ai"
+        "ai",
+        "software",
+        "product"
       ],
-      "basis": "沿用 S01：专业列计算机、数学/物理、通信/电子等，未明确应用统计专硕；学历硕士及以上，需确认专业范围。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "本届硕士以上招聘与岗位类型有据；专业列表未明确应用统计，继续按相关专业需确认处理。",
+      "qualityBasis": "研发、平台和产品是不同培养路径；实际职责与录用条件应逐岗比较，不据机构名称直接判断资格。",
       "evidenceRefs": [
-        "S01"
+        "U0928-S03"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "57b07508354736953320cdc93dc49ad892325c8c9ef0bbcd053e1ab6f97b57e6"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "459395aa925b00a96414712b9f2205a64ef6e79d1260611c2a2084b31721a37b"
     },
     "soe-09d0c319c855ec8c738e": {
       "major": "unknown",
@@ -72,33 +76,37 @@
     },
     "soe-4ffa72152f7258fb78a2": {
       "major": "unknown",
-      "cycle": "unverified",
-      "intake": null,
+      "cycle": "current",
+      "intake": 2027,
       "directions": [
         "ai"
       ],
-      "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "本届标签仅限官方Top Talent 2027专项；普通秋招和个人条件未知，维持verify且不进入可行动名单。",
+      "qualityBasis": "人工智能研究方向可继续了解；专项的学位、研究成果及培养要求必须取得岗位依据。",
       "evidenceRefs": [
-        "H02"
+        "U0928-S02"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "0da36cc91c2e5f850c0d528b84534c320fe23c0c332e5910b63c798f6474dfb7"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "684dfba551962b695c2c14358b0a14d496acd398eed20a73f4b0ab33a1fa9055"
     },
     "soe-d10aecb1b903d20e8fd8": {
       "major": "unknown",
       "cycle": "current",
       "intake": 2027,
       "directions": [
-        "ai"
+        "ai",
+        "software",
+        "product",
+        "operations",
+        "supply"
       ],
-      "basis": "沿用 S07 本届简章；“专业不限”的页面元数据不能替代各岗位要求，应用统计是否可报需要具体JD。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "当届四类岗位有据，但没有逐岗专业条件，保持unknown；对市场和职能机会不因非算法而排除。",
+      "qualityBasis": "研发、市场与供应交付有不同业务要求；需要分别核合同、出差、考核和培养安排。",
       "evidenceRefs": [
-        "S07"
+        "U0928-S04"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "6c29c288a141d97a1f82a37394ae3bb1293f1b1ac0a83fbedbf4b8015b629af1"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "4496962f47e4090844ad1dedf032dccc7edef41534be7bec442e67958c85daf8"
     },
     "soe-281e1336c36307f85882": {
       "major": "unknown",
@@ -418,16 +426,16 @@
       "cycle": "current",
       "intake": 2027,
       "directions": [
-        "finance"
+        "finance",
+        "software"
       ],
-      "basis": "沿用 S08/S09：科技类专项人才需求含数理统计类；国内2027年1—7月毕业，具体职位与应用统计专业口径另核。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "官方公告明确数理统计类并给出毕业、英语、志愿和截止条件；具体应用统计专业代码仍须目标岗位确认。",
+      "qualityBasis": "银行科技专项培养与职责方向清晰；信息技术笔试和岗位技术要求应与个人准备程度比较。",
       "evidenceRefs": [
-        "S08",
-        "S09"
+        "U0928-S10"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "b6ee7e1603a639d8bed3c6bc614d56e7a9346ea304db8d78808fd346c622e02a"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "511473361735dfebf7fabe03c45f3530a66e20b316b4d34939112a0c59af12bb"
     },
     "soe-7fe2c247fb54aac480d8": {
       "major": "unknown",
@@ -725,15 +733,19 @@
         "stats",
         "operations",
         "supply",
-        "ai"
+        "ai",
+        "software"
       ],
-      "basis": "岗位表明确研究员接受应用统计，其他岗位分别核条件；同一集团公告合成一张入口卡，不按子公司和岗位逐项凑数。",
-      "qualityBasis": "省属交通集团商业运营平台，具体岗位与实际业务可核；最终合同以对应子公司为准。",
+      "basis": "研究员官方JD明确应用统计；其他三岗各有独立条件，储备经理专业不限并服从调配，不能把研究员条件借给其他岗。",
+      "qualityBasis": "研究、门店信息化、能源运营和服务区管理对应真实业务；合同以各用人单位为准，研究需行业学习、管理需驻点适应。",
       "evidenceRefs": [
-        "S-CITY-01"
+        "U0928-S05",
+        "U0928-S06",
+        "U0928-S07",
+        "U0928-S08"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "51054041388b6ae22d4f66ba6eb60d2cf8267ac2be1c94614e2604de4c8d79ef"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "193fc4e59fca5d81ac827947b9f0e7b602664a3d8b98d8cf77513e73072b7a65"
     },
     "soe-cb0f7783542ae0067238": {
       "major": "unrestricted",
@@ -762,13 +774,13 @@
         "banking",
         "operations"
       ],
-      "basis": "重庆国资委2026-08-28官方校园招聘正文已完整读取：2027、专业不限、统计类优先、城市和9/30截止均有依据。",
-      "qualityBasis": "国资担保平台公开列出岗位职责、学历、专业及培养安排，能判断实际业务价值。",
+      "basis": "具体项目经理/管培资格段明确专业不限、统计等优先；学历分两档，9/30只给日期，最多一个志愿。",
+      "qualityBasis": "融资担保尽调、客户拓展与保后管理职责明确；管培轮岗后按考核和岗位需求定岗。",
       "evidenceRefs": [
-        "S-CITY-03"
+        "U0928-S09"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "ef75dbc37db299d87a2620a42988b56456627d26c3178eb3ba969caddc25b66f"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "765638ad19a511bad2d5b103cbcbf88547c951002a1f7ad8f1e11efb48ad7d31"
     },
     "soe-15dcc83203fa8d55b59c": {
       "major": "explicit",
@@ -838,13 +850,13 @@
         "risk",
         "finance"
       ],
-      "basis": "当届正文明确多个非算法方向，专业概述统计优先；成都仅标招聘范围，不保证任何方向都在成都。",
-      "qualityBasis": "银行线上业务机构有明确职责及培养方向；业务考核、排班和转岗机制仍待核。",
+      "basis": "专业概述有统计依据，但具体岗位附件未核；科技和专业序列均先轮岗，不把培养方向当直接定岗保证。",
+      "qualityBasis": "线上服务、模型策略和业务运营是不同实际工作；需要比较轮岗、排班、考核与最终岗位机制。",
       "evidenceRefs": [
-        "S-CITY-07"
+        "U0928-S11"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "204eaf88cc970866265b38b9a243c9977f928270c5540df973d7b6f3ca32c675"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "c13b412980b105993a6936fa7d0df2cc728bc18f534e4495b3e68f154cefbdab"
     },
     "soe-946c8b35a6045d05921e": {
       "major": "statistics",
@@ -873,13 +885,13 @@
         "operations",
         "finance"
       ],
-      "basis": "南开当届岗位表区分不限专业培养、统计数字金融与柜面；地点只确认宁波/台州招聘范围。",
-      "qualityBasis": "区域分行有多条公开培养路径和实际岗位；国资关联不能等同全资国企或固定编制。",
+      "basis": "培养和部分业务岗位明确不限专业；数字金融有独立专业范围，不能因为同一公告有不限专业岗位就自动通过。",
+      "qualityBasis": "多种业务培养路径有明确职责；前台营销、柜面服务与数字金融应依个人取舍比较。",
       "evidenceRefs": [
-        "S-CITY-09"
+        "U0928-S12"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "585e959098fb5c6019fc3918ee6c1b54a46a8e7fb70e421704da980418da6a55"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "27b72facc53590e1c4744085e91e3f155f0d3fc9dc3d5dcb107482db628f56df"
     },
     "soe-140f2087c58956d157f6": {
       "major": "statistics",
@@ -892,13 +904,13 @@
         "finance",
         "product"
       ],
-      "basis": "南开本届正文明确数理统计、非技术岗位与10/25截止；杭州/成都/重庆只作为招聘范围。",
-      "qualityBasis": "国有证券集团公开多个业务序列，但具体团队、培养和考核决定岗位价值。",
+      "basis": "数理统计在本届相关专业中；硕士及以上、毕业窗、总部/分支一个志愿及10/25测评截止分别核对。",
+      "qualityBasis": "证券业务分总部与分支，研究交易与财富服务要求不同；实习评价及留用答辩意味着仍有甄选环节。",
       "evidenceRefs": [
-        "S-CITY-10"
+        "U0928-S13"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "4afc575d5ed52ecc87436aded08b8ce39ad94515d72c9ba41f84dd95c6ef024a"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "11c0f85f22ee1c0154561bbfbf0b83dddd64dde9c1bb96a9837b9e18d51b4b52"
     },
     "soe-55cb5e9670d088e4902f": {
       "major": "related",
@@ -996,6 +1008,26 @@
       ],
       "reviewedOn": "2026-09-27",
       "basisHash": "c7a76877b0c57bb7eeda5cad6c2883de748ace191068225e07dad225b7d40379"
+    },
+    "soe-6b718e14071e15579098": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "finance",
+        "stats",
+        "research",
+        "risk",
+        "banking"
+      ],
+      "basis": "官方岗位表第6/10/11行明确数理统计或统计；对应工作地上海/福州。第12行研发城市不可与前述专业拼接，个人代码仍须核准。",
+      "qualityBasis": "数字化、交易与需求分析为不同实际业务，培养方式也不同；以具体合同、岗位及考核安排判断，不以银行名称保证稳定或待遇。",
+      "evidenceRefs": [
+        "U0928-S14",
+        "U0928-S15"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "ee384c1975fb1d25e46378de871ac4635b8823892e646d4fbf4f50bfb3cce67f"
     }
   }
 }

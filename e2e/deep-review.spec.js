@@ -1,0 +1,108 @@
+import { test, expect } from '@playwright/test';
+import fs from 'node:fs';
+
+const read = (name) =>
+  JSON.parse(fs.readFileSync(new URL('../data/' + name + '.json', import.meta.url), 'utf8'));
+const rec = read('rec');
+const soe = read('soe');
+const card = (page, id) => page.locator('.card[data-entry-id="' + id + '"]');
+const errors = new WeakMap();
+
+test.beforeEach(async ({ context, page }) => {
+  errors.set(page, []);
+  page.on('pageerror', (error) => errors.get(page).push(error.message));
+  await context.route('**/*', (route) =>
+    new URL(route.request().url()).hostname === '127.0.0.1'
+      ? route.continue()
+      : route.fulfill({ status: 503, contentType: 'application/json', body: '{}' }),
+  );
+});
+
+test.afterEach(async ({ page }) => {
+  expect(errors.get(page)).toEqual([]);
+});
+
+test('deep review: fresh and previous-round REC evidence have different visible dates', async ({
+  page,
+}) => {
+  await page.goto('./', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('.card')).toHaveCount(rec.DATA.length + rec.EXTRA.length);
+  for (const id of ['rec-99da41b4a60e34d30b0c', 'rec-57b33bc4f2a1d871291f']) {
+    await expect(card(page, id).locator('.due-v')).toHaveText('滚动 / 截止待核');
+  }
+  const kuaishou = card(page, 'rec-b210af9eaeaa3d72cea6');
+  await expect(kuaishou.locator('.badges')).toContainText('本次官网记录');
+  const bili = card(page, 'rec-cfc3d445066f6e83ca1d');
+  await expect(bili.locator('.badges')).toContainText('官网记录·2026-09-27');
+  await expect(bili.locator('.badges')).not.toContainText('本次');
+  await page.locator('.chip[data-filter="rev"]').click();
+  await expect(page.locator('.card')).toHaveCount(
+    [...rec.DATA, ...rec.EXTRA].filter((item) => item.rev === rec.RECHECKED).length,
+  );
+  await expect(page.locator('.source-entry[id^="src-U0928-"]').first()).toBeAttached();
+});
+
+test('deep review: CIB cannot inherit preferred work cities from unrelated engineering qualifications', async ({
+  page,
+}) => {
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('.card')).toHaveCount(soe.DATA.length);
+  const cib = card(page, 'soe-6b718e14071e15579098');
+  await expect(cib).toHaveAttribute('data-major', 'statistics');
+  for (const direction of ['stats', 'research']) {
+    await page.locator('#track-filter').selectOption(direction);
+    await page.locator('#location-filter').selectOption('all');
+    await expect(cib).toHaveCount(1);
+    for (const city of ['杭州', '成都', '西安']) {
+      await page.locator('#location-filter').selectOption(city);
+      await expect(cib).toHaveCount(0);
+    }
+  }
+});
+
+test('deep review: date-only deadlines and CCB examination cities remain unambiguous', async ({
+  page,
+}) => {
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  const sanxia = card(page, 'soe-15e8fe78032c98f915c3');
+  await expect(sanxia).toContainText('未给具体时刻');
+  const ccb = card(page, 'soe-9ed0ba98e2b378d91fe7');
+  await expect(ccb).toContainText('24:00');
+  await page.locator('#track-filter').selectOption('software');
+  await page.locator('#location-filter').selectOption('成都');
+  await expect(ccb).toHaveCount(1);
+  for (const city of ['杭州', '重庆', '西安']) {
+    await page.locator('#location-filter').selectOption(city);
+    await expect(ccb).toHaveCount(0);
+  }
+});
+
+test('deep review: older current-cycle dates retain their audit day without being advertised as freshly checked', async ({
+  page,
+}) => {
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  const cdb = card(page, 'soe-b9fb017b087135609736');
+  await expect(cdb).toContainText('既有当届节点（核查 2026-09-27）；本轮未复核');
+  const teleai = card(page, 'soe-4ffa72152f7258fb78a2');
+  await expect(teleai).toHaveAttribute('data-major', 'unknown');
+  await expect(teleai).toHaveClass(/st-verify/);
+  await page.locator('.chip[data-filter="now"]').click();
+  await expect(teleai).toHaveCount(0);
+});
+
+test('deep review: official Zhejiang evidence supports research and software without treating province-wide rotation as a fixed city', async ({
+  page,
+}) => {
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  const zhejiang = card(page, 'soe-74afd94593431265ce3a');
+  await expect(zhejiang).toHaveAttribute('data-major', 'explicit');
+  await expect(zhejiang).toContainText('服从调配');
+  for (const direction of ['research', 'software']) {
+    await page.locator('#track-filter').selectOption(direction);
+    await page.locator('#location-filter').selectOption('杭州');
+    await expect(zhejiang).toHaveCount(1);
+  }
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
+  ).toBe(true);
+});

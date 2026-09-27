@@ -54,14 +54,15 @@ export function createLocationLookup(policy, baseline) {
   );
   const cache = new WeakMap();
   return (item, sources) => {
+    const facts = locationFacts(item, sources);
     const previous = cache.get(item);
-    if (previous?.sources === sources) return previous.value;
+    if (previous?.facts === facts) return previous.value;
     const row = policy.entries[item.id];
     const value =
-      row && originals.get(item.id) === locationFacts(item, sources)
+      row && originals.get(item.id) === facts
         ? { ...row, matched: true }
         : { matched: false, locations: [], current: false };
-    cache.set(item, { sources, value });
+    cache.set(item, { facts, value });
     return value;
   };
 }

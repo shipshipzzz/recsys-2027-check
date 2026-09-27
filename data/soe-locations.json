@@ -4,37 +4,50 @@
   "entries": {
     "soe-74afd94593431265ce3a": {
       "current": true,
-      "reviewedOn": "2026-09-13",
+      "reviewedOn": "2026-09-28",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
           "level": "position",
-          "scope": "浙商食品研究员、中碳数字化运营、盈通信息化岗位；不含服从服务区调配的储备经理",
-          "refs": [
-            "S-CITY-01"
-          ],
           "directions": [
             "research",
-            "stats",
+            "stats"
+          ],
+          "refs": [
+            "U0928-S05"
+          ],
+          "scope": "仅浙商食品大豆产业部研究员：杭州上城，应用统计等优先。"
+        },
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "directions": [
             "operations",
-            "ai"
-          ]
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "U0928-S06",
+            "U0928-S07"
+          ],
+          "scope": "中碳数字化运营及盈通信息化管理在杭州上城；专业和技能要求分别依两份JD，不扩成AI研究岗位。"
         },
         {
           "city": "",
           "province": "浙江",
           "level": "campaign",
-          "scope": "储备经理须服从浙江省内高速服务区调配，具体城市未确认",
+          "scope": "储备经理须服从浙江省高速服务区调配；页面杭州字段不构成固定杭州岗位。",
           "refs": [
-            "S-CITY-01"
+            "U0928-S08"
           ],
           "directions": [
             "operations"
           ]
         }
       ],
-      "basisHash": "3dbf0194d2069340b14b7f0e3488fa2b2f91597bd1701ddd0faa65d75c2ce1fa"
+      "basisHash": "b4ea8bb02710fa66ec192dc31fd55a712eb7ce16a6f2b117900fa43d92d2c4f1"
     },
     "soe-cb0f7783542ae0067238": {
       "current": true,
@@ -73,52 +86,52 @@
     },
     "soe-15e8fe78032c98f915c3": {
       "current": true,
-      "reviewedOn": "2026-09-13",
+      "reviewedOn": "2026-09-28",
       "locations": [
         {
           "city": "重庆",
           "province": "重庆",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
-          "refs": [
-            "S-CITY-03"
-          ],
           "directions": [
             "risk",
             "banking",
             "operations"
-          ]
+          ],
+          "refs": [
+            "U0928-S09"
+          ],
+          "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
         },
         {
           "city": "成都",
           "province": "四川",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
-          "refs": [
-            "S-CITY-03"
-          ],
           "directions": [
             "risk",
             "banking",
             "operations"
-          ]
+          ],
+          "refs": [
+            "U0928-S09"
+          ],
+          "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
         },
         {
           "city": "西安",
           "province": "陕西",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
-          "refs": [
-            "S-CITY-03"
-          ],
           "directions": [
             "risk",
             "banking",
             "operations"
-          ]
+          ],
+          "refs": [
+            "U0928-S09"
+          ],
+          "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
         }
       ],
-      "basisHash": "1b2842854e9364ea182a569c81614aa913dfd91a35e486a53693f03f6f4c42e5"
+      "basisHash": "d6aaa94cf435996f15fd0bae8894df4bfee1b366bae9482961e16d6838389a1e"
     },
     "soe-15dcc83203fa8d55b59c": {
       "current": true,
@@ -335,25 +348,25 @@
     },
     "soe-95134bdc75c0737d281e": {
       "current": true,
-      "reviewedOn": "2026-09-13",
+      "reviewedOn": "2026-09-28",
       "locations": [
         {
           "city": "成都",
           "province": "四川",
           "level": "campaign",
-          "scope": "中心招聘含成都分中心，具体培养方向和专业须岗位附件确认",
-          "refs": [
-            "S-CITY-07"
-          ],
           "directions": [
             "operations",
             "stats",
             "risk",
             "finance"
-          ]
+          ],
+          "refs": [
+            "U0928-S11"
+          ],
+          "scope": "本中心招聘含成都分中心；具体方向、专业及最终定岗需对应岗位附件。"
         }
       ],
-      "basisHash": "905d79dd6e3a5ee1e528b27c8f1714a55e6e4e2287b857b950e812e35ab123fe"
+      "basisHash": "7f17b568868d9e2192fd4f59e296a60ef8dedaa64691346c61f5fbccb32f507c"
     },
     "soe-946c8b35a6045d05921e": {
       "current": true,
@@ -406,83 +419,83 @@
     },
     "soe-6f3da4b7ad2476020757": {
       "current": true,
-      "reviewedOn": "2026-09-13",
+      "reviewedOn": "2026-09-28",
       "locations": [
         {
           "city": "宁波",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
-          "refs": [
-            "S-CITY-09"
-          ],
           "directions": [
             "banking",
             "stats",
             "operations",
             "finance"
-          ]
+          ],
+          "refs": [
+            "U0928-S12"
+          ],
+          "scope": "公告招聘范围为宁波/台州；具体机构与岗位安排另核，不推定杭州。"
         },
         {
           "city": "台州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届招聘工作范围；具体岗位、机构与最终定岗须另核",
-          "refs": [
-            "S-CITY-09"
-          ],
           "directions": [
             "banking",
             "stats",
             "operations",
             "finance"
-          ]
+          ],
+          "refs": [
+            "U0928-S12"
+          ],
+          "scope": "公告招聘范围为宁波/台州；具体机构与岗位安排另核，不推定杭州。"
         }
       ],
-      "basisHash": "f9b9bb6b64925f1cda3faaa0ce2fff33b7f2779bf0b41bb3966510d22104b0dc"
+      "basisHash": "c4fbf6fe9247cd991cc904adeaade4d4b5d9cc2b0ca044e50a07541c7857937d"
     },
     "soe-140f2087c58956d157f6": {
       "current": true,
-      "reviewedOn": "2026-09-13",
+      "reviewedOn": "2026-09-28",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
           "level": "campaign",
-          "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
-          "refs": [
-            "S-CITY-10"
-          ],
           "directions": [
             "product"
-          ]
+          ],
+          "refs": [
+            "U0928-S13"
+          ],
+          "scope": "当届城市名单含此地，但只作为分支财富业务待查入口；未证明当地有总部投研岗位。"
         },
         {
           "city": "成都",
           "province": "四川",
           "level": "campaign",
-          "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
-          "refs": [
-            "S-CITY-10"
-          ],
           "directions": [
             "product"
-          ]
+          ],
+          "refs": [
+            "U0928-S13"
+          ],
+          "scope": "当届城市名单含此地，但只作为分支财富业务待查入口；未证明当地有总部投研岗位。"
         },
         {
           "city": "重庆",
           "province": "重庆",
           "level": "campaign",
-          "scope": "本届城市名单含此地，但未核到当地总部投研职位；地区筛选仅把分支财富业务作为待查入口。",
-          "refs": [
-            "S-CITY-10"
-          ],
           "directions": [
             "product"
-          ]
+          ],
+          "refs": [
+            "U0928-S13"
+          ],
+          "scope": "当届城市名单含此地，但只作为分支财富业务待查入口；未证明当地有总部投研岗位。"
         }
       ],
-      "basisHash": "4a520fba1f1e3d737df2f9c0c8e6b8ee926029b9dd7ca69ea91bf2d8b8980b91"
+      "basisHash": "8899bcb17b452d37066371be85e521713ae56bb4cfa2f544ecb16e34471bc6a4"
     },
     "soe-55cb5e9670d088e4902f": {
       "current": true,
@@ -810,6 +823,139 @@
       ],
       "reviewedOn": "2026-09-27",
       "basisHash": "a9057201b087db658a5d29f7b264d40a5f7b6b8102bd8be9962d1513f21e55fc"
+    },
+    "soe-933afa76439b71816ede": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "position",
+          "directions": [
+            "software",
+            "product"
+          ],
+          "refs": [
+            "U0928-S01"
+          ],
+          "scope": "列表明确成都后端开发与产品经理；不据此认定AI研究员在成都或任何岗位专业已通过。"
+        }
+      ],
+      "basisHash": "b8fc8be4f06b240047502758447c1fd385fc4caada2ad6fd51b814d62099f42d"
+    },
+    "soe-ad455372b0bbb2f021ce": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "campaign",
+          "directions": [
+            "ai",
+            "software",
+            "product"
+          ],
+          "refs": [
+            "U0928-S03"
+          ],
+          "scope": "本届雇主简章办公范围含西安；具体岗位与地点的组合须职位页确认。"
+        }
+      ],
+      "basisHash": "5d1fe51cd03c37807a424b30515245b0e58c6c44fbb67331569b2df501af811f"
+    },
+    "soe-d10aecb1b903d20e8fd8": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "重庆",
+          "province": "重庆",
+          "level": "campaign",
+          "directions": [
+            "ai",
+            "software",
+            "product"
+          ],
+          "refs": [
+            "U0928-S04"
+          ],
+          "scope": "招聘类别表仅研发与市场范围列重庆；职能与供应交付不能沿用该地点。"
+        }
+      ],
+      "basisHash": "1aca41a9414d07496ff8921a883a03e581b1f2f9aa558b81e3b52fe9604a1fbf"
+    },
+    "soe-9ed0ba98e2b378d91fe7": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "campaign",
+          "directions": [
+            "finance",
+            "software"
+          ],
+          "refs": [
+            "U0928-S10"
+          ],
+          "scope": "成都在公司科技专项工作地点名单；不是全国笔试城市外推，也不保证任意具体岗可选成都。"
+        }
+      ],
+      "basisHash": "2f031921d900f9b051b710ef5d13a46dae2fb5c04fba5b163320a5780e169df4"
+    },
+    "soe-6b718e14071e15579098": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "directions": [
+            "finance",
+            "stats",
+            "risk",
+            "banking"
+          ],
+          "refs": [
+            "U0928-S15"
+          ],
+          "scope": "官方附件第6行总行FinTech管培地点；数理统计专业依据不能套给第12行研发岗。"
+        },
+        {
+          "city": "福州",
+          "province": "福建",
+          "level": "position",
+          "directions": [
+            "finance",
+            "stats",
+            "risk",
+            "banking"
+          ],
+          "refs": [
+            "U0928-S15"
+          ],
+          "scope": "官方附件第6行总行FinTech管培地点；数理统计专业依据不能套给第12行研发岗。"
+        },
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "directions": [
+            "research",
+            "finance",
+            "stats"
+          ],
+          "refs": [
+            "U0928-S15"
+          ],
+          "scope": "官方附件第10—11行资金营运投资交易及FinTech；两类岗位各有独立技能要求。"
+        }
+      ],
+      "basisHash": "ee1c8ffa7f34d0442c01deb333e4d3bb3ab67e2b5f527736951d5aae5c86a354"
     }
   }
 }

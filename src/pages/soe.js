@@ -75,7 +75,9 @@ function daysTo(iso) {
 }
 function deadlineFor(item) {
   if (!item.due) return null;
-  const fresh = item.audit?.checked === RECHECKED && assessmentFor(item).cycle === 'current';
+  const assessment = assessmentFor(item);
+  const current = assessment.matched && assessment.cycle === 'current';
+  const fresh = item.audit?.checked === RECHECKED && current;
   return {
     date: item.due,
     time: item.dueTime || null,
@@ -83,7 +85,11 @@ function deadlineFor(item) {
     confidence: fresh ? 'supported' : 'pending',
     scope: item.dueScope || '原版日期（待复核）',
     refs: item.audit?.refs || ['H02'],
-    note: fresh ? '按明确批次计时；个人资格仍须核对' : '原历史日期；不冒充本轮硬截止',
+    note: fresh
+      ? '按明确批次计时；个人资格仍须核对'
+      : current && item.audit?.checked
+        ? '既有当届节点（核查 ' + item.audit.checked + '）；本轮未复核，提交前确认。'
+        : '原历史日期；不冒充本轮硬截止',
   };
 }
 function currentActionable(item) {
@@ -196,7 +202,7 @@ function card(item) {
     <p class="card-gist"><b>现在动作</b>${escapeHTML(item.action)}</p>
     <div class="links">${itemLinks(item, 'own')}</div>
     <details class="more card-details"><summary>详情：专业依据 · 岗位 · 地区 · 风险 · 核查记录</summary>
-    ${u.scope ? `<p class="node-scope">${escapeHTML(u.scope)} ${sourceRefs(item.audit?.refs || ['H02'])}</p>` : ''}
+    ${u.scope ? `<p class="node-scope">${escapeHTML(u.scope)} ${escapeHTML(u.event?.note || '')} ${sourceRefs(item.audit?.refs || ['H02'])}</p>` : ''}
     <div class="screening-summary"><div class="screening-badges"><strong data-major-label>${MAJOR_LEVELS[assessment.major]}</strong><span data-cycle-label>${CYCLES[assessment.cycle]}</span></div><p>${escapeHTML(assessment.basis)}</p><small>专业依据不等于个人全部资格通过；以具体职位与招聘方认定为准。</small></div>
     <p class="field"><b>岗位 / 职责</b>${escapeHTML(item.jobs)}</p>
     <p class="field"><b>专业条件</b>${escapeHTML(item.req || '具体专业要求待核')}</p><p class="field"><b>招聘对象</b>${escapeHTML(item.window || '具体毕业窗待核')}</p>

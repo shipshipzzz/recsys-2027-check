@@ -43,7 +43,12 @@ test('a campaign recheck does not turn old job counts or unsupported dates into 
 }) => {
   await page.goto('./', { waitUntil: 'domcontentloaded' });
   const bili = card(page, 'rec-cfc3d445066f6e83ca1d');
-  await expect(bili.locator('.badges')).toContainText('官网正文·本次');
+  const biliFacts = rec.DATA.find((item) => item.id === 'rec-cfc3d445066f6e83ca1d');
+  await expect(bili.locator('.badges')).toContainText(
+    biliFacts.audit.checked === rec.RECHECKED
+      ? '官网正文·本次'
+      : '官网记录·' + biliFacts.audit.checked,
+  );
   await expect(bili.locator('.due-v')).toHaveText('滚动 / 截止待核');
   await expect(bili).toContainText('不作为实时数量');
   const vivo = card(page, 'rec-69337578b2468a881543');
