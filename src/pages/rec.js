@@ -19,7 +19,8 @@ const view = createCatalogView(
   () => catalog,
   () => buildRail(),
 );
-const { sourceRefs, auditHTML, historyHTML, textMatch, itemLinks, setupCommon } = view;
+const { sourceRefs, auditHTML, historyHTML, textMatch, itemLinks, evidenceLinks, setupCommon } =
+  view;
 
 const grid = document.getElementById('grid'),
   extraGrid = document.getElementById('extra'),
@@ -94,11 +95,13 @@ function cardHTML(item, i, hidden) {
         ${personal.controls(item)}
         <div class="top"><div><h3 class="name">${escapeHTML(item.name)}</h3><div class="en">${escapeHTML(item.en)}</div></div><div class="badges">${badge(item)}</div></div>
         <div class="due ${m.cls}"><span class="due-k">${ev?.confidence === 'pending' ? '待核节点' : '截止 / 节点'}</span><span class="due-v">${escapeHTML(date)}</span><span class="due-pill">${m.label}</span></div>
+        <p class="card-gist">${escapeHTML(item.note)}</p>
+        <div class="links">${itemLinks(item, 'own')}</div>
+        <details class="more card-details"><summary>详情：岗位 · 时间 · 城市 · 要求 · 核查记录</summary>
         ${ev ? `<p class="node-scope">${escapeHTML(ev.scope)} · ${escapeHTML(ev.note || '')} ${sourceRefs(ev.refs)}</p>` : ''}
-        ${auditHTML(item)}
         <p class="field"><b>何时结束</b>${escapeHTML(item.closes || '未见统一截止')}</p><p class="field"><b>岗位情况</b>${escapeHTML(item.jobs)}</p>
-        <details class="more"><summary>展开：放出时间 · 毕业窗 · 城市 · 硬性要求</summary><p class="field"><b>何时放出</b>${escapeHTML(item.opened)}</p><p class="field"><b>毕业时间</b>${escapeHTML(item.window)}</p><p class="field"><b>城市</b>${escapeHTML(item.city)}</p><p class="field"><b>硬性要求</b>${escapeHTML(item.req)}</p></details>
-        <div class="links">${itemLinks(item)}</div><p class="note">${escapeHTML(item.note)}</p>${historyHTML(item)}</article>`;
+        <p class="field"><b>何时放出</b>${escapeHTML(item.opened)}</p><p class="field"><b>毕业时间</b>${escapeHTML(item.window)}</p><p class="field"><b>城市</b>${escapeHTML(item.city)}</p><p class="field"><b>硬性要求</b>${escapeHTML(item.req)}</p>
+        ${auditHTML(item)}${evidenceLinks(item)}${historyHTML(item)}</details></article>`;
 }
 function matchFilter(item) {
   if (filter === 'rev') return item.rev === RECHECKED;

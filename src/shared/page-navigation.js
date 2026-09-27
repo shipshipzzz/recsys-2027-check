@@ -25,15 +25,22 @@ export function createPageNavigation() {
         localStorage.setItem(preferenceKey, fold.open ? 'open' : 'closed');
       } catch {}
     });
-    listen(window, 'beforeprint', () => {
-      if (printState === null) printState = fold.open;
-      fold.open = true;
-    });
-    listen(window, 'afterprint', () => {
-      if (printState !== null) fold.open = printState;
-      printState = null;
-    });
   }
+  // Print every folded section and card in full, then restore what the reader had open.
+  function restorePrintState() {
+    if (printState === null) return;
+    for (const [node, open] of printState) node.open = open;
+    printState = null;
+  }
+  listen(window, 'beforeprint', () => {
+    if (printState !== null) return;
+    printState = new Map();
+    for (const node of document.querySelectorAll('details.fold, details.card-details')) {
+      printState.set(node, node.open);
+      node.open = true;
+    }
+  });
+  listen(window, 'afterprint', restorePrintState);
 
   // Both bars may wrap at larger text sizes; do not hard-code their heights.
   function measureBars() {
@@ -113,7 +120,7 @@ export function createPageNavigation() {
       lifetime.abort();
       observer.disconnect();
       cancelAnimationFrame(frame);
-      if (fold && printState !== null) fold.open = printState;
+      restorePrintState();
       root.style.removeProperty('--directory-offset');
       root.style.removeProperty('--filters-offset');
     },

@@ -53,7 +53,8 @@ const view = createCatalogView(
     },
   }),
 );
-const { sourceRefs, auditHTML, historyHTML, textMatch, itemLinks, setupCommon } = view;
+const { sourceRefs, auditHTML, historyHTML, textMatch, itemLinks, evidenceLinks, setupCommon } =
+  view;
 
 const STATUS = {
   open: ['公告窗口开放 · 资格另核', 'b-open'],
@@ -128,6 +129,13 @@ function rank(item) {
   return 260;
 }
 
+/** Short visible hint; the full geographic evidence stays in the card details. */
+function locationFact(item) {
+  const geography = geographyFor(item);
+  if (!geography.matched || !geography.locations.length) return '';
+  const bonus = locationBonus(geography, trackFilter);
+  return bonus > 0 ? '<span class="fact fact-accent">偏好地区 +' + bonus + '</span>' : '';
+}
 function geographicHTML(item) {
   const geography = geographyFor(item),
     bonus = locationBonus(geography, trackFilter);
@@ -182,18 +190,22 @@ function card(item) {
     ${personal.controls(item)}
     <div class="card-head"><div><div class="rankline"><span class="tier t-${item.tier}">${item.tier} 参考</span><span class="badge ${st[1]}">${label}</span></div><h3 class="name">${escapeHTML(item.name)}</h3><div class="en">${escapeHTML(item.en)}</div></div><div class="score">${item.fit}<small>参考 / 100</small></div></div>
     <div class="screening-directions">${directions}</div>
-    <div class="screening-summary"><div class="screening-badges"><strong data-major-label>${MAJOR_LEVELS[assessment.major]}</strong><span data-cycle-label>${CYCLES[assessment.cycle]}</span></div><p>${escapeHTML(assessment.basis)}</p><small>专业依据不等于个人全部资格通过；以具体职位与招聘方认定为准。</small></div>
-    <div class="action-strip ${u.cls}"><span class="k">DATE</span><strong>${escapeHTML(u.text)}${alt}</strong><span class="pill">${escapeHTML(u.label)}</span></div>
+    <p class="screening-line"><strong>${MAJOR_LEVELS[assessment.major]}</strong><span>${CYCLES[assessment.cycle]}</span></p>
+    <div class="action-strip ${u.cls}"><span class="k">日期</span><strong>${escapeHTML(u.text)}${alt}</strong><span class="pill">${escapeHTML(u.label)}</span></div>
+    <div class="facts"><span class="fact">${escapeHTML(item.ownership)}</span><span class="fact">${escapeHTML(item.city)}</span>${item.xian ? '<span class="fact">含西安/西北</span>' : ''}${locationFact(item)}</div>
+    <p class="card-gist"><b>现在动作</b>${escapeHTML(item.action)}</p>
+    <div class="links">${itemLinks(item, 'own')}</div>
+    <details class="more card-details"><summary>详情：专业依据 · 岗位 · 地区 · 风险 · 核查记录</summary>
     ${u.scope ? `<p class="node-scope">${escapeHTML(u.scope)} ${sourceRefs(item.audit?.refs || ['H02'])}</p>` : ''}
-    <div class="facts"><span class="fact">${escapeHTML(item.ownership)}</span><span class="fact">${escapeHTML(item.city)}</span>${item.xian ? '<span class="fact">含西安/西北</span>' : ''}</div>
-    ${geographicHTML(item)}
-    ${auditHTML(item)}
-    <p class="field"><b>现在动作</b>${escapeHTML(item.action)}</p><p class="field"><b>岗位 / 职责</b>${escapeHTML(item.jobs)}</p>
+    <div class="screening-summary"><div class="screening-badges"><strong data-major-label>${MAJOR_LEVELS[assessment.major]}</strong><span data-cycle-label>${CYCLES[assessment.cycle]}</span></div><p>${escapeHTML(assessment.basis)}</p><small>专业依据不等于个人全部资格通过；以具体职位与招聘方认定为准。</small></div>
+    <p class="field"><b>岗位 / 职责</b>${escapeHTML(item.jobs)}</p>
     <p class="field"><b>专业条件</b>${escapeHTML(item.req || '具体专业要求待核')}</p><p class="field"><b>招聘对象</b>${escapeHTML(item.window || '具体毕业窗待核')}</p>
     ${item.closes ? '<p class="field"><b>报名窗口</b>' + escapeHTML(item.closes) + '</p>' : ''}
     <p class="field risk"><b>风险 / 取舍</b>${escapeHTML(item.risk)}</p>
-    <details class="more"><summary>展开：收录理由、简历与证据</summary><p class="field"><b>单位 / 岗位依据</b>${escapeHTML(assessment.qualityBasis)}</p><p class="field"><b>能力联系</b>${escapeHTML(item.why)}</p><p class="field"><b>简历建议</b>${escapeHTML(item.resume)}</p><p class="field"><b>证据状态</b>${escapeHTML(item.evidence)}</p></details>
-    <div class="links">${itemLinks(item)}</div><p class="note">${escapeHTML(item.note)}</p>${historyHTML(item)}</article>`;
+    ${geographicHTML(item)}
+    <p class="field"><b>单位 / 岗位依据</b>${escapeHTML(assessment.qualityBasis)}</p><p class="field"><b>能力联系</b>${escapeHTML(item.why)}</p><p class="field"><b>简历建议</b>${escapeHTML(item.resume)}</p><p class="field"><b>证据状态</b>${escapeHTML(item.evidence)}</p>
+    <p class="note">${escapeHTML(item.note)}</p>
+    ${auditHTML(item)}${evidenceLinks(item)}${historyHTML(item)}</details></article>`;
 }
 function isUrgent(item) {
   if (assessmentFor(item).cycle !== 'current' || item.status === 'past') return false;

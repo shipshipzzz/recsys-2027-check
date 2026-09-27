@@ -1,4 +1,4 @@
-/* Shared interaction/accessibility rules; original palettes and layouts remain. */
+/* Shared interaction/accessibility rules; palettes and layouts live in the page stylesheets. */
 [hidden] {
   display: none !important;
 }
@@ -32,7 +32,7 @@
 @supports (content-visibility: auto) {
   .card {
     content-visibility: auto;
-    contain-intrinsic-size: auto 660px;
+    contain-intrinsic-size: auto 380px;
   }
   .card:focus-within,
   .card:has(details[open]) {
@@ -89,14 +89,7 @@
   }
 }
 
-/* AA-readable small text on the existing warm/green surfaces. */
-:root[data-page-kind='rec']:not([data-theme='dark']) {
-  --accent: #9d451b;
-  --muted: #665e53;
-}
-:root[data-page-kind='soe']:not([data-theme='dark']) {
-  --muted: #596a62;
-}
+/* Page palettes in rec.css and soe.css are tuned for AA small text in both themes. */
 :root .rail li.is-past {
   opacity: 1;
 }

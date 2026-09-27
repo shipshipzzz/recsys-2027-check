@@ -6,19 +6,18 @@
     <title>2027 届秋招核查 · 32 家 · 推荐算法</title>
 
     <style id="incremental-enhancements">
-      /* Original stylesheet above is unchanged. Only new evidence controls and narrow-screen overflow are handled here. */
+      /* Evidence controls and narrow-screen overflow; page palettes and components live in src/styles. */
       .audit-note {
         margin: 0 0 12px;
         padding: 10px 12px;
-        border: 1px dashed var(--line);
+        border: 1px solid var(--line);
         border-radius: 10px;
         color: var(--muted);
         font-size: 12.3px;
         overflow-wrap: anywhere;
       }
       .audit-note.is-current {
-        border-style: solid;
-        border-left: 3px solid var(--accent);
+        border-color: transparent;
         background: var(--card-soft, var(--card2));
         color: var(--ink-soft, var(--soft));
       }
@@ -33,12 +32,13 @@
         color: var(--muted);
       }
       .source-ref {
-        font: 11px var(--mono);
-        color: var(--accent);
+        font: 10.5px var(--mono);
+        color: var(--muted);
         text-decoration: none;
         white-space: nowrap;
       }
       .source-ref:hover {
+        color: var(--accent);
         text-decoration: underline;
       }
       .node-scope {
@@ -253,11 +253,10 @@
           font-size: 10.5px;
         }
         .score {
-          width: 54px;
-          height: 54px;
+          min-width: 50px;
         }
         .name {
-          font-size: 24px;
+          font-size: 19px;
         }
       }
       @media print {
@@ -328,149 +327,180 @@
         <div class="stat"><b id="n-wait">0</b><span>核心待开 / 待核</span></div>
       </section>
 
-      <section class="panel" id="changelog">
-        <h2>更新日志</h2>
-        <p class="sub">
-          按核查日看相对上一版改了什么。默认收起，点日期展开。标签：新增、变化、口径、仍未开、未改。
-        </p>
-        <div class="log" id="log"></div>
-      </section>
+      <details class="panel fold" id="changelog">
+        <summary>
+          <div class="fold-title">
+            <h2>更新日志</h2>
+            <span>每轮核查相对上一版改了什么</span>
+          </div>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <p class="sub">
+            按核查日看相对上一版改了什么。默认收起，点日期展开。标签：新增、变化、口径、仍未开、未改。
+          </p>
+          <div class="log" id="log"></div>
+        </div>
+      </details>
 
-      <section class="panel method">
-        <h2>这些信息是 Playwriter 实现的吗？</h2>
-        <p class="supplement-note">
-          <strong>本次方法说明：</strong
-          >以下原版方法说明保留作8月历史。本次使用公开网页检索、用人单位高校正文与独立无头Chrome读取官方页面；没有使用个人浏览器会话、登录或投递，也没有重新核验全部附件与岗位。
-        </p>
-        <p>
-          <strong>不完全是。</strong
-          >放出时间和岗位摘要仍有一部分来自高校就业网与招聘转发；状态变化则尽量回到官网动态职位池核验。Boss
-          直聘的反爬空白不作为现场证据，无法进入职位池的公司也不会据此写成“可投”。
-        </p>
-        <ul>
-          <li>
-            <strong>Playwriter 亲见（本轮或上轮打开并抽出文字）</strong
-            >：腾讯、字节、阿里、美团、快手、小米、蚂蚁、滴滴、拼多多、B
-            站、OPPO、得物、小红书、网易、京东首页、华为首页、vivo 校招首页、Shopee Moka、TME、微博
-            Moka、Soul 飞书、哈啰、360、好未来、携程校招页。
-          </li>
-          <li>
-            <strong>打开失败 / 未进职位池</strong>：百度 talent.baidu.com 两次跳
-            about:blank（职位原文由你从官网贴回）；华为「查看职位」要点登录；vivo /
-            京东搜「推荐」界面没滤干净；SHEIN 落到空 lander；Boss 不能当现场源。
-          </li>
-          <li>
-            <strong>8/31 第四轮</strong>：亲见携程 2027 校招及 11 个算法岗位、网易三条 2027
-            项目、微博 2027 技术项目、中国电信 46 家招聘单位、中科芯 46
-            个岗位；也亲见九天与联通数科当前公司页为空、中国航信最新公告仍是 2026 届。
-          </li>
-          <li>
-            <strong>仍是新闻/高校辅证</strong
-            >：多数统一截止日、讯飞飞凡、作业帮、爱奇艺、MetaApp，以及部分中厂补网。页面会明确写“第三方口径”，不会把信息页有效期冒充网申截止。
-          </li>
-          <li>
-            <strong>截止日怎么标</strong
-            >：官网须知原文优先；牛客/高校就业网/公众号转载会写明。超级简历自动推算的日期会标「疑平台推算」。
-          </li>
-        </ul>
-      </section>
+      <details class="panel fold method">
+        <summary>
+          <div class="fold-title">
+            <h2>这些信息是 Playwriter 实现的吗？</h2>
+            <span>证据来源、读取方式与截止日标注口径</span>
+          </div>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <p class="supplement-note">
+            <strong>本次方法说明：</strong
+            >以下原版方法说明保留作8月历史。本次使用公开网页检索、用人单位高校正文与独立无头Chrome读取官方页面；没有使用个人浏览器会话、登录或投递，也没有重新核验全部附件与岗位。
+          </p>
+          <p>
+            <strong>不完全是。</strong
+            >放出时间和岗位摘要仍有一部分来自高校就业网与招聘转发；状态变化则尽量回到官网动态职位池核验。Boss
+            直聘的反爬空白不作为现场证据，无法进入职位池的公司也不会据此写成“可投”。
+          </p>
+          <ul>
+            <li>
+              <strong>Playwriter 亲见（本轮或上轮打开并抽出文字）</strong
+              >：腾讯、字节、阿里、美团、快手、小米、蚂蚁、滴滴、拼多多、B
+              站、OPPO、得物、小红书、网易、京东首页、华为首页、vivo 校招首页、Shopee
+              Moka、TME、微博 Moka、Soul 飞书、哈啰、360、好未来、携程校招页。
+            </li>
+            <li>
+              <strong>打开失败 / 未进职位池</strong>：百度 talent.baidu.com 两次跳
+              about:blank（职位原文由你从官网贴回）；华为「查看职位」要点登录；vivo /
+              京东搜「推荐」界面没滤干净；SHEIN 落到空 lander；Boss 不能当现场源。
+            </li>
+            <li>
+              <strong>8/31 第四轮</strong>：亲见携程 2027 校招及 11 个算法岗位、网易三条 2027
+              项目、微博 2027 技术项目、中国电信 46 家招聘单位、中科芯 46
+              个岗位；也亲见九天与联通数科当前公司页为空、中国航信最新公告仍是 2026 届。
+            </li>
+            <li>
+              <strong>仍是新闻/高校辅证</strong
+              >：多数统一截止日、讯飞飞凡、作业帮、爱奇艺、MetaApp，以及部分中厂补网。页面会明确写“第三方口径”，不会把信息页有效期冒充网申截止。
+            </li>
+            <li>
+              <strong>截止日怎么标</strong
+              >：官网须知原文优先；牛客/高校就业网/公众号转载会写明。超级简历自动推算的日期会标「疑平台推算」。
+            </li>
+          </ul>
+        </div>
+      </details>
 
-      <section class="panel">
-        <h2>本轮官网亲见的推荐岗</h2>
-        <p class="sub">
-          <strong>原版8月亲见摘要，完整保留。</strong
-          >下列106、481、16等是原日期关键词结果，不是本轮实时岗位数；可能混有实习/社招。TME社招不可当校招证据；当前变化见卡片及本轮日志。
-        </p>
-        <div class="hits">
-          <div class="hit">
-            <b>腾讯 · 搜「推荐」106 岗</b
-            ><span
-              >正式批标题就是「算法-推荐算法方向」（应届 /
-              应届实习，深/北/上/广，CDG·CSIG·IEG·PCG·WXG）。青云课题含视频号 Scaling
-              Up、微信小店生成式推荐、PCG TRS、广告推荐大模型。</span
-            >
+      <details class="panel fold">
+        <summary>
+          <div class="fold-title">
+            <h2>本轮官网亲见的推荐岗</h2>
+            <span>8 月官网亲见的推荐岗位摘要（历史记录）</span>
           </div>
-          <div class="hit">
-            <b>字节 · 关键词「推荐」481 条（勾了 2027 校招项目）</b
-            ><span
-              >正式岗亲见：番茄 / 头条 / 抖音 / 抖音电商&amp;直播 / TikTok Shop / TikTok
-              算法「推荐大模型」「短剧推荐」。ByteIntern 写明面向 2026.09–2027.08 毕业。</span
-            >
-          </div>
-          <div class="hit">
-            <b>快手 · 搜「推荐」16 岗（8/17 为 15）</b
-            ><span
-              >8/18 新开三岗。常规：推荐大模型 / 推荐模型 / 推荐算法 / 生成式推荐 / 推荐系统。快
-              Star：OneRec、冷启、生产、社交生成式、视频/消息/直播推荐、Agent-短视频推荐。</span
-            >
-          </div>
-          <div class="hit">
-            <b>美团 · 搜「推荐」39 岗（8/17 为 36）</b
-            ><span
-              >8/17 晚间 2027
-              正式启动。应届【北斗】推荐大模型仍在。新增大模型搜索推荐算法工程师（北/上，8/17
-              更新）。另有生成式推荐、拼好饭、酒旅、外卖商品搜推等实习/转正实习。</span
-            >
-          </div>
-          <div class="hit">
-            <b>阿里 · 搜「推荐」7 岗</b
-            ><span>淘天/国际/高德/虎鲸/盒马搜索推荐，生成式推荐，阿里星推荐大模型。</span>
-          </div>
-          <div class="hit">
-            <b>蚂蚁 · 4 岗</b
-            ><span
-              >搜索推荐广告算法（北/上/杭，毕业
-              2026-11-01～2027-10-31）；搜索推荐广告算法工程（杭州）；两条研究型实习：LLM
-              推荐、生成式推荐统一建模。</span
-            >
-          </div>
-          <div class="hit">
-            <b>滴滴 · 2 岗 · 均 2026-08-13 发</b
-            ><span
-              >起终点推荐（CTO，北京，本科+）；国际化外卖-推荐（北/上，硕士+，生成式召回/排序）。秋招可投
-              3 次。</span
-            >
-          </div>
-          <div class="hit">
-            <b>小米 · 搜「推荐」13 条</b
-            ><span
-              >搜索与推荐算法工程师（北京/南京，正式，2027）。广告算法、训练框架也写搜推。须知：网申
-              2026-08-10 至 2027-06 底，最多 2 岗、同时只走 1 个流程。</span
-            >
-          </div>
-          <div class="hit">
-            <b>B 站 · 3 岗 · 均上海 · 2026-08-07</b
-            ><span
-              >推荐算法工程师 / 电商推荐算法工程师 / 推荐研发工程师【2027届】。最多 2 志愿。</span
-            >
-          </div>
-          <div class="hit">
-            <b>拼多多 · 岗位名不叫推荐，JD 写了</b
-            ><span
-              >算法工程师（上海，硕士+，2026-07-05）：搜索、推荐、广告。大模型算法工程师（硕博，2026-05-08）写生成式推荐。搜「推荐」标题为
-              0。</span
-            >
-          </div>
-          <div class="hit">
-            <b>OPPO / 得物 / Shopee / TME</b
-            ><span
-              >OPPO 应届「算法工程师（推广/搜索/广告方向）」成都/深圳，JD
-              写推荐搜索广告。得物搜「推荐」17 条，含搜广推工程、AI 搜推产品、生成式召回实习。Shopee
-              Moka：搜广推大模型（北上深，急）。TME 社招：QQ 音乐、酷狗推荐算法工程师。</span
-            >
-          </div>
-          <div class="hit">
-            <b>百度 · 你在官网搜「推荐」11 条（Playwriter 打不开）</b
-            ><span
-              >校招主力：北京搜广推 J101090（35 人）、上海搜广推 J101091（5 人），都是
-              2026-07-21。另有策略/用户产品、搜索架构、AIDU 大模型/多模态（JD
-              写落地到搜索、推荐）。日历和投递规则用新闻补。</span
-            >
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <p class="sub">
+            <strong>原版8月亲见摘要，完整保留。</strong
+            >下列106、481、16等是原日期关键词结果，不是本轮实时岗位数；可能混有实习/社招。TME社招不可当校招证据；当前变化见卡片及本轮日志。
+          </p>
+          <div class="hits">
+            <div class="hit">
+              <b>腾讯 · 搜「推荐」106 岗</b
+              ><span
+                >正式批标题就是「算法-推荐算法方向」（应届 /
+                应届实习，深/北/上/广，CDG·CSIG·IEG·PCG·WXG）。青云课题含视频号 Scaling
+                Up、微信小店生成式推荐、PCG TRS、广告推荐大模型。</span
+              >
+            </div>
+            <div class="hit">
+              <b>字节 · 关键词「推荐」481 条（勾了 2027 校招项目）</b
+              ><span
+                >正式岗亲见：番茄 / 头条 / 抖音 / 抖音电商&amp;直播 / TikTok Shop / TikTok
+                算法「推荐大模型」「短剧推荐」。ByteIntern 写明面向 2026.09–2027.08 毕业。</span
+              >
+            </div>
+            <div class="hit">
+              <b>快手 · 搜「推荐」16 岗（8/17 为 15）</b
+              ><span
+                >8/18 新开三岗。常规：推荐大模型 / 推荐模型 / 推荐算法 / 生成式推荐 / 推荐系统。快
+                Star：OneRec、冷启、生产、社交生成式、视频/消息/直播推荐、Agent-短视频推荐。</span
+              >
+            </div>
+            <div class="hit">
+              <b>美团 · 搜「推荐」39 岗（8/17 为 36）</b
+              ><span
+                >8/17 晚间 2027
+                正式启动。应届【北斗】推荐大模型仍在。新增大模型搜索推荐算法工程师（北/上，8/17
+                更新）。另有生成式推荐、拼好饭、酒旅、外卖商品搜推等实习/转正实习。</span
+              >
+            </div>
+            <div class="hit">
+              <b>阿里 · 搜「推荐」7 岗</b
+              ><span>淘天/国际/高德/虎鲸/盒马搜索推荐，生成式推荐，阿里星推荐大模型。</span>
+            </div>
+            <div class="hit">
+              <b>蚂蚁 · 4 岗</b
+              ><span
+                >搜索推荐广告算法（北/上/杭，毕业
+                2026-11-01～2027-10-31）；搜索推荐广告算法工程（杭州）；两条研究型实习：LLM
+                推荐、生成式推荐统一建模。</span
+              >
+            </div>
+            <div class="hit">
+              <b>滴滴 · 2 岗 · 均 2026-08-13 发</b
+              ><span
+                >起终点推荐（CTO，北京，本科+）；国际化外卖-推荐（北/上，硕士+，生成式召回/排序）。秋招可投
+                3 次。</span
+              >
+            </div>
+            <div class="hit">
+              <b>小米 · 搜「推荐」13 条</b
+              ><span
+                >搜索与推荐算法工程师（北京/南京，正式，2027）。广告算法、训练框架也写搜推。须知：网申
+                2026-08-10 至 2027-06 底，最多 2 岗、同时只走 1 个流程。</span
+              >
+            </div>
+            <div class="hit">
+              <b>B 站 · 3 岗 · 均上海 · 2026-08-07</b
+              ><span
+                >推荐算法工程师 / 电商推荐算法工程师 / 推荐研发工程师【2027届】。最多 2 志愿。</span
+              >
+            </div>
+            <div class="hit">
+              <b>拼多多 · 岗位名不叫推荐，JD 写了</b
+              ><span
+                >算法工程师（上海，硕士+，2026-07-05）：搜索、推荐、广告。大模型算法工程师（硕博，2026-05-08）写生成式推荐。搜「推荐」标题为
+                0。</span
+              >
+            </div>
+            <div class="hit">
+              <b>OPPO / 得物 / Shopee / TME</b
+              ><span
+                >OPPO 应届「算法工程师（推广/搜索/广告方向）」成都/深圳，JD
+                写推荐搜索广告。得物搜「推荐」17 条，含搜广推工程、AI
+                搜推产品、生成式召回实习。Shopee Moka：搜广推大模型（北上深，急）。TME 社招：QQ
+                音乐、酷狗推荐算法工程师。</span
+              >
+            </div>
+            <div class="hit">
+              <b>百度 · 你在官网搜「推荐」11 条（Playwriter 打不开）</b
+              ><span
+                >校招主力：北京搜广推 J101090（35 人）、上海搜广推 J101091（5 人），都是
+                2026-07-21。另有策略/用户产品、搜索架构、AIDU 大模型/多模态（JD
+                写落地到搜索、推荐）。日历和投递规则用新闻补。</span
+              >
+            </div>
           </div>
         </div>
-      </section>
+      </details>
 
-      <details class="panel public-timeline" id="timeline">
+      <details class="panel fold public-timeline" id="timeline">
         <summary aria-controls="public-timeline-content">
           <div class="public-timeline-title">
             <h2>2027 届时间线</h2>

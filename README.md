@@ -1,6 +1,6 @@
 # 2027 校招核查 · 个人投递工作台
 
-保留原推荐算法页和国企 / 金融科技页的视觉、筛选、来源、完整历史记录与时间线，接入 Supabase PostgreSQL、Auth 和自动生成的 REST API。
+保留原推荐算法页和国企 / 金融科技页的筛选、来源、完整历史记录与时间线（2026-09-28 起采用简化后的统一视觉），接入 Supabase PostgreSQL、Auth 和自动生成的 REST API。
 
 ## 最近重点核查（北京时间 2026-09-27）
 
@@ -163,7 +163,7 @@ Supabase Free 不是无限容量，也不保证永不暂停。正式长期使用
 
 ```text
 src/pages/rec.js, soe.js   原页面渲染与查询衔接
-src/styles/              原版视觉样式
+src/styles/              两页的配色、排版与组件样式
 src/personal.js, .css    个人工作台和卡片操作
 src/state-store.js       持久化与待同步操作
 src/backend.js          公共资料与用户 Auth 分离的 Supabase 连接

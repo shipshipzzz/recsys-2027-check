@@ -102,19 +102,27 @@ export function createCatalogView(getCatalog, buildRail = () => null, extraExpor
       .filter(Boolean)
       .every((t) => currentSearchText(item).includes(t));
   }
-  function itemLinks(item) {
+  /** part: 'own' = the card's own entry links, 'sources' = extra audit evidence, 'all' = both. */
+  function itemLinks(item, part = 'all') {
     const { SOURCES } = getCatalog();
-    const links = [...(item.links || [])];
+    const own = [...(item.links || [])];
+    const sources = [];
     for (const id of item.audit?.refs || []) {
       const s = SOURCES[id];
-      if (s?.url && !links.some((x) => x[1] === s.url)) links.push([id + ' · ' + s.title, s.url]);
+      if (s?.url && ![...own, ...sources].some((x) => x[1] === s.url))
+        sources.push([id + ' · ' + s.title, s.url]);
     }
+    const links = part === 'own' ? own : part === 'sources' ? sources : [...own, ...sources];
     return links
       .map(
         ([t, h]) =>
           `<a href="${escapeHTML(safeHref(h))}" target="_blank" rel="noopener noreferrer">${escapeHTML(t)}</a>`,
       )
       .join('');
+  }
+  function evidenceLinks(item) {
+    const links = itemLinks(item, 'sources');
+    return links ? `<div class="links evidence-links">${links}</div>` : '';
   }
   function renderSources() {
     const catalog = getCatalog();
@@ -185,6 +193,7 @@ export function createCatalogView(getCatalog, buildRail = () => null, extraExpor
     historyHTML,
     textMatch,
     itemLinks,
+    evidenceLinks,
     setupCommon,
     renderSources,
     revealHash,

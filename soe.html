@@ -47,19 +47,18 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
     <title>2027 应用统计机会池 · 央国企与国资关联招聘</title>
 
     <style id="incremental-enhancements">
-      /* Original stylesheet above is unchanged. Only new evidence controls and narrow-screen overflow are handled here. */
+      /* Evidence controls and narrow-screen overflow; page palettes and components live in src/styles. */
       .audit-note {
         margin: 0 0 12px;
         padding: 10px 12px;
-        border: 1px dashed var(--line);
+        border: 1px solid var(--line);
         border-radius: 10px;
         color: var(--muted);
         font-size: 12.3px;
         overflow-wrap: anywhere;
       }
       .audit-note.is-current {
-        border-style: solid;
-        border-left: 3px solid var(--accent);
+        border-color: transparent;
         background: var(--card-soft, var(--card2));
         color: var(--ink-soft, var(--soft));
       }
@@ -74,12 +73,13 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
         color: var(--muted);
       }
       .source-ref {
-        font: 11px var(--mono);
-        color: var(--accent);
+        font: 10.5px var(--mono);
+        color: var(--muted);
         text-decoration: none;
         white-space: nowrap;
       }
       .source-ref:hover {
+        color: var(--accent);
         text-decoration: underline;
       }
       .node-scope {
@@ -294,11 +294,10 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
           font-size: 10.5px;
         }
         .score {
-          width: 54px;
-          height: 54px;
+          min-width: 50px;
         }
         .name {
-          font-size: 24px;
+          font-size: 19px;
         }
       }
       @media print {
@@ -363,36 +362,49 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
         </div>
       </header>
 
-      <section class="profile-strip">
-        <div class="profile-main">
-          <div class="eyebrow">你的机会标准</div>
-          <strong>专业有依据，工作有联系，单位值得考虑。</strong>
-          <p>不按岗位是否建模来决定收录；先说明机会与条件，再由你安排精力。</p>
+      <details class="panel fold profile-fold">
+        <summary>
+          <div class="fold-title">
+            <h2>我的背景与匹配标准</h2>
+            <span>学历、代表项目与机会收录口径</span>
+          </div>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <section class="profile-strip">
+            <div class="profile-main">
+              <div class="eyebrow">你的机会标准</div>
+              <strong>专业有依据，工作有联系，单位值得考虑。</strong>
+              <p>不按岗位是否建模来决定收录；先说明机会与条件，再由你安排精力。</p>
+            </div>
+            <div class="profile-bit">
+              <div class="eyebrow">生产算法</div>
+              <b>因果去偏 + 四塔解耦</b>
+              <p>能讲观测偏差、唯一性约束、置信降权与线上效果。</p>
+            </div>
+            <div class="profile-bit">
+              <div class="eyebrow">长期优化</div>
+              <b>session GRPO + 延迟 reward</b>
+              <p>适合强化学习、客户长期价值、留存与决策模型。</p>
+            </div>
+            <div class="profile-bit">
+              <div class="eyebrow">行业研究</div>
+              <b>地震速度反演一作</b>
+              <p>
+                为中国石油/石化/海油的智能物探建立差异化入口。论文仍为 Under
+                Review（在审），不是已发表。
+              </p>
+            </div>
+            <div class="profile-bit">
+              <div class="eyebrow">工程与可信度</div>
+              <b>PyTorch / C++ / Kafka + 真实指标</b>
+              <p>比只做课程项目或竞赛的候选人更接近可直接上手。</p>
+            </div>
+          </section>
         </div>
-        <div class="profile-bit">
-          <div class="eyebrow">生产算法</div>
-          <b>因果去偏 + 四塔解耦</b>
-          <p>能讲观测偏差、唯一性约束、置信降权与线上效果。</p>
-        </div>
-        <div class="profile-bit">
-          <div class="eyebrow">长期优化</div>
-          <b>session GRPO + 延迟 reward</b>
-          <p>适合强化学习、客户长期价值、留存与决策模型。</p>
-        </div>
-        <div class="profile-bit">
-          <div class="eyebrow">行业研究</div>
-          <b>地震速度反演一作</b>
-          <p>
-            为中国石油/石化/海油的智能物探建立差异化入口。论文仍为 Under
-            Review（在审），不是已发表。
-          </p>
-        </div>
-        <div class="profile-bit">
-          <div class="eyebrow">工程与可信度</div>
-          <b>PyTorch / C++ / Kafka + 真实指标</b>
-          <p>比只做课程项目或竞赛的候选人更接近可直接上手。</p>
-        </div>
-      </section>
+      </details>
 
       <section class="stats" aria-label="机会池概览">
         <div class="stat"><b id="n-total">0</b><span>机会入口总数（非岗位人数）</span></div>
@@ -415,80 +427,112 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
         <div class="action-grid" id="action-grid"></div>
       </section>
 
-      <section class="panel" id="inclusion-policy">
-        <h2>岗位是否值得看，不由“算法含量”决定</h2>
-        <p class="sub">
-          全部机会默认保留可见。专业、批次和方向可以独立筛选；同一招聘入口允许覆盖多个方向，不重复增加卡片。
-        </p>
-        <div class="grid3">
-          <div class="insight">
-            <b>统计与经营分析</b>
-            <p>生产统计、经营分析、预算与成本分析、市场研究都可以考虑；不要求必须训练模型。</p>
+      <details class="panel fold" id="inclusion-policy">
+        <summary>
+          <div class="fold-title">
+            <h2>岗位是否值得看，不由“算法含量”决定</h2>
+            <span>收录标准：哪些岗位算有依据、哪些不收</span>
           </div>
-          <div class="insight">
-            <b>银行、保险与风险</b>
-            <p>
-              综合业务、管培、柜面运营、风险审计、保险精算并行筛查。轮岗、营销和用工方式要写清。
-            </p>
-          </div>
-          <div class="insight">
-            <b>供应链、产品与管理</b>
-            <p>
-              行业研究、贸易运营、需求规划、产品企划、客户经营和综合管理，按具体专业与职责纳入。
-            </p>
-          </div>
-          <div class="insight">
-            <b>已有技术优势继续保留</b>
-            <p>原推荐、AI、金融科技、工业与地球物理方向不删除，也不垄断优先级。</p>
-          </div>
-          <div class="insight">
-            <b>专业依据与资格通过分开</b>
-            <p>“统计类”或指定岗位“专业不限”只是依据；专业代码、学历、毕业窗和其他要求仍需确认。</p>
-          </div>
-          <div class="insight">
-            <b>数量服从证据</b>
-            <p>集团首页或知名度不够；每条都应有具体机会、来源、单位判断及下一步核验动作。</p>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <p class="sub">
+            全部机会默认保留可见。专业、批次和方向可以独立筛选；同一招聘入口允许覆盖多个方向，不重复增加卡片。
+          </p>
+          <div class="grid3">
+            <div class="insight">
+              <b>统计与经营分析</b>
+              <p>生产统计、经营分析、预算与成本分析、市场研究都可以考虑；不要求必须训练模型。</p>
+            </div>
+            <div class="insight">
+              <b>银行、保险与风险</b>
+              <p>
+                综合业务、管培、柜面运营、风险审计、保险精算并行筛查。轮岗、营销和用工方式要写清。
+              </p>
+            </div>
+            <div class="insight">
+              <b>供应链、产品与管理</b>
+              <p>
+                行业研究、贸易运营、需求规划、产品企划、客户经营和综合管理，按具体专业与职责纳入。
+              </p>
+            </div>
+            <div class="insight">
+              <b>已有技术优势继续保留</b>
+              <p>原推荐、AI、金融科技、工业与地球物理方向不删除，也不垄断优先级。</p>
+            </div>
+            <div class="insight">
+              <b>专业依据与资格通过分开</b>
+              <p>
+                “统计类”或指定岗位“专业不限”只是依据；专业代码、学历、毕业窗和其他要求仍需确认。
+              </p>
+            </div>
+            <div class="insight">
+              <b>数量服从证据</b>
+              <p>集团首页或知名度不够；每条都应有具体机会、来源、单位判断及下一步核验动作。</p>
+            </div>
           </div>
         </div>
-      </section>
+      </details>
 
-      <section class="panel">
-        <h2>事实不变，按岗位调整简历重点</h2>
-        <p class="sub">
-          不是每个非技术岗位都要堆模型细节；也不能把互联网项目改写成你已经做过金融、精算或产业实务。
-        </p>
-        <div class="resume-grid">
-          <div class="resume-card">
-            <span class="v">A · BUSINESS</span><b>经营分析 / 管培 / 运营</b>
-            <p>
-              突出数据判断、实验结果、问题拆解、业务理解与沟通。说明个人贡献和结果，减少不必要的算法术语。
-            </p>
+      <details class="panel fold">
+        <summary>
+          <div class="fold-title">
+            <h2>事实不变，按岗位调整简历重点</h2>
+            <span>不同岗位方向的简历侧重点</span>
           </div>
-          <div class="resume-card">
-            <span class="v">B · RISK & RESEARCH</span><b>风险 / 保险 / 产业研究</b>
-            <p>
-              强调统计推断、偏差识别、稳健验证；行业知识、SQL、精算要求只列真实掌握或待准备内容。
-            </p>
-          </div>
-          <div class="resume-card">
-            <span class="v">C · TECHNOLOGY</span><b>推荐 / AI / 软件数据</b>
-            <p>保留因果去偏、长期价值优化、工程落地和线上实验，按岗位补充真实技术细节。</p>
-          </div>
-          <div class="resume-card">
-            <span class="v">D · RESEARCH</span><b>研究院 / 工业 / 能源</b>
-            <p>呈现研究方法与工程能力。论文保持 Under Review，不将未掌握的领域技能包装成经验。</p>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <p class="sub">
+            不是每个非技术岗位都要堆模型细节；也不能把互联网项目改写成你已经做过金融、精算或产业实务。
+          </p>
+          <div class="resume-grid">
+            <div class="resume-card">
+              <span class="v">A · BUSINESS</span><b>经营分析 / 管培 / 运营</b>
+              <p>
+                突出数据判断、实验结果、问题拆解、业务理解与沟通。说明个人贡献和结果，减少不必要的算法术语。
+              </p>
+            </div>
+            <div class="resume-card">
+              <span class="v">B · RISK & RESEARCH</span><b>风险 / 保险 / 产业研究</b>
+              <p>
+                强调统计推断、偏差识别、稳健验证；行业知识、SQL、精算要求只列真实掌握或待准备内容。
+              </p>
+            </div>
+            <div class="resume-card">
+              <span class="v">C · TECHNOLOGY</span><b>推荐 / AI / 软件数据</b>
+              <p>保留因果去偏、长期价值优化、工程落地和线上实验，按岗位补充真实技术细节。</p>
+            </div>
+            <div class="resume-card">
+              <span class="v">D · RESEARCH</span><b>研究院 / 工业 / 能源</b>
+              <p>呈现研究方法与工程能力。论文保持 Under Review，不将未掌握的领域技能包装成经验。</p>
+            </div>
           </div>
         </div>
-      </section>
+      </details>
 
       <p id="app-loading" class="app-loading" role="status">正在读取招聘资料与个人工作台…</p>
-      <section class="panel" id="location-policy">
-        <h2>地区偏好：加分，不设地域门槛</h2>
-        <p class="sub">
-          杭州、成都、重庆、西安同列重点；浙江其他城市也优先考虑。只使用岗位工作地或本届招聘范围，考试、面试和总部城市不自动加分。优先资格与招聘窗口，再在同档内按岗位参考分加地区分排序。
-        </p>
-        <p class="sub" id="location-count" role="status" aria-live="polite"></p>
-      </section>
+      <details class="panel fold" id="location-policy">
+        <summary>
+          <div class="fold-title">
+            <h2>地区偏好：加分，不设地域门槛</h2>
+            <span>杭州 / 成都 / 重庆 / 西安与浙江的加分规则</span>
+          </div>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <p class="sub">
+            杭州、成都、重庆、西安同列重点；浙江其他城市也优先考虑。只使用岗位工作地或本届招聘范围，考试、面试和总部城市不自动加分。优先资格与招聘窗口，再在同档内按岗位参考分加地区分排序。
+          </p>
+          <p class="sub" id="location-count" role="status" aria-live="polite"></p>
+        </div>
+      </details>
       <h2 class="catalog-heading" id="job-list" tabindex="-1">招聘卡片</h2>
       <div class="toolbar">
         <div class="filters">
@@ -538,61 +582,83 @@ AI 维护上下文：候选人背景与招聘核查规则（公开脱敏版）
 
       <section class="cards" id="grid" tabindex="-1"></section>
 
-      <section class="panel" style="margin-top: 20px">
-        <h2>可以考虑，也要把取舍讲明白</h2>
-        <div class="omit-grid">
-          <div class="omit">
-            <b>报表、统计与综合管理</b>
-            <p>不因工具简单而排除。核查实际职责、是否有分析决策空间、发展路径及专业条件。</p>
+      <details class="panel fold" style="margin-top: 20px">
+        <summary>
+          <div class="fold-title">
+            <h2>可以考虑，也要把取舍讲明白</h2>
+            <span>各类岗位的取舍与风险</span>
           </div>
-          <div class="omit">
-            <b>柜面、营销与基层运营</b>
-            <p>不一刀切删除。说明服务年限、初期轮岗、营销考核与地点，再由你决定是否愿意。</p>
-          </div>
-          <div class="omit">
-            <b>保险与业务推广</b>
-            <p>明确劳动合同、代理制或外包关系。单位品牌不能替代对实际雇主与岗位的核验。</p>
-          </div>
-          <div class="omit">
-            <b>机械、硬件等专业岗位</b>
-            <p>
-              明确限定不符合的专业/执照时排除；同单位的统计、管理、市场或不限专业岗位仍可单独考虑。
-            </p>
-          </div>
-          <div class="omit">
-            <b>博士与特殊资格限定</b>
-            <p>真正不满足的硬条件不强行包装；同公告的硕士普通校招与博士专项必须区分。</p>
-          </div>
-          <div class="omit">
-            <b>未明示应用统计的相关专业</b>
-            <p>
-              有合理联系就保留待核，先确认专业目录和学位代码；既不默认为通过，也不直接判为没机会。
-            </p>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <div class="omit-grid">
+            <div class="omit">
+              <b>报表、统计与综合管理</b>
+              <p>不因工具简单而排除。核查实际职责、是否有分析决策空间、发展路径及专业条件。</p>
+            </div>
+            <div class="omit">
+              <b>柜面、营销与基层运营</b>
+              <p>不一刀切删除。说明服务年限、初期轮岗、营销考核与地点，再由你决定是否愿意。</p>
+            </div>
+            <div class="omit">
+              <b>保险与业务推广</b>
+              <p>明确劳动合同、代理制或外包关系。单位品牌不能替代对实际雇主与岗位的核验。</p>
+            </div>
+            <div class="omit">
+              <b>机械、硬件等专业岗位</b>
+              <p>
+                明确限定不符合的专业/执照时排除；同单位的统计、管理、市场或不限专业岗位仍可单独考虑。
+              </p>
+            </div>
+            <div class="omit">
+              <b>博士与特殊资格限定</b>
+              <p>真正不满足的硬条件不强行包装；同公告的硕士普通校招与博士专项必须区分。</p>
+            </div>
+            <div class="omit">
+              <b>未明示应用统计的相关专业</b>
+              <p>
+                有合理联系就保留待核，先确认专业目录和学位代码；既不默认为通过，也不直接判为没机会。
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+      </details>
 
-      <section class="panel">
-        <h2>把已有经历翻译成岗位听得懂的价值</h2>
-        <div class="grid3">
-          <div class="insight">
-            <b>经营 / 运营</b>
-            <p>用实际项目说明：如何界定业务指标、检查样本偏差、验证方案效果，并与团队推进改进。</p>
+      <details class="panel fold">
+        <summary>
+          <div class="fold-title">
+            <h2>把已有经历翻译成岗位听得懂的价值</h2>
+            <span>经历到岗位价值的对应表述</span>
           </div>
-          <div class="insight">
-            <b>市场 / 产品</b>
-            <p>
-              讲清用户行为分析、分组实验、长期效果与权衡；不要只报算法名，也不要虚构客户经营经历。
-            </p>
-          </div>
-          <div class="insight">
-            <b>风险 / 研究</b>
-            <p>
-              展示统计假设、数据质量、稳健性和验证能力；行业背景是待学习内容，不包装成已完成的金融项目。
-            </p>
+          <span class="fold-toggle" aria-hidden="true"
+            ><span class="when-collapsed">展开</span><span class="when-expanded">收起</span></span
+          >
+        </summary>
+        <div class="fold-body">
+          <div class="grid3">
+            <div class="insight">
+              <b>经营 / 运营</b>
+              <p>
+                用实际项目说明：如何界定业务指标、检查样本偏差、验证方案效果，并与团队推进改进。
+              </p>
+            </div>
+            <div class="insight">
+              <b>市场 / 产品</b>
+              <p>
+                讲清用户行为分析、分组实验、长期效果与权衡；不要只报算法名，也不要虚构客户经营经历。
+              </p>
+            </div>
+            <div class="insight">
+              <b>风险 / 研究</b>
+              <p>
+                展示统计假设、数据质量、稳健性和验证能力；行业背景是待学习内容，不包装成已完成的金融项目。
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+      </details>
 
       <section class="panel" id="audit-panel" style="margin-top: 20px">
         <h2>本轮复核与原版对照</h2>

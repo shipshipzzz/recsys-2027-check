@@ -1,11 +1,10 @@
 .personal-panel {
-  margin: 24px 0 18px;
-  padding: 23px 24px;
+  margin: 16px 0 18px;
+  padding: 20px 24px;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 14px;
   background: var(--card);
   color: var(--ink);
-  box-shadow: 0 4px 20px #00000005;
 }
 .personal-heading {
   display: flex;
@@ -13,14 +12,11 @@
   align-items: center;
   gap: 22px;
 }
-.personal-eyebrow {
-  font: 10.5px var(--mono);
-  letter-spacing: 0.15em;
-  color: var(--accent);
-}
 .personal-panel h2 {
-  font: 400 29px/1.25 var(--serif);
-  margin: 7px 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 4px;
 }
 .personal-panel p {
   margin: 0;
@@ -40,17 +36,19 @@
 }
 .personal-summary b {
   display: block;
-  font: 30px/1.2 var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
   color: var(--ink);
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 .sync-row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px 15px;
-  border-top: 1px dashed var(--line);
-  margin-top: 18px;
+  border-top: 1px solid var(--line-soft, var(--line2));
+  margin-top: 16px;
   padding-top: 14px;
   font-size: 12px;
 }
@@ -74,8 +72,8 @@
   border: 1px solid var(--line);
   background: var(--card);
   color: var(--ink);
-  border-radius: 999px;
-  padding: 7px 11px;
+  border-radius: 8px;
+  padding: 6px 11px;
   cursor: pointer;
   transition:
     background 0.15s,
@@ -111,10 +109,10 @@
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
-  border-bottom: 1px dashed var(--line);
+  border-bottom: 1px solid var(--line-soft, var(--line2));
   padding-bottom: 12px;
-  margin-bottom: 15px;
-  font-size: 11.7px;
+  margin-bottom: 14px;
+  font-size: 12px;
 }
 .personal-actions > div {
   display: flex;
@@ -163,12 +161,15 @@
   padding: 26px 0 18px;
 }
 .processed-heading h2 {
-  font: 400 28px/1.25 var(--serif);
-  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 6px;
   color: var(--muted);
 }
 .processed-heading h2 span {
-  font: 14px var(--mono);
+  font-size: 14px;
+  font-weight: 500;
 }
 .processed-heading p {
   font-size: 12.5px;
@@ -213,8 +214,8 @@
   background: var(--card);
   color: var(--ink);
   border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: 25px;
+  border-radius: 14px;
+  padding: 24px;
   width: min(460px, calc(100vw - 32px));
   max-height: 90vh;
   overflow: auto;
@@ -231,7 +232,8 @@
   gap: 16px;
 }
 .account-dialog h2 {
-  font: 400 29px var(--serif);
+  font-size: 20px;
+  font-weight: 600;
   margin: 0;
 }
 .dialog-title button {
@@ -320,7 +322,7 @@
     width: 100%;
   }
   .personal-panel h2 {
-    font-size: 26px;
+    font-size: 19px;
   }
   .personal-actions {
     align-items: flex-start;
