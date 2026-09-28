@@ -1,0 +1,2936 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-09-28",
+  "groups": [
+    {
+      "id": "icbc",
+      "name": "中国工商银行",
+      "sector": "银行",
+      "aliases": [
+        "工行",
+        "ICBC",
+        "四大行",
+        "六大行"
+      ],
+      "entryIds": [
+        "soe-012f751aa0176646891e",
+        "soe-95134bdc75c0737d281e",
+        "soe-946c8b35a6045d05921e",
+        "soe-1390ea899a188a39617a"
+      ],
+      "hqEntryIds": [
+        "soe-1390ea899a188a39617a"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.cuhk.edu.cn/en/job/view/id/469442",
+        "https://job.hust.edu.cn/zpinfo1/2412947.htm",
+        "https://career.nankai.edu.cn/correcruit/content/id/118535.html",
+        "https://job.hust.edu.cn/zjob/2421441.htm",
+        "https://m.fenbi.com/page/exam-information-detail/468914038132736",
+        "https://career.nankai.edu.cn/correcruit/content/id/118013.html"
+      ]
+    },
+    {
+      "id": "abc",
+      "name": "中国农业银行",
+      "sector": "银行",
+      "aliases": [
+        "农行",
+        "ABC",
+        "四大行",
+        "六大行"
+      ],
+      "entryIds": [
+        "soe-9ab002099e55ac2b03b6",
+        "soe-6f566438920bdfd0d70e",
+        "soe-6036cd9ae91c3526037f",
+        "soe-3a9d68162b0165c655ac"
+      ],
+      "hqEntryIds": [
+        "soe-6036cd9ae91c3526037f"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118609.html",
+        "https://www.yinhangzhaopin.com/zgnyyh/2026-09-04/224864.htm",
+        "https://career.abchina.com.cn/build/index.html#/NoticeDetails/110803628",
+        "https://career.abchina.com.cn/build/index.html#/99",
+        "https://career.abchina.com.cn/build/index.html#/RecruitmentNoticeDetails/110803543/99"
+      ]
+    },
+    {
+      "id": "boc",
+      "name": "中国银行",
+      "sector": "银行",
+      "aliases": [
+        "中行",
+        "BOC",
+        "四大行",
+        "六大行"
+      ],
+      "entryIds": [
+        "soe-224eff4dd223d582e600"
+      ],
+      "hqEntryIds": [
+        "soe-224eff4dd223d582e600"
+      ],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://www.boc.cn/aboutboc/bi4/202609/t20260903_25689311.html",
+        "https://pic.bankofchina.com/bocappd/appform/202609/P020260903517985334320.pdf"
+      ]
+    },
+    {
+      "id": "ccb",
+      "name": "中国建设银行",
+      "sector": "银行",
+      "aliases": [
+        "建行",
+        "CCB",
+        "四大行",
+        "六大行"
+      ],
+      "entryIds": [
+        "soe-9ed0ba98e2b378d91fe7",
+        "soe-56412c0e929ad53c81a8",
+        "soe-28a7c75480e66ff26a24",
+        "soe-70472ac853332bba0d05"
+      ],
+      "hqEntryIds": [
+        "soe-56412c0e929ad53c81a8"
+      ],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://job1.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
+        "https://www.yinhangzhaopin.com/jsyh/2026-09-04/224901.htm",
+        "https://wealth.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
+        "https://jy.tust.edu.cn/correcruit/content/id/46573.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118554.html",
+        "https://jy.tust.edu.cn/correcruit/content/id/46450.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118110.html",
+        "https://career.hebut.edu.cn/home/correcruit/content/id/80241.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118341.html"
+      ]
+    },
+    {
+      "id": "bocom",
+      "name": "交通银行",
+      "sector": "银行",
+      "aliases": [
+        "交行",
+        "BOCOM",
+        "六大行"
+      ],
+      "entryIds": [
+        "soe-e3c6ba3985ff4004365b",
+        "soe-8260438ddfcb7cfaf9c1"
+      ],
+      "hqEntryIds": [
+        "soe-8260438ddfcb7cfaf9c1"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39071",
+        "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39070",
+        "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39072",
+        "https://www.shanganclaw.com/announcements/183368/"
+      ]
+    },
+    {
+      "id": "psbc",
+      "name": "中国邮政储蓄银行",
+      "sector": "银行",
+      "aliases": [
+        "邮储",
+        "PSBC",
+        "六大行"
+      ],
+      "entryIds": [
+        "soe-8b77a831e8fa823d9737"
+      ],
+      "hqEntryIds": [
+        "soe-8b77a831e8fa823d9737"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://www.psbc.com/cn/gyyc/rczp/xyzp/202609/t20260907_460394.html",
+        "https://psbc2027.zhaopin.com/jobs/index.html"
+      ]
+    },
+    {
+      "id": "cdb",
+      "name": "国家开发银行",
+      "sector": "银行",
+      "aliases": [
+        "国开行",
+        "CDB",
+        "开发性金融"
+      ],
+      "entryIds": [
+        "soe-b9fb017b087135609736"
+      ],
+      "hqEntryIds": [
+        "soe-b9fb017b087135609736"
+      ],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://cdb2027.zhaopin.com/index.html",
+        "https://cdb2027.zhaopin.com/precautions/index.html",
+        "https://cdb2027.zhaopin.com/jobs/index.html?id=10126839"
+      ]
+    },
+    {
+      "id": "adbc",
+      "name": "中国农业发展银行",
+      "sector": "银行",
+      "aliases": [
+        "农发行",
+        "ADBC",
+        "政策性银行"
+      ],
+      "entryIds": [
+        "soe-0bcee0305932c39268f6"
+      ],
+      "hqEntryIds": [
+        "soe-0bcee0305932c39268f6"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://www.adbc.com.cn/n354735/n355043/c722284/content.html"
+      ]
+    },
+    {
+      "id": "exim",
+      "name": "中国进出口银行",
+      "sector": "银行",
+      "aliases": [
+        "进出口行",
+        "EXIM",
+        "政策性银行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。本轮公开官网连接失败，尚无2027具体职位证据；不能据此断言未开或关闭。 本轮另检查：中国进出口银行2027校招（attempted_unresolved：官网首页及招聘栏目均打开超时；限定eximbank.gov.cn的2027招聘检索无结果，未取得官方正文。）",
+      "nextAction": "补读当届具体岗位条件",
+      "sourceUrls": [
+        "https://www.eximbank.gov.cn/",
+        "https://www.eximbank.gov.cn/info/notice/recruit/"
+      ]
+    },
+    {
+      "id": "cmb",
+      "name": "招商银行",
+      "sector": "银行",
+      "aliases": [
+        "招行",
+        "CMB"
+      ],
+      "entryIds": [
+        "soe-760d8065c74679611ff9",
+        "soe-f8c92726adc2c28d4be4",
+        "soe-6f3da4b7ad2476020757",
+        "soe-53b939996659dfde59e5"
+      ],
+      "hqEntryIds": [
+        "soe-53b939996659dfde59e5"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://job.neuq.edu.cn/campus/view/id/861548",
+        "https://career.nankai.edu.cn/correcruit/content/id/116513.html",
+        "https://www.gwy.com/yhzp/411752.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/117232.html",
+        "https://www.cmhk.com/main/ywfw/jr/yh/index.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118427.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/117199.html"
+      ]
+    },
+    {
+      "id": "spdb",
+      "name": "浦发银行",
+      "sector": "银行",
+      "aliases": [
+        "浦发",
+        "浦银",
+        "SPDB"
+      ],
+      "entryIds": [
+        "soe-b2bb7f2da8bb065dafbb",
+        "soe-fbc68e3db565e8ae826c",
+        "soe-75f4674009337c8bcaa1",
+        "soe-afb94d0cd334ef5b35c7"
+      ],
+      "hqEntryIds": [
+        "soe-b2bb7f2da8bb065dafbb"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/119296.html"
+      ]
+    },
+    {
+      "id": "citicbank",
+      "name": "中信银行",
+      "sector": "银行",
+      "aliases": [
+        "中信银行总行"
+      ],
+      "entryIds": [
+        "soe-fd7572b49f9a3eb7f2b6"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://jy.tust.edu.cn/correcruit/content/id/46270.html"
+      ]
+    },
+    {
+      "id": "cib",
+      "name": "兴业银行",
+      "sector": "银行",
+      "aliases": [
+        "兴业",
+        "CIB"
+      ],
+      "entryIds": [
+        "soe-6b718e14071e15579098"
+      ],
+      "hqEntryIds": [
+        "soe-6b718e14071e15579098"
+      ],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://www.xyyh.com.cn/cn/aboutCIB/about/jobs/2026/20260922_1.html",
+        "https://download.cib.com.cn/netbank/download/cn/20260922.xlsx"
+      ]
+    },
+    {
+      "id": "ceb",
+      "name": "中国光大银行",
+      "sector": "银行",
+      "aliases": [
+        "光大银行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "hxb",
+      "name": "华夏银行",
+      "sector": "银行",
+      "aliases": [
+        "华夏"
+      ],
+      "entryIds": [
+        "soe-e47806eafc52fe5f9023",
+        "soe-1d81f573583960b2ca09"
+      ],
+      "hqEntryIds": [
+        "soe-e47806eafc52fe5f9023"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/news.html#/detail?detailId=1789464953292&detailType=0",
+        "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/posDetail.html?postId=6aabb405f0cfabf2b4c61fa3&postType=campus",
+        "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/posDetail.html?postId=6aabbac1fea5e04bda6c5365&postType=campus"
+      ]
+    },
+    {
+      "id": "cgb",
+      "name": "广发银行",
+      "sector": "银行",
+      "aliases": [
+        "广发",
+        "CGB"
+      ],
+      "entryIds": [
+        "soe-e43cb34e4c801cf57150"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.hebut.edu.cn/correcruit/content/id/80750.html"
+      ]
+    },
+    {
+      "id": "czbank",
+      "name": "浙商银行",
+      "sector": "银行",
+      "aliases": [
+        "浙商",
+        "CZBank"
+      ],
+      "entryIds": [
+        "soe-57a02b3fc6410f063563"
+      ],
+      "hqEntryIds": [
+        "soe-57a02b3fc6410f063563"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118746.html"
+      ]
+    },
+    {
+      "id": "cbhb",
+      "name": "渤海银行",
+      "sector": "银行",
+      "aliases": [
+        "渤海"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "egbank",
+      "name": "恒丰银行",
+      "sector": "银行",
+      "aliases": [
+        "恒丰"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cmbc",
+      "name": "中国民生银行",
+      "sector": "银行",
+      "aliases": [
+        "民生银行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "hzbank",
+      "name": "杭州银行",
+      "sector": "银行",
+      "aliases": [
+        "杭银"
+      ],
+      "entryIds": [
+        "soe-15dcc83203fa8d55b59c"
+      ],
+      "hqEntryIds": [
+        "soe-15dcc83203fa8d55b59c"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employ/school",
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
+        "https://career.hebut.edu.cn/home/correcruit/content/id/80614.html",
+        "https://smcareer.xmu.edu.cn/info/1008/31455.htm",
+        "https://myjob.hzbank.com.cn/"
+      ]
+    },
+    {
+      "id": "njbank",
+      "name": "南京银行",
+      "sector": "银行",
+      "aliases": [
+        "南银"
+      ],
+      "entryIds": [
+        "soe-1df7b49623798cb2b82b"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://job.tiangong.edu.cn/correcruit/content/id/55915.html",
+        "https://wap.njcb.com.cn/njcb/2026-08/04/article_2026080417170529067.html"
+      ]
+    },
+    {
+      "id": "shbank",
+      "name": "上海银行",
+      "sector": "银行",
+      "aliases": [
+        "上银"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "bjbank",
+      "name": "北京银行",
+      "sector": "银行",
+      "aliases": [
+        "京行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "nbbank",
+      "name": "宁波银行",
+      "sector": "银行",
+      "aliases": [
+        "宁行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "jsbank",
+      "name": "江苏银行",
+      "sector": "银行",
+      "aliases": [
+        "苏银"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cdbank",
+      "name": "成都银行",
+      "sector": "银行",
+      "aliases": [
+        "成银"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "scbank",
+      "name": "四川银行",
+      "sector": "银行",
+      "aliases": [
+        "四川银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cqbank",
+      "name": "重庆银行",
+      "sector": "银行",
+      "aliases": [
+        "重庆银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cqrcb",
+      "name": "重庆农村商业银行",
+      "sector": "银行",
+      "aliases": [
+        "渝农商行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cq3bank",
+      "name": "重庆三峡银行",
+      "sector": "银行",
+      "aliases": [
+        "三峡银行"
+      ],
+      "entryIds": [
+        "soe-84e7d908cb72d28b63a2"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://job.xidian.edu.cn/campus/view/id/757914"
+      ]
+    },
+    {
+      "id": "xabank",
+      "name": "西安银行",
+      "sector": "银行",
+      "aliases": [
+        "西安银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cabank",
+      "name": "长安银行",
+      "sector": "银行",
+      "aliases": [
+        "长安银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "qnbank",
+      "name": "秦农银行",
+      "sector": "银行",
+      "aliases": [
+        "秦农"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "gzbank",
+      "name": "广州银行",
+      "sector": "银行",
+      "aliases": [
+        "广州银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "szrcb",
+      "name": "深圳农村商业银行",
+      "sector": "银行",
+      "aliases": [
+        "深圳农商"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "szbank",
+      "name": "苏州银行",
+      "sector": "银行",
+      "aliases": [
+        "苏州银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "qdbank",
+      "name": "青岛银行",
+      "sector": "银行",
+      "aliases": [
+        "青岛银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "qlbank",
+      "name": "齐鲁银行",
+      "sector": "银行",
+      "aliases": [
+        "齐鲁"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "csbank",
+      "name": "长沙银行",
+      "sector": "银行",
+      "aliases": [
+        "长沙银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "hbbank",
+      "name": "湖北银行",
+      "sector": "银行",
+      "aliases": [
+        "湖北银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "hanbank",
+      "name": "汉口银行",
+      "sector": "银行",
+      "aliases": [
+        "汉口"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "jxb",
+      "name": "江西银行",
+      "sector": "银行",
+      "aliases": [
+        "江西银行总行"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "picc",
+      "name": "中国人民保险集团",
+      "sector": "保险与资管",
+      "aliases": [
+        "中国人保",
+        "人保",
+        "PICC"
+      ],
+      "entryIds": [
+        "soe-003d7bb92cd63869b718"
+      ],
+      "hqEntryIds": [
+        "soe-003d7bb92cd63869b718"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.cuhk.edu.cn/job/view/id/469651",
+        "https://picc.zhiye.com/custom/campus?c1=8&hideAll=true",
+        "https://career.hebut.edu.cn/correcruit/content/id/81267.html",
+        "https://smcareer.xmu.edu.cn/info/1008/31525.htm"
+      ]
+    },
+    {
+      "id": "chinalife",
+      "name": "中国人寿集团",
+      "sector": "保险与资管",
+      "aliases": [
+        "中国人寿",
+        "国寿",
+        "国寿安保",
+        "国寿资管"
+      ],
+      "entryIds": [
+        "soe-5e5f37fe525132e770c9",
+        "soe-53bef5d34efd044c8a7c"
+      ],
+      "hqEntryIds": [
+        "soe-53bef5d34efd044c8a7c"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：国寿安保基金 · 股票行业研究 / 机构业务（）；中国人寿保险股份总部 · 精算 / 风险 / 投资（公开web工具；） 国寿安保股票岗已另读官方JD，专业以经济金融/工科相关为准；高校列应用统计未自动升级为explicit。",
+      "nextAction": "优先打开官方股票/债券研究JD，确认应用统计专硕、届次及完整条件；机构业务按用户对销售的取舍评估。；按寿险股份总部筛具体JD，再核精算/风险/投资对应统计条件及合同性质。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118892.html",
+        "https://chinalife.zhiye.com/custom/zwxq?hideMenu=1&jobAdId=426f1a0c-d5bb-4586-8ab8-17e1f9bd7d7b&jc=2",
+        "https://career.nankai.edu.cn/correcruit/content/id/118939.html",
+        "https://jdjyw.jlu.edu.cn/portal/recruit/details?id=96a2c9835fc9491c9e087cd491cc6c45"
+      ]
+    },
+    {
+      "id": "taiping",
+      "name": "中国太平保险集团",
+      "sector": "保险与资管",
+      "aliases": [
+        "中国太平",
+        "太平保险"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国太平 · 资产 / 精算 / 风险 / 运营（公开web工具；）",
+      "nextAction": "在官方2027具体职位确认毕业窗口、专业、员工劳动合同或代理关系后，再升级为current。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/117449.html"
+      ]
+    },
+    {
+      "id": "chinare",
+      "name": "中国再保险集团",
+      "sector": "保险与资管",
+      "aliases": [
+        "中国再保",
+        "中再",
+        "China Re"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国再保 · 当届正式校招待核（官方人力页搜索提取到2026简章，open超时；test-results/national-review/evidence-enterprise/chinare.web.txt、search-resu）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://www.cpcr.com.cn/zhzjt/rlzy2018/index.html"
+      ]
+    },
+    {
+      "id": "sinosure",
+      "name": "中国出口信用保险公司",
+      "sector": "保险与资管",
+      "aliases": [
+        "中国信保",
+        "出口信用保险"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国信保 · 2027暑期实习已过（公开web工具；）",
+      "nextAction": "跟进sinosure.zhaopin.com新的2027正式校招公告。",
+      "sourceUrls": [
+        "https://aeo.uibe.edu.cn/front/zpxx.jspa?tid=2068955670782160898"
+      ]
+    },
+    {
+      "id": "rui",
+      "name": "瑞众人寿",
+      "sector": "保险与资管",
+      "aliases": [
+        "瑞众保险"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "ccblife",
+      "name": "建信人寿",
+      "sector": "保险与资管",
+      "aliases": [
+        "建信保险"
+      ],
+      "entryIds": [
+        "soe-55cb5e9670d088e4902f"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://www.ujob360.com/article/178850328002137972"
+      ]
+    },
+    {
+      "id": "cpic",
+      "name": "中国太平洋保险",
+      "sector": "保险与资管",
+      "aliases": [
+        "太保",
+        "太平洋保险"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sunshine",
+      "name": "阳光保险",
+      "sector": "保险与资管",
+      "aliases": [
+        "阳光资管"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "citics",
+      "name": "中信证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "CITICS"
+      ],
+      "entryIds": [
+        "soe-adfb8640d34d1647cc06"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中信证券上海分公司 · 培训生（）",
+      "nextAction": "确认应用统计硕士接受性、营业部销售考核和实习时长；由用户决定销售取舍。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2436255.htm"
+      ]
+    },
+    {
+      "id": "cicc",
+      "name": "中金公司",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "CICC"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "galaxy",
+      "name": "中国银河证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "银河证券"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "gtht",
+      "name": "国泰海通证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "国泰海通",
+        "国泰君安",
+        "海通证券"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "swhy",
+      "name": "申万宏源",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "申万宏源证券"
+      ],
+      "entryIds": [
+        "soe-140f2087c58956d157f6"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/117519.html"
+      ]
+    },
+    {
+      "id": "cms",
+      "name": "招商证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "招商证券总部"
+      ],
+      "entryIds": [
+        "soe-6c87c97a536ff75ffd95"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：招商证券 / 招商资管 · 研究、交易、产品（）",
+      "nextAction": "在cms.hotjob.cn优先核对研究助理、基金研究、资管研究/产品岗位，确认硕士可报和专业条件。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118113.html"
+      ]
+    },
+    {
+      "id": "csc",
+      "name": "中信建投证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "中信建投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "htsc",
+      "name": "华泰证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "华泰"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sdicsec",
+      "name": "国投证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "安信证券"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "greatwall",
+      "name": "长城证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "华能长城证券"
+      ],
+      "entryIds": [
+        "soe-3a4e8fb9f15de5c306e9"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/117243.html"
+      ]
+    },
+    {
+      "id": "crhcsec",
+      "name": "国新证券",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "国新证券总部"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sse",
+      "name": "上海证券交易所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "上交所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "szse",
+      "name": "深圳证券交易所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "深交所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "bse",
+      "name": "北京证券交易所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "北交所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cffex",
+      "name": "中国金融期货交易所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "中金所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "shfe",
+      "name": "上海期货交易所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "上期所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "dce",
+      "name": "大连商品交易所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "大商所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "czce",
+      "name": "郑州商品交易所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "郑商所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "csi",
+      "name": "中证指数",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "中证指数公司"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cfets",
+      "name": "中国外汇交易中心",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "全国银行间同业拆借中心"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "unionpay",
+      "name": "中国银联",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "银联数据",
+        "CUP Data"
+      ],
+      "entryIds": [
+        "soe-40821fd0c64459ec899d"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "ccdc",
+      "name": "中央国债登记结算",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "中债登",
+        "中债"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "shclearing",
+      "name": "银行间市场清算所",
+      "sector": "证券与金融基础设施",
+      "aliases": [
+        "上海清算所"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cnpc",
+      "name": "中国石油",
+      "sector": "能源电力",
+      "aliases": [
+        "中石油",
+        "CNPC",
+        "三桶油",
+        "昆仑数智",
+        "东方地球物理",
+        "BGP"
+      ],
+      "entryIds": [
+        "soe-691c283911ab1f4878af",
+        "soe-0166e9a039513d6627bb",
+        "soe-87ef8e3ebe4b4b4bb9fc",
+        "soe-00f5a7bf22c3ecff3eff",
+        "soe-12aceb3925f1d9fc514e",
+        "soe-3bad984c354c08ffb3a5"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中国石油集团共享运营有限公司（已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单）；中国石油天然气股份有限公司规划总院（已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单）；中国石油集团安全环保技术研究院有限公司（已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单）；中国石油天然气股份有限公司广西销售分公司（已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单）；中国石油集团经济技术研究院（attempted_unresolved：完整公告已读，但岗位表是两张图片，本轮未成功取得可读图像/表格；不依据搜索摘要补学历专业。）；中石油（北京）数智研究院有限公司（attempted_unresolved：已读高校企业简介；2027具体岗位仅搜索到培训/转载线索，未采。华电2026秋招招聘页正文实际为规划总院，不能转挂数智院。）；中国石油技术开发有限公司（attempted_unresolved：2027/2026秋季+统计学检索未定位到可读的企业官网或高校完整正文；不采用培训机构岗位摘录。CNPC主站412由任务告知，本轮未绕行或反复请求。）",
+      "nextAction": "优先核数据应用岗及人资共享岗对0252的认可、地点分配和截止；联系010-59982516。；向010-82383036核天然气市场研究/AI研究是否接受0252及实际岗位计划、截止。；优先向010-80169869核对0252对应关系、AI岗位职责与合同；10月15日前按公告准备报名。；向0771-5651509核数据岗专业代码/工作地，以及站经理储备接受硕士的安排及培养考核。；补读两张岗位图片或问010-62065339，重点核统计/经济研究硕士岗位。；寻找数智院本人发布的2026秋季完整岗位表，核硕博限制和应用统计专业；不套规划总院条件。；补读当届具体岗位条件",
+      "sourceUrls": [
+        "https://www.gaoxiaojob.com/announcement/detail/430411.html",
+        "https://zhaopin.cnpc.com.cn/web/recruitInfoshow.html?id=8b8b6c9ea07c29cc01a07fc4f1030033",
+        "https://www.gaoxiaojob.com/announcement/detail/430387.html",
+        "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=91abb3ad6b1f410cb9fb1f1e6a518a73",
+        "https://career.hebut.edu.cn/home/correcruit/content/id/80944.html",
+        "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=c5552e4a9c6341c8966ea4ad74cdafff",
+        "https://jdjywpt.jlu.edu.cn/portal/jyzp/recruit/details?id=6e02e4101e5a4dfc96ac4fb67f3a4d08",
+        "https://job.hust.edu.cn/zpinfo1/2437426.htm",
+        "https://job.ncepu.edu.cn/dwxq/513a8f22414d40dcabe9c76ca4b3edfd.htm",
+        "https://zhaopin.cnpc.com.cn/"
+      ]
+    },
+    {
+      "id": "sinopec",
+      "name": "中国石化",
+      "sector": "能源电力",
+      "aliases": [
+        "中石化",
+        "Sinopec",
+        "三桶油",
+        "石化经纬",
+        "石油物探院"
+      ],
+      "entryIds": [
+        "soe-863efd948d7f8d33bfdb"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中石化第十建设有限公司（attempted_unresolved：已读2027基本条件；专业表在图片，图片获取失败。）；中国石化2027总公告及专业公司岗位（attempted_unresolved：打开官网仅0行正文；任务提供的9月24日2027总公告详情本轮未读成。未将检索摘要或第三方推测写成官方条件。）；中石化经纬有限公司（attempted_unresolved：经纬+2027+统计及高校/官网检索未获得可读当届具体岗位。检索混入2026往届、博士后、其他同名经纬企业，均未作为2027硕士证据。）；中石化石油物探技术研究院有限公司（attempted_unresolved：企业官方人才招聘页打开超时，未读正文；2027及应用统计检索未定位到可读当届职位表。）",
+      "nextAction": "补读专业图片，不把总公告日期或网页2026-10-31过期字段当职位截止。；读取2027总公告详情及专业公司岗位附件；需逐岗记录志愿、毕业窗、截止。；补读当届具体岗位条件；补读物探院官网招聘页/高校完整职位表，不能从地球物理业务推断应用统计资格。",
+      "sourceUrls": [
+        "https://job.sinopec.com/#/school/index",
+        "https://career.hebut.edu.cn/home/correcruit/content/id/81328.html",
+        "https://swty.sinopec.com/swty/careers/dwjs/A054006002Gone1.shtml"
+      ]
+    },
+    {
+      "id": "cnooc",
+      "name": "中国海油",
+      "sector": "能源电力",
+      "aliases": [
+        "中海油",
+        "CNOOC",
+        "三桶油"
+      ],
+      "entryIds": [
+        "soe-1e49fabfeb8af3287a2b"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。本轮原网申入口未读到2027正文，旧研究院线索保留；需找到当届官方入口。 本轮另检查：中国海油及所属单位2027校招（attempted_unresolved：由高校官方链接发现该招聘域名，工具不可访问；多组2027官方/高校检索仅定位到旧春招、旧订单班及不可信摘要，未取得2027秋招具体统计岗位。）",
+      "nextAction": "补读当届具体岗位条件",
+      "sourceUrls": [
+        "https://cnooc.zhaopin.com/",
+        "https://zhaopin.cnooc.com.cn/"
+      ]
+    },
+    {
+      "id": "sgcc",
+      "name": "国家电网",
+      "sector": "能源电力",
+      "aliases": [
+        "国网",
+        "SGCC",
+        "国网信通",
+        "南瑞",
+        "中国电科院"
+      ],
+      "entryIds": [
+        "soe-9144dfc3a2177c2560bf",
+        "soe-4e7bf568324c786fbaec"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：国网数科控股／远光软件（主体必须区分）（已读完整正文中两家主体的招聘对象、工作地与专业；无具体职位JD。）；国家电网直属单位2027招聘需求附件（attempted_unresolved：公告正文已读；xlsx点击返回Internal Error，未读具体岗位表。未重试412主站或绕WAF。）",
+      "nextAction": "到远光软件官方招聘核具体管理/数据岗位；本部应用统计是否按数学相关接受另问，勿混用资格。；补读页面的《国家电网有限公司直属单位2027年高校毕业生招聘需求.xlsx》并查具体硕士/统计条目。",
+      "sourceUrls": [
+        "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=38d6f1c70d154c76ab483900565377b6",
+        "https://job.ncepu.edu.cn/zpgg/6868003605b2412dbf529053e8b7474b.htm"
+      ]
+    },
+    {
+      "id": "csg",
+      "name": "南方电网",
+      "sector": "能源电力",
+      "aliases": [
+        "南网",
+        "CSG",
+        "南网数字",
+        "南网科研"
+      ],
+      "entryIds": [
+        "soe-b24eccce088fab5acca4"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：南方电网数字电网集团有限公司（已读四川大学及华中科技大学完整简章；只到业务类别，未核子公司逐岗JD与动态报名入口。）",
+      "nextAction": "联系020-85737042核0252是否接受、经营管理具体岗位与报名窗口、志愿限制。",
+      "sourceUrls": [
+        "https://jy.scu.edu.cn/index/index/employdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eZuK0NSmyGHRp7ugzc-GnZ2skMx9ZMN4gtKLipCwxKF0lZC5sq-0gqJv"
+      ]
+    },
+    {
+      "id": "chnenergy",
+      "name": "国家能源集团",
+      "sector": "能源电力",
+      "aliases": [
+        "国能",
+        "CHN Energy",
+        "神华",
+        "国电"
+      ],
+      "entryIds": [
+        "soe-59da3ca0da45344d20a6"
+      ],
+      "hqEntryIds": [
+        "soe-59da3ca0da45344d20a6"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：国家能源集团总部菁英管培 · 产业研究（）；国家能源集团统招 · 新疆应用统计学线索（官方公告open超时；公开搜索提取到完整公告文字，见test-results/national-review/evidence-enterprise/energy-search.txt。长安大学云就业）",
+      "nextAction": "优先核产业研究岗0252资格与委培地点，核对本科和硕士院校条件后再选择唯一志愿。；继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://zhaopin.chnenergy.com.cn/annc/showgg?id=af8fff3a-8fcf-466e-a1dc-813fecfa6267",
+        "https://zhaopin.chnenergy.com.cn/annc/showgg?id=6a152f40-7fe5-460e-ad37-0024acafd8c9"
+      ]
+    },
+    {
+      "id": "ctg",
+      "name": "中国长江三峡集团",
+      "sector": "能源电力",
+      "aliases": [
+        "三峡集团"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国长江三峡集团 · 2027待核（公开web工具；）",
+      "nextAction": "从集团官网招聘栏目重新确认当届入口及本部/科学技术研究院岗位；此记录不作当前开放依据。",
+      "sourceUrls": [
+        "https://campus.chinahr.com/pages/sanxia/"
+      ]
+    },
+    {
+      "id": "hng",
+      "name": "中国华能集团",
+      "sector": "能源电力",
+      "aliases": [
+        "华能"
+      ],
+      "entryIds": [
+        "soe-13b954591e810cca6d94"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中国华能 · 二级单位管培 / 科研管理（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zjob/2446182.htm"
+      ]
+    },
+    {
+      "id": "chd",
+      "name": "中国华电集团",
+      "sector": "能源电力",
+      "aliases": [
+        "华电"
+      ],
+      "entryIds": [
+        "soe-5d5e2a79fb87bf541109"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中国华电 · 青年骏才统计学类线索（公开web工具；） 已补读官方XLSX第19—20行：四川公司数学/统计需求；单位所在地不是工作地。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://www.chd.com.cn/site/2/2026-09-14/b7dffff921ca499c90f84509cd272310.html",
+        "https://www.chd.com.cn/webfront/fileDownLoad.do?fileId=141220126250799104"
+      ]
+    },
+    {
+      "id": "spic",
+      "name": "国家电力投资集团",
+      "sector": "能源电力",
+      "aliases": [
+        "国家电投",
+        "国电投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：国家电投 · 当届公告入口待深核（暨南大学标题及搜索正文可见，open只返空正文；见test-results/national-review/evidence-enterprise/spic.web.txt、search-result）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://scdc.jnu.edu.cn/campus/view/id/1037061"
+      ]
+    },
+    {
+      "id": "datang",
+      "name": "中国大唐集团",
+      "sector": "能源电力",
+      "aliases": [
+        "大唐集团"
+      ],
+      "entryIds": [
+        "soe-5115684db9063d74877d"
+      ],
+      "hqEntryIds": [
+        "soe-5115684db9063d74877d"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中国大唐 · 电力交易管培 / 在京本部管培（）",
+      "nextAction": "在官方平台筛电力交易专项，确认0252、院校、轮岗与考核要求。",
+      "sourceUrls": [
+        "https://dtsc.china-cdt.com/cdtsc/xwzx/jtxw/2026/9/I1552059660066881536.html"
+      ]
+    },
+    {
+      "id": "cgn",
+      "name": "中国广核集团",
+      "sector": "能源电力",
+      "aliases": [
+        "中广核"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中广核 · 统计学类总目录（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118224.html"
+      ]
+    },
+    {
+      "id": "cnnc",
+      "name": "中国核工业集团",
+      "sector": "能源电力",
+      "aliases": [
+        "中核集团"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sinochem",
+      "name": "中国中化",
+      "sector": "能源电力",
+      "aliases": [
+        "中化",
+        "中国化工"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国中化 / 中化信息 · 总部管培及业务支持待核（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118971.html"
+      ]
+    },
+    {
+      "id": "pipechina",
+      "name": "国家石油天然气管网集团",
+      "sector": "能源电力",
+      "aliases": [
+        "国家管网"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "powerchina",
+      "name": "中国电力建设集团",
+      "sector": "能源电力",
+      "aliases": [
+        "中国电建"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国电建 · 河南工程及研究院入口（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://hngc.powerchina.cn/col/col1976/art/2026/art_64e61fbfd1534661acbe3f9152c86e20.html"
+      ]
+    },
+    {
+      "id": "energychina",
+      "name": "中国能源建设集团",
+      "sector": "能源电力",
+      "aliases": [
+        "中国能建"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国能建 · 资本金融 / 市场运营 / 职能（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://career.hebut.edu.cn/home/correcruit/content/id/80246.html"
+      ]
+    },
+    {
+      "id": "sdic",
+      "name": "国家开发投资集团",
+      "sector": "能源电力",
+      "aliases": [
+        "国投集团"
+      ],
+      "entryIds": [
+        "soe-230433dca282b611307c"
+      ],
+      "hqEntryIds": [
+        "soe-230433dca282b611307c"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：国投集团 · 管培 / 投资与职能（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://career.hebut.edu.cn/home/correcruit/content/id/81149.html"
+      ]
+    },
+    {
+      "id": "crhc",
+      "name": "中国国新控股",
+      "sector": "能源电力",
+      "aliases": [
+        "中国国新"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国国新 · 资管 / 投资 / 金融服务（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://aeo.uibe.edu.cn/front/zph.jspa?tid=2094608036093018114"
+      ]
+    },
+    {
+      "id": "cmcc",
+      "name": "中国移动",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "移动",
+        "九天",
+        "咪咕",
+        "CMCC"
+      ],
+      "entryIds": [
+        "soe-ad455372b0bbb2f021ce",
+        "soe-35812b328fb333295de9",
+        "soe-8cd49c5535cbb34514df"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中国移动成都产业研究院 · AI全栈 / Agent开发（）；中国移动研究院 · 通信 / 算力 / 智能（公开web工具；）",
+      "nextAction": "在cId=91核对硕士可报的AI全栈或Agent岗位、专业和工作地。；继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118392.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118516.html",
+        "https://job.hust.edu.cn/zpinfo1/2432063.htm"
+      ]
+    },
+    {
+      "id": "ct",
+      "name": "中国电信",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "电信",
+        "天翼",
+        "TeleAI",
+        "CTYun"
+      ],
+      "entryIds": [
+        "soe-933afa76439b71816ede",
+        "soe-09d0c319c855ec8c738e",
+        "soe-4ffa72152f7258fb78a2",
+        "soe-a2ceddeff19120c77391"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://wecruit.hotjob.cn/SU62b2ae672f9d24458d72f9cc/pb/school.html",
+        "https://www.chinatelecom.com.cn/ct/zp/168256.html",
+        "https://www.chinatelecom.com.cn/ct/zp/167276.html"
+      ]
+    },
+    {
+      "id": "cu",
+      "name": "中国联通",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "联通",
+        "联通数科"
+      ],
+      "entryIds": [
+        "soe-b96d5b94cecc8946cc71",
+        "soe-14617422435dc1c7757c"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中国联通研究院 · 网络数据分析与建模（）",
+      "nextAction": "核对网络数据分析与建模研究岗官方JD、硕士条件、0252和具体城市。",
+      "sourceUrls": [
+        "https://jobs.tiangong.edu.cn/correcruit/content/id/56341.html",
+        "https://zglt.iguopin.com/",
+        "https://career.nankai.edu.cn/correcruit/content/id/118193.html"
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "中国铁塔",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "铁塔"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国铁塔 · 2027启动已检出（官网搜索提取到日期与图片公告标题，open超时。test-results/national-review/evidence-enterprise/tower.web.txt；search-result）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://www.china-tower.com/Index/show/catid/10/id/1897.html"
+      ]
+    },
+    {
+      "id": "cetc",
+      "name": "中国电子科技集团",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "中国电科",
+        "CETC",
+        "中科芯"
+      ],
+      "entryIds": [
+        "soe-237dd8bb2d51359a8818",
+        "soe-6c88c55a7f10e63848e4"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cec",
+      "name": "中国电子信息产业集团",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "中国电子",
+        "电子云",
+        "CEC"
+      ],
+      "entryIds": [
+        "soe-7fe2c247fb54aac480d8"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sugon",
+      "name": "中科曙光",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "曙光",
+        "Sugon"
+      ],
+      "entryIds": [
+        "soe-281e1336c36307f85882"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.hebut.edu.cn/home/correcruit/content/id/79325.html"
+      ]
+    },
+    {
+      "id": "inspur",
+      "name": "浪潮集团",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "浪潮",
+        "Inspur"
+      ],
+      "entryIds": [
+        "soe-d10aecb1b903d20e8fd8"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/117451.html"
+      ]
+    },
+    {
+      "id": "baosight",
+      "name": "宝信软件",
+      "sector": "通信电子与科技",
+      "aliases": [
+        "宝信"
+      ],
+      "entryIds": [
+        "soe-bd6aef6e032befbf221e"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "citic",
+      "name": "中国中信集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中信集团"
+      ],
+      "entryIds": [
+        "soe-885aa3ce3b991be77d82",
+        "soe-fec9805f8b492d2ca3a2"
+      ],
+      "hqEntryIds": [
+        "soe-885aa3ce3b991be77d82",
+        "soe-fec9805f8b492d2ca3a2"
+      ],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：中国中信金融资产 · 管培 / 风险 / 资产研究（）；中信集团总部 / 中信投资控股 · 管培投资（公开web工具；）",
+      "nextAction": "优先核查风险管理、业务审查/评估及数据应用岗位的硕士/专业要求和雇主。；继续在job.citic.com核总部管培专业清单、基层轮岗与投资控股职位。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2445067.htm",
+        "https://aeo.uibe.edu.cn/front/zph.jspa?tid=2089569480844836865"
+      ]
+    },
+    {
+      "id": "cmgroup",
+      "name": "招商局集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "招商局"
+      ],
+      "entryIds": [
+        "soe-de9c4459438f9d40fc9c"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。 本轮另检查：招商局融资租赁 · 市场营销岗（）",
+      "nextAction": "复核官方同一jobAdId及考核指标、工作地后申请；专业不限只用于此市场营销岗。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2431927.htm",
+        "https://cmhk.zhiye.com/custom/cmcleasingxq?hideMenu=1&jc=2&jobAdId=53690b0a-ff49-4aba-bc6e-8f13e9b638ba"
+      ]
+    },
+    {
+      "id": "cosco",
+      "name": "中国远洋海运集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中远海运"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中远海运 · 大连集运 / 科技 / 重工（大连海事搜索可读雇主正文，open未返正文仅职位模板；test-results/national-review/evidence-enterprise/cosco.web.txt、search-res）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://myjob.dlmu.edu.cn/campus/view/id/869147"
+      ]
+    },
+    {
+      "id": "chinapost",
+      "name": "中国邮政集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中国邮政"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "crrc",
+      "name": "中国中车",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中车"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国中车株洲所 · 本硕博研发入口（公开web工具；）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2441783.htm"
+      ]
+    },
+    {
+      "id": "comac",
+      "name": "中国商飞",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "商飞"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：商飞软件 · 软件开发 / 算法（NCSS搜索返回较完整雇主文字并标来源电子科大，open只有输入框。见test-results/national-review/evidence-enterprise/comac-soft.web.t）",
+      "nextAction": "从商飞官网进入上海航空工业—商飞软件2027岗位，确认当前可投、0252、职责和截止。",
+      "sourceUrls": [
+        "https://www.ncss.cn/student/jobs/6VrK35qLoL8qwHK3xyoVNY/detail.html"
+      ]
+    },
+    {
+      "id": "aero",
+      "name": "中国航空发动机集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中国航发"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "attempted_unresolved",
+      "checkedOn": "2026-09-28",
+      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国航发商发 / 研究机构 · 专业待核（官方授权招聘页搜索提取到项目管理、采购供应链等类别及2027毕业要求；open返回0行。test-results/national-review/evidence-enterprise/aecc.we）",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。",
+      "sourceUrls": [
+        "https://aecccae.zhaopin.com/jobs/index.html"
+      ]
+    },
+    {
+      "id": "avic",
+      "name": "中国航空工业集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "航空工业"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "casc",
+      "name": "中国航天科技集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "航天科技"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "casic",
+      "name": "中国航天科工集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "航天科工"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "csic",
+      "name": "中国船舶集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中国船舶"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cccc",
+      "name": "中国交通建设集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中国交建"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "crec",
+      "name": "中国中铁",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中铁集团"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "crcc",
+      "name": "中国铁建",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "铁建"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cscec",
+      "name": "中国建筑集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中国建筑"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cr",
+      "name": "华润集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "华润"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cofco",
+      "name": "中粮集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中粮"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "genertec",
+      "name": "中国通用技术集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "通用技术"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "baowu",
+      "name": "中国宝武",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "宝武"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "chinalco",
+      "name": "中国铝业集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中铝"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "minmetals",
+      "name": "中国五矿",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "五矿"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sinomach",
+      "name": "中国机械工业集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "国机集团"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "catarc",
+      "name": "中国汽车技术研究中心",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中汽中心",
+        "CATARC"
+      ],
+      "entryIds": [
+        "soe-54268e0393a76722595e"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "dongfeng",
+      "name": "东风汽车集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "东风",
+        "岚图"
+      ],
+      "entryIds": [
+        "soe-0a4d614aa7dd0aee16bc",
+        "soe-67ba0f956e9bff32cb49"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.hebut.edu.cn/home/correcruit/content/id/79130.html"
+      ]
+    },
+    {
+      "id": "baic",
+      "name": "北京汽车集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "北汽"
+      ],
+      "entryIds": [
+        "soe-bc7d404baf298af71195"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.hebut.edu.cn/home/correcruit/content/id/80193.html"
+      ]
+    },
+    {
+      "id": "travelsky",
+      "name": "中国民航信息集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "中国航信",
+        "航旅纵横"
+      ],
+      "entryIds": [
+        "soe-9f02794271f6ee22ab36"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "csa",
+      "name": "中国南方航空集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "南航",
+        "厦门航空",
+        "厦航"
+      ],
+      "entryIds": [
+        "soe-11e02d2dbe7515379cad"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2413786.htm",
+        "https://news.ifeng.com/c/7feWeLjAL0e"
+      ]
+    },
+    {
+      "id": "airchina",
+      "name": "中国航空集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "国航"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "ceair",
+      "name": "中国东方航空集团",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "东航"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "mango",
+      "name": "湖南芒果文化传媒体系",
+      "sector": "工业交通与综合",
+      "aliases": [
+        "芒果TV",
+        "Mango TV"
+      ],
+      "entryIds": [
+        "soe-7df999bb5bbab0b3e8fc"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "zjjt",
+      "name": "浙江省交通投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "浙江交投",
+        "浙江商业",
+        "浙商中拓"
+      ],
+      "entryIds": [
+        "soe-74afd94593431265ce3a",
+        "soe-cb0f7783542ae0067238"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3819/468985115333632",
+        "https://dhr.cncico.com:18443/postDetail/263846648516567960",
+        "https://dhr.cncico.com:18443/postDetail/263846648516567950",
+        "https://dhr.cncico.com:18443/postDetail/263846648516567956",
+        "https://dhr.cncico.com:18443/postDetail/263846648516567963",
+        "https://www.fenbi.com/page/exam-information-detail/468985117955072"
+      ]
+    },
+    {
+      "id": "zjenergy",
+      "name": "浙江省能源集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "浙能"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "zjcapital",
+      "name": "浙江省金融控股",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "浙江金控"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "hzcapital",
+      "name": "杭州资本与金融投资平台",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "杭州资本",
+        "杭州金投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sdholdings",
+      "name": "山东省国有资产投资控股",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "山东国投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "shguosheng",
+      "name": "上海国盛集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "上海国盛"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "shguoji",
+      "name": "上海国际集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "上海国际集团总部"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "szcapital",
+      "name": "深圳市资本运营集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "深圳资本"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "gzcapital",
+      "name": "广州越秀集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "越秀集团"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "scdevelop",
+      "name": "四川发展控股",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "四川发展"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "shudao",
+      "name": "蜀道投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "蜀道"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "scenergy",
+      "name": "四川省能源投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "四川能投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "scfinancial",
+      "name": "四川金融控股集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "四川金控"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cdindustry",
+      "name": "成都产业投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "成都产投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cqyf",
+      "name": "重庆渝富控股集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "渝富"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cqdev",
+      "name": "重庆发展投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "重庆发展"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "cqguarantee",
+      "name": "重庆三峡融资担保集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "三峡担保"
+      ],
+      "entryIds": [
+        "soe-15e8fe78032c98f915c3"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://gzw.cq.gov.cn/gqzp/202608/t20260828_15994445_wap.html"
+      ]
+    },
+    {
+      "id": "sxinvest",
+      "name": "陕西投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "陕投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sxcoal",
+      "name": "陕西煤业化工集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "陕煤"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "yanchang",
+      "name": "陕西延长石油集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "延长石油"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sxfin",
+      "name": "陕西金融控股集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "陕西金控"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "xmcd",
+      "name": "厦门建发集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "建发股份",
+        "建发"
+      ],
+      "entryIds": [
+        "soe-1bc9a6c37424182099b8"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.hebut.edu.cn/correcruit/content/id/79950.html"
+      ]
+    },
+    {
+      "id": "xmitg",
+      "name": "厦门国贸控股",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "国贸股份",
+        "国贸控股"
+      ],
+      "entryIds": [
+        "soe-c220d0f777ae54ac86c4"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/117204.html"
+      ]
+    },
+    {
+      "id": "xmxiangyu",
+      "name": "厦门象屿集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "象屿"
+      ],
+      "entryIds": [
+        "soe-fc684edd781f27422e8d"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/117501.html"
+      ]
+    },
+    {
+      "id": "jsguoxin",
+      "name": "江苏省国信集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "江苏国信"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "anhui",
+      "name": "安徽省投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "皖投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "sdu",
+      "name": "山东高速集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "山东高速"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "henan",
+      "name": "河南投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "河南投资"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "hubei",
+      "name": "湖北省交通投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "湖北交投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    },
+    {
+      "id": "gansu",
+      "name": "甘肃省建设投资集团",
+      "sector": "地方国资与区域金融",
+      "aliases": [
+        "甘肃建投"
+      ],
+      "entryIds": [],
+      "hqEntryIds": [],
+      "reviewState": "not_reviewed",
+      "checkedOn": null,
+      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": []
+    }
+  ]
+}

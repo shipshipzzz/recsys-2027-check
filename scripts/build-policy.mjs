@@ -2,17 +2,52 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import { gzipSync } from 'node:zlib';
+import { createHash } from 'node:crypto';
 
 export const BUILD_BUDGETS = Object.freeze({
   // 2026-09-27: 44 new evidence sources and 3 cards add 7,674 gzip bytes.
   // Keep history/offline evidence; measured baseline and revised limits are documented in the review.
+  totalJsonGzip: 200 * 1024,
+  pageJsonGzip: 200 * 1024,
+  totalJsonBytes: 2 * 1024 * 1024,
   totalJavaScriptGzip: 210 * 1024,
   pageJavaScriptGzip: 155 * 1024,
   pageCssGzip: 16 * 1024,
   pageHtmlGzip: 14 * 1024,
 });
 const PREFIX = '/recsys-2027-check/';
-const ASSET = /^assets\/[A-Za-z0-9_.-]+\.(?:js|css)$/;
+const ASSET = /^assets\/[A-Za-z0-9_.-]+\.(?:js|css|json)$/;
+
+/** Compare complete emitted documents to their sole maintenance sources, including history. */
+export function validateDataAssets(directory, root, metrics) {
+  const manifest = JSON.parse(fs.readFileSync(path.join(directory, '.vite/manifest.json'), 'utf8'));
+  const jsonAssets = {};
+  for (const name of [
+    'soe',
+    'soe-screening',
+    'soe-locations',
+    'soe-directory',
+    'soe-opportunities',
+  ]) {
+    const source = 'data/' + name + '.json';
+    const emitted = manifest[source]?.file;
+    assert.ok(emitted?.endsWith('.json'), 'Missing JSON in manifest: ' + source);
+    assert.match(emitted, ASSET);
+    const local = fs.readFileSync(path.join(root, source));
+    const built = fs.readFileSync(path.join(directory, emitted));
+    assert.deepEqual(
+      built,
+      local,
+      'JSON asset differs from its complete maintenance source: ' + source,
+    );
+    assert.ok(
+      metrics.pages['soe.html'].assets.includes(emitted),
+      'JSON missing from SOE dependency accounting',
+    );
+    jsonAssets[emitted] = createHash('sha256').update(built).digest('hex');
+  }
+  return jsonAssets;
+}
 
 /** Check the actual manifest graph, including dynamically imported page entrypoints. */
 export function validateBuild(directory, budgets = BUILD_BUDGETS) {
@@ -26,6 +61,7 @@ export function validateBuild(directory, budgets = BUILD_BUDGETS) {
     assert.ok(fs.lstatSync(filename).isFile(), 'Build assets must be regular files');
     if (!sizes.has(file)) {
       const bytes = fs.readFileSync(filename);
+      if (file.endsWith('.json')) JSON.parse(bytes.toString('utf8'));
       assert.doesNotMatch(
         bytes.toString('utf8'),
         /sb_secret_[A-Za-z0-9_-]{20,}/,
@@ -37,7 +73,7 @@ export function validateBuild(directory, budgets = BUILD_BUDGETS) {
   }
   for (const entry of Object.values(manifest)) {
     asset(entry.file);
-    for (const file of entry.css || []) asset(file);
+    for (const file of [...(entry.css || []), ...(entry.assets || [])]) asset(file);
     for (const key of [...(entry.imports || []), ...(entry.dynamicImports || [])])
       assert.ok(manifest[key], 'Missing manifest dependency: ' + key);
   }
@@ -50,6 +86,11 @@ export function validateBuild(directory, budgets = BUILD_BUDGETS) {
     totalJavaScriptGzip <= budgets.totalJavaScriptGzip,
     'Total JavaScript exceeds the gzip budget',
   );
+  const jsonSizes = [...sizes].filter(([file]) => file.endsWith('.json'));
+  const totalJsonGzip = jsonSizes.reduce((sum, [, size]) => sum + size.gzip, 0);
+  const totalJsonBytes = jsonSizes.reduce((sum, [, size]) => sum + size.bytes, 0);
+  assert.ok(totalJsonGzip <= budgets.totalJsonGzip, 'Total JSON exceeds gzip budget');
+  assert.ok(totalJsonBytes <= budgets.totalJsonBytes, 'Total JSON exceeds raw byte budget');
   const pages = {};
   for (const [name, key] of [
     ['index.html', 'src/pages/rec.js'],
@@ -92,7 +133,7 @@ export function validateBuild(directory, budgets = BUILD_BUDGETS) {
       used.add(file);
       const entry = manifest[byFile.get(file)];
       if (entry) {
-        for (const css of entry.css || []) include(css);
+        for (const file of [...(entry.css || []), ...(entry.assets || [])]) include(file);
         for (const dependency of entry.imports || []) include(manifest[dependency].file);
       }
     }
@@ -106,6 +147,10 @@ export function validateBuild(directory, budgets = BUILD_BUDGETS) {
     const cssGzip = [...used]
       .filter((file) => file.endsWith('.css'))
       .reduce((sum, file) => sum + sizes.get(file).gzip, 0);
+    const jsonGzip = [...used]
+      .filter((file) => file.endsWith('.json'))
+      .reduce((sum, file) => sum + sizes.get(file).gzip, 0);
+    assert.ok(jsonGzip <= budgets.pageJsonGzip, name + ' exceeds JSON gzip budget');
     const htmlGzip = gzipSync(html).length;
     assert.ok(
       javascriptGzip <= budgets.pageJavaScriptGzip,
@@ -113,7 +158,14 @@ export function validateBuild(directory, budgets = BUILD_BUDGETS) {
     );
     assert.ok(cssGzip <= budgets.pageCssGzip, name + ' exceeds the CSS gzip budget');
     assert.ok(htmlGzip <= budgets.pageHtmlGzip, name + ' exceeds the HTML gzip budget');
-    pages[name] = { javascriptGzip, cssGzip, htmlGzip, assets: [...used].sort() };
+    pages[name] = { javascriptGzip, jsonGzip, cssGzip, htmlGzip, assets: [...used].sort() };
   }
-  return { budgets, totalJavaScriptGzip, pages, assets: Object.fromEntries(sizes) };
+  return {
+    budgets,
+    totalJavaScriptGzip,
+    totalJsonGzip,
+    totalJsonBytes,
+    pages,
+    assets: Object.fromEntries(sizes),
+  };
 }

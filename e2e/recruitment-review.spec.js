@@ -69,7 +69,14 @@ test('role-level evidence resolves qualifications without merging separate appli
   await expect(hz).toContainText('多个岗位合成一个截止');
   await expect(hz).toContainText('10/22');
   await expect(hz).toContainText('10/25');
-  await expect(hz).toContainText('模板字段');
+  // This later review has read the official JDs; keep the distinct job/date evidence.
+  const dataRole = hz.locator('[data-position="soe-15dcc83203fa8d55b59c-p01"]');
+  const trainee = hz.locator('[data-position="soe-15dcc83203fa8d55b59c-p02"]');
+  await expect(dataRole).toContainText('明确列应用统计');
+  await expect(dataRole).toContainText('2026-09-30');
+  await expect(trainee).toContainText('统计类 / 数理统计');
+  await expect(trainee).toContainText('2026-10-25');
+  await expect(hz.locator('.position-list')).toContainText('仅本机保存');
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
   ).toBe(true);

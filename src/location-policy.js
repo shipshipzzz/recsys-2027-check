@@ -102,6 +102,31 @@ export function matchesLocation(assessment, choice, direction = 'all') {
   );
 }
 
+// Unknown evidence may be shown explicitly, but never widens known different-city jobs.
+export function locationMatchKind(assessment, choice, direction = 'all', includePending = false) {
+  if (matchesLocation(assessment, choice, direction)) return 'confirmed';
+  if (!includePending || choice === 'all') return null;
+  if (!assessment?.matched || !assessment.current) return 'pending';
+  const places = locationsForDirection(assessment, direction);
+  if (!places.length) return assessment.locations?.length ? null : 'pending';
+  if (places.some((place) => ['position', 'campaign'].includes(place.level))) return null;
+  return 'pending';
+}
+export function availableCities(assessments) {
+  return [
+    ...new Set(
+      assessments
+        .filter((a) => a.matched && a.current)
+        .flatMap((a) =>
+          a.locations
+            .filter((p) => ['position', 'campaign'].includes(p.level))
+            .map((p) => p.city)
+            .filter(Boolean),
+        ),
+    ),
+  ].sort();
+}
+
 /** Never let geography promote an expired window or override a qualification evidence tier. */
 export function preferenceStage(item, assessment, now = new Date()) {
   if (item.status === 'past') return 4;

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { deploymentFiles, verifyDeployment, SITE } from '../scripts/verify-pages.mjs';
 
 const REVISION = 'a'.repeat(40);
@@ -142,4 +143,48 @@ test('dynamically imported assets are verified even without HTML preload referen
     verifyDeployment({ ...f, fetchImpl, revision: REVISION, attempts: 1 }),
     /differs/,
   );
+});
+
+test('released JSON bytes and MIME are checked and missing data cannot disappear from inventory', async (t) => {
+  const f = fixture(t),
+    file = 'assets/soe-data.json',
+    bytes = '{"history":["kept"]}';
+  fs.writeFileSync(path.join(f.directory, file), bytes);
+  const releasePath = path.join(f.directory, 'release.json');
+  const release = JSON.parse(fs.readFileSync(releasePath, 'utf8'));
+  release.json_assets = { [file]: createHash('sha256').update(bytes).digest('hex') };
+  fs.writeFileSync(releasePath, JSON.stringify(release));
+  assert.ok(deploymentFiles(f.directory).includes(file));
+  assert.equal(
+    (await verifyDeployment({ ...f, revision: REVISION, attempts: 1 })).files_verified,
+    7,
+  );
+  await assert.rejects(
+    verifyDeployment({
+      ...f,
+      revision: REVISION,
+      attempts: 1,
+      fetchImpl: async (url, options) => {
+        const response = await f.fetchImpl(url, options);
+        if (url.pathname.endsWith('soe-data.json'))
+          response.headers.set('content-type', 'text/html');
+        return response;
+      },
+    }),
+    /MIME/,
+  );
+  await assert.rejects(
+    verifyDeployment({
+      ...f,
+      revision: REVISION,
+      attempts: 1,
+      fetchImpl: async (url, options) =>
+        url.pathname.endsWith('soe-data.json')
+          ? new Response('{}', { headers: { 'content-type': 'application/json' } })
+          : f.fetchImpl(url, options),
+    }),
+    /differs/,
+  );
+  fs.unlinkSync(path.join(f.directory, file));
+  assert.throws(() => deploymentFiles(f.directory), /Missing released JSON/);
 });

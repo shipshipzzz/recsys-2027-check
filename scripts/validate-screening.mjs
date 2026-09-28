@@ -100,7 +100,7 @@ export function validateScreening(catalog, policy) {
     if (row.major === 'explicit')
       assert.match(item.req, /应用统计/, 'Explicit evidence must be visible');
     if (row.major === 'unrestricted')
-      assert.match(item.req, /不限专业|专业不限/, 'Unrestricted scope must be explicit');
+      assert.match(item.req, /不限专业|专业不限|专业不设限/, 'Unrestricted scope must be explicit');
     assert.equal(
       row.basisHash,
       screeningDigest(item, catalog.SOURCES),

@@ -7,6 +7,7 @@ import { pathToFileURL } from 'node:url';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { ROOT, loadCatalogs, normalizeCatalogs, digest } from './catalog-data.mjs';
 import { safeError } from './cloud-catalog.mjs';
+import { validateBuild, validateDataAssets } from './build-policy.mjs';
 
 export const SITE = 'https://shipshipzzz.github.io/recsys-2027-check/';
 const PREFIX = new URL(SITE).pathname;
@@ -25,18 +26,28 @@ export function deploymentFiles(directory) {
     for (const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)) {
       if (!match[1].startsWith(PREFIX + 'assets/')) continue;
       const relative = match[1].slice(PREFIX.length);
-      assert.match(relative, /^assets\/[A-Za-z0-9_.-]+\.(?:js|css)$/);
+      assert.match(relative, /^assets\/[A-Za-z0-9_.-]+\.(?:js|css|json)$/);
       assert.ok(fs.existsSync(path.join(directory, relative)), `Missing local asset: ${relative}`);
       files.add(relative);
     }
   }
   // Dynamic imports are not necessarily present in the HTML preload list.
-  // Verify every emitted JavaScript/CSS chunk, not only the bootstrap entry.
+  // Verify every emitted JavaScript/CSS/JSON chunk, not only the bootstrap entry.
   for (const entry of fs.readdirSync(path.join(directory, 'assets'), { withFileTypes: true })) {
     assert.ok(entry.isFile(), 'Unexpected non-file in build assets');
     const relative = 'assets/' + entry.name;
-    assert.match(relative, /^assets\/[A-Za-z0-9_.-]+\.(?:js|css)$/);
+    assert.match(relative, /^assets\/[A-Za-z0-9_.-]+\.(?:js|css|json)$/);
     files.add(relative);
+  }
+  const release = JSON.parse(fs.readFileSync(path.join(directory, 'release.json'), 'utf8'));
+  for (const [file, hash] of Object.entries(release.json_assets || {})) {
+    assert.match(file, /^assets\/[A-Za-z0-9_.-]+\.json$/);
+    assert.ok(files.has(file), 'Missing released JSON asset: ' + file);
+    assert.equal(
+      sha256(fs.readFileSync(path.join(directory, file))),
+      hash,
+      'Stale local JSON asset: ' + file,
+    );
   }
   return [...files];
 }
@@ -124,6 +135,7 @@ async function main() {
     process.env.GITHUB_SHA ||
     execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim();
   const directory = path.join(ROOT, 'dist');
+  validateDataAssets(directory, ROOT, validateBuild(directory));
   const local = JSON.parse(fs.readFileSync(path.join(directory, 'release.json'), 'utf8'));
   assert.equal(
     local.catalog_sha256,
@@ -142,13 +154,13 @@ async function main() {
     JSON.stringify(receipt, null, 2) + '\n',
   );
   console.log(
-    'PASS: published Pages revision, catalog digest, both HTML entrypoints, all JS/CSS bytes and MIME types match this build.',
+    'PASS: published Pages revision, catalog digest, both HTML entrypoints, all JS/CSS/JSON bytes and MIME types match this build.',
   );
   console.log(JSON.stringify(receipt));
   if (process.env.GITHUB_STEP_SUMMARY) {
     fs.appendFileSync(
       process.env.GITHUB_STEP_SUMMARY,
-      `\n## Live Pages verification\n\n**Passed**: ${receipt.files_verified} public files match commit \`${revision}\` byte-for-byte.\n\nBoth entrypoints and their JavaScript/CSS MIME types were verified. This HTTP check does not simulate a user login.\n`,
+      `\n## Live Pages verification\n\n**Passed**: ${receipt.files_verified} public files match commit \`${revision}\` byte-for-byte.\n\nBoth entrypoints and their JavaScript/CSS/JSON MIME types were verified. This HTTP check does not simulate a user login.\n`,
     );
   }
 }

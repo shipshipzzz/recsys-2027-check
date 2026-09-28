@@ -1,0 +1,1883 @@
+{
+  "baseline": "efdf074e79cc54668a10b5ab35240f18405bc814",
+  "reviewedOn": "2026-09-28",
+  "mode": "本地更新；未提交/推送/部署/写生产",
+  "counts": {
+    "cards": 91,
+    "newCards": 33,
+    "recheckedExisting": 4,
+    "policyOnly": 1,
+    "unchangedExisting": 53,
+    "sourcesAdded": 47,
+    "directoryGroups": 163,
+    "groupsWithEntries": 57,
+    "groupsNotReviewed": 90,
+    "groupsAttemptedUnresolved": 17,
+    "hqGroups": 20,
+    "hqEntries": 21,
+    "positionParents": 14,
+    "positions": 23,
+    "currentCycleCards": 76,
+    "majorEvidenceCards": 39,
+    "geographyReviewed": 44
+  },
+  "cards": [
+    {
+      "id": "soe-933afa76439b71816ede",
+      "name": "天翼云",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-760d8065c74679611ff9",
+      "name": "招银网络科技",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-ad455372b0bbb2f021ce",
+      "name": "中国移动九天人工智能",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-09d0c319c855ec8c738e",
+      "name": "中国电信集团 · 优才 / 研发 / 产数",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-4ffa72152f7258fb78a2",
+      "name": "中国电信人工智能研究院 TeleAI",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-d10aecb1b903d20e8fd8",
+      "name": "浪潮集团",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-281e1336c36307f85882",
+      "name": "中科曙光",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-003d7bb92cd63869b718",
+      "name": "中国人保集团 · 本部 / 成员总部 / 科技",
+      "result": "reviewed",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B04", "N0928-B05"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-e3c6ba3985ff4004365b",
+      "name": "交银金融科技",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-54268e0393a76722595e",
+      "name": "中汽中心",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-0a4d614aa7dd0aee16bc",
+      "name": "东风汽车研发总院",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-237dd8bb2d51359a8818",
+      "name": "中国电科 50 所",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-6c88c55a7f10e63848e4",
+      "name": "中科芯 / 中国电科 58 所",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-b96d5b94cecc8946cc71",
+      "name": "联通数字科技",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-a2ceddeff19120c77391",
+      "name": "天翼物联 · 优才计划",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-35812b328fb333295de9",
+      "name": "咪咕公司",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-7df999bb5bbab0b3e8fc",
+      "name": "芒果TV",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-9f02794271f6ee22ab36",
+      "name": "中国航信 / 航旅纵横",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-691c283911ab1f4878af",
+      "name": "昆仑数智",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-13",
+      "currentAuditDate": "2026-09-13",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-0166e9a039513d6627bb",
+      "name": "东方地球物理公司 BGP",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-13",
+      "currentAuditDate": "2026-09-13",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-863efd948d7f8d33bfdb",
+      "name": "中国石化 · 集团招聘 / 经纬与物探方向",
+      "result": "reviewed",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B06"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-1e49fabfeb8af3287a2b",
+      "name": "中海油研究总院",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-bd6aef6e032befbf221e",
+      "name": "宝信软件",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-b24eccce088fab5acca4",
+      "name": "南网数字集团 · 2027提前批 / 经营管理",
+      "result": "reviewed",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-O05"],
+      "scope": "限所列招聘主体和实际岗位，不代表集团全量覆盖。"
+    },
+    {
+      "id": "soe-9144dfc3a2177c2560bf",
+      "name": "国网信通产业集团 / 南瑞集团",
+      "result": "policy_clarification",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": ["H02"],
+      "scope": "仅纠正维护口径，不刷新旧核查日期。"
+    },
+    {
+      "id": "soe-40821fd0c64459ec899d",
+      "name": "中国银联 / 银联数据",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-9ed0ba98e2b378d91fe7",
+      "name": "建信金融科技",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-7fe2c247fb54aac480d8",
+      "name": "中国电子云",
+      "result": "not_rechecked",
+      "previousAuditDate": null,
+      "currentAuditDate": null,
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-224eff4dd223d582e600",
+      "name": "中国银行 · 数据分析 / 审计数据",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-012f751aa0176646891e",
+      "name": "工商银行深圳分行 · 管培 / 产品 / 综合业务",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-56412c0e929ad53c81a8",
+      "name": "建设银行 · 总部经办 / 湖北通用管培",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-9ab002099e55ac2b03b6",
+      "name": "农业银行四川分行 · 综合业务 / 管理储备",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-f8c92726adc2c28d4be4",
+      "name": "招商银行深圳分行 · 定向培养 / 业务运营",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-fd7572b49f9a3eb7f2b6",
+      "name": "中信银行信用卡中心 · 风险统计 / 运营研究",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-1df7b49623798cb2b82b",
+      "name": "南京银行 · 风险管理 / 综合培养 / 业务",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-3a4e8fb9f15de5c306e9",
+      "name": "长城证券 · 研究分析 / 风险 / 客群运营",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-11e02d2dbe7515379cad",
+      "name": "厦门航空 · 规划财务 / 营销分析 / 管培",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-bc7d404baf298af71195",
+      "name": "北汽集团 · 市场 / 职能 / 数据分析",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-67ba0f956e9bff32cb49",
+      "name": "岚图汽车 · 产品企划 / 经营规划 / 营销管培",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-1bc9a6c37424182099b8",
+      "name": "建发股份 · 国内 / 进出口业务与管培",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-c220d0f777ae54ac86c4",
+      "name": "国贸股份 · 行业研究 / 贸易运营 / 业务",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-fc684edd781f27422e8d",
+      "name": "象屿 · 产业研究 / 风险 / 供应链运营",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-74afd94593431265ce3a",
+      "name": "浙江省商业集团 · 产业研究 / 运营 / 数字化",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-cb0f7783542ae0067238",
+      "name": "浙商中拓集团 · 研究 / 交易 / 商务",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-13",
+      "currentAuditDate": "2026-09-13",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-15e8fe78032c98f915c3",
+      "name": "重庆三峡融资担保集团 · 管培 / 项目经理",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-15dcc83203fa8d55b59c",
+      "name": "杭州银行 · 总分行培养 / 运营",
+      "result": "reviewed",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B01", "N0928-B02", "N0928-B03"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-28a7c75480e66ff26a24",
+      "name": "中国建设银行浙江省分行",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-70472ac853332bba0d05",
+      "name": "中国建设银行四川省分行",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-95134bdc75c0737d281e",
+      "name": "中国工商银行远程银行中心",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-946c8b35a6045d05921e",
+      "name": "中国工商银行软件开发中心",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-6f3da4b7ad2476020757",
+      "name": "招商银行宁波分行",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-140f2087c58956d157f6",
+      "name": "申万宏源集团 / 证券",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-55cb5e9670d088e4902f",
+      "name": "建信人寿 · 精算 / 经营管理",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-13",
+      "currentAuditDate": "2026-09-13",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-6f566438920bdfd0d70e",
+      "name": "中国农业银行浙江省分行",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-13",
+      "currentAuditDate": "2026-09-13",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-b9fb017b087135609736",
+      "name": "国家开发银行 · 总行经济金融",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-e43cb34e4c801cf57150",
+      "name": "广发银行 · 风险分析 / 业务 / 金融科技",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-84e7d908cb72d28b63a2",
+      "name": "重庆三峡银行 · 管培 / 金融科技 / 支行业务",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-27",
+      "currentAuditDate": "2026-09-27",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-6b718e14071e15579098",
+      "name": "兴业银行总行 · FinTech / 资金营运",
+      "result": "not_rechecked",
+      "previousAuditDate": "2026-09-28",
+      "currentAuditDate": "2026-09-28",
+      "newSources": [],
+      "scope": "本轮未重读招聘证据，保留原事实和核查日期。"
+    },
+    {
+      "id": "soe-0bcee0305932c39268f6",
+      "name": "中国农业发展银行 · 总行 / 省级分行",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B07"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-8b77a831e8fa823d9737",
+      "name": "中国邮政储蓄银行 · 总行本部 / 信用卡中心",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B08", "N0928-B09"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-1390ea899a188a39617a",
+      "name": "中国工商银行总行本部 · 管理培训生",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B10"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-6036cd9ae91c3526037f",
+      "name": "中国农业银行总行 · 菁穗培训生 / 直属机构",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B11", "N0928-B12"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-8260438ddfcb7cfaf9c1",
+      "name": "交通银行总行 · 业务 / 风险 / 综合管理",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B13", "N0928-B14", "N0928-B15", "N0928-B16"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-b2bb7f2da8bb065dafbb",
+      "name": "浦发银行总行 · 管培 / 科技 / 业务 / 运营",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B17"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-fbc68e3db565e8ae826c",
+      "name": "浦银金融科技 · AI / 数据 / 产品",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B17"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-75f4674009337c8bcaa1",
+      "name": "浦银理财 · 投研交易 / 运营 / 科技",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B17"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-afb94d0cd334ef5b35c7",
+      "name": "上海国际信托 · 投研 / 风控 / 数智",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B17"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-53b939996659dfde59e5",
+      "name": "招商银行总行 · 管培 / 智能科学研发",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B18"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-57a02b3fc6410f063563",
+      "name": "浙商银行 · 总行培养 / 科技 / 派驻",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B19"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-3a9d68162b0165c655ac",
+      "name": "中国农业银行研发中心 · 数据分析 / 研发",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B20"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-e47806eafc52fe5f9023",
+      "name": "华夏银行总行 · 数学统计管培生",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B21", "N0928-B22"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-1d81f573583960b2ca09",
+      "name": "华夏金融租赁 · 数学统计管培生",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-B21", "N0928-B23"],
+      "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。"
+    },
+    {
+      "id": "soe-de9c4459438f9d40fc9c",
+      "name": "招商局融资租赁 · 市场营销岗",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E01", "N0928-E01-O"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。承担客户开发与营销任务；薪资含绩效。公告介绍导师制及融耀计划，无确定薪资、销售指标或服务期。"
+    },
+    {
+      "id": "soe-5e5f37fe525132e770c9",
+      "name": "国寿安保基金 · 股票行业研究（京沪）",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E02", "N0928-E02-O", "N0928-E02-C"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。同月2027总公告与校招链接支持当届，具体毕业窗仍待官方JD；股票岗正文是宽专业目录，须复核真实职责与条件。机构业务岗有销售目标；不虚构用户金融经验。"
+    },
+    {
+      "id": "soe-8cd49c5535cbb34514df",
+      "name": "中国移动成都产业研究院 · AI全栈 / Agent开发",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E03"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。金种子专项、普通岗位及博士后不同；博士后不适用于硕士。未核到单岗职责和截止。与既有九天卡片主体不同，不替换九天ID。"
+    },
+    {
+      "id": "soe-14617422435dc1c7757c",
+      "name": "中国联通研究院 · 网络数据分析与建模",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E04"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。引博优才专项与普通硕士招聘须区分；未把其他量子岗位地点与数据岗拼接。独立于现有联通数科卡片。"
+    },
+    {
+      "id": "soe-6c87c97a536ff75ffd95",
+      "name": "招商证券 / 招商资管 · 研究、交易、产品",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E05"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。没有逐岗学历、专业、毕业窗及实习留用要求；不可把总公告不限专业字段标为岗位unrestricted。"
+    },
+    {
+      "id": "soe-adfb8640d34d1647cc06",
+      "name": "中信证券上海分公司 · 培训生",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E06"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。明确为营业部客户服务/销售路线，非总部研究岗；需在线测评、面试、实习考察后才可能录用。绩效目标、固定薪资与实习时间待核。"
+    },
+    {
+      "id": "soe-5115684db9063d74877d",
+      "name": "中国大唐 · 电力交易管培 / 在京本部管培",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E07"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。专项为二级单位定向、统招统分与集团统筹培养，不等同直接总部入职；学院、学历阶段及专业均需核验，未获取个人院校信息。"
+    },
+    {
+      "id": "soe-885aa3ce3b991be77d82",
+      "name": "中国中信金融资产 · 管培 / 风险 / 资产研究",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E08"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。学科门类总条件不等于具体总部岗专业；官网job.html未显示动态列表；业务考核、轮岗及合同主体待核。"
+    },
+    {
+      "id": "soe-59da3ca0da45344d20a6",
+      "name": "国家能源集团总部菁英管培 · 产业研究",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E09"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。3年基层/二级单位/总部培养后考核优秀且具备条件才进入总部；不能承诺起步北京或必进总部。"
+    },
+    {
+      "id": "soe-5d5e2a79fb87bf541109",
+      "name": "中国华电 · 青年骏才 / 统计方向",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E10", "N0928-E10-A"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。统计学类只是专项总目录；xlsx附件工具不支持下载读取。本硕学校门槛、培养考核、基层轮岗均未与个人匹配。"
+    },
+    {
+      "id": "soe-13b954591e810cca6d94",
+      "name": "中国华能 · 二级单位管培 / 科研管理",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E11"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。官网仅返回0行动态壳；本部/研究院相关硕士JD未取得；长城证券已在原库，不重复新增。"
+    },
+    {
+      "id": "soe-fec9805f8b492d2ca3a2",
+      "name": "中信集团总部 / 中信投资控股 · 管培投资",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E12"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。宣讲在对外经贸不代表北京工作岗位；主办单位银行分行只是联合活动发布者，本研究不核银行。"
+    },
+    {
+      "id": "soe-230433dca282b611307c",
+      "name": "国投集团 · 管培 / 投资与职能",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E13"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。本文官网为二维码未展开；未取得集团AI方向或投资岗专业详情；管培统筹选拔、轮岗交流不等同固定总部。"
+    },
+    {
+      "id": "soe-53bef5d34efd044c8a7c",
+      "name": "中国人寿保险股份总部 · 风险 / 运营等方向",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-E14"],
+      "scope": "仅实际读取的招聘正文/岗位子集，不能代表集团完整覆盖。未确认具体总部精算/投资岗专业，也未确认劳动合同员工或代理关系。官网跳转北森0行；集团总部与寿险股份总部需分开。"
+    },
+    {
+      "id": "soe-87ef8e3ebe4b4b4bb9fc",
+      "name": "中国石油共享运营 · 数据应用 / 人资共享",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-O01"],
+      "scope": "限所列招聘主体和实际岗位，不代表集团全量覆盖。"
+    },
+    {
+      "id": "soe-00f5a7bf22c3ecff3eff",
+      "name": "中国石油规划总院 · 市场研究 / AI研究",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-O02"],
+      "scope": "限所列招聘主体和实际岗位，不代表集团全量覆盖。"
+    },
+    {
+      "id": "soe-12aceb3925f1d9fc514e",
+      "name": "中国石油安全环保研究院 · AI技术研发",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-O03"],
+      "scope": "限所列招聘主体和实际岗位，不代表集团全量覆盖。"
+    },
+    {
+      "id": "soe-3bad984c354c08ffb3a5",
+      "name": "中国石油广西销售 · 数据 / 站经理储备",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-O04"],
+      "scope": "限所列招聘主体和实际岗位，不代表集团全量覆盖。"
+    },
+    {
+      "id": "soe-4e7bf568324c786fbaec",
+      "name": "远光软件 · 管理类 / 统计方向",
+      "result": "new",
+      "previousAuditDate": null,
+      "currentAuditDate": "2026-09-28",
+      "newSources": ["N0928-O06"],
+      "scope": "限所列招聘主体和实际岗位，不代表集团全量覆盖。"
+    }
+  ],
+  "newSources": [
+    {
+      "id": "N0928-B01",
+      "title": "杭州银行官方列表：不同岗位截止",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employ/school",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "本轮已读首屏：数据研发9/30、总行培训生10/25；109为总列表数，非可投数。",
+      "level": "官方职位列表",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B02",
+      "title": "杭州银行总行数据研发27159050",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "完整JD：杭州、硕士、应用统计、SQL、Python/R、毕业窗和外语。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B03",
+      "title": "杭州银行总行培训生27158942",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "完整JD：杭州、硕士、统计等相关专业、轮岗与考核定岗。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B04",
+      "title": "人保集团2027用人单位完整简章",
+      "url": "https://career.cuhk.edu.cn/job/view/id/469651",
+      "published": "2026-09-22",
+      "checked": "2026-09-28",
+      "scope": "集团本部、成员总部及分支范围；统计专业总范围；两阶梯志愿、总部10月中旬和集团10月单批笔试。",
+      "level": "高校用人单位公告",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B05",
+      "title": "人保官方综合校园岗位列表",
+      "url": "https://picc.zhiye.com/custom/campus?c1=8&hideAll=true",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "已读首屏多个2027具名岗位及机构筛选；未成功限定集团本级，不冒称已核总部全部JD。",
+      "level": "官方职位列表",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B06",
+      "title": "中国石化官方2027校园招聘入口",
+      "url": "https://job.sinopec.com/#/school/index",
+      "published": "2026-09-24",
+      "checked": "2026-09-28",
+      "scope": "校园首页与9/24集团公告标题、当届岗位分类；未读成公告内文，不声明具体截止或专业。",
+      "level": "官方职位列表",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B07",
+      "title": "农发行2027官方招聘公告",
+      "url": "https://www.adbc.com.cn/n354735/n355043/c722284/content.html",
+      "published": "2026-09-15",
+      "checked": "2026-09-28",
+      "scope": "完整正文：机构、数理统计总范围、学历英语、毕业窗、10/11 24时及2岗限制。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B08",
+      "title": "邮储2027官方总公告",
+      "url": "https://www.psbc.com/cn/gyyc/rczp/xyzp/202609/t20260907_460394.html",
+      "published": "2026-09-07",
+      "checked": "2026-09-28",
+      "scope": "完整正文：总部/信用卡/分行/子公司、毕业窗、10/7 24点和分组志愿规则。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B09",
+      "title": "邮储2027总行岗位门户",
+      "url": "https://psbc2027.zhaopin.com/jobs/index.html",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "已读总行板块与个人金融经营管理展开要求；金融科技全文和其他板块具体条件未核。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B10",
+      "title": "工商银行总行2027用人单位公告",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118013.html",
+      "published": "2026-09-07",
+      "checked": "2026-09-28",
+      "scope": "正文直接列管理培训生专业不设限、北京、本科起、六级、1岗及10/8截止；不是模板不限专业。",
+      "level": "高校用人单位公告",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B11",
+      "title": "农行2027官方总公告",
+      "url": "https://career.abchina.com.cn/build/index.html#/NoticeDetails/110803628",
+      "published": "2026-09-04",
+      "checked": "2026-09-28",
+      "scope": "机构分类、10/8 24时、每类机构与岗位额度、简历更新规则；未含具体专业。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B12",
+      "title": "农行2027官方校园机构导航",
+      "url": "https://career.abchina.com.cn/build/index.html#/99",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "已读总行菁穗、研发数据分析、子公司与分行条目；列表不是完整资格证据。",
+      "level": "官方职位列表",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B13",
+      "title": "交通银行总行风险合规39071",
+      "url": "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39071",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "完整公开JD：上海、本科起、优先专业、六级、轮岗、10/18；不声明已接受应用统计。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B14",
+      "title": "交通银行总行前台业务39070",
+      "url": "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39070",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "完整公开JD：前台条线、科技理工/经管等优先、上海及轮岗。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B15",
+      "title": "交通银行总行综合管理39072",
+      "url": "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39072",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "完整公开JD：治理/人力/财务/运营、优先专业及上海。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B16",
+      "title": "交通银行2027总项目转载线索",
+      "url": "https://www.shanganclaw.com/announcements/183368/",
+      "published": "2026-09-19",
+      "checked": "2026-09-28",
+      "scope": "仅补充2027届次和总行/分行/子公司志愿线索；原高校页面未读成，志愿需回官方确认。",
+      "level": "第三方转载",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B17",
+      "title": "浦发2027总行分行及子公司完整岗位表",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+      "published": "2026-09-24",
+      "checked": "2026-09-28",
+      "scope": "雇主发布正文及完整机构岗位/学历列表；总行4类硕士、一般原则不限专业、10/8 18:00；子公司具体专业和工作地另核。",
+      "level": "高校用人单位公告",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B18",
+      "title": "招行总行分行子公司2027用人单位公告",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/117199.html",
+      "published": "2026-08-31",
+      "checked": "2026-09-28",
+      "scope": "正文具名总行四类路线、毕业窗、英语及两批笔试；没有总行统一投递截止或逐岗专业。",
+      "level": "高校用人单位公告",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B19",
+      "title": "浙商银行2027总行及分支招聘公告",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118746.html",
+      "published": "2026-09-21",
+      "checked": "2026-09-28",
+      "scope": "正文优先：相关专业，不使用模板不限；总行培养/派驻、毕业窗、网申后三日测评。",
+      "level": "高校用人单位公告",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B20",
+      "title": "农行研发中心2027官方公告",
+      "url": "https://career.abchina.com.cn/build/index.html#/RecruitmentNoticeDetails/110803543/99",
+      "published": "2026-09-04",
+      "checked": "2026-09-28",
+      "scope": "完整正文：4类岗位、2027项目、毕业窗、六级、10/8 24时、2岗；专业地点未逐岗列明。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B21",
+      "title": "华夏银行2027官方招聘启事",
+      "url": "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/news.html#/detail?detailId=1789464953292&detailType=0",
+      "published": "2026-09-17",
+      "checked": "2026-09-28",
+      "scope": "总行/分行/子公司、数学统计大类、10/25及毕业/社保限制；不能把总条件覆盖子公司全部例外。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B22",
+      "title": "华夏银行总行 · 数学统计管培生具体官方JD",
+      "url": "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/posDetail.html?postId=6aabb405f0cfabf2b4c61fa3&postType=campus",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "已读数学统计相关、硕士及以上、北京和完整任职条件；职责未展开、具体页未显示独立截止。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-B23",
+      "title": "华夏金融租赁 · 数学统计管培生具体官方JD",
+      "url": "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/posDetail.html?postId=6aabbac1fea5e04bda6c5365&postType=campus",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "scope": "已读数学统计相关、硕士及以上、北京和完整任职条件；职责未展开、具体页未显示独立截止。",
+      "level": "官方正文",
+      "access": "公开正文/隔离浏览器；未登录、申请或提交"
+    },
+    {
+      "id": "N0928-E01",
+      "title": "招商局融资租赁有限公司2027届校园招聘简章",
+      "url": "https://job.hust.edu.cn/zpinfo1/2431927.htm",
+      "published": "2026-09-10",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "市场营销岗：专业不限，具有STEM及经济、财税、金融等复合型学科背景优先。 读取边界：承担客户开发与营销任务；薪资含绩效。公告介绍导师制及融耀计划，无确定薪资、销售指标或服务期。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E01-O",
+      "title": "招商租赁市场营销J33505官方完整JD",
+      "url": "https://cmhk.zhiye.com/custom/cmcleasingxq?hideMenu=1&jc=2&jobAdId=53690b0a-ff49-4aba-bc6e-8f13e9b638ba",
+      "published": "2026-09-04",
+      "checked": "2026-09-28",
+      "level": "官方正文",
+      "scope": "全职校园岗位，2027本科及以上、专业不限/STEM复合优先；深圳北京天津；研究、客户开发、尽调、租后管理。",
+      "access": "隔离浏览器完整正文"
+    },
+    {
+      "id": "N0928-E02",
+      "title": "股票行业研究岗（北京、上海）",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118892.html",
+      "published": "2026-09-16",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "高校同名岗位正文含应用统计、硕士及以上、京沪与11/15；不是官方专业确认。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E02-O",
+      "title": "国寿安保股票行业研究官方完整JD",
+      "url": "https://chinalife.zhiye.com/custom/zwxq?hideMenu=1&jobAdId=426f1a0c-d5bb-4586-8ab8-17e1f9bd7d7b&jc=2",
+      "published": "2026-09-08",
+      "checked": "2026-09-28",
+      "level": "官方正文",
+      "scope": "已读具体岗位：硕士、经济金融及工科相关、京沪、研究估值与金融工具；未逐字列应用统计，无岗位截止。",
+      "access": "隔离浏览器完整正文"
+    },
+    {
+      "id": "N0928-E02-C",
+      "title": "国寿安保2027校园招聘项目公告",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118939.html",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "仅用于确认2027校园项目及合资背景，不将集团专业覆盖具体岗位。",
+      "access": "公开用人单位正文"
+    },
+    {
+      "id": "N0928-E03",
+      "title": "中国移动（成都）产业研究院2027秋季校园招聘公告",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118516.html",
+      "published": "2026-09-10",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "计算机、软件、通信、电子工程、自动化、数学、统计学、人工智能、大数据等相关专业。核心岗位：AI全栈工程师、Agent开发工程师、信息安全工程师、空域运行工程师。 读取边界：金种子专项、普通岗位及博士后不同；博士后不适用于硕士。未核到单岗职责和截止。与既有九天卡片主体不同，不替换九天ID。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E04",
+      "title": "中国联通研究院2027校园招聘",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118193.html",
+      "published": "2026-09-08",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "2027届高校毕业生，包括硕士研究生、博士研究生。招聘岗位：网络数据分析与建模研究岗。 读取边界：引博优才专项与普通硕士招聘须区分；未把其他量子岗位地点与数据岗拼接。独立于现有联通数科卡片。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E05",
+      "title": "招商证券2027年校园招聘现已全面启动，欢迎投递",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118113.html",
+      "published": "2026-09-07",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "所有专业都有机会，且理工科背景的同学优先！研究助理岗：深圳、北京、上海；招商资管研究岗（量化方向）、研究岗（行业研究）、产品设计岗：深圳。 读取边界：没有逐岗学历、专业、毕业窗及实习留用要求；不可把总公告不限专业字段标为岗位unrestricted。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E06",
+      "title": "中信证券股份有限公司上海分公司2027年校园招聘简章",
+      "url": "https://job.hust.edu.cn/zpinfo1/2436255.htm",
+      "published": "2026-09-16",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "专注进行证券投资相关的客户开发与服务、金融产品销售以及其他投融资和资本中介业务。需求专业：经济统计学、数字经济、国际经济与贸易、经济学。 读取边界：明确为营业部客户服务/销售路线，非总部研究岗；需在线测评、面试、实习考察后才可能录用。绩效目标、固定薪资与实习时间待核。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E07",
+      "title": "中国大唐集团有限公司2027年校园招聘公告（第一批）",
+      "url": "https://dtsc.china-cdt.com/cdtsc/xwzx/jtxw/2026/9/I1552059660066881536.html",
+      "published": "2026-09-22",
+      "checked": "2026-09-28",
+      "level": "官方正文",
+      "scope": "电力交易管培生……主要定向应用数学、数据科学、金融、人工智能、计算机等专业。 读取边界：专项为二级单位定向、统招统分与集团统筹培养，不等同直接总部入职；学院、学历阶段及专业均需核验，未获取个人院校信息。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E08",
+      "title": "聚英才 创未来——中国中信金融资产2027年校园招聘",
+      "url": "https://job.hust.edu.cn/zpinfo1/2445067.htm",
+      "published": "2026-09-23",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "管理培训生岗、业务审查岗、资产评估岗、风险管理岗……人工智能和数据应用研发岗。主修经济学类、法学类、管理学类、理学类、工学类等相关专业。 读取边界：学科门类总条件不等于具体总部岗专业；官网job.html未显示动态列表；业务考核、轮岗及合同主体待核。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E09",
+      "title": "国家能源投资集团有限责任公司2027年总部“菁英”管培生招聘公告",
+      "url": "https://zhaopin.chnenergy.com.cn/annc/showgg?id=af8fff3a-8fcf-466e-a1dc-813fecfa6267",
+      "published": "2026-09-02",
+      "checked": "2026-09-28",
+      "level": "官方正文",
+      "scope": "经基层一线实践淬炼、二级单位能力提升和集团总部管理赋能的3年多层次培养后，考核优秀具备条件的，进入集团总部工作。职能管理类……应用经济学…… 读取边界：3年基层/二级单位/总部培养后考核优秀且具备条件才进入总部；不能承诺起步北京或必进总部。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E10",
+      "title": "中国华电2027年度校园招聘公告",
+      "url": "https://www.chd.com.cn/site/2/2026-09-14/b7dffff921ca499c90f84509cd272310.html",
+      "published": "2026-09-14",
+      "checked": "2026-09-28",
+      "level": "官方正文",
+      "scope": "青年骏才……各阶段学历均须满足上述条件……数学类、统计学类……报名截止时间：2026年10月18日24点（北京时间）。 读取边界：统计学类只是专项总目录；xlsx附件工具不支持下载读取。本硕学校门槛、培养考核、基层轮岗均未与个人匹配。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E10-A",
+      "title": "华电2027青年骏才官方招录计划附件",
+      "url": "https://www.chd.com.cn/webfront/fileDownLoad.do?fileId=141220126250799104",
+      "published": "2026-09-14",
+      "checked": "2026-09-28",
+      "level": "官方附件",
+      "scope": "已只读解析XLSX：第19—20行合并单元格关联四川公司，D20数学类/统计学类；C列是单位所在地四川成都，不是岗位工作地。",
+      "access": "下载官方原XLSX，检查单元格与合并范围；不运行宏或修改附件。"
+    },
+    {
+      "id": "N0928-E11",
+      "title": "不负韶华 尽显才能——中国华能集团有限公司2027年校园招聘",
+      "url": "https://job.hust.edu.cn/zjob/2446182.htm",
+      "published": "未标明",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "报考管培生计划的毕业生应具有硕士及以上研究生学历。网申时间：9月15日9:00—10月31日18:00截止。 读取边界：官网仅返回0行动态壳；本部/研究院相关硕士JD未取得；长城证券已在原库，不重复新增。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E12",
+      "title": "中信集团及子公司2027年校园招聘联合宣讲会",
+      "url": "https://aeo.uibe.edu.cn/front/zph.jspa?tid=2089569480844836865",
+      "published": "2026-09-14",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "中信集团总部：管理培训生。中信投资控股：投资业务岗（直接投资业务）、投资业务岗（基金投资业务）。 读取边界：宣讲在对外经贸不代表北京工作岗位；主办单位银行分行只是联合活动发布者，本研究不核银行。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E13",
+      "title": "国家开发投资集团有限公司2027年度应届毕业生招聘公告",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/81149.html",
+      "published": "2026-09-22",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "集团管培生计划招聘25人……11个专业领域。子企业……金融科技、投资管理、职能管理等多类岗位。 读取边界：本文官网为二维码未展开；未取得集团AI方向或投资岗专业详情；管培统筹选拔、轮岗交流不等同固定总部。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-E14",
+      "title": "中国人寿保险股份有限公司2027年度校园招聘简章",
+      "url": "https://jdjyw.jlu.edu.cn/portal/recruit/details?id=96a2c9835fc9491c9e087cd491cc6c45",
+      "published": "2026-09-17",
+      "checked": "2026-09-28",
+      "level": "招聘转载正文",
+      "scope": "每位候选人可填写3个岗位志愿，每个机构可投递1个职位。报名时间：总部即日起至10月15日，下辖机构最晚至11月15日。 读取边界：未确认具体总部精算/投资岗专业，也未确认劳动合同员工或代理关系。官网跳转北森0行；集团总部与寿险股份总部需分开。",
+      "access": "公开网页正文；未登录或提交。原始提取留在本轮核查目录。"
+    },
+    {
+      "id": "N0928-O01",
+      "title": "中国石油共享运营公司2026年秋季高校毕业生招聘公告",
+      "url": "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=91abb3ad6b1f410cb9fb1f1e6a518a73",
+      "published": "2026-09-15",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "已读完整正文中的实际岗位/类别与专业、学历、日期；正文用词为“统计学、应用统计学”，未列0252应用统计专业代码，须核应用统计专硕认可；博士数据管理岗不得混入。尚未独立核到截止与动态投递状态。",
+      "access": "公开招聘正文；未登录或提交。"
+    },
+    {
+      "id": "N0928-O02",
+      "title": "中国石油规划总院2026年秋季高校毕业生招聘启事",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80944.html",
+      "published": "2026-09-20",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "已读完整正文中的实际岗位/类别与专业、学历、日期；未明确0252。河北工大职位表为17类合计30人，南开页面模板总数为53人，不能合并/放大。华北电力大学页面企业标签为数智研究院但正文是规划总院，按正文分主体；其2026-10-15为网页过期字段，不能填为职位截止。",
+      "access": "公开招聘正文；未登录或提交。"
+    },
+    {
+      "id": "N0928-O03",
+      "title": "中国石油集团安全环保技术研究院有限公司2026年秋季高校毕业生招聘公告",
+      "url": "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=c5552e4a9c6341c8966ea4ad74cdafff",
+      "published": "2026-09-10",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "已读完整正文中的实际岗位/类别与专业、学历、日期；“应用统计学/相近专业”有核验价值，但0252应用统计专硕代码未明确；学历、英语、体检、测评仍须核个人情况。",
+      "access": "公开招聘正文；未登录或提交。"
+    },
+    {
+      "id": "N0928-O04",
+      "title": "中国石油广西销售公司2026年秋季高校毕业生招聘公告",
+      "url": "https://jdjywpt.jlu.edu.cn/portal/jyzp/recruit/details?id=6e02e4101e5a4dfc96ac4fb67f3a4d08",
+      "published": "2026-09-20",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "已读完整正文中的实际岗位/类别与专业、学历、日期；应用统计学/统计学未等同0252资格保证；数据岗无具体城市。站经理储备属于经营管理机会，应核营销指标、倒班、培训和考核后自主选择。",
+      "access": "公开招聘正文；未登录或提交。"
+    },
+    {
+      "id": "N0928-O05",
+      "title": "南方有光 未来有数 南网数字集团2027年校园招聘",
+      "url": "https://jy.scu.edu.cn/index/index/employdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eZuK0NSmyGHRp7ugzc-GnZ2skMx9ZMN4gtKLipCwxKF0lZC5sq-0gqJv",
+      "published": "2026-09-02",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "已读完整正文中的实际岗位/类别与专业、学历、日期；统计学不是0252应用统计自动合格；不得将其他业务类别的昆明/南宁等城市混配给经营管理类。宣讲日期不是投递截止。",
+      "access": "公开招聘正文；未登录或提交。"
+    },
+    {
+      "id": "N0928-O06",
+      "title": "国网数字科技控股有限公司（国网雄安金融科技集团有限公司）2027年校园招聘",
+      "url": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=38d6f1c70d154c76ab483900565377b6",
+      "published": "2026-09-22",
+      "checked": "2026-09-28",
+      "level": "高校用人单位公告",
+      "scope": "已读完整正文中的实际岗位/类别与专业、学历、日期；专业与工作地目前均为远光软件总体范围，不能拼成具体杭州/成都统计JD。模板500人不是统计岗位人数。",
+      "access": "公开招聘正文；未登录或提交。"
+    }
+  ],
+  "discoveryInvestigations": [
+    {
+      "key": "cm-leasing-2027",
+      "name": "招商局融资租赁 · 市场营销岗",
+      "group": "招商局集团",
+      "kind": "new",
+      "url": "https://job.hust.edu.cn/zpinfo1/2431927.htm",
+      "published": "2026-09-10",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/cmlease.web.txt。未登录、未投递。",
+      "risk": "承担客户开发与营销任务；薪资含绩效。公告介绍导师制及融耀计划，无确定薪资、销售指标或服务期。",
+      "nextAction": "复核官方同一jobAdId及考核指标、工作地后申请；专业不限只用于此市场营销岗。"
+    },
+    {
+      "key": "gsfund-2027",
+      "name": "国寿安保基金 · 股票行业研究 / 机构业务",
+      "group": "中国人寿",
+      "kind": "new",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118892.html",
+      "published": "2026-09-16",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/gsfund-stock.web.txt。未登录、未投递。 另已打开同月2027总公告，证据：test-results/national-review/evidence-enterprise/gsfund-campaign.web.txt；股票岗位与总项目关联仍需官方逐岗确认。",
+      "risk": "同月2027总公告与校招链接支持当届，具体毕业窗仍待官方JD；股票岗正文是宽专业目录，须复核真实职责与条件。机构业务岗有销售目标；不虚构用户金融经验。",
+      "nextAction": "优先打开官方股票/债券研究JD，确认应用统计专硕、届次及完整条件；机构业务按用户对销售的取舍评估。"
+    },
+    {
+      "key": "cmri-chengdu-2027",
+      "name": "中国移动成都产业研究院 · AI全栈 / Agent开发",
+      "group": "中国移动",
+      "kind": "new",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118516.html",
+      "published": "2026-09-10",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/mobile-chengdu.web.txt。未登录、未投递。",
+      "risk": "金种子专项、普通岗位及博士后不同；博士后不适用于硕士。未核到单岗职责和截止。与既有九天卡片主体不同，不替换九天ID。",
+      "nextAction": "在cId=91核对硕士可报的AI全栈或Agent岗位、专业和工作地。"
+    },
+    {
+      "key": "unicom-research-2027",
+      "name": "中国联通研究院 · 网络数据分析与建模",
+      "group": "中国联通",
+      "kind": "new",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118193.html",
+      "published": "2026-09-08",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/unicom-research.web.txt。未登录、未投递。",
+      "risk": "引博优才专项与普通硕士招聘须区分；未把其他量子岗位地点与数据岗拼接。独立于现有联通数科卡片。",
+      "nextAction": "核对网络数据分析与建模研究岗官方JD、硕士条件、0252和具体城市。"
+    },
+    {
+      "key": "cms-2027",
+      "name": "招商证券 / 招商资管 · 研究、交易、产品",
+      "group": "招商局集团",
+      "kind": "new",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118113.html",
+      "published": "2026-09-07",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/cms.web.txt。未登录、未投递。",
+      "risk": "没有逐岗学历、专业、毕业窗及实习留用要求；不可把总公告不限专业字段标为岗位unrestricted。",
+      "nextAction": "在cms.hotjob.cn优先核对研究助理、基金研究、资管研究/产品岗位，确认硕士可报和专业条件。"
+    },
+    {
+      "key": "citics-shanghai-2027",
+      "name": "中信证券上海分公司 · 培训生",
+      "group": "中信集团关联券商",
+      "kind": "new",
+      "url": "https://job.hust.edu.cn/zpinfo1/2436255.htm",
+      "published": "2026-09-16",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/citics-shanghai.web.txt。未登录、未投递。",
+      "risk": "明确为营业部客户服务/销售路线，非总部研究岗；需在线测评、面试、实习考察后才可能录用。绩效目标、固定薪资与实习时间待核。",
+      "nextAction": "确认应用统计硕士接受性、营业部销售考核和实习时长；由用户决定销售取舍。"
+    },
+    {
+      "key": "datang-2027",
+      "name": "中国大唐 · 电力交易管培 / 在京本部管培",
+      "group": "中国大唐",
+      "kind": "new",
+      "url": "https://dtsc.china-cdt.com/cdtsc/xwzx/jtxw/2026/9/I1552059660066881536.html",
+      "published": "2026-09-22",
+      "level": "官方正文",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/datang.web.txt。未登录、未投递。",
+      "risk": "专项为二级单位定向、统招统分与集团统筹培养，不等同直接总部入职；学院、学历阶段及专业均需核验，未获取个人院校信息。",
+      "nextAction": "在官方平台筛电力交易专项，确认0252、院校、轮岗与考核要求。"
+    },
+    {
+      "key": "citic-amc-2027",
+      "name": "中国中信金融资产 · 管培 / 风险 / 资产研究",
+      "group": "中信集团",
+      "kind": "new",
+      "url": "https://job.hust.edu.cn/zpinfo1/2445067.htm",
+      "published": "2026-09-23",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/citic-hust.web.txt。未登录、未投递。",
+      "risk": "学科门类总条件不等于具体总部岗专业；官网job.html未显示动态列表；业务考核、轮岗及合同主体待核。",
+      "nextAction": "优先核查风险管理、业务审查/评估及数据应用岗位的硕士/专业要求和雇主。"
+    },
+    {
+      "key": "energy-hq-2027",
+      "name": "国家能源集团总部菁英管培 · 产业研究",
+      "group": "国家能源集团",
+      "kind": "new",
+      "url": "https://zhaopin.chnenergy.com.cn/annc/showgg?id=af8fff3a-8fcf-466e-a1dc-813fecfa6267",
+      "published": "2026-09-02",
+      "level": "官方正文",
+      "readScope": "公开web工具读取；证据：test-results/national-review/evidence-enterprise/energy-hq.web.txt。未登录、未投递。",
+      "risk": "3年基层/二级单位/总部培养后考核优秀且具备条件才进入总部；不能承诺起步北京或必进总部。",
+      "nextAction": "优先核产业研究岗0252资格与委培地点，核对本科和硕士院校条件后再选择唯一志愿。"
+    },
+    {
+      "key": "energy-2027",
+      "name": "国家能源集团统招 · 新疆应用统计学线索",
+      "group": "国家能源集团",
+      "kind": "watch",
+      "url": "https://zhaopin.chnenergy.com.cn/annc/showgg?id=6a152f40-7fe5-460e-ad37-0024acafd8c9",
+      "published": "2026-09-02",
+      "level": "官方正文",
+      "readScope": "官方公告open超时；公开搜索提取到完整公告文字，见test-results/national-review/evidence-enterprise/energy-search.txt。长安大学云就业宣讲正文已打开，见energy-xinjiang.web.txt。",
+      "risk": "统招主页面open超时，单岗专业、地点、排班未读；不拿总部专项专业与新疆工作地拼接。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "huadian-2027",
+      "name": "中国华电 · 青年骏才统计学类线索",
+      "group": "中国华电",
+      "kind": "watch",
+      "url": "https://www.chd.com.cn/site/2/2026-09-14/b7dffff921ca499c90f84509cd272310.html",
+      "published": "2026-09-14",
+      "level": "官方正文",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/huadian.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "统计学类只是专项总目录；xlsx附件工具不支持下载读取。本硕学校门槛、培养考核、基层轮岗均未与个人匹配。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "huaneng-2027",
+      "name": "中国华能 · 二级单位管培 / 科研管理",
+      "group": "中国华能",
+      "kind": "watch",
+      "url": "https://job.hust.edu.cn/zjob/2446182.htm",
+      "published": null,
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/huaneng-hust.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "官网仅返回0行动态壳；本部/研究院相关硕士JD未取得；长城证券已在原库，不重复新增。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "spic-2027",
+      "name": "国家电投 · 当届公告入口待深核",
+      "group": "国家电投",
+      "kind": "watch",
+      "url": "https://scdc.jnu.edu.cn/campus/view/id/1037061",
+      "published": null,
+      "level": "高校用人单位公告",
+      "readScope": "暨南大学标题及搜索正文可见，open只返空正文；见test-results/national-review/evidence-enterprise/spic.web.txt、search-results.json target8。",
+      "risk": "11月16日为网页过期字段不当报名截止；上海核工院当届标题另检出但未核出应用统计岗。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "threegorges-watch",
+      "name": "中国长江三峡集团 · 2027待核",
+      "group": "中国长江三峡集团",
+      "kind": "watch",
+      "url": "https://campus.chinahr.com/pages/sanxia/",
+      "published": null,
+      "level": "入口待核",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/threegorges.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "未取得2027正式公告。旧项目标题不能证明2027秋招已结束；搜索命中三峡担保/旅游不等于长江三峡集团。培训机构预测未采用。",
+      "nextAction": "从集团官网招聘栏目重新确认当届入口及本部/科学技术研究院岗位；此记录不作当前开放依据。"
+    },
+    {
+      "key": "cgn-2027",
+      "name": "中广核 · 统计学类总目录",
+      "group": "中国广核集团",
+      "kind": "watch",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118224.html",
+      "published": "2026-09-09",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/cgn.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "官网检索同时出现2026春招含2027联合培养的旧项目302101，不能混入2027秋招；面试城市不能作工作地。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "tower-2027",
+      "name": "中国铁塔 · 2027启动已检出",
+      "group": "中国铁塔",
+      "kind": "watch",
+      "url": "https://www.china-tower.com/Index/show/catid/10/id/1897.html",
+      "published": "2026-09-24",
+      "level": "入口待核",
+      "readScope": "官网搜索提取到日期与图片公告标题，open超时。test-results/national-review/evidence-enterprise/tower.web.txt；search-results.json search-0。",
+      "risk": "图片正文及职位表未读；采购公告2026—2027年招聘服务不是校招岗位，未采用其期限；不能推定统计符合或全资央企。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "cmri-2027",
+      "name": "中国移动研究院 · 通信 / 算力 / 智能",
+      "group": "中国移动",
+      "kind": "watch",
+      "url": "https://job.hust.edu.cn/zpinfo1/2432063.htm",
+      "published": "2026-09-10",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/mobile-research.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "NCSS汇总模板曾显示博士及以上、专业不限，不能据此判定所有岗位博士限定或不限专业。硕士岗位JD待核，已有九天ID保留。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "sinochem-2027",
+      "name": "中国中化 / 中化信息 · 总部管培及业务支持待核",
+      "group": "中国中化",
+      "kind": "watch",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/118971.html",
+      "published": "2026-09-17",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/sinochem.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "中化信息2025—2027人力外包采购不等于本次正式员工校招；集团网页为JS空壳。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "crrc-2027",
+      "name": "中国中车株洲所 · 本硕博研发入口",
+      "group": "中国中车",
+      "kind": "watch",
+      "url": "https://job.hust.edu.cn/zpinfo1/2441783.htm",
+      "published": "2026-09-21",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/crrc.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "主专业为工程类；不因研究所涉及算法就认定应用统计可报；集团总部其他职能未深入。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "aecc-2027",
+      "name": "中国航发商发 / 研究机构 · 专业待核",
+      "group": "中国航发",
+      "kind": "watch",
+      "url": "https://aecccae.zhaopin.com/jobs/index.html",
+      "published": null,
+      "level": "入口待核",
+      "readScope": "官方授权招聘页搜索提取到项目管理、采购供应链等类别及2027毕业要求；open返回0行。test-results/national-review/evidence-enterprise/aecc.web.txt、search-results.json search-2。",
+      "risk": "成都发动机管理岗列马克思主义、人力、法学、会计审计等，未见统计；沈阳/湖南/涡轮院未核出统计硕士JD。博士或工程硬门槛不推荐给硕士。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "powerchina-2027",
+      "name": "中国电建 · 河南工程及研究院入口",
+      "group": "中国电建",
+      "kind": "watch",
+      "url": "https://hngc.powerchina.cn/col/col1976/art/2026/art_64e61fbfd1534661acbe3f9152c86e20.html",
+      "published": "2026-09-01",
+      "level": "官方正文",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/powerchina.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "存在驻项目、国内外流动；研究院总部岗未完成深入核验。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "energychina-2027",
+      "name": "中国能建 · 资本金融 / 市场运营 / 职能",
+      "group": "中国能建",
+      "kind": "watch",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80246.html",
+      "published": "2026-09-08",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/energychina.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "正文培养说明含基层项目实践；模板本科/专业不限不等于总部任一岗接受应用统计硕士。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "cosco-2027",
+      "name": "中远海运 · 大连集运 / 科技 / 重工",
+      "group": "中远海运",
+      "kind": "watch",
+      "url": "https://myjob.dlmu.edu.cn/campus/view/id/869147",
+      "published": null,
+      "level": "高校用人单位公告",
+      "readScope": "大连海事搜索可读雇主正文，open未返正文仅职位模板；test-results/national-review/evidence-enterprise/cosco.web.txt、search-results.json search-3。另检索到重工国资委公告及科技转载。",
+      "risk": "网页12月17日是过期字段；不限专业模板未采用。大连重工高校页标题2027而部分正文2026，不能改年；科技第三方页显示已下线，不能作官网关闭结论。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "citic-hq-2027",
+      "name": "中信集团总部 / 中信投资控股 · 管培投资",
+      "group": "中信集团",
+      "kind": "watch",
+      "url": "https://aeo.uibe.edu.cn/front/zph.jspa?tid=2089569480844836865",
+      "published": "2026-09-14",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/citic-hq.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "宣讲在对外经贸不代表北京工作岗位；主办单位银行分行只是联合活动发布者，本研究不核银行。",
+      "nextAction": "继续在job.citic.com核总部管培专业清单、基层轮岗与投资控股职位。"
+    },
+    {
+      "key": "sdic-2027",
+      "name": "国投集团 · 管培 / 投资与职能",
+      "group": "国家开发投资集团",
+      "kind": "watch",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/81149.html",
+      "published": "2026-09-22",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/sdic.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "本文官网为二维码未展开；未取得集团AI方向或投资岗专业详情；管培统筹选拔、轮岗交流不等同固定总部。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "crhc-2027",
+      "name": "中国国新 · 资管 / 投资 / 金融服务",
+      "group": "中国国新",
+      "kind": "watch",
+      "url": "https://aeo.uibe.edu.cn/front/zph.jspa?tid=2094608036093018114",
+      "published": "2026-09-02",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/crhc-uibe.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "中科大open缺正文、吉林大学打不开，最终找到对外经贸完整雇主正文；官方zp.crhc.cn为JS壳。不得用大连海事不限专业模板判全部岗位。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "taiping-autumn-watch",
+      "name": "中国太平 · 资产 / 精算 / 风险 / 运营",
+      "group": "中国太平",
+      "kind": "watch",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/117449.html",
+      "published": "2026-09-01",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/taiping-nankai.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "2026秋季是招聘发生季，不能自动写成2026届历史，也不能直接确认2027届。两个太平官方域名均返回0行；未拿到职员合同性质。",
+      "nextAction": "在官方2027具体职位确认毕业窗口、专业、员工劳动合同或代理关系后，再升级为current。"
+    },
+    {
+      "key": "chinare-watch",
+      "name": "中国再保 · 当届正式校招待核",
+      "group": "中国再保险集团",
+      "kind": "watch",
+      "url": "https://www.cpcr.com.cn/zhzjt/rlzy2018/index.html",
+      "published": null,
+      "level": "往届公告",
+      "readScope": "官方人力页搜索提取到2026简章，open超时；test-results/national-review/evidence-enterprise/chinare.web.txt、search-results.json target3。",
+      "risk": "本轮只核到往届正式校招及2027暑期实习线索；不能把2026改年或暑期实习当秋招。",
+      "nextAction": "继续读官方具体岗位及附件，确认0252、硕士、届次和工作地。"
+    },
+    {
+      "key": "sinosure-summer-2027",
+      "name": "中国信保 · 2027暑期实习已过",
+      "group": "中国出口信用保险公司",
+      "kind": "watch",
+      "url": "https://aeo.uibe.edu.cn/front/zpxx.jspa?tid=2068955670782160898",
+      "published": "2026-06-22",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/sinosure.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "已结束暑期实习不能当作当前可投；未据此认定正式秋招没有开放。",
+      "nextAction": "跟进sinosure.zhaopin.com新的2027正式校招公告。"
+    },
+    {
+      "key": "life-headquarters-2027",
+      "name": "中国人寿保险股份总部 · 精算 / 风险 / 投资",
+      "group": "中国人寿",
+      "kind": "watch",
+      "url": "https://jdjyw.jlu.edu.cn/portal/recruit/details?id=96a2c9835fc9491c9e087cd491cc6c45",
+      "published": "2026-09-17",
+      "level": "高校用人单位公告",
+      "readScope": "公开web工具；证据：test-results/national-review/evidence-enterprise/life.web.txt。岗位附件/动态JD未取得，未登录或投递。",
+      "risk": "未确认具体总部精算/投资岗专业，也未确认劳动合同员工或代理关系。官网跳转北森0行；集团总部与寿险股份总部需分开。",
+      "nextAction": "按寿险股份总部筛具体JD，再核精算/风险/投资对应统计条件及合同性质。"
+    },
+    {
+      "key": "comac-software-2027",
+      "name": "商飞软件 · 软件开发 / 算法",
+      "group": "中国商飞",
+      "kind": "watch",
+      "url": "https://www.ncss.cn/student/jobs/6VrK35qLoL8qwHK3xyoVNY/detail.html",
+      "published": null,
+      "level": "高校用人单位公告",
+      "readScope": "NCSS搜索返回较完整雇主文字并标来源电子科大，open只有输入框。见test-results/national-review/evidence-enterprise/comac-soft.web.txt及search-results-2.json target15，非官方动态JD完整核验。",
+      "risk": "专业线索较强但实时页面正文读取失败；NCSS模板专业不限被正文具体目录覆盖；其他2027标题的聚合页混入2024正文，未采用。",
+      "nextAction": "从商飞官网进入上海航空工业—商飞软件2027岗位，确认当前可投、0252、职责和截止。"
+    },
+    {
+      "key": "cnpc-shared-2027-autumn",
+      "name": "中国石油集团共享运营有限公司",
+      "group": "中国石油",
+      "kind": "new",
+      "url": "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=91abb3ad6b1f410cb9fb1f1e6a518a73",
+      "published": "2026-09-15",
+      "level": "高校用人单位正文",
+      "readScope": "已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单",
+      "risk": "正文用词为“统计学、应用统计学”，未列0252应用统计专业代码，须核应用统计专硕认可；博士数据管理岗不得混入。尚未独立核到截止与动态投递状态。",
+      "nextAction": "优先核数据应用岗及人资共享岗对0252的认可、地点分配和截止；联系010-59982516。"
+    },
+    {
+      "key": "cnpc-cppei-2027-autumn",
+      "name": "中国石油天然气股份有限公司规划总院",
+      "group": "中国石油",
+      "kind": "new",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80944.html",
+      "published": "2026-09-20",
+      "level": "高校用人单位正文",
+      "readScope": "已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单",
+      "risk": "未明确0252。河北工大职位表为17类合计30人，南开页面模板总数为53人，不能合并/放大。华北电力大学页面企业标签为数智研究院但正文是规划总院，按正文分主体；其2026-10-15为网页过期字段，不能填为职位截止。",
+      "nextAction": "向010-82383036核天然气市场研究/AI研究是否接受0252及实际岗位计划、截止。"
+    },
+    {
+      "key": "cnpc-hse-2027-autumn",
+      "name": "中国石油集团安全环保技术研究院有限公司",
+      "group": "中国石油",
+      "kind": "new",
+      "url": "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=c5552e4a9c6341c8966ea4ad74cdafff",
+      "published": "2026-09-10",
+      "level": "高校用人单位正文",
+      "readScope": "已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单",
+      "risk": "“应用统计学/相近专业”有核验价值，但0252应用统计专硕代码未明确；学历、英语、体检、测评仍须核个人情况。",
+      "nextAction": "优先向010-80169869核对0252对应关系、AI岗位职责与合同；10月15日前按公告准备报名。"
+    },
+    {
+      "key": "cnpc-guangxi-sales-2027-autumn",
+      "name": "中国石油天然气股份有限公司广西销售分公司",
+      "group": "中国石油",
+      "kind": "new",
+      "url": "https://jdjywpt.jlu.edu.cn/portal/jyzp/recruit/details?id=6e02e4101e5a4dfc96ac4fb67f3a4d08",
+      "published": "2026-09-20",
+      "level": "高校用人单位正文",
+      "readScope": "已打开并阅读招聘正文及岗位条件；未登录、未验证投递表单",
+      "risk": "应用统计学/统计学未等同0252资格保证；数据岗无具体城市。站经理储备属于经营管理机会，应核营销指标、倒班、培训和考核后自主选择。",
+      "nextAction": "向0771-5651509核数据岗专业代码/工作地，以及站经理储备接受硕士的安排及培养考核。"
+    },
+    {
+      "key": "csg-digital-2027-early",
+      "name": "南方电网数字电网集团有限公司",
+      "group": "南方电网",
+      "kind": "new",
+      "url": "https://jy.scu.edu.cn/index/index/employdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eZuK0NSmyGHRp7ugzc-GnZ2skMx9ZMN4gtKLipCwxKF0lZC5sq-0gqJv",
+      "published": "2026-09-02",
+      "level": "高校用人单位发布的完整提前批简章",
+      "readScope": "已读四川大学及华中科技大学完整简章；只到业务类别，未核子公司逐岗JD与动态报名入口。",
+      "risk": "统计学不是0252应用统计自动合格；不得将其他业务类别的昆明/南宁等城市混配给经营管理类。宣讲日期不是投递截止。",
+      "nextAction": "联系020-85737042核0252是否接受、经营管理具体岗位与报名窗口、志愿限制。"
+    },
+    {
+      "key": "sgcc-digital-and-ygsoft-2027",
+      "name": "国网数科控股／远光软件（主体必须区分）",
+      "group": "国家电网",
+      "kind": "update",
+      "url": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=38d6f1c70d154c76ab483900565377b6",
+      "published": "2026-09-22",
+      "level": "高校招聘正文",
+      "readScope": "已读完整正文中两家主体的招聘对象、工作地与专业；无具体职位JD。",
+      "risk": "专业与工作地目前均为远光软件总体范围，不能拼成具体杭州/成都统计JD。模板500人不是统计岗位人数。",
+      "nextAction": "到远光软件官方招聘核具体管理/数据岗位；本部应用统计是否按数学相关接受另问，勿混用资格。"
+    },
+    {
+      "key": "sgcc-direct-units-2027-attachment",
+      "name": "国家电网直属单位2027招聘需求附件",
+      "group": "国家电网",
+      "kind": "watch",
+      "url": "https://job.ncepu.edu.cn/zpgg/6868003605b2412dbf529053e8b7474b.htm",
+      "published": "2026-09-27",
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：公告正文已读；xlsx点击返回Internal Error，未读具体岗位表。未重试412主站或绕WAF。",
+      "risk": "只有宣讲及总需求说明，不能认定正式统一报名已开启；网页标2027-09-01过期且显示已过期属元数据，不能作岗位截止。宣讲城市不作为工作地。",
+      "nextAction": "补读页面的《国家电网有限公司直属单位2027年高校毕业生招聘需求.xlsx》并查具体硕士/统计条目。"
+    },
+    {
+      "key": "cnpc-economics-2027-jobs-unread",
+      "name": "中国石油集团经济技术研究院",
+      "group": "中国石油",
+      "kind": "watch",
+      "url": "https://job.hust.edu.cn/zpinfo1/2437426.htm",
+      "published": "2026-09-17",
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：完整公告已读，但岗位表是两张图片，本轮未成功取得可读图像/表格；不依据搜索摘要补学历专业。",
+      "risk": "机构能源经济/市场与战略研究有核验价值，但业务介绍不是应用统计硕士岗位资格。",
+      "nextAction": "补读两张岗位图片或问010-62065339，重点核统计/经济研究硕士岗位。"
+    },
+    {
+      "key": "sinopec-tenth-2027-major-unresolved",
+      "name": "中石化第十建设有限公司",
+      "group": "中国石化",
+      "kind": "watch",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/81328.html",
+      "published": "2026-09-27",
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：已读2027基本条件；专业表在图片，图片获取失败。",
+      "risk": "大连海事大学职位列表模板多个技术岗显示不限专业，河北工大正文却指向专业附件；不能据模板判不限，也不能以青岛模板/总部替项目工作地。",
+      "nextAction": "补读专业图片，不把总公告日期或网页2026-10-31过期字段当职位截止。"
+    },
+    {
+      "key": "cnpc-digital-institute-unresolved",
+      "name": "中石油（北京）数智研究院有限公司",
+      "group": "中国石油",
+      "kind": "watch",
+      "url": "https://job.ncepu.edu.cn/dwxq/513a8f22414d40dcabe9c76ca4b3edfd.htm",
+      "published": null,
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：已读高校企业简介；2027具体岗位仅搜索到培训/转载线索，未采。华电2026秋招招聘页正文实际为规划总院，不能转挂数智院。",
+      "risk": "不得把未核实事项当作符合资格。",
+      "nextAction": "寻找数智院本人发布的2026秋季完整岗位表，核硕博限制和应用统计专业；不套规划总院条件。"
+    },
+    {
+      "key": "cnpc-technology-development-unresolved",
+      "name": "中国石油技术开发有限公司",
+      "group": "中国石油",
+      "kind": "watch",
+      "url": "https://zhaopin.cnpc.com.cn/",
+      "published": null,
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：2027/2026秋季+统计学检索未定位到可读的企业官网或高校完整正文；不采用培训机构岗位摘录。CNPC主站412由任务告知，本轮未绕行或反复请求。",
+      "risk": "不得把未核实事项当作符合资格。",
+      "nextAction": "补读当届具体岗位条件"
+    },
+    {
+      "key": "sinopec-2027-official-unresolved",
+      "name": "中国石化2027总公告及专业公司岗位",
+      "group": "中国石化",
+      "kind": "watch",
+      "url": "https://job.sinopec.com/#/school/index",
+      "published": null,
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：打开官网仅0行正文；任务提供的9月24日2027总公告详情本轮未读成。未将检索摘要或第三方推测写成官方条件。",
+      "risk": "不得把未核实事项当作符合资格。",
+      "nextAction": "读取2027总公告详情及专业公司岗位附件；需逐岗记录志愿、毕业窗、截止。"
+    },
+    {
+      "key": "sinopec-jingwei-2027-unresolved",
+      "name": "中石化经纬有限公司",
+      "group": "中国石化",
+      "kind": "watch",
+      "url": "https://job.sinopec.com/#/school/index",
+      "published": null,
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：经纬+2027+统计及高校/官网检索未获得可读当届具体岗位。检索混入2026往届、博士后、其他同名经纬企业，均未作为2027硕士证据。",
+      "risk": "不得把未核实事项当作符合资格。",
+      "nextAction": "补读当届具体岗位条件"
+    },
+    {
+      "key": "sinopec-geophysical-institute-2027-unresolved",
+      "name": "中石化石油物探技术研究院有限公司",
+      "group": "中国石化",
+      "kind": "watch",
+      "url": "https://swty.sinopec.com/swty/careers/dwjs/A054006002Gone1.shtml",
+      "published": null,
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：企业官方人才招聘页打开超时，未读正文；2027及应用统计检索未定位到可读当届职位表。",
+      "risk": "不得把未核实事项当作符合资格。",
+      "nextAction": "补读物探院官网招聘页/高校完整职位表，不能从地球物理业务推断应用统计资格。"
+    },
+    {
+      "key": "cnooc-2027-unresolved",
+      "name": "中国海油及所属单位2027校招",
+      "group": "中国海油",
+      "kind": "watch",
+      "url": "https://zhaopin.cnooc.com.cn/",
+      "published": null,
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：由高校官方链接发现该招聘域名，工具不可访问；多组2027官方/高校检索仅定位到旧春招、旧订单班及不可信摘要，未取得2027秋招具体统计岗位。",
+      "risk": "旧cnooc.zhaopin.com为2026页面是任务告知，未据此认定2027未开启。不得把搜索标题2027而正文2026春招的材料当当前。",
+      "nextAction": "补读当届具体岗位条件"
+    },
+    {
+      "key": "eximbank-2027-unresolved",
+      "name": "中国进出口银行2027校招",
+      "group": "中国进出口银行",
+      "kind": "watch",
+      "url": "https://www.eximbank.gov.cn/info/notice/recruit/",
+      "published": null,
+      "level": "高校招聘正文",
+      "readScope": "attempted_unresolved：官网首页及招聘栏目均打开超时；限定eximbank.gov.cn的2027招聘检索无结果，未取得官方正文。",
+      "risk": "超时或检索无结果不能认定未开；不采培训预测、社招或2026往届条件。",
+      "nextAction": "补读当届具体岗位条件"
+    }
+  ]
+}

@@ -959,3 +959,40 @@ footer strong {
     flex-direction: column;
   }
 }
+
+.national-controls,
+.national-directory,
+.position-list {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+.national-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.national-directory section,
+.position-list section {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0;
+}
+.position-list label {
+  display: block;
+  margin-top: 0.75rem;
+}
+.position-list select {
+  max-width: 100%;
+  margin: 0.5rem;
+}
+.national-directory a {
+  display: inline-block;
+}
+.score summary {
+  font-size: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+}

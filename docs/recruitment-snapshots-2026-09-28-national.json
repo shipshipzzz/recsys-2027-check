@@ -1,0 +1,287 @@
+{
+  "baseline": "efdf074e79cc54668a10b5ab35240f18405bc814",
+  "reviewedOn": "2026-09-28",
+  "entries": [
+    {
+      "id": "soe-15dcc83203fa8d55b59c",
+      "before": {
+        "id": "soe-15dcc83203fa8d55b59c",
+        "name": "杭州银行 · 总分行培养 / 运营",
+        "en": "Bank of Hangzhou",
+        "ownership": "地方国资背景上市银行（高校招聘页列国有企业）",
+        "track": "banking",
+        "status": "open",
+        "tier": "A+",
+        "fit": 86,
+        "priority": 145,
+        "city": "数据研发培训生、总行培训生：杭州；其他城市岗位另核。",
+        "xian": false,
+        "req": "数据研发27159050：硕士及以上，明确列应用统计、计算机、软件工程、大数据等，要求SQL和Python/R等。总行培训生另列经济或理工相关专业；不能将数据研发的专业条件套给所有岗位。",
+        "window": "上述官网JD：境内2027年1—7月毕业；境外2026年1月—2027年7月毕业，并于2027-07-31前取得所需学位/认证。",
+        "jobs": "总行数据研发培训生从事金融营销、运营、风控的数据分析建模；总行培训生为轮岗培养后双向/考核定岗路线，不能理解为入职即固定总行管理岗。",
+        "action": "优先核杭州数据研发岗的9/30窗口及SQL/语言证明要求；总行培训生10/25，分别核验，不等到后一个日期再投前一个岗位。",
+        "why": "经营分析和金融培养提供非算法路径；柜面/营销在了解工作取舍后也可作为备选。",
+        "risk": "已确认专业文字依据不等于个人全部资格通过。页面模板字段不是依据；轮岗安排、外语证明、专业代码及最终岗位仍需招聘方认定。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "2026-09-27复核：U0927-S01、U0927-S02、U0927-S03；范围见核查记录，不代表个人资格通过。",
+        "note": "基于官网具体JD消解旧10/22与10/25的泛化冲突；不新增重复公司卡片，不把多个岗位合成一个截止。",
+        "rev": "2026-09-27",
+        "links": [
+          ["杭州银行官方招聘", "https://myjob.hzbank.com.cn/"],
+          [
+            "杭州银行2027秋招9月15日版本 · 河北工业大学",
+            "https://career.hebut.edu.cn/home/correcruit/content/id/80614.html"
+          ],
+          [
+            "杭州银行2027秋招9月11日版本 · 厦门大学",
+            "https://smcareer.xmu.edu.cn/info/1008/31455.htm"
+          ]
+        ],
+        "audit": {
+          "checked": "2026-09-27",
+          "refs": [
+            "U0927-S01",
+            "U0927-S02",
+            "U0927-S03",
+            "U0916-S05",
+            "U0916-S06",
+            "U0916-S07",
+            "S-CITY-04"
+          ],
+          "summary": "官网职位级证据补齐：数据研发明确应用统计；9/30和10/25为不同岗位窗口，不再把旧公告冲突当作全部岗位无法判断。",
+          "scope": "本轮核查范围限所列公开正文/职位页与批次规则；未登录验证提交、未核验个人全部资格，不代表全部岗位余缺。",
+          "level": "官方正文"
+        },
+        "due": null,
+        "dueScope": "按具体职位分别截止，不设全行统一倒计时",
+        "dueTime": null,
+        "dueAlt": "数据/软件研发培训生9/30；总行培训生等10/25",
+        "closes": "官网列表：数据/软件研发培训生2026-09-30截止；总行培训生等2026-10-25截止；未给日内时刻。旧10/22公告与境外毕业窗差异保留历史，具体职位页优先。"
+      },
+      "screeningBefore": {
+        "major": "explicit",
+        "cycle": "current",
+        "intake": 2027,
+        "basis": "明确应用统计的证据仅来自杭州总行数据研发27159050，硕士、毕业窗、技能及外语证明仍需个人核对。",
+        "directions": ["banking", "stats", "software", "finance", "operations", "research"],
+        "qualityBasis": "本轮按所列用人单位公告核对职责与培养安排；具体合同主体、定岗和考核条件仍以职位及录用文件为准。",
+        "evidenceRefs": ["U0927-S01", "U0927-S02", "U0927-S03"],
+        "reviewedOn": "2026-09-27",
+        "basisHash": "d96871ddfe5be4c835d348e2b2a0d3004615e69ec18cf1ad1c297fb84b3a17c2"
+      },
+      "geographyBefore": {
+        "current": true,
+        "locations": [
+          {
+            "city": "杭州",
+            "province": "浙江",
+            "level": "position",
+            "scope": "仅总行数据研发培训生27159050的工作地，不外推所有技术岗",
+            "refs": ["U0927-S02"],
+            "directions": ["stats", "software", "finance"]
+          },
+          {
+            "city": "杭州",
+            "province": "浙江",
+            "level": "position",
+            "scope": "仅总行培训生27158942；最终轮岗与考核定岗以公告为准",
+            "refs": ["U0927-S03"],
+            "directions": ["banking", "operations"]
+          }
+        ],
+        "reviewedOn": "2026-09-27",
+        "basisHash": "fe94fcd3cd5e323ba9eca80b6a2df4d49dccc08da9cfd957097ad46e562e19fd"
+      }
+    },
+    {
+      "id": "soe-003d7bb92cd63869b718",
+      "before": {
+        "name": "中国人保科技 / 理工专项",
+        "en": "PICC Tech & STEM Track",
+        "fit": 90,
+        "tier": "A+",
+        "status": "open",
+        "track": "insurance",
+        "ownership": "中央金融企业",
+        "city": "北京及全国成员单位",
+        "xian": true,
+        "action": "优先核意向机构实际窗口；不要把2027/4/25当总部秋招安全截止。",
+        "jobs": "人保相关机构精算、统计、经营管理、风险及信息科技等岗位；投递须落到具体成员单位，不仅限技术岗。",
+        "why": "因果去偏对应保险营销与渠道干预偏差，多目标长期价值对应客户留存与价值经营；统计学本身也比纯计算机背景更适配模型解释与风险分析。",
+        "risk": "两个阶梯志愿、同一机构限一个岗位；提交后岗位和顺序限制须慎重核对。总部与分支机构培养和合同主体不同。",
+        "resume": "根据科技、统计精算、运营或业务岗位调整表达；保留真实实验与数据分析成果，不将推荐经历包装成已做过保险实务。",
+        "evidence": "2026-09-27复核：U0927-S07；范围见核查记录，不代表个人资格通过。",
+        "priority": 1,
+        "links": [
+          ["中国人保官方招聘", "https://picc.zhiye.com/"],
+          ["2027校园招聘入口", "https://picc.zhiye.com/xiaoyuan"]
+        ],
+        "note": "保留原卡片ID和历史，9/24公告补充的是分机构规则，不新增全集团通用硬截止。",
+        "audit": {
+          "checked": "2026-09-27",
+          "refs": ["U0927-S07", "S27"],
+          "summary": "用9/24新简章补充招聘分层窗口；集团总通道延续到次年不代表总部岗位仍可晚投。",
+          "scope": "本轮核查范围限所列公开正文/职位页与批次规则；未登录验证提交、未核验个人全部资格，不代表全部岗位余缺。",
+          "level": "高校用人单位公告"
+        },
+        "rev": "2026-09-27",
+        "id": "soe-003d7bb92cd63869b718",
+        "req": "公告专业范围包含统计、精算等；岗位具体专业、学历与代码仍需逐项确认，不能使用网站“专业不限”模板字段。",
+        "window": "2027届首次就业毕业生；境外公告列2026年7月至2027年6月毕业并取得所需认证。",
+        "closes": "集团总通道至2027-04-25；总部通常在2026年10月中旬、相关成员单位/省级总部在11月中下旬截止，具体职位可能招满即关。",
+        "due": null,
+        "dueTime": null
+      },
+      "screeningBefore": {
+        "major": "statistics",
+        "cycle": "current",
+        "intake": 2027,
+        "basis": "本届公告专业范围明确含统计/精算；具体科技、管理等岗位能否接受应用统计专硕须分别确认。",
+        "directions": ["insurance", "stats", "risk", "operations", "finance", "software"],
+        "qualityBasis": "本轮按所列用人单位公告核对职责与培养安排；具体合同主体、定岗和考核条件仍以职位及录用文件为准。",
+        "evidenceRefs": ["U0927-S07"],
+        "reviewedOn": "2026-09-27",
+        "basisHash": "e6ba4429aa398b724fbb7a430942da42896a88010ca1ad5eb55938ee687ec44d"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-863efd948d7f8d33bfdb",
+      "before": {
+        "name": "中石化经纬 / 石油物探技术研究院",
+        "en": "Sinopec Jingwei & Geophysical R&D",
+        "fit": 94,
+        "tier": "S",
+        "status": "watch",
+        "track": "geo",
+        "ownership": "中国石化专业公司/研究机构",
+        "city": "青岛 / 成都 / 南京等，按单位与岗位",
+        "xian": false,
+        "action": "9 月起重点盯中国石化统一招聘；搜“人工智能、物探、地球物理、算法”。",
+        "jobs": "往届有人工智能岗、物探技术、地质测控、地震资料处理解释与研发岗位。",
+        "why": "地震反演论文直接匹配，快手经历又能证明现代深度学习、强化学习与工程化能力，不会被局限为传统物探候选人。",
+        "risk": "经纬与各研究院是不同招聘主体；专业目录可能精确到地球物理。应用统计只能投明确接受数学/AI/数据的细分。",
+        "resume": "地球物理 AI 版；准备说明深度模型如何满足物理约束、泛化与工业可解释性。",
+        "evidence": "中国石化官方招聘入口 + 往届招聘信息；当前 2027 未开",
+        "priority": 1,
+        "links": [["中国石化招聘网", "https://job.sinopec.com/"]],
+        "note": "高度契合，但必须按单位、岗位专业表筛选。",
+        "id": "soe-863efd948d7f8d33bfdb",
+        "req": "原资料尚未完整记录本届岗位专业条件；请核对应用统计专硕是否接受，不能仅凭岗位名称或单位类型认定可投。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。",
+        "audit": {
+          "checked": null,
+          "summary": "原记录保留；本轮仅调整机会池收录标准，没有冒充新增官网核查。",
+          "scope": "旧资料归类，专业与当届条件待核。",
+          "level": "原始历史记录",
+          "refs": ["H02"]
+        }
+      },
+      "screeningBefore": {
+        "major": "unknown",
+        "cycle": "unverified",
+        "intake": null,
+        "directions": ["geo"],
+        "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["H02"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "5070e1d4446031a1dd639dada7ae8ac0a9419fb526c46e69c38e4e0705058517"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-b24eccce088fab5acca4",
+      "before": {
+        "name": "南网数字集团",
+        "en": "CSG Digital",
+        "fit": 88,
+        "tier": "A+",
+        "status": "past",
+        "track": "industrial",
+        "ownership": "南方电网数字化专业公司",
+        "city": "广州 / 深圳 / 贵阳等，按岗",
+        "xian": false,
+        "action": "2027 暑期实习已过；重点盯秋招正式批与数字电网 AI 岗。",
+        "jobs": "人工智能、数据分析、数字电网、调度与预测、平台研发、网络安全。",
+        "why": "统计建模、强化学习与延迟长期指标可迁移到负荷预测、异常检测、调度优化与客户数据智能。",
+        "risk": "电力专业和项目交付岗位占比高；只选明确 AI/数据/算法岗位。此前实习窗口已结束。",
+        "resume": "工业 AI 版：强调时序、优化、可靠性和模型治理；弱化内容业务名词。",
+        "evidence": "南方电网官方招聘入口 + 已结束的 2027 实习信息",
+        "priority": 2,
+        "links": [["南方电网招聘", "https://zhaopin.csg.cn/"]],
+        "note": "值得盯正式批，但当前不是可投窗口。",
+        "id": "soe-b24eccce088fab5acca4",
+        "req": "原资料尚未完整记录本届岗位专业条件；请核对应用统计专硕是否接受，不能仅凭岗位名称或单位类型认定可投。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。",
+        "audit": {
+          "checked": null,
+          "summary": "原记录保留；本轮仅调整机会池收录标准，没有冒充新增官网核查。",
+          "scope": "旧资料归类，专业与当届条件待核。",
+          "level": "原始历史记录",
+          "refs": ["H02"]
+        }
+      },
+      "screeningBefore": {
+        "major": "unknown",
+        "cycle": "unverified",
+        "intake": null,
+        "directions": ["industrial"],
+        "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["H02"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "6d923abe07ed9d4a2e7332dbda2572647238f59c34c919d47b7d44f778e70b50"
+      },
+      "geographyBefore": null
+    },
+    {
+      "id": "soe-9144dfc3a2177c2560bf",
+      "before": {
+        "name": "国网信通产业集团 / 南瑞集团",
+        "en": "SGIT / NARI",
+        "fit": 86,
+        "tier": "A",
+        "status": "watch",
+        "track": "industrial",
+        "ownership": "国家电网科技产业单位",
+        "city": "北京 / 南京 / 武汉 / 成都等，按单位",
+        "xian": false,
+        "action": "等国家电网 2027 批次；优先 AI、数据、平台和电力数字化研发。",
+        "jobs": "人工智能、数据平台、智能调度、负荷预测、工业软件、云与网络安全。",
+        "why": "方法能力适配预测、优化与数据智能；研究论文也能证明复杂物理数据建模能力。",
+        "risk": "国家电网招聘常按专业目录和考试批次管理；应用统计是否可报必须逐岗确认。很多岗位不是算法研发。",
+        "resume": "研究院/工业 AI 版：强调数学统计基础、模型鲁棒性、可解释与工程实现。",
+        "evidence": "集团官方入口与往届招聘；当前 2027 未开",
+        "priority": 3,
+        "links": [
+          ["国家电网招聘", "https://zhaopin.sgcc.com.cn/"],
+          ["南瑞集团官网", "https://www.nari.com/"]
+        ],
+        "note": "适合作为电力数字化观察项，不建议提前投入大量定制成本。",
+        "id": "soe-9144dfc3a2177c2560bf",
+        "req": "原资料尚未完整记录本届岗位专业条件；请核对应用统计专硕是否接受，不能仅凭岗位名称或单位类型认定可投。",
+        "window": "沿用原卡片招聘信息；具体届次和毕业时间须回公告/职位页确认。",
+        "audit": {
+          "checked": null,
+          "summary": "原记录保留；本轮仅调整机会池收录标准，没有冒充新增官网核查。",
+          "scope": "旧资料归类，专业与当届条件待核。",
+          "level": "原始历史记录",
+          "refs": ["H02"]
+        }
+      },
+      "screeningBefore": {
+        "major": "unknown",
+        "cycle": "unverified",
+        "intake": null,
+        "directions": ["industrial"],
+        "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
+        "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+        "evidenceRefs": ["H02"],
+        "reviewedOn": "2026-09-13",
+        "basisHash": "59db91cf962ee4e05ebd53f540a5e1cecac2fb4cf8e535f24e5b087fe7ca39ea"
+      },
+      "geographyBefore": null
+    }
+  ]
+}

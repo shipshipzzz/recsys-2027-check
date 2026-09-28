@@ -1,4 +1,5 @@
 import { loadLocations, validateLocations } from './validate-locations.mjs';
+import { loadNational, validateNational } from './validate-national.mjs';
 import { loadScreening, validateScreening } from './validate-screening.mjs';
 import { execFileSync } from 'node:child_process';
 import {
@@ -17,6 +18,11 @@ try {
     console.log(cardId(args[1], args.slice(2).join(' ')));
   } else {
     const local = loadCatalogs();
+    const national = loadNational(ROOT);
+    console.log(
+      'National validation passed:',
+      JSON.stringify(validateNational(local.soe, national.directory, national.opportunities)),
+    );
     let tables = normalizeCatalogs(local);
     console.log(
       'Screening validation passed:',

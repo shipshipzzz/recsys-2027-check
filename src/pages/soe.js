@@ -1,12 +1,55 @@
-import locations from '../../data/soe-locations.json';
+import { loadJSON } from '../shared/json-loader.js';
+import {
+  createOpportunityLookup,
+  noticeDeadline,
+  noticeActionable,
+  deadlineUrgency,
+  positionDeadline,
+  directoryMatch,
+  hasHeadquartersClue,
+  REVIEW_STATES,
+} from '../national-policy.js';
+import {
+  readPositionProgress,
+  writePositionProgress,
+  exportPositionProgress,
+  POSITION_STATES,
+  POSITION_KEY,
+} from '../position-progress.js';
+// Missing new supplements are tolerated during parallel local editing only. Publishing validates them.
+const assetURLs = import.meta.glob(
+  '../../data/soe{,-screening,-locations,-directory,-opportunities}.json',
+  { eager: true, query: '?url', import: 'default' },
+);
+const [fallback, screening, locations, directory, opportunities] = await Promise.all(
+  ['soe', 'soe-screening', 'soe-locations', 'soe-directory', 'soe-opportunities'].map((name) => {
+    const url = assetURLs['../../data/' + name + '.json'];
+    if (!url && ['soe-directory', 'soe-opportunities'].includes(name))
+      return loadJSON(import.meta.env.BASE_URL + 'data/' + name + '.json').catch(() =>
+        name === 'soe-directory' ? { groups: [] } : { entries: {} },
+      );
+    return loadJSON(url);
+  }),
+);
+const lookupOpportunities = createOpportunityLookup(opportunities, fallback, screening);
+let progressStorage;
+try {
+  progressStorage = localStorage;
+} catch {
+  /* Local progress remains usable in memory. */
+}
+let positionProgress = readPositionProgress(progressStorage);
+
 import {
   LOCATION_LEVELS,
   createLocationLookup,
   locationBonus,
   matchesLocation,
+  locationMatchKind,
+  availableCities,
   comparePreferredOpportunities,
 } from '../location-policy.js';
-import screening from '../../data/soe-screening.json';
+
 import {
   SOE_TRACKS,
   MAJOR_LEVELS,
@@ -15,13 +58,12 @@ import {
   createAssessmentLookup,
   hasMajorEvidence,
   matchesAssessment,
-  canActOnNotice,
 } from '../soe-policy.js';
-import fallback from '../../data/soe.json';
+
 import { createPageCatalog } from '../backend.js';
 import { createPersonalManager } from '../personal.js';
 import { createCatalogView } from '../shared/catalog-view.js';
-import { escapeHTML, createCardRenderer, bindSearch } from '../shared/dom.js';
+import { escapeHTML, safeHref, createCardRenderer, bindSearch } from '../shared/dom.js';
 import { chinaDay, dayDistance, deadlineEpoch, timeState } from '../shared/time.js';
 
 const lookupAssessment = createAssessmentLookup(screening, fallback);
@@ -37,6 +79,7 @@ const personal = createPersonalManager('soe', catalog, {
   onRefreshCatalog: refreshCatalog,
 });
 const assessmentFor = (item) => lookupAssessment(item, catalog.SOURCES);
+const opportunitiesFor = (item) => lookupOpportunities(item, catalog.SOURCES);
 const geographyFor = (item) => lookupGeography(item, catalog.SOURCES);
 const view = createCatalogView(
   () => catalog,
@@ -50,6 +93,11 @@ const view = createCatalogView(
     geography: {
       policyVersion: locations.policyVersion,
       entries: Object.fromEntries(DATA.map((item) => [item.id, geographyFor(item)])),
+    },
+    directory,
+    opportunities: {
+      reviewedOn: opportunities.reviewedOn,
+      entries: Object.fromEntries(DATA.map((item) => [item.id, opportunitiesFor(item)])),
     },
   }),
 );
@@ -65,6 +113,8 @@ const STATUS = {
 };
 const TRACK = SOE_TRACKS;
 let locationFilter = 'all';
+let includePendingLocations = false,
+  headquartersOnly = false;
 let filter = 'all',
   sortBy = 'priority',
   trackFilter = 'all',
@@ -73,27 +123,48 @@ let filter = 'all',
 function daysTo(iso) {
   return dayDistance(iso);
 }
-function deadlineFor(item) {
-  if (!item.due) return null;
-  const assessment = assessmentFor(item);
-  const current = assessment.matched && assessment.cycle === 'current';
-  const fresh = item.audit?.checked === RECHECKED && current;
+function pendingOpportunitiesFor(item) {
+  const row = opportunitiesFor(item);
   return {
-    date: item.due,
-    time: item.dueTime || null,
-    kind: 'deadline',
-    confidence: fresh ? 'supported' : 'pending',
-    scope: item.dueScope || '原版日期（待复核）',
-    refs: item.audit?.refs || ['H02'],
-    note: fresh
-      ? '按明确批次计时；个人资格仍须核对'
-      : current && item.audit?.checked
-        ? '既有当届节点（核查 ' + item.audit.checked + '）；本轮未复核，提交前确认。'
-        : '原历史日期；不冒充本轮硬截止',
+    ...row,
+    positions: row.positions.filter(
+      (p) =>
+        p.type === 'campus' &&
+        p.cycle !== 'historical' &&
+        p.status !== 'past' &&
+        !timeState(positionDeadline(p)).expired &&
+        (positionProgress[p.id] || 'pending') === 'pending',
+    ),
   };
 }
+function deadlineFor(item) {
+  const pending = pendingOpportunitiesFor(item);
+  return noticeDeadline(
+    item,
+    assessmentFor(item),
+    pending.positions.length ? pending : opportunitiesFor(item),
+    catalog.SOURCES,
+  );
+}
 function currentActionable(item) {
-  return canActOnNotice(item, assessmentFor(item));
+  return noticeActionable(item, assessmentFor(item), opportunitiesFor(item));
+}
+function effectiveItem(item) {
+  const positions = opportunitiesFor(item);
+  if (!positions.matched) return item;
+  const event = deadlineFor(item);
+  const remaining = positions.positions.some(
+    (p) =>
+      p.cycle !== 'historical' &&
+      p.status !== 'past' &&
+      (!p.due || !timeState(positionDeadline(p)).expired),
+  );
+  return {
+    ...item,
+    due: event?.date || null,
+    dueTime: event?.time || null,
+    status: remaining ? 'verify' : item.status === 'past' ? 'past' : 'watch',
+  };
 }
 function urgency(item) {
   const ev = deadlineFor(item);
@@ -104,8 +175,14 @@ function urgency(item) {
       cls: m.expired ? 'past' : ev.confidence === 'pending' ? 'watch' : m.days <= 21 ? 'hot' : '',
       text: ev.date + (ev.time ? ' ' + ev.time : ''),
       scope: ev.scope,
+      label:
+        ev.confidence === 'pending' && !m.expired && m.days <= 21
+          ? '临期待核 · ' + m.label
+          : m.label,
     };
   }
+  if (opportunitiesFor(item).matched)
+    return { cls: 'watch', label: '岗位子集日期见列表', text: '其他岗位 / 新批次另核' };
   if (item.start && daysTo(item.start) >= 0)
     return {
       cls: 'soon',
@@ -117,11 +194,7 @@ function urgency(item) {
     return { cls: 'watch', label: '本轮未核到新入口', text: '观察 / 待更新' };
   if (item.status === 'past')
     return { cls: 'past', label: '原窗口已过', text: '等待补录 / 新批次' };
-  if (
-    item.status === 'verify' ||
-    assessmentFor(item).cycle !== 'current' ||
-    item.audit?.checked !== RECHECKED
-  )
+  if (item.status === 'verify' || assessmentFor(item).cycle !== 'current')
     return { cls: 'watch', label: '先复核具体职位', text: '滚动 / 待核' };
   return { cls: '', label: '本届已公告·先核资格', text: '未见统一截止' };
 }
@@ -182,23 +255,101 @@ function geographicHTML(item) {
   );
 }
 
+function hasPendingPosition(item) {
+  return pendingOpportunitiesFor(item).positions.length > 0;
+}
+function needsAction(item) {
+  return opportunitiesFor(item).matched ? hasPendingPosition(item) : !personal.muted(item);
+}
+function positionsHTML(item) {
+  const row = opportunitiesFor(item);
+  if (row.stale)
+    return '<p class="node-scope">岗位附表与当前事实不一致，已撤回旧岗位日期与资格标签，等待复核。</p>';
+  if (!row.matched) return '';
+  return (
+    '<details class="position-list"><summary>独立岗位与进度（' +
+    row.positions.length +
+    '）</summary><p>' +
+    escapeHTML(row.scope) +
+    '</p><p>旧卡标记仅表示入口状态，不代表全部岗位已投。下列进度仅本机保存，不与账号同步。专业依据不等于个人全部资格通过。</p>' +
+    row.positions
+      .map((p) => {
+        const ev = positionDeadline(p),
+          state = timeState(ev);
+        return (
+          '<section data-position="' +
+          escapeHTML(p.id) +
+          '"><h4>' +
+          escapeHTML(p.name) +
+          '</h4><p>' +
+          escapeHTML(p.employer) +
+          ' · ' +
+          escapeHTML(CYCLES[p.cycle]) +
+          ' · ' +
+          (p.type === 'internship' ? '实习' : '正式校招') +
+          '</p><p>' +
+          escapeHTML(MAJOR_LEVELS[p.major]) +
+          ' · 地点：' +
+          escapeHTML(p.locations.join(' / ') || '待核') +
+          '</p><p>' +
+          escapeHTML(p.requirements) +
+          '</p><p>截止：' +
+          escapeHTML(p.due || '未知') +
+          (p.dueTime ? ' ' + escapeHTML(p.dueTime) : p.due ? '（时刻未注明）' : '') +
+          ' · ' +
+          escapeHTML(state.label) +
+          '</p><p>' +
+          escapeHTML(p.deadlineScope) +
+          ' ' +
+          sourceRefs(p.refs) +
+          '</p><p>投递限制：' +
+          escapeHTML(p.applicationLimit) +
+          '</p><p>' +
+          escapeHTML(p.risks) +
+          '</p><a target="_blank" rel="noopener noreferrer" href="' +
+          escapeHTML(safeHref(p.url)) +
+          '">岗位来源 / 入口</a><label>岗位进度（仅本机保存）<select data-position-id="' +
+          escapeHTML(p.id) +
+          '" aria-label="' +
+          escapeHTML(p.name) +
+          '岗位进度">' +
+          Object.entries(POSITION_STATES)
+            .map(
+              ([key, value]) =>
+                '<option value="' +
+                key +
+                '"' +
+                ((positionProgress[p.id] || 'pending') === key ? ' selected' : '') +
+                '>' +
+                value +
+                '</option>',
+            )
+            .join('') +
+          '</select></label></section>'
+        );
+      })
+      .join('') +
+    '</details>'
+  );
+}
 function card(item) {
   const u = urgency(item),
     assessment = assessmentFor(item),
-    st = STATUS[item.status];
+    st = STATUS[effectiveItem(item).status];
   const label =
     assessment.cycle !== 'current' && item.status === 'open' ? '原记录已开 · 当前入口另核' : st[0];
-  const alt = item.dueAlt ? ' · ' + escapeHTML(item.dueAlt) : '';
+  const alt = item.dueAlt && !opportunitiesFor(item).matched ? ' · ' + escapeHTML(item.dueAlt) : '';
   const directions = assessment.directions
     .map((key) => '<span class="badge b-track">' + escapeHTML(TRACK[key]) + '</span>')
     .join('');
   return `<article class="card st-${item.status}${personal.muted(item) ? ' is-muted' : ''}" data-name="${escapeHTML(item.name)}" data-entry-id="${item.id}" data-major="${assessment.major}" data-cycle="${assessment.cycle}" data-directions="${assessment.directions.join(' ')}">
     ${personal.controls(item)}
-    <div class="card-head"><div><div class="rankline"><span class="tier t-${item.tier}">${item.tier} 参考</span><span class="badge ${st[1]}">${label}</span></div><h3 class="name">${escapeHTML(item.name)}</h3><div class="en">${escapeHTML(item.en)}</div></div><div class="score">${item.fit}<small>参考 / 100</small></div></div>
+    <div class="card-head"><div><div class="rankline"><span class="tier t-${item.tier}">${item.tier} 参考</span><span class="badge ${st[1]}">${label}</span></div><h3 class="name">${escapeHTML(item.name)}</h3><div class="en">${escapeHTML(item.en)}</div></div><details class="score"><summary>参考分</summary>${item.fit}<small>参考 / 100</small></details></div>
     <div class="screening-directions">${directions}</div>
     <p class="screening-line"><strong>${MAJOR_LEVELS[assessment.major]}</strong><span>${CYCLES[assessment.cycle]}</span></p>
     <div class="action-strip ${u.cls}"><span class="k">日期</span><strong>${escapeHTML(u.text)}${alt}</strong><span class="pill">${escapeHTML(u.label)}</span></div>
-    <div class="facts"><span class="fact">${escapeHTML(item.ownership)}</span><span class="fact">${escapeHTML(item.city)}</span>${item.xian ? '<span class="fact">含西安/西北</span>' : ''}${locationFact(item)}</div>
+    ${positionsHTML(item)}
+    <div class="facts"><span class="fact">${escapeHTML(item.ownership)}</span><span class="fact">${escapeHTML(item.city)}</span>${locationMatchKind(geographyFor(item), locationFilter, trackFilter, includePendingLocations) === 'pending' ? '<span class="fact">地点待核线索 · 不加地区分</span>' : ''}${locationFact(item)}</div>
     <p class="card-gist"><b>现在动作</b>${escapeHTML(item.action)}</p>
     <div class="links">${itemLinks(item, 'own')}</div>
     <details class="more card-details"><summary>详情：专业依据 · 岗位 · 地区 · 风险 · 核查记录</summary>
@@ -214,21 +365,32 @@ function card(item) {
     ${auditHTML(item)}${evidenceLinks(item)}${historyHTML(item)}</details></article>`;
 }
 function isUrgent(item) {
-  if (assessmentFor(item).cycle !== 'current' || item.status === 'past') return false;
-  const m = timeState(deadlineFor(item));
+  if (opportunitiesFor(item).matched && !hasPendingPosition(item)) return false;
+  const state = deadlineUrgency(
+    item,
+    assessmentFor(item),
+    pendingOpportunitiesFor(item),
+    catalog.SOURCES,
+  );
   const d = item.start ? dayDistance(item.start) : null;
   return (
-    (d !== null && d >= 0 && d <= 21) ||
-    (m.days !== null &&
-      !m.expired &&
-      m.days <= 21 &&
-      ['confirmed', 'supported'].includes(m.event.confidence))
+    !!state ||
+    (assessmentFor(item).cycle === 'current' &&
+      item.status !== 'past' &&
+      d !== null &&
+      d >= 0 &&
+      d <= 21)
   );
 }
 function match(item, q) {
   let ok = true;
   if (filter === 'now') ok = currentActionable(item);
   else if (filter === 'urgent') ok = isUrgent(item);
+  else if (filter === 'pending-date')
+    ok =
+      needsAction(item) &&
+      deadlineUrgency(item, assessmentFor(item), pendingOpportunitiesFor(item), catalog.SOURCES) ===
+        'pending';
   else if (filter === 's') ok = item.tier === 'S';
   else if (Object.hasOwn(TRACK, filter)) ok = assessmentFor(item).directions.includes(filter);
   else if (filter === 'preferred')
@@ -242,13 +404,28 @@ function match(item, q) {
   else if (filter === 'rev') ok = item.rev === RECHECKED;
   return (
     ok &&
-    matchesLocation(geographyFor(item), locationFilter, trackFilter) &&
+    !!locationMatchKind(geographyFor(item), locationFilter, trackFilter, includePendingLocations) &&
+    (!headquartersOnly || hasHeadquartersClue(directory, item.id)) &&
     matchesAssessment(assessmentFor(item), {
       direction: trackFilter,
       major: majorFilter,
       cycle: cycleFilter,
     }) &&
-    textMatch(item, q)
+    q
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean)
+      .every(
+        (term) =>
+          textMatch(item, term) ||
+          directoryMatch(directory, item.id, term) ||
+          opportunitiesFor(item).positions.some((p) =>
+            [p.name, p.employer, p.requirements, ...p.locations]
+              .join(' ')
+              .toLowerCase()
+              .includes(term.toLowerCase()),
+          ),
+      )
   );
 }
 function sorted(list) {
@@ -260,8 +437,8 @@ function sorted(list) {
         : sortBy === 'due'
           ? rank(a) - rank(b)
           : comparePreferredOpportunities(
-              a,
-              b,
+              effectiveItem(a),
+              effectiveItem(b),
               assessmentFor(a),
               assessmentFor(b),
               geographyFor(a),
@@ -274,10 +451,24 @@ function sorted(list) {
 function render() {
   const q = document.getElementById('q').value.trim(),
     list = sorted(DATA.filter((x) => match(x, q) && personal.matches(x)));
-  const active = list.filter((x) => !personal.muted(x)),
-    processed = list.filter((x) => personal.muted(x)),
+  const active = list.filter((x) => !personal.muted(x) || hasPendingPosition(x)),
+    processed = list.filter((x) => personal.muted(x) && !hasPendingPosition(x)),
     grid = document.getElementById('grid');
-  renderer.render(grid, active, card, personal.status);
+  renderer.render(
+    grid,
+    active,
+    card,
+    (item) =>
+      personal.status(item) +
+      ':' +
+      trackFilter +
+      ':' +
+      locationFilter +
+      ':' +
+      includePendingLocations +
+      ':' +
+      JSON.stringify(positionProgress),
+  );
   grid.style.display = active.length ? '' : 'none';
   if (!list.length) {
     grid.style.display = '';
@@ -290,14 +481,14 @@ function render() {
     .forEach((b) => b.setAttribute('aria-pressed', b.dataset.filter === filter ? 'true' : 'false'));
 }
 function renderActions() {
-  const urgent = sorted(DATA.filter((x) => isUrgent(x) && !personal.muted(x))),
-    other = sorted(DATA.filter((x) => currentActionable(x) && !isUrgent(x) && !personal.muted(x))),
+  const urgent = sorted(DATA.filter((x) => isUrgent(x) && needsAction(x))),
+    other = sorted(DATA.filter((x) => currentActionable(x) && !isUrgent(x) && needsAction(x))),
     items = urgent.concat(other).slice(0, 8);
   document.getElementById('action-grid').innerHTML =
     items
       .map((x) => {
         const u = urgency(x);
-        return `<div class="action ${u.cls === 'hot' ? 'urgent' : ''}"><span class="date">${escapeHTML(u.text)}</span><b>${escapeHTML(x.name)}</b><p>${escapeHTML(x.action)}</p>${sourceRefs(x.audit?.refs || [])}</div>`;
+        return `<div class="action ${u.cls === 'hot' ? 'urgent' : ''}"><span class="date">${escapeHTML(u.text)} / ${escapeHTML(u.label)}</span><b>${escapeHTML(x.name)}</b><p>${escapeHTML(x.action)}</p>${sourceRefs(x.audit?.refs || [])}</div>`;
       })
       .join('') ||
     '<p class="sub">当前没有已核实的近期时间节点；卡片与观察池全部保留，请按具体职位复核。</p>';
@@ -356,15 +547,108 @@ populateFilter(
   'location-filter',
   [
     ['preferred', '全部偏好地区（有依据）'],
-    ...['杭州', '成都', '重庆', '西安', '浙江'].map((value) => [
-      value,
-      value === '浙江' ? '浙江全省（含杭州）' : value,
-    ]),
+    ...[
+      ...new Set([
+        '杭州',
+        '成都',
+        '重庆',
+        '西安',
+        '浙江',
+        ...availableCities(DATA.map(geographyFor)),
+      ]),
+    ].map((value) => [value, value === '浙江' ? '浙江全省（含杭州）' : value]),
   ],
   (value) => {
     locationFilter = value;
   },
 );
+const pendingChip = document.createElement('button');
+pendingChip.className = 'chip';
+pendingChip.dataset.filter = 'pending-date';
+pendingChip.textContent = '临期待核';
+document.querySelector('.filters').append(pendingChip);
+const nationalControls = document.createElement('div');
+nationalControls.className = 'national-controls';
+nationalControls.innerHTML =
+  '<label><input type="checkbox" id="location-pending"> 同时显示地点待核线索（不加地区分）</label><label><input type="checkbox" id="hq-filter"> 总行 / 总部线索（资格另核）</label><button type="button" id="position-export">导出岗位进度 JSON（仅本机）</button><p id="position-save-status" role="status"></p>';
+document.getElementById('grid').before(nationalControls);
+document.getElementById('location-pending').addEventListener('change', (event) => {
+  includePendingLocations = event.target.checked;
+  render();
+});
+document.getElementById('hq-filter').addEventListener('change', (event) => {
+  headquartersOnly = event.target.checked;
+  render();
+});
+document.getElementById('position-export').addEventListener('click', () => {
+  const url = URL.createObjectURL(
+    new Blob([exportPositionProgress(positionProgress)], { type: 'application/json' }),
+  );
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'soe-position-progress.json';
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+document.addEventListener('change', (event) => {
+  const id = event.target.dataset.positionId;
+  if (!id || !Object.hasOwn(POSITION_STATES, event.target.value)) return;
+  positionProgress = {
+    ...positionProgress,
+    ...readPositionProgress(progressStorage),
+    [id]: event.target.value,
+  };
+  const saved = writePositionProgress(progressStorage, positionProgress);
+  document.getElementById('position-save-status').textContent = saved
+    ? '岗位进度已保存，仅本机有效。'
+    : '本机存储不可用，当前进度仅在此页内存中；请导出 JSON。';
+  render();
+  renderActions();
+});
+const onPositionStorage = (event) => {
+  if (event.key !== POSITION_KEY) return;
+  positionProgress = readPositionProgress(progressStorage);
+  render();
+  renderActions();
+};
+addEventListener('storage', onPositionStorage);
+const coverage = document.createElement('details');
+coverage.className = 'national-directory';
+coverage.innerHTML =
+  '<summary>全国机构覆盖（' +
+  directory.groups.length +
+  ' 个集团条目）</summary><p>未检查不代表没有招聘，也不代表当前在招。母集团有卡不等于所有机构已核；集团关系不代表招聘资格。以下仅显示本轮核对范围。</p>' +
+  directory.groups
+    .map(
+      (group) =>
+        '<section><h3>' +
+        escapeHTML(group.name) +
+        ' · ' +
+        escapeHTML(REVIEW_STATES[group.reviewState]) +
+        '</h3><p>' +
+        escapeHTML(group.aliases.join(' / ')) +
+        '</p><p>' +
+        escapeHTML(group.scope) +
+        '</p><p>下一步：' +
+        escapeHTML(group.nextAction) +
+        '</p><p>关联入口 ' +
+        group.entryIds.length +
+        ' · 核查 ' +
+        escapeHTML(group.checkedOn || '未检查') +
+        '</p>' +
+        group.sourceUrls
+          .map(
+            (url) =>
+              '<a target="_blank" rel="noopener noreferrer" href="' +
+              escapeHTML(safeHref(url)) +
+              '">目录来源</a>',
+          )
+          .join(' · ') +
+        '</section>',
+    )
+    .join('');
+nationalControls.before(coverage);
+
 document.querySelectorAll('.filters .chip').forEach((btn) =>
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filters .chip').forEach((x) => x.classList.remove('active'));
@@ -418,10 +702,14 @@ renderActions();
 render();
 setupCommon();
 let tickKey =
-  chinaDay() + ':' + DATA.map((x) => (timeState(deadlineFor(x)).expired ? '1' : '0')).join('');
+  chinaDay() +
+  ':' +
+  DATA.map((x) => JSON.stringify(deadlineFor(x)) + timeState(deadlineFor(x)).expired).join('');
 const boundaryTimer = setInterval(() => {
   const key =
-    chinaDay() + ':' + DATA.map((x) => (timeState(deadlineFor(x)).expired ? '1' : '0')).join('');
+    chinaDay() +
+    ':' +
+    DATA.map((x) => JSON.stringify(deadlineFor(x)) + timeState(deadlineFor(x)).expired).join('');
   if (key !== tickKey) {
     tickKey = key;
     renderStats();
@@ -484,4 +772,5 @@ if (import.meta.hot)
     personal.dispose();
     renderer.clear();
     removeEventListener('online', onCatalogOnline);
+    removeEventListener('storage', onPositionStorage);
   });

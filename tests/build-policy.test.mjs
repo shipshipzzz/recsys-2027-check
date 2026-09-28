@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { validateBuild, BUILD_BUDGETS } from '../scripts/build-policy.mjs';
+import { validateBuild, validateDataAssets, BUILD_BUDGETS } from '../scripts/build-policy.mjs';
 
 function fixture(t) {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'recsys-build-'));
@@ -66,4 +66,56 @@ test('HTML-encoded CSP emitted by Vite is validated as browser-decoded policy te
     fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replaceAll("'", '&#39;'));
   }
   assert.ok(validateBuild(directory).pages['index.html']);
+});
+
+test('JSON assets are included in page/total budgets, safety checks and source integrity', (t) => {
+  const directory = fixture(t);
+  fs.mkdirSync(path.join(directory, 'data'));
+  const manifestFile = path.join(directory, '.vite/manifest.json');
+  const manifest = JSON.parse(fs.readFileSync(manifestFile, 'utf8'));
+  manifest['src/pages/soe.js'].assets = [];
+  for (const name of [
+    'soe',
+    'soe-screening',
+    'soe-locations',
+    'soe-directory',
+    'soe-opportunities',
+  ]) {
+    const source = 'data/' + name + '.json',
+      file = 'assets/' + name + '.json';
+    fs.writeFileSync(path.join(directory, source), '{"history":["preserved"]}');
+    fs.writeFileSync(path.join(directory, file), '{"history":["preserved"]}');
+    manifest[source] = { file };
+    manifest['src/pages/soe.js'].assets.push(file);
+  }
+  fs.writeFileSync(manifestFile, JSON.stringify(manifest));
+  const metrics = validateBuild(directory);
+  assert.ok(metrics.totalJsonGzip > 0);
+  assert.equal(metrics.pages['soe.html'].jsonGzip, metrics.totalJsonGzip);
+  assert.equal(metrics.pages['index.html'].jsonGzip, 0);
+  assert.equal(Object.keys(validateDataAssets(directory, directory, metrics)).length, 5);
+  assert.throws(
+    () => validateBuild(directory, { ...BUILD_BUDGETS, totalJsonGzip: 1 }),
+    /JSON.*budget/,
+  );
+  assert.throws(
+    () => validateBuild(directory, { ...BUILD_BUDGETS, pageJsonGzip: 1 }),
+    /JSON.*budget/,
+  );
+  assert.throws(
+    () => validateBuild(directory, { ...BUILD_BUDGETS, totalJsonBytes: 1 }),
+    /JSON.*budget/,
+  );
+  const target = path.join(directory, 'assets/soe.json');
+  fs.writeFileSync(target, '{"history":[]}');
+  assert.throws(
+    () => validateDataAssets(directory, directory, validateBuild(directory)),
+    /differs/,
+  );
+  fs.writeFileSync(target, '{"key":"sb_secret_' + 'x'.repeat(32) + '"}');
+  assert.throws(() => validateBuild(directory), /Privileged/);
+  fs.writeFileSync(target, 'bad json');
+  assert.throws(() => validateBuild(directory));
+  fs.unlinkSync(target);
+  assert.throws(() => validateBuild(directory), /Missing build asset/);
 });

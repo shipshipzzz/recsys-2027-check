@@ -77,12 +77,16 @@ test('deep review: date-only deadlines and CCB examination cities remain unambig
   }
 });
 
-test('deep review: older current-cycle dates retain their audit day without being advertised as freshly checked', async ({
+test('deep review: older current-cycle dates retain their audit day and supported reminders', async ({
   page,
 }) => {
   await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
   const cdb = card(page, 'soe-b9fb017b087135609736');
-  await expect(cdb).toContainText('既有当届节点（核查 2026-09-27）；本轮未复核');
+  await expect(cdb).toContainText(
+    soe.DATA.find((item) => item.id === 'soe-b9fb017b087135609736').audit.checked,
+  );
+  await expect(cdb).toContainText('有当届日期依据；个人资格仍须核对');
+  await expect(cdb.locator('.action-strip')).not.toContainText('临期待核');
   const teleai = card(page, 'soe-4ffa72152f7258fb78a2');
   await expect(teleai).toHaveAttribute('data-major', 'unknown');
   await expect(teleai).toHaveClass(/st-verify/);

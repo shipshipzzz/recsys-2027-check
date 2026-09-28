@@ -137,3 +137,9 @@ RPC 校验、权限或约束失败：数据库整批回滚，Pages 不会继续�
 ### 专业与地区判断配套发布
 
 央国企资料另配 data/soe-screening.json 与 data/soe-locations.json，分别维护专业/届次和地域证据，随前端构建发布。修改岗位事实后先复核再更新绑定摘要；data:check 会检测过期判断。不要将配套判断作为额外 SQL 列写入云端。地区标准见 [地区偏好规范](location-preferences.md)。
+
+## 全国目录和独立岗位附表
+
+新增 data/soe-directory.json 与 data/soe-opportunities.json 为前端审核附表，随五份SOE静态JSON资产发布，不增加生产SQL列，不修改原有用户状态。具体契约见 national-engineering.md。机构简称/HQ线索是导航；专业/日期等肯定值须绑定当前事实。
+
+构建将五份SOE JSON作为带内容哈希的同源资源，release.json记录json_assets摘要；发布校验逐字节确认文件、MIME和预算。全量JS及单页JS原门槛不变，JSON另有200KiB gzip/2MiB raw边界，不允许通过转移文件类型绕过完整资产检查。发布仍需当前任务明确授权。

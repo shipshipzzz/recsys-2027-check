@@ -135,37 +135,37 @@
     },
     "soe-15dcc83203fa8d55b59c": {
       "current": true,
+      "reviewedOn": "2026-09-28",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
-          "level": "position",
-          "scope": "仅总行数据研发培训生27159050的工作地，不外推所有技术岗",
-          "refs": [
-            "U0927-S02"
-          ],
           "directions": [
             "stats",
             "software",
             "finance"
-          ]
+          ],
+          "refs": [
+            "N0928-B02"
+          ],
+          "scope": "仅数据研发培训生；不能借给其他机构岗位。",
+          "level": "position"
         },
         {
           "city": "杭州",
           "province": "浙江",
-          "level": "position",
-          "scope": "仅总行培训生27158942；最终轮岗与考核定岗以公告为准",
-          "refs": [
-            "U0927-S03"
-          ],
           "directions": [
             "banking",
             "operations"
-          ]
+          ],
+          "refs": [
+            "N0928-B03"
+          ],
+          "scope": "总行培训生工作地字段；基层轮岗及最终定岗另有安排。",
+          "level": "position"
         }
       ],
-      "reviewedOn": "2026-09-27",
-      "basisHash": "fe94fcd3cd5e323ba9eca80b6a2df4d49dccc08da9cfd957097ad46e562e19fd"
+      "basisHash": "52262b8ebd7a6045babe6ac7ec63c53f270d998ff397bc53e05258d6d6d98c94"
     },
     "soe-28a7c75480e66ff26a24": {
       "current": true,
@@ -956,6 +956,882 @@
         }
       ],
       "basisHash": "ee1c8ffa7f34d0442c01deb333e4d3bb3ab67e2b5f527736951d5aae5c86a354"
+    },
+    "soe-1390ea899a188a39617a": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "directions": [
+            "banking",
+            "operations",
+            "stats",
+            "finance"
+          ],
+          "refs": [
+            "N0928-B10"
+          ],
+          "scope": "总行公告工作地北京；前一年境内分行轮岗不等于立刻固定北京。",
+          "level": "position"
+        }
+      ],
+      "basisHash": "9ad8fe5be7e9e132a48a1f5efa8140806267dcacf379472d6eb62fac3b3e6f77"
+    },
+    "soe-8260438ddfcb7cfaf9c1": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "上海",
+          "province": "上海",
+          "directions": [
+            "banking",
+            "risk",
+            "operations",
+            "finance"
+          ],
+          "refs": [
+            "N0928-B13",
+            "N0928-B14",
+            "N0928-B15"
+          ],
+          "scope": "三个总行JD明确上海，初期长三角实践地点另核。",
+          "level": "position"
+        }
+      ],
+      "basisHash": "96d48f6dc2003dd1e736f5f453a36f91fb715b905041b55219a31cd393dca81a"
+    },
+    "soe-57a02b3fc6410f063563": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "绍兴",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "温州",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "台州",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "嘉兴",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "金华",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "湖州",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "衢州",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "丽水",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        },
+        {
+          "city": "舟山",
+          "province": "浙江",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "refs": [
+            "N0928-B19"
+          ],
+          "scope": "仅总行定向派驻岗位，三年派驻及期满双选；不能为总部科技岗位借用地点。",
+          "level": "campaign"
+        }
+      ],
+      "basisHash": "fbae106a1b76f6af7ac1809478e614aa7f3ed653849f3ed2cbb228395e10cdc5"
+    },
+    "soe-e47806eafc52fe5f9023": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "directions": [
+            "banking",
+            "stats",
+            "finance"
+          ],
+          "refs": [
+            "N0928-B22"
+          ],
+          "scope": "仅该数学统计管培生具体JD工作地，不从机构注册地址推断。",
+          "level": "position"
+        }
+      ],
+      "basisHash": "28fac8a159da72e7ee2567b3252c38031ba19c0c05459d6d1e66ea975e746cdc"
+    },
+    "soe-1d81f573583960b2ca09": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "directions": [
+            "banking",
+            "stats",
+            "finance"
+          ],
+          "refs": [
+            "N0928-B23"
+          ],
+          "scope": "仅该数学统计管培生具体JD工作地，不从机构注册地址推断。",
+          "level": "position"
+        }
+      ],
+      "basisHash": "b4f0aac20bc9608c766ad1c7500a939cb971f808a1362feea6fe62ecb4fdc88c"
+    },
+    "soe-de9c4459438f9d40fc9c": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "深圳",
+          "province": "广东",
+          "level": "position",
+          "directions": [
+            "product",
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E01-O"
+          ],
+          "scope": "仅J33505市场营销岗，包含客户开发和绩效考核，不是纯研究岗。"
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "product",
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E01-O"
+          ],
+          "scope": "仅J33505市场营销岗，包含客户开发和绩效考核，不是纯研究岗。"
+        },
+        {
+          "city": "天津",
+          "province": "天津",
+          "level": "position",
+          "directions": [
+            "product",
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E01-O"
+          ],
+          "scope": "仅J33505市场营销岗，包含客户开发和绩效考核，不是纯研究岗。"
+        }
+      ],
+      "basisHash": "bf800514d1f0e018d9cddcee39c4351399a1324ebd396206730f1b3e34abb28a"
+    },
+    "soe-5e5f37fe525132e770c9": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E02-O"
+          ],
+          "scope": "官方股票行业研究JD明确可选择北京或上海。"
+        },
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E02-O"
+          ],
+          "scope": "官方股票行业研究JD明确可选择北京或上海。"
+        }
+      ],
+      "basisHash": "a53b59f687ca277279cc30e7d5158aab3c20e66b149d1eba6a9a906b73d0cd0c"
+    },
+    "soe-8cd49c5535cbb34514df": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "",
+          "province": "四川",
+          "level": "campaign",
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "refs": [
+            "N0928-E03"
+          ],
+          "scope": "用人单位公告总体工作地域为四川；不从研究院名字认定全部岗位固定成都。"
+        }
+      ],
+      "basisHash": "25f9731abae04549dda73a1f769684d33497ec07033f8ed66aec3a71aaa29755"
+    },
+    "soe-6c87c97a536ff75ffd95": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "深圳",
+          "province": "广东",
+          "level": "position",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E05"
+          ],
+          "scope": "仅公告岗位表的研究助理；不能把投行区域城市套给研究。"
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E05"
+          ],
+          "scope": "仅公告岗位表的研究助理；不能把投行区域城市套给研究。"
+        },
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E05"
+          ],
+          "scope": "仅公告岗位表的研究助理；不能把投行区域城市套给研究。"
+        }
+      ],
+      "basisHash": "04a9fa1a34f250923e9c674df815017a908db52ec89255dbbb36f2374a4ef2c5"
+    },
+    "soe-adfb8640d34d1647cc06": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "directions": [
+            "product",
+            "banking",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E06"
+          ],
+          "scope": "上海辖区营业部培训生，客户开发与产品销售，不是总部研究。"
+        }
+      ],
+      "basisHash": "918ff845ed12526e6c7f202b59ae51267c880f9642aaed6848cfe060450f08e7"
+    },
+    "soe-5115684db9063d74877d": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "campaign",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E07"
+          ],
+          "scope": "仅电力交易管培专项总体工作范围，另含全国省会，具体分配岗位未核。"
+        },
+        {
+          "city": "重庆",
+          "province": "重庆",
+          "level": "campaign",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "refs": [
+            "N0928-E07"
+          ],
+          "scope": "仅电力交易管培专项总体工作范围，另含全国省会，具体分配岗位未核。"
+        }
+      ],
+      "basisHash": "0dcaa2974543fb199809849b877726d7e37a7382367312f7cab2e7931341afdf"
+    },
+    "soe-87ef8e3ebe4b4b4bb9fc": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅数据应用岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "西安",
+          "province": "陕西",
+          "level": "position",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅数据应用岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "大庆",
+          "province": "黑龙江",
+          "level": "position",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅数据应用岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "成都",
+          "province": "四川",
+          "level": "position",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅数据应用岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "吉林市",
+          "province": "吉林",
+          "level": "position",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅数据应用岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "天津",
+          "province": "天津",
+          "level": "position",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅数据应用岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "乌鲁木齐",
+          "province": "新疆",
+          "level": "position",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅数据应用岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "operations",
+            "stats"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅人力资源共享岗实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "天津",
+          "province": "天津",
+          "level": "position",
+          "directions": [
+            "operations",
+            "stats"
+          ],
+          "refs": [
+            "N0928-O01"
+          ],
+          "scope": "仅人力资源共享岗实际岗位工作地；同公告其他方向条件不可混配。"
+        }
+      ],
+      "basisHash": "7b02d77f5d8eab9c779b79e5a99593aa52e31af0c8d1b69cc8f29beec549e3be"
+    },
+    "soe-00f5a7bf22c3ecff3eff": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "research",
+            "stats"
+          ],
+          "refs": [
+            "N0928-O02"
+          ],
+          "scope": "仅天然气市场研究实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "ai",
+            "stats"
+          ],
+          "refs": [
+            "N0928-O02"
+          ],
+          "scope": "仅人工智能研究实际岗位工作地；同公告其他方向条件不可混配。"
+        }
+      ],
+      "basisHash": "95e5962bdccf82cb475a88c9515b1a42fb9225e48b9ae3f5e8dc853527a9f127"
+    },
+    "soe-12aceb3925f1d9fc514e": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "ai",
+            "software",
+            "stats"
+          ],
+          "refs": [
+            "N0928-O03"
+          ],
+          "scope": "仅人工智能技术研发岗实际岗位工作地；同公告其他方向条件不可混配。"
+        }
+      ],
+      "basisHash": "e11afb00143c75ca1810fff2ba80710d1a4bcfad17d5f7b1f9f416c4dd10cedf"
+    },
+    "soe-3bad984c354c08ffb3a5": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "南宁",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "钦州",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "防城港",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "崇左",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "北海",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "桂林",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "玉林",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "梧州",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "贺州",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "贵港",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "柳州",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "来宾",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "河池",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "百色",
+          "province": "广西",
+          "level": "position",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅加油（气）站经理储备实际岗位工作地；同公告其他方向条件不可混配。"
+        },
+        {
+          "city": "",
+          "province": "广西",
+          "level": "campaign",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "refs": [
+            "N0928-O04"
+          ],
+          "scope": "仅数据管理与应用岗的广西区内分配范围，具体城市未列。"
+        }
+      ],
+      "basisHash": "3a6e094675fdfef8ab7f48c7c2df2e5baa579b5a20f0b2787d87bf5f3e0cbddd"
+    },
+    "soe-b24eccce088fab5acca4": {
+      "current": true,
+      "reviewedOn": "2026-09-28",
+      "locations": [
+        {
+          "city": "广州",
+          "province": "广东",
+          "level": "campaign",
+          "directions": [
+            "operations",
+            "stats",
+            "supply",
+            "product"
+          ],
+          "refs": [
+            "N0928-O05"
+          ],
+          "scope": "仅经营管理业务类别整体工作范围，未绑定某一统计职位，不混入其他业务类别地点。"
+        },
+        {
+          "city": "深圳",
+          "province": "广东",
+          "level": "campaign",
+          "directions": [
+            "operations",
+            "stats",
+            "supply",
+            "product"
+          ],
+          "refs": [
+            "N0928-O05"
+          ],
+          "scope": "仅经营管理业务类别整体工作范围，未绑定某一统计职位，不混入其他业务类别地点。"
+        },
+        {
+          "city": "海口",
+          "province": "海南",
+          "level": "campaign",
+          "directions": [
+            "operations",
+            "stats",
+            "supply",
+            "product"
+          ],
+          "refs": [
+            "N0928-O05"
+          ],
+          "scope": "仅经营管理业务类别整体工作范围，未绑定某一统计职位，不混入其他业务类别地点。"
+        },
+        {
+          "city": "呼和浩特",
+          "province": "内蒙古",
+          "level": "campaign",
+          "directions": [
+            "operations",
+            "stats",
+            "supply",
+            "product"
+          ],
+          "refs": [
+            "N0928-O05"
+          ],
+          "scope": "仅经营管理业务类别整体工作范围，未绑定某一统计职位，不混入其他业务类别地点。"
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "campaign",
+          "directions": [
+            "operations",
+            "stats",
+            "supply",
+            "product"
+          ],
+          "refs": [
+            "N0928-O05"
+          ],
+          "scope": "仅经营管理业务类别整体工作范围，未绑定某一统计职位，不混入其他业务类别地点。"
+        }
+      ],
+      "basisHash": "f04bfd9f365a1c36db447a8056fcd44471804923c5a0a1811d404bf3aeb095e7"
     }
   }
 }

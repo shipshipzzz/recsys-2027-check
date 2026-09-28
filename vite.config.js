@@ -43,6 +43,7 @@ export default defineConfig(({ command, mode }) => {
     server: { host: '127.0.0.1', strictPort: true, cors: false },
     preview: { host: '127.0.0.1', strictPort: true, cors: false },
     build: {
+      assetsInlineLimit: 0,
       target: 'es2022',
       manifest: true,
       rollupOptions: {

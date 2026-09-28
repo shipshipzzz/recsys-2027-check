@@ -1,0 +1,729 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-09-28",
+  "entries": {
+    "soe-15dcc83203fa8d55b59c": {
+      "basisHash": "d3b43c95b5ff8806446fbbb4a31ca4225295bd57125333848527e91849aac8f6",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-15dcc83203fa8d55b59c-p01",
+          "employer": "杭州银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "explicit",
+          "directions": [
+            "stats",
+            "software",
+            "finance"
+          ],
+          "locations": [
+            "杭州"
+          ],
+          "requirements": "硕士及以上；明确应用统计；SQL、数据库与Python/R；境内2027年1—7月毕业；外语证明另核。",
+          "due": "2026-09-30",
+          "dueTime": null,
+          "deadlineScope": "官方列表所列本岗位截止",
+          "refs": [
+            "N0928-B01",
+            "N0928-B02"
+          ],
+          "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "轮岗考核不保证永久总行岗位；SQL等技能需据实，两个方向专业范围不得互借。列表只有日期，无日内时刻。",
+          "name": "总行信息技术部培训生（数据研发方向）"
+        },
+        {
+          "id": "soe-15dcc83203fa8d55b59c-p02",
+          "employer": "杭州银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "locations": [
+            "杭州"
+          ],
+          "requirements": "硕士及以上；经济或理工类（含统计）相关专业；毕业窗、语言和回避要求另核。",
+          "due": "2026-10-25",
+          "dueTime": null,
+          "deadlineScope": "官方列表所列本岗位截止",
+          "refs": [
+            "N0928-B01",
+            "N0928-B03"
+          ],
+          "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "先轮岗，经考评定岗到基层管理或总分支行，不能当作固定总行承诺。",
+          "name": "总行培训生"
+        }
+      ]
+    },
+    "soe-1390ea899a188a39617a": {
+      "basisHash": "cda19208857df498f03730f59c527f94fa49241dd7354d42dd6913decf7d1ada",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-1390ea899a188a39617a-p01",
+          "employer": "中国工商银行总行本部",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "unrestricted",
+          "directions": [
+            "banking",
+            "operations",
+            "stats",
+            "finance"
+          ],
+          "locations": [
+            "北京"
+          ],
+          "requirements": "岗位正文明确总行管理培训生专业不设限；本科及以上，2027-07-31前毕业获证，CET6≥425或等效且成绩有效。",
+          "due": "2026-10-08",
+          "dueTime": null,
+          "deadlineScope": "总行本部2027校园招聘；仅日期",
+          "refs": [
+            "N0928-B10"
+          ],
+          "url": "https://job.icbc.com.cn/pc/index.html#/main/school/home/struct",
+          "applicationLimit": "总行本部仅1个意向岗位。",
+          "risks": "总行本部仅1个意向岗位。北京为工作地，但先境内分行轮岗；培养安排可按工作需要调整，不承诺具体部室。",
+          "name": "总行管理培训生"
+        }
+      ]
+    },
+    "soe-8260438ddfcb7cfaf9c1": {
+      "basisHash": "4385e8f87738e39df6c6bcd8b341422f1622cc3b3840396f909f1e4241ced197",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-8260438ddfcb7cfaf9c1-p01",
+          "employer": "交通银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "related",
+          "directions": [
+            "banking",
+            "finance"
+          ],
+          "locations": [
+            "上海"
+          ],
+          "requirements": "本科及以上；科技理工、经管法律及部分小语种优先；六级或等效。应用统计接受范围需确认。",
+          "due": "2026-10-18",
+          "dueTime": null,
+          "deadlineScope": "三个已核总行岗位的官方JD截止",
+          "refs": [
+            "N0928-B14",
+            "N0928-B16"
+          ],
+          "url": "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39070",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "上海工作地不表示免除长三角一年实践；页面提示放弃已投职位后不可再次投递。总行应届生三个方向应先比较，不将它们当3个独立志愿额度。",
+          "name": "总行应届生（前台业务方向）"
+        },
+        {
+          "id": "soe-8260438ddfcb7cfaf9c1-p02",
+          "employer": "交通银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "related",
+          "directions": [
+            "risk",
+            "banking"
+          ],
+          "locations": [
+            "上海"
+          ],
+          "requirements": "本科及以上；经管法律、风险管理、财会审计优先；六级或等效。",
+          "due": "2026-10-18",
+          "dueTime": null,
+          "deadlineScope": "三个已核总行岗位的官方JD截止",
+          "refs": [
+            "N0928-B13",
+            "N0928-B16"
+          ],
+          "url": "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39071",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "上海工作地不表示免除长三角一年实践；页面提示放弃已投职位后不可再次投递。总行应届生三个方向应先比较，不将它们当3个独立志愿额度。",
+          "name": "总行应届生（风险合规方向）"
+        },
+        {
+          "id": "soe-8260438ddfcb7cfaf9c1-p03",
+          "employer": "交通银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "related",
+          "directions": [
+            "operations",
+            "banking"
+          ],
+          "locations": [
+            "上海"
+          ],
+          "requirements": "本科及以上；文史哲、经管法律、财会审计优先；六级或等效；其他条件看原JD。",
+          "due": "2026-10-18",
+          "dueTime": null,
+          "deadlineScope": "三个已核总行岗位的官方JD截止",
+          "refs": [
+            "N0928-B15",
+            "N0928-B16"
+          ],
+          "url": "https://job.bankcomm.com/#/school/recruitmentInfo/?positionId=39072",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "上海工作地不表示免除长三角一年实践；页面提示放弃已投职位后不可再次投递。总行应届生三个方向应先比较，不将它们当3个独立志愿额度。",
+          "name": "总行应届生（综合管理方向）"
+        }
+      ]
+    },
+    "soe-b2bb7f2da8bb065dafbb": {
+      "basisHash": "116bdb45b13b41afa02129c080878d4b5d80664e4b21adf4a355ec3598eefd9f",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-b2bb7f2da8bb065dafbb-p01",
+          "employer": "浦发银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "unrestricted",
+          "directions": [
+            "banking",
+            "operations"
+          ],
+          "locations": [],
+          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "due": "2026-10-08",
+          "dueTime": "18:00",
+          "deadlineScope": "浦发2027统一简历投递窗口",
+          "refs": [
+            "N0928-B17"
+          ],
+          "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+          "name": "总行管理培训生"
+        },
+        {
+          "id": "soe-b2bb7f2da8bb065dafbb-p02",
+          "employer": "浦发银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "unrestricted",
+          "directions": [
+            "software",
+            "finance"
+          ],
+          "locations": [],
+          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "due": "2026-10-08",
+          "dueTime": "18:00",
+          "deadlineScope": "浦发2027统一简历投递窗口",
+          "refs": [
+            "N0928-B17"
+          ],
+          "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+          "name": "总行科技储备生"
+        },
+        {
+          "id": "soe-b2bb7f2da8bb065dafbb-p03",
+          "employer": "浦发银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "unrestricted",
+          "directions": [
+            "banking"
+          ],
+          "locations": [],
+          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "due": "2026-10-08",
+          "dueTime": "18:00",
+          "deadlineScope": "浦发2027统一简历投递窗口",
+          "refs": [
+            "N0928-B17"
+          ],
+          "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+          "name": "总行业务储备生"
+        },
+        {
+          "id": "soe-b2bb7f2da8bb065dafbb-p04",
+          "employer": "浦发银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "unrestricted",
+          "directions": [
+            "operations"
+          ],
+          "locations": [],
+          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "due": "2026-10-08",
+          "dueTime": "18:00",
+          "deadlineScope": "浦发2027统一简历投递窗口",
+          "refs": [
+            "N0928-B17"
+          ],
+          "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+          "name": "总行运营储备生"
+        }
+      ]
+    },
+    "soe-3a9d68162b0165c655ac": {
+      "basisHash": "22e07b1684b65c4b4f1c1777dc9bbe0e97f802b888c4de4e24c7a20f6cf7ca92",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-3a9d68162b0165c655ac-p01",
+          "employer": "中国农业银行研发中心",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "unknown",
+          "directions": [
+            "stats",
+            "software",
+            "finance"
+          ],
+          "locations": [],
+          "requirements": "机构条件本科起、六级≥425；具体岗位专业与学历层级未展开，应用统计需确认。",
+          "due": "2026-10-08",
+          "dueTime": "24:00",
+          "deadlineScope": "研发中心官方2027报名窗口",
+          "refs": [
+            "N0928-B20"
+          ],
+          "url": "https://career.abchina.com.cn/build/index.html#/99",
+          "applicationLimit": "研发中心最多2个岗位；另遵守总行科技机构类别额度。",
+          "risks": "机构总公告没有给逐岗专业；总行直属不代表直接分配总行管理部门。不能把人力/财务职能与数据岗专业条件混用。",
+          "name": "数据分析岗"
+        }
+      ]
+    },
+    "soe-e47806eafc52fe5f9023": {
+      "basisHash": "c04d2c1b4f00d32537eea62f13a2864cd920051f508b3ae580344899a2de10e7",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-e47806eafc52fe5f9023-p01",
+          "employer": "华夏银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "banking",
+            "stats",
+            "finance"
+          ],
+          "locations": [
+            "北京"
+          ],
+          "requirements": "硕士研究生及以上；数学统计相关专业；2027届，应聘回避与其他要求见具体JD。",
+          "due": "2026-10-25",
+          "dueTime": null,
+          "deadlineScope": "华夏2027官方总公告窗口；岗位如另列日期以JD为准",
+          "refs": [
+            "N0928-B22",
+            "N0928-B21"
+          ],
+          "url": "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/posDetail.html?postId=6aabb405f0cfabf2b4c61fa3&postType=campus",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "官方明确排除在校或两年择业期有社保缴存记录的毕业生，须自行核实，不能凭简历推断通过。数学统计相关不自动保证应用统计专硕代码；培养细节未给。",
+          "name": "数学统计专业管培生（北京）"
+        }
+      ]
+    },
+    "soe-1d81f573583960b2ca09": {
+      "basisHash": "18bd31c475a7f91316381f126dc2f46613a3fc357eb334708a5a5b8939757da1",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-1d81f573583960b2ca09-p01",
+          "employer": "华夏金融租赁有限公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "banking",
+            "stats",
+            "finance"
+          ],
+          "locations": [
+            "北京"
+          ],
+          "requirements": "硕士研究生及以上；数学统计相关专业；2027届，应聘回避与其他要求见具体JD。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "本轮该子公司JD未显示独立截止",
+          "refs": [
+            "N0928-B23",
+            "N0928-B21"
+          ],
+          "url": "https://wecruit.hotjob.cn/SU645b0d18bef57c0907e9fbc8/pb/posDetail.html?postId=6aabbac1fea5e04bda6c5365&postType=campus",
+          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "risks": "母行总公告与子公司具体JD的毕业/社保条款详略不同，不互相扩展。具体培养、考核、用工主体及子公司是否适用集团10/25窗口须再确认。",
+          "name": "数学统计专业管培生（北京）"
+        }
+      ]
+    },
+    "soe-de9c4459438f9d40fc9c": {
+      "basisHash": "f97e673e57bec87fd1bfaa06b84792387d7bac5b10101b1d438c1bfebc4facd6",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-de9c4459438f9d40fc9c-p01",
+          "employer": "招商局融资租赁有限公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "unrestricted",
+          "directions": [
+            "product",
+            "research",
+            "finance"
+          ],
+          "locations": [
+            "深圳",
+            "北京",
+            "天津"
+          ],
+          "requirements": "本科及以上2027届；官方具体职位专业不限，STEM和经济财税金融复合背景优先；相关证书仅优先。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "未核到明确岗位截止，不以网页有效期或宣讲日期替代。",
+          "refs": [
+            "N0928-E01",
+            "N0928-E01-O"
+          ],
+          "url": "https://cmhk.zhiye.com/custom/cmcleasingxq?hideMenu=1&jc=2&jobAdId=53690b0a-ff49-4aba-bc6e-8f13e9b638ba",
+          "applicationLimit": "未核到。",
+          "risks": "承担客户开发与营销任务；薪资含绩效。公告介绍导师制及融耀计划，无确定薪资、销售指标或服务期。",
+          "name": "市场营销岗（J33505）"
+        }
+      ]
+    },
+    "soe-5e5f37fe525132e770c9": {
+      "basisHash": "d61bc883b085089c1d31652e91dcd7abf1c6d294690f5eb1647f9225ca717998",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-5e5f37fe525132e770c9-p01",
+          "employer": "国寿安保基金管理有限公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "related",
+          "directions": [
+            "research",
+            "finance"
+          ],
+          "locations": [
+            "北京",
+            "上海"
+          ],
+          "requirements": "官方JD硕士及以上，经济金融及工科等相关专业；需经济金融理论、研究方法与Excel/Wind/Bloomberg，相关基金/券商研究实习优先。高校目录列应用统计，但官网没有逐字列出，仍需确认0252。",
+          "due": "2026-11-15",
+          "dueTime": null,
+          "deadlineScope": "高校同岗位正文11/15；官方未给独立日期，提交前复核",
+          "refs": [
+            "N0928-E02",
+            "N0928-E02-O",
+            "N0928-E02-C"
+          ],
+          "url": "https://chinalife.zhiye.com/custom/zwxq?hideMenu=1&jobAdId=426f1a0c-d5bb-4586-8ab8-17e1f9bd7d7b&jc=2",
+          "applicationLimit": "未核到。",
+          "risks": "高校“应用统计”宽目录与官方“经济金融及工科相关”不完全一致，按官方JD保留相关待确认，不计明确应用统计；11/15来自高校岗位正文，官网未见独立截止。不能虚构用户金融实习或工具熟练度。",
+          "name": "股票行业研究岗（北京/上海）"
+        }
+      ]
+    },
+    "soe-5d5e2a79fb87bf541109": {
+      "basisHash": "44b123ebe1e8c4de3f4b4428ea6320f71848a4fd2bdc7646b5139b561e4771ce",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-5d5e2a79fb87bf541109-p01",
+          "employer": "中国华电四川公司（具体签约主体另核）",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "stats",
+            "operations",
+            "industrial"
+          ],
+          "locations": [],
+          "requirements": "青年骏才面向985/211及QS前30海外院校应届研究生，各阶段均满足；国内原则2027-07月底双证，海外2027-08月底学历认证。 官方附件已落实到四川公司数学类/统计学类，但应用统计0252仍须认可。",
+          "due": "2026-10-18",
+          "dueTime": "24:00",
+          "deadlineScope": "青年骏才计划官方统一截止",
+          "refs": [
+            "N0928-E10",
+            "N0928-E10-A"
+          ],
+          "url": "https://rencaishichang.chd.com.cn",
+          "applicationLimit": "青年骏才只能投递1家二级单位；蓝海与直签同一入口不重复报名。",
+          "risks": "本硕各阶段院校、专业代码和应届条件须核。附件仅为单位及专业类别计划，不是完整职位JD；“单位所在地”不能替代实际岗位工作地。",
+          "name": "青年骏才计划—四川公司（数学类/统计学类）"
+        }
+      ]
+    },
+    "soe-87ef8e3ebe4b4b4bb9fc": {
+      "basisHash": "f2210f5430cca957e114a60ad0143c2835de19261cde1690fde0692bc151fe23",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-87ef8e3ebe4b4b4bb9fc-p01",
+          "employer": "中国石油集团共享运营有限公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "statistics",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "locations": [
+            "北京",
+            "西安",
+            "大庆",
+            "成都",
+            "吉林市",
+            "天津",
+            "乌鲁木齐"
+          ],
+          "requirements": "硕士研究生、博士研究生；统计学、应用统计学；另列计算机、数据科学、大数据管理、数据计算、应用数学、人工智能、软件、电子信息及网络/信息安全等专业。通用毕业、英语及回避条件见父卡。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "正文未明确岗位报名截止，保持为空",
+          "refs": [
+            "N0928-O01"
+          ],
+          "url": "https://zhaopin.cnpc.com.cn/",
+          "applicationLimit": "本次所读正文未明确，须核验招聘平台规则",
+          "risks": "正文用词为“统计学、应用统计学”，未列0252应用统计专业代码，须核应用统计专硕认可；博士数据管理岗不得混入。尚未独立核到截止与动态投递状态。",
+          "name": "数据应用岗"
+        },
+        {
+          "id": "soe-87ef8e3ebe4b4b4bb9fc-p02",
+          "employer": "中国石油集团共享运营有限公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "statistics",
+          "directions": [
+            "operations",
+            "stats"
+          ],
+          "locations": [
+            "北京",
+            "天津"
+          ],
+          "requirements": "硕士研究生、博士研究生；劳动经济学、法学、统计学、企业管理（人力资源方向）。通用毕业、英语及回避条件见父卡。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "正文未明确岗位报名截止，保持为空",
+          "refs": [
+            "N0928-O01"
+          ],
+          "url": "https://zhaopin.cnpc.com.cn/",
+          "applicationLimit": "本次所读正文未明确，须核验招聘平台规则",
+          "risks": "正文用词为“统计学、应用统计学”，未列0252应用统计专业代码，须核应用统计专硕认可；博士数据管理岗不得混入。尚未独立核到截止与动态投递状态。",
+          "name": "人力资源共享岗"
+        }
+      ]
+    },
+    "soe-00f5a7bf22c3ecff3eff": {
+      "basisHash": "3b6478dbcc2a7770f112714dfd175678871bc4565980b7d4d8c4e37a9a29abd0",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-00f5a7bf22c3ecff3eff-p01",
+          "employer": "中国石油天然气股份有限公司规划总院",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "statistics",
+          "directions": [
+            "research",
+            "stats"
+          ],
+          "locations": [
+            "北京"
+          ],
+          "requirements": "硕士、博士；油气储运工程、石油与天然气工程、建筑环境与能源应用工程、供热供燃气通风及空调工程、能源与动力工程、应用数学、数学与应用数学、统计学、动力工程及工程热物理、热能工程、化学工程。通用毕业、英语及回避条件见父卡。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "正文未明确岗位报名截止，保持为空",
+          "refs": [
+            "N0928-O02"
+          ],
+          "url": "https://zhaopin.cnpc.com.cn/",
+          "applicationLimit": "本次所读正文未明确，须核验招聘平台规则",
+          "risks": "未明确0252。河北工大职位表为17类合计30人，南开页面模板总数为53人，不能合并/放大。华北电力大学页面企业标签为数智研究院但正文是规划总院，按正文分主体；其2026-10-15为网页过期字段，不能填为职位截止。",
+          "name": "天然气市场研究"
+        },
+        {
+          "id": "soe-00f5a7bf22c3ecff3eff-p02",
+          "employer": "中国石油天然气股份有限公司规划总院",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "statistics",
+          "directions": [
+            "ai",
+            "stats"
+          ],
+          "locations": [
+            "北京"
+          ],
+          "requirements": "硕士、博士；人工智能、计算机应用技术、智能科学与技术、数据科学与大数据技术、计算机科学与技术、软件工程、计算机软件与理论、模式识别与智能系统、物联网工程、应用数学、自动化、数学与应用数学、统计学、运筹学与控制论、控制理论与控制工程。通用毕业、英语及回避条件见父卡。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "正文未明确岗位报名截止，保持为空",
+          "refs": [
+            "N0928-O02"
+          ],
+          "url": "https://zhaopin.cnpc.com.cn/",
+          "applicationLimit": "本次所读正文未明确，须核验招聘平台规则",
+          "risks": "未明确0252。河北工大职位表为17类合计30人，南开页面模板总数为53人，不能合并/放大。华北电力大学页面企业标签为数智研究院但正文是规划总院，按正文分主体；其2026-10-15为网页过期字段，不能填为职位截止。",
+          "name": "人工智能研究"
+        }
+      ]
+    },
+    "soe-12aceb3925f1d9fc514e": {
+      "basisHash": "3941f364a68d5c5c8d9a426db51cc7a28141481af3bc3054829e09a5aa750f14",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-12aceb3925f1d9fc514e-p01",
+          "employer": "中国石油集团安全环保技术研究院有限公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "ai",
+            "software",
+            "stats"
+          ],
+          "locations": [
+            "北京"
+          ],
+          "requirements": "硕士研究生及以上；应用数学、数学与应用数学、概率论与数理统计、智能视觉工程、智能科学与技术、模式识别与智能系统、智能感知工程、信息与计算科学、人工智能、数据科学与大数据技术、应用统计学、软件工程、电子信息工程、计算机应用技术、计算机科学与技术、仪器仪表工程等相近专业。通用毕业、英语及回避条件见父卡。",
+          "due": "2026-10-15",
+          "dueTime": null,
+          "deadlineScope": "本单位公告正文明确的简历报名截止，未给时刻。",
+          "refs": [
+            "N0928-O03"
+          ],
+          "url": "https://zhaopin.cnpc.com.cn/",
+          "applicationLimit": "本次所读正文未明确，须核验招聘平台规则",
+          "risks": "“应用统计学/相近专业”有核验价值，但0252应用统计专硕代码未明确；学历、英语、体检、测评仍须核个人情况。",
+          "name": "人工智能技术研发岗"
+        }
+      ]
+    },
+    "soe-3bad984c354c08ffb3a5": {
+      "basisHash": "b4babe51e9e6bc7ba2dba2e95609750d24c720c9e3604b07de1640d5edbe207b",
+      "reviewedOn": "2026-09-28",
+      "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+      "positions": [
+        {
+          "id": "soe-3bad984c354c08ffb3a5-p01",
+          "employer": "中国石油天然气股份有限公司广西销售分公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "stats",
+            "software"
+          ],
+          "locations": [],
+          "requirements": "硕士研究生、博士研究生；统计学、概率论与数理统计、应用数学、运筹学与控制论、计算数学、管理科学与工程、计算机科学与技术、大数据管理与应用、数据科学与大数据技术、应用统计学、数据科学。通用毕业、英语及回避条件见父卡。",
+          "due": "2026-10-15",
+          "dueTime": null,
+          "deadlineScope": "该单位正文报名区间2026-09-09至2026-10-15；无截止时刻。",
+          "refs": [
+            "N0928-O04"
+          ],
+          "url": "https://zhaopin.cnpc.com.cn/",
+          "applicationLimit": "正文明确每名毕业生最多应聘2家中国石油招聘单位；未见每家岗位数量规则。",
+          "risks": "应用统计学/统计学未等同0252资格保证；数据岗无具体城市。站经理储备属于经营管理机会，应核营销指标、倒班、培训和考核后自主选择。",
+          "name": "数据管理与应用岗"
+        },
+        {
+          "id": "soe-3bad984c354c08ffb3a5-p02",
+          "employer": "中国石油天然气股份有限公司广西销售分公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "locations": [
+            "南宁",
+            "钦州",
+            "防城港",
+            "崇左",
+            "北海",
+            "桂林",
+            "玉林",
+            "梧州",
+            "贺州",
+            "贵港",
+            "柳州",
+            "来宾",
+            "河池",
+            "百色"
+          ],
+          "requirements": "大学本科及以上；含统计学、经济统计学、数学与应用数学，以及市场营销、经济学、能源经济、应用经济学、工商管理、经济管理、零售业管理、物流管理、大数据管理与应用、连锁经营管理、电子商务、电子商务及法律、贸易经济。通用毕业、英语及回避条件见父卡。",
+          "due": "2026-10-15",
+          "dueTime": null,
+          "deadlineScope": "该单位正文报名区间2026-09-09至2026-10-15；无截止时刻。",
+          "refs": [
+            "N0928-O04"
+          ],
+          "url": "https://zhaopin.cnpc.com.cn/",
+          "applicationLimit": "正文明确每名毕业生最多应聘2家中国石油招聘单位；未见每家岗位数量规则。",
+          "risks": "应用统计学/统计学未等同0252资格保证；数据岗无具体城市。站经理储备属于经营管理机会，应核营销指标、倒班、培训和考核后自主选择。",
+          "name": "加油（气）站经理储备"
+        }
+      ]
+    }
+  }
+}

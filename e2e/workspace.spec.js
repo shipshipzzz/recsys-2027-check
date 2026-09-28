@@ -37,7 +37,7 @@ test.afterEach(async ({ page }) => {
 });
 
 for (const [kind, file, count] of [
-  ['rec', 'index.html', 57],
+  ['rec', 'index.html', readCatalog('rec').DATA.length + readCatalog('rec').EXTRA.length],
   ['soe', 'soe.html', readCatalog('soe').DATA.length],
 ]) {
   async function open(page, suffix = '') {
@@ -89,7 +89,11 @@ for (const [kind, file, count] of [
 
   test(kind + ': marking, reloading, restoring and undo preserve user state', async ({ page }) => {
     await open(page);
-    const first = page.locator('#grid .card').first();
+    // Legacy entry-state movement; pending child positions have a separate national regression.
+    const first = page
+      .locator('#grid .card')
+      .filter({ hasNot: page.locator('.position-list') })
+      .first();
     const id = await first.getAttribute('data-entry-id');
     await first.locator('[data-card-state="applied"]').click();
     const card = page.locator('[data-entry-id="' + id + '"]');
@@ -169,7 +173,12 @@ for (const [kind, file, count] of [
         };
       });
       await open(page);
-      await page.locator('#grid .card').first().locator('[data-card-state="applied"]').click();
+      await page
+        .locator('#grid .card')
+        .filter({ hasNot: page.locator('.position-list') })
+        .first()
+        .locator('[data-card-state="applied"]')
+        .click();
       await expect(page.locator('[data-sync-status]')).toContainText('本地存储不可用');
       await expect(page.locator('#processed-grid .card')).toHaveCount(1);
     },

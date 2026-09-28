@@ -16,9 +16,8 @@ const byId = new Map(items.map((item) => [item.id, item]));
 const assessment = createAssessmentLookup(screening, catalogs.soe);
 const location = createLocationLookup(geography, catalogs.soe);
 const cib = 'soe-6b718e14071e15579098';
-const isLatestRound = Object.values(catalogs).every(
-  (catalog) => catalog.RECHECKED === coverage.reviewedOn,
-);
+// This is a historical round, not every update sharing its calendar date.
+// Later same-day research may legitimately add cards and recheck earlier unknowns.
 
 // Data-specific evidence assertions deliberately fail when these facts change: review the
 // replacement evidence before updating an assertion, rather than changing only a digest.
@@ -29,8 +28,8 @@ test('deep review: the coverage manifest accounts for every card without inflati
     Object.values(coverage.totals).reduce((a, b) => a + b, 0),
   );
   for (const row of coverage.entries) assert.ok(byId.has(row.id), row.id);
-  if (isLatestRound)
-    assert.deepEqual(new Set(coverage.entries.map((row) => row.id)), new Set(byId.keys()));
+  assert.equal(coverage.metrics.job_entries, coverage.entries.length);
+  assert.ok(coverage.entries.length <= byId.size);
   for (const [outcome, total] of Object.entries(coverage.totals)) {
     assert.equal(coverage.entries.filter((row) => row.outcome === outcome).length, total);
   }
@@ -40,7 +39,9 @@ test('deep review: the coverage manifest accounts for every card without inflati
     attempted_unresolved: 4,
     not_reviewed: 95,
   });
-  if (isLatestRound) assert.deepEqual(coverage.metrics, counts(normalizeCatalogs(catalogs)));
+  const currentCounts = counts(normalizeCatalogs(catalogs));
+  for (const key of ['companies', 'job_entries', 'sources'])
+    assert.ok(currentCounts[key] >= coverage.metrics[key], 'Historical coverage lost: ' + key);
   assert.equal(coverage.newSourceCount, coverage.sources.length);
 });
 
@@ -49,8 +50,8 @@ test('deep review: unsuccessful or unattempted checks never refresh individual a
     ['attempted_unresolved', 'not_reviewed'].includes(entry.outcome),
   )) {
     assert.equal(row.checked, row.previousChecked, row.id);
-    if (isLatestRound)
-      assert.equal(byId.get(row.id).audit?.checked ?? null, row.previousChecked, row.id);
+    if (row.previousChecked)
+      assert.ok(byId.get(row.id).audit?.checked >= row.previousChecked, row.id);
   }
 });
 

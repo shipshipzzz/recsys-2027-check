@@ -131,7 +131,6 @@
       "major": "statistics",
       "cycle": "current",
       "intake": 2027,
-      "basis": "本届公告专业范围明确含统计/精算；具体科技、管理等岗位能否接受应用统计专硕须分别确认。",
       "directions": [
         "insurance",
         "stats",
@@ -140,12 +139,14 @@
         "finance",
         "software"
       ],
-      "qualityBasis": "本轮按所列用人单位公告核对职责与培养安排；具体合同主体、定岗和考核条件仍以职位及录用文件为准。",
+      "basis": "用人单位总简章列统计、经济、管理、精算、金融、IT等；具体岗位专业和学历须逐岗确认，不将总体专业范围套给全部总部职位。",
+      "qualityBasis": "统计与经营分析、风险和综合管理均在岗位排查范围；算法经历作为数据验证能力，不作为唯一选择方向。",
       "evidenceRefs": [
-        "U0927-S07"
+        "N0928-B04",
+        "N0928-B05"
       ],
-      "reviewedOn": "2026-09-27",
-      "basisHash": "e6ba4429aa398b724fbb7a430942da42896a88010ca1ad5eb55938ee687ec44d"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "d5213030faad4fcd126bad93817c6c65f5a04037761d77c436f699f9de87d14f"
     },
     "soe-e3c6ba3985ff4004365b": {
       "major": "unknown",
@@ -333,18 +334,22 @@
     },
     "soe-863efd948d7f8d33bfdb": {
       "major": "unknown",
-      "cycle": "unverified",
-      "intake": null,
+      "cycle": "current",
+      "intake": 2027,
       "directions": [
-        "geo"
+        "geo",
+        "industrial",
+        "stats",
+        "operations",
+        "software"
       ],
-      "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "只确认集团2027项目及具名岗位列表；应用统计是否符合经纬/物探院或其他单位的具体专业条件仍待核。",
+      "qualityBasis": "地震反演论文直接匹配，快手经历又能证明现代深度学习、强化学习与工程化能力，不会被局限为传统物探候选人。",
       "evidenceRefs": [
-        "H02"
+        "N0928-B06"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "5070e1d4446031a1dd639dada7ae8ac0a9419fb526c46e69c38e4e0705058517"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "c04b4685910d532711a33294da46da7eb043baf3a738c80f6ccb8f4bf37eb44d"
     },
     "soe-1e49fabfeb8af3287a2b": {
       "major": "unknown",
@@ -377,19 +382,22 @@
       "basisHash": "9176a4ef22e091dac7a8f729996b7728957958db9d6b1ddaa2f11901339af156"
     },
     "soe-b24eccce088fab5acca4": {
-      "major": "unknown",
-      "cycle": "unverified",
-      "intake": null,
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
       "directions": [
-        "industrial"
+        "operations",
+        "stats",
+        "supply",
+        "product"
       ],
-      "basis": "本轮保留旧招聘事实，但未重新逐岗验证专业和届次；先确认应用统计、学历及毕业窗，再决定是否投递。",
-      "qualityBasis": "沿用原卡片所列的单位与业务背景；其岗位内容有继续核验价值，实际用工和条件尚需确认。",
+      "basis": "硕士及以上；数研新星计划单独面向博士，不能混用其薪酬宣传。；国内为非在职普通高校应届生；境外硕士为2026年7月至2027年6月底毕业，2027年8月底前获认证学历学位；博士有12月放宽。；就读期间及毕业后在国内无社保缴费记录；以即将获得的最高学历及对应专业为准；须符合亲属回避。；本次所读简章未给外语分数。；南网数字集团及所属单位招聘，具体岗位合同主体、培养和考核待核。",
+      "qualityBasis": "统计建模、强化学习与延迟长期指标可迁移到负荷预测、异常检测、调度优化与客户数据智能。",
       "evidenceRefs": [
-        "H02"
+        "N0928-O05"
       ],
-      "reviewedOn": "2026-09-13",
-      "basisHash": "6d923abe07ed9d4a2e7332dbda2572647238f59c34c919d47b7d44f778e70b50"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "1ff757bcd7ec37565ca56bf8a18781947efd6ef571c6bf0f311034dffcda58e8"
     },
     "soe-9144dfc3a2177c2560bf": {
       "major": "unknown",
@@ -404,7 +412,7 @@
         "H02"
       ],
       "reviewedOn": "2026-09-13",
-      "basisHash": "59db91cf962ee4e05ebd53f540a5e1cecac2fb4cf8e535f24e5b087fe7ca39ea"
+      "basisHash": "2ca4d66bf36597dc85cb2d64fe781bac2b4d8537c3899a6eb8c3dd0724745c75"
     },
     "soe-40821fd0c64459ec899d": {
       "major": "unknown",
@@ -786,7 +794,6 @@
       "major": "explicit",
       "cycle": "current",
       "intake": 2027,
-      "basis": "明确应用统计的证据仅来自杭州总行数据研发27159050，硕士、毕业窗、技能及外语证明仍需个人核对。",
       "directions": [
         "banking",
         "stats",
@@ -795,14 +802,15 @@
         "operations",
         "research"
       ],
-      "qualityBasis": "本轮按所列用人单位公告核对职责与培养安排；具体合同主体、定岗和考核条件仍以职位及录用文件为准。",
+      "basis": "数据研发27159050明确应用统计，硕士及以上，要求数据库/SQL及Python或R；总行培训生27158942列经济或理工类（含统计）相关专业。两岗均须有外语能力证明。",
+      "qualityBasis": "经营分析和金融培养提供非算法路径；柜面/营销在了解工作取舍后也可作为备选。",
       "evidenceRefs": [
-        "U0927-S01",
-        "U0927-S02",
-        "U0927-S03"
+        "N0928-B01",
+        "N0928-B02",
+        "N0928-B03"
       ],
-      "reviewedOn": "2026-09-27",
-      "basisHash": "d96871ddfe5be4c835d348e2b2a0d3004615e69ec18cf1ad1c297fb84b3a17c2"
+      "reviewedOn": "2026-09-28",
+      "basisHash": "d3b43c95b5ff8806446fbbb4a31ca4225295bd57125333848527e91849aac8f6"
     },
     "soe-28a7c75480e66ff26a24": {
       "major": "statistics",
@@ -1028,6 +1036,600 @@
       ],
       "reviewedOn": "2026-09-28",
       "basisHash": "ee384c1975fb1d25e46378de871ac4635b8823892e646d4fbf4f50bfb3cce67f"
+    },
+    "soe-0bcee0305932c39268f6": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "stats",
+        "risk",
+        "operations",
+        "finance"
+      ],
+      "basis": "总公告列数理统计、数据分析、AI等相关专业；总行/省级岗位硕士及以上、CET6不低于426或等效成绩；具体岗位专业另核。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B07"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "39475a664065ddafc1bb72bb62cd3b210cb71278c38611e590c033d837cba21f"
+    },
+    "soe-8b77a831e8fa823d9737": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "finance",
+        "risk",
+        "operations",
+        "software"
+      ],
+      "basis": "已展开个人金融经营管理岗：原则上硕士及以上，金融经济、财会、管理、法学相关，CET6≥425或等效；应用统计是否落在接受范围待确认。金融科技具体专业尚未展开核准。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B08",
+        "N0928-B09"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "dad7a94243bf5ecb0e6d9e22bc52958b61619c1aec82982f84ddf65c191a64bb"
+    },
+    "soe-1390ea899a188a39617a": {
+      "major": "unrestricted",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "operations",
+        "stats",
+        "finance"
+      ],
+      "basis": "岗位正文明确总行管理培训生专业不设限；本科及以上，2027-07-31前毕业获证，CET6≥425或等效且成绩有效。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B10"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "cda19208857df498f03730f59c527f94fa49241dd7354d42dd6913decf7d1ada"
+    },
+    "soe-6036cd9ae91c3526037f": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "stats",
+        "risk",
+        "operations",
+        "finance"
+      ],
+      "basis": "总公告明确机构和志愿类别，但未给总行逐岗专业、学历条件；不将分行专业不限借给总行。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B11",
+        "N0928-B12"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "14fab07f22c909810809c271975b368cf471af20dee2f3fea91e50b3f04b3365"
+    },
+    "soe-8260438ddfcb7cfaf9c1": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "risk",
+        "operations",
+        "finance"
+      ],
+      "basis": "本科及以上应届、CET6或等效；前台优先科技理工/经管法律，风险优先经管法律/风险/财会审计，综合优先文史哲/经管法律/财会审计。优先专业不是明确应用统计可报保证。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B13",
+        "N0928-B14",
+        "N0928-B15",
+        "N0928-B16"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "4385e8f87738e39df6c6bcd8b341422f1622cc3b3840396f909f1e4241ced197"
+    },
+    "soe-b2bb7f2da8bb065dafbb": {
+      "major": "unrestricted",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "software",
+        "finance",
+        "operations",
+        "stats"
+      ],
+      "basis": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B17"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "116bdb45b13b41afa02129c080878d4b5d80664e4b21adf4a355ec3598eefd9f"
+    },
+    "soe-fbc68e3db565e8ae826c": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "software",
+        "ai",
+        "stats",
+        "product"
+      ],
+      "basis": "公告明确前三类硕士及以上，其他所列类本科及以上；具体专业未读，应用统计不可默认合格。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B17"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "ffc7e6bcdc610ce90e87066cb0a26e145ba69dc5d029de4eac80da1b886cf697"
+    },
+    "soe-75f4674009337c8bcaa1": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "risk",
+        "operations",
+        "software",
+        "finance"
+      ],
+      "basis": "公告该机构所列岗位硕士及以上；研究/交易/科技/运营具体专业和证书条件未展开。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B17"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "7e066d88da6bfd916c2b7443c4406d7f2192eb0d52bb3a77e84cd6341bc168c6"
+    },
+    "soe-afb94d0cd334ef5b35c7": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "risk",
+        "operations",
+        "software",
+        "finance"
+      ],
+      "basis": "公告机构岗位硕士及以上；不同职位专业和资格需单独核，不套用银行普通岗位原则不限。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B17"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "fbf5511330272bc95c58c855805505338c0b615eb79f9c90178f27da915bf00e"
+    },
+    "soe-53b939996659dfde59e5": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "research",
+        "software",
+        "ai",
+        "operations",
+        "finance"
+      ],
+      "basis": "总公告本科起，具体项目学历另列；研究生六级≥425或等效。总行各具体岗位的专业与研究要求未在该正文逐一列出。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B18"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "404eeb6a757332382ada2bad3d9b6f4e2ef908c4b51728f796ebe23b1d67e92f"
+    },
+    "soe-57a02b3fc6410f063563": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "operations",
+        "ai",
+        "software",
+        "stats",
+        "finance"
+      ],
+      "basis": "正文要求专业与银行业务及岗位相关，不能采用页头模板“专业不限”作全部岗位依据；本科及以上，具体总行学历与专业另核。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B19"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "dd1d31c59866b8d17884eb2d6f2d056b938278ca58a173182c3398cfe547165c"
+    },
+    "soe-3a9d68162b0165c655ac": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "stats",
+        "software",
+        "finance",
+        "operations"
+      ],
+      "basis": "已核总公告本科及以上、CET6≥425或等效，2027-07-31前毕业获证；各岗位具体专业和学历细则指向岗位详情，尚未核清应用统计。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B20"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "22e07b1684b65c4b4f1c1777dc9bbe0e97f802b888c4de4e24c7a20f6cf7ca92"
+    },
+    "soe-e47806eafc52fe5f9023": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "stats",
+        "finance"
+      ],
+      "basis": "硕士研究生及以上；数学统计相关专业；2027届，应聘回避与其他要求见具体JD。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B21",
+        "N0928-B22"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "c04d2c1b4f00d32537eea62f13a2864cd920051f508b3ae580344899a2de10e7"
+    },
+    "soe-1d81f573583960b2ca09": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "stats",
+        "finance"
+      ],
+      "basis": "硕士研究生及以上；数学统计相关专业；2027届，应聘回避与其他要求见具体JD。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-B21",
+        "N0928-B23"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "18bd31c475a7f91316381f126dc2f46613a3fc357eb334708a5a5b8939757da1"
+    },
+    "soe-de9c4459438f9d40fc9c": {
+      "major": "unrestricted",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "product",
+        "research",
+        "finance"
+      ],
+      "basis": "本科及以上2027届；官方具体职位专业不限，STEM和经济财税金融复合背景优先；相关证书仅优先。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E01",
+        "N0928-E01-O"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "f97e673e57bec87fd1bfaa06b84792387d7bac5b10101b1d438c1bfebc4facd6"
+    },
+    "soe-5e5f37fe525132e770c9": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "finance"
+      ],
+      "basis": "官方JD硕士及以上，经济金融及工科等相关专业；需经济金融理论、研究方法与Excel/Wind/Bloomberg，相关基金/券商研究实习优先。高校目录列应用统计，但官网没有逐字列出，仍需确认0252。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E02",
+        "N0928-E02-O",
+        "N0928-E02-C"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "d61bc883b085089c1d31652e91dcd7abf1c6d294690f5eb1647f9225ca717998"
+    },
+    "soe-8cd49c5535cbb34514df": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "ai",
+        "software"
+      ],
+      "basis": "页面学历为硕士/博士；境内外毕业窗均为2026年6月至2027年8月；统计学在雇主专业目录中，不能保证0252或所有岗位均接受。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E03"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "aa6d3d3a2077763300ed70d4196a33fe604a935dede94913dd3ab00b644e037a"
+    },
+    "soe-14617422435dc1c7757c": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "stats",
+        "ai",
+        "software"
+      ],
+      "basis": "2027硕士/博士；专业方向提及人工智能、数据分析等，未明确统计学或应用统计专硕。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E04"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "75351444c9aae1b6a52f9b75bb53680567601d0963d0913935e7d6da7eda7e98"
+    },
+    "soe-6c87c97a536ff75ffd95": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "finance",
+        "product"
+      ],
+      "basis": "以2027届为主，页面学历本科/硕士/博士；总体欢迎各专业，不代表每个岗位不限专业；博士后单列且不推荐给硕士。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E05"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "74c7e5b44f6e99c737a7227f19d22d86c71b83b1f98abd929202477ef0872d51"
+    },
+    "soe-adfb8640d34d1647cc06": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "product",
+        "banking",
+        "finance"
+      ],
+      "basis": "2026下半年至2027上半年毕业的境内外本科及以上应届生；需求岗位表列经济统计学，未明确应用统计专硕；证券基金从业资格为优先。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E06"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "c38d20c9cf8df24d600593148529e6dedb65f97853ce6428055d2def93bcba11"
+    },
+    "soe-5115684db9063d74877d": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "operations",
+        "finance"
+      ],
+      "basis": "2027；硕士一般≤28岁（2027-07-31计）；电力交易专项本硕院校门槛均有要求，硕士985/211或境外前100，本科双一流或境外前500；在京本部专项更严。应用统计仅相关待确认。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E07"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "486e724dd999f951f046a8a2d199ed4186961bb308d84d1aefb8af2f72b968a2"
+    },
+    "soe-885aa3ce3b991be77d82": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "risk",
+        "research",
+        "operations",
+        "finance",
+        "software"
+      ],
+      "basis": "国内2027统招非在职应届，不含委培定向，2027-07-31前双证；海外2026-01-01至2027-08-31毕业且初次就业；本科及以上。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E08"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "de4215fc311dcdeb5e59c934c5a394407dbede2226fe94493e7f3565cb90b501"
+    },
+    "soe-59da3ca0da45344d20a6": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "operations"
+      ],
+      "basis": "2027应届硕博士；国内双一流或规定海外高校；在京岗位本硕均双一流或海外前50；硕士1998-08-01及以后出生；本硕专业相关、亲属回避；应用经济学等未自动接受应用统计0252。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E09"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "6768e4f903b8feecf0aeef5e24980db9253716fe09fafbf0577d9ae160ad0241"
+    },
+    "soe-5d5e2a79fb87bf541109": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "stats",
+        "operations",
+        "industrial"
+      ],
+      "basis": "青年骏才面向985/211及QS前30海外院校应届研究生，各阶段均满足；国内原则2027-07月底双证，海外2027-08月底学历认证。 官方附件已落实到四川公司数学类/统计学类，但应用统计0252仍须认可。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E10",
+        "N0928-E10-A"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "44b123ebe1e8c4de3f4b4428ea6320f71848a4fd2bdc7646b5139b561e4771ce"
+    },
+    "soe-13b954591e810cca6d94": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "industrial",
+        "stats"
+      ],
+      "basis": "2027-08月底前双证/境外认证；2026未就业可纳入；2026入学一年制留学生不纳入；经济学、管理学及数智化为总目录非逐岗专业。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E11"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "75837bc97521fab5b534496496b5eb782b64930e9007294262b3ec43c5c56505"
+    },
+    "soe-fec9805f8b492d2ca3a2": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "research"
+      ],
+      "basis": "总部及投资控股国内2027春夏硕士及以上且7月31日前双证；海外2026年1月至2027年7月毕业；未见各岗专业。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E12"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "d99cf6b6471461cf6983cf13681e9fb25e683e23383a060d04596776e48477d6"
+    },
+    "soe-230433dca282b611307c": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "research",
+        "finance"
+      ],
+      "basis": "国内2027及2026未就业；海外2026/2027毕业认证；总目录数学、经济、金融等不能直接映射到总部每岗。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E13"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "baffacba6e94348daaec478cd91a3c45d976fa706cf2e4664fb69397e9de8efa"
+    },
+    "soe-53bef5d34efd044c8a7c": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "insurance",
+        "risk",
+        "research",
+        "operations"
+      ],
+      "basis": "2027国内外毕业生；具体专业/学历/合同性质待官方JD。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-E14"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "72ea47f2c6d8c853995f0044f4f64e5c22449c11edee9e7e300c2a6f09ead402"
+    },
+    "soe-87ef8e3ebe4b4b4bb9fc": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "stats",
+        "software",
+        "operations"
+      ],
+      "basis": "2027届；兼收2026届未落实工作且档案、组织关系保留原校者。境外留学生须回国后初次就业、学历学位认证及派遣资格。；数据应用、人力资源共享为硕博；数据管理仅博士；未见本科可报上述岗位。；国内CET-6≥425；可使用近两年TOEFL iBT考点版≥70、IELTS纸笔/机考≥6.0、Linguaskill考点版≥160等替代证明；留学生亦有中石油外语考试路径。；以入职当年8月31日计，原则上硕士≤27岁、博士≤30岁。；填写本科以来教育经历、专业人数与排名，上传外语证书和成绩单；多工作地岗位须填写意向地点。；招聘主体明确；具体劳动合同签署主体、轮岗/考核/服务期未见说明。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-O01"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "f2210f5430cca957e114a60ad0143c2835de19261cde1690fde0692bc151fe23"
+    },
+    "soe-00f5a7bf22c3ecff3eff": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "stats",
+        "ai"
+      ],
+      "basis": "2027届及2026届未就业且档案组织关系留校；原则上2027-08-31前取得学历学位，境外须认证。；逐岗区分硕博及博士限定；炼化生产优化等博士岗位未作为硕士机会。；CET-6≥460；高层次和优才可放宽但不低于425；近两年TOEFL≥80、IELTS≥6.5、领思≥170等可替代。；专业测评、综合面试、职业健康体检；优才免笔试条件不是所有应聘者的院校门槛。；院所招聘主体明确；具体劳动合同、培养与考核细节未披露。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-O02"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "3b6478dbcc2a7770f112714dfd175678871bc4565980b7d4d8c4e37a9a29abd0"
+    },
+    "soe-12aceb3925f1d9fc514e": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "ai",
+        "software",
+        "stats"
+      ],
+      "basis": "2027届；2026届未就业且档案组织关系留校亦可。留学人员需学历学位认证；应如期获证，未明确具体毕业日。；该岗硕士及以上；同公告油气与新能源开发安全、碳污协同减排为博士限定。；国内CET-6≥460；留学生近两年TOEFL iBT考点版≥80、IELTS纸笔/机考≥6.5、领思考点版≥170；其他语种按相应标准。；需资格审核、通用能力考试或优才免试、AI面试与测评、专家面试及体检。；中国石油直属科研机构招聘；具体劳动合同签署、轮岗、考核、服务期未披露。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-O03"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "3941f364a68d5c5c8d9a426db51cc7a28141481af3bc3054829e09a5aa750f14"
+    },
+    "soe-3bad984c354c08ffb3a5": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "stats",
+        "software",
+        "operations",
+        "product"
+      ],
+      "basis": "2027届；2026届未就业且档案组织关系留校亦可。毕业时取得双证。留学人员非外语专业须境外学习≥1年并完成学历学位认证。；正文仅写执行集团统一外语要求，具体分数本轮未由该公告核出。；数据岗硕博；站经理储备本科及以上。；录用须服从广西区内工作地分配；通用考试、AI面试及HR面试等。；招聘为广西销售分公司；下辖另有控参股企业，最终合同主体须确认。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-O04"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "b4babe51e9e6bc7ba2dba2e95609750d24c720c9e3604b07de1640d5edbe207b"
+    },
+    "soe-4e7bf568324c786fbaec": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "stats",
+        "product"
+      ],
+      "basis": "远光软件本科及以上，申请北京、上海须硕士及以上；管理类专业目录含统计学；2027应届。具体岗位、应用统计0252、培养用工和日期待核。",
+      "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+      "evidenceRefs": [
+        "N0928-O06"
+      ],
+      "reviewedOn": "2026-09-28",
+      "basisHash": "97af724dd151e07c64eae3646a76e7b498b783705679f3ac4e73615513bbae36"
     }
   }
 }
