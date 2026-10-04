@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
+import { readFile } from 'node:fs/promises';
 import { nationalFixture } from '../tests/fixtures/national.mjs';
+import { screeningDigest } from '../scripts/validate-screening.mjs';
 const fixtures = new WeakMap();
 test.beforeEach(async ({ context, page }) => {
   const f = nationalFixture();
@@ -165,4 +167,259 @@ test('changed cached facts withdraw old positions while preserving the independe
     () => JSON.parse(localStorage.getItem('recsys:soe-position-progress:v1')).entries,
   );
   expect(entries[f.positions[0].id]).toBe('applied');
+});
+
+test('review regression: handled positions never resurrect a pending deadline', async ({
+  page,
+}) => {
+  const f = fixtures.get(page);
+  await open(page);
+  const bank = card(page, f.bank.id);
+  await bank.locator('.position-list summary').click();
+  await bank.locator('[data-position-id="' + f.positions[0].id + '"]').selectOption('applied');
+  await bank.locator('[data-position-id="' + f.positions[1].id + '"]').selectOption('ignored');
+  await expect(bank.locator('.action-strip')).toContainText('已核岗位均已处理');
+  await expect(bank.locator('.action-strip')).not.toContainText('2026-09-30');
+  await expect(page.locator('#action-grid')).not.toContainText(f.bank.name);
+});
+
+test('review regression: failed writes retain every unsaved position edit', async ({ page }) => {
+  const f = fixtures.get(page);
+  await page.addInitScript(
+    (ids) => {
+      const key = 'recsys:soe-position-progress:v1';
+      localStorage.setItem(
+        key,
+        JSON.stringify({
+          version: 1,
+          entries: Object.fromEntries(ids.map((id) => [id, 'pending'])),
+        }),
+      );
+      const original = Storage.prototype.setItem;
+      window.__restorePositionWrites = () => {
+        Storage.prototype.setItem = original;
+      };
+      Storage.prototype.setItem = function (name, value) {
+        if (name === key) throw new DOMException('Full', 'QuotaExceededError');
+        return original.call(this, name, value);
+      };
+    },
+    f.positions.map((p) => p.id),
+  );
+  await open(page);
+  const bank = card(page, f.bank.id);
+  await bank.locator('.position-list summary').click();
+  await bank.locator('[data-position-id="' + f.positions[0].id + '"]').selectOption('applied');
+  await bank.locator('[data-position-id="' + f.positions[1].id + '"]').selectOption('ignored');
+  await expect(bank.locator('[data-position-id="' + f.positions[0].id + '"]')).toHaveValue(
+    'applied',
+  );
+  await expect(page.locator('#position-save-status')).toContainText('内存');
+  const downloaded = page.waitForEvent('download');
+  await page.locator('#position-export').click();
+  const backup = JSON.parse(await readFile(await (await downloaded).path(), 'utf8'));
+  expect(backup.entries[f.positions[0].id]).toBe('applied');
+  expect(backup.entries[f.positions[1].id]).toBe('ignored');
+  await page.evaluate(() => window.__restorePositionWrites());
+  await page.locator('#position-retry').click();
+  await expect(page.locator('#position-save-status')).toContainText('已保存');
+  await expect(page.locator('#position-retry')).toBeHidden();
+  const saved = await page.evaluate(
+    () => JSON.parse(localStorage.getItem('recsys:soe-position-progress:v1')).entries,
+  );
+  expect(saved).toEqual(backup.entries);
+});
+
+test('review regression: local storage clear in another tab resets saved position UI', async ({
+  page,
+  context,
+}) => {
+  const f = fixtures.get(page);
+  await open(page);
+  const bank = card(page, f.bank.id);
+  await bank.locator('.position-list summary').click();
+  await bank.locator('[data-position-id="' + f.positions[0].id + '"]').selectOption('applied');
+  const other = await context.newPage();
+  await other.goto('soe.html');
+  await other.evaluate(() => localStorage.clear());
+  await expect(bank.locator('[data-position-id="' + f.positions[0].id + '"]')).toHaveValue(
+    'pending',
+  );
+  await other.close();
+});
+
+test('review regression: deadline ordering respects earlier clock times on the same day', async ({
+  page,
+}) => {
+  const f = fixtures.get(page);
+  f.oil.dueTime = '24:00';
+  f.boc.dueTime = '18:00';
+  for (const item of [f.oil, f.boc])
+    f.screening.entries[item.id].basisHash = screeningDigest(item, f.catalog.SOURCES);
+  await open(page);
+  await page.locator('#sort').selectOption('due');
+  const ids = await page
+    .locator('#grid .card')
+    .evaluateAll((nodes) => nodes.map((node) => node.dataset.entryId));
+  expect(ids.indexOf(f.boc.id)).toBeLessThan(ids.indexOf(f.oil.id));
+});
+
+test('review regression: an expired supported parent window no longer carries an open badge', async ({
+  page,
+}) => {
+  const f = fixtures.get(page);
+  await page.clock.setSystemTime(new Date('2026-10-01T12:00:00+08:00'));
+  await open(page);
+  await expect(card(page, f.oil.id).locator('.b-past')).toContainText('本窗口已过');
+  await page.locator('[data-filter="watch"]').click();
+  await expect(card(page, f.oil.id)).toHaveCount(1);
+});
+
+test('position backup: confirmed merge restores progress without deleting sibling or unknown IDs', async ({
+  page,
+}) => {
+  const f = fixtures.get(page),
+    unknown = f.bank.id + '-future';
+  await open(page);
+  const bank = card(page, f.bank.id);
+  await bank.locator('.position-list summary').click();
+  await bank.locator('[data-position-id="' + f.positions[0].id + '"]').selectOption('applied');
+  await bank.locator('[data-position-id="' + f.positions[1].id + '"]').selectOption('ignored');
+  const backup = {
+    version: 1,
+    storage: '仅本机保存，不与账号同步',
+    entries: { [f.positions[0].id]: 'pending', [unknown]: 'applied' },
+  };
+  page.once('dialog', async (dialog) => {
+    expect(dialog.type()).toBe('confirm');
+    expect(dialog.message()).toContain('覆盖不同状态 1 条');
+    expect(dialog.message()).toContain('1 条不在当前岗位附表');
+    await dialog.accept();
+  });
+  await page.locator('#position-import-file').setInputFiles({
+    name: 'backup.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(JSON.stringify(backup)),
+  });
+  await expect(page.locator('#position-save-status')).toContainText('已合并 2 条');
+  await expect(bank.locator('[data-position-id="' + f.positions[0].id + '"]')).toHaveValue(
+    'pending',
+  );
+  await expect(bank.locator('[data-position-id="' + f.positions[1].id + '"]')).toHaveValue(
+    'ignored',
+  );
+  await page.reload();
+  await bank.locator('.position-list summary').click();
+  await expect(bank.locator('[data-position-id="' + f.positions[1].id + '"]')).toHaveValue(
+    'ignored',
+  );
+  const saved = await page.evaluate(
+    () => JSON.parse(localStorage.getItem('recsys:soe-position-progress:v1')).entries,
+  );
+  expect(saved[unknown]).toBe('applied');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
+    true,
+  );
+});
+
+test('position backup: cancellation, corrupt JSON and oversize files do not mutate progress', async ({
+  page,
+}) => {
+  const f = fixtures.get(page);
+  await open(page);
+  const before = await page.evaluate(() => localStorage.getItem('recsys:soe-position-progress:v1'));
+  page.once('dialog', (dialog) => dialog.dismiss());
+  const file = page.locator('#position-import-file');
+  await file.setInputFiles({
+    name: 'cancel.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(
+      JSON.stringify({ version: 1, entries: { [f.positions[0].id]: 'applied' } }),
+    ),
+  });
+  await expect(page.locator('#position-save-status')).toContainText('已取消');
+  for (const text of [
+    '{broken',
+    JSON.stringify({ version: 1, entries: { [f.positions[0].id]: ['applied'] } }),
+  ]) {
+    await file.setInputFiles({
+      name: 'invalid.json',
+      mimeType: 'application/json',
+      buffer: Buffer.from(text),
+    });
+    await expect(page.locator('#position-save-status')).toContainText('未导入');
+  }
+  await file.setInputFiles({
+    name: 'too-large.json',
+    mimeType: 'application/json',
+    buffer: Buffer.alloc(1024 * 1024 + 1, 32),
+  });
+  await expect(page.locator('#position-save-status')).toContainText('不能超过1 MiB');
+  expect(await page.evaluate(() => localStorage.getItem('recsys:soe-position-progress:v1'))).toBe(
+    before,
+  );
+  await expect(page.locator('#position-import')).toBeEnabled();
+});
+
+test('clock review: parent deadline badges advance without reloading the page', async ({
+  page,
+}) => {
+  const f = fixtures.get(page);
+  f.oil.due = '2026-09-28';
+  f.oil.dueTime = '12:01';
+  f.screening.entries[f.oil.id].basisHash = screeningDigest(f.oil, f.catalog.SOURCES);
+  await open(page);
+  await expect(card(page, f.oil.id).locator('.b-past')).toHaveCount(0);
+  await page.clock.fastForward(61000);
+  await expect(card(page, f.oil.id).locator('.b-past')).toContainText('本窗口已过');
+});
+
+test('clock review: handled child deadlines advance while the pending sibling remains unchanged', async ({
+  page,
+}) => {
+  const f = fixtures.get(page);
+  f.positions[0].due = '2026-09-28';
+  f.positions[0].dueTime = '12:03';
+  await open(page);
+  const bank = card(page, f.bank.id);
+  await bank.locator('.position-list summary').click();
+  await bank.locator('[data-position-id="' + f.positions[0].id + '"]').selectOption('applied');
+  // Consume the first tick caused by changing the pending primary deadline.
+  await page.clock.fastForward(61000);
+  await expect(bank.locator('.position-list')).not.toContainText('该窗口已过');
+  await page.clock.fastForward(121000);
+  await expect(bank.locator('.position-list')).toContainText('该窗口已过');
+  await expect(bank.locator('.action-strip')).toContainText('2026-10-25');
+  await expect(bank.locator('[data-position-id="' + f.positions[1].id + '"]')).toHaveValue(
+    'pending',
+  );
+});
+
+test('position progress: already-processed cards refresh child controls within the same minute', async ({
+  page,
+}) => {
+  const f = fixtures.get(page);
+  await open(page);
+  const bank = card(page, f.bank.id);
+  await bank.locator('.position-list summary').click();
+  await bank.locator('[data-position-id="' + f.positions[0].id + '"]').selectOption('applied');
+  await bank.locator('[data-position-id="' + f.positions[1].id + '"]').selectOption('ignored');
+  await bank.locator('[data-card-state="applied"]').click();
+  await expect(page.locator('#processed-grid .card')).toHaveCount(1);
+  page.once('dialog', (dialog) => dialog.accept());
+  await page.locator('#position-import-file').setInputFiles({
+    name: 'processed.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(
+      JSON.stringify({ version: 1, entries: { [f.positions[0].id]: 'ignored' } }),
+    ),
+  });
+  await expect(page.locator('#position-save-status')).toContainText('已合并');
+  const download = page.waitForEvent('download');
+  await page.locator('#position-export').click();
+  const backup = JSON.parse(await readFile(await (await download).path(), 'utf8'));
+  expect(backup.entries[f.positions[0].id]).toBe('ignored');
+  await expect(bank.locator('[data-position-id="' + f.positions[0].id + '"]')).toHaveValue(
+    'ignored',
+  );
 });

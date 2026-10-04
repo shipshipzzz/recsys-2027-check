@@ -1,0 +1,911 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-04",
+  "baseline": "d8bd6d7f3067986aa0fe229f4ac09cd0bbd8411d",
+  "scope": "本轮10个既有入口更新前快照；不替代原始历史。",
+  "records": [
+    {
+      "id": "soe-9ed0ba98e2b378d91fe7",
+      "card": {
+        "name": "建信金融科技",
+        "en": "CCB FinTech",
+        "fit": 85,
+        "tier": "A",
+        "status": "open",
+        "track": "finance",
+        "ownership": "国有银行金融科技子公司",
+        "city": "上海、北京、厦门、广州、武汉、成都、深圳为公告工作地；杭州、重庆、西安出现在全国笔试名单中，不当工作地。",
+        "xian": false,
+        "action": "10/8 24:00前核两志愿及顺序，最多修改两次；科技专项选择信息技术类，两个志愿的笔试城市与科目须一致。",
+        "jobs": "科技类专项人才，计划30人；具体职责与任职条件在各岗位投递页，不把公司级专业范围当全部岗位通过。",
+        "why": "应用统计与深度学习背景匹配；推荐系统中对用户行为、偏差与长期价值的建模可迁移。",
+        "risk": "笔试初步安排10月底，不能写成某一确定日期；公司专业概述不保证每个具体岗位接受应用统计。",
+        "resume": "金融科技版：一页内保留两个最强快手项目和论文/竞赛，删除 AI 协同开发工具行。",
+        "evidence": "建行官方招聘公告完整正文，未进入账号或申请流程。",
+        "priority": 3,
+        "links": [
+          [
+            "建设银行招聘",
+            "https://ccb.com/chn/job/org_index.html?orgId=8ba3bc9962e2c55501636c1220b10648&planType=XY"
+          ]
+        ],
+        "note": "由官方索引/转载升级为官方正文；工作城市、笔试城市、两志愿限制分别核实。",
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["S08", "S09", "U0928-S10"],
+          "summary": "官方完整正文补齐毕业窗、CET4、两志愿/两次修改、IT笔试与10/8 24:00；不混用笔试城市。",
+          "scope": "仅核验本条明确列出的公告、岗位或列表；未操作申请按钮，未通过个人资格审核。",
+          "level": "官方正文"
+        },
+        "rev": "2026-09-28",
+        "due": "2026-10-08",
+        "dueTime": "24:00",
+        "dueScope": "建信金融科技2027秋季校园招聘报名截止，北京时间",
+        "id": "soe-9ed0ba98e2b378d91fe7",
+        "req": "本科及以上，计算机/软件工程/数理统计等理工类为主，应用统计专硕口径须逐岗确认。CET4≥425或TOEIC≥630、TOEFL≥75、IELTS≥5.5等公告替代条件；另核未建立劳动关系与亲属回避。",
+        "window": "国内2027年1—7月毕业；海外2026年1月至2027年7月毕业，报到时取得所需证书；按公告核应届及就业状态。"
+      },
+      "screening": {
+        "major": "statistics",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["finance", "software"],
+        "basis": "官方公告明确数理统计类并给出毕业、英语、志愿和截止条件；具体应用统计专业代码仍须目标岗位确认。",
+        "qualityBasis": "银行科技专项培养与职责方向清晰；信息技术笔试和岗位技术要求应与个人准备程度比较。",
+        "evidenceRefs": ["U0928-S10"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "511473361735dfebf7fabe03c45f3530a66e20b316b4d34939112a0c59af12bb"
+      },
+      "locations": {
+        "current": true,
+        "reviewedOn": "2026-09-28",
+        "locations": [
+          {
+            "city": "成都",
+            "province": "四川",
+            "level": "campaign",
+            "directions": ["finance", "software"],
+            "refs": ["U0928-S10"],
+            "scope": "成都在公司科技专项工作地点名单；不是全国笔试城市外推，也不保证任意具体岗可选成都。"
+          }
+        ],
+        "basisHash": "2f031921d900f9b051b710ef5d13a46dae2fb5c04fba5b163320a5780e169df4"
+      },
+      "opportunities": null
+    },
+    {
+      "id": "soe-15e8fe78032c98f915c3",
+      "card": {
+        "id": "soe-15e8fe78032c98f915c3",
+        "name": "重庆三峡融资担保集团 · 管培 / 项目经理",
+        "en": "Chongqing Three Gorges Financing Guarantee",
+        "ownership": "重庆国资背景融资担保集团",
+        "track": "risk",
+        "status": "open",
+        "tier": "S",
+        "fit": 90,
+        "priority": 144,
+        "city": "重庆主城及江津/万州/黔江、北京、成都、武汉、西安、长沙、昆明；为招聘范围，轮岗后按表现和需求定岗。",
+        "xian": true,
+        "req": "2027届；管培硕士及以上，其他项目经理本科及以上；具体岗位专业不限，统计等相关专业优先。还须核应届界定、亲属回避与其他任职条件。",
+        "window": "2027届应届生，按公告指定应届界定核对；未由本次阅读代替个人资格审核。",
+        "jobs": "项目经理30人（含管培15人）：客户与渠道拓展、融资担保尽调、风险分析、项目实施及保后管理；不是纯数据分析岗位。",
+        "action": "9/30前完成材料核对，最多投一个岗位；先确认客户拓展、项目责任与轮岗安排。",
+        "why": "统计分析、研究写作和风险识别可以迁移至项目评估；同时如实接受客户沟通职责。",
+        "risk": "未公布9/30具体时刻，不补写24:00。管培按考核和需求定岗，不保证某城或部门。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "重庆国资委发布的企业校园招聘正文。",
+        "note": "官方校园公告已复核；专业不限的范围明确，但业务含营销和风险责任。",
+        "rev": "2026-09-28",
+        "links": [
+          ["三峡担保集团官网", "https://www.cqsxdb.com/"],
+          ["重庆国企优聘", "https://www.cqrc.net/gzw/index/"]
+        ],
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["S-CITY-03", "U0928-S09"],
+          "summary": "核对校园公告而非社招：学历分档、专业不限、单岗限制、9/30日期及调配范围均有正文依据。",
+          "scope": "仅核验本条明确列出的公告、岗位或列表；未操作申请按钮，未通过个人资格审核。",
+          "level": "官方正文"
+        },
+        "due": "2026-09-30",
+        "dueScope": "2027校园招聘简历接收截止；官方只给日期，未给具体时刻",
+        "dueTime": null
+      },
+      "screening": {
+        "major": "unrestricted",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["risk", "banking", "operations"],
+        "basis": "具体项目经理/管培资格段明确专业不限、统计等优先；学历分两档，9/30只给日期，最多一个志愿。",
+        "qualityBasis": "融资担保尽调、客户拓展与保后管理职责明确；管培轮岗后按考核和岗位需求定岗。",
+        "evidenceRefs": ["U0928-S09"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "765638ad19a511bad2d5b103cbcbf88547c951002a1f7ad8f1e11efb48ad7d31"
+      },
+      "locations": {
+        "current": true,
+        "reviewedOn": "2026-09-28",
+        "locations": [
+          {
+            "city": "重庆",
+            "province": "重庆",
+            "level": "campaign",
+            "directions": ["risk", "banking", "operations"],
+            "refs": ["U0928-S09"],
+            "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
+          },
+          {
+            "city": "成都",
+            "province": "四川",
+            "level": "campaign",
+            "directions": ["risk", "banking", "operations"],
+            "refs": ["U0928-S09"],
+            "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
+          },
+          {
+            "city": "西安",
+            "province": "陕西",
+            "level": "campaign",
+            "directions": ["risk", "banking", "operations"],
+            "refs": ["U0928-S09"],
+            "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
+          }
+        ],
+        "basisHash": "d6aaa94cf435996f15fd0bae8894df4bfee1b366bae9482961e16d6838389a1e"
+      },
+      "opportunities": null
+    },
+    {
+      "id": "soe-15dcc83203fa8d55b59c",
+      "card": {
+        "id": "soe-15dcc83203fa8d55b59c",
+        "name": "杭州银行 · 总分行培养 / 运营",
+        "en": "Bank of Hangzhou",
+        "ownership": "地方国资背景上市银行（高校招聘页列国有企业）",
+        "track": "banking",
+        "status": "open",
+        "tier": "A+",
+        "fit": 86,
+        "priority": 145,
+        "city": "杭州：已核数据研发和总行培训生；其他岗位地点另核。",
+        "xian": false,
+        "req": "数据研发27159050明确应用统计，硕士及以上，要求数据库/SQL及Python或R；总行培训生27158942列经济或理工类（含统计）相关专业。两岗均须有外语能力证明。",
+        "window": "两份JD：境内2027年1—7月毕业，境外2026年1月—2027年7月毕业；7月31日前取得规定证书。",
+        "jobs": "数据研发培训生：金融营销、运营、风控场景的数据分析建模；总行培训生：先轮岗，再经考评至基层管理或总分支行岗位。",
+        "action": "优先核数据研发9/30窗口；总行培训生10/25另行选择与跟进。",
+        "why": "经营分析和金融培养提供非算法路径；柜面/营销在了解工作取舍后也可作为备选。",
+        "risk": "轮岗考核不保证永久总行岗位；SQL等技能需据实，两个方向专业范围不得互借。列表只有日期，无日内时刻。",
+        "resume": "按岗位使用统计分析 / 行业研究 / 金融运营 / 综合培养版简历；只调整真实经历的重点，SQL、行业知识、会计和管理能力未确认时只列为准备项。",
+        "evidence": "2026-09-27复核：U0927-S01、U0927-S02、U0927-S03；范围见核查记录，不代表个人资格通过。",
+        "note": "基于官网具体JD消解旧10/22与10/25的泛化冲突；不新增重复公司卡片，不把多个岗位合成一个截止。",
+        "rev": "2026-09-28",
+        "links": [
+          ["杭州银行官方招聘", "https://myjob.hzbank.com.cn/"],
+          [
+            "杭州银行2027秋招9月15日版本 · 河北工业大学",
+            "https://career.hebut.edu.cn/home/correcruit/content/id/80614.html"
+          ],
+          [
+            "杭州银行2027秋招9月11日版本 · 厦门大学",
+            "https://smcareer.xmu.edu.cn/info/1008/31455.htm"
+          ],
+          [
+            "官方职位列表",
+            "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employ/school"
+          ],
+          [
+            "数据研发JD",
+            "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050"
+          ],
+          [
+            "总行培训生JD",
+            "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942"
+          ]
+        ],
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": [
+            "N0928-B01",
+            "N0928-B02",
+            "N0928-B03",
+            "U0927-S01",
+            "U0927-S02",
+            "U0927-S03",
+            "U0916-S05",
+            "U0916-S06",
+            "U0916-S07",
+            "S-CITY-04"
+          ],
+          "summary": "重读官方列表与两份JD，以岗位级日期修复早截止遗漏。",
+          "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。",
+          "level": "官方职位列表"
+        },
+        "due": null,
+        "dueScope": "按具体职位分别截止，不设全行统一倒计时",
+        "dueTime": null,
+        "dueAlt": "数据/软件研发培训生9/30；总行培训生等10/25",
+        "closes": "数据研发9/30；总行培训生10/25。分别保存岗位级截止，不统一成整个机构的截止。"
+      },
+      "screening": {
+        "major": "explicit",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["banking", "stats", "software", "finance", "operations", "research"],
+        "basis": "数据研发27159050明确应用统计，硕士及以上，要求数据库/SQL及Python或R；总行培训生27158942列经济或理工类（含统计）相关专业。两岗均须有外语能力证明。",
+        "qualityBasis": "经营分析和金融培养提供非算法路径；柜面/营销在了解工作取舍后也可作为备选。",
+        "evidenceRefs": ["N0928-B01", "N0928-B02", "N0928-B03"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "d3b43c95b5ff8806446fbbb4a31ca4225295bd57125333848527e91849aac8f6"
+      },
+      "locations": {
+        "current": true,
+        "reviewedOn": "2026-09-28",
+        "locations": [
+          {
+            "city": "杭州",
+            "province": "浙江",
+            "directions": ["stats", "software", "finance"],
+            "refs": ["N0928-B02"],
+            "scope": "仅数据研发培训生；不能借给其他机构岗位。",
+            "level": "position"
+          },
+          {
+            "city": "杭州",
+            "province": "浙江",
+            "directions": ["banking", "operations"],
+            "refs": ["N0928-B03"],
+            "scope": "总行培训生工作地字段；基层轮岗及最终定岗另有安排。",
+            "level": "position"
+          }
+        ],
+        "basisHash": "52262b8ebd7a6045babe6ac7ec63c53f270d998ff397bc53e05258d6d6d98c94"
+      },
+      "opportunities": {
+        "basisHash": "d3b43c95b5ff8806446fbbb4a31ca4225295bd57125333848527e91849aac8f6",
+        "reviewedOn": "2026-09-28",
+        "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+        "positions": [
+          {
+            "id": "soe-15dcc83203fa8d55b59c-p01",
+            "employer": "杭州银行总行",
+            "cycle": "current",
+            "type": "campus",
+            "status": "open",
+            "major": "explicit",
+            "directions": ["stats", "software", "finance"],
+            "locations": ["杭州"],
+            "requirements": "硕士及以上；明确应用统计；SQL、数据库与Python/R；境内2027年1—7月毕业；外语证明另核。",
+            "due": "2026-09-30",
+            "dueTime": null,
+            "deadlineScope": "官方列表所列本岗位截止",
+            "refs": ["N0928-B01", "N0928-B02"],
+            "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
+            "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+            "risks": "轮岗考核不保证永久总行岗位；SQL等技能需据实，两个方向专业范围不得互借。列表只有日期，无日内时刻。",
+            "name": "总行信息技术部培训生（数据研发方向）"
+          },
+          {
+            "id": "soe-15dcc83203fa8d55b59c-p02",
+            "employer": "杭州银行总行",
+            "cycle": "current",
+            "type": "campus",
+            "status": "open",
+            "major": "statistics",
+            "directions": ["banking", "operations"],
+            "locations": ["杭州"],
+            "requirements": "硕士及以上；经济或理工类（含统计）相关专业；毕业窗、语言和回避要求另核。",
+            "due": "2026-10-25",
+            "dueTime": null,
+            "deadlineScope": "官方列表所列本岗位截止",
+            "refs": ["N0928-B01", "N0928-B03"],
+            "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
+            "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+            "risks": "先轮岗，经考评定岗到基层管理或总分支行，不能当作固定总行承诺。",
+            "name": "总行培训生"
+          }
+        ]
+      }
+    },
+    {
+      "id": "soe-b9fb017b087135609736",
+      "card": {
+        "id": "soe-b9fb017b087135609736",
+        "name": "国家开发银行 · 总行经济金融",
+        "en": "China Development Bank",
+        "fit": 85,
+        "tier": "A",
+        "status": "open",
+        "priority": 3,
+        "xian": false,
+        "links": [
+          ["国家开发银行2027校园招聘公告", "https://cdb2027.zhaopin.com/index.html"],
+          ["国家开发银行2027校招注意事项", "https://cdb2027.zhaopin.com/precautions/index.html"],
+          [
+            "国家开发银行总行2027经济金融类等岗位",
+            "https://cdb2027.zhaopin.com/jobs/index.html?id=10126839"
+          ]
+        ],
+        "track": "banking",
+        "ownership": "国有开发性金融机构",
+        "city": "北京（本卡已核总行经济金融类；西安IT为不同专业岗位）",
+        "due": "2026-10-07",
+        "dueTime": "24:00",
+        "dueScope": "国家开发银行2027校园招聘网申",
+        "closes": "2026-09-12 12:00至2026-10-07 24:00（北京时间）；笔试拟11月初，以通知为准。",
+        "window": "境内2027年度双证；境外2026-07-01至2027-09-30取得学位并按期认证、首次就业。",
+        "req": "总行经济金融类：硕士及以上，理论经济学、应用经济学、统计学等，对应专业学位类别一并纳入；应用统计代码、外语与其他资格仍须确认。",
+        "jobs": "金融产品和融资模式研发、投资与风险管理、项目开发和贷后管理，日常在北京工作。",
+        "why": "统计分析、风险与建模训练可对应研究和金融业务分析；不要求将算法经历作为唯一求职方向。",
+        "risk": "提交申请后岗位与资料不能修改；不能把北京统计专业要求与西安IT工作地组合。",
+        "resume": "突出已确认的统计分析、建模、实验与研究能力；金融业务与岗位知识作为准备项，不虚构行业经验。",
+        "action": "10/7前核对应专业学位类别与个人条件，慎重确定志愿顺序后提交。",
+        "note": "参考分仅为人工资料整理标记，不是录取概率；新增一张机构卡片，不将同一公告多岗位拆分。",
+        "rev": "2026-09-27",
+        "audit": {
+          "checked": "2026-09-27",
+          "refs": ["U0927-S27", "U0927-S28", "U0927-S29"],
+          "summary": "新增有统计专业及对应专业学位依据的总行经济金融入口，工作地北京；不混用西安IT条件。",
+          "scope": "本轮核查范围限所列公开正文/职位页与批次规则；未登录验证提交、未核验个人全部资格，不代表全部岗位余缺。",
+          "level": "官方正文"
+        },
+        "evidence": "2026-09-27复核：U0927-S27、U0927-S28、U0927-S29；范围见核查记录，不代表个人资格通过。"
+      },
+      "screening": {
+        "cycle": "current",
+        "intake": 2027,
+        "qualityBasis": "有本届用人单位公开公告和实际职责，属于值得核验的招聘机会；薪酬、签约主体及培养/考核要求以最终岗位文件为准。",
+        "major": "statistics",
+        "directions": ["banking", "stats", "research", "risk", "finance"],
+        "basis": "经济金融类JD明确统计学并纳入对应专业学位类别；应用统计具体专业代码仍以招聘方认定为准。",
+        "evidenceRefs": ["U0927-S27", "U0927-S28", "U0927-S29"],
+        "reviewedOn": "2026-09-27",
+        "basisHash": "e2d0dc62e89b7187242056d626a68dbeb43a0a2bbf6e237aefc655f750278bdc"
+      },
+      "locations": {
+        "current": true,
+        "locations": [],
+        "reviewedOn": "2026-09-27",
+        "basisHash": "4c23198aaf0cf81a84e775ffda8cc43b0ce8ac0ae2bb8e0881a0e3a09e76d4b3"
+      },
+      "opportunities": null
+    },
+    {
+      "id": "soe-0bcee0305932c39268f6",
+      "card": {
+        "id": "soe-0bcee0305932c39268f6",
+        "name": "中国农业发展银行 · 总行 / 省级分行",
+        "en": "ADBC Head Office and Provincial Branches",
+        "fit": 85,
+        "tier": "A",
+        "priority": 100,
+        "xian": false,
+        "links": [
+          ["官方公告", "https://www.adbc.com.cn/n354735/n355043/c722284/content.html"],
+          ["官方指定报名", "https://campus.chinahr.com/pages/adbc2027/"]
+        ],
+        "dueTime": "24:00",
+        "risk": "最多2岗，总行及同一省级分行各限1岗；提交后的个人信息不可更改。总公告数理统计不代表每个总行岗位专业通过。",
+        "dueScope": "官方2027校园招聘报名",
+        "req": "总公告列数理统计、数据分析、AI等相关专业；总行/省级岗位硕士及以上、CET6不低于426或等效成绩；具体岗位专业另核。",
+        "status": "open",
+        "city": "全国机构范围；尚未逐岗绑定工作地，不使用总行通信地址推导岗位城市。",
+        "action": "先比较总行与全国省级分行的具体岗位，核专业及总行附加资格，在10/11前完成选择。",
+        "ownership": "农业政策性银行；实际岗位合同与培养按招聘机构确认",
+        "track": "banking",
+        "jobs": "总行本部、省级分行本级、二级分行和县支行均进入2027项目。总行/省级岗位为硕士层次，具体业务方向需在职位系统逐项选择。",
+        "window": "2027应届，境内外均须2026-08-01至2027-07-31毕业并按时获证；总行另须符合在京就业落户具体条件。",
+        "due": "2026-10-11",
+        "closes": "9月15日至10月11日24时；11月初线下笔试为计划，非报名截止。",
+        "why": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "resume": "按真实经历突出统计分析、实验评估、问题拆解和成果；不虚构金融实务、行业经验或未掌握的技能。",
+        "note": "本卡为已核公告中的机会入口，不代表本集团全部岗位已核，也不保证个人资格通过。",
+        "evidence": "本轮按所列来源核查；具体读取范围见证据记录。",
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["N0928-B07"],
+          "summary": "总行本部、省级分行本级、二级分行和县支行均进入2027项目。总行/省级岗位为硕士层次，具体业务方向需在职位系统逐项选择。",
+          "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。",
+          "level": "官方正文"
+        },
+        "rev": "2026-09-28"
+      },
+      "screening": {
+        "major": "statistics",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["banking", "stats", "risk", "operations", "finance"],
+        "basis": "总公告列数理统计、数据分析、AI等相关专业；总行/省级岗位硕士及以上、CET6不低于426或等效成绩；具体岗位专业另核。",
+        "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "evidenceRefs": ["N0928-B07"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "39475a664065ddafc1bb72bb62cd3b210cb71278c38611e590c033d837cba21f"
+      },
+      "locations": null,
+      "opportunities": null
+    },
+    {
+      "id": "soe-8b77a831e8fa823d9737",
+      "card": {
+        "id": "soe-8b77a831e8fa823d9737",
+        "name": "中国邮政储蓄银行 · 总行本部 / 信用卡中心",
+        "en": "PSBC Head Office and Credit Card Center",
+        "fit": 85,
+        "tier": "A",
+        "priority": 101,
+        "xian": false,
+        "links": [
+          ["官方总公告", "https://www.psbc.com/cn/gyyc/rczp/xyzp/202609/t20260907_460394.html"],
+          ["总行岗位门户", "https://psbc2027.zhaopin.com/jobs/index.html"]
+        ],
+        "dueTime": "24:00",
+        "risk": "总行含信用卡与一级分行合计最多2岗；可另投控股子公司。入职明确培养部门不等于岗位无需轮岗；具体定岗、专业与工作地须逐岗核。",
+        "dueScope": "邮储2027总行、一级分行项目公告",
+        "req": "已展开个人金融经营管理岗：原则上硕士及以上，金融经济、财会、管理、法学相关，CET6≥425或等效；应用统计是否落在接受范围待确认。金融科技具体专业尚未展开核准。",
+        "status": "open",
+        "city": "本轮总行岗位展开未显示明确工作地；不以北京总行通信地址代替。",
+        "action": "10/7前逐岗比较总行经营管理/金融科技，勿用仅有集团公告替代专业核对。",
+        "ownership": "国有大型商业银行；子公司与母行分别确认用工",
+        "track": "banking",
+        "jobs": "总行本部岗位页可见经营管理与金融科技两条路线；覆盖个人金融、公司金融、资金资管、风险及综合支撑板块，不能将板块数量当独立投递额度。",
+        "window": "境内原则上2027-01-01至2027-08-31；境外原则上2026-09-01至2027-08-31并认证。",
+        "due": "2026-10-07",
+        "why": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "resume": "按真实经历突出统计分析、实验评估、问题拆解和成果；不虚构金融实务、行业经验或未掌握的技能。",
+        "note": "本卡为已核公告中的机会入口，不代表本集团全部岗位已核，也不保证个人资格通过。",
+        "evidence": "本轮按所列来源核查；具体读取范围见证据记录。",
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["N0928-B08", "N0928-B09"],
+          "summary": "总行本部岗位页可见经营管理与金融科技两条路线；覆盖个人金融、公司金融、资金资管、风险及综合支撑板块，不能将板块数量当独立投递额度。",
+          "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。",
+          "level": "官方正文"
+        },
+        "rev": "2026-09-28"
+      },
+      "screening": {
+        "major": "related",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["banking", "finance", "risk", "operations", "software"],
+        "basis": "已展开个人金融经营管理岗：原则上硕士及以上，金融经济、财会、管理、法学相关，CET6≥425或等效；应用统计是否落在接受范围待确认。金融科技具体专业尚未展开核准。",
+        "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "evidenceRefs": ["N0928-B08", "N0928-B09"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "dad7a94243bf5ecb0e6d9e22bc52958b61619c1aec82982f84ddf65c191a64bb"
+      },
+      "locations": null,
+      "opportunities": null
+    },
+    {
+      "id": "soe-b2bb7f2da8bb065dafbb",
+      "card": {
+        "id": "soe-b2bb7f2da8bb065dafbb",
+        "name": "浦发银行总行 · 管培 / 科技 / 业务 / 运营",
+        "en": "SPDB Head Office Graduate Recruitment",
+        "fit": 85,
+        "tier": "A",
+        "priority": 105,
+        "xian": false,
+        "links": [
+          ["总行及机构岗位公告", "https://career.nankai.edu.cn/correcruit/content/id/119296.html"],
+          ["浦发官方招聘", "https://job.spdb.com.cn/"]
+        ],
+        "dueTime": "18:00",
+        "risk": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+        "dueScope": "浦发2027统一简历投递窗口",
+        "req": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+        "status": "open",
+        "city": "总行4类岗位具体工作地待确认；公告另列全国分行，不借用分行城市。",
+        "action": "10/8 18点前核总行四类岗位的具体工作地、培养、志愿限制，优先按职责而非技术标签取舍。",
+        "ownership": "全国性股份制上市银行；不按全资央企理解",
+        "track": "banking",
+        "jobs": "总行管理培训生、科技储备生、业务储备生、运营储备生四条路线；公告另列全国分行及子公司，但本卡不把所有单位混成同一岗位。",
+        "window": "总公告毕业时间2025-01-01至2027-07-31，获得国家认可毕业证及学位证；其他资格按具体岗位。",
+        "due": "2026-10-08",
+        "why": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "resume": "按真实经历突出统计分析、实验评估、问题拆解和成果；不虚构金融实务、行业经验或未掌握的技能。",
+        "note": "本卡为已核公告中的机会入口，不代表本集团全部岗位已核，也不保证个人资格通过。",
+        "evidence": "本轮按所列来源核查；具体读取范围见证据记录。",
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["N0928-B17"],
+          "summary": "总行管理培训生、科技储备生、业务储备生、运营储备生四条路线；公告另列全国分行及子公司，但本卡不把所有单位混成同一岗位。",
+          "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。",
+          "level": "高校用人单位公告"
+        },
+        "rev": "2026-09-28"
+      },
+      "screening": {
+        "major": "unrestricted",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["banking", "software", "finance", "operations", "stats"],
+        "basis": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+        "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "evidenceRefs": ["N0928-B17"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "116bdb45b13b41afa02129c080878d4b5d80664e4b21adf4a355ec3598eefd9f"
+      },
+      "locations": null,
+      "opportunities": {
+        "basisHash": "116bdb45b13b41afa02129c080878d4b5d80664e4b21adf4a355ec3598eefd9f",
+        "reviewedOn": "2026-09-28",
+        "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
+        "positions": [
+          {
+            "id": "soe-b2bb7f2da8bb065dafbb-p01",
+            "employer": "浦发银行总行",
+            "cycle": "current",
+            "type": "campus",
+            "status": "open",
+            "major": "unrestricted",
+            "directions": ["banking", "operations"],
+            "locations": [],
+            "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+            "due": "2026-10-08",
+            "dueTime": "18:00",
+            "deadlineScope": "浦发2027统一简历投递窗口",
+            "refs": ["N0928-B17"],
+            "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+            "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+            "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+            "name": "总行管理培训生"
+          },
+          {
+            "id": "soe-b2bb7f2da8bb065dafbb-p02",
+            "employer": "浦发银行总行",
+            "cycle": "current",
+            "type": "campus",
+            "status": "open",
+            "major": "unrestricted",
+            "directions": ["software", "finance"],
+            "locations": [],
+            "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+            "due": "2026-10-08",
+            "dueTime": "18:00",
+            "deadlineScope": "浦发2027统一简历投递窗口",
+            "refs": ["N0928-B17"],
+            "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+            "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+            "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+            "name": "总行科技储备生"
+          },
+          {
+            "id": "soe-b2bb7f2da8bb065dafbb-p03",
+            "employer": "浦发银行总行",
+            "cycle": "current",
+            "type": "campus",
+            "status": "open",
+            "major": "unrestricted",
+            "directions": ["banking"],
+            "locations": [],
+            "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+            "due": "2026-10-08",
+            "dueTime": "18:00",
+            "deadlineScope": "浦发2027统一简历投递窗口",
+            "refs": ["N0928-B17"],
+            "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+            "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+            "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+            "name": "总行业务储备生"
+          },
+          {
+            "id": "soe-b2bb7f2da8bb065dafbb-p04",
+            "employer": "浦发银行总行",
+            "cycle": "current",
+            "type": "campus",
+            "status": "open",
+            "major": "unrestricted",
+            "directions": ["operations"],
+            "locations": [],
+            "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+            "due": "2026-10-08",
+            "dueTime": "18:00",
+            "deadlineScope": "浦发2027统一简历投递窗口",
+            "refs": ["N0928-B17"],
+            "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+            "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+            "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+            "name": "总行运营储备生"
+          }
+        ]
+      }
+    },
+    {
+      "id": "soe-fbc68e3db565e8ae826c",
+      "card": {
+        "id": "soe-fbc68e3db565e8ae826c",
+        "name": "浦银金融科技 · AI / 数据 / 产品",
+        "en": "SPDB FinTech",
+        "fit": 85,
+        "tier": "A",
+        "priority": 106,
+        "xian": false,
+        "links": [
+          [
+            "集团公告内该公司岗位表",
+            "https://career.nankai.edu.cn/correcruit/content/id/119296.html"
+          ],
+          ["官方岗位入口", "https://job.spdb.com.cn/"]
+        ],
+        "dueTime": "18:00",
+        "risk": "已核到机构和具名岗位，并未完成个人资格/工作地确认。与母行不是同一个合同主体，志愿联动和提前招满须确认。",
+        "dueScope": "浦发集团所读总公告窗口；子公司岗位如另列期限以JD为准",
+        "req": "公告明确前三类硕士及以上，其他所列类本科及以上；具体专业未读，应用统计不可默认合格。",
+        "status": "verify",
+        "city": "具体工作地未核；不以公司名称、注册地或总部地址替代。",
+        "action": "从官方岗位系统选择该子公司，先读专业、职责与工作地，再决定是否占用志愿。",
+        "ownership": "浦发集团招聘体系成员；实际签约子公司与股权性质分别确认",
+        "track": "software",
+        "jobs": "AI算法、AI产品经理、数据工程师；另有软件、产品、AI应用与AI治理。",
+        "window": "列于浦发2027招聘项目；通用毕业窗2025-01至2027-07，子公司特殊要求需逐岗确认。",
+        "due": "2026-10-08",
+        "why": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "resume": "按真实经历突出统计分析、实验评估、问题拆解和成果；不虚构金融实务、行业经验或未掌握的技能。",
+        "note": "本卡为已核公告中的机会入口，不代表本集团全部岗位已核，也不保证个人资格通过。",
+        "evidence": "本轮按所列来源核查；具体读取范围见证据记录。",
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["N0928-B17"],
+          "summary": "AI算法、AI产品经理、数据工程师；另有软件、产品、AI应用与AI治理。",
+          "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。",
+          "level": "高校用人单位公告"
+        },
+        "rev": "2026-09-28"
+      },
+      "screening": {
+        "major": "unknown",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["software", "ai", "stats", "product"],
+        "basis": "公告明确前三类硕士及以上，其他所列类本科及以上；具体专业未读，应用统计不可默认合格。",
+        "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "evidenceRefs": ["N0928-B17"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "ffc7e6bcdc610ce90e87066cb0a26e145ba69dc5d029de4eac80da1b886cf697"
+      },
+      "locations": null,
+      "opportunities": null
+    },
+    {
+      "id": "soe-75f4674009337c8bcaa1",
+      "card": {
+        "id": "soe-75f4674009337c8bcaa1",
+        "name": "浦银理财 · 投研交易 / 运营 / 科技",
+        "en": "SPDB Wealth Management",
+        "fit": 85,
+        "tier": "A",
+        "priority": 107,
+        "xian": false,
+        "links": [
+          [
+            "集团公告内该公司岗位表",
+            "https://career.nankai.edu.cn/correcruit/content/id/119296.html"
+          ],
+          ["官方岗位入口", "https://job.spdb.com.cn/"]
+        ],
+        "dueTime": "18:00",
+        "risk": "已核到机构和具名岗位，并未完成个人资格/工作地确认。与母行不是同一个合同主体，志愿联动和提前招满须确认。",
+        "dueScope": "浦发集团所读总公告窗口；子公司岗位如另列期限以JD为准",
+        "req": "公告该机构所列岗位硕士及以上；研究/交易/科技/运营具体专业和证书条件未展开。",
+        "status": "verify",
+        "city": "具体工作地未核；不以公司名称、注册地或总部地址替代。",
+        "action": "从官方岗位系统选择该子公司，先读专业、职责与工作地，再决定是否占用志愿。",
+        "ownership": "浦发集团招聘体系成员；实际签约子公司与股权性质分别确认",
+        "track": "research",
+        "jobs": "集中交易、投资与信用研究、渠道销售、科技开发、运营管理。",
+        "window": "列于浦发2027招聘项目；通用毕业窗2025-01至2027-07，子公司特殊要求需逐岗确认。",
+        "due": "2026-10-08",
+        "why": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "resume": "按真实经历突出统计分析、实验评估、问题拆解和成果；不虚构金融实务、行业经验或未掌握的技能。",
+        "note": "本卡为已核公告中的机会入口，不代表本集团全部岗位已核，也不保证个人资格通过。",
+        "evidence": "本轮按所列来源核查；具体读取范围见证据记录。",
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["N0928-B17"],
+          "summary": "集中交易、投资与信用研究、渠道销售、科技开发、运营管理。",
+          "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。",
+          "level": "高校用人单位公告"
+        },
+        "rev": "2026-09-28"
+      },
+      "screening": {
+        "major": "unknown",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["research", "risk", "operations", "software", "finance"],
+        "basis": "公告该机构所列岗位硕士及以上；研究/交易/科技/运营具体专业和证书条件未展开。",
+        "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "evidenceRefs": ["N0928-B17"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "7e066d88da6bfd916c2b7443c4406d7f2192eb0d52bb3a77e84cd6341bc168c6"
+      },
+      "locations": null,
+      "opportunities": null
+    },
+    {
+      "id": "soe-afb94d0cd334ef5b35c7",
+      "card": {
+        "id": "soe-afb94d0cd334ef5b35c7",
+        "name": "上海国际信托 · 投研 / 风控 / 数智",
+        "en": "Shanghai International Trust",
+        "fit": 85,
+        "tier": "A",
+        "priority": 108,
+        "xian": false,
+        "links": [
+          [
+            "集团公告内该公司岗位表",
+            "https://career.nankai.edu.cn/correcruit/content/id/119296.html"
+          ],
+          ["官方岗位入口", "https://job.spdb.com.cn/"]
+        ],
+        "dueTime": "18:00",
+        "risk": "已核到机构和具名岗位，并未完成个人资格/工作地确认。与母行不是同一个合同主体，志愿联动和提前招满须确认。",
+        "dueScope": "浦发集团所读总公告窗口；子公司岗位如另列期限以JD为准",
+        "req": "公告机构岗位硕士及以上；不同职位专业和资格需单独核，不套用银行普通岗位原则不限。",
+        "status": "verify",
+        "city": "具体工作地未核；不以公司名称、注册地或总部地址替代。",
+        "action": "从官方岗位系统选择该子公司，先读专业、职责与工作地，再决定是否占用志愿。",
+        "ownership": "浦发集团招聘体系成员；实际签约子公司与股权性质分别确认",
+        "track": "research",
+        "jobs": "投资研究、风控合规、数智科技、综合职能、财富管理与财务运营等。",
+        "window": "列于浦发2027招聘项目；通用毕业窗2025-01至2027-07，子公司特殊要求需逐岗确认。",
+        "due": "2026-10-08",
+        "why": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "resume": "按真实经历突出统计分析、实验评估、问题拆解和成果；不虚构金融实务、行业经验或未掌握的技能。",
+        "note": "本卡为已核公告中的机会入口，不代表本集团全部岗位已核，也不保证个人资格通过。",
+        "evidence": "本轮按所列来源核查；具体读取范围见证据记录。",
+        "audit": {
+          "checked": "2026-09-28",
+          "refs": ["N0928-B17"],
+          "summary": "投资研究、风控合规、数智科技、综合职能、财富管理与财务运营等。",
+          "scope": "仅核所列公告与具体岗位；未登录核验个人资格，不代表全部岗位均适用。",
+          "level": "高校用人单位公告"
+        },
+        "rev": "2026-09-28"
+      },
+      "screening": {
+        "major": "unknown",
+        "cycle": "current",
+        "intake": 2027,
+        "directions": ["research", "risk", "operations", "software", "finance"],
+        "basis": "公告机构岗位硕士及以上；不同职位专业和资格需单独核，不套用银行普通岗位原则不限。",
+        "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
+        "evidenceRefs": ["N0928-B17"],
+        "reviewedOn": "2026-09-28",
+        "basisHash": "fbf5511330272bc95c58c855805505338c0b615eb79f9c90178f27da915bf00e"
+      },
+      "locations": null,
+      "opportunities": null
+    }
+  ],
+  "directoryGroups": [
+    {
+      "id": "ccb",
+      "name": "中国建设银行",
+      "sector": "银行",
+      "aliases": ["建行", "CCB", "四大行", "六大行"],
+      "entryIds": [
+        "soe-9ed0ba98e2b378d91fe7",
+        "soe-56412c0e929ad53c81a8",
+        "soe-28a7c75480e66ff26a24",
+        "soe-70472ac853332bba0d05"
+      ],
+      "hqEntryIds": ["soe-56412c0e929ad53c81a8"],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://job1.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
+        "https://www.yinhangzhaopin.com/jsyh/2026-09-04/224901.htm",
+        "https://wealth.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
+        "https://jy.tust.edu.cn/correcruit/content/id/46573.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118554.html",
+        "https://jy.tust.edu.cn/correcruit/content/id/46450.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118110.html",
+        "https://career.hebut.edu.cn/home/correcruit/content/id/80241.html",
+        "https://career.nankai.edu.cn/correcruit/content/id/118341.html"
+      ]
+    },
+    {
+      "id": "psbc",
+      "name": "中国邮政储蓄银行",
+      "sector": "银行",
+      "aliases": ["邮储", "PSBC", "六大行"],
+      "entryIds": ["soe-8b77a831e8fa823d9737"],
+      "hqEntryIds": ["soe-8b77a831e8fa823d9737"],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://www.psbc.com/cn/gyyc/rczp/xyzp/202609/t20260907_460394.html",
+        "https://psbc2027.zhaopin.com/jobs/index.html"
+      ]
+    },
+    {
+      "id": "cdb",
+      "name": "国家开发银行",
+      "sector": "银行",
+      "aliases": ["国开行", "CDB", "开发性金融"],
+      "entryIds": ["soe-b9fb017b087135609736"],
+      "hqEntryIds": ["soe-b9fb017b087135609736"],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://cdb2027.zhaopin.com/index.html",
+        "https://cdb2027.zhaopin.com/precautions/index.html",
+        "https://cdb2027.zhaopin.com/jobs/index.html?id=10126839"
+      ]
+    },
+    {
+      "id": "adbc",
+      "name": "中国农业发展银行",
+      "sector": "银行",
+      "aliases": ["农发行", "ADBC", "政策性银行"],
+      "entryIds": ["soe-0bcee0305932c39268f6"],
+      "hqEntryIds": ["soe-0bcee0305932c39268f6"],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": ["https://www.adbc.com.cn/n354735/n355043/c722284/content.html"]
+    },
+    {
+      "id": "spdb",
+      "name": "浦发银行",
+      "sector": "银行",
+      "aliases": ["浦发", "浦银", "SPDB"],
+      "entryIds": [
+        "soe-b2bb7f2da8bb065dafbb",
+        "soe-fbc68e3db565e8ae826c",
+        "soe-75f4674009337c8bcaa1",
+        "soe-afb94d0cd334ef5b35c7"
+      ],
+      "hqEntryIds": ["soe-b2bb7f2da8bb065dafbb"],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": ["https://career.nankai.edu.cn/correcruit/content/id/119296.html"]
+    },
+    {
+      "id": "hzbank",
+      "name": "杭州银行",
+      "sector": "银行",
+      "aliases": ["杭银"],
+      "entryIds": ["soe-15dcc83203fa8d55b59c"],
+      "hqEntryIds": ["soe-15dcc83203fa8d55b59c"],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-09-28",
+      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": [
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employ/school",
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
+        "https://career.hebut.edu.cn/home/correcruit/content/id/80614.html",
+        "https://smcareer.xmu.edu.cn/info/1008/31455.htm",
+        "https://myjob.hzbank.com.cn/"
+      ]
+    },
+    {
+      "id": "cqguarantee",
+      "name": "重庆三峡融资担保集团",
+      "sector": "地方国资与区域金融",
+      "aliases": ["三峡担保"],
+      "entryIds": ["soe-15e8fe78032c98f915c3"],
+      "hqEntryIds": [],
+      "reviewState": "covered_existing",
+      "checkedOn": null,
+      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
+      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "sourceUrls": ["https://gzw.cq.gov.cn/gqzp/202608/t20260828_15994445_wap.html"]
+    }
+  ]
+}

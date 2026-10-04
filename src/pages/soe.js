@@ -5,17 +5,17 @@ import {
   noticeActionable,
   deadlineUrgency,
   positionDeadline,
+  pendingOpportunities,
   directoryMatch,
   hasHeadquartersClue,
   REVIEW_STATES,
 } from '../national-policy.js';
 import {
-  readPositionProgress,
-  writePositionProgress,
-  exportPositionProgress,
+  createPositionProgressStore,
   POSITION_STATES,
   POSITION_KEY,
 } from '../position-progress.js';
+import { mountPositionProgressControls } from '../position-progress-ui.js';
 // Missing new supplements are tolerated during parallel local editing only. Publishing validates them.
 const assetURLs = import.meta.glob(
   '../../data/soe{,-screening,-locations,-directory,-opportunities}.json',
@@ -38,7 +38,8 @@ try {
 } catch {
   /* Local progress remains usable in memory. */
 }
-let positionProgress = readPositionProgress(progressStorage);
+const positionStore = createPositionProgressStore(progressStorage);
+let positionProgress = positionStore.snapshot();
 
 import {
   LOCATION_LEVELS,
@@ -124,34 +125,23 @@ function daysTo(iso) {
   return dayDistance(iso);
 }
 function pendingOpportunitiesFor(item) {
-  const row = opportunitiesFor(item);
-  return {
-    ...row,
-    positions: row.positions.filter(
-      (p) =>
-        p.type === 'campus' &&
-        p.cycle !== 'historical' &&
-        p.status !== 'past' &&
-        !timeState(positionDeadline(p)).expired &&
-        (positionProgress[p.id] || 'pending') === 'pending',
-    ),
-  };
+  return pendingOpportunities(opportunitiesFor(item), positionProgress);
 }
 function deadlineFor(item) {
   const pending = pendingOpportunitiesFor(item);
-  return noticeDeadline(
-    item,
-    assessmentFor(item),
-    pending.positions.length ? pending : opportunitiesFor(item),
-    catalog.SOURCES,
-  );
+  return noticeDeadline(item, assessmentFor(item), pending, catalog.SOURCES);
 }
 function currentActionable(item) {
   return noticeActionable(item, assessmentFor(item), opportunitiesFor(item));
 }
 function effectiveItem(item) {
   const positions = opportunitiesFor(item);
-  if (!positions.matched) return item;
+  if (!positions.matched) {
+    const event = deadlineFor(item);
+    return event?.confidence === 'supported' && timeState(event).expired
+      ? { ...item, status: 'past' }
+      : item;
+  }
   const event = deadlineFor(item);
   const remaining = positions.positions.some(
     (p) =>
@@ -181,8 +171,15 @@ function urgency(item) {
           : m.label,
     };
   }
-  if (opportunitiesFor(item).matched)
-    return { cls: 'watch', label: '岗位子集日期见列表', text: '其他岗位 / 新批次另核' };
+  if (opportunitiesFor(item).matched) {
+    const active = pendingOpportunities(opportunitiesFor(item));
+    const handled = active.positions.length > 0 && !hasPendingPosition(item);
+    return {
+      cls: 'watch',
+      label: handled ? '已核岗位均已处理' : '岗位子集日期见列表',
+      text: '其他岗位 / 新批次另核',
+    };
+  }
   if (item.start && daysTo(item.start) >= 0)
     return {
       cls: 'soon',
@@ -198,10 +195,11 @@ function urgency(item) {
     return { cls: 'watch', label: '先复核具体职位', text: '滚动 / 待核' };
   return { cls: '', label: '本届已公告·先核资格', text: '未见统一截止' };
 }
-function rank(item) {
+function rank(item, now = Date.now()) {
   const e = deadlineFor(item),
     m = timeState(e);
-  if (m.days !== null && !m.expired) return m.days + (e.confidence === 'pending' ? 80 : 0);
+  if (m.days !== null && !m.expired)
+    return (deadlineEpoch(e) - now) / 86400000 + (e.confidence === 'pending' ? 80 : 0);
   if (currentActionable(item)) return 40;
   if (item.status === 'verify') return 90;
   if (item.status === 'watch') return 200 - item.fit / 10;
@@ -382,6 +380,17 @@ function isUrgent(item) {
       d <= 21)
   );
 }
+function inWatchPool(item) {
+  const event = deadlineFor(item);
+  return (
+    ['verify', 'watch', 'past'].includes(item.status) ||
+    assessmentFor(item).cycle !== 'current' ||
+    !hasMajorEvidence(assessmentFor(item)) ||
+    (!opportunitiesFor(item).matched &&
+      event?.confidence === 'supported' &&
+      timeState(event).expired)
+  );
+}
 function match(item, q) {
   let ok = true;
   if (filter === 'now') ok = currentActionable(item);
@@ -396,11 +405,7 @@ function match(item, q) {
   else if (filter === 'preferred')
     ok = matchesLocation(geographyFor(item), 'preferred', trackFilter);
   else if (filter === 'xian') ok = matchesLocation(geographyFor(item), '西安', trackFilter);
-  else if (filter === 'watch')
-    ok =
-      ['verify', 'watch', 'past'].includes(item.status) ||
-      assessmentFor(item).cycle !== 'current' ||
-      !hasMajorEvidence(assessmentFor(item));
+  else if (filter === 'watch') ok = inWatchPool(item);
   else if (filter === 'rev') ok = item.rev === RECHECKED;
   return (
     ok &&
@@ -429,13 +434,14 @@ function match(item, q) {
   );
 }
 function sorted(list) {
+  const now = Date.now();
   return [...list].sort(
     (a, b) =>
       personal.compare(a, b) ||
       (sortBy === 'fit'
         ? b.fit - a.fit
         : sortBy === 'due'
-          ? rank(a) - rank(b)
+          ? rank(a, now) - rank(b, now)
           : comparePreferredOpportunities(
               effectiveItem(a),
               effectiveItem(b),
@@ -474,7 +480,7 @@ function render() {
     grid.style.display = '';
     grid.innerHTML = '<p class="empty">没有匹配项。请调整关键词、招聘筛选或“我的状态”。</p>';
   }
-  personal.renderProcessed(processed, card);
+  personal.renderProcessed(processed, card, () => JSON.stringify(positionProgress));
   document.getElementById('count').textContent = '显示 ' + list.length + ' / ' + DATA.length;
   document
     .querySelectorAll('.filters .chip')
@@ -506,12 +512,7 @@ function renderStats() {
   document.getElementById('n-major').textContent = DATA.filter((item) =>
     hasMajorEvidence(assessmentFor(item)),
   ).length;
-  document.getElementById('n-watch').textContent = DATA.filter(
-    (item) =>
-      ['verify', 'watch', 'past'].includes(item.status) ||
-      assessmentFor(item).cycle !== 'current' ||
-      !hasMajorEvidence(assessmentFor(item)),
-  ).length;
+  document.getElementById('n-watch').textContent = DATA.filter(inWatchPool).length;
 }
 const filterLifetime = new AbortController();
 function populateFilter(id, choices, apply) {
@@ -570,7 +571,7 @@ document.querySelector('.filters').append(pendingChip);
 const nationalControls = document.createElement('div');
 nationalControls.className = 'national-controls';
 nationalControls.innerHTML =
-  '<label><input type="checkbox" id="location-pending"> 同时显示地点待核线索（不加地区分）</label><label><input type="checkbox" id="hq-filter"> 总行 / 总部线索（资格另核）</label><button type="button" id="position-export">导出岗位进度 JSON（仅本机）</button><p id="position-save-status" role="status"></p>';
+  '<label><input type="checkbox" id="location-pending"> 同时显示地点待核线索（不加地区分）</label><label><input type="checkbox" id="hq-filter"> 总行 / 总部线索（资格另核）</label>';
 document.getElementById('grid').before(nationalControls);
 document.getElementById('location-pending').addEventListener('change', (event) => {
   includePendingLocations = event.target.checked;
@@ -580,36 +581,40 @@ document.getElementById('hq-filter').addEventListener('change', (event) => {
   headquartersOnly = event.target.checked;
   render();
 });
-document.getElementById('position-export').addEventListener('click', () => {
-  const url = URL.createObjectURL(
-    new Blob([exportPositionProgress(positionProgress)], { type: 'application/json' }),
-  );
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'soe-position-progress.json';
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-});
-document.addEventListener('change', (event) => {
-  const id = event.target.dataset.positionId;
-  if (!id || !Object.hasOwn(POSITION_STATES, event.target.value)) return;
-  positionProgress = {
-    ...positionProgress,
-    ...readPositionProgress(progressStorage),
-    [id]: event.target.value,
-  };
-  const saved = writePositionProgress(progressStorage, positionProgress);
-  document.getElementById('position-save-status').textContent = saved
-    ? '岗位进度已保存，仅本机有效。'
-    : '本机存储不可用，当前进度仅在此页内存中；请导出 JSON。';
+function updatePositionView() {
+  positionProgress = positionStore.snapshot();
   render();
   renderActions();
+}
+const positionControls = mountPositionProgressControls(nationalControls, positionStore, {
+  knownIds: new Set(
+    Object.values(opportunities.entries).flatMap((row) => row.positions.map((p) => p.id)),
+  ),
+  onChange: updatePositionView,
+  signal: filterLifetime.signal,
 });
+document.addEventListener(
+  'change',
+  (event) => {
+    const id = event.target.dataset.positionId;
+    if (!id || !Object.hasOwn(POSITION_STATES, event.target.value)) return;
+    try {
+      const saved = positionStore.set(id, event.target.value);
+      updatePositionView();
+      positionControls.showSaveStatus(saved);
+    } catch (error) {
+      event.target.value = positionStore.snapshot()[id] || 'pending';
+      positionControls.showMessage('未修改岗位进度：' + error.message);
+    }
+  },
+  { signal: filterLifetime.signal },
+);
 const onPositionStorage = (event) => {
-  if (event.key !== POSITION_KEY) return;
-  positionProgress = readPositionProgress(progressStorage);
-  render();
-  renderActions();
+  if ((event.key !== null && event.key !== POSITION_KEY) || event.storageArea !== progressStorage)
+    return;
+  positionStore.refresh();
+  updatePositionView();
+  positionControls.showMessage('已读取其他标签页的本机岗位进度变更。');
 };
 addEventListener('storage', onPositionStorage);
 const coverage = document.createElement('details');
@@ -701,15 +706,22 @@ renderStats();
 renderActions();
 render();
 setupCommon();
-let tickKey =
-  chinaDay() +
-  ':' +
-  DATA.map((x) => JSON.stringify(deadlineFor(x)) + timeState(deadlineFor(x)).expired).join('');
-const boundaryTimer = setInterval(() => {
-  const key =
+function clockBoundaryKey() {
+  return (
     chinaDay() +
     ':' +
-    DATA.map((x) => JSON.stringify(deadlineFor(x)) + timeState(deadlineFor(x)).expired).join('');
+    DATA.map((item) =>
+      JSON.stringify([
+        deadlineFor(item),
+        timeState(deadlineFor(item)).expired,
+        opportunitiesFor(item).positions.map((p) => timeState(positionDeadline(p)).expired),
+      ]),
+    ).join('|')
+  );
+}
+let tickKey = clockBoundaryKey();
+function refreshClock() {
+  const key = clockBoundaryKey();
   if (key !== tickKey) {
     tickKey = key;
     renderStats();
@@ -717,7 +729,16 @@ const boundaryTimer = setInterval(() => {
     render();
     document.getElementById('clock-date').textContent = chinaDay();
   }
-}, 60000);
+}
+const boundaryTimer = setInterval(refreshClock, 60000);
+addEventListener('focus', refreshClock, { signal: filterLifetime.signal });
+document.addEventListener(
+  'visibilitychange',
+  () => {
+    if (!document.hidden) refreshClock();
+  },
+  { signal: filterLifetime.signal },
+);
 if (import.meta.env.DEV)
   window.__QA = {
     kind: PAGE_KIND,

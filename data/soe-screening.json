@@ -437,13 +437,13 @@
         "finance",
         "software"
       ],
-      "basis": "官方公告明确数理统计类并给出毕业、英语、志愿和截止条件；具体应用统计专业代码仍须目标岗位确认。",
+      "basis": "10/4官方公告仍明确数理统计等理工类；具体应用统计代码、职责和培养安排必须按所选JD确认，不能从总公告泛化。",
       "qualityBasis": "银行科技专项培养与职责方向清晰；信息技术笔试和岗位技术要求应与个人准备程度比较。",
       "evidenceRefs": [
-        "U0928-S10"
+        "U1004-S13"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "511473361735dfebf7fabe03c45f3530a66e20b316b4d34939112a0c59af12bb"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "95d7469d7f6a2e9d2f1076f4d736e2cc964030a113f77a7aa800ca28ac0c176f"
     },
     "soe-7fe2c247fb54aac480d8": {
       "major": "unknown",
@@ -782,16 +782,16 @@
         "banking",
         "operations"
       ],
-      "basis": "具体项目经理/管培资格段明确专业不限、统计等优先；学历分两档，9/30只给日期，最多一个志愿。",
+      "basis": "10/4重读国资委公告，指定项目经理/管培专业不限及最多1岗仍有依据；9/30窗口已过，保持2027届资料但不标成当前开放。",
       "qualityBasis": "融资担保尽调、客户拓展与保后管理职责明确；管培轮岗后按考核和岗位需求定岗。",
       "evidenceRefs": [
-        "U0928-S09"
+        "U1004-S14"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "765638ad19a511bad2d5b103cbcbf88547c951002a1f7ad8f1e11efb48ad7d31"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "6ae8aa5804435e99a9fe916662c549ef04c31724676737e5dc350b1d996f2fba"
     },
     "soe-15dcc83203fa8d55b59c": {
-      "major": "explicit",
+      "major": "statistics",
       "cycle": "current",
       "intake": 2027,
       "directions": [
@@ -800,17 +800,20 @@
         "software",
         "finance",
         "operations",
-        "research"
+        "research",
+        "ai",
+        "product"
       ],
-      "basis": "数据研发27159050明确应用统计，硕士及以上，要求数据库/SQL及Python或R；总行培训生27158942列经济或理工类（含统计）相关专业。两岗均须有外语能力证明。",
+      "basis": "当前总行培训生JD列统计相关；AI和外汇分别维持相关专业待确认。已过的数据研发明确应用统计不得作为当前岗位的明确证据。",
       "qualityBasis": "经营分析和金融培养提供非算法路径；柜面/营销在了解工作取舍后也可作为备选。",
       "evidenceRefs": [
-        "N0928-B01",
-        "N0928-B02",
-        "N0928-B03"
+        "U1004-S01",
+        "U1004-S02",
+        "U1004-S03",
+        "U1004-S04"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "d3b43c95b5ff8806446fbbb4a31ca4225295bd57125333848527e91849aac8f6"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "90ea3b179e8d2874d143290108732855b0b89348908aaf6277c05fcd2acbfa6d"
     },
     "soe-28a7c75480e66ff26a24": {
       "major": "statistics",
@@ -968,14 +971,14 @@
         "risk",
         "finance"
       ],
-      "basis": "经济金融类JD明确统计学并纳入对应专业学位类别；应用统计具体专业代码仍以招聘方认定为准。",
+      "basis": "本次展开总行经济金融类明确统计学及对应专业学位，硕士及以上，北京日常工作；应用统计代码、外语和就业状态仍须核。",
       "evidenceRefs": [
-        "U0927-S27",
-        "U0927-S28",
-        "U0927-S29"
+        "U1004-S06",
+        "U1004-S07",
+        "U1004-S08"
       ],
-      "reviewedOn": "2026-09-27",
-      "basisHash": "e2d0dc62e89b7187242056d626a68dbeb43a0a2bbf6e237aefc655f750278bdc"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "7d90dfdf87e016d92a9ff5c6ad6993ebcde92968e4f4c5f5e7db4490a2fe8769"
     },
     "soe-e43cb34e4c801cf57150": {
       "cycle": "current",
@@ -1048,13 +1051,13 @@
         "operations",
         "finance"
       ],
-      "basis": "总公告列数理统计、数据分析、AI等相关专业；总行/省级岗位硕士及以上、CET6不低于426或等效成绩；具体岗位专业另核。",
+      "basis": "10/4重读官方总公告确认数理统计等方向和426分英语门槛；仅为公告级依据，未展开所有总行/省级岗位。",
       "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
       "evidenceRefs": [
-        "N0928-B07"
+        "U1004-S12"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "39475a664065ddafc1bb72bb62cd3b210cb71278c38611e590c033d837cba21f"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "0ce4130a10389bed9d9c04f79d288b6f6cf10a71a4b63fa95e3076f1272e3e88"
     },
     "soe-8b77a831e8fa823d9737": {
       "major": "related",
@@ -1067,14 +1070,15 @@
         "operations",
         "software"
       ],
-      "basis": "已展开个人金融经营管理岗：原则上硕士及以上，金融经济、财会、管理、法学相关，CET6≥425或等效；应用统计是否落在接受范围待确认。金融科技具体专业尚未展开核准。",
+      "basis": "两个金融科技JD列计算机/软件/理学/工学等相关，未点名应用统计；职责分别是业务经营管理与风控管理，不能按岗位名称认定纯研发或专业通过。",
       "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
       "evidenceRefs": [
-        "N0928-B08",
-        "N0928-B09"
+        "U1004-S09",
+        "U1004-S10",
+        "U1004-S11"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "dad7a94243bf5ecb0e6d9e22bc52958b61619c1aec82982f84ddf65c191a64bb"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "eecc94c1ecd7779776a3d67d07ebb406be056be315169bc220667887a1ecdaa0"
     },
     "soe-1390ea899a188a39617a": {
       "major": "unrestricted",
@@ -1146,13 +1150,14 @@
         "operations",
         "stats"
       ],
-      "basis": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+      "basis": "10/4官方总公告明确总行四方向、原则不限专业及科技类偏向理工科；科技岗位不直接标不限。岗位学历沿用9/28高校雇主表，特殊要求及工作地另核。",
       "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
       "evidenceRefs": [
-        "N0928-B17"
+        "N0928-B17",
+        "U1004-S15"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "116bdb45b13b41afa02129c080878d4b5d80664e4b21adf4a355ec3598eefd9f"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "8c27a1b8403570e65202ca5ef8dd12fbcb5404548c5ce6d23d11f1f9fbad54bf"
     },
     "soe-fbc68e3db565e8ae826c": {
       "major": "unknown",
@@ -1164,13 +1169,14 @@
         "stats",
         "product"
       ],
-      "basis": "公告明确前三类硕士及以上，其他所列类本科及以上；具体专业未读，应用统计不可默认合格。",
+      "basis": "公告明确前三类硕士及以上，其他所列类本科及以上；具体专业未读，应用统计不可默认合格。 10/4总公告只补强机构、截止与志愿规则，不把母行原则不限专业套给子公司。",
       "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
       "evidenceRefs": [
-        "N0928-B17"
+        "N0928-B17",
+        "U1004-S15"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "ffc7e6bcdc610ce90e87066cb0a26e145ba69dc5d029de4eac80da1b886cf697"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "bac35edbec6cce706c733d9a8440a8796cac0b8381be3e85e99394ea37408e43"
     },
     "soe-75f4674009337c8bcaa1": {
       "major": "unknown",
@@ -1183,13 +1189,14 @@
         "software",
         "finance"
       ],
-      "basis": "公告该机构所列岗位硕士及以上；研究/交易/科技/运营具体专业和证书条件未展开。",
+      "basis": "公告该机构所列岗位硕士及以上；研究/交易/科技/运营具体专业和证书条件未展开。 10/4总公告只补强机构、截止与志愿规则，不把母行原则不限专业套给子公司。",
       "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
       "evidenceRefs": [
-        "N0928-B17"
+        "N0928-B17",
+        "U1004-S15"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "7e066d88da6bfd916c2b7443c4406d7f2192eb0d52bb3a77e84cd6341bc168c6"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "1c65e20eee677649eb0c24573b7895adfd0fc9d4cee813a6e4012ad51d1d420a"
     },
     "soe-afb94d0cd334ef5b35c7": {
       "major": "unknown",
@@ -1202,13 +1209,14 @@
         "software",
         "finance"
       ],
-      "basis": "公告机构岗位硕士及以上；不同职位专业和资格需单独核，不套用银行普通岗位原则不限。",
+      "basis": "公告机构岗位硕士及以上；不同职位专业和资格需单独核，不套用银行普通岗位原则不限。 10/4总公告只补强机构、截止与志愿规则，不把母行原则不限专业套给子公司。",
       "qualityBasis": "统计建模、数据验证与问题拆解可作为能力联系；是否值得投递仍需结合具体职责、培养路径及个人取舍。",
       "evidenceRefs": [
-        "N0928-B17"
+        "N0928-B17",
+        "U1004-S15"
       ],
-      "reviewedOn": "2026-09-28",
-      "basisHash": "fbf5511330272bc95c58c855805505338c0b615eb79f9c90178f27da915bf00e"
+      "reviewedOn": "2026-10-04",
+      "basisHash": "0911be57043855d2c727496a00496c429a81a4b298d9e77a4c62da95a5e50c63"
     },
     "soe-53b939996659dfde59e5": {
       "major": "unknown",
@@ -1631,5 +1639,6 @@
       "reviewedOn": "2026-09-28",
       "basisHash": "97af724dd151e07c64eae3646a76e7b498b783705679f3ac4e73615513bbae36"
     }
-  }
+  },
+  "reviewedOn": "2026-10-04"
 }

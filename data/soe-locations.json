@@ -86,7 +86,7 @@
     },
     "soe-15e8fe78032c98f915c3": {
       "current": true,
-      "reviewedOn": "2026-09-28",
+      "reviewedOn": "2026-10-04",
       "locations": [
         {
           "city": "重庆",
@@ -98,9 +98,9 @@
             "operations"
           ],
           "refs": [
-            "U0928-S09"
+            "U1004-S14"
           ],
-          "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
+          "scope": "原9/30已过窗口的招聘工作范围，非新一轮开放或固定定岗承诺；轮岗和最终分配依业务需求。"
         },
         {
           "city": "成都",
@@ -112,9 +112,9 @@
             "operations"
           ],
           "refs": [
-            "U0928-S09"
+            "U1004-S14"
           ],
-          "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
+          "scope": "原9/30已过窗口的招聘工作范围，非新一轮开放或固定定岗承诺；轮岗和最终分配依业务需求。"
         },
         {
           "city": "西安",
@@ -126,46 +126,60 @@
             "operations"
           ],
           "refs": [
-            "U0928-S09"
+            "U1004-S14"
           ],
-          "scope": "校园招聘工作范围含此城市；轮岗、具体机构及最终定岗依业务需求，非固定城市承诺。"
+          "scope": "原9/30已过窗口的招聘工作范围，非新一轮开放或固定定岗承诺；轮岗和最终分配依业务需求。"
         }
       ],
-      "basisHash": "d6aaa94cf435996f15fd0bae8894df4bfee1b366bae9482961e16d6838389a1e"
+      "basisHash": "05c46dde512ba12c707984dd847e87d0226dcc61f41ffcf6eb533b71a1a568e2"
     },
     "soe-15dcc83203fa8d55b59c": {
       "current": true,
-      "reviewedOn": "2026-09-28",
+      "reviewedOn": "2026-10-04",
       "locations": [
         {
           "city": "杭州",
           "province": "浙江",
-          "directions": [
-            "stats",
-            "software",
-            "finance"
-          ],
-          "refs": [
-            "N0928-B02"
-          ],
-          "scope": "仅数据研发培训生；不能借给其他机构岗位。",
-          "level": "position"
-        },
-        {
-          "city": "杭州",
-          "province": "浙江",
+          "level": "position",
           "directions": [
             "banking",
             "operations"
           ],
           "refs": [
-            "N0928-B03"
+            "U1004-S02"
           ],
-          "scope": "总行培训生工作地字段；基层轮岗及最终定岗另有安排。",
-          "level": "position"
+          "scope": "仅当前总行培训生的杭州工作地；轮岗及最终定岗另核。"
+        },
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "directions": [
+            "ai",
+            "software",
+            "finance"
+          ],
+          "refs": [
+            "U1004-S03"
+          ],
+          "scope": "仅人工智能方向培训生的杭州工作地；不表示应用统计专业获准。"
+        },
+        {
+          "city": "杭州",
+          "province": "浙江",
+          "level": "position",
+          "directions": [
+            "research",
+            "product",
+            "banking"
+          ],
+          "refs": [
+            "U1004-S04"
+          ],
+          "scope": "仅外汇条线培训生（杭州）的研究及营销职责，不借给上海外汇或旧数据岗。"
         }
       ],
-      "basisHash": "52262b8ebd7a6045babe6ac7ec63c53f270d998ff397bc53e05258d6d6d98c94"
+      "basisHash": "687036af89b6b7ebbc3b40566073eba44a9b20c4f3a4a99887ca283be5d9e534"
     },
     "soe-28a7c75480e66ff26a24": {
       "current": true,
@@ -775,9 +789,26 @@
     },
     "soe-b9fb017b087135609736": {
       "current": true,
-      "locations": [],
-      "reviewedOn": "2026-09-27",
-      "basisHash": "4c23198aaf0cf81a84e775ffda8cc43b0ce8ac0ae2bb8e0881a0e3a09e76d4b3"
+      "reviewedOn": "2026-10-04",
+      "locations": [
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "directions": [
+            "banking",
+            "risk",
+            "research",
+            "finance",
+            "stats"
+          ],
+          "refs": [
+            "U1004-S08"
+          ],
+          "scope": "总行经济金融类正文明确日常在北京工作，不能与西安信息科技岗位条件混用。"
+        }
+      ],
+      "basisHash": "6faa96612f56d985f2c57f11af323bb796ca52289a4c2ec0550bf16386b4a4ee"
     },
     "soe-e43cb34e4c801cf57150": {
       "current": true,
@@ -888,8 +919,73 @@
     },
     "soe-9ed0ba98e2b378d91fe7": {
       "current": true,
-      "reviewedOn": "2026-09-28",
+      "reviewedOn": "2026-10-04",
       "locations": [
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "campaign",
+          "directions": [
+            "finance",
+            "software"
+          ],
+          "refs": [
+            "U1004-S13"
+          ],
+          "scope": "公司科技专项公告列明的工作城市；具体岗位是否可选此城另核，不从64个笔试城市外推。"
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "campaign",
+          "directions": [
+            "finance",
+            "software"
+          ],
+          "refs": [
+            "U1004-S13"
+          ],
+          "scope": "公司科技专项公告列明的工作城市；具体岗位是否可选此城另核，不从64个笔试城市外推。"
+        },
+        {
+          "city": "厦门",
+          "province": "福建",
+          "level": "campaign",
+          "directions": [
+            "finance",
+            "software"
+          ],
+          "refs": [
+            "U1004-S13"
+          ],
+          "scope": "公司科技专项公告列明的工作城市；具体岗位是否可选此城另核，不从64个笔试城市外推。"
+        },
+        {
+          "city": "广州",
+          "province": "广东",
+          "level": "campaign",
+          "directions": [
+            "finance",
+            "software"
+          ],
+          "refs": [
+            "U1004-S13"
+          ],
+          "scope": "公司科技专项公告列明的工作城市；具体岗位是否可选此城另核，不从64个笔试城市外推。"
+        },
+        {
+          "city": "武汉",
+          "province": "湖北",
+          "level": "campaign",
+          "directions": [
+            "finance",
+            "software"
+          ],
+          "refs": [
+            "U1004-S13"
+          ],
+          "scope": "公司科技专项公告列明的工作城市；具体岗位是否可选此城另核，不从64个笔试城市外推。"
+        },
         {
           "city": "成都",
           "province": "四川",
@@ -899,12 +995,25 @@
             "software"
           ],
           "refs": [
-            "U0928-S10"
+            "U1004-S13"
           ],
-          "scope": "成都在公司科技专项工作地点名单；不是全国笔试城市外推，也不保证任意具体岗可选成都。"
+          "scope": "公司科技专项公告列明的工作城市；具体岗位是否可选此城另核，不从64个笔试城市外推。"
+        },
+        {
+          "city": "深圳",
+          "province": "广东",
+          "level": "campaign",
+          "directions": [
+            "finance",
+            "software"
+          ],
+          "refs": [
+            "U1004-S13"
+          ],
+          "scope": "公司科技专项公告列明的工作城市；具体岗位是否可选此城另核，不从64个笔试城市外推。"
         }
       ],
-      "basisHash": "2f031921d900f9b051b710ef5d13a46dae2fb5c04fba5b163320a5780e169df4"
+      "basisHash": "7638b2407fde4d78e17b6f8d00c9a68060502920bdd7934948df6852a52dfc88"
     },
     "soe-6b718e14071e15579098": {
       "current": true,
@@ -1833,5 +1942,6 @@
       ],
       "basisHash": "f04bfd9f365a1c36db447a8056fcd44471804923c5a0a1811d404bf3aeb095e7"
     }
-  }
+  },
+  "reviewedOn": "2026-10-04"
 }

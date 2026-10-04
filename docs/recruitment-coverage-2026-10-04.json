@@ -1,0 +1,1482 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-04",
+  "baseline": "d8bd6d7f3067986aa0fe229f4ac09cd0bbd8411d",
+  "scope": "本轮仅复核10个SOE入口；REC57及其余SOE81条未作本轮来源复核。目录不等于在招，已读总公告不等于逐岗或个人资格通过。",
+  "counts": {
+    "total": 148,
+    "reviewedScoped": 10,
+    "notReviewed": 138
+  },
+  "sources": [
+    {
+      "sourceId": "U1004-S01",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employ/school",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "公开列表第一页6个岗位；总行培训生、杭州AI与杭州外汇分别列10/25。107为网站全列表计数，不作为本项目已核岗位数。",
+      "localEvidence": "test-results/review-2026-10-04/hz-list.json",
+      "sha256": "6efdc5ac2928c8625b142c0a283783d51342290fcb5146cc846debdb5fd36e57"
+    },
+    {
+      "sourceId": "U1004-S02",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "已读具体JD：硕士、含统计的相关专业、杭州、毕业与轮岗要求；截止来自同一官方列表。",
+      "localEvidence": "test-results/review-2026-10-04/hz-trainee.json",
+      "sha256": "6279c00efe03f3a445e1077edbb02ee0e78af82a89fe93a9006f411ca7fae7b5"
+    },
+    {
+      "sourceId": "U1004-S03",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158946",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "已读具体JD：杭州，硕士；AI/计算机/智能科学/电子信息相关，Java或Python；未明确应用统计。",
+      "localEvidence": "test-results/review-2026-10-04/hz-ai.json",
+      "sha256": "ab61959dcff58c6124f6f59203db2afd035a42ca51b0ae9710a1673ae945f04c"
+    },
+    {
+      "sourceId": "U1004-S04",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158944",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "已读具体JD：杭州、硕士、理工经管相关；市场研究及营销推动；未明确应用统计代码。",
+      "localEvidence": "test-results/review-2026-10-04/hz-fx.json",
+      "sha256": "68d83f8d287821239f3c25b90ced6fb4d4161dd06d0e4a2696ac4b6c8afc0459"
+    },
+    {
+      "sourceId": "U1004-S05",
+      "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
+      "status": "unresolved_empty_detail",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4请求成功但仅显示空白职位模板；不作为新JD、延期或新一轮开放证明。原9/30截止沿用9/28证据。",
+      "localEvidence": "test-results/review-2026-10-04/hz-data.json",
+      "sha256": "b6b6dcfc582eb6c1bac2bd8bf4cdc0524e8fc4f6c48031318fe963223bc0b2b9"
+    },
+    {
+      "sourceId": "U1004-S06",
+      "url": "https://cdb2027.zhaopin.com/index.html",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "本届国内与海外毕业范围、证书及就业状态；不是所有岗位条件。",
+      "localEvidence": "test-results/review-2026-10-04/cdb-notice.json",
+      "sha256": "354f16a0c701dae2cca2bb1c4ac921f90727c056ad76a66bef3a0c361a82a494"
+    },
+    {
+      "sourceId": "U1004-S07",
+      "url": "https://cdb2027.zhaopin.com/precautions/index.html",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "10/7 24:00北京时间；选1—2家单位，每家1—2岗；提交后岗位与个人资料不能修改。",
+      "localEvidence": "test-results/review-2026-10-04/cdb-rules.json",
+      "sha256": "72a92a7d24e1f9ba383d6b444c4af7831f4e73fd0dcc4149ad56c9d489c9c18d"
+    },
+    {
+      "sourceId": "U1004-S08",
+      "url": "https://cdb2027.zhaopin.com/jobs/index.html?id=10126839",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "在总行页面展开经济金融类；北京、硕士、统计学及对应专业学位、风险与金融产品等职责；不借用西安IT城市。",
+      "localEvidence": "test-results/review-2026-10-04/cdb-economics.json",
+      "sha256": "56e85c2552eaf813428fdedc0043da1be2202eec007ee304c57e718483132ff2"
+    },
+    {
+      "sourceId": "U1004-S09",
+      "url": "https://www.psbc.com/cn/gyyc/rczp/xyzp/202609/t20260907_460394.html",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "10/7 24:00北京时间；总行含信用卡与一级分行合计任意2岗，可另投控股子公司；各岗位条件及城市独立核对。",
+      "localEvidence": "test-results/review-2026-10-04/psbc-notice.json",
+      "sha256": "438cfde37ef7babf2671fad41aca0f98132b146ebb4705cad21313e1dcb37125"
+    },
+    {
+      "sourceId": "U1004-S10",
+      "url": "https://psbc2027.zhaopin.com/jobs/index.html?id=10134769",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "依次选择总行本部/个人金融板块并展开金融科技岗；硕士、计算机/软件/理学/工学相关，CET6≥425或等效；应用统计需确认。",
+      "localEvidence": "test-results/review-2026-10-04/psbc-tech.json",
+      "sha256": "315f76a71edb39bfe7b99ac875f2fdcd9cc9babbe088f4b6c1f6518e42a168c5"
+    },
+    {
+      "sourceId": "U1004-S11",
+      "url": "https://psbc2027.zhaopin.com/jobs/index.html?id=10134769",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "依次选择总行本部/风险管理板块并展开金融科技岗；风控管理职责，计算机/软件/理学/工学相关；无明确工作城市字段。",
+      "localEvidence": "test-results/review-2026-10-04/psbc-risk.json",
+      "sha256": "99693e3a175e6bfddd3efa922ed2f2045182ffce5e80149969e00ba6d22fc5ba"
+    },
+    {
+      "sourceId": "U1004-S12",
+      "url": "https://www.adbc.com.cn/n354735/n355043/c722284/content.html",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "10/11 24:00；总行/省级硕士、CET6≥426或等效；数学统计等为总条件，逐岗专业仍需核验。",
+      "localEvidence": "test-results/review-2026-10-04/adbc-notice.json",
+      "sha256": "9ad1bc54be1e2a09df87f0056a9a74d2c2656d7adf0d1617ab23a64be2ca5bf5"
+    },
+    {
+      "sourceId": "U1004-S13",
+      "url": "https://wealth.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "10/8 24:00；数理统计等理工类、英语门槛、2志愿和修改次数；明确7个工作城市，64个笔试城市不当作工作地。",
+      "localEvidence": "test-results/review-2026-10-04/ccb-fintech.json",
+      "sha256": "e6497470af9364f17cdd16410a499e5060aa4d4fa3349791cb343b624543f9de"
+    },
+    {
+      "sourceId": "U1004-S14",
+      "url": "https://gzw.cq.gov.cn/gqzp/202608/t20260828_15994445_wap.html",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "指定项目经理/管培专业不限、最多1岗；9/30截止未给时刻，原窗口已过，未核到延期。",
+      "localEvidence": "test-results/review-2026-10-04/cq-guarantee.json",
+      "sha256": "0a567a4abb21beb6f47bc96e58f59f28c7aad8decdcd21529f719812033eba5d"
+    },
+    {
+      "sourceId": "U1004-S15",
+      "url": "https://job.spdb.com.cn/noticeDetail?id=305241637549105394",
+      "status": "read_scoped_body",
+      "checkedOn": "2026-10-04",
+      "scope": "10/8 18:00；最多2家机构，每家2岗、明确顺序；总行4方向及8个子公司/机构。具体学历表仍沿用9/28高校雇主正文，不声称全部JD新核。",
+      "localEvidence": "test-results/review-2026-10-04/spdb-notice.json",
+      "sha256": "d88287020b00d1114cd9880bcbd1b32907a0024da7b43f1ea8c6c59a240b50d3"
+    }
+  ],
+  "entries": [
+    {
+      "id": "rec-82eaaba81d9dcc54deab",
+      "page": "rec",
+      "name": "华为",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-effea4c9ff35497ce446",
+      "page": "rec",
+      "name": "拼多多",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-57b33bc4f2a1d871291f",
+      "page": "rec",
+      "name": "滴滴",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-522d3edeb64a7ca45f5e",
+      "page": "rec",
+      "name": "小米",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-cfc3d445066f6e83ca1d",
+      "page": "rec",
+      "name": "哔哩哔哩",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-cd6362472aea60ef45d5",
+      "page": "rec",
+      "name": "美团",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-8e7a2fa63279073af1ea",
+      "page": "rec",
+      "name": "好未来",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-49233b820253f8ef424c",
+      "page": "rec",
+      "name": "携程",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-8d2be68965151aec8d3b",
+      "page": "rec",
+      "name": "唯品会",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-d30e5ffc0ba9150b4367",
+      "page": "rec",
+      "name": "蚂蚁集团",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-b210af9eaeaa3d72cea6",
+      "page": "rec",
+      "name": "快手",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-47c1e53c427aafb4556b",
+      "page": "rec",
+      "name": "阿里巴巴",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-53874092e000069bfeda",
+      "page": "rec",
+      "name": "腾讯",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-81baf57e05f112764536",
+      "page": "rec",
+      "name": "京东",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-0c8d80777a68b7da5f43",
+      "page": "rec",
+      "name": "360 集团",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-f851fcc64d07c10e897f",
+      "page": "rec",
+      "name": "MetaApp",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-7ca2b7da6e0f8654c088",
+      "page": "rec",
+      "name": "科大讯飞",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-e2f4e2c4b8d7cf9c17f5",
+      "page": "rec",
+      "name": "OPPO",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-f9f525fd1bbc068eca89",
+      "page": "rec",
+      "name": "作业帮",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-d26c6a08a591011a3bf6",
+      "page": "rec",
+      "name": "小红书",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-7eece41947255ec5b940",
+      "page": "rec",
+      "name": "SHEIN",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-a62864e8c353807bfbd8",
+      "page": "rec",
+      "name": "网易",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-67a67fc05f47b36e185c",
+      "page": "rec",
+      "name": "爱奇艺",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-0a5441b46ae534c8f353",
+      "page": "rec",
+      "name": "得物",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-69337578b2468a881543",
+      "page": "rec",
+      "name": "vivo",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-455ece81de5605d85e54",
+      "page": "rec",
+      "name": "百度",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-702c213feab1671de4c5",
+      "page": "rec",
+      "name": "字节跳动",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-2faa8bd0603d45617e25",
+      "page": "rec",
+      "name": "Shopee",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-eff9e9ea8520b3f339e1",
+      "page": "rec",
+      "name": "新浪 / 微博",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-a57125f842f6dc3e62a8",
+      "page": "rec",
+      "name": "腾讯音乐",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-70629416ece0407f8118",
+      "page": "rec",
+      "name": "Soul",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-61240a5e55e990f64d1f",
+      "page": "rec",
+      "name": "哈啰",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-933afa76439b71816ede",
+      "page": "soe",
+      "name": "天翼云",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-760d8065c74679611ff9",
+      "page": "soe",
+      "name": "招银网络科技",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-ad455372b0bbb2f021ce",
+      "page": "soe",
+      "name": "中国移动九天人工智能",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-09d0c319c855ec8c738e",
+      "page": "soe",
+      "name": "中国电信集团 · 优才 / 研发 / 产数",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-4ffa72152f7258fb78a2",
+      "page": "soe",
+      "name": "中国电信人工智能研究院 TeleAI",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-d10aecb1b903d20e8fd8",
+      "page": "soe",
+      "name": "浪潮集团",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-281e1336c36307f85882",
+      "page": "soe",
+      "name": "中科曙光",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-003d7bb92cd63869b718",
+      "page": "soe",
+      "name": "中国人保集团 · 本部 / 成员总部 / 科技",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-e3c6ba3985ff4004365b",
+      "page": "soe",
+      "name": "交银金融科技",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-54268e0393a76722595e",
+      "page": "soe",
+      "name": "中汽中心",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-0a4d614aa7dd0aee16bc",
+      "page": "soe",
+      "name": "东风汽车研发总院",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-237dd8bb2d51359a8818",
+      "page": "soe",
+      "name": "中国电科 50 所",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-6c88c55a7f10e63848e4",
+      "page": "soe",
+      "name": "中科芯 / 中国电科 58 所",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-b96d5b94cecc8946cc71",
+      "page": "soe",
+      "name": "联通数字科技",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-a2ceddeff19120c77391",
+      "page": "soe",
+      "name": "天翼物联 · 优才计划",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-35812b328fb333295de9",
+      "page": "soe",
+      "name": "咪咕公司",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-7df999bb5bbab0b3e8fc",
+      "page": "soe",
+      "name": "芒果TV",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-9f02794271f6ee22ab36",
+      "page": "soe",
+      "name": "中国航信 / 航旅纵横",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-691c283911ab1f4878af",
+      "page": "soe",
+      "name": "昆仑数智",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-0166e9a039513d6627bb",
+      "page": "soe",
+      "name": "东方地球物理公司 BGP",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-863efd948d7f8d33bfdb",
+      "page": "soe",
+      "name": "中国石化 · 集团招聘 / 经纬与物探方向",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-1e49fabfeb8af3287a2b",
+      "page": "soe",
+      "name": "中海油研究总院",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-bd6aef6e032befbf221e",
+      "page": "soe",
+      "name": "宝信软件",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-b24eccce088fab5acca4",
+      "page": "soe",
+      "name": "南网数字集团 · 2027提前批 / 经营管理",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-9144dfc3a2177c2560bf",
+      "page": "soe",
+      "name": "国网信通产业集团 / 南瑞集团",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-40821fd0c64459ec899d",
+      "page": "soe",
+      "name": "中国银联 / 银联数据",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-9ed0ba98e2b378d91fe7",
+      "page": "soe",
+      "name": "建信金融科技",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S13"],
+      "scope": "10/4重读公司官方公告，10/8 24:00，志愿与笔试限制以及7个工作城市；未展开具体职位，仍是公告级专业依据。"
+    },
+    {
+      "id": "soe-7fe2c247fb54aac480d8",
+      "page": "soe",
+      "name": "中国电子云",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-224eff4dd223d582e600",
+      "page": "soe",
+      "name": "中国银行 · 数据分析 / 审计数据",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-012f751aa0176646891e",
+      "page": "soe",
+      "name": "工商银行深圳分行 · 管培 / 产品 / 综合业务",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-56412c0e929ad53c81a8",
+      "page": "soe",
+      "name": "建设银行 · 总部经办 / 湖北通用管培",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-9ab002099e55ac2b03b6",
+      "page": "soe",
+      "name": "农业银行四川分行 · 综合业务 / 管理储备",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-f8c92726adc2c28d4be4",
+      "page": "soe",
+      "name": "招商银行深圳分行 · 定向培养 / 业务运营",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-fd7572b49f9a3eb7f2b6",
+      "page": "soe",
+      "name": "中信银行信用卡中心 · 风险统计 / 运营研究",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-1df7b49623798cb2b82b",
+      "page": "soe",
+      "name": "南京银行 · 风险管理 / 综合培养 / 业务",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-3a4e8fb9f15de5c306e9",
+      "page": "soe",
+      "name": "长城证券 · 研究分析 / 风险 / 客群运营",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-11e02d2dbe7515379cad",
+      "page": "soe",
+      "name": "厦门航空 · 规划财务 / 营销分析 / 管培",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-bc7d404baf298af71195",
+      "page": "soe",
+      "name": "北汽集团 · 市场 / 职能 / 数据分析",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-67ba0f956e9bff32cb49",
+      "page": "soe",
+      "name": "岚图汽车 · 产品企划 / 经营规划 / 营销管培",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-1bc9a6c37424182099b8",
+      "page": "soe",
+      "name": "建发股份 · 国内 / 进出口业务与管培",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-c220d0f777ae54ac86c4",
+      "page": "soe",
+      "name": "国贸股份 · 行业研究 / 贸易运营 / 业务",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-fc684edd781f27422e8d",
+      "page": "soe",
+      "name": "象屿 · 产业研究 / 风险 / 供应链运营",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-74afd94593431265ce3a",
+      "page": "soe",
+      "name": "浙江省商业集团 · 产业研究 / 运营 / 数字化",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-cb0f7783542ae0067238",
+      "page": "soe",
+      "name": "浙商中拓集团 · 研究 / 交易 / 商务",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-15e8fe78032c98f915c3",
+      "page": "soe",
+      "name": "重庆三峡融资担保集团 · 管培 / 项目经理",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S14"],
+      "scope": "10/4重读原公告，确认9/30仅日期且窗口已过；没有延期/补录证据，不能据页面仍可访问推定继续招聘。"
+    },
+    {
+      "id": "soe-15dcc83203fa8d55b59c",
+      "page": "soe",
+      "name": "杭州银行 · 总行培训生 / AI / 外汇",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S01", "U1004-S02", "U1004-S03", "U1004-S04", "U1004-S05"],
+      "scope": "重读官方列表与总行培训生、杭州AI、杭州外汇JD；三岗10/25、无时刻。原数据研发9/30已过且详情空白，不视为延期，保留旧ID和9/28专业证据。"
+    },
+    {
+      "id": "soe-28a7c75480e66ff26a24",
+      "page": "soe",
+      "name": "中国建设银行浙江省分行",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-70472ac853332bba0d05",
+      "page": "soe",
+      "name": "中国建设银行四川省分行",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-95134bdc75c0737d281e",
+      "page": "soe",
+      "name": "中国工商银行远程银行中心",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-946c8b35a6045d05921e",
+      "page": "soe",
+      "name": "中国工商银行软件开发中心",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-6f3da4b7ad2476020757",
+      "page": "soe",
+      "name": "招商银行宁波分行",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-140f2087c58956d157f6",
+      "page": "soe",
+      "name": "申万宏源集团 / 证券",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-55cb5e9670d088e4902f",
+      "page": "soe",
+      "name": "建信人寿 · 精算 / 经营管理",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-6f566438920bdfd0d70e",
+      "page": "soe",
+      "name": "中国农业银行浙江省分行",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-b9fb017b087135609736",
+      "page": "soe",
+      "name": "国家开发银行 · 总行经济金融",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S06", "U1004-S07", "U1004-S08"],
+      "scope": "10/4重读本届范围、规则及总行经济金融类；10/7 24:00、1—2单位各1—2岗；只核这一具名岗位，不外推分行或西安IT。"
+    },
+    {
+      "id": "soe-e43cb34e4c801cf57150",
+      "page": "soe",
+      "name": "广发银行 · 风险分析 / 业务 / 金融科技",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-84e7d908cb72d28b63a2",
+      "page": "soe",
+      "name": "重庆三峡银行 · 管培 / 金融科技 / 支行业务",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-6b718e14071e15579098",
+      "page": "soe",
+      "name": "兴业银行总行 · FinTech / 资金营运",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-0bcee0305932c39268f6",
+      "page": "soe",
+      "name": "中国农业发展银行 · 总行 / 省级分行",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S12"],
+      "scope": "10/4仅重读官方总公告：10/11 24:00、硕士层级、CET6≥426及志愿限制；不代表全部具体职位条件已核。"
+    },
+    {
+      "id": "soe-8b77a831e8fa823d9737",
+      "page": "soe",
+      "name": "中国邮政储蓄银行 · 总行本部 / 信用卡中心",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S09", "U1004-S10", "U1004-S11"],
+      "scope": "10/4核总公告及总行本部两个金融科技岗位展开内容，截止10/7 24:00，CET6≥425；相关专业需确认，无具体城市证据。"
+    },
+    {
+      "id": "soe-1390ea899a188a39617a",
+      "page": "soe",
+      "name": "中国工商银行总行本部 · 管理培训生",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-6036cd9ae91c3526037f",
+      "page": "soe",
+      "name": "中国农业银行总行 · 菁穗培训生 / 直属机构",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-8260438ddfcb7cfaf9c1",
+      "page": "soe",
+      "name": "交通银行总行 · 业务 / 风险 / 综合管理",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-b2bb7f2da8bb065dafbb",
+      "page": "soe",
+      "name": "浦发银行总行 · 管培 / 科技 / 业务 / 运营",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S15"],
+      "scope": "10/4重读浦发官方总公告：10/8 18:00及最多2机构各2岗；未重新展开本机构全部岗位，学历表沿用9/28，具体专业/工作地继续分别核验。"
+    },
+    {
+      "id": "soe-fbc68e3db565e8ae826c",
+      "page": "soe",
+      "name": "浦银金融科技 · AI / 数据 / 产品",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S15"],
+      "scope": "10/4重读浦发官方总公告：10/8 18:00及最多2机构各2岗；未重新展开本机构全部岗位，学历表沿用9/28，具体专业/工作地继续分别核验。"
+    },
+    {
+      "id": "soe-75f4674009337c8bcaa1",
+      "page": "soe",
+      "name": "浦银理财 · 投研交易 / 运营 / 科技",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S15"],
+      "scope": "10/4重读浦发官方总公告：10/8 18:00及最多2机构各2岗；未重新展开本机构全部岗位，学历表沿用9/28，具体专业/工作地继续分别核验。"
+    },
+    {
+      "id": "soe-afb94d0cd334ef5b35c7",
+      "page": "soe",
+      "name": "上海国际信托 · 投研 / 风控 / 数智",
+      "status": "reviewed_scoped",
+      "checkedOn": "2026-10-04",
+      "sourceIds": ["U1004-S15"],
+      "scope": "10/4重读浦发官方总公告：10/8 18:00及最多2机构各2岗；未重新展开本机构全部岗位，学历表沿用9/28，具体专业/工作地继续分别核验。"
+    },
+    {
+      "id": "soe-53b939996659dfde59e5",
+      "page": "soe",
+      "name": "招商银行总行 · 管培 / 智能科学研发",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-57a02b3fc6410f063563",
+      "page": "soe",
+      "name": "浙商银行 · 总行培养 / 科技 / 派驻",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-3a9d68162b0165c655ac",
+      "page": "soe",
+      "name": "中国农业银行研发中心 · 数据分析 / 研发",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-e47806eafc52fe5f9023",
+      "page": "soe",
+      "name": "华夏银行总行 · 数学统计管培生",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-1d81f573583960b2ca09",
+      "page": "soe",
+      "name": "华夏金融租赁 · 数学统计管培生",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-de9c4459438f9d40fc9c",
+      "page": "soe",
+      "name": "招商局融资租赁 · 市场营销岗",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-5e5f37fe525132e770c9",
+      "page": "soe",
+      "name": "国寿安保基金 · 股票行业研究（京沪）",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-8cd49c5535cbb34514df",
+      "page": "soe",
+      "name": "中国移动成都产业研究院 · AI全栈 / Agent开发",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-14617422435dc1c7757c",
+      "page": "soe",
+      "name": "中国联通研究院 · 网络数据分析与建模",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-6c87c97a536ff75ffd95",
+      "page": "soe",
+      "name": "招商证券 / 招商资管 · 研究、交易、产品",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-adfb8640d34d1647cc06",
+      "page": "soe",
+      "name": "中信证券上海分公司 · 培训生",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-5115684db9063d74877d",
+      "page": "soe",
+      "name": "中国大唐 · 电力交易管培 / 在京本部管培",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-885aa3ce3b991be77d82",
+      "page": "soe",
+      "name": "中国中信金融资产 · 管培 / 风险 / 资产研究",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-59da3ca0da45344d20a6",
+      "page": "soe",
+      "name": "国家能源集团总部菁英管培 · 产业研究",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-5d5e2a79fb87bf541109",
+      "page": "soe",
+      "name": "中国华电 · 青年骏才 / 统计方向",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-13b954591e810cca6d94",
+      "page": "soe",
+      "name": "中国华能 · 二级单位管培 / 科研管理",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-fec9805f8b492d2ca3a2",
+      "page": "soe",
+      "name": "中信集团总部 / 中信投资控股 · 管培投资",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-230433dca282b611307c",
+      "page": "soe",
+      "name": "国投集团 · 管培 / 投资与职能",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-53bef5d34efd044c8a7c",
+      "page": "soe",
+      "name": "中国人寿保险股份总部 · 风险 / 运营等方向",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-87ef8e3ebe4b4b4bb9fc",
+      "page": "soe",
+      "name": "中国石油共享运营 · 数据应用 / 人资共享",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-00f5a7bf22c3ecff3eff",
+      "page": "soe",
+      "name": "中国石油规划总院 · 市场研究 / AI研究",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-12aceb3925f1d9fc514e",
+      "page": "soe",
+      "name": "中国石油安全环保研究院 · AI技术研发",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-3bad984c354c08ffb3a5",
+      "page": "soe",
+      "name": "中国石油广西销售 · 数据 / 站经理储备",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "soe-4e7bf568324c786fbaec",
+      "page": "soe",
+      "name": "远光软件 · 管理类 / 统计方向",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-6ad1c8da5080c5147475",
+      "page": "rec",
+      "name": "度小满",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-f2afc6db6fcedb278b78",
+      "page": "rec",
+      "name": "Wind 万得",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-3e94f491f99e4ae6fc2d",
+      "page": "rec",
+      "name": "去哪儿",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-b44970daaf32132f230f",
+      "page": "rec",
+      "name": "挚文 / 陌陌",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-1bfefe0febb227479016",
+      "page": "rec",
+      "name": "知乎",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-1b52d69cf33ddf49baea",
+      "page": "rec",
+      "name": "58同城",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-be548deba4a093d78e82",
+      "page": "rec",
+      "name": "荣耀",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-99da41b4a60e34d30b0c",
+      "page": "rec",
+      "name": "同花顺",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-bbf424863d6008235248",
+      "page": "rec",
+      "name": "贝壳找房",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-7df999bb5bbab0b3e8fc",
+      "page": "rec",
+      "name": "芒果TV",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-a168b06e9c219152d775",
+      "page": "rec",
+      "name": "传音",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-7b0537129aa42ab55ff5",
+      "page": "rec",
+      "name": "米哈游",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-c39888bcadf8baa4acef",
+      "page": "rec",
+      "name": "货拉拉",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-7b284311bfca60467e57",
+      "page": "rec",
+      "name": "饿了么 / 淘宝闪购",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-0f1cb9c0fcbf0dbb2924",
+      "page": "rec",
+      "name": "飞猪",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-ae322cc596675baf95b1",
+      "page": "rec",
+      "name": "喜马拉雅",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-2475571c8383583793b8",
+      "page": "rec",
+      "name": "阅文 / QQ阅读",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-4a366fb92e537bad20bd",
+      "page": "rec",
+      "name": "网易云音乐",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-183f00f483d3844e875d",
+      "page": "rec",
+      "name": "Keep",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-44c4621de3957c4bb5b5",
+      "page": "rec",
+      "name": "汽车之家",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-fa8c9a97f2c921bf8484",
+      "page": "rec",
+      "name": "同程旅行",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-fcdbfc51189fecd592b0",
+      "page": "rec",
+      "name": "虎牙",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-d00d4d14ff02e6a29d90",
+      "page": "rec",
+      "name": "BOSS直聘",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-4d347b261c9013270a2e",
+      "page": "rec",
+      "name": "网易有道",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    },
+    {
+      "id": "rec-d16ff9b356f58d9af1db",
+      "page": "rec",
+      "name": "网易游戏雷火",
+      "status": "not_reviewed",
+      "checkedOn": null,
+      "sourceIds": [],
+      "scope": "推荐页补充入口，本轮未复核，保持原记录及原核查日期。"
+    }
+  ]
+}

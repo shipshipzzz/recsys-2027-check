@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-04",
+  "baseline": "d8bd6d7f3067986aa0fe229f4ac09cd0bbd8411d",
+  "verification": {
+    "command": "npm run verify",
+    "exitCode": 0,
+    "unit": {
+      "tests": 147,
+      "passed": 147,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browser": {
+      "startTime": "2026-10-04T10:56:56.098Z",
+      "duration": 222964.66900000002,
+      "expected": 156,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "compatibility": {
+      "command": "node scripts/validate-catalog.mjs --base d8bd6d7f3067986aa0fe229f4ac09cd0bbd8411d",
+      "exitCode": 0
+    },
+    "gitDiffCheck": 0,
+    "productionDependencyAudit": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "build": {
+    "budgets": {
+      "totalJsonGzip": 204800,
+      "pageJsonGzip": 204800,
+      "totalJsonBytes": 2097152,
+      "totalJavaScriptGzip": 215040,
+      "pageJavaScriptGzip": 158720,
+      "pageCssGzip": 16384,
+      "pageHtmlGzip": 14336
+    },
+    "totalJavaScriptGzip": 145648,
+    "totalJsonGzip": 136248,
+    "totalJsonBytes": 658999,
+    "pages": {
+      "index.html": {
+        "javascriptGzip": 134553,
+        "jsonGzip": 0,
+        "cssGzip": 7601,
+        "htmlGzip": 9775,
+        "assets": [
+          "assets/bootstrap-Bm6xMs-W.js",
+          "assets/bootstrap-WiG0WsQ6.css",
+          "assets/catalog-view-B1HrgnCr.js",
+          "assets/catalog-view-CBaOqZFh.css",
+          "assets/main-AoKxBpjs.css",
+          "assets/rec-5UZX2VTg.js"
+        ]
+      },
+      "soe.html": {
+        "javascriptGzip": 91620,
+        "jsonGzip": 136248,
+        "cssGzip": 7620,
+        "htmlGzip": 10270,
+        "assets": [
+          "assets/bootstrap-Bm6xMs-W.js",
+          "assets/bootstrap-WiG0WsQ6.css",
+          "assets/catalog-view-B1HrgnCr.js",
+          "assets/catalog-view-CBaOqZFh.css",
+          "assets/soe-4E7lOj5c.js",
+          "assets/soe-DLCEO-bd.json",
+          "assets/soe-directory-BltnHSTv.json",
+          "assets/soe-gZ4reOoH.css",
+          "assets/soe-locations-D8CDwJ_q.json",
+          "assets/soe-opportunities-Blt5Z18_.json",
+          "assets/soe-screening-CiPZyoG-.json"
+        ]
+      }
+    },
+    "assets": {
+      "assets/bootstrap-Bm6xMs-W.js": {
+        "bytes": 2964,
+        "gzip": 1537
+      },
+      "assets/bootstrap-WiG0WsQ6.css": {
+        "bytes": 1302,
+        "gzip": 598
+      },
+      "assets/catalog-view-B1HrgnCr.js": {
+        "bytes": 283450,
+        "gzip": 78988
+      },
+      "assets/catalog-view-CBaOqZFh.css": {
+        "bytes": 13978,
+        "gzip": 3242
+      },
+      "assets/soe-directory-BltnHSTv.json": {
+        "bytes": 117073,
+        "gzip": 14911
+      },
+      "assets/soe-locations-D8CDwJ_q.json": {
+        "bytes": 55380,
+        "gzip": 7159
+      },
+      "assets/soe-opportunities-Blt5Z18_.json": {
+        "bytes": 40824,
+        "gzip": 8545
+      },
+      "assets/soe-screening-CiPZyoG-.json": {
+        "bytes": 67762,
+        "gzip": 15466
+      },
+      "assets/soe-DLCEO-bd.json": {
+        "bytes": 377960,
+        "gzip": 90167
+      },
+      "assets/main-AoKxBpjs.css": {
+        "bytes": 13188,
+        "gzip": 3761
+      },
+      "assets/soe-gZ4reOoH.css": {
+        "bytes": 14083,
+        "gzip": 3780
+      },
+      "assets/rec-5UZX2VTg.js": {
+        "bytes": 159359,
+        "gzip": 54028
+      },
+      "assets/soe-4E7lOj5c.js": {
+        "bytes": 26998,
+        "gzip": 11095
+      }
+    }
+  },
+  "preservation": {
+    "reviewedOn": "2026-10-04",
+    "baseline": "d8bd6d7f3067986aa0fe229f4ac09cd0bbd8411d",
+    "pass": true,
+    "unchanged": {
+      "recAll57": true,
+      "soeUnreviewed81": true,
+      "originalItems": true,
+      "oldSources": 158,
+      "oldCardIds": 91,
+      "oldPositionIds": 23,
+      "directoryGroupIds": 163,
+      "directoryMembership": true,
+      "personalFileSha256": "b2b1ea18bf78d5f743534c7c476816c7ff8f169ee2e28c29519aa0e49f7a66d7",
+      "packageAndLock": true,
+      "productionAndWorkflowFiles": true,
+      "headUnchanged": true
+    },
+    "sourceReading": {
+      "scopedEntries": 10,
+      "notReviewed": 138,
+      "bodyReceipts": 14,
+      "unresolvedEmptyDetail": 1
+    },
+    "localOnly": true
+  },
+  "realDataBrowserChecks": {
+    "checkedOn": "2026-10-04",
+    "pages": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "cards": 91,
+        "hangzhouPositions": 4,
+        "horizontalOverflow": false,
+        "pageErrors": [],
+        "screenshots": ["desktop-progress-controls.png", "desktop-hangzhou-current.png"]
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "cards": 91,
+        "hangzhouPositions": 4,
+        "horizontalOverflow": false,
+        "pageErrors": [],
+        "screenshots": ["mobile-progress-controls.png", "mobile-hangzhou-current.png"]
+      }
+    ],
+    "isolated": true,
+    "externalRequestsBlocked": true
+  },
+  "sourceReceiptHashesVerified": 15,
+  "limits": [
+    "Only 10 of 148 entry source sets reviewed in scoped depth; remaining 138 retain previous dates.",
+    "Only public page reads; no real applications, recruiting account login or user qualification approval.",
+    "No commit, push, deployment, production database writes or live cloud acceptance testing.",
+    "Position progress remains same-origin device-local, last-write-wins across simultaneous writers, not account sync."
+  ],
+  "evidenceDirectory": "test-results/review-2026-10-04/"
+}

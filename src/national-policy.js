@@ -41,6 +41,19 @@ export function positionDeadline(position) {
       }
     : null;
 }
+export function pendingOpportunities(opportunities, progress = {}, now = new Date()) {
+  return {
+    ...opportunities,
+    positions: opportunities.positions.filter(
+      (p) =>
+        p.type === 'campus' &&
+        p.cycle !== 'historical' &&
+        p.status !== 'past' &&
+        !timeState(positionDeadline(p), now).expired &&
+        (progress[p.id] || 'pending') === 'pending',
+    ),
+  };
+}
 export function noticeDeadline(item, assessment, opportunities, sources, now = new Date()) {
   if (opportunities.matched) {
     const events = opportunities.positions

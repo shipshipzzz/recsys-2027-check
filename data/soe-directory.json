@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "reviewedOn": "2026-09-28",
+  "reviewedOn": "2026-10-04",
   "groups": [
     {
       "id": "icbc",
@@ -109,10 +109,10 @@
       "hqEntryIds": [
         "soe-56412c0e929ad53c81a8"
       ],
-      "reviewState": "covered_existing",
-      "checkedOn": null,
-      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4仅复核以下已关联入口的所述公告/岗位子集：建信金融科技。不代表整个集团所有机构或岗位已核。",
+      "nextAction": "按关联卡片的本轮范围核具体专业代码、志愿顺序、工作地及新批次；未覆盖的集团成员仍需独立核验。",
       "sourceUrls": [
         "https://job1.ccb.com/cn/job/announcement.html?annoId=20260903100124717047",
         "https://www.yinhangzhaopin.com/jsyh/2026-09-04/224901.htm",
@@ -168,12 +168,13 @@
         "soe-8b77a831e8fa823d9737"
       ],
       "reviewState": "reviewed_current",
-      "checkedOn": "2026-09-28",
-      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4仅复核以下已关联入口的所述公告/岗位子集：中国邮政储蓄银行 · 总行本部 / 信用卡中心。不代表整个集团所有机构或岗位已核。",
+      "nextAction": "按关联卡片的本轮范围核具体专业代码、志愿顺序、工作地及新批次；未覆盖的集团成员仍需独立核验。",
       "sourceUrls": [
         "https://www.psbc.com/cn/gyyc/rczp/xyzp/202609/t20260907_460394.html",
-        "https://psbc2027.zhaopin.com/jobs/index.html"
+        "https://psbc2027.zhaopin.com/jobs/index.html",
+        "https://psbc2027.zhaopin.com/jobs/index.html?id=10134769"
       ]
     },
     {
@@ -191,10 +192,10 @@
       "hqEntryIds": [
         "soe-b9fb017b087135609736"
       ],
-      "reviewState": "covered_existing",
-      "checkedOn": null,
-      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4仅复核以下已关联入口的所述公告/岗位子集：国家开发银行 · 总行经济金融。不代表整个集团所有机构或岗位已核。",
+      "nextAction": "按关联卡片的本轮范围核具体专业代码、志愿顺序、工作地及新批次；未覆盖的集团成员仍需独立核验。",
       "sourceUrls": [
         "https://cdb2027.zhaopin.com/index.html",
         "https://cdb2027.zhaopin.com/precautions/index.html",
@@ -217,9 +218,9 @@
         "soe-0bcee0305932c39268f6"
       ],
       "reviewState": "reviewed_current",
-      "checkedOn": "2026-09-28",
-      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4仅复核以下已关联入口的所述公告/岗位子集：中国农业发展银行 · 总行 / 省级分行。不代表整个集团所有机构或岗位已核。",
+      "nextAction": "按关联卡片的本轮范围核具体专业代码、志愿顺序、工作地及新批次；未覆盖的集团成员仍需独立核验。",
       "sourceUrls": [
         "https://www.adbc.com.cn/n354735/n355043/c722284/content.html"
       ]
@@ -294,11 +295,12 @@
         "soe-b2bb7f2da8bb065dafbb"
       ],
       "reviewState": "reviewed_current",
-      "checkedOn": "2026-09-28",
-      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4仅复核以下已关联入口的所述公告/岗位子集：浦发银行总行 · 管培 / 科技 / 业务 / 运营；浦银金融科技 · AI / 数据 / 产品；浦银理财 · 投研交易 / 运营 / 科技；上海国际信托 · 投研 / 风控 / 数智。不代表整个集团所有机构或岗位已核。",
+      "nextAction": "按关联卡片的本轮范围核具体专业代码、志愿顺序、工作地及新批次；未覆盖的集团成员仍需独立核验。",
       "sourceUrls": [
-        "https://career.nankai.edu.cn/correcruit/content/id/119296.html"
+        "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
+        "https://job.spdb.com.cn/noticeDetail?id=305241637549105394"
       ]
     },
     {
@@ -483,16 +485,18 @@
         "soe-15dcc83203fa8d55b59c"
       ],
       "reviewState": "reviewed_current",
-      "checkedOn": "2026-09-28",
-      "scope": "本轮核到已关联入口的公告或岗位子集；不代表集团总部、子公司和各地区全部完成核验。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4仅复核以下已关联入口的所述公告/岗位子集：杭州银行 · 总行培训生 / AI / 外汇。不代表整个集团所有机构或岗位已核。",
+      "nextAction": "按关联卡片的本轮范围核具体专业代码、志愿顺序、工作地及新批次；未覆盖的集团成员仍需独立核验。",
       "sourceUrls": [
         "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employ/school",
         "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
         "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
         "https://career.hebut.edu.cn/home/correcruit/content/id/80614.html",
         "https://smcareer.xmu.edu.cn/info/1008/31455.htm",
-        "https://myjob.hzbank.com.cn/"
+        "https://myjob.hzbank.com.cn/",
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158946",
+        "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158944"
       ]
     },
     {
@@ -2715,10 +2719,10 @@
         "soe-15e8fe78032c98f915c3"
       ],
       "hqEntryIds": [],
-      "reviewState": "covered_existing",
-      "checkedOn": null,
-      "scope": "已有局部入口，沿用各卡片自己的核查日期；尚未完成集团全面排查。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-04",
+      "scope": "10/4仅复核以下已关联入口的所述公告/岗位子集：重庆三峡融资担保集团 · 管培 / 项目经理。不代表整个集团所有机构或岗位已核；三峡担保原窗口已过。",
+      "nextAction": "按关联卡片的本轮范围核具体专业代码、志愿顺序、工作地及新批次；未覆盖的集团成员仍需独立核验。",
       "sourceUrls": [
         "https://gzw.cq.gov.cn/gqzp/202608/t20260828_15994445_wap.html"
       ]

@@ -30,10 +30,10 @@ test('Hangzhou filtering requires city evidence instead of a company name or hea
 }) => {
   await page.locator('#location-filter').selectOption('杭州');
   await expect(cardByName(page, '浙江省商业集团')).toHaveCount(1);
-  await expect(cardByName(page, '杭州银行 · 总分行')).toHaveCount(1);
+  await expect(page.locator('.card[data-entry-id="soe-15dcc83203fa8d55b59c"]')).toHaveCount(1);
   await expect(cardByName(page, '建信人寿 · 精算')).toHaveCount(0);
   await page.locator('#location-filter').selectOption('浙江');
-  await expect(cardByName(page, '杭州银行 · 总分行')).toHaveCount(1);
+  await expect(page.locator('.card[data-entry-id="soe-15dcc83203fa8d55b59c"]')).toHaveCount(1);
 });
 test('research plus Hangzhou cannot borrow locations from an unrelated business job', async ({
   page,

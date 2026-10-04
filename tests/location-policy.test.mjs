@@ -131,9 +131,12 @@ test('a location bonus breaks a comparable score tie but cannot override qualifi
   );
 });
 
-test('new Hangzhou Bank role evidence supports data roles but not unreviewed research locations', () => {
+test('current Hangzhou AI and FX jobs do not borrow the expired statistics job location', () => {
   const value = lookup(find('杭州银行'), catalog.SOURCES);
-  assert.equal(matchesLocation(value, '杭州', 'stats'), true);
-  assert.equal(locationBonus(value, 'stats'), 8);
-  assert.equal(matchesLocation(value, '杭州', 'research'), false);
+  assert.equal(matchesLocation(value, '杭州', 'stats'), false);
+  assert.equal(locationBonus(value, 'stats'), 0);
+  assert.equal(matchesLocation(value, '杭州', 'ai'), true);
+  assert.equal(locationBonus(value, 'ai'), 8);
+  assert.equal(matchesLocation(value, '杭州', 'research'), true);
+  assert.equal(matchesLocation(value, '杭州', 'risk'), false);
 });

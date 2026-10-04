@@ -57,25 +57,31 @@ test('a campaign recheck does not turn old job counts or unsupported dates into 
   await expect(vivo).toContainText('不因空正文认定停招');
 });
 
-test('role-level evidence resolves qualifications without merging separate application windows', async ({
+test('current role evidence never borrows an expired applied-statistics qualification', async ({
   page,
 }) => {
+  await page.clock.setFixedTime(new Date('2026-10-04T12:00:00+08:00'));
   await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
   await expect(page.locator('.card')).toHaveCount(soe.DATA.length);
   const hz = card(page, 'soe-15dcc83203fa8d55b59c');
-  await expect(hz).toHaveAttribute('data-major', 'explicit');
+  await expect(hz).toHaveAttribute('data-major', 'statistics');
   await expect(hz).toHaveClass(/st-open/);
   await expect(hz).toContainText('9/30');
-  await expect(hz).toContainText('多个岗位合成一个截止');
-  await expect(hz).toContainText('10/22');
-  await expect(hz).toContainText('10/25');
-  // This later review has read the official JDs; keep the distinct job/date evidence.
+  await expect(hz.locator('.action-strip')).toContainText('2026-10-25');
+  await expect(hz.locator('.action-strip')).not.toContainText('2026-09-30');
+  // Keep old job evidence as history, but use current evidence for the parent.
   const dataRole = hz.locator('[data-position="soe-15dcc83203fa8d55b59c-p01"]');
   const trainee = hz.locator('[data-position="soe-15dcc83203fa8d55b59c-p02"]');
   await expect(dataRole).toContainText('明确列应用统计');
   await expect(dataRole).toContainText('2026-09-30');
+  await expect(dataRole).toContainText('该窗口已过');
   await expect(trainee).toContainText('统计类 / 数理统计');
   await expect(trainee).toContainText('2026-10-25');
+  for (const suffix of ['ai-27158946', 'fx-27158944']) {
+    const current = hz.locator('[data-position="soe-15dcc83203fa8d55b59c-' + suffix + '"]');
+    await expect(current).toContainText('2026-10-25');
+    await expect(current).not.toContainText('明确列应用统计');
+  }
   await expect(hz.locator('.position-list')).toContainText('仅本机保存');
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),

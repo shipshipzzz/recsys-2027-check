@@ -77,7 +77,7 @@ test('deep review: date-only deadlines and CCB examination cities remain unambig
   }
 });
 
-test('deep review: older current-cycle dates retain their audit day and supported reminders', async ({
+test('deep review: updated role evidence retains source dates without implying personal qualification', async ({
   page,
 }) => {
   await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
@@ -85,7 +85,10 @@ test('deep review: older current-cycle dates retain their audit day and supporte
   await expect(cdb).toContainText(
     soe.DATA.find((item) => item.id === 'soe-b9fb017b087135609736').audit.checked,
   );
-  await expect(cdb).toContainText('有当届日期依据；个人资格仍须核对');
+  await expect(cdb.locator('.position-list')).toContainText('专业依据不等于个人全部资格通过');
+  await expect(cdb.locator('.action-strip')).toContainText('2026-10-07');
+  await expect(cdb.locator('.action-strip')).toContainText('24:00');
+  await expect(page.locator('#src-U0927-S27')).toContainText('2026-09-27');
   await expect(cdb.locator('.action-strip')).not.toContainText('临期待核');
   const teleai = card(page, 'soe-4ffa72152f7258fb78a2');
   await expect(teleai).toHaveAttribute('data-major', 'unknown');

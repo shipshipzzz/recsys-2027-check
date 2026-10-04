@@ -605,11 +605,14 @@ export function createPersonalManager(
         muted = isMuted(state);
       return `<div class="personal-actions"><span class="personal-card-state" data-testid="card-personal-status">${labels[state]}${muted ? ' · 已置后' : ''}</span><div><button type="button" data-timeline-card="${item.id}" aria-label="为${esc(item.name)}安排日程">安排日程</button><button type="button" data-card-id="${item.id}" data-card-state="applied" aria-pressed="${state === 'applied'}" aria-label="标记${esc(item.name)}为已投递">已投递</button><button type="button" data-card-id="${item.id}" data-card-state="uninterested" aria-pressed="${state === 'uninterested'}" aria-label="标记${esc(item.name)}为不感兴趣">不感兴趣</button>${muted ? `<button type="button" class="restore-card" data-card-id="${item.id}" data-card-state="active" aria-label="恢复${esc(item.name)}为未处理">恢复</button>` : ''}</div></div>`;
     },
-    renderProcessed: (list, renderCard) => {
+    renderProcessed: (list, renderCard, extraState = () => '') => {
       processed.hidden = !list.length;
       processed.querySelector('[data-processed-count]').textContent = `· ${list.length}`;
-      renderer.render(processed.querySelector('#processed-grid'), list, renderCard, (item) =>
-        store.status(item.id),
+      renderer.render(
+        processed.querySelector('#processed-grid'),
+        list,
+        renderCard,
+        (item) => store.status(item.id) + ':' + extraState(item),
       );
     },
     setCatalog(next) {

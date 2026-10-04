@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "reviewedOn": "2026-09-28",
+  "reviewedOn": "2026-10-04",
   "entries": {
     "soe-15dcc83203fa8d55b59c": {
-      "basisHash": "d3b43c95b5ff8806446fbbb4a31ca4225295bd57125333848527e91849aac8f6",
-      "reviewedOn": "2026-09-28",
+      "basisHash": "90ea3b179e8d2874d143290108732855b0b89348908aaf6277c05fcd2acbfa6d",
+      "reviewedOn": "2026-10-04",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
         {
@@ -12,7 +12,7 @@
           "employer": "杭州银行总行",
           "cycle": "current",
           "type": "campus",
-          "status": "open",
+          "status": "past",
           "major": "explicit",
           "directions": [
             "stats",
@@ -32,7 +32,7 @@
           ],
           "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27159050",
           "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
-          "risks": "轮岗考核不保证永久总行岗位；SQL等技能需据实，两个方向专业范围不得互借。列表只有日期，无日内时刻。",
+          "risks": "轮岗考核不保证永久总行岗位；SQL等技能需据实，两个方向专业范围不得互借。列表只有日期，无日内时刻。 10/4原详情仅空壳，不能用旧专业条件证明当前可投；原岗位ID及9/28证据保留。",
           "name": "总行信息技术部培训生（数据研发方向）"
         },
         {
@@ -49,18 +49,76 @@
           "locations": [
             "杭州"
           ],
-          "requirements": "硕士及以上；经济或理工类（含统计）相关专业；毕业窗、语言和回避要求另核。",
+          "requirements": "硕士及以上；经济或理工类（含统计）相关专业；境内2027年1—7月、境外2026年1月至2027年7月毕业，7/31前获证；须有外语证明及满足回避要求。",
           "due": "2026-10-25",
           "dueTime": null,
           "deadlineScope": "官方列表所列本岗位截止",
           "refs": [
             "N0928-B01",
-            "N0928-B03"
+            "N0928-B03",
+            "U1004-S01",
+            "U1004-S02"
           ],
           "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158942",
           "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
           "risks": "先轮岗，经考评定岗到基层管理或总分支行，不能当作固定总行承诺。",
           "name": "总行培训生"
+        },
+        {
+          "id": "soe-15dcc83203fa8d55b59c-ai-27158946",
+          "name": "总行信息技术部培训生（人工智能方向）",
+          "employer": "杭州银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "related",
+          "directions": [
+            "ai",
+            "software",
+            "finance"
+          ],
+          "locations": [
+            "杭州"
+          ],
+          "requirements": "硕士及以上；AI、计算机科学与技术、智能科学技术、电子信息等相关；了解AI/大模型/算法/智能体且一个方向有深入研究，熟练Java或Python。毕业窗、外语及回避见本入口；未明确应用统计。",
+          "due": "2026-10-25",
+          "dueTime": null,
+          "deadlineScope": "官方校园列表本岗位10/25，仅日期",
+          "refs": [
+            "U1004-S01",
+            "U1004-S03"
+          ],
+          "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158946",
+          "applicationLimit": "本轮未核到完整志愿限制，提交前确认。",
+          "risks": "应用统计不在已列专业名称中，须招聘方确认相关专业口径；不能借用已过数据研发的明确应用统计条件。"
+        },
+        {
+          "id": "soe-15dcc83203fa8d55b59c-fx-27158944",
+          "name": "总行外汇条线培训生（杭州）",
+          "employer": "杭州银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "related",
+          "directions": [
+            "research",
+            "product",
+            "banking"
+          ],
+          "locations": [
+            "杭州"
+          ],
+          "requirements": "硕士及以上；理学、工学、经济学、管理学相关专业。市场研究及营销推动；有外语能力证明；境内2027年1—7月、境外2026年1月至2027年7月毕业并于7/31前获证。",
+          "due": "2026-10-25",
+          "dueTime": null,
+          "deadlineScope": "官方校园列表本岗位10/25，仅日期",
+          "refs": [
+            "U1004-S01",
+            "U1004-S04"
+          ],
+          "url": "https://myjob.hzbank.com.cn/hzzp-apply-web/static/index.html#/employDesc/27158944",
+          "applicationLimit": "本轮未核到完整志愿限制，提交前确认。",
+          "risks": "未明确应用统计0252，需确认专业学位口径；工作含营销推动，不是纯量化或算法岗位。"
         }
       ]
     },
@@ -188,8 +246,8 @@
       ]
     },
     "soe-b2bb7f2da8bb065dafbb": {
-      "basisHash": "116bdb45b13b41afa02129c080878d4b5d80664e4b21adf4a355ec3598eefd9f",
-      "reviewedOn": "2026-09-28",
+      "basisHash": "8c27a1b8403570e65202ca5ef8dd12fbcb5404548c5ce6d23d11f1f9fbad54bf",
+      "reviewedOn": "2026-10-04",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
         {
@@ -204,15 +262,16 @@
             "operations"
           ],
           "locations": [],
-          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "requirements": "总行岗位学历沿用9/28高校雇主表（硕士及以上），本次官方总公告补强截止和志愿规则；特殊专业及工作地以具体JD为准。",
           "due": "2026-10-08",
           "dueTime": "18:00",
           "deadlineScope": "浦发2027统一简历投递窗口",
           "refs": [
-            "N0928-B17"
+            "N0928-B17",
+            "U1004-S15"
           ],
           "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
-          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "applicationLimit": "最多报2家机构，每家最多2岗，须明确志愿顺序。",
           "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
           "name": "总行管理培训生"
         },
@@ -222,22 +281,23 @@
           "cycle": "current",
           "type": "campus",
           "status": "open",
-          "major": "unrestricted",
+          "major": "related",
           "directions": [
             "software",
             "finance"
           ],
           "locations": [],
-          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "requirements": "总行科技储备生以AI、数据科学、软件工程、金融科技等理工科专业为主；应用统计接受口径须JD确认。学历沿用9/28高校雇主表硕士及以上。",
           "due": "2026-10-08",
           "dueTime": "18:00",
           "deadlineScope": "浦发2027统一简历投递窗口",
           "refs": [
-            "N0928-B17"
+            "N0928-B17",
+            "U1004-S15"
           ],
           "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
-          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
-          "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
+          "applicationLimit": "最多报2家机构，每家最多2岗，须明确志愿顺序。",
+          "risks": "不能把总公告原则不限专业直接套用于科技储备生；应用统计、具体技术条件及工作地均须按JD核验。",
           "name": "总行科技储备生"
         },
         {
@@ -251,15 +311,16 @@
             "banking"
           ],
           "locations": [],
-          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "requirements": "总行岗位学历沿用9/28高校雇主表（硕士及以上），本次官方总公告补强截止和志愿规则；特殊专业及工作地以具体JD为准。",
           "due": "2026-10-08",
           "dueTime": "18:00",
           "deadlineScope": "浦发2027统一简历投递窗口",
           "refs": [
-            "N0928-B17"
+            "N0928-B17",
+            "U1004-S15"
           ],
           "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
-          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "applicationLimit": "最多报2家机构，每家最多2岗，须明确志愿顺序。",
           "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
           "name": "总行业务储备生"
         },
@@ -274,15 +335,16 @@
             "operations"
           ],
           "locations": [],
-          "requirements": "正文总行四类均硕士及以上；通用条件原则上不限专业，AI/数据科学/软件/金融科技与复合背景优先；特殊岗位条件仍须原JD。",
+          "requirements": "总行岗位学历沿用9/28高校雇主表（硕士及以上），本次官方总公告补强截止和志愿规则；特殊专业及工作地以具体JD为准。",
           "due": "2026-10-08",
           "dueTime": "18:00",
           "deadlineScope": "浦发2027统一简历投递窗口",
           "refs": [
-            "N0928-B17"
+            "N0928-B17",
+            "U1004-S15"
           ],
           "url": "https://career.nankai.edu.cn/correcruit/content/id/119296.html",
-          "applicationLimit": "本轮未核到完整志愿限制；提交前确认。",
+          "applicationLimit": "最多报2家机构，每家最多2岗，须明确志愿顺序。",
           "risks": "岗位名“管培/储备”不等于已定岗；专业原则不限不覆盖未展开的特殊条件。公告机构表未逐岗位给工作地，不能从总部上海推定所有岗位。",
           "name": "总行运营储备生"
         }
@@ -724,6 +786,101 @@
           "name": "加油（气）站经理储备"
         }
       ]
+    },
+    "soe-b9fb017b087135609736": {
+      "scope": "仅总行经济金融类；不是全行岗位清单。",
+      "reviewedOn": "2026-10-04",
+      "positions": [
+        {
+          "id": "soe-b9fb017b087135609736-economic-finance",
+          "name": "总行经济金融类",
+          "employer": "国家开发银行总行",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "statistics",
+          "directions": [
+            "banking",
+            "risk",
+            "research",
+            "finance",
+            "stats"
+          ],
+          "locations": [
+            "北京"
+          ],
+          "requirements": "总行经济金融类：硕士及以上，理论经济学、应用经济学、统计学等，对应专业学位类别一并纳入；应用统计代码、外语与其他资格仍须确认。",
+          "due": "2026-10-07",
+          "dueTime": "24:00",
+          "deadlineScope": "本届官方公告窗口；具体岗位另有说明时以岗位为准",
+          "refs": [
+            "U1004-S06",
+            "U1004-S07",
+            "U1004-S08"
+          ],
+          "url": "https://cdb2027.zhaopin.com/jobs/index.html?id=10126839",
+          "applicationLimit": "选报1—2家单位，各单位选报1—2岗，排序为志愿顺序；提交后岗位及个人资料不能修改。",
+          "risks": "提交申请后岗位与资料不能修改；不能把北京统计专业要求与西安IT工作地组合。"
+        }
+      ],
+      "basisHash": "7d90dfdf87e016d92a9ff5c6ad6993ebcde92968e4f4c5f5e7db4490a2fe8769"
+    },
+    "soe-8b77a831e8fa823d9737": {
+      "scope": "仅已展开的个人金融、风险管理板块金融科技岗；其他板块、分行及信用卡岗位不在本次子集。",
+      "reviewedOn": "2026-10-04",
+      "positions": [
+        {
+          "id": "soe-8b77a831e8fa823d9737-personal-fintech",
+          "name": "总行个人金融板块—金融科技岗",
+          "employer": "中国邮政储蓄银行总行本部",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "related",
+          "directions": [
+            "banking",
+            "finance"
+          ],
+          "locations": [],
+          "requirements": "本次已展开个人金融与风险管理板块金融科技岗：原则上硕士及以上，计算机、软件工程、理学、工学等相关，CET6≥425或TOEFL iBT≥85、IELTS≥6.5等。应用统计专硕是否认可需确认，未给具体工作城市。",
+          "due": "2026-10-07",
+          "dueTime": "24:00",
+          "deadlineScope": "本届官方公告窗口；具体岗位另有说明时以岗位为准",
+          "refs": [
+            "U1004-S09",
+            "U1004-S10"
+          ],
+          "url": "https://psbc2027.zhaopin.com/jobs/index.html?id=10134769",
+          "applicationLimit": "总行（含信用卡中心）与一级分行合计任意2岗；可另外申报控股子公司。",
+          "risks": "JD职责为个人金融、财富、消费信贷、网络金融、三农等业务经营管理，不因岗位名金融科技而认定纯研发；专业代码和工作地需确认。"
+        },
+        {
+          "id": "soe-8b77a831e8fa823d9737-risk-fintech",
+          "name": "总行风险管理板块—金融科技岗",
+          "employer": "中国邮政储蓄银行总行本部",
+          "cycle": "current",
+          "type": "campus",
+          "status": "open",
+          "major": "related",
+          "directions": [
+            "risk",
+            "finance"
+          ],
+          "locations": [],
+          "requirements": "本次已展开个人金融与风险管理板块金融科技岗：原则上硕士及以上，计算机、软件工程、理学、工学等相关，CET6≥425或TOEFL iBT≥85、IELTS≥6.5等。应用统计专硕是否认可需确认，未给具体工作城市。",
+          "due": "2026-10-07",
+          "dueTime": "24:00",
+          "deadlineScope": "本届官方公告窗口；具体岗位另有说明时以岗位为准",
+          "refs": [
+            "U1004-S09",
+            "U1004-S11"
+          ],
+          "url": "https://psbc2027.zhaopin.com/jobs/index.html?id=10134769",
+          "applicationLimit": "总行（含信用卡中心）与一级分行合计任意2岗；可另外申报控股子公司。",
+          "risks": "JD职责为风险、授信、信用审批、内控合规及法律等风控管理；理学/工学相关并非应用统计保证，工作地未列，不从总行通讯地址推断。"
+        }
+      ],
+      "basisHash": "eecc94c1ecd7779776a3d67d07ebb406be056be315169bc220667887a1ecdaa0"
     }
   }
 }
