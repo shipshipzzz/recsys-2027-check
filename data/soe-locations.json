@@ -380,7 +380,7 @@
           "scope": "本中心招聘含成都分中心；具体方向、专业及最终定岗需对应岗位附件。"
         }
       ],
-      "basisHash": "7f17b568868d9e2192fd4f59e296a60ef8dedaa64691346c61f5fbccb32f507c"
+      "basisHash": "8534ff98c4643e96fe73c39179495d14656120c51b9d72e7b362a38b3ef3d1fe"
     },
     "soe-946c8b35a6045d05921e": {
       "current": true,
@@ -429,7 +429,7 @@
         }
       ],
       "reviewedOn": "2026-09-27",
-      "basisHash": "21fc088721296c010577286cee10297262dc802c80260b4af038fdc914e0067a"
+      "basisHash": "04cda09a624ffed9b6beaf778d1da78f100816a674ffeab7eabd648aeedcecbd"
     },
     "soe-6f3da4b7ad2476020757": {
       "current": true,
@@ -466,7 +466,7 @@
           "scope": "公告招聘范围为宁波/台州；具体机构与岗位安排另核，不推定杭州。"
         }
       ],
-      "basisHash": "c4fbf6fe9247cd991cc904adeaade4d4b5d9cc2b0ca044e50a07541c7857937d"
+      "basisHash": "1f397e7a09b13e603dac5dd4b228796150422e39e359e88315f7737db254acf6"
     },
     "soe-140f2087c58956d157f6": {
       "current": true,
@@ -537,7 +537,7 @@
           ]
         }
       ],
-      "basisHash": "05382355aaf7f2acc19b8506e54f66047a5752640746384297989296d1450126"
+      "basisHash": "6f914e186243408cfad50a76644e0328949da6020f5cfdb3080b0fb212f35423"
     },
     "soe-c220d0f777ae54ac86c4": {
       "current": true,
@@ -808,7 +808,7 @@
           "scope": "总行经济金融类正文明确日常在北京工作，不能与西安信息科技岗位条件混用。"
         }
       ],
-      "basisHash": "6faa96612f56d985f2c57f11af323bb796ca52289a4c2ec0550bf16386b4a4ee"
+      "basisHash": "e8b69debc2eaeb886a638f0dfd31d7dd4bcb164a498e537c422602d6ac16aa70"
     },
     "soe-e43cb34e4c801cf57150": {
       "current": true,
@@ -831,7 +831,7 @@
         }
       ],
       "reviewedOn": "2026-09-27",
-      "basisHash": "3ccdfbb1d67e805db14234921a5855fdd55b1cfb0946526fb8970b6daf192c14"
+      "basisHash": "f52e293de68f18fc30ca3dbf111c45ecc4e09da48d928ec239086f708355ad31"
     },
     "soe-84e7d908cb72d28b63a2": {
       "current": true,
@@ -1064,7 +1064,7 @@
           "scope": "官方附件第10—11行资金营运投资交易及FinTech；两类岗位各有独立技能要求。"
         }
       ],
-      "basisHash": "ee1c8ffa7f34d0442c01deb333e4d3bb3ab67e2b5f527736951d5aae5c86a354"
+      "basisHash": "cbdd6aea0435baa9213758b154be3dab20156f66d63e70595d7c8d9366cde49b"
     },
     "soe-1390ea899a188a39617a": {
       "current": true,
@@ -1255,7 +1255,7 @@
           "level": "position"
         }
       ],
-      "basisHash": "28fac8a159da72e7ee2567b3252c38031ba19c0c05459d6d1e66ea975e746cdc"
+      "basisHash": "97422a8dbf3b97859bc6aea418667480f26ded647997d46db47d345a834d9cc5"
     },
     "soe-1d81f573583960b2ca09": {
       "current": true,
@@ -1276,7 +1276,7 @@
           "level": "position"
         }
       ],
-      "basisHash": "b4f0aac20bc9608c766ad1c7500a939cb971f808a1362feea6fe62ecb4fdc88c"
+      "basisHash": "90887d6c44e734d0d912cd7d9a231303ed83262859e95e618b101691428a7af3"
     },
     "soe-de9c4459438f9d40fc9c": {
       "current": true,
@@ -1602,7 +1602,7 @@
           "scope": "仅人力资源共享岗实际岗位工作地；同公告其他方向条件不可混配。"
         }
       ],
-      "basisHash": "7b02d77f5d8eab9c779b79e5a99593aa52e31af0c8d1b69cc8f29beec549e3be"
+      "basisHash": "bacf623eed336ead2515deb275b714dbadb91679f76402b859bbefaeb0ce89d8"
     },
     "soe-00f5a7bf22c3ecff3eff": {
       "current": true,
@@ -1635,7 +1635,7 @@
           "scope": "仅人工智能研究实际岗位工作地；同公告其他方向条件不可混配。"
         }
       ],
-      "basisHash": "95e5962bdccf82cb475a88c9515b1a42fb9225e48b9ae3f5e8dc853527a9f127"
+      "basisHash": "231762fab4f34b4a1556327d221affa33e612fc35852917469678d59868ea149"
     },
     "soe-12aceb3925f1d9fc514e": {
       "current": true,
@@ -1656,7 +1656,7 @@
           "scope": "仅人工智能技术研发岗实际岗位工作地；同公告其他方向条件不可混配。"
         }
       ],
-      "basisHash": "e11afb00143c75ca1810fff2ba80710d1a4bcfad17d5f7b1f9f416c4dd10cedf"
+      "basisHash": "12f1922fff7725a92702afcb7240a6a8ee09dbb6098e2e21dc76722d5e54d44d"
     },
     "soe-3bad984c354c08ffb3a5": {
       "current": true,
@@ -1858,7 +1858,7 @@
           "scope": "仅数据管理与应用岗的广西区内分配范围，具体城市未列。"
         }
       ],
-      "basisHash": "3a6e094675fdfef8ab7f48c7c2df2e5baa579b5a20f0b2787d87bf5f3e0cbddd"
+      "basisHash": "a5284c1620b78de4c03a057f749342126714112a8ba2d7a4b47b36c0c85afed1"
     },
     "soe-b24eccce088fab5acca4": {
       "current": true,

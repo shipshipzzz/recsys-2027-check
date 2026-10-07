@@ -15,6 +15,7 @@ const screening = read('data/soe-screening.json'),
 const opportunities = read('data/soe-opportunities.json');
 const coverage = read('docs/recruitment-coverage-2026-10-04.json');
 const snapshots = read('docs/recruitment-snapshots-2026-10-04.json');
+const deadlineSnapshots = read('docs/deadline-snapshots-2026-10-07.json');
 const find = (part) => catalog.DATA.find((item) => item.name.includes(part));
 const now = new Date('2026-10-04T12:00:00+08:00');
 
@@ -26,8 +27,16 @@ test('October review coverage accounts for all cards without backdating unreview
   assert.equal(coverage.entries.filter((row) => row.status === 'reviewed_scoped').length, 10);
   assert.equal(coverage.entries.filter((row) => row.status === 'not_reviewed').length, 138);
   for (const row of coverage.entries) {
-    const item = all.find((item) => item.id === row.id);
-    assert.ok(item);
+    const current = all.find((item) => item.id === row.id);
+    assert.ok(current);
+    // This manifest describes October 4, not the latest review. Later changes must
+    // retain a verifiable before-image instead of making historical dates mutable.
+    const item =
+      current.rev > coverage.reviewedOn
+        ? deadlineSnapshots.cards.find((saved) => saved.id === row.id)?.before
+        : current;
+    assert.ok(item, 'A later review must retain the historical card: ' + row.id);
+    assert.equal(item.id, current.id);
     if (row.status === 'not_reviewed') {
       assert.equal(row.checkedOn, null);
       assert.notEqual(item.rev, coverage.reviewedOn);

@@ -31,7 +31,18 @@ test('deep review: fresh and previous-round REC evidence have different visible 
     await expect(card(page, id).locator('.due-v')).toHaveText('滚动 / 截止待核');
   }
   const kuaishou = card(page, 'rec-b210af9eaeaa3d72cea6');
-  await expect(kuaishou.locator('.badges')).toContainText('本次官网记录');
+  const kuaishouFacts = rec.DATA.find((item) => item.id === 'rec-b210af9eaeaa3d72cea6');
+  const kuaishouCurrent = kuaishouFacts.audit.checked === rec.RECHECKED;
+  await expect(kuaishou.locator('.badges')).toContainText(
+    kuaishouCurrent ? '本次官网记录' : '官网记录·' + kuaishouFacts.audit.checked,
+  );
+  if (!kuaishouCurrent) await expect(kuaishou.locator('.badges')).not.toContainText('本次');
+  const fresh = rec.DATA.find(
+    (item) => item.audit?.checked === rec.RECHECKED && item.src === 'see',
+  );
+  expect(fresh).toBeTruthy();
+  await expect(card(page, fresh.id).locator('.badges')).toContainText('本次');
+  await expect(card(page, fresh.id).locator('.s-rev')).toContainText(rec.RECHECKED);
   const bili = card(page, 'rec-cfc3d445066f6e83ca1d');
   await expect(bili.locator('.badges')).toContainText('官网记录·2026-09-27');
   await expect(bili.locator('.badges')).not.toContainText('本次');
