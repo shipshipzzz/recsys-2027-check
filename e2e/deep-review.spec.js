@@ -91,6 +91,8 @@ test('deep review: date-only deadlines and CCB examination cities remain unambig
 test('deep review: updated role evidence retains source dates without implying personal qualification', async ({
   page,
 }) => {
+  // The assertion is about the live Oct 7 window, not the machine's present day.
+  await page.clock.install({ time: new Date('2026-10-07T12:00:00+08:00') });
   await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
   const cdb = card(page, 'soe-b9fb017b087135609736');
   await expect(cdb).toContainText(
@@ -123,4 +125,18 @@ test('deep review: official Zhejiang evidence supports research and software wit
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1),
   ).toBe(true);
+});
+
+// Complement the pre-deadline case; never change recruitment facts to satisfy the clock.
+test('deep review: expired scoped deadlines leave the action banner while evidence stays visible', async ({
+  page,
+}) => {
+  await page.clock.install({ time: new Date('2026-10-10T12:00:00+08:00') });
+  await page.goto('soe.html', { waitUntil: 'domcontentloaded' });
+  const cdb = card(page, 'soe-b9fb017b087135609736');
+  await expect(cdb.locator('.action-strip')).toContainText('其他岗位 / 新批次另核');
+  await expect(cdb.locator('.action-strip')).not.toContainText('2026-10-07');
+  await expect(cdb.locator('.position-list')).toContainText('2026-10-07');
+  await expect(cdb.locator('.position-list')).toContainText('专业依据不等于个人全部资格通过');
+  await expect(page.locator('#src-U0927-S27')).toContainText('2026-09-27');
 });

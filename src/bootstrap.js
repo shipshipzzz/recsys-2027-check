@@ -1,7 +1,9 @@
 // This small entry point keeps a failed page chunk from becoming a silent blank screen.
-const kind = document.documentElement.dataset.pageKind === 'soe' ? 'soe' : 'rec';
+import { KINDS, THEME_KEYS } from './catalog-kinds.js';
+const selectedKind = document.documentElement.dataset.pageKind;
+const kind = KINDS.includes(selectedKind) ? selectedKind : 'rec';
 try {
-  const saved = localStorage.getItem(kind === 'soe' ? 'soe-personal-theme' : 'recsys-theme');
+  const saved = localStorage.getItem(THEME_KEYS[kind]);
   const theme = ['light', 'dark'].includes(saved)
     ? saved
     : matchMedia('(prefers-color-scheme: dark)').matches
@@ -12,7 +14,12 @@ try {
   /* Restricted storage must not prevent startup. */
 }
 
-const load = kind === 'soe' ? () => import('./pages/soe.js') : () => import('./pages/rec.js');
+const loaders = {
+  rec: () => import('./pages/rec.js'),
+  soe: () => import('./pages/soe.js'),
+  div: () => import('./pages/div.js'),
+};
+const load = loaders[kind];
 load().catch(() => {
   const status =
     document.getElementById('app-loading') ||

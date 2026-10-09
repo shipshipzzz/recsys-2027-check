@@ -1,3 +1,4 @@
+import { KINDS, PAGE_FILES, STATIC_CATALOG_ASSETS } from '../src/catalog-kinds.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -22,30 +23,25 @@ const ASSET = /^assets\/[A-Za-z0-9_.-]+\.(?:js|css|json)$/;
 export function validateDataAssets(directory, root, metrics) {
   const manifest = JSON.parse(fs.readFileSync(path.join(directory, '.vite/manifest.json'), 'utf8'));
   const jsonAssets = {};
-  for (const name of [
-    'soe',
-    'soe-screening',
-    'soe-locations',
-    'soe-directory',
-    'soe-opportunities',
-  ]) {
-    const source = 'data/' + name + '.json';
-    const emitted = manifest[source]?.file;
-    assert.ok(emitted?.endsWith('.json'), 'Missing JSON in manifest: ' + source);
-    assert.match(emitted, ASSET);
-    const local = fs.readFileSync(path.join(root, source));
-    const built = fs.readFileSync(path.join(directory, emitted));
-    assert.deepEqual(
-      built,
-      local,
-      'JSON asset differs from its complete maintenance source: ' + source,
-    );
-    assert.ok(
-      metrics.pages['soe.html'].assets.includes(emitted),
-      'JSON missing from SOE dependency accounting',
-    );
-    jsonAssets[emitted] = createHash('sha256').update(built).digest('hex');
-  }
+  for (const [kind, names] of Object.entries(STATIC_CATALOG_ASSETS))
+    for (const name of names) {
+      const source = 'data/' + name + '.json';
+      const emitted = manifest[source]?.file;
+      assert.ok(emitted?.endsWith('.json'), 'Missing JSON in manifest: ' + source);
+      assert.match(emitted, ASSET);
+      const local = fs.readFileSync(path.join(root, source));
+      const built = fs.readFileSync(path.join(directory, emitted));
+      assert.deepEqual(
+        built,
+        local,
+        'JSON asset differs from its complete maintenance source: ' + source,
+      );
+      assert.ok(
+        metrics.pages[PAGE_FILES[kind]].assets.includes(emitted),
+        'JSON missing from page dependency accounting: ' + kind,
+      );
+      jsonAssets[emitted] = createHash('sha256').update(built).digest('hex');
+    }
   return jsonAssets;
 }
 
@@ -92,10 +88,9 @@ export function validateBuild(directory, budgets = BUILD_BUDGETS) {
   assert.ok(totalJsonGzip <= budgets.totalJsonGzip, 'Total JSON exceeds gzip budget');
   assert.ok(totalJsonBytes <= budgets.totalJsonBytes, 'Total JSON exceeds raw byte budget');
   const pages = {};
-  for (const [name, key] of [
-    ['index.html', 'src/pages/rec.js'],
-    ['soe.html', 'src/pages/soe.js'],
-  ]) {
+  for (const kind of KINDS) {
+    const name = PAGE_FILES[kind],
+      key = `src/pages/${kind}.js`;
     const html = fs.readFileSync(path.join(directory, name), 'utf8');
     assert.doesNotMatch(
       html,

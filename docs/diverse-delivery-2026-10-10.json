@@ -1,0 +1,68 @@
+{
+  "verifiedAt": "2026-10-09T17:05:46.733Z",
+  "timezone": "Asia/Shanghai",
+  "baseline": "7a4046e6f34bc5cc4b49f77047cb98b812633319",
+  "gitCommitted": false,
+  "gitPushed": false,
+  "pagesDeployed": false,
+  "newProductionCardsPublished": 0,
+  "productionSchemaMigration": "202610100005_diverse_catalog.sql",
+  "productionSchemaApplied": true,
+  "productionIntegrityChecks": {
+    "legacyCatalogUnchanged": true,
+    "privateCardStatesUnchanged": true,
+    "privateAgendaUnchanged": true,
+    "accountIdentitySetUnchanged": true,
+    "legacyCatalogDryRunPassed": true,
+    "privateRlsEnabled": true,
+    "anonymousAndAuthenticatedPublishDenied": true
+  },
+  "tests": {
+    "unitPassed": 170,
+    "browserPassed": 182,
+    "browserFailed": 0,
+    "browserSkipped": 0,
+    "browserFlaky": 0,
+    "isolatedDatabasePassed": 12,
+    "oldFilesByteIdentical": 10,
+    "fullVerify": true,
+    "baselineIdValidation": true,
+    "migrationGeneratorCheck": true
+  },
+  "localCatalogCounts": {
+    "companies": 166,
+    "job_entries": 167,
+    "sources": 241,
+    "entry_links": 275,
+    "entry_audits": 138,
+    "job_sources": 289,
+    "entry_deadlines": 7,
+    "catalog_archives": 3,
+    "timeline_events": 50,
+    "change_logs": 8
+  },
+  "catalogSha256": "540a099897d8662c6cb99ef8f2cca007491e1da1c8b5f2d1222806618e258781",
+  "diverse": {
+    "entryCards": 19,
+    "positionRecords": 13,
+    "directionRecords": 16,
+    "currentCohortRecords": 22,
+    "currentCohortEntryCards": 13,
+    "crossLinksToOldEntries": 4,
+    "sources": 20,
+    "excludedCounsellorCategories": 4
+  },
+  "build": {
+    "budgetsRaised": false,
+    "totalJavaScriptGzip": 152715,
+    "divJavaScriptGzip": 86565,
+    "divJsonGzip": 14179,
+    "divCssGzip": 8589
+  },
+  "limitations": [
+    "This is a verified starter dataset, not the entire earlier candidate list.",
+    "Role evidence does not establish individual eligibility or live vacancies.",
+    "Production new-card state writes were not tested with real accounts; use full deployment first.",
+    "Raw private integrity receipts remain in git-ignored local test-results."
+  ]
+}

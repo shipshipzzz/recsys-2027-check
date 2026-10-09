@@ -596,6 +596,11 @@ export function createPersonalManager(
   );
   store.notify = update;
   const manager = {
+    resetFilter() {
+      filter = 'all';
+      filterLabel.querySelector('select').value = 'all';
+      update();
+    },
     status: (item) => store.status(item.id),
     muted: (item) => isMuted(store.status(item.id)),
     matches: (item) => filter === 'all' || store.status(item.id) === filter,

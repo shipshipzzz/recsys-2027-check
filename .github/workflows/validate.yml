@@ -29,6 +29,11 @@ jobs:
           npm run lint
           npm run format:check
       - run: npm test
+      - name: Test database migration with isolated PostgreSQL
+        run: |
+          npm install --prefix "$RUNNER_TEMP/recsys-div-db-test" --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org @electric-sql/pglite@0.3.14
+          node scripts/test-diverse-db.mjs "$RUNNER_TEMP/recsys-div-db-test/node_modules/@electric-sql/pglite/dist/index.js"
+
       - run: npm run build
       - run: npm run build:check
       - run: npx playwright install --with-deps chromium

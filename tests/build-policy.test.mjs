@@ -13,16 +13,17 @@ function fixture(t) {
   const manifest = {
     bootstrap: {
       file: 'assets/bootstrap.js',
-      dynamicImports: ['src/pages/rec.js', 'src/pages/soe.js'],
+      dynamicImports: ['src/pages/rec.js', 'src/pages/soe.js', 'src/pages/div.js'],
     },
     shared: { file: 'assets/shared.js' },
     'src/pages/rec.js': { file: 'assets/rec.js', imports: ['shared'] },
     'src/pages/soe.js': { file: 'assets/soe.js', imports: ['shared'] },
+    'src/pages/div.js': { file: 'assets/div.js', imports: ['shared'] },
   };
   fs.writeFileSync(path.join(directory, '.vite/manifest.json'), JSON.stringify(manifest));
   for (const value of Object.values(manifest))
     fs.writeFileSync(path.join(directory, value.file), 'export const value = 1;');
-  for (const name of ['index.html', 'soe.html'])
+  for (const name of ['index.html', 'soe.html', 'div.html'])
     fs.writeFileSync(
       path.join(directory, name),
       '<html><head><meta http-equiv="Content-Security-Policy" content="default-src \'self\'; script-src \'self\'; object-src \'none\'"></head><body><script type="module" src="/recsys-2027-check/assets/bootstrap.js"></script></body></html>',
@@ -35,6 +36,9 @@ test('build policy follows the selected dynamic page and shared static dependenc
   assert.ok(result.pages['index.html'].assets.includes('assets/rec.js'));
   assert.ok(!result.pages['index.html'].assets.includes('assets/soe.js'));
   assert.ok(result.pages['soe.html'].assets.includes('assets/shared.js'));
+  assert.ok(result.pages['div.html'].assets.includes('assets/div.js'));
+  assert.ok(!result.pages['div.html'].assets.includes('assets/rec.js'));
+  assert.ok(!result.pages['index.html'].assets.includes('assets/div.js'));
 });
 
 test('missing dynamic chunks and unreasonably small budgets fail the build gate', (t) => {
@@ -61,7 +65,7 @@ test('inline scripts and known privileged credentials fail before release genera
 
 test('HTML-encoded CSP emitted by Vite is validated as browser-decoded policy text', (t) => {
   const directory = fixture(t);
-  for (const name of ['index.html', 'soe.html']) {
+  for (const name of ['index.html', 'soe.html', 'div.html']) {
     const file = path.join(directory, name);
     fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replaceAll("'", '&#39;'));
   }
@@ -74,26 +78,33 @@ test('JSON assets are included in page/total budgets, safety checks and source i
   const manifestFile = path.join(directory, '.vite/manifest.json');
   const manifest = JSON.parse(fs.readFileSync(manifestFile, 'utf8'));
   manifest['src/pages/soe.js'].assets = [];
+  manifest['src/pages/div.js'].assets = [];
   for (const name of [
     'soe',
     'soe-screening',
     'soe-locations',
     'soe-directory',
     'soe-opportunities',
+    'div',
+    'div-screening',
   ]) {
     const source = 'data/' + name + '.json',
       file = 'assets/' + name + '.json';
     fs.writeFileSync(path.join(directory, source), '{"history":["preserved"]}');
     fs.writeFileSync(path.join(directory, file), '{"history":["preserved"]}');
     manifest[source] = { file };
-    manifest['src/pages/soe.js'].assets.push(file);
+    manifest['src/pages/' + (name.startsWith('div') ? 'div' : 'soe') + '.js'].assets.push(file);
   }
   fs.writeFileSync(manifestFile, JSON.stringify(manifest));
   const metrics = validateBuild(directory);
   assert.ok(metrics.totalJsonGzip > 0);
-  assert.equal(metrics.pages['soe.html'].jsonGzip, metrics.totalJsonGzip);
+  assert.equal(
+    metrics.pages['soe.html'].jsonGzip + metrics.pages['div.html'].jsonGzip,
+    metrics.totalJsonGzip,
+  );
+  assert.ok(metrics.pages['div.html'].jsonGzip > 0);
   assert.equal(metrics.pages['index.html'].jsonGzip, 0);
-  assert.equal(Object.keys(validateDataAssets(directory, directory, metrics)).length, 5);
+  assert.equal(Object.keys(validateDataAssets(directory, directory, metrics)).length, 7);
   assert.throws(
     () => validateBuild(directory, { ...BUILD_BUDGETS, totalJsonGzip: 1 }),
     /JSON.*budget/,

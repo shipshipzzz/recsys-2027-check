@@ -16,7 +16,7 @@ function checkSubset(expected, actual, path) {
       checkSubset(expected[key], actual?.[key], path + '.' + key);
   } else assert.deepEqual(actual, expected, path);
 }
-for (const kind of ['rec', 'soe']) {
+for (const kind of ['rec', 'soe', 'div']) {
   test(kind + ': every current and historical field survives database roundtrip', () => {
     const original = catalogs[kind],
       actual = hydratedFromTables(kind, tables);
@@ -44,7 +44,7 @@ test('normalized catalog has complete stable references and never imports privat
   assert.equal(tables.job_entries.length, count);
   assert.equal(new Set(tables.job_entries.map((x) => x.id)).size, count);
   for (const e of tables.job_entries) {
-    assert.match(e.id, /^(rec|soe)-[a-f0-9]{20}$/);
+    assert.match(e.id, /^(rec|soe|div)-[a-f0-9]{20}$/);
     assert.ok(tables.companies.some((c) => c.id === e.company_id));
   }
   for (const r of tables.job_sources) assert.ok(tables.sources.some((s) => s.id === r.source_id));

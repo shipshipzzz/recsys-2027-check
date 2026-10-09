@@ -1,3 +1,4 @@
+import { CARD_ID } from './catalog-kinds.js';
 import { safeHref } from './shared/dom.js';
 
 export const TIMELINE_TYPES = Object.freeze({
@@ -53,8 +54,7 @@ export function normalizeTimelineEvent(value) {
   if (!value || !isUUID(value.id)) throw new Error('日程标识无效');
   if (!Object.hasOwn(TIMELINE_TYPES, value.event_type)) throw new Error('日程类型无效');
   if (!Object.hasOwn(TIMELINE_STATUSES, value.status)) throw new Error('日程状态无效');
-  if (value.entry_id != null && !/^(rec|soe)-[a-f0-9]{20}$/.test(value.entry_id))
-    throw new Error('关联卡片无效');
+  if (value.entry_id != null && !CARD_ID.test(value.entry_id)) throw new Error('关联卡片无效');
   if (typeof value.is_deleted !== 'boolean') throw new Error('删除标记无效');
   const starts_at = timestamp(value.starts_at);
   const ends_at = value.ends_at == null ? null : timestamp(value.ends_at);

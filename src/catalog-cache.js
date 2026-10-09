@@ -1,3 +1,4 @@
+import { CARD_ID } from './catalog-kinds.js';
 import { SOE_TRACKS } from './soe-policy.js';
 import { finalizeCatalog } from './catalog-model.js';
 
@@ -5,6 +6,7 @@ const RECORD = (value) => value !== null && typeof value === 'object' && !Array.
 const STATUSES = {
   rec: ['open', 'intern', 'wait', 'verify'],
   soe: ['open', 'soon', 'verify', 'watch', 'past'],
+  div: ['open', 'soon', 'verify', 'watch', 'past', 'intern'],
 };
 const stringList = (value) =>
   Array.isArray(value) && value.every((item) => typeof item === 'string');
@@ -14,7 +16,7 @@ const validLinks = (value) =>
     (link) =>
       Array.isArray(link) && link.length === 2 && link.every((part) => typeof part === 'string'),
   );
-const idPattern = /^(rec|soe)-[a-f0-9]{20}$/;
+const idPattern = CARD_ID;
 export const CATALOG_CACHE_TTL = 24 * 60 * 60 * 1000;
 
 /** A small runtime boundary guards fields consumed by the rendering code. */

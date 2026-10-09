@@ -2,9 +2,9 @@
 
 ## 日常只维护哪里
 
-招聘卡片的唯一日常维护源是仓库中的 `data/rec.json` 和 `data/soe.json`。`main` 分支每次 push 后，Actions 自动校验、测试、构建、事务同步 Supabase、核对云端数据、发布 `dist/`。不必打开 Supabase Table Editor，也不必重新生成或手工执行 `seed.sql`。
+招聘卡片的唯一日常维护源是仓库中的 `data/rec.json`、`data/soe.json` 和 `data/div.json`。`main` 分支每次 push 后，Actions 自动校验、测试、构建、事务同步 Supabase、核对云端数据、发布 `dist/`。不必打开 Supabase Table Editor，也不必重新生成或手工执行 `seed.sql`。
 
-网页标题、静态说明、排版样式仍在 `index.html`、`soe.html` 和 `src/` 中。它们也通过相同 push 自动部署，不属于数据库卡片字段。`RECHECKED` 表示招聘信息实际核查日期，不是代码发布日期，不能只因部署就改成今天。
+网页标题、静态说明、排版样式仍在 `index.html`、`soe.html`、`div.html` 和 `src/` 中。它们也通过相同 push 自动部署，不属于数据库卡片字段。`RECHECKED` 表示招聘信息实际核查日期，不是代码发布日期，不能只因部署就改成今天。
 
 个人投递状态仍由网页自动写入 `user_card_states`。卡片发布脚本不读取、不覆盖、不删除该表，也不修改 Auth 账号。跨设备同步继续要求登录同一个账号。
 
@@ -46,11 +46,12 @@ git push origin main
 ```powershell
 npm run card:id -- rec "新公司名称"
 npm run card:id -- soe "新公司名称"
+npm run card:id -- div "新公司名称"
 ```
 
-把输出的 `rec-...` / `soe-...` 填入新 JSON 卡片的 `id`。可以复制同类卡片作为结构模板，但必须替换名称、ID、真实岗位内容和来源；不要重复已有 ID。校验和云端核对的数量均从 JSON 动态计算，不再写死57/29。发布后这个 ID 不再变更。
+把输出的 `rec-...` / `soe-...` / `div-...` 填入对应新 JSON 卡片的 `id`。可以复制同类卡片作为结构模板，但必须替换名称、ID、真实岗位内容和来源；不要重复已有 ID。校验和云端核对的数量均从 JSON 动态计算，不再写死57/29。发布后这个 ID 不再变更。
 
-同一公司出现在两页时，同一 ID 后缀对应同一公司实体；两页的中英文名称必须一致。相同来源 ID（如 `R01`）也是全局共享，两份 JSON 中该来源的元数据必须一致；更新共享来源时同时修改两份，校验器会指出遗漏。
+历史同一公司出现在多页时，同一 ID 后缀对应同一公司实体；各页的中英文名称必须一致。相同来源 ID（如 `R01`）也是全局共享，各份 JSON 中该来源的元数据必须一致；更新共享来源时同时维护所有相关副本，校验器会指出遗漏。
 
 ## 截止日期、历史与来源
 
@@ -72,7 +73,7 @@ npm run card:id -- soe "新公司名称"
 
 1. 仅 `main` 的 push 或手动运行 `Deploy GitHub Pages` 能发布。
 2. 安装锁定依赖，校验 JSON，并与 push 前的 Git 版本比较稳定 ID。
-3. 运行全部单元测试，构建 Vite，检查两页的资源路径和产物中是否混入 secret key。
+3. 运行全部单元测试，构建 Vite，检查三页的资源路径和产物中是否混入 secret key。
 4. 以一次 `recsys_apply_catalog` RPC 同步10张公共资料表。数据库拿事务锁、检查删除风险、更新数据，在提交前逐表逐字段比对。本事务任一步出错，整批回滚。
 5. 使用浏览器级 public key 再独立读取全部公共表，对比本地快照，验证未登录者不能读取私人状态或调用同步 RPC。
 6. 上传 `dist/` 并发布 GitHub Pages。发布步骤使用固定 commit SHA 的官方 GitHub Actions。
@@ -81,7 +82,7 @@ npm run card:id -- soe "新公司名称"
 
 ## 部署后自动验收
 
-发布流程现在会在 Pages 部署之后继续运行 `npm run test:pages`。它使用不带账号或密钥的公开 HTTP 请求，检查线上 `release.json` 的 Git 提交和公共数据摘要，并把首页、SOE 页及所有直接引用的 JS/CSS 与本次本地构建逐字节比对，同时检查 MIME 类型。这样能识别旧部署、资源缺失以及源码被当作构建产物发布等问题。
+发布流程现在会在 Pages 部署之后继续运行 `npm run test:pages`。它使用不带账号或密钥的公开 HTTP 请求，检查线上 `release.json` 的 Git 提交和公共数据摘要，并把三个 HTML 入口及全部 JS/CSS/JSON 与本次本地构建逐字节比对，同时检查 MIME 类型。这样能识别旧部署、资源缺失以及源码被当作构建产物发布等问题。
 
 短暂的 Pages 分发延迟会触发有限次数重试；持续不一致会明确让工作流失败，不会无限转圈。该检查是公开文件验收，不等同于自动登录或跨设备交互测试。云端数据的完整比对仍由前面的 `npm run test:cloud` 独立完成。
 
@@ -143,3 +144,11 @@ RPC 校验、权限或约束失败：数据库整批回滚，Pages 不会继续�
 新增 data/soe-directory.json 与 data/soe-opportunities.json 为前端审核附表，随五份SOE静态JSON资产发布，不增加生产SQL列，不修改原有用户状态。具体契约见 national-engineering.md。机构简称/HQ线索是导航；专业/日期等肯定值须绑定当前事实。
 
 构建将五份SOE JSON作为带内容哈希的同源资源，release.json记录json_assets摘要；发布校验逐字节确认文件、MIME和预算。全量JS及单页JS原门槛不变，JSON另有200KiB gzip/2MiB raw边界，不允许通过转移文件类型绕过完整资产检查。发布仍需当前任务明确授权。
+
+## 多元机会首次发布
+
+先应用并验证 `supabase/migrations/202610100005_diverse_catalog.sql`，再在明确授权下提交和推送包含第三页的完整变更。此迁移已经由 SQL Editor 应用；并非由 Supabase CLI 自动记录迁移历史。后续若改用 CLI，应先核对已部署的结构与迁移历史，不可假定 CLI 状态已同步。
+
+迁移后旧的 rec/soe 两页目录仍可发布；第一次发布 div 后，旧的双页快照会触发父卡片删除保护。回滚应保留新增 ID，以新提交修复，不应运行旧发布或删除 div 卡片。
+
+首次本地交付阶段只升级生产结构。新目录仅通过获授权的 main 发布流程写入；本地开发与自动测试使用隔离环境。确认部署完成后刷新旧标签页再使用新卡片账号同步，避免旧客户端仍只识别两种 ID。不要提前单独写入新卡片的个人状态。

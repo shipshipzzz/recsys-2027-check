@@ -19,7 +19,7 @@ function fixture(t) {
       counts: { job_entries: 2 },
     }),
   );
-  for (const name of ['index.html', 'soe.html']) {
+  for (const name of ['index.html', 'soe.html', 'div.html']) {
     fs.writeFileSync(
       path.join(directory, name),
       '<html><head><link rel="stylesheet" href="https://fonts.googleapis.com/test.css"><link rel="stylesheet" href="/recsys-2027-check/assets/style.css"><link rel="modulepreload" href="/recsys-2027-check/assets/shared.js"></head><body><script type="module" src="/recsys-2027-check/assets/main.js"></script></body></html>',
@@ -49,13 +49,13 @@ function fixture(t) {
   return { directory, fetchImpl, requests };
 }
 
-test('live verification checks release, both pages, shared assets, bytes and MIME without credentials', async (t) => {
+test('live verification checks release, all three pages, shared assets, bytes and MIME without credentials', async (t) => {
   const f = fixture(t);
-  assert.equal(deploymentFiles(f.directory).length, 6);
+  assert.equal(deploymentFiles(f.directory).length, 7);
   const receipt = await verifyDeployment({ ...f, revision: REVISION, attempts: 1 });
   assert.equal(receipt.verified, true);
-  assert.equal(receipt.files_verified, 6);
-  assert.equal(f.requests.length, 6);
+  assert.equal(receipt.files_verified, 7);
+  assert.equal(f.requests.length, 7);
 });
 test('an old release cannot be reported as a successful deployment', async (t) => {
   const f = fixture(t);
@@ -134,7 +134,7 @@ test('dynamically imported assets are verified even without HTML preload referen
   fs.writeFileSync(path.join(f.directory, 'assets', 'lazy-page.js'), 'export const value = 1;');
   assert.ok(deploymentFiles(f.directory).includes('assets/lazy-page.js'));
   const receipt = await verifyDeployment({ ...f, revision: REVISION, attempts: 1 });
-  assert.equal(receipt.files_verified, 7);
+  assert.equal(receipt.files_verified, 8);
   const fetchImpl = async (url, options) =>
     url.pathname.endsWith('lazy-page.js')
       ? new Response('export const value = 0;', { headers: { 'content-type': 'text/javascript' } })
@@ -157,7 +157,7 @@ test('released JSON bytes and MIME are checked and missing data cannot disappear
   assert.ok(deploymentFiles(f.directory).includes(file));
   assert.equal(
     (await verifyDeployment({ ...f, revision: REVISION, attempts: 1 })).files_verified,
-    7,
+    8,
   );
   await assert.rejects(
     verifyDeployment({

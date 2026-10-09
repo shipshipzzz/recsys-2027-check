@@ -1,3 +1,4 @@
+import { CARD_ID } from './catalog-kinds.js';
 import { readPages } from './shared/pagination.js';
 import { VALID_STATES } from './catalog-model.js';
 
@@ -12,10 +13,7 @@ export async function writeUserStateBatch(client, userId, batch) {
     !Array.isArray(batch) ||
     batch.length > 100 ||
     batch.some(
-      (item) =>
-        !item ||
-        !/^(rec|soe)-[a-f0-9]{20}$/.test(item.entry_id) ||
-        !VALID_STATES.includes(item.status),
+      (item) => !item || !CARD_ID.test(item.entry_id) || !VALID_STATES.includes(item.status),
     ) ||
     new Set(batch.map((item) => item.entry_id)).size !== batch.length
   )

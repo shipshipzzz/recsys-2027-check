@@ -1,5 +1,6 @@
 import { normalizeState, VALID_STATES } from './catalog-model.js';
-const validId = (id) => /^(rec|soe)-[a-f0-9]{20}$/.test(id);
+import { CARD_ID } from './catalog-kinds.js';
+const validId = (id) => CARD_ID.test(id);
 const timestamp = (value) => typeof value === 'string' && Number.isFinite(Date.parse(value));
 
 /** Pending edits are durable until their exact mutation has a valid server receipt. */

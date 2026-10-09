@@ -6,7 +6,8 @@ import { createHash } from 'node:crypto';
 import { FIELD_MAP, hydrateCatalog } from '../src/catalog-model.js';
 
 export const ROOT = fileURLToPath(new URL('../', import.meta.url));
-export const KINDS = ['rec', 'soe'];
+export { KINDS } from '../src/catalog-kinds.js';
+import { KINDS, LEGACY_KINDS, CARD_ID } from '../src/catalog-kinds.js';
 export const PRIMARY_KEYS = Object.freeze({
   companies: ['id'],
   job_entries: ['id'],
@@ -69,7 +70,7 @@ export const COLUMNS = Object.freeze({
   ],
   change_logs: ['id', 'kind', 'position', 'event_on', 'title', 'summary', 'items'],
 });
-export const CARD_ID = /^(rec|soe)-[a-f0-9]{20}$/;
+export { CARD_ID } from '../src/catalog-kinds.js';
 const statuses = new Set(['open', 'intern', 'wait', 'verify', 'soon', 'watch', 'past']);
 const own = (object, key) => Object.hasOwn(object, key);
 const must = (condition, message) => {
@@ -153,19 +154,20 @@ export function loadCatalogs(root = ROOT) {
   );
 }
 export function cardId(kind, name) {
-  must(KINDS.includes(kind), 'kind must be rec or soe');
+  must(KINDS.includes(kind), 'kind must be rec, soe or div');
   text(name, 'name', true);
   return `${kind}-${createHash('sha256').update(name.normalize('NFC')).digest('hex').slice(0, 20)}`;
 }
 
 /** Pure conversion. Existing IDs, not display names, define company identity. */
-export function normalizeCatalogs(catalogs) {
-  keys(catalogs, KINDS, 'catalogs');
+export function normalizeCatalogs(catalogs, { legacy = false } = {}) {
+  const kinds = legacy ? LEGACY_KINDS : KINDS;
+  keys(catalogs, kinds, 'catalogs');
   const tables = Object.fromEntries(TABLE_NAMES.map((name) => [name, []]));
   const companies = new Map(),
     sources = new Map(),
     entries = new Set();
-  for (const kind of KINDS) {
+  for (const kind of kinds) {
     const d = catalogs[kind],
       label = `data/${kind}.json`;
     keys(
@@ -411,7 +413,7 @@ export function normalizeCatalogs(catalogs) {
   return tables;
 }
 export function validatePrevious(previous, current) {
-  const oldTables = normalizeCatalogs(previous),
+  const oldTables = normalizeCatalogs(previous, { legacy: !Object.hasOwn(previous, 'div') }),
     next = normalizeCatalogs(current);
   for (const table of ['job_entries', 'companies', 'sources']) {
     const ids = new Set(next[table].map((row) => row.id));

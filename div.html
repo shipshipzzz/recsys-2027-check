@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN" data-page-kind="div">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      name="description"
+      content="2027 届多元求职机会：外企、高校科研、金融量化、工业与专业服务。逐岗核对专业、地区、用工与学生干部条件，记录个人投递进度。"
+    />
+    <title>多元机会 · 2027 校招工作台</title>
+    <link rel="stylesheet" href="./src/styles/div.css" />
+    <link rel="stylesheet" href="./src/styles/enterprise.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#job-list">跳到招聘卡片</a>
+    <main class="wrap" id="main-content">
+      <div class="topbar">
+        <span class="brand">RecSys · 2027 求职工作台</span>
+        <nav class="top-actions" aria-label="招聘专栏">
+          <a class="ghost" href="index.html">算法推荐</a>
+          <a class="ghost" href="soe.html">央国企</a>
+          <a class="ghost" href="div.html" aria-current="page">多元机会</a>
+          <button class="ghost" id="theme-btn" type="button">深色模式</button>
+        </nav>
+      </div>
+      <nav class="page-directory" aria-label="页面目录" data-page-directory>
+        <span class="directory-label">目录</span>
+        <div class="directory-links">
+          <a href="#recruitment-overview">机会概览</a>
+          <a href="#job-list">岗位筛选</a>
+          <a href="#personal-workspace">投递与同步</a>
+          <a href="#personal-timeline">我的时间线</a>
+          <a href="#existing-opportunities">已收录入口</a>
+          <a href="#source-index">核查来源</a>
+        </div>
+      </nav>
+      <header class="hero" id="recruitment-overview" tabindex="-1">
+        <div class="kicker">Diverse Opportunities · 2027</div>
+        <h1>多元机会<em>不止一种职业选择</em></h1>
+        <p class="lede">
+          外企、高校科研、金融量化、工业与特色行业。面向应用统计背景，不限城市，也不把算法经历当作职业围栏。
+        </p>
+        <div class="meta">
+          <span>资料核查：<b id="div-reviewed">读取中</b>（北京时间）</span
+          ><span>今天：<b id="clock-date"></b></span><span>与原有专栏共用账号和投递状态</span>
+        </div>
+      </header>
+      <section class="stats div-stats" aria-label="多元机会统计">
+        <div class="stat"><b id="n-div">0</b><span>独立招聘入口</span></div>
+        <div class="stat"><b id="n-current">0</b><span>具有 2027 届依据的入口</span></div>
+        <div class="stat"><b id="n-positions">0</b><span>岗位记录（含待核方向）</span></div>
+        <div class="stat is-hot"><b id="n-urgent">0</b><span>14 天内有据截止的入口</span></div>
+      </section>
+      <aside class="div-notice" aria-label="资格筛选说明">
+        <strong>有招聘依据，不等于个人资格已通过。</strong>
+        <p>
+          默认隐藏明确要求学生干部经历的岗位。“未要求”仅指已读条件未列出，不代表所有附加条件都已满足。专业、地区和筛选结果始终对应同一个岗位；不把不同岗位的条件拼接起来。
+        </p>
+      </aside>
+      <section id="job-list" tabindex="-1" aria-labelledby="job-list-title">
+        <div class="div-section-heading">
+          <h2 id="job-list-title">招聘入口与具体岗位</h2>
+          <span id="count" role="status" aria-live="polite">正在读取资料</span>
+        </div>
+        <div class="toolbar div-toolbar">
+          <div class="div-search-row">
+            <label class="div-search"
+              ><span class="sr-only">搜索公司、城市、岗位与关键词</span
+              ><input id="q" type="search" placeholder="搜索单位、岗位、专业或关键词…" /></label
+            ><button class="ghost" id="reset-filters" type="button">重置筛选</button>
+          </div>
+          <div class="filters div-filters">
+            <label>单位类型<select id="category" aria-label="筛选单位类型"></select></label>
+            <label>岗位方向<select id="direction" aria-label="筛选岗位方向"></select></label>
+          </div>
+          <details class="div-filter-details" id="advanced-filters">
+            <summary>更多筛选：地区、届次、专业、用工与干部条件</summary>
+            <div class="div-filters">
+              <label>工作城市<select id="city" aria-label="筛选工作城市"></select></label>
+              <label>招聘届次<select id="cycle" aria-label="筛选招聘届次"></select></label>
+              <label>专业依据<select id="major" aria-label="筛选专业依据"></select></label>
+              <label>用工类型<select id="employment" aria-label="筛选用工类型"></select></label>
+              <label>干部条件<select id="leadership" aria-label="筛选学生干部要求"></select></label>
+              <label>招聘窗口<select id="status" aria-label="筛选招聘窗口"></select></label>
+              <label
+                >排序<select id="sort" aria-label="排序方式">
+                  <option value="priority">证据与参考优先级</option>
+                  <option value="due">最近有据截止优先</option>
+                  <option value="name">单位名称</option>
+                </select></label
+              >
+            </div>
+          </details>
+        </div>
+        <p id="app-loading" role="status">正在读取多元机会资料，个人记录不会被重置。</p>
+        <p class="div-empty" id="empty" hidden>
+          没有符合全部条件的记录。可以调整筛选；待核条件不等于不符合资格。
+        </p>
+        <div class="div-grid" id="grid"></div>
+      </section>
+      <details class="panel fold div-secondary" id="existing-opportunities">
+        <summary>
+          <h2>已在其他专栏收录</h2>
+          <span>保留原入口，不重复生成投递记录</span>
+        </summary>
+        <div class="fold-body">
+          <p>
+            相同招聘入口继续使用原卡片
+            ID。以下链接会打开对应专栏并按名称搜索；不会新建第二份投递状态。
+          </p>
+          <div class="div-crosslinks" id="existing-list"></div>
+        </div>
+      </details>
+      <details class="panel fold div-secondary" id="screening-boundaries">
+        <summary>
+          <h2>收录边界与暂不纳入</h2>
+          <span>不凑数量，不虚构资格</span>
+        </summary>
+        <div class="fold-body">
+          <p>
+            没有学生干部经历，不自动排除企业管培生或科研岗位。仅对明确的硬条件排除；教师资格、英语、毕业时间和项目到岗安排仍须逐岗确认。以下项目不计入招聘卡片数量。
+          </p>
+          <div id="excluded-list"></div>
+        </div>
+      </details>
+      <details class="panel fold div-secondary" id="source-index">
+        <summary>
+          <h2>核查记录与来源</h2>
+          <span id="audit-count"></span>
+        </summary>
+        <div class="fold-body">
+          <p>
+            来源记录区分官网正文、高校雇主公告、搜索索引和未取得正文。日期只采用明确的招聘期限，不把网页有效期或宣讲日当作岗位截止。
+          </p>
+          <div class="source-grid" id="source-list"></div>
+        </div>
+      </details>
+      <footer class="div-footer">
+        <p>招聘事实、资格评估与个人投递记录分别维护。安排日程不等于已经投递。</p>
+        <button class="ghost" id="export-btn" type="button">导出本专栏资料与核查说明</button>
+      </footer>
+    </main>
+    <script type="module" src="./src/bootstrap.js"></script>
+  </body>
+</html>

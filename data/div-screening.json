@@ -1,0 +1,900 @@
+{
+  "version": 1,
+  "targetGraduationYear": 2027,
+  "reviewedOn": "2026-10-10",
+  "entries": {
+    "div-f52daa9ab597ddb3bd44": {
+      "category": "foreign",
+      "poolKey": "hsbc-emerging-talent-2027",
+      "basisHash": "ba831bab59ea792d8cdfa3979a2b2b3f6b4783fbcdea522c985f22152b4f136d",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "Data Graduate",
+          "cities": [
+            "广州"
+          ],
+          "directions": [
+            "data",
+            "software"
+          ],
+          "requirements": "2027年7月前毕业或全职经验不足两年，须2027年3月或7月起全职到岗；GPA至少3/4或4/5，英语及普通话流利，有内地工作资格。",
+          "recordType": "position",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": {
+            "date": "2026-12-31",
+            "time": null,
+            "scope": "仅Data Graduate；可能提前关闭"
+          },
+          "restrictions": "原文未列具体专业目录；两年培养项目，不提供工作签证；同周期限一次申请。",
+          "id": "div-f52daa9ab597ddb3bd44-data-graduate",
+          "refs": [
+            "D001"
+          ]
+        }
+      ]
+    },
+    "div-a2878edf5c6c1bfa8909": {
+      "category": "foreign",
+      "poolKey": "caterpillar-r0000387381-2027",
+      "basisHash": "9fcb579a527b9c522b71602f2d9e09b7ee034413da80295434855dc28e242da9",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "数据分析工程师",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "data",
+            "software"
+          ],
+          "requirements": "本科及以上，统计、数学、计算机等相关；使用SQL、Python、BI分析工业数据。",
+          "recordType": "position",
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": {
+            "date": "2026-10-30",
+            "time": null,
+            "scope": "仅R0000387381职位页"
+          },
+          "restrictions": "需现场办公；不要将岗位要求工具直接视为本人已熟练。 职位页统一要求每周5天现场办公，并标注固定期限用工。",
+          "id": "div-a2878edf5c6c1bfa8909-analytics-shanghai",
+          "refs": [
+            "D002"
+          ]
+        },
+        {
+          "title": "数据科学工程师",
+          "cities": [
+            "无锡"
+          ],
+          "directions": [
+            "ai",
+            "data"
+          ],
+          "requirements": "机器学习、自然语言处理、业务统计与模型应用；具体专业目录未在该子岗位单独明确。",
+          "recordType": "position",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-30",
+            "time": null,
+            "scope": "仅R0000387381职位页"
+          },
+          "restrictions": "不套用上海数据分析岗的学历专业条件；需另核应用统计与合同安排。 职位页统一要求每周5天现场办公，并标注固定期限用工。",
+          "id": "div-a2878edf5c6c1bfa8909-data-science-wuxi",
+          "refs": [
+            "D002"
+          ]
+        }
+      ]
+    },
+    "div-c9dd6606d76cb4d46469": {
+      "category": "foreign",
+      "poolKey": "abb-china-campus-2027",
+      "basisHash": "74e8f655e4f64e5d31162609f461a2fb0ce79864b68c65bf3c1a673fee59d38d",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "数字化系统工程师—算法",
+          "cities": [
+            "厦门"
+          ],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "requirements": "公告列出厦门算法岗位；完整学历专业与技术要求待核。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "公告最多投3个职位；不能把招聘平台模板的不限专业当作岗位条件。",
+          "id": "div-c9dd6606d76cb4d46469-digital-algorithm",
+          "refs": [
+            "D003"
+          ]
+        }
+      ]
+    },
+    "div-4ff480b0e364b7407579": {
+      "category": "education",
+      "poolKey": "westlake-jin-lab-ra-202609",
+      "basisHash": "959f90cefda73acfe7eb1ef550c203a2867cc97e46cd6f58af3a9e7693e4217c",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "地学AI科研助理",
+          "cities": [
+            "杭州"
+          ],
+          "directions": [
+            "research",
+            "ai"
+          ],
+          "requirements": "学士及以上相关背景；机器学习或地学相关经历，Python/PyTorch、英文读写。",
+          "recordType": "position",
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "研究涉及多模态地学信息与勘探预测；不代表教师编制，2027到岗待确认。 官方页面列为全职；具体聘期及合同类型另核。",
+          "id": "div-4ff480b0e364b7407579-geoscience-ra",
+          "refs": [
+            "D004"
+          ]
+        },
+        {
+          "title": "电网规划与新能源评估科研助理",
+          "cities": [
+            "杭州"
+          ],
+          "directions": [
+            "research",
+            "data",
+            "supply"
+          ],
+          "requirements": "相关专业学士及以上，机器学习、电网预测、空间数据或软件开发能力至少一类；能使用Python等语言。",
+          "recordType": "position",
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计须确认相关专业认定；聘期、到岗和薪酬面议，不承诺事业编。 官方页面列为全职；具体聘期及合同类型另核。",
+          "id": "div-4ff480b0e364b7407579-energy-ra",
+          "refs": [
+            "D004"
+          ]
+        }
+      ]
+    },
+    "div-da9eafd4afb301010f68": {
+      "category": "research",
+      "poolKey": "shlab-campus-training-engineering",
+      "basisHash": "ed8fa6463265fa2a4017180bd15da82f1fbb98e0acf2a268d6923ff4207f805c",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "大模型训练青年研究员/工程师",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "ai",
+            "research"
+          ],
+          "requirements": "数学、统计、计算机等相关背景；SFT、RL等后训练方法与实验工程能力。",
+          "recordType": "position",
+          "major": "statistics",
+          "cycle": "unverified",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "岗位正文未明确2027毕业窗口；论文和材料科学经验属于需要单独评估的加分项。",
+          "id": "div-da9eafd4afb301010f68-llm-training",
+          "refs": [
+            "D005"
+          ]
+        }
+      ]
+    },
+    "div-3ebfc32cc5193abe720c": {
+      "category": "research",
+      "poolKey": "zhejianglab-campus-2027",
+      "basisHash": "e3812bde3301d700d4d13555d212a1f6eccda3c7e6f4ae8a01aa28322e9d5bd1",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "强化学习与后训练算法方向",
+          "cities": [],
+          "directions": [
+            "ai",
+            "research"
+          ],
+          "requirements": "2027年8月前毕业的理工科硕士或博士；具体岗位要求须回查。",
+          "recordType": "direction",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-3ebfc32cc5193abe720c-post-training",
+          "refs": [
+            "D006"
+          ]
+        },
+        {
+          "title": "科学基础模型方向",
+          "cities": [],
+          "directions": [
+            "ai",
+            "research"
+          ],
+          "requirements": "2027校招公告列科学基础模型方向；研究课题、学历专业及工作地逐岗核。",
+          "recordType": "direction",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-3ebfc32cc5193abe720c-scientific-model",
+          "refs": [
+            "D006"
+          ]
+        },
+        {
+          "title": "数据策略 / 治理 / 质量方向",
+          "cities": [],
+          "directions": [
+            "data",
+            "software"
+          ],
+          "requirements": "2027公告列数据相关方向；不将方向名称等同于完整职位资格。",
+          "recordType": "direction",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-3ebfc32cc5193abe720c-data-strategy",
+          "refs": [
+            "D006"
+          ]
+        }
+      ]
+    },
+    "div-e7710eb5861b6a029ebd": {
+      "category": "industry",
+      "poolKey": "getui-campus-2027",
+      "basisHash": "526c2cb48a363884fd1cc538ffc3886911c10a7ee62f52fcecaaf10bfe705cb3",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "算法工程师 CR-0006",
+          "cities": [
+            "杭州"
+          ],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "requirements": "2027届硕士及以上，机器学习/NLP/数据挖掘等相关；深度学习框架、Python或C/C++与Linux。",
+          "recordType": "position",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "以顶部2027具体JD为准；页面11月30日字段未确认为企业截止，保留空。",
+          "id": "div-e7710eb5861b6a029ebd-cr-0006",
+          "refs": [
+            "D007"
+          ]
+        }
+      ]
+    },
+    "div-800ba6f5a80b7e780ac7": {
+      "category": "industry",
+      "poolKey": "hundsun-campus-2027",
+      "basisHash": "48c0ba82bed10a5eb11d926d9d488e1de11cdf2b7426ca7988984c1a8949b845",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "算法 / AI应用 / 智能体 / 后训练方向",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "requirements": "毕业窗2026年9月至2027年8月；公告列该岗位方向，具体专业条件待核。",
+          "recordType": "direction",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-800ba6f5a80b7e780ac7-ai-posttraining",
+          "refs": [
+            "D008"
+          ]
+        }
+      ]
+    },
+    "div-e38e5b4b52ced73f893a": {
+      "category": "industry",
+      "poolKey": "sf-campus-2027",
+      "basisHash": "63781e9747ed86807525b4cd1fd5614db4a1736f3634d9c1c3c4428fa350ada3",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "运筹优化算法工程师方向",
+          "cities": [],
+          "directions": [
+            "supply",
+            "ai"
+          ],
+          "requirements": "2027届，毕业窗2026年10月至2027年9月；具体运筹技能、学历与专业要求待核。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-e38e5b4b52ced73f893a-or-algorithm",
+          "refs": [
+            "D009"
+          ]
+        },
+        {
+          "title": "大数据挖掘与分析工程师方向",
+          "cities": [],
+          "directions": [
+            "data",
+            "software"
+          ],
+          "requirements": "当届公告列数据挖掘岗位；单岗城市、专业和技能要求待核。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-e38e5b4b52ced73f893a-data-mining",
+          "refs": [
+            "D009"
+          ]
+        },
+        {
+          "title": "大模型算法工程师方向",
+          "cities": [],
+          "directions": [
+            "ai"
+          ],
+          "requirements": "当届公告列大模型算法岗位；具体模型方向与专业要求另核。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-e38e5b4b52ced73f893a-llm",
+          "refs": [
+            "D009"
+          ]
+        }
+      ]
+    },
+    "div-e4175061689eda636178": {
+      "category": "finance",
+      "poolKey": "southernfund-campus-2027",
+      "basisHash": "e97e832238d5052774b024ff3182e3b596d9b3668c6ae1cde71615dadc37247a",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "量化研究员",
+          "cities": [
+            "深圳"
+          ],
+          "directions": [
+            "quant",
+            "ai"
+          ],
+          "requirements": "硕士及以上，统计/数理/计算机/金融工程等；Python、机器学习、英文读写。",
+          "recordType": "position",
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": {
+            "date": "2026-10-25",
+            "time": null,
+            "scope": "本届秋招公告，未注明日内时刻"
+          },
+          "restrictions": "包含后续实习及考核，金融执业条件另核。",
+          "id": "div-e4175061689eda636178-quant",
+          "refs": [
+            "D010"
+          ]
+        },
+        {
+          "title": "债券指数研究员",
+          "cities": [
+            "深圳",
+            "上海",
+            "北京"
+          ],
+          "directions": [
+            "quant",
+            "data"
+          ],
+          "requirements": "硕士及以上统计等相关专业；概率统计、机器学习、Python及数据库。",
+          "recordType": "position",
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": {
+            "date": "2026-10-25",
+            "time": null,
+            "scope": "本届秋招公告，未注明日内时刻"
+          },
+          "restrictions": "需补固收及策略回测；岗位城市以最终志愿为准。",
+          "id": "div-e4175061689eda636178-bond-index",
+          "refs": [
+            "D010"
+          ]
+        },
+        {
+          "title": "固收+策略研究员",
+          "cities": [
+            "深圳",
+            "上海",
+            "北京"
+          ],
+          "directions": [
+            "quant",
+            "research"
+          ],
+          "requirements": "硕士及以上统计等相关专业；资产配置理解、数据分析和Python/Matlab。",
+          "recordType": "position",
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": {
+            "date": "2026-10-25",
+            "time": null,
+            "scope": "本届秋招公告，未注明日内时刻"
+          },
+          "restrictions": "研究方向偏金融资产配置，需接受实习考察并核志愿额度。",
+          "id": "div-e4175061689eda636178-fixed-income",
+          "refs": [
+            "D010"
+          ]
+        }
+      ]
+    },
+    "div-291a160b4d2821cec0e9": {
+      "category": "foreign",
+      "poolKey": "iqvia-campus-2027",
+      "basisHash": "574f1c53199e5b3a0d6bc71f59f6e0e03b9c632aa5888ef90292ce140e4c3340",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "RWE/RWA分析师 / 助理咨询顾问",
+          "cities": [
+            "上海",
+            "北京"
+          ],
+          "directions": [
+            "data",
+            "consulting",
+            "research"
+          ],
+          "requirements": "硕博，流行病学/生物统计/医学/公共卫生等相关；R、STATA或SAS，RWE研究及论文经历，英语。",
+          "recordType": "position",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读的本岗位条件未列学生干部经历，其他资格仍需逐项核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计不自动等于生物统计；在审地学论文不应包装成已发表临床研究。未确认本轮统一截止或志愿次数。",
+          "id": "div-291a160b4d2821cec0e9-r1566150",
+          "refs": [
+            "D011"
+          ]
+        }
+      ]
+    },
+    "div-8e6f24f4a672c8720fe5": {
+      "category": "other",
+      "poolKey": "chinaexpress-campus-2027",
+      "basisHash": "05e3a2a6f107187f8efb705af73aa4984872dd91b3f2cdcd36c440461ff6cae0",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "市场管理类",
+          "cities": [
+            "重庆"
+          ],
+          "directions": [
+            "operations",
+            "data"
+          ],
+          "requirements": "2027本科及以上；具体岗位不限专业，统计等优先；CET6 425或公告列示同等英语成绩。",
+          "recordType": "position",
+          "major": "unrestricted",
+          "cycle": "current",
+          "leadership": "preferred",
+          "leadershipBasis": "公告明确学生会/班级干部、奖学金等为优先，不是必须。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": null,
+          "restrictions": "含票价、舱位、航线和市场拓展；须满足民航背景调查与体检。",
+          "id": "div-8e6f24f4a672c8720fe5-market",
+          "refs": [
+            "D012"
+          ]
+        },
+        {
+          "title": "运行管理类",
+          "cities": [
+            "重庆"
+          ],
+          "directions": [
+            "supply",
+            "operations",
+            "data"
+          ],
+          "requirements": "2027本科及以上；具体岗位不限专业，数理统计等优先；英语要求同公告。",
+          "recordType": "position",
+          "major": "unrestricted",
+          "cycle": "current",
+          "leadership": "preferred",
+          "leadershipBasis": "学生干部为优先项，非硬性准入条件。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": null,
+          "restrictions": "职责含运行安全、资源调度与数据分析；具体轮班、培训安排另核。",
+          "id": "div-8e6f24f4a672c8720fe5-operations",
+          "refs": [
+            "D012"
+          ]
+        }
+      ]
+    },
+    "div-b61c7d641d8875bbd2d3": {
+      "category": "foreign",
+      "poolKey": "siemens-china-campus-2027",
+      "basisHash": "e9ca8a56ebeca3ff25b295d5e9a64daa3eb95b700018d30b86e6dfd294ab6876",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "数字化 / 研发 / 咨询方向",
+          "cities": [],
+          "directions": [
+            "software",
+            "consulting"
+          ],
+          "requirements": "2027当届招聘已确认；仅收录方向，具体学历、专业、城市与技能未核。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-b61c7d641d8875bbd2d3-digital",
+          "refs": [
+            "D013",
+            "D014"
+          ]
+        },
+        {
+          "title": "供应链 / 财务方向",
+          "cities": [],
+          "directions": [
+            "supply",
+            "operations"
+          ],
+          "requirements": "公告列供应链和财务招聘类别；应对照具体JD判断统计相关性。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-b61c7d641d8875bbd2d3-supply",
+          "refs": [
+            "D013",
+            "D014"
+          ]
+        }
+      ]
+    },
+    "div-60094bcf5292c4909fad": {
+      "category": "foreign",
+      "poolKey": "nvidia-china-ncg-2027",
+      "basisHash": "d6127a1df55b5b513a5f59a73c62e6c7708987bf79eddc6d07ad0273bb2a0004",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "2027 NCG：深度学习与高性能计算方向",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "requirements": "官方职位名称明确2027与China；完整职责和硬条件本轮尚未取得。",
+          "recordType": "direction",
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-60094bcf5292c4909fad-dl-hpc",
+          "refs": [
+            "D015"
+          ]
+        }
+      ]
+    },
+    "div-54e63932c880727c8d33": {
+      "category": "foreign",
+      "poolKey": "nxp-china-campus-2027",
+      "basisHash": "c6ae40234b398de757efbf65d7ff446277b8f4c6ecbcb81d98f10638ae396e4b",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "待核：软件 / 数据相关职位",
+          "cities": [],
+          "directions": [
+            "software",
+            "data"
+          ],
+          "requirements": "仅确认2027校招入口，未确认具体适配职位。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-54e63932c880727c8d33-pending-data",
+          "refs": [
+            "D016"
+          ]
+        }
+      ]
+    },
+    "div-48873d46481c42e3401f": {
+      "category": "research",
+      "poolKey": "baai-campus-2027",
+      "basisHash": "2b35827cd05021b2a9c00eae6d2d9b62b4dc0a8be53734d6774f4f210d9921bc",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "2027校招研究 / 工程岗位待核",
+          "cities": [],
+          "directions": [
+            "ai",
+            "research"
+          ],
+          "requirements": "官方社区已公告2027校招；具体方向与资格需从招聘系统读取。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-48873d46481c42e3401f-pending-research",
+          "refs": [
+            "D017"
+          ]
+        }
+      ]
+    },
+    "div-5622c3afafc49686794e": {
+      "category": "foreign",
+      "poolKey": "schneider-china-campus",
+      "basisHash": "a81d96b4c41aaa910db04d4fd092d6f3f29050daa4bf0d21abea77f067af0758",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "待核：数智化 / AI应用方向",
+          "cities": [],
+          "directions": [
+            "software",
+            "consulting",
+            "ai"
+          ],
+          "requirements": "当前证据存在2026/2027快照冲突；未取得完整当届JD。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-5622c3afafc49686794e-pending-digital",
+          "refs": [
+            "D018"
+          ]
+        }
+      ]
+    },
+    "div-4b398bfde9396f14b36b": {
+      "category": "services",
+      "poolKey": "deloitte-china-campus",
+      "basisHash": "b8e72df9c2bfc75c845c57d727b3511dc4dd9993dbbdea6234660cb3eb3cafca",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "待核：数据 / 技术咨询职位",
+          "cities": [],
+          "directions": [
+            "consulting",
+            "data"
+          ],
+          "requirements": "官网招聘渠道可访问，但未取得本轮2027具体数据或技术咨询JD。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-4b398bfde9396f14b36b-pending-consulting",
+          "refs": [
+            "D019"
+          ]
+        }
+      ]
+    },
+    "div-b7576f5c92a16572a4b2": {
+      "category": "services",
+      "poolKey": "accenture-china-campus",
+      "basisHash": "8511bfdfa10f547b9425d0d8b7891f8b4752c69814a48b48749b6793b86d566b",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "title": "待核：数据 / AI / 技术咨询职位",
+          "cities": [],
+          "directions": [
+            "consulting",
+            "software",
+            "data"
+          ],
+          "requirements": "保留官方校园招聘渠道；完整具体职位与2027资格待核。",
+          "recordType": "direction",
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读到完整岗位条件，不将未知写成不要求。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "restrictions": "应用统计0252及本人毕业时间、技能和其他条件由招聘方审核。",
+          "id": "div-b7576f5c92a16572a4b2-pending-ai-data",
+          "refs": [
+            "D020"
+          ]
+        }
+      ]
+    }
+  },
+  "existingEntries": [
+    {
+      "entryId": "rec-99da41b4a60e34d30b0c",
+      "name": "同花顺",
+      "reason": "已在原专栏收录，沿用原卡片及投递状态；本轮不重复新建，也不声称已重核原JD。"
+    },
+    {
+      "entryId": "rec-6ad1c8da5080c5147475",
+      "name": "度小满",
+      "reason": "已在原专栏收录，沿用原卡片及投递状态；本轮不重复新建，也不声称已重核原JD。"
+    },
+    {
+      "entryId": "rec-f2afc6db6fcedb278b78",
+      "name": "Wind 万得",
+      "reason": "已在原专栏收录，沿用原卡片及投递状态；本轮不重复新建，也不声称已重核原JD。"
+    },
+    {
+      "entryId": "soe-11e02d2dbe7515379cad",
+      "name": "厦门航空 · 规划财务 / 营销分析 / 管培",
+      "reason": "已在原专栏收录，沿用原卡片及投递状态；本轮不重复新建，也不声称已重核原JD。"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "长安大学专职辅导员",
+      "reason": "此前线索涉及学生干部或学生工作经历条件；本人几乎没有该经历，本次不计入可投卡片。未来有明确替代条件时另核。"
+    },
+    {
+      "name": "江南大学专职辅导员",
+      "reason": "此前线索涉及学生干部或学生工作经历条件；本人几乎没有该经历，本次不计入可投卡片。未来有明确替代条件时另核。"
+    },
+    {
+      "name": "厦门大学专职辅导员",
+      "reason": "此前线索涉及学生干部或学生工作经历条件；本人几乎没有该经历，本次不计入可投卡片。未来有明确替代条件时另核。"
+    },
+    {
+      "name": "上海外国语大学专职辅导员",
+      "reason": "此前线索涉及学生干部或学生工作经历条件；本人几乎没有该经历，本次不计入可投卡片。未来有明确替代条件时另核。"
+    }
+  ]
+}

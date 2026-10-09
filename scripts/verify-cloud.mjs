@@ -15,16 +15,18 @@ try {
   console.log(
     `PASS: full comparison of ${TABLE_NAMES.length} public catalog tables (including removed links, deadlines, source metadata and history).`,
   );
-  const privateRead = await client
-    .from('user_card_states')
-    .select('entry_id')
-    .limit(1)
-    .abortSignal(AbortSignal.timeout(10000));
-  assert.ok(
-    privateRead.error && ['42501', 'PGRST301'].includes(privateRead.error.code),
-    'Expected private-state permission denial, not an empty result/network failure',
-  );
-  console.log('PASS: unauthenticated private-state reads rejected.');
+  for (const privateTable of ['user_card_states', 'user_timeline_events']) {
+    const privateRead = await client
+      .from(privateTable)
+      .select('entry_id')
+      .limit(1)
+      .abortSignal(AbortSignal.timeout(10000));
+    assert.ok(
+      privateRead.error && ['42501', 'PGRST301'].includes(privateRead.error.code),
+      'Expected private-state permission denial, not an empty result/network failure',
+    );
+    console.log('PASS: unauthenticated reads rejected for ' + privateTable);
+  }
   const rpc = await client
     .rpc('recsys_apply_catalog', {
       p_catalog: {},

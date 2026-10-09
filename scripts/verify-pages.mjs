@@ -1,3 +1,4 @@
+import { PAGE_FILES } from '../src/catalog-kinds.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -15,8 +16,8 @@ const sha256 = (value) => createHash('sha256').update(value).digest('hex');
 
 /** Only inspect public build files, never browser sessions or the CI secret. */
 export function deploymentFiles(directory) {
-  const files = new Set(['release.json', 'index.html', 'soe.html']);
-  for (const name of ['index.html', 'soe.html']) {
+  const files = new Set(['release.json', ...Object.values(PAGE_FILES)]);
+  for (const name of Object.values(PAGE_FILES)) {
     const html = fs.readFileSync(path.join(directory, name), 'utf8');
     const scripts = [...html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["']/g)].map((m) => m[1]);
     assert.ok(scripts.length, `No built JavaScript in ${name}`);
@@ -154,13 +155,13 @@ async function main() {
     JSON.stringify(receipt, null, 2) + '\n',
   );
   console.log(
-    'PASS: published Pages revision, catalog digest, both HTML entrypoints, all JS/CSS/JSON bytes and MIME types match this build.',
+    'PASS: published Pages revision, catalog digest, all three HTML entrypoints, all JS/CSS/JSON bytes and MIME types match this build.',
   );
   console.log(JSON.stringify(receipt));
   if (process.env.GITHUB_STEP_SUMMARY) {
     fs.appendFileSync(
       process.env.GITHUB_STEP_SUMMARY,
-      `\n## Live Pages verification\n\n**Passed**: ${receipt.files_verified} public files match commit \`${revision}\` byte-for-byte.\n\nBoth entrypoints and their JavaScript/CSS/JSON MIME types were verified. This HTTP check does not simulate a user login.\n`,
+      `\n## Live Pages verification\n\n**Passed**: ${receipt.files_verified} public files match commit \`${revision}\` byte-for-byte.\n\nAll three entrypoints and their JavaScript/CSS/JSON MIME types were verified. This HTTP check does not simulate a user login.\n`,
     );
   }
 }

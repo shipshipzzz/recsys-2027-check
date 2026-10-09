@@ -25,7 +25,7 @@ fs.writeFileSync(
   JSON.stringify(metrics, null, 2) + '\n',
 );
 console.log(
-  'PASS: both entrypoints, all manifest dependencies, production CSP, known secret pattern and gzip budgets.',
+  'PASS: all three entrypoints, all manifest dependencies, production CSP, known secret pattern and gzip budgets.',
 );
 console.log(
   JSON.stringify({

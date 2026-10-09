@@ -1,3 +1,4 @@
+import { HISTORY_SOURCES } from '../catalog-kinds.js';
 import { escapeHTML, safeHref } from './dom.js';
 import { TZ, chinaDay } from './time.js';
 import { createPageNavigation } from './page-navigation.js';
@@ -20,7 +21,7 @@ export function createCatalogView(getCatalog, buildRail = () => null, extraExpor
     const { RECHECKED, PAGE_KIND } = getCatalog();
     const a = item.audit || {},
       fresh = a.checked === RECHECKED;
-    return `<div class="audit-note${fresh ? ' is-current' : ''}"><strong>${fresh ? escapeHTML(a.checked) + ' 核查记录' : '历史记录 / 口径说明'}</strong> ${escapeHTML(a.summary || '原8月快照完整保留；本轮未重新核对该公司职位池与规则。')} ${sourceRefs(a.refs || [PAGE_KIND === 'rec' ? 'H01' : 'H02'])}<small>${escapeHTML(fresh ? a.scope || '本届信息已核；岗位在线与个人资格另核' : '未注明本轮核实的岗位数量、条件与规则仍属历史信息，不代表今天在线。')}</small></div>`;
+    return `<div class="audit-note${fresh ? ' is-current' : ''}"><strong>${fresh ? escapeHTML(a.checked) + ' 核查记录' : '历史记录 / 口径说明'}</strong> ${escapeHTML(a.summary || '原8月快照完整保留；本轮未重新核对该公司职位池与规则。')} ${sourceRefs(a.refs || (HISTORY_SOURCES[PAGE_KIND] ? [HISTORY_SOURCES[PAGE_KIND]] : []))}<small>${escapeHTML(fresh ? a.scope || '本届信息已核；岗位在线与个人资格另核' : '未注明本轮核实的岗位数量、条件与规则仍属历史信息，不代表今天在线。')}</small></div>`;
   }
   function originalCard(item) {
     const { ORIGINAL_ITEMS } = getCatalog();

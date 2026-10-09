@@ -50,6 +50,7 @@ export default defineConfig(({ command, mode }) => {
         input: {
           main: resolve(process.cwd(), 'index.html'),
           soe: resolve(process.cwd(), 'soe.html'),
+          div: resolve(process.cwd(), 'div.html'),
         },
       },
     },

@@ -1,3 +1,4 @@
+import { loadDiverse, validateDiverse } from './validate-diverse.mjs';
 import { loadLocations, validateLocations } from './validate-locations.mjs';
 import { loadNational, validateNational } from './validate-national.mjs';
 import { loadScreening, validateScreening } from './validate-screening.mjs';
@@ -18,6 +19,10 @@ try {
     console.log(cardId(args[1], args.slice(2).join(' ')));
   } else {
     const local = loadCatalogs();
+    console.log(
+      'Diverse validation passed:',
+      JSON.stringify(validateDiverse(local, loadDiverse(ROOT))),
+    );
     const national = loadNational(ROOT);
     console.log(
       'National validation passed:',
@@ -39,7 +44,19 @@ try {
         throw new Error('--base must be a full Git commit SHA');
       if (!/^0+$/.test(ref)) {
         const previous = Object.fromEntries(
-          KINDS.map((k) => [
+          KINDS.filter((k) => {
+            // A new catalog may not exist at the previous commit. Other read/parse errors still fail.
+            try {
+              execFileSync('git', ['cat-file', '-e', `${ref}:data/${k}.json`], {
+                cwd: ROOT,
+                stdio: 'pipe',
+              });
+              return true;
+            } catch (error) {
+              if (k === 'div' && error.status === 128) return false;
+              throw error;
+            }
+          }).map((k) => [
             k,
             JSON.parse(
               execFileSync('git', ['show', `${ref}:data/${k}.json`], {

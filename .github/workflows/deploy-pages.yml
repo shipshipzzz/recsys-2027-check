@@ -58,6 +58,11 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Test database migration with isolated PostgreSQL
+        run: |
+          npm install --prefix "$RUNNER_TEMP/recsys-div-db-test" --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org @electric-sql/pglite@0.3.14
+          node scripts/test-diverse-db.mjs "$RUNNER_TEMP/recsys-div-db-test/node_modules/@electric-sql/pglite/dist/index.js"
+
       # Build without the privileged secret before changing any cloud data.
       - name: Build and validate Pages artifact
         run: |

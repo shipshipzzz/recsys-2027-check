@@ -1,0 +1,21 @@
+{
+  "reviewedOn": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "baseline": "7a4046e6f34bc5cc4b49f77047cb98b812633319",
+  "cards": 19,
+  "positions": 29,
+  "currentPositions": 22,
+  "existingLinks": 4,
+  "excluded": 4,
+  "completePositionRecords": 13,
+  "directionRecords": 16,
+  "sourceCount": 20,
+  "scope": "首批19个新增入口；未将此前63条方向线索当成已核可投JD。余下候选没有全部补录，非全量招聘复核。",
+  "boundaries": [
+    "未登录招聘系统投递；未改变个人状态",
+    "不同岗位条件不得拼接",
+    "学生干部硬要求排除，优先和未知分开",
+    "已有4个入口保留原ID",
+    "招聘信息不随页面时钟自动复核"
+  ]
+}

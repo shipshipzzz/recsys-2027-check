@@ -662,6 +662,8 @@ document.querySelectorAll('.filters .chip').forEach((btn) =>
     render();
   }),
 );
+const initialQuery = new URLSearchParams(location.search).get('q');
+if (initialQuery) document.getElementById('q').value = initialQuery.slice(0, 500);
 const disposeSearch = bindSearch(document.getElementById('q'), render);
 document.getElementById('sort').addEventListener('change', (e) => {
   sortBy = e.target.value;

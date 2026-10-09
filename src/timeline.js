@@ -42,7 +42,7 @@ export function createTimelineManager({ client, storage, namespace, catalog, anc
   section.id = 'personal-timeline';
   section.tabIndex = -1;
   section.setAttribute('aria-labelledby', 'timeline-heading');
-  section.innerHTML = `<div class="timeline-heading"><div><h2 id="timeline-heading">我的时间线</h2><p>测评、笔试、面试，集中安排。两页共用；全部时间按北京时间（UTC+8）。</p></div><div class="timeline-buttons"><button type="button" data-timeline-add>新增日程</button><button type="button" data-timeline-export>导出日程</button></div></div>
+  section.innerHTML = `<div class="timeline-heading"><div><h2 id="timeline-heading">我的时间线</h2><p>测评、笔试、面试，集中安排。跨专栏共用；全部时间按北京时间（UTC+8）。</p></div><div class="timeline-buttons"><button type="button" data-timeline-add>新增日程</button><button type="button" data-timeline-export>导出日程</button></div></div>
     <div class="timeline-counts" data-timeline-counts aria-label="日程统计"></div>
     <div class="timeline-filters"><label>搜索日程<input type="search" data-timeline-query placeholder="公司、事项或备注" maxlength="160"></label><label>日程类型<select data-timeline-type><option value="all">全部类型</option>${options(TIMELINE_TYPES)}</select></label><label>完成状态<select data-timeline-status><option value="all">全部状态</option>${options(TIMELINE_STATUSES)}</select></label><label>时间范围<select data-timeline-period><option value="all">全部时间</option><option value="today">今天</option><option value="week">未来七天（含今天）</option><option value="overdue">已逾期</option></select></label></div>
     <div class="timeline-sync-row"><span data-timeline-sync role="status" aria-live="polite"></span><div class="timeline-buttons"><button type="button" data-timeline-refresh hidden>同步日程</button><button type="button" data-timeline-import hidden>导入本机日程</button></div></div>

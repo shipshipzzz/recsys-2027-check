@@ -1,3 +1,5 @@
+import { SOURCE_PREFIXES, HISTORY_SOURCES } from '../catalog-kinds.js';
+
 /** Include every cited source, while keeping unrelated cloud-page sources out. */
 export function sourceIdsForPage(catalog) {
   const refs = new Set();
@@ -6,9 +8,9 @@ export function sourceIdsForPage(catalog) {
   for (const item of items) include(item.audit?.refs);
   for (const event of Object.values(catalog.REC_DEADLINES || {})) include(event?.refs);
   for (const event of catalog.TIMELINE_EVENTS || []) include(event.refs);
-  const prefix = catalog.PAGE_KIND === 'rec' ? 'R' : 'S';
-  const historical = catalog.PAGE_KIND === 'rec' ? 'H01' : 'H02';
+  const prefix = SOURCE_PREFIXES[catalog.PAGE_KIND];
+  const historical = HISTORY_SOURCES[catalog.PAGE_KIND];
   return Object.keys(catalog.SOURCES || {}).filter(
-    (id) => id.startsWith(prefix) || id === historical || refs.has(id),
+    (id) => (prefix && id.startsWith(prefix)) || (historical && id === historical) || refs.has(id),
   );
 }
