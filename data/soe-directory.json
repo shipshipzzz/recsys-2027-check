@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "reviewedOn": "2026-10-04",
+  "reviewedOn": "2026-10-10",
   "groups": [
     {
       "id": "icbc",
@@ -937,14 +937,18 @@
         "中国信保",
         "出口信用保险"
       ],
-      "entryIds": [],
+      "entryIds": [
+        "soe-3f71cbbf4892de74fc17"
+      ],
       "hqEntryIds": [],
-      "reviewState": "attempted_unresolved",
-      "checkedOn": "2026-09-28",
-      "scope": "已查到公告/线索但尚未落实可单独收录的当前岗位，或原入口访问未成。全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。 本轮另检查：中国信保 · 2027暑期实习已过（公开web工具；）",
-      "nextAction": "跟进sinosure.zhaopin.com新的2027正式校招公告。",
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
       "sourceUrls": [
-        "https://aeo.uibe.edu.cn/front/zpxx.jspa?tid=2068955670782160898"
+        "https://aeo.uibe.edu.cn/front/zpxx.jspa?tid=2068955670782160898",
+        "https://bj.bendibao.com/job/xjh/detail143988.html",
+        "https://sinosure.zhaopin.com/"
       ]
     },
     {
@@ -1138,13 +1142,17 @@
       "aliases": [
         "华泰"
       ],
-      "entryIds": [],
+      "entryIds": [
+        "soe-774c2ece320b701dad2b"
+      ],
       "hqEntryIds": [],
-      "reviewState": "not_reviewed",
-      "checkedOn": null,
-      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
-      "sourceUrls": []
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://career.csu.edu.cn/campus/view/id/590305"
+      ]
     },
     {
       "id": "sdicsec",
@@ -1356,13 +1364,17 @@
         "中债登",
         "中债"
       ],
-      "entryIds": [],
+      "entryIds": [
+        "soe-fb6fb8da1b1aff4211f8"
+      ],
       "hqEntryIds": [],
-      "reviewState": "not_reviewed",
-      "checkedOn": null,
-      "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
-      "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
-      "sourceUrls": []
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://career.cuhk.edu.cn/en/job/view/id/469749"
+      ]
     },
     {
       "id": "shclearing",
@@ -2935,6 +2947,149 @@
       "scope": "全国发现清单中的待查机构；没有在招、专业合格或单位性质结论，不计入可投卡片。",
       "nextAction": "分别核总部/直属机构/成员单位的具体岗位、专业、城市、期限和志愿规则。",
       "sourceUrls": []
+    },
+    {
+      "id": "exp-swsmu",
+      "name": "申万菱信基金",
+      "sector": "金融/产业/公共服务",
+      "aliases": [
+        "申万菱信基金",
+        "SWS MU Fund"
+      ],
+      "entryIds": [
+        "soe-c27082b76dbdd952f906"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/118082.html"
+      ]
+    },
+    {
+      "id": "exp-hikvision",
+      "name": "海康威视",
+      "sector": "金融/产业/公共服务",
+      "aliases": [
+        "海康威视",
+        "Hikvision"
+      ],
+      "entryIds": [
+        "soe-bb755bc9eba4105249bf"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://smcareer.xmu.edu.cn/info/1008/32205.htm"
+      ]
+    },
+    {
+      "id": "exp-chinapost-insurance",
+      "name": "中邮保险 · 总部及资管分支",
+      "sector": "金融/产业/公共服务",
+      "aliases": [
+        "中邮保险 · 总部及资管分支",
+        "China Post Life Insurance"
+      ],
+      "entryIds": [
+        "soe-e2a4e4d27a5f31ac69f4"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2435021.htm"
+      ]
+    },
+    {
+      "id": "exp-boe",
+      "name": "京东方",
+      "sector": "金融/产业/公共服务",
+      "aliases": [
+        "京东方",
+        "BOE"
+      ],
+      "entryIds": [
+        "soe-782d09f8e61d7a698554"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://career.ecnu.edu.cn/career/zwxx/view/09a2abd7f78ff87ac55791f3feb23284",
+        "https://career.cup.edu.cn/campus/view/id/460246",
+        "https://career.cup.edu.cn/company/view/id/313232"
+      ]
+    },
+    {
+      "id": "exp-guoyuan",
+      "name": "国元证券",
+      "sector": "金融/产业/公共服务",
+      "aliases": [
+        "国元证券",
+        "Guoyuan Securities"
+      ],
+      "entryIds": [
+        "soe-db7bf281b2195bdaa598"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2450576.htm"
+      ]
+    },
+    {
+      "id": "exp-guosen",
+      "name": "国信证券",
+      "sector": "金融/产业/公共服务",
+      "aliases": [
+        "国信证券",
+        "Guosen Securities"
+      ],
+      "entryIds": [
+        "soe-e3a2237267065f266f77"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://career.nankai.edu.cn/correcruit/content/id/119562.html",
+        "https://www.sz.gov.cn/cn/xxgk/zfxxgj/bmdt/content/post_12351489.html"
+      ]
+    },
+    {
+      "id": "exp-wanlian",
+      "name": "万联证券",
+      "sector": "金融/产业/公共服务",
+      "aliases": [
+        "万联证券",
+        "Wanlian Securities"
+      ],
+      "entryIds": [
+        "soe-e2bdf7fec2b7e48dca51"
+      ],
+      "hqEntryIds": [],
+      "reviewState": "reviewed_current",
+      "checkedOn": "2026-10-10",
+      "scope": "补充本轮关联招聘入口与岗位子集；原集团其他记录保留，不宣称成员单位全部核实。",
+      "nextAction": "核对各职位专业、届次、工作地点、申请额度和用工条件；不按省市重复建卡。",
+      "sourceUrls": [
+        "https://job.hust.edu.cn/zpinfo1/2449167.htm"
+      ]
     }
   ]
 }

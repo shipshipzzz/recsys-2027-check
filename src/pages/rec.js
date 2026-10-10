@@ -105,6 +105,9 @@ function cardHTML(item, i, hidden) {
         ${ev ? `<p class="node-scope">${escapeHTML(ev.scope)} · ${escapeHTML(ev.note || '')} ${sourceRefs(ev.refs)}</p>` : ''}
         <p class="field"><b>何时结束</b>${escapeHTML(item.closes || '未见统一截止')}</p><p class="field"><b>岗位情况</b>${escapeHTML(item.jobs)}</p>
         <p class="field"><b>何时放出</b>${escapeHTML(item.opened)}</p><p class="field"><b>毕业时间</b>${escapeHTML(item.window)}</p><p class="field"><b>城市</b>${escapeHTML(item.city)}</p><p class="field"><b>硬性要求</b>${escapeHTML(item.req)}</p>
+        ${item.risk ? `<p class="field"><b>资格与取舍</b>${escapeHTML(item.risk)}</p>` : ''}
+        ${item.ownership ? `<p class="field"><b>用人主体</b>${escapeHTML(item.ownership)}</p>` : ''}
+        ${item.action ? `<p class="field"><b>下一步</b>${escapeHTML(item.action)}</p>` : ''}
         ${auditHTML(item)}${evidenceLinks(item)}${historyHTML(item)}</details></article>`;
 }
 function matchFilter(item) {

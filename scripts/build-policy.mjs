@@ -8,7 +8,9 @@ import { createHash } from 'node:crypto';
 export const BUILD_BUDGETS = Object.freeze({
   // 2026-09-27: 44 new evidence sources and 3 cards add 7,674 gzip bytes.
   // Keep history/offline evidence; measured baseline and revised limits are documented in the review.
-  totalJsonGzip: 200 * 1024,
+  // 2026-10-10: 71 additional entries and their cited evidence: 214,328 gzip bytes.
+  // Only the aggregate JSON allowance grows; per-page JSON, raw bytes and every code budget stay fixed.
+  totalJsonGzip: 256 * 1024,
   pageJsonGzip: 200 * 1024,
   totalJsonBytes: 2 * 1024 * 1024,
   totalJavaScriptGzip: 210 * 1024,

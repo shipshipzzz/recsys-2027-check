@@ -89,3 +89,7 @@ build:check 输出 test-results/build-metrics.json，并生成 dist/release.json
 ## 第三专栏
 
 三页身份与资源清单集中在 `src/catalog-kinds.js`。新增类别必须同时更新前端、缓存、卡片/日程 ID 校验、发布基线兼容、数据库及资源验收，不能只增加导航。多元机会实现与隔离数据库验收见 [专栏工程说明](diverse-engineering.md)。
+
+## 2026-10-10 全范围扩库的JSON预算
+
+71个新增入口及来源使初次构建的全站JSON gzip达214,328字节，超过旧200KiB总量。只将全站合计JSON限额调整至256KiB；单页JSON200KiB、raw2MiB和全部原有JS/CSS/HTML预算不变。没有删除旧历史，不绕过逐字节资产校验。前后范围与测量原因见[扩库说明](recruitment-expansion-2026-10-10.md)。

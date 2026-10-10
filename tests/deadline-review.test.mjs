@@ -14,9 +14,10 @@ const snapshots = json('../docs/deadline-snapshots-2026-10-07.json');
 const cards = new Map([...rec.DATA, ...rec.EXTRA, ...soe.DATA].map((x) => [x.id, x]));
 
 test('October deadline review accounts for every old card without claiming a full fresh review', () => {
-  assert.equal(cards.size, 148);
-  assert.equal(audit.coverage.length, cards.size);
-  assert.equal(new Set(audit.coverage.map((x) => x.id)).size, cards.size);
+  // This immutable report covers the 148 entries present on October 7, not future additions.
+  assert.equal(audit.coverage.length, 148);
+  assert.equal(new Set(audit.coverage.map((x) => x.id)).size, 148);
+  assert.ok(cards.size >= audit.coverage.length);
   for (const row of audit.coverage) {
     assert.ok(cards.has(row.id));
     assert.equal(row.eligibilityRevalidated, false);

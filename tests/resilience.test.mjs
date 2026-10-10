@@ -51,7 +51,10 @@ test('catalog is immediately usable without even starting a network request', ()
     },
   });
   assert.equal(calls, 0);
-  assert.equal(resource.current.ALL_ITEMS.length, 57);
+  assert.equal(
+    resource.current.ALL_ITEMS.length,
+    fallback.DATA.length + (fallback.EXTRA?.length || 0),
+  );
   assert.equal(resource.current.connection, 'fallback');
   assert.equal(JSON.stringify(fallback), original);
 });

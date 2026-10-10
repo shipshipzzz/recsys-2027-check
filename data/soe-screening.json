@@ -1638,6 +1638,198 @@
       ],
       "reviewedOn": "2026-09-28",
       "basisHash": "97af724dd151e07c64eae3646a76e7b498b783705679f3ac4e73615513bbae36"
+    },
+    "soe-774c2ece320b701dad2b": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "software",
+        "research",
+        "operations",
+        "product"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "金融科技、投资管理、财富管理和职能业务均可核查；不局限算法。",
+      "evidenceRefs": [
+        "E1010-huatai-1"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "3ce379b9e1dcb3e6fd2644653ade441fa0de2a39fb232653c2ff32e9f769bd05"
+    },
+    "soe-c27082b76dbdd952f906": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "ai",
+        "research",
+        "stats",
+        "operations",
+        "product"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "金融工程、数量研究和运营岗位具有统计能力应用场景。",
+      "evidenceRefs": [
+        "E1010-swsmu-1"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "0980f6cf77397c14150e71b96614d8ada7b53f1a6fe600ef0ee5ed899050a869"
+    },
+    "soe-bb755bc9eba4105249bf": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "ai",
+        "stats",
+        "supply",
+        "software",
+        "operations",
+        "product"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "存在真实招聘入口及统计、研究、经营或工程方向的核查价值；具体职责和培养条件仍由求职者取舍。",
+      "evidenceRefs": [
+        "E1010-hikvision-1"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "c4f8787f4ea998c3c8c555f77982eb4fe98464018ea320bb5df063ca097b4f57"
+    },
+    "soe-fb6fb8da1b1aff4211f8": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "stats",
+        "software",
+        "research",
+        "operations"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "存在真实招聘入口及统计、研究、经营或工程方向的核查价值；具体职责和培养条件仍由求职者取舍。",
+      "evidenceRefs": [
+        "E1010-ccdc-1"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "09dadf81986d82fbfb02e46f6eeaebdb17da4b485dacfde663f5afcddae01863"
+    },
+    "soe-3f71cbbf4892de74fc17": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "software",
+        "research",
+        "product"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "存在真实招聘入口及统计、研究、经营或工程方向的核查价值；具体职责和培养条件仍由求职者取舍。",
+      "evidenceRefs": [
+        "E1010-sinosure-1",
+        "E1010-sinosure-2"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "84c23fec8d12d4d040c3b166351d28c487cdbc6a1e7902da7fec1f8ca25df801"
+    },
+    "soe-e2a4e4d27a5f31ac69f4": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "stats",
+        "operations",
+        "software"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "存在真实招聘入口及统计、研究、经营或工程方向的核查价值；具体职责和培养条件仍由求职者取舍。",
+      "evidenceRefs": [
+        "E1010-chinapost-insurance-1"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "9847d295cfb1537743ffb8257529143701abe62f7f625601c0c56d01efd62ea7"
+    },
+    "soe-782d09f8e61d7a698554": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "ai",
+        "stats",
+        "software",
+        "operations",
+        "product",
+        "supply"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "存在真实招聘入口及统计、研究、经营或工程方向的核查价值；具体职责和培养条件仍由求职者取舍。",
+      "evidenceRefs": [
+        "E1010-boe-1",
+        "E1010-boe-2",
+        "E1010-boe-3"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "3c61d630d06651d7f29313d4937b2bde97389ef3a4ac6f3d9a90f5918bd2c08b"
+    },
+    "soe-db7bf281b2195bdaa598": {
+      "major": "unrestricted",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "stats",
+        "ai",
+        "operations",
+        "product"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "存在真实招聘入口及统计、研究、经营或工程方向的核查价值；具体职责和培养条件仍由求职者取舍。",
+      "evidenceRefs": [
+        "E1010-guoyuan-1"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "2b2e0a0e6d446e6e7df9981ef907332977aa6cf5206c59e6dedba05e0076ee3a"
+    },
+    "soe-e3a2237267065f266f77": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "ai",
+        "software",
+        "stats",
+        "research",
+        "product",
+        "operations"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "当届公告直接列AI算法、开发、研究、交易与业务岗位；统计和工程履历具有逐岗核查价值。",
+      "evidenceRefs": [
+        "E1010-guosen-1",
+        "E1010-guosen-2"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "6aa1b5e6e06178fa8df1d418fa2d388287ea8be1689cdd462cd19c7832d007b2"
+    },
+    "soe-e2bdf7fec2b7e48dca51": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "software",
+        "operations",
+        "product"
+      ],
+      "basis": "逐岗位的专业条件、届次与核查范围见招聘卡及附表。统计相关、理工或不限专业均不自动保证0252资审通过。",
+      "qualityBasis": "统计背景可核投研、信息技术、经营与财富分析方向；培养岗位没有列学生干部硬要求。",
+      "evidenceRefs": [
+        "E1010-wanlian-1"
+      ],
+      "reviewedOn": "2026-10-10",
+      "basisHash": "c8cc4717e9b5737d75d6ce4ad1445deb7167312a176f08b70def4081eb00cd5f"
     }
   },
   "reviewedOn": "2026-10-04"

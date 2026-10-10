@@ -1941,6 +1941,197 @@
         }
       ],
       "basisHash": "f04bfd9f365a1c36db447a8056fcd44471804923c5a0a1811d404bf3aeb095e7"
+    },
+    "soe-db7bf281b2195bdaa598": {
+      "current": true,
+      "reviewedOn": "2026-10-10",
+      "locations": [
+        {
+          "city": "合肥",
+          "province": "安徽",
+          "level": "position",
+          "scope": "管培生—投资方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "research",
+            "stats",
+            "ai"
+          ]
+        },
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "scope": "管培生—投资方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "research",
+            "stats",
+            "ai"
+          ]
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "scope": "管培生—投资方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "research",
+            "stats",
+            "ai"
+          ]
+        },
+        {
+          "city": "合肥",
+          "province": "安徽",
+          "level": "position",
+          "scope": "管培生—资产配置方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "research",
+            "stats"
+          ]
+        },
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "scope": "管培生—资产配置方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "research",
+            "stats"
+          ]
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "scope": "管培生—资产配置方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "research",
+            "stats"
+          ]
+        },
+        {
+          "city": "合肥",
+          "province": "安徽",
+          "level": "position",
+          "scope": "管培生—综合方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "operations"
+          ]
+        },
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "position",
+          "scope": "管培生—综合方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "operations"
+          ]
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "position",
+          "scope": "管培生—综合方向：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "directions": [
+            "operations"
+          ]
+        }
+      ],
+      "basisHash": "40a77a4aa8f3a2f6d7634e02f353fdbf3c09a5536a43b0eae9400a2d6336b1ee"
+    },
+    "soe-e2bdf7fec2b7e48dca51": {
+      "current": true,
+      "reviewedOn": "2026-10-10",
+      "locations": [
+        {
+          "city": "广州",
+          "province": "广东",
+          "level": "campaign",
+          "scope": "总部管理培训生计划（七大业务方向）：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-wanlian-1"
+          ],
+          "directions": [
+            "research",
+            "software",
+            "operations",
+            "product"
+          ]
+        },
+        {
+          "city": "北京",
+          "province": "北京",
+          "level": "campaign",
+          "scope": "总部管理培训生计划（七大业务方向）：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-wanlian-1"
+          ],
+          "directions": [
+            "research",
+            "software",
+            "operations",
+            "product"
+          ]
+        },
+        {
+          "city": "上海",
+          "province": "上海",
+          "level": "campaign",
+          "scope": "总部管理培训生计划（七大业务方向）：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-wanlian-1"
+          ],
+          "directions": [
+            "research",
+            "software",
+            "operations",
+            "product"
+          ]
+        },
+        {
+          "city": "深圳",
+          "province": "广东",
+          "level": "campaign",
+          "scope": "总部管理培训生计划（七大业务方向）：仅该岗位或公告清单列明的地点，其他岗位不得借用。",
+          "refs": [
+            "E1010-wanlian-1"
+          ],
+          "directions": [
+            "research",
+            "software",
+            "operations",
+            "product"
+          ]
+        }
+      ],
+      "basisHash": "dd6101ad5ce144532028ab3766d809abad8b81c54e06377505d7ab3c602864bf"
     }
   },
   "reviewedOn": "2026-10-04"

@@ -43,7 +43,14 @@ test('diverse: offline snapshot, defaults and three-column navigation render wit
   await expect(page.getByRole('heading', { level: 1 })).toContainText('多元机会');
   await expect(page.locator('#leadership')).toHaveValue('hide_required');
   await expect(page.locator('#n-div')).toHaveText(String(count));
-  await expect(page.locator('#count')).toContainText('29 条岗位记录');
+  const screening = JSON.parse(
+    fs.readFileSync(new URL('../data/div-screening.json', import.meta.url), 'utf8'),
+  );
+  const roles = Object.values(screening.entries).reduce(
+    (sum, row) => sum + row.positions.length,
+    0,
+  );
+  await expect(page.locator('#count')).toContainText(roles + ' 条岗位记录');
   await expect(page.getByRole('navigation', { name: '招聘专栏' }).getByRole('link')).toHaveCount(3);
   await expect(page.locator('#personal-workspace')).toBeVisible();
   await expect(page.locator('#personal-timeline')).toBeVisible();
@@ -319,8 +326,18 @@ test('diverse review: cloud evidence invalidation cannot silently broaden a sele
   await expect(page.locator('[data-catalog-mode]')).toContainText('云端招聘资料');
   await advanced(page);
   await page.locator('#city').selectOption('广州');
-  await expect(page.locator('.card')).toHaveCount(1);
-  await page.locator('.card [data-card-state="applied"]').click();
+  // New employers may legitimately add Guangzhou roles; the city is not a unique employer key.
+  const screening = JSON.parse(
+    fs.readFileSync(new URL('../data/div-screening.json', import.meta.url), 'utf8'),
+  );
+  const cityCount = Object.values(screening.entries).filter((row) =>
+    row.positions.some(
+      (position) => position.cities.includes('广州') && position.leadership !== 'required',
+    ),
+  ).length;
+  expect(cityCount).toBeGreaterThan(0);
+  await expect(page.locator('.card')).toHaveCount(cityCount);
+  await page.locator('.card [data-card-state="applied"]').first().click();
   for (const row of tables.job_entries) if (row.kind === 'div') row.requirements += ' 变更后须复核';
   await expect(page.locator('[data-refresh-catalog]')).toBeEnabled();
   await page.locator('[data-refresh-catalog]').click();

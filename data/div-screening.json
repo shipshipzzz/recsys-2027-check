@@ -855,6 +855,2408 @@
           ]
         }
       ]
+    },
+    "div-4e441b314e9f271056e6": {
+      "category": "finance",
+      "poolKey": "wizardquant",
+      "basisHash": "c8495b8bb290d3d159019250d7b44274c881e3226d24e865edc1b9b9492d21b4",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-4e441b314e9f271056e6-quant",
+          "title": "量化研究员",
+          "recordType": "position",
+          "cities": [
+            "上海",
+            "北京"
+          ],
+          "directions": [
+            "quant",
+            "data"
+          ],
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "本硕博，统计、数学、机器学习、经济金融等相关；数理基础、Python/R/MATLAB和研究能力。",
+          "restrictions": "全职与实习同时展示，申请时选择全职；其他工作地、个人专业认定及志愿额度另核。",
+          "refs": [
+            "E1010-wizardquant-1",
+            "E1010-wizardquant-2",
+            "E1010-wizardquant-3"
+          ]
+        },
+        {
+          "id": "div-4e441b314e9f271056e6-ml",
+          "title": "机器学习研究员",
+          "recordType": "position",
+          "cities": [
+            "上海",
+            "北京"
+          ],
+          "directions": [
+            "ai",
+            "quant"
+          ],
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "统计等相关本硕博；Python/R/MATLAB、TensorFlow或PyTorch；研究能力与团队协作。",
+          "restrictions": "论文、竞赛和C++等为加分，不编造本人已具备；未见统一截止。",
+          "refs": [
+            "E1010-wizardquant-1",
+            "E1010-wizardquant-2",
+            "E1010-wizardquant-3"
+          ]
+        }
+      ]
+    },
+    "div-e323d9f25fe9a4649b3b": {
+      "category": "finance",
+      "poolKey": "mxifund",
+      "basisHash": "0c0bd2015bd5fe24ca8f0648d9e85e74848d150a04be98df9597ebc8fbafc523",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-e323d9f25fe9a4649b3b-quant",
+          "title": "量化策略研究员",
+          "recordType": "position",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "quant",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "数理研究基础与Python/MATLAB/C++；可独立推进项目。",
+          "restrictions": "总体招聘使用理工科口径，应用统计专硕0252须确认；竞赛及论文只是加分。",
+          "refs": [
+            "E1010-mxifund-1"
+          ]
+        },
+        {
+          "id": "div-e323d9f25fe9a4649b3b-ai",
+          "title": "AI算法研究员",
+          "recordType": "position",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "ai",
+            "quant"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "数理研究和编程能力；能够结合Agent与代码工具开展模型研究。",
+          "restrictions": "深度时序、图模型及竞赛论文加分；应用统计所属学位门类需确认。",
+          "refs": [
+            "E1010-mxifund-1"
+          ]
+        },
+        {
+          "id": "div-e323d9f25fe9a4649b3b-dev",
+          "title": "算法开发工程师",
+          "recordType": "position",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "software",
+            "quant"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "理工科背景，C++、Python；策略平台与实盘工程。",
+          "restrictions": "不因C++技能待补排除；低延迟工程是优先项，专业和志愿规则另核。",
+          "refs": [
+            "E1010-mxifund-1"
+          ]
+        }
+      ]
+    },
+    "div-56382332258275d17906": {
+      "category": "finance",
+      "poolKey": "deya",
+      "basisHash": "917399db74d3ab61a330ab6a2faad8e46b2d182be1b6f2287587d765a11ce812",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-56382332258275d17906-research",
+          "title": "数据研究员 / 量化研究员",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "quant"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "官网列数据研究员本科及以上、量化研究员硕士及以上；具体专业和工作地另核。",
+          "restrictions": "当前只形成岗位列表线索，未将完整JD条件或长期开放作为已证实。",
+          "refs": [
+            "E1010-deya-1",
+            "E1010-deya-2"
+          ]
+        },
+        {
+          "id": "div-56382332258275d17906-software",
+          "title": "软件开发工程师",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "software"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "官网列本科及以上；完整技术、专业、工作地及2027到岗要求待核。",
+          "restrictions": "保留可补技能的机会；不虚构工作城市和截止。",
+          "refs": [
+            "E1010-deya-1",
+            "E1010-deya-2"
+          ]
+        }
+      ]
+    },
+    "div-f0cb3802547af4b6a8ef": {
+      "category": "finance",
+      "poolKey": "maxwealth",
+      "basisHash": "f97be9513b83d354bcd991bf4dce0c375b05fe2b6351cbbdd23bbf053b857756",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-f0cb3802547af4b6a8ef-research",
+          "title": "量化 / 指数 / 权益 / 固收 / FOF研究方向",
+          "recordType": "direction",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "quant",
+            "research"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027届硕士及以上，毕业窗2026.09.01—2027.08.31；各研究岗位专业与技能待具体JD。",
+          "restrictions": "招聘清单不等于五个已核完整JD；须安排现场实习考核。",
+          "refs": [
+            "E1010-maxwealth-1"
+          ]
+        },
+        {
+          "id": "div-f0cb3802547af4b6a8ef-operations",
+          "title": "股票交易 / 产品 / 电商 / 合规 / 登记清算方向",
+          "recordType": "direction",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "operations",
+            "quant",
+            "data"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "同届硕博校招，具体岗位职责、资格和证书逐岗核。",
+          "restrictions": "不因属于运营或业务岗位排除；会计等专门资格未确认前不套用。",
+          "refs": [
+            "E1010-maxwealth-1"
+          ]
+        },
+        {
+          "id": "div-f0cb3802547af4b6a8ef-software",
+          "title": "开发工程师方向",
+          "recordType": "direction",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "software"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "当届科技类岗位；编程与专业目录待核。",
+          "restrictions": "现场实习、岗位额度和毕业后入职时间需确认。",
+          "refs": [
+            "E1010-maxwealth-1"
+          ]
+        },
+        {
+          "id": "div-f0cb3802547af4b6a8ef-sales",
+          "title": "机构 / 渠道 / 券商销售方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "consulting"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027销售新星挑战赛；机构销售为上海/北京/深圳，渠道销售另含广州。",
+          "restrictions": "地点不跨三类职位混用；一周实习体验及业务考核；具体JD未核。",
+          "refs": [
+            "E1010-maxwealth-1"
+          ]
+        }
+      ]
+    },
+    "div-361f32b3645bd85e7809": {
+      "category": "finance",
+      "poolKey": "efunds",
+      "basisHash": "229383b128b06ae099cfcd46c28de905942eb1589ff3ac92128bd7240d7843bf",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-361f32b3645bd85e7809-campus",
+          "title": "AI人才专项：AI工程师 / AI研究员 / AI应用岗方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software",
+            "data"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-11",
+            "time": null,
+            "scope": "完整雇主秋招简章的本次网申期限，未注明时刻；不把10月24—25笔试日期当报名截止"
+          },
+          "requirements": "2026年9月至2027年8月应届；雇主正文列明三类AI岗位，单岗学历、专业与技术要求需招聘系统。",
+          "restrictions": "AI专场与普通秋招合计最多2岗位，第一志愿优先；11月开始滚动实习考察、不超过两周。具体城市、专业及学历待岗位JD，不用整体招聘范围合成单岗。",
+          "refs": [
+            "E1010-efunds-1",
+            "E1010-efunds-2",
+            "E1010-efunds-3"
+          ]
+        },
+        {
+          "id": "div-361f32b3645bd85e7809-research",
+          "title": "投研类：量化 / 指数 / 策略 / 多资产等研究方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "quant",
+            "research",
+            "data"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-11",
+            "time": null,
+            "scope": "完整雇主秋招简章的本次网申期限，未注明时刻；不把10月24—25笔试日期当报名截止"
+          },
+          "requirements": "2027应届毕业窗口，公告明确量化、指数、宏观、信用、ESG等研究清单；完整专业与技能分别核对。",
+          "restrictions": "AI专场与普通秋招合计最多2岗位，第一志愿优先；11月开始滚动实习考察、不超过两周。具体城市、专业及学历待岗位JD，不用整体招聘范围合成单岗。",
+          "refs": [
+            "E1010-efunds-1",
+            "E1010-efunds-2",
+            "E1010-efunds-3"
+          ]
+        },
+        {
+          "id": "div-361f32b3645bd85e7809-operations-marketing",
+          "title": "运营与营销：量化风险 / 数据运营 / 产品 / 业务分析方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "consulting",
+            "data",
+            "quant"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-11",
+            "time": null,
+            "scope": "完整雇主秋招简章的本次网申期限，未注明时刻；不把10月24—25笔试日期当报名截止"
+          },
+          "requirements": "公告列量化风险分析、数据运营分析、产品研究、运营策略、线上运营及销售等；单岗专业条件另核，不因非算法而排除。",
+          "restrictions": "AI专场与普通秋招合计最多2岗位，第一志愿优先；11月开始滚动实习考察、不超过两周。具体城市、专业及学历待岗位JD，不用整体招聘范围合成单岗。",
+          "refs": [
+            "E1010-efunds-1",
+            "E1010-efunds-2",
+            "E1010-efunds-3"
+          ]
+        }
+      ]
+    },
+    "div-066cb6f9cf153d8cdfec": {
+      "category": "finance",
+      "poolKey": "pingantech",
+      "basisHash": "4ec8294dca2418e93d03ac8b85364d5d77e200905a492ca5ed0f4eacff1c0147",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-066cb6f9cf153d8cdfec-ai-data",
+          "title": "数据分析 / 数据挖掘 / NLP等算法方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "ai"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "公告明确当届招聘类别，具体各岗学历、专业、城市和技能须在官方系统核。",
+          "restrictions": "不将集团数据中心分布当成对应岗位工作地；2027年7月后毕业需特别确认。",
+          "refs": [
+            "E1010-pingantech-1"
+          ]
+        },
+        {
+          "id": "div-066cb6f9cf153d8cdfec-business",
+          "title": "产品 / 项目管理 / 经营分析 / 运营方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "consulting"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "当届公告明确业务分析与运营方向；单岗职责、专业和志愿上限待核。",
+          "restrictions": "不因岗位不做算法而排除；学生干部条件尚未读全。",
+          "refs": [
+            "E1010-pingantech-1"
+          ]
+        }
+      ]
+    },
+    "div-71d734704ceea7c6273d": {
+      "category": "finance",
+      "poolKey": "zhongan",
+      "basisHash": "818ce54ad015b21614ca342e658afc218df5e7d3f1b2069fde316b25f854874e",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-71d734704ceea7c6273d-ai",
+          "title": "AI算法工程师（2027上海）",
+          "recordType": "position",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "ai",
+            "data"
+          ],
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027届硕士及以上，统计、数学、计算机等相关；Python/PyTorch及至少一种大模型实践经历。",
+          "restrictions": "顶会、竞赛和保险经验为加分；0252、录用合同与岗位实时余缺另核，不把在审论文写成已发表。",
+          "refs": [
+            "E1010-zhongan-1"
+          ]
+        }
+      ]
+    },
+    "div-fb6c3ac485770e0c5e7e": {
+      "category": "industry",
+      "poolKey": "geely",
+      "basisHash": "3ae154a3b8571f24889433d0b8261ad89659f559c8e2a74994f8885f582388aa",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-fb6c3ac485770e0c5e7e-ai-software",
+          "title": "大模型 / 多模态 / 智能座舱及软件方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027届本硕博，2026.09—2027.08毕业；具体AI和软件岗位专业须逐一确认。",
+          "restrictions": "不把集团整体不限专业或总部杭州当成某个研发JD资格和城市；同系统不按品牌拆卡。",
+          "refs": [
+            "E1010-geely-1"
+          ]
+        },
+        {
+          "id": "div-fb6c3ac485770e0c5e7e-business",
+          "title": "供应链 / 产品 / 经营管理方向待核",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "supply",
+            "consulting"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "集团综合校园招聘入口；非技术方向逐岗查职责和专业，不以原算法经历限制选择。",
+          "restrictions": "本记录是方向检索入口，不代表全部类别已读完整JD；轮岗、派驻和合同另核。",
+          "refs": [
+            "E1010-geely-1"
+          ]
+        }
+      ]
+    },
+    "div-47e61a10d8a04f9405d7": {
+      "category": "industry",
+      "poolKey": "arcsoft",
+      "basisHash": "d20d3803f5d7d8aaf9a20a4723e98d0053d59120b400e2ef24bec74da14cd8e3",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-47e61a10d8a04f9405d7-ai",
+          "title": "算法 / 计算机视觉 / 软件研发方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027应届；算法笔试涉及数学、编程、图像及深度学习，具体学历专业和岗位城市待JD。",
+          "restrictions": "官网联系地址杭州/上海/南京不作为每岗工作地；同阶段仅1志愿须先选择方向。",
+          "refs": [
+            "E1010-arcsoft-1"
+          ]
+        }
+      ]
+    },
+    "div-d3c20bd565303d39b602": {
+      "category": "industry",
+      "poolKey": "lixiang",
+      "basisHash": "1b96196fd357fe26390ae1ce3f0b73936eae156026bd319464908bf69f80796a",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-d3c20bd565303d39b602-ai-software",
+          "title": "算法与软件方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027全球毕业生；具体学历专业、模型方向及城市需查官方岗位。",
+          "restrictions": "不将芯片等专业强约束岗位自动视作符合；北京/上海/杭州等总体城市不按单岗保证。",
+          "refs": [
+            "E1010-lixiang-1"
+          ]
+        },
+        {
+          "id": "div-d3c20bd565303d39b602-business",
+          "title": "产品 / 供应链 / 项目管理与职能方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "supply",
+            "consulting"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "当届公告明确招聘类别，具体岗位条件和培养路径另核。",
+          "restrictions": "销售服务与研发工作性质分开，轮岗、现场工作和地区调配需接受后再投。",
+          "refs": [
+            "E1010-lixiang-1"
+          ]
+        }
+      ]
+    },
+    "div-461a01ae2aff614a638e": {
+      "category": "industry",
+      "poolKey": "fanruan",
+      "basisHash": "622425778c6e1a634b098d2d458fb357618dc2e899dc5507e9a19025d552544a",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-461a01ae2aff614a638e-backend",
+          "title": "后台开发工程师（盘古实验室）",
+          "recordType": "position",
+          "cities": [
+            "南京",
+            "成都",
+            "无锡"
+          ],
+          "directions": [
+            "software",
+            "data"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027本科及以上理工背景；至少一种所列开发语言实践、算法基础，数据库技能优先。",
+          "restrictions": "0252的理工口径需招聘方确认；不是已核算法研究岗，需补后端工程知识。",
+          "refs": [
+            "E1010-fanruan-1"
+          ]
+        }
+      ]
+    },
+    "div-9bf1b447e92eead1fb7f": {
+      "category": "industry",
+      "poolKey": "leapmotor",
+      "basisHash": "90e6fd21967195aca04de2ced322adb17ab72c5c0513b0bd4b3dbb77607d7e4e",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-9bf1b447e92eead1fb7f-ai-data",
+          "title": "待核：多模态大模型 / AI应用 / 数据建模方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "software"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "前轮发现的官方校园招聘岗位入口保留；具体2027届、学历、专业与工作地本轮待复读。",
+          "restrictions": "网络抓取未读全不是资格不符；不沿用未经本轮确认的3次志愿或城市。",
+          "refs": [
+            "E1010-leapmotor-1"
+          ]
+        }
+      ]
+    },
+    "div-1032f7a4df33f629202b": {
+      "category": "industry",
+      "poolKey": "spiritai",
+      "basisHash": "f5df809406eb35d091eeddd1b409126ed0244928587d447a1459b1c0e4319c59",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-1032f7a4df33f629202b-data-ai",
+          "title": "数据算法 / 模型评测 / 后训练与具身智能方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "research"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027本硕博，2026.09—2027.12毕业；当届清单明确数据算法、模型评测与后训练等，专业和工作地逐岗核。",
+          "restrictions": "公告强调重要已发表论文或专利，须核具体职位是否硬要求；不能以在审论文冒充已发表。",
+          "refs": [
+            "E1010-spiritai-1",
+            "E1010-spiritai-2"
+          ]
+        },
+        {
+          "id": "div-1032f7a4df33f629202b-business",
+          "title": "商业分析 / 产品 / 技术交付运营 / 采购方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "operations",
+            "consulting",
+            "supply"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027本硕博；官方雇主公告明确商业分析师、产品和运营采购清单，具体岗位资格待核。",
+          "restrictions": "不将研发论文条件自动套给职能岗；北京杭州深圳为总体范围，不保证各方向均可三地任选。",
+          "refs": [
+            "E1010-spiritai-1",
+            "E1010-spiritai-2"
+          ]
+        }
+      ]
+    },
+    "div-0c7a7395ac85cf3182f4": {
+      "category": "industry",
+      "poolKey": "unitedimaging",
+      "basisHash": "203f38f10dde52ef9e2e2b1dcafed7e6565868d1373b95fdc523786bc85f50b0",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-0c7a7395ac85cf3182f4-ai-data",
+          "title": "待核：医学影像 / AI算法 / 数据软件方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "software"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "具体2027岗位、专业、城市和在招状态需官方JD；统计及模型反演背景存在核查价值。",
+          "restrictions": "地震反演经历不等于已具备医学影像专业经验；具体主体和到岗待核。",
+          "refs": [
+            "E1010-unitedimaging-1"
+          ]
+        }
+      ]
+    },
+    "div-1d3b156f11b6e6097df4": {
+      "category": "finance",
+      "poolKey": "mhfunds",
+      "basisHash": "46c43eda201e7c12e86e7196975f8cb4c5bca730ea9a46e7a6e951db578059ff",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-1d3b156f11b6e6097df4-research",
+          "title": "待核：量化 / AI算法研究与开发方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "quant",
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "在官网选择全职校招，读取具体学历、毕业窗、专业和工作地；不能用日常实习条件代替全职。",
+          "restrictions": "未明确关闭，不因未拿到完整JD漏收；香港等岗位工作许可另外确认。",
+          "refs": [
+            "E1010-mhfunds-1"
+          ]
+        }
+      ]
+    },
+    "div-4cedbc1502b16533af42": {
+      "category": "finance",
+      "poolKey": "cmfchina",
+      "basisHash": "15a96e79eaa3a5f716ae19f307effe3cb6642ad6ae239c42e8406ae2c9233e21",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-4cedbc1502b16533af42-research-ai",
+          "title": "待核：量化研究 / AI与数据岗位及后续批次",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "quant",
+            "ai",
+            "data"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "先在官方投递系统确认2027本轮是否仍接收申请，以及硕士专业、岗位和到岗。",
+          "restrictions": "已过期的高校公告不计为当前可投岗位；保留尚未确定关闭的官方渠道，不编造新批次。",
+          "refs": [
+            "E1010-cmfchina-1"
+          ]
+        }
+      ]
+    },
+    "div-6f1a9695e1b7b7cd534d": {
+      "category": "industry",
+      "poolKey": "catl",
+      "basisHash": "ced36a0bb170283a6a939c35c6192e22e91a4e8f064b70f8876cb7d38953de84",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-6f1a9695e1b7b7cd534d-data-ai",
+          "title": "计算机 / AI / 数据科学方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "software"
+          ],
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027届，毕业时间2026年7月至2027年12月；该职类明确统计学等相关专业。",
+          "restrictions": "仅职类专业依据，不等于所有具体岗位均认可0252；城市和岗位能力逐一确认。",
+          "refs": [
+            "E1010-catl-1"
+          ]
+        },
+        {
+          "id": "div-6f1a9695e1b7b7cd534d-business-supply",
+          "title": "供应链与运营 / 市场 / 职能方向待核",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "supply",
+            "operations",
+            "consulting"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "对应职类涉及理工、管理及金融等专业；有合理核查空间，具体统计背景认可未确认。",
+          "restrictions": "保留CTP硕博与常规校招；博士专属职位排除，不直接视为本人的申请选择。",
+          "refs": [
+            "E1010-catl-1"
+          ]
+        }
+      ]
+    },
+    "div-8368d634ea16e5381057": {
+      "category": "industry",
+      "poolKey": "midea",
+      "basisHash": "9b999007aaf27e7d7495df462d3069d3cabe1be2e07d0f5b98fd722e526b366a",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-8368d634ea16e5381057-data-tech",
+          "title": "信息技术 / 数据与研发方向待核",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "software",
+            "data",
+            "ai"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "公告确认2027秋招技术职类；具体数据岗位、学历专业和毕业窗口需官网JD。",
+          "restrictions": "未使用内推码；全国公司城市分布不作为具体岗位地点，不承诺算法岗。",
+          "refs": [
+            "E1010-midea-1"
+          ]
+        },
+        {
+          "id": "div-8368d634ea16e5381057-operations",
+          "title": "供应链物流 / 营销 / 财务金融 / 管理方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "supply",
+            "operations",
+            "consulting",
+            "quant"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "当届招聘类别明确，统计背景可核相关分析或业务岗位；各岗位专业与证书待查。",
+          "restrictions": "全国调配、制造现场、出差或营销指标应核明后取舍，不因业务岗自行排除。",
+          "refs": [
+            "E1010-midea-1"
+          ]
+        }
+      ]
+    },
+    "div-cb0b0e4b48739fd2cd78": {
+      "category": "industry",
+      "poolKey": "mindray",
+      "basisHash": "0b5e00713469a36eb523d5c06b9a4e30574ea702d87a8007387a4fcba7518c62",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-cb0b0e4b48739fd2cd78-medical-data",
+          "title": "待核：医学算法 / 信号图像 / 数据软件方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "software"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "官方校招渠道存在；具体应届专业、工作地点、岗位职责及医学基础要求须读取JD。",
+          "restrictions": "地震反演可作为技术迁移线索，不冒充医学研发经验；留学生专场及已结束暑期实习不混入全职。",
+          "refs": [
+            "E1010-mindray-1"
+          ]
+        }
+      ]
+    },
+    "div-6a76d80005c619a4735d": {
+      "category": "industry",
+      "poolKey": "tuya",
+      "basisHash": "4d014a13e72225af25b691a764993d2caf57be371eb7b5e9586c5761f067c882",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-6a76d80005c619a4735d-iot-data",
+          "title": "待核：物联网AI / 数据 / 软件与产品方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "software",
+            "operations"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "从官方校园或应届岗位筛选列表继续核查，明确岗位专业、毕业时间和地点。",
+          "restrictions": "不将2026春招或已结束AI实习当成2027全职证据；保留可跟踪招聘渠道。",
+          "refs": [
+            "E1010-tuya-1"
+          ]
+        }
+      ]
+    },
+    "div-40e164a4c69050705736": {
+      "category": "industry",
+      "poolKey": "unionbigdata",
+      "basisHash": "f0547f4bc0d1d389f21e7d046820aa05d6d1bc37352a4210e65c3b2f26b0c654",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-40e164a4c69050705736-industrial-data",
+          "title": "待核：工业数据 / 机器学习 / 数据工程方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "企业招聘主页可查；当届岗位学历、专业、城市、经验要求需另核。",
+          "restrictions": "仅博士后的招聘不适用，不把社招经验要求自动改成应届；成都总部不能替代每岗地点。",
+          "refs": [
+            "E1010-unionbigdata-1",
+            "E1010-unionbigdata-2"
+          ]
+        }
+      ]
+    },
+    "div-2236dea6b6d7bd29c89f": {
+      "category": "industry",
+      "poolKey": "tigermed",
+      "basisHash": "1fc56f81a9bb127df2586e01ce15804810191b65167d5dec8f13d52ffd309334",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-2236dea6b6d7bd29c89f-sa-intern",
+          "title": "待核：统计分析员实习生（杭州）",
+          "recordType": "direction",
+          "cities": [
+            "杭州"
+          ],
+          "directions": [
+            "data",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "internship",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "转载要求生物医药相关统计本科及以上、CET4、每周3—5天，使用SAS开展分析与校对。",
+          "restrictions": "标题与简章届次冲突，必须复核官方实际申请；应用统计不自动等同生物统计，不承诺转正。",
+          "refs": [
+            "E1010-tigermed-1",
+            "E1010-tigermed-2"
+          ]
+        }
+      ]
+    },
+    "div-d1ec3d76d07862d99763": {
+      "category": "industry",
+      "poolKey": "pony",
+      "basisHash": "a2c89df4f57c3128dd6d419b3412129fd14d8dfa5296168db7d9a7527f78e72e",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-d1ec3d76d07862d99763-rd",
+          "title": "研发工程师—工程 / 算法 / 模型（27校招）",
+          "recordType": "position",
+          "cities": [
+            "北京",
+            "广州",
+            "上海"
+          ],
+          "directions": [
+            "ai",
+            "software",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-12-31",
+            "time": null,
+            "scope": "本公告2027校园招聘，未注明日内时刻"
+          },
+          "requirements": "计算机、自动化、数学等相关本科及以上；计算机与编程基础，在模型、工程或其他列明方向有积累。",
+          "restrictions": "只需相应方向能力而非七方向全能；具体专业认可另核，未采用内推码或薪资保证。",
+          "refs": [
+            "E1010-pony-1"
+          ]
+        }
+      ]
+    },
+    "div-cbac1c9ce686c199cdbb": {
+      "category": "industry",
+      "poolKey": "smartmore",
+      "basisHash": "33f0485193cdb75ba312d0464d849fd9fe13caeb6c7c70d73752f3c228cd0d2f",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-cbac1c9ce686c199cdbb-ai-software",
+          "title": "算法 / Agent应用 / 软件方向（专业认可待核）",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027本硕博；相关AI实战、科研或工程能力，具体技术附表列CS/AI/软件等专业。",
+          "restrictions": "须先确认统计背景是否认可；不能因为做过GRPO就认定符合强化学习岗位专业目录。",
+          "refs": [
+            "E1010-smartmore-1"
+          ]
+        },
+        {
+          "id": "div-cbac1c9ce686c199cdbb-product-general",
+          "title": "产品经理 / 研发项目经理 / 集团综合管培方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "consulting"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "正文明确2027产品项目及职能管培；优先深圳上海为培养范围，不代表所有岗位固定两地。",
+          "restrictions": "不借技术岗位专业表限制全部管培；财务、HR等专业及干部条件另核。",
+          "refs": [
+            "E1010-smartmore-1"
+          ]
+        }
+      ]
+    },
+    "div-8eae9270c0bde560cf4b": {
+      "category": "foreign",
+      "poolKey": "standardchartered",
+      "basisHash": "fe276f23ca314afe6e32860c2db1d4f3991dd4c377c8577ded62f7b8bb28d882",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-8eae9270c0bde560cf4b-coverage-shanghai",
+          "title": "Coverage Banking Graduate Programme Shanghai 2027",
+          "recordType": "position",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "operations",
+            "consulting",
+            "quant"
+          ],
+          "major": "unrestricted",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "具体职位欢迎全部专业；最后学年且2027年7月前毕业、能当年7月入职、具有当地永久合法工作权。",
+          "restrictions": "主要为企业和金融机构客户覆盖、融资与交易支持，非纯数据科学；六个月内只可申请一次。官网页面发布结束日2026-12-31，投前确认未提前关闭。",
+          "refs": [
+            "E1010-standardchartered-1"
+          ]
+        }
+      ]
+    },
+    "div-16416517416806467ac0": {
+      "category": "foreign",
+      "poolKey": "blackrock",
+      "basisHash": "6202cb0a2ed439a209bf76551c6414661fa9b92b4e9792d50bb322d8bb44ee97",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-16416517416806467ac0-aladdin-data",
+          "title": "Full-Time Analyst 2027—Aladdin Data（香港 / 新加坡）",
+          "recordType": "direction",
+          "cities": [
+            "香港",
+            "新加坡"
+          ],
+          "directions": [
+            "data",
+            "software",
+            "quant"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-25",
+            "time": "23:55",
+            "scope": "仅香港和新加坡Aladdin Data例外窗口，两地与北京时间同一时区"
+          },
+          "requirements": "2025年9月至2027年8月取得本科或硕士；项目为两年全职培养，Aladdin Data具体学科和技能另核。",
+          "restrictions": "一个项目内最多2个职能方向且同一申请表，撤回后不能重报；五天内完成前置测评；签证/工作权未知不得承诺。",
+          "refs": [
+            "E1010-blackrock-1"
+          ]
+        },
+        {
+          "id": "div-16416517416806467ac0-apac-other",
+          "title": "2027全职项目东京 / 台北方向待核",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "quant",
+            "operations",
+            "data"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "东京仍开放滚动，台北公告11月29日当地23:55；实际职能、语言及工作许可条件需具体职位。",
+          "restrictions": "不是上海社招量化岗位，后者至少2年经验；本记录不把海外未知工作权当已通过。",
+          "refs": [
+            "E1010-blackrock-1"
+          ]
+        }
+      ]
+    },
+    "div-c90d5f3fe5c684833f3d": {
+      "category": "foreign",
+      "poolKey": "morganstanley",
+      "basisHash": "38eacb674ed34966262b23794df0681b51744061ac34064056234d7fc9356d98",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-c90d5f3fe5c684833f3d-graduate",
+          "title": "待核：科技 / 风险 / 量化及业务毕业生项目",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "software",
+            "quant",
+            "data",
+            "operations"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "从官方项目筛选全职Analyst或New Analyst，并核预计毕业日、学历专业、工作地和英语。",
+          "restrictions": "部分2027 Summer项目要求2027年秋后或2028毕业，不能据项目年份认定符合；签证和名额待核。",
+          "refs": [
+            "E1010-morganstanley-1"
+          ]
+        }
+      ]
+    },
+    "div-cea75912b4145d2a0a44": {
+      "category": "foreign",
+      "poolKey": "jpmorgan",
+      "basisHash": "8bf5df3971ad6d8ed432afe7a922127e4834ff41e08c77defa3f5812f82df917",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-cea75912b4145d2a0a44-fulltime",
+          "title": "待核：数据科学 / 科技 / 风险与业务全职毕业生项目",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "ai",
+            "software",
+            "quant",
+            "operations"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "需筛官方Full-time而不是仅凭2027 Summer字样；本科、研究生等层级项目的具体条件分开确认。",
+          "restrictions": "已有2027暑期项目对应2028返聘或毕业日期不符，不列为本人的确定申请；地区、签证及岗位额度待核。",
+          "refs": [
+            "E1010-jpmorgan-1"
+          ]
+        }
+      ]
+    },
+    "div-d861257e9fcd2a8614ff": {
+      "category": "education",
+      "poolKey": "shisu-special",
+      "basisHash": "08a5f173e9697ffe155f96e9d285391f959994b2c0fec1100071055450577a4b",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-d861257e9fcd2a8614ff-minority",
+          "title": "少数民族专职辅导员（语言 / 党员硬条件待本人核）",
+          "recordType": "position",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "education",
+            "operations"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "preferred",
+          "leadershipBasis": "本专项干部和优秀荣誉只是优先；普通辅导员另有硬干部条件，已排除。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-14",
+            "time": "24:00",
+            "scope": "本批次辅导员招聘"
+          },
+          "requirements": "党员含预备、硕士及以上2027年8月前取得学位、原则38岁以内；必须熟练汉语和维吾尔语开展学生工作。",
+          "restrictions": "没有证据表明本人具备维语或党员条件，因此仅留极强限制待核，不推荐直接投；事业编，松江校区，实习考察一个月。",
+          "refs": [
+            "E1010-shisu-special-1"
+          ]
+        }
+      ]
+    },
+    "div-5486356607d720007edc": {
+      "category": "education",
+      "poolKey": "pkuschool",
+      "basisHash": "2fc25bdb0609d3b2f837429bd1f278361aa65022565180b08f8b38fbd1c96f84",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-5486356607d720007edc-math-it",
+          "title": "数学 / 信息技术教师及数学、信息竞赛教练方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "education",
+            "data"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027应届硕士及以上，学科知识与教学研究能力；统计/应用统计是否属于相关专业需学校认可。",
+          "restrictions": "未见统一截止；教师资格证、具体任教学段和分校用工另核；不要求先具备在职教师3年经验。",
+          "refs": [
+            "E1010-pkuschool-1"
+          ]
+        },
+        {
+          "id": "div-5486356607d720007edc-admin",
+          "title": "分校行政教辅方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "education",
+            "operations",
+            "software"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "公告明确非教学岗位；具体岗位专业、学历、职责及合同需进入报名系统。",
+          "restrictions": "不把教学岗学科要求套给全部教辅；也不保证事业编制或学校本部固定地点。",
+          "refs": [
+            "E1010-pkuschool-1"
+          ]
+        }
+      ]
+    },
+    "div-2ac6a8836e1ed4f192fc": {
+      "category": "foreign",
+      "poolKey": "astrazeneca",
+      "basisHash": "52ef991ce6e876dd636d118ea05828b62c89afca07405e5317a6a6d0e69185d9",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-2ac6a8836e1ed4f192fc-smart-manufacturing",
+          "title": "生产运营管理培训生—智能制造方向",
+          "recordType": "position",
+          "cities": [
+            "无锡",
+            "泰州"
+          ],
+          "directions": [
+            "data",
+            "supply",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-31",
+            "time": null,
+            "scope": "amAZinger本次简历投递，未注明时刻"
+          },
+          "requirements": "需求含数学、数学模型、数字化、自动化等医药智能制造相关专业；毕业2026年1月至2027年6月，英语流利。",
+          "restrictions": "应用统计须确认相关专业认定，2027年6月后毕业不可直接沿用此窗口；两年轮岗，非纯算法；干部未要求不代表所有领导力测评通过。",
+          "refs": [
+            "E1010-astrazeneca-1"
+          ]
+        }
+      ]
+    },
+    "div-7e0ae04796d65cebbdac": {
+      "category": "foreign",
+      "poolKey": "sanofi",
+      "basisHash": "00a69e499afbb6a56e4ee10b2608d6ccde4d557f9e9dbd6ff0f68333cbd082d9",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-7e0ae04796d65cebbdac-tiering-intern",
+          "title": "Project Specialist Intern Tiering（成都实习）",
+          "recordType": "position",
+          "cities": [
+            "成都"
+          ],
+          "directions": [
+            "data",
+            "operations",
+            "consulting"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "internship",
+          "status": "intern",
+          "deadline": null,
+          "requirements": "在读或近期完成药学、生命科学或相关本硕；Excel等Office、中文英文、沟通分析能力；医药实习是加分非必须。",
+          "restrictions": "应用统计能否算相关专业须确认；这是实习不是2027全职录用，官网显示职位结束11月11日但不保证剩余名额。",
+          "refs": [
+            "E1010-sanofi-1"
+          ]
+        }
+      ]
+    },
+    "div-0d6494c1429a142defff": {
+      "category": "foreign",
+      "poolKey": "roche",
+      "basisHash": "c194ac94006a276b8ce77e367c71124ea9c7a9c7e4267d939e562fcd9995552a",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-0d6494c1429a142defff-data-digital",
+          "title": "待核：数据分析 / 数字化 / 软件应届与实习方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "官方存在职场新人及数据技术招聘通道；须查具体岗位学历、专业、毕业时间与工作地。",
+          "restrictions": "不把已关闭的AI Agent实习或限定医药的StartUp项目当普遍可投；Perspectives要求3—5年工作经验不适用普通应届。",
+          "refs": [
+            "E1010-roche-1",
+            "E1010-roche-2"
+          ]
+        }
+      ]
+    },
+    "div-24f9312ee0f014772606": {
+      "category": "foreign",
+      "poolKey": "novartis",
+      "basisHash": "5fb4fa7bebbbc31fd7d036f36563cf0cc386b76d9adbb97f8539a93683f2cf5c",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-24f9312ee0f014772606-analytics",
+          "title": "待核：Analytics实习 / Data Science毕业生项目",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "ai",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "项目目录提供统计与机器学习应用路线；具体硕士资格、开放批次、语言、毕业窗口及地点需职位确认。",
+          "restrictions": "官网所列美国/巴塞尔等项目需要工作许可；HBCU限定项目及博士后不适用本人，普通分析实习不能混称中国全职。",
+          "refs": [
+            "E1010-novartis-1"
+          ]
+        }
+      ]
+    },
+    "div-2759883325b2b1d3dfc9": {
+      "category": "foreign",
+      "poolKey": "pfizer",
+      "basisHash": "0fbaed398a2b42c471a92072297c46783d4e3f6d3ff67f7c206f397edb20983e",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-2759883325b2b1d3dfc9-digital",
+          "title": "待核：Digital Rotational / 数据与数字化毕业生方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "software",
+            "operations"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "官方数字轮岗面向大学毕业生，24个月培养；具体2027中国岗位、学科、工作权与毕业日期尚待核。",
+          "restrictions": "MBA暑期岗位的分析职能不自动面向普通统计硕士；只有项目说明，不能称已核全职职位。",
+          "refs": [
+            "E1010-pfizer-1"
+          ]
+        }
+      ]
+    },
+    "div-d0dd1f2f3ca4acba134c": {
+      "category": "foreign",
+      "poolKey": "bayer",
+      "basisHash": "9aa57f39ad574cfc94f1ecdb8257822705a8c758ff3685762064e82caec90f20",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-d0dd1f2f3ca4acba134c-data-ai",
+          "title": "待核：Digital & Data Science / 研发运营数据方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "ai",
+            "software",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "用官方Job Starters/Students筛选早期岗位，逐一核专业、学位、地区及申请窗口。",
+          "restrictions": "不将全球职位全部视作中国应届岗；生命科学专属学位、临床执照及博士后项目不混入适用范围。",
+          "refs": [
+            "E1010-bayer-1"
+          ]
+        }
+      ]
+    },
+    "div-bce9d6083413127ca605": {
+      "category": "services",
+      "poolKey": "pwc",
+      "basisHash": "ade68a95d919a1eb1df15d86dcebbff24f7880db8158754aa57a449df346879e",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-bce9d6083413127ca605-graduate",
+          "title": "毕业生计划—审计 / 咨询 / 数字化等方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "consulting",
+            "data",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "本项目明确欢迎2025、2026、2027届本科及以上且专业不限；申请具体岗位时另核技术和语言要求。",
+          "restrictions": "整体计划不限专业不当成所有技术JD无专业限制；测评邀请48小时内完成，CPA等资格培训与后续要求需准备。",
+          "refs": [
+            "E1010-pwc-1"
+          ]
+        },
+        {
+          "id": "div-bce9d6083413127ca605-edge",
+          "title": "交易服务部Edge毕业生计划",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "quant",
+            "consulting"
+          ],
+          "major": "unrestricted",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "Edge项目明确2025—2027届本科及以上、专业不限，包含交易服务轮岗及资格培训。",
+          "restrictions": "这是具名培养计划而非完整单岗JD；具体岗位城市和申请次数另核，不把北美CSI留学路线当成本人的通道。",
+          "refs": [
+            "E1010-pwc-1"
+          ]
+        }
+      ]
+    },
+    "div-f4fe48073a85c1a6194c": {
+      "category": "services",
+      "poolKey": "ey",
+      "basisHash": "a496480284b7ddffe54a73ddce70468ab3a610722ec413f299dde45f1f88b267",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-f4fe48073a85c1a6194c-graduate",
+          "title": "秋招毕业生—咨询 / 数据科技 / 审计 / 税务方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "consulting",
+            "data",
+            "software",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2026—2027应届招聘，公告总体欢迎理工商科和人文；单岗学历、专业、城市及技术条件另核。",
+          "restrictions": "不把2028优先的寒假实习当作2027全职；第三方10月16日期限尚待官网确认，未生成确定倒计时。",
+          "refs": [
+            "E1010-ey-1",
+            "E1010-ey-2"
+          ]
+        }
+      ]
+    },
+    "div-0ef606786f395fba4c31": {
+      "category": "services",
+      "poolKey": "kpmg",
+      "basisHash": "7ff31b92381626c55a5ebe362bc6e6d13a8f7e2b790c83e6e0ba3dba1b350cf3",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-0ef606786f395fba4c31-graduate",
+          "title": "待核：咨询 / 审计 / 税务应届岗位",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "consulting",
+            "quant",
+            "data",
+            "operations"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "本科及以上应届招聘通道明确开放；单岗2027届、专业与办公室工作资格待申请页确认。",
+          "restrictions": "部分就业平台职位下线不说明官方全部关闭；官方不提供付费机会或远程在线实习，不使用外部付费内推。",
+          "refs": [
+            "E1010-kpmg-1",
+            "E1010-kpmg-2"
+          ]
+        }
+      ]
+    },
+    "div-20d39a0d422df5800e6f": {
+      "category": "services",
+      "poolKey": "bcgx",
+      "basisHash": "7b698052e695e39fc974ef1223dcda852ed284a71866e2c2bffe3c986bf12ba4",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-20d39a0d422df5800e6f-data-ai",
+          "title": "待核：Data Science / AI Engineering / AI Product方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "ai",
+            "software",
+            "consulting"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "从官方Open Roles选择早期职业岗位，核具体硕士专业、经验年限、语言及工作地。",
+          "restrictions": "高级科学家与应届职位不可混用；大中华区岗位数量不是匹配数量，工作许可和出差要求逐岗查。",
+          "refs": [
+            "E1010-bcgx-1"
+          ]
+        }
+      ]
+    },
+    "div-112f98f9c17c91c2d37e": {
+      "category": "services",
+      "poolKey": "nielseniq",
+      "basisHash": "afb7adb618d2c91b3e5a4391183b7a1ef489294d29cef7fa38f6cc88e1e0fad9",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-112f98f9c17c91c2d37e-analytics",
+          "title": "待核：Analyst / 消费洞察 / Data Science初级岗位",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "consulting",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "官方早期职业计划可供学生及近期毕业生检索；数理分析与市场研究对应，具体岗位资格待核。",
+          "restrictions": "不把全球高级职位视为中国应届；实际雇主合同、专业、英语和到岗时间逐岗确认。",
+          "refs": [
+            "E1010-nielseniq-1",
+            "E1010-nielseniq-2"
+          ]
+        }
+      ]
+    },
+    "div-8e7bba0ead01d3ad773a": {
+      "category": "services",
+      "poolKey": "kantar",
+      "basisHash": "366c77ac91ffba18d0f5ef3cffbdcdfefbbaa2ae3e5907647aa3cb696688755a",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-8e7bba0ead01d3ad773a-research",
+          "title": "待核：研究 / 数据分析 / 咨询初级岗位",
+          "recordType": "direction",
+          "cities": [
+            "北京",
+            "上海",
+            "广州"
+          ],
+          "directions": [
+            "data",
+            "consulting",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "官方中国毕业生方向包括研究、咨询与数据分析；具体学科、英文水平、职位编号和到岗待核。",
+          "restrictions": "三地为官方毕业生计划范围，不保证每个方向都有空位；需在实际职位列表确认，非完整JD记录。",
+          "refs": [
+            "E1010-kantar-1"
+          ]
+        }
+      ]
+    },
+    "div-abec632699ebb7929ad9": {
+      "category": "services",
+      "poolKey": "ipsos",
+      "basisHash": "cdcb046e9207599bfaac9ca55fe16cde4b001ebafebdcfd3b4277de342dc3ca3",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-abec632699ebb7929ad9-research",
+          "title": "待核：研究分析 / 数据解读 / 消费与市场洞察方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "data",
+            "consulting",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "可从官方毕业生项目与中国地区职位寻找研究助理、分析岗位；具体学历专业和语言待核。",
+          "restrictions": "不将业务介绍等同当前空缺；非全部研究岗位只做定量，项目交付、出差及客户沟通要求需确认。",
+          "refs": [
+            "E1010-ipsos-1"
+          ]
+        }
+      ]
+    },
+    "div-9f7a49356d4dab4a974a": {
+      "category": "foreign",
+      "poolKey": "walmart",
+      "basisHash": "ffd1252bcde262ca0267bab57d67a911fbaed26d9353481d8e6dcd86a07e9fba",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-9f7a49356d4dab4a974a-purchasing",
+          "title": "支持中心管培生—采购方向",
+          "recordType": "direction",
+          "cities": [
+            "深圳"
+          ],
+          "directions": [
+            "supply",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "转载明确2027本科及以上、总体不限专业，毕业2026.01—2027.06；山姆采购与沃尔玛采购两个方向。",
+          "restrictions": "毕业窗截至6月需本人确认；总部岗位具体专业与英语、志愿尚待官方系统，不承诺三年必晋升。",
+          "refs": [
+            "E1010-walmart-1",
+            "E1010-walmart-2"
+          ]
+        },
+        {
+          "id": "div-9f7a49356d4dab4a974a-store",
+          "title": "山姆 / 沃尔玛门店管培方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "consulting"
+          ],
+          "major": "unrestricted",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "山姆雇主岗位专业不限；完整当届简章为本科及以上，门店轮岗学习运营与商品管理。",
+          "restrictions": "工作地按具体门店核对，不按全国门店业务覆盖任意定岗；实体零售、班次、服务和业绩指标须接受。",
+          "refs": [
+            "E1010-walmart-1",
+            "E1010-walmart-2"
+          ]
+        },
+        {
+          "id": "div-9f7a49356d4dab4a974a-supply",
+          "title": "供应链区域配送中心管培方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "supply",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027配送中心轮岗培养；本科以上、26.01—27.06毕业的公告总述，单岗资格待核。",
+          "restrictions": "实际配送中心地点和聘用主体另核，线上AI面试及实习安排以HR通知为准。",
+          "refs": [
+            "E1010-walmart-1",
+            "E1010-walmart-2"
+          ]
+        }
+      ]
+    },
+    "div-e81336ff748e6ac8fe80": {
+      "category": "foreign",
+      "poolKey": "disney",
+      "basisHash": "d43813091c19dbb41c0f4b6bf5be67764d5e4c9a284b3cf6b689afcc65409617",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-e81336ff748e6ac8fe80-ie-intern",
+          "title": "Intern—Industrial Engineering 工业工程实习生",
+          "recordType": "position",
+          "cities": [
+            "上海"
+          ],
+          "directions": [
+            "data",
+            "supply",
+            "consulting"
+          ],
+          "major": "statistics",
+          "cycle": "unverified",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "internship",
+          "status": "intern",
+          "deadline": null,
+          "requirements": "在册工业工程、运筹、应用数学、统计或同等学科本科，硕士优先；电子表格/数据库/统计软件、中英文及供需分析建模经验。",
+          "restrictions": "在册学籍是硬条件，须毕业前安排；这是实习非2027全职录用，不推断保证留用或编制。",
+          "refs": [
+            "E1010-disney-1"
+          ]
+        }
+      ]
+    },
+    "div-5ebf643eb4992d1cabdb": {
+      "category": "foreign",
+      "poolKey": "fedex",
+      "basisHash": "64db1e9fb52e9342a04dbaac0a431d8d404f073a9e994de9763fee79bf707d9e",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-5ebf643eb4992d1cabdb-revenue-data",
+          "title": "Summer 2027 Internship—Revenue Management（Data Science）",
+          "recordType": "position",
+          "cities": [
+            "美国田纳西州Collierville/Memphis"
+          ],
+          "directions": [
+            "data",
+            "quant",
+            "supply"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "internship",
+          "status": "intern",
+          "deadline": null,
+          "requirements": "硕士在读或毕业六个月内，GPA至少3.0，数学、商业、运筹或相关专业；十周每周40小时，驻校园50英里内。",
+          "restrictions": "美国工作许可和签证支持未确认，不能当中国区可直接投；Full Time是实习工时而非永久全职，不承诺转正。",
+          "refs": [
+            "E1010-fedex-1"
+          ]
+        }
+      ]
+    },
+    "div-1a8089748aaa503d4432": {
+      "category": "foreign",
+      "poolKey": "loreal",
+      "basisHash": "4a6ebcef5938e54853ab570de67b7db8da211cd02f97d95f637aab009178bdb6",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-1a8089748aaa503d4432-rd-digital",
+          "title": "待核：研发创新管培数字 / AI方向（非已结束普通批次）",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "二次整理出现2027理工加AI路线，具体专业、学位、毕业窗、地点、是否独立于普通管培批次需官方确认。",
+          "restrictions": "不沿用10月8日已结束的一般营销管培作为当前可投；转载10月18日也不当确定期限，先核公告与志愿池。",
+          "refs": [
+            "E1010-loreal-1"
+          ]
+        }
+      ]
+    },
+    "div-87590a2f3a194e2c7a40": {
+      "category": "research",
+      "poolKey": "cas-ict",
+      "basisHash": "d297473dd796aa850d5ad4b38c77dff5b5a5830ca776f5e0079ab6a752e92b54",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-87590a2f3a194e2c7a40-ai-data",
+          "title": "待核：检索 / 大数据 / 大模型 / 强化学习工程方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "往届官方工程岗有硕士通道；本轮应联系确认2027应届、0252及具体岗位条件。",
+          "restrictions": "只是常年招聘渠道和历史方向，不把旧2026岗位改写2027；博士限定研究助理不纳入。",
+          "refs": [
+            "E1010-cas-ict-1"
+          ]
+        },
+        {
+          "id": "div-87590a2f3a194e2c7a40-projects",
+          "title": "待核：科研项目 / 数据治理 / 工程支撑方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "operations",
+            "data",
+            "research"
+          ],
+          "major": "unknown",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "旧官网清单包括项目和数据工程方向；当前学位、岗位性质、工作地点及经历门槛待核。",
+          "restrictions": "部分岗位为项目聘用，不能保证编制；已明确要求多年工作经历的资深岗位不当应届职位。",
+          "refs": [
+            "E1010-cas-ict-1"
+          ]
+        }
+      ]
+    },
+    "div-5dd8c5609cd8d80ef8f7": {
+      "category": "research",
+      "poolKey": "cas-iscas",
+      "basisHash": "21e315c122e9b82f3cd93d2765313710fb0d9b7911a9ce1adbd8712975bb0e8f",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-5dd8c5609cd8d80ef8f7-test-manager",
+          "title": "测试经理（天基综合信息系统实验室）",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "software",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "硕士及以上，计算机/软件等相关专业；了解测试流程、能组织项目并独立撰写测评文档。",
+          "restrictions": "需独立项目管理不是零技能管培；0252认可、2027毕业后到岗及聘用类别先确认。副主任和高级测试经理的3年硬经验不套本岗。",
+          "refs": [
+            "E1010-cas-iscas-1"
+          ]
+        }
+      ]
+    },
+    "div-baeb33c25926bdcc5ffe": {
+      "category": "research",
+      "poolKey": "cas-igsnrr",
+      "basisHash": "86ae3ed42f565f901c9b76224cf40d820c34bce094dc6a03b7c28af09f38e403",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-baeb33c25926bdcc5ffe-project-ra",
+          "title": "科研助理（陆地表层格局与模拟，劳务派遣）",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "data",
+            "research",
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "project",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "硕士及以上，环境、GIS、遥感、人工智能/大数据模型方向等相关；科研流程、数据报告、会议组织和项目协调能力。",
+          "restrictions": "需稳定完成项目周期及野外调查；提交毕业学位证明，2027毕业后到岗能否等待需先问，统计专业是否认可另核。",
+          "refs": [
+            "E1010-cas-igsnrr-1"
+          ]
+        }
+      ]
+    },
+    "div-a753867b186b7f992145": {
+      "category": "research",
+      "poolKey": "cas-casia",
+      "basisHash": "9f1719a8d01095a997625ad07d682abfcdefda99156b2df6f169da06625398ca",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-a753867b186b7f992145-ai-research",
+          "title": "待核：AI / 数据 / 科研工程硕士岗位",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "software",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "unverified",
+          "leadership": "unknown",
+          "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "employment": "unknown",
+          "status": "watch",
+          "deadline": null,
+          "requirements": "在研究所官方平台筛选硕士与应届通道，读取具体毕业窗、专业和课题要求。",
+          "restrictions": "正副高及博士后招聘硬条件不符者不纳入；本条只保留真实招聘入口，不宣称全部岗位适合。",
+          "refs": [
+            "E1010-cas-casia-1"
+          ]
+        }
+      ]
+    },
+    "div-8fa4b3f8e4e9a04df9cf": {
+      "category": "research",
+      "poolKey": "cas-igg",
+      "basisHash": "753f54e9ed85f023c46e7e7a3da75068b39f2f9e82940f0fbf31425a34a78a6e",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-8fa4b3f8e4e9a04df9cf-geo-ai",
+          "title": "地球物理智能算法研发岗",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "ai",
+            "data",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-30",
+            "time": "17:00",
+            "scope": "本次2027高校毕业生招聘"
+          },
+          "requirements": "地球物理、地质、计算机、AI、数学等相关硕士；C/Python、机器学习与地震资料处理/反演或测井方向基础，交叉经验优先。",
+          "restrictions": "应用统计0252须招聘方认可；MAUN反演可作真实履历交集，但不代表学位目录自动符合。毕业证最迟2027-08-01，硕士年龄条件核本人。",
+          "refs": [
+            "E1010-cas-igg-1"
+          ]
+        },
+        {
+          "id": "div-8fa4b3f8e4e9a04df9cf-drilling-software",
+          "title": "智能导钻算法软件研发岗",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-30",
+            "time": "17:00",
+            "scope": "本次2027高校毕业生招聘"
+          },
+          "requirements": "AI、软件、计算机、地球物理、测井等相关硕士；至少1—2种编程语言，数值模拟反演及测井等理论基础。",
+          "restrictions": "专业认可与领域知识需确认，不把统计学自动归为地球物理专业；两岗同公告同申请窗口，不额外拆卡。",
+          "refs": [
+            "E1010-cas-igg-1"
+          ]
+        }
+      ]
+    },
+    "div-4cbb07bf70fe22c5d2ea": {
+      "category": "research",
+      "poolKey": "cas-iaii",
+      "basisHash": "67651130323bbead6f5396262382da4ef1286d25ff42492dc6c8b99caab8732d",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-4cbb07bf70fe22c5d2ea-masters",
+          "title": "优秀硕士毕业生—AI与科研工程方向",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai",
+            "software",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "2027应届或毕业两年内优秀硕士，系统科研训练及一定学术成果；CS/AI等是优先学科而非全部硬限定。",
+          "restrictions": "应用统计及在审成果认可仍需审核；具体方向和岗位城市待JD，不将博士待遇套给硕士，也不保证事业编。",
+          "refs": [
+            "E1010-cas-iaii-1"
+          ]
+        }
+      ]
+    },
+    "div-30b76769786d7547bb6c": {
+      "category": "research",
+      "poolKey": "cas-iop",
+      "basisHash": "ef9abc7489fbb178eedc12381121649f56068b063bbbfb5d8c314c725eb2b371",
+      "reviewedOn": "2026-10-10",
+      "positions": [
+        {
+          "id": "div-30b76769786d7547bb6c-general",
+          "title": "综合业务主管",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-31",
+            "time": null,
+            "scope": "公告要求10月31日前发送材料，未注明具体时刻，应提前提交"
+          },
+          "requirements": "硕士及以上，2027应届优先、原则35岁内；物理材料等理工背景优先，需公文、组织沟通和网络安全事务能力。",
+          "restrictions": "不是辅导员干部硬资格；京外生源需符合落户政策，论文成果和任职材料真实提交，具体用工另核。",
+          "refs": [
+            "E1010-cas-iop-1"
+          ]
+        },
+        {
+          "id": "div-30b76769786d7547bb6c-research-one",
+          "title": "科研项目主管1",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "operations",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-31",
+            "time": null,
+            "scope": "公告要求10月31日前发送材料，未注明具体时刻，应提前提交"
+          },
+          "requirements": "硕士及以上，理工背景优先；负责项目申报、过程管理、采购档案结题和仪器共享管理。",
+          "restrictions": "科研管理岗位并非研究员；项目组织与写作能力需举证，专业与年龄落户条件另核。",
+          "refs": [
+            "E1010-cas-iop-1"
+          ]
+        },
+        {
+          "id": "div-30b76769786d7547bb6c-research-two",
+          "title": "科研项目主管2",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "operations",
+            "research"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-31",
+            "time": null,
+            "scope": "公告要求10月31日前发送材料，未注明具体时刻，应提前提交"
+          },
+          "requirements": "硕士及以上，理工背景优先；项目经费监督、研究布局协调、成果奖励管理。",
+          "restrictions": "不要求将自己包装成学生干部；科研成果证明与个人专业认可需逐项确认。",
+          "refs": [
+            "E1010-cas-iop-1"
+          ]
+        },
+        {
+          "id": "div-30b76769786d7547bb6c-hr",
+          "title": "人事业务主管",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "operations"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-31",
+            "time": null,
+            "scope": "公告要求10月31日前发送材料，未注明具体时刻，应提前提交"
+          },
+          "requirements": "硕士及以上，2027优先；人员招聘、调配、派遣及档案管理，组织管理沟通能力。",
+          "restrictions": "理工背景为优先不是排除应用统计的确定证据；具体合同与京外落户政策条件另核。",
+          "refs": [
+            "E1010-cas-iop-1"
+          ]
+        },
+        {
+          "id": "div-30b76769786d7547bb6c-finance",
+          "title": "财务业务主管（相关专业需确认）",
+          "recordType": "position",
+          "cities": [],
+          "directions": [
+            "operations",
+            "quant"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": {
+            "date": "2026-10-31",
+            "time": null,
+            "scope": "公告要求10月31日前发送材料，未注明具体时刻，应提前提交"
+          },
+          "requirements": "硕士及以上，财务管理、会计、金融等相关专业背景，研究资金收付核算和专项财务管理。",
+          "restrictions": "应用统计不能自动当作财会或金融，先问相关专业认定及技能要求；没有明确认可前不当优先可投。",
+          "refs": [
+            "E1010-cas-iop-1"
+          ]
+        }
+      ]
     }
   },
   "existingEntries": [
@@ -893,8 +3295,12 @@
       "reason": "此前线索涉及学生干部或学生工作经历条件；本人几乎没有该经历，本次不计入可投卡片。未来有明确替代条件时另核。"
     },
     {
-      "name": "上海外国语大学专职辅导员",
-      "reason": "此前线索涉及学生干部或学生工作经历条件；本人几乎没有该经历，本次不计入可投卡片。未来有明确替代条件时另核。"
+      "name": "上海外国语大学普通专职辅导员",
+      "reason": "普通岗要求干部、兼职辅导员或支教经历，保留排除。另一个少数民族专项干部仅优先，已单独作为维语、党员等硬条件待核入口，不表示本人符合。"
+    },
+    {
+      "name": "宝洁2027秋招（9月28日截止批次）",
+      "reason": "已核到本轮秋招网申截止为2026-09-28 23:59，明确已过；不把高校11月网页过期日当报名延期。本轮不新增这批过期岗位，未来新批次须新证据。"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "reviewedOn": "2026-10-07",
+  "reviewedOn": "2026-10-10",
   "entries": {
     "soe-15dcc83203fa8d55b59c": {
       "basisHash": "90ea3b179e8d2874d143290108732855b0b89348908aaf6277c05fcd2acbfa6d",
@@ -965,6 +965,647 @@
           "url": "https://career.hebut.edu.cn/correcruit/content/id/80750.html",
           "applicationLimit": "与总行共享本次最多3个平行志愿、每机构1职位；不同分行不增加全行上限。",
           "risks": "所列城市为公告分支整体范围，具体方向、专业、工作地仍须JD，不把信用卡算法岗位搬到杭州。"
+        }
+      ]
+    },
+    "soe-774c2ece320b701dad2b": {
+      "basisHash": "3ce379b9e1dcb3e6fd2644653ade441fa0de2a39fb232653c2ff32e9f769bd05",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-774c2ece320b701dad2b-hq-window",
+          "name": "总部及子公司秋招计划（科技 / 投研 / 业务）（方向或计划，具体JD待核）",
+          "employer": "华泰证券 · 总部及分公司招聘",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "software",
+            "research",
+            "operations"
+          ],
+          "locations": [],
+          "requirements": "2027应届；公告整体覆盖多学科，不将整体不限专业当成各技术岗位无门槛。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": "2026-11-01",
+          "dueTime": "24:00",
+          "deadlineScope": "总部及子公司秋招项目，不自动覆盖南方基金独立招聘期限",
+          "refs": [
+            "E1010-huatai-1"
+          ],
+          "url": "https://wecruit.hotjob.cn/SU6419745cbef57c635fe10142/pb/index.html?channelId=61d886b0bef57c659fd91ea8",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "具体岗位地点另核；南方基金已在div收录，本卡不重复建立南方职位和状态。"
+        },
+        {
+          "id": "soe-774c2ece320b701dad2b-branch-window",
+          "name": "分公司秋招计划（财富与机构业务）（方向或计划，具体JD待核）",
+          "employer": "华泰证券 · 总部及分公司招聘",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "locations": [],
+          "requirements": "2027应届；各分公司专业、服务年限与工作地按JD核。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": "2026-11-15",
+          "dueTime": "24:00",
+          "deadlineScope": "仅分公司招聘计划",
+          "refs": [
+            "E1010-huatai-1"
+          ],
+          "url": "https://wecruit.hotjob.cn/SU6419745cbef57c635fe10142/pb/index.html?channelId=61d886b0bef57c659fd91ea8",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "与总部同招聘入口，不拆分分公司凑卡；志愿共享额度需核。"
+        }
+      ]
+    },
+    "soe-c27082b76dbdd952f906": {
+      "basisHash": "0980f6cf77397c14150e71b96614d8ada7b53f1a6fe600ef0ee5ed899050a869",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-c27082b76dbdd952f906-ai-finance",
+          "name": "AI与金融工程 / 数量与指数研究方向（方向或计划，具体JD待核）",
+          "employer": "申万菱信基金",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "ai",
+            "research",
+            "stats"
+          ],
+          "locations": [],
+          "requirements": "2027境内外应届硕士及以上；具体专业和各岗城市未在清单逐一绑定。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": "2026-10-25",
+          "dueTime": "23:59",
+          "deadlineScope": "本届秋季校招公告",
+          "refs": [
+            "E1010-swsmu-1"
+          ],
+          "url": "https://job.swsmu.com",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "上海、北京、广州为整体招聘范围，不合成具体城市某岗位；需实习考察。"
+        },
+        {
+          "id": "soe-c27082b76dbdd952f906-operations",
+          "name": "电商运营 / 机构、渠道销售方向（方向或计划，具体JD待核）",
+          "employer": "申万菱信基金",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "locations": [],
+          "requirements": "2027硕博，清单含AI细分方向；具体专业、营销考核及定岗另核。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": "2026-10-25",
+          "dueTime": "23:59",
+          "deadlineScope": "本届秋季校招公告",
+          "refs": [
+            "E1010-swsmu-1"
+          ],
+          "url": "https://job.swsmu.com",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "不因岗位不做算法而排除；基金会计等需特定资格的方向先核条件。"
+        }
+      ]
+    },
+    "soe-bb755bc9eba4105249bf": {
+      "basisHash": "c4f8787f4ea998c3c8c555f77982eb4fe98464018ea320bb5df063ca097b4f57",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-bb755bc9eba4105249bf-ai-data",
+          "name": "AI / 大模型 / 运筹优化 / 大数据研发方向（方向或计划，具体JD待核）",
+          "employer": "海康威视",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "ai",
+            "stats",
+            "supply",
+            "software"
+          ],
+          "locations": [],
+          "requirements": "2026年1月至2027年12月毕业；已读职类清单，各岗位学历专业与技能待官方JD。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-hikvision-1"
+          ],
+          "url": "https://campushr.hikvision.com/",
+          "applicationLimit": "最多2个志愿，每志愿最多2个意向部门（岗位有多部门时）；同岗位不同城市或技术方向分别占志愿。",
+          "risks": "杭州、武汉、西安、上海、石家庄、成都是研发整体范围，不能按专业与城市跨岗拼接；专业代码另核。"
+        },
+        {
+          "id": "soe-bb755bc9eba4105249bf-product-business",
+          "name": "产品 / 国内营销 / 运营 / 技术支持方向（方向或计划，具体JD待核）",
+          "employer": "海康威视",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "locations": [],
+          "requirements": "当届公告明确产品、营销、运营与技术支持；具体专业、学历和语言要求分别核查。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-hikvision-1"
+          ],
+          "url": "https://campushr.hikvision.com/",
+          "applicationLimit": "最多2个志愿，每志愿最多2个意向部门（岗位有多部门时）；同岗位不同城市或技术方向分别占志愿。",
+          "risks": "不把海外小语种等限定套给国内岗位；全国业务范围不是任意城市可选定岗。"
+        },
+        {
+          "id": "soe-bb755bc9eba4105249bf-supply",
+          "name": "计划 / 物流 / 采购 / 工业工程方向（方向或计划，具体JD待核）",
+          "employer": "海康威视",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "supply",
+            "operations"
+          ],
+          "locations": [],
+          "requirements": "供应链类岗位清单明确，数理背景是否认可须以实际职位为准。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-hikvision-1"
+          ],
+          "url": "https://campushr.hikvision.com/",
+          "applicationLimit": "最多2个志愿，每志愿最多2个意向部门（岗位有多部门时）；同岗位不同城市或技术方向分别占志愿。",
+          "risks": "杭州含桐庐、重庆、武汉是供应链及其他整体范围；轮班、工厂和培训条件另核。"
+        }
+      ]
+    },
+    "soe-fb6fb8da1b1aff4211f8": {
+      "basisHash": "09dadf81986d82fbfb02e46f6eeaebdb17da4b485dacfde663f5afcddae01863",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-fb6fb8da1b1aff4211f8-graduate-plan",
+          "name": "2027硕士招聘计划：统计 / 数据科技 / 金融业务方向（方向或计划，具体JD待核）",
+          "employer": "中央国债登记结算有限责任公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "statistics",
+          "directions": [
+            "stats",
+            "software",
+            "research",
+            "operations"
+          ],
+          "locations": [],
+          "requirements": "境内外高校硕士及以上应届；公告专业范围含统计、数据科学、金融科技等。单岗0252资格和专业条件需确认。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": "2026-10-13",
+          "dueTime": "24:00",
+          "deadlineScope": "本次2027年度校园招聘项目",
+          "refs": [
+            "E1010-ccdc-1"
+          ],
+          "url": "https://ccdc.zhiye.com/",
+          "applicationLimit": "每人最多两个志愿，共用本次招聘申请额度。",
+          "risks": "北京、上海、深圳为整体招聘范围，不把专业与城市合成具体岗位；约6个月新锐培养后按表现定岗。"
+        }
+      ]
+    },
+    "soe-3f71cbbf4892de74fc17": {
+      "basisHash": "84c23fec8d12d4d040c3b166351d28c487cdbc6a1e7902da7fec1f8ca25df801",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-3f71cbbf4892de74fc17-headquarters",
+          "name": "总部业务运营 / 综合 / 信息科技方向（方向或计划，具体JD待核）",
+          "employer": "中国出口信用保险公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "operations",
+            "software",
+            "research"
+          ],
+          "locations": [],
+          "requirements": "总部一般硕士及以上，信息科技可本科；国内2027.01—07毕业，境外2026.08—2027.07；专业目录待具体岗位。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-sinosure-1",
+            "E1010-sinosure-2"
+          ],
+          "url": "https://sinosure.zhaopin.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "法律和小语种单独条件不套用，博士后不适用；回避、国籍、身体及毕业时间逐项确认。"
+        },
+        {
+          "id": "soe-3f71cbbf4892de74fc17-branches",
+          "name": "分支机构客户经理 / 业务运营 / 信息技术方向（方向或计划，具体JD待核）",
+          "employer": "中国出口信用保险公司",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "operations",
+            "product",
+            "software"
+          ],
+          "locations": [],
+          "requirements": "2027应届本科及以上，16家分支；专业、具体工作地和实际岗位须申请系统核对。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-sinosure-1",
+            "E1010-sinosure-2"
+          ],
+          "url": "https://sinosure.zhaopin.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "宣讲杭州成都等不能代替岗位城市；同系统一个入口，不逐分公司增加卡片；志愿上限待核。"
+        }
+      ]
+    },
+    "soe-e2a4e4d27a5f31ac69f4": {
+      "basisHash": "9847d295cfb1537743ffb8257529143701abe62f7f625601c0c56d01efd62ea7",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-e2a4e4d27a5f31ac69f4-campus",
+          "name": "总部 / 资管 / 分支硕士招聘计划（具体职位待核）（方向或计划，具体JD待核）",
+          "employer": "中邮保险 · 总部及资管分支",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "research",
+            "stats",
+            "operations",
+            "software"
+          ],
+          "locations": [],
+          "requirements": "硕士及以上，2027应届及择业期毕业生，所学专业必须符合所投岗位；单岗目录与技能需在官网核。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": "2026-10-17",
+          "dueTime": "24:00",
+          "deadlineScope": "本次中邮保险2027年度招聘",
+          "refs": [
+            "E1010-chinapost-insurance-1"
+          ],
+          "url": "https://zybx2027.zhaopin.com/",
+          "applicationLimit": "每人最多投两个岗位或岗位类别，集团体系不重复生成分公司额度。",
+          "risks": "方向为后续检索目标不是全都已核JD；不能把省级分支存在视作每个城市都有数据岗；员工招聘与代理销售须以合同区分。"
+        }
+      ]
+    },
+    "soe-782d09f8e61d7a698554": {
+      "basisHash": "3c61d630d06651d7f29313d4937b2bde97389ef3a4ac6f3d9a90f5918bd2c08b",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-782d09f8e61d7a698554-software-data",
+          "name": "算法 / 软件 / 大数据研发方向（方向或计划，具体JD待核）",
+          "employer": "京东方",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "related",
+          "directions": [
+            "ai",
+            "stats",
+            "software"
+          ],
+          "locations": [],
+          "requirements": "2027研发职类招聘包含本硕博层级，具体算法和软件岗的专业与技能待官方JD。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-boe-1",
+            "E1010-boe-2",
+            "E1010-boe-3"
+          ],
+          "url": "https://campus.boe.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "生产基地分布不代替该岗位工作城市；平台登记不限专业不覆盖具体研发资格。"
+        },
+        {
+          "id": "soe-782d09f8e61d7a698554-business-supply",
+          "name": "待核：经营 / 产品 / 供应链方向（方向或计划，具体JD待核）",
+          "employer": "京东方",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "operations",
+            "product",
+            "supply"
+          ],
+          "locations": [],
+          "requirements": "2027综合校园招聘计划覆盖多类业务；本条为业务方向检索线索，专业、职责和培养安排未读全。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-boe-1",
+            "E1010-boe-2",
+            "E1010-boe-3"
+          ],
+          "url": "https://campus.boe.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "非全部岗位已确认适合统计；倒班、轮岗、基地及实际用工应逐一确认。"
+        }
+      ]
+    },
+    "soe-db7bf281b2195bdaa598": {
+      "basisHash": "2b2e0a0e6d446e6e7df9981ef907332977aa6cf5206c59e6dedba05e0076ee3a",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-db7bf281b2195bdaa598-investment",
+          "name": "管培生—投资方向",
+          "employer": "国元证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unrestricted",
+          "directions": [
+            "research",
+            "stats",
+            "ai"
+          ],
+          "locations": [
+            "合肥",
+            "上海",
+            "北京"
+          ],
+          "requirements": "硕士及以上、专业不限，理工复合优先；Python/C++等一门语言实操、数理与AI工具应用；2027.06.30前毕业。 学生干部条件：已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "due": "2026-11-02",
+          "dueTime": null,
+          "deadlineScope": "投资、资产配置及综合管培招聘",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "url": "https://gyzq.zhiye.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "三地为该培养项目整体范围，具体定岗按录用；已发表论文、学生干部和金融证书不是该岗明确硬门槛。"
+        },
+        {
+          "id": "soe-db7bf281b2195bdaa598-asset-allocation",
+          "name": "管培生—资产配置方向",
+          "employer": "国元证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unrestricted",
+          "directions": [
+            "research",
+            "stats"
+          ],
+          "locations": [
+            "合肥",
+            "上海",
+            "北京"
+          ],
+          "requirements": "硕士及以上、专业不限；数理基础、Python/R一门编程及AI知识库工具；投资组合与配置研究兴趣。 学生干部条件：已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "due": "2026-11-02",
+          "dueTime": null,
+          "deadlineScope": "投资、资产配置及综合管培招聘",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "url": "https://gyzq.zhiye.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "毕业最迟2027年6月30日须本人核实；FOF及风险测算、画像分析为职责，不将兴趣等同既有行业经验。"
+        },
+        {
+          "id": "soe-db7bf281b2195bdaa598-general",
+          "name": "管培生—综合方向",
+          "employer": "国元证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unrestricted",
+          "directions": [
+            "operations"
+          ],
+          "locations": [
+            "合肥",
+            "上海",
+            "北京"
+          ],
+          "requirements": "硕士及以上、专业不限；理工复合或CPA/CFA等资格优先，学习、团队与合规能力。 学生干部条件：已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "due": "2026-11-02",
+          "dueTime": null,
+          "deadlineScope": "投资、资产配置及综合管培招聘",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "url": "https://gyzq.zhiye.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "证书和复合专业仅优先；具体业务条线和培养考核另核，不能因无学生干部经历自动排除。"
+        },
+        {
+          "id": "soe-db7bf281b2195bdaa598-wealth",
+          "name": "财富管理管培生—买方投顾方向",
+          "employer": "国元证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unrestricted",
+          "directions": [
+            "operations",
+            "product",
+            "research"
+          ],
+          "locations": [],
+          "requirements": "专业不限、财经管理优先；多数大城市要求硕士，其它地区本科可报；2027.06.30前毕业。 学生干部条件：已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-guoyuan-1"
+          ],
+          "url": "https://gyzq.zhiye.com/",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "公告截止11月底，保留原文不生成未经确认的精确日期；全国地区清单不代表每城都有岗位，财富业务服务指标需了解。"
+        }
+      ]
+    },
+    "soe-e3a2237267065f266f77": {
+      "basisHash": "6aa1b5e6e06178fa8df1d418fa2d388287ea8be1689cdd462cd19c7832d007b2",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-e3a2237267065f266f77-tech",
+          "name": "金融科技方向：AI算法 / 开发 / 测试 / 产品（方向或计划，具体JD待核）",
+          "employer": "国信证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "ai",
+            "software",
+            "stats"
+          ],
+          "locations": [],
+          "requirements": "毕业时间2026年9月至2027年8月，具体学历专业、城市与编程要求须官方JD；公告明确AI算法、C++、Java、测试、数据库运维与产品岗位。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-guosen-1",
+            "E1010-guosen-2"
+          ],
+          "url": "https://guosen.zhiye.com/campus/jobs",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "清单为多个岗位方向，不当六个完整JD计数；未核统一截止，不能借总部深圳或投行业务杭州地点。"
+        },
+        {
+          "id": "soe-e3a2237267065f266f77-research",
+          "name": "投行 / 助理分析师 / 自营研究交易及子公司投研方向（方向或计划，具体JD待核）",
+          "employer": "国信证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "research",
+            "product"
+          ],
+          "locations": [],
+          "requirements": "2027应届，公告包含公司本部研究自营及国信弘盛、国信资管相关岗位；具体专业、技能与地点逐项确认。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-guosen-1",
+            "E1010-guosen-2"
+          ],
+          "url": "https://guosen.zhiye.com/campus/jobs",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "博士后岗位不适用本人，单独排除；子公司在此招聘系统共用入口，申请额度未确认，不额外拆卡。"
+        },
+        {
+          "id": "soe-e3a2237267065f266f77-client-operations",
+          "name": "审核客服 / 理财顾问 / 客户经理 / 机构业务方向（方向或计划，具体JD待核）",
+          "employer": "国信证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "unknown",
+          "directions": [
+            "operations",
+            "product"
+          ],
+          "locations": [],
+          "requirements": "当届招聘正文列运营支持与分支业务岗位；专业、证券执业资格及培养要求需查看具体岗位。 学生干部条件：尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-guosen-1",
+            "E1010-guosen-2"
+          ],
+          "url": "https://guosen.zhiye.com/campus/jobs",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "客户开发与业务考核不是纯技术；全国分支不代表任选工作地，录用前实习安排及志愿上限待核。"
+        }
+      ]
+    },
+    "soe-e2bdf7fec2b7e48dca51": {
+      "basisHash": "c8cc4717e9b5737d75d6ce4ad1445deb7167312a176f08b70def4081eb00cd5f",
+      "reviewedOn": "2026-10-10",
+      "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
+      "positions": [
+        {
+          "id": "soe-e2bdf7fec2b7e48dca51-management",
+          "name": "总部管理培训生计划（七大业务方向）（方向或计划，具体JD待核）",
+          "employer": "万联证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "related",
+          "directions": [
+            "research",
+            "software",
+            "operations",
+            "product"
+          ],
+          "locations": [
+            "广州",
+            "北京",
+            "上海",
+            "深圳"
+          ],
+          "requirements": "硕士及以上，2026或2027毕业且18周岁以上；项目总述不限专业，但投行、自营、资管、财富、研究、信息技术、职能各岗专业另核。 学生干部条件：已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-wanlian-1"
+          ],
+          "url": "https://job.hust.edu.cn/zpinfo1/2449167.htm",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "四地为此培养项目整体范围，广州为主，不保证任意方向任意城市；多岗位轮岗与考核，官方人才公众号申请；未见明确截止。"
+        },
+        {
+          "id": "soe-e2bdf7fec2b7e48dca51-wealth",
+          "name": "财富顾问培训生（应聘方式待明确）（方向或计划，具体JD待核）",
+          "employer": "万联证券",
+          "cycle": "current",
+          "type": "campus",
+          "status": "verify",
+          "major": "related",
+          "directions": [
+            "operations",
+            "research",
+            "product"
+          ],
+          "locations": [],
+          "requirements": "本科及以上，2026或2027应届且18岁以上，项目总述不限专业；为客户规划、组合配置和前台业务培养，具体岗位专业另核。 学生干部条件：已读本岗位条件未列学生干部要求；不等于其他资格全部满足。",
+          "due": null,
+          "dueTime": null,
+          "deadlineScope": "尚未取得明确报名截止，不采用平台有效期。",
+          "refs": [
+            "E1010-wanlian-1"
+          ],
+          "url": "https://job.hust.edu.cn/zpinfo1/2449167.htm",
+          "applicationLimit": "未核准志愿数量；同入口不意味着每岗位均可独立申报，提交前在官方系统核实。",
+          "risks": "公告应聘方式为待定，故保留计划线索而非确定开放岗位；工作范围含广州等城市及湖南湖北四川省，不能补出省会城市。"
         }
       ]
     }

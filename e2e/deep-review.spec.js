@@ -37,7 +37,7 @@ test('deep review: fresh and previous-round REC evidence have different visible 
     kuaishouCurrent ? '本次官网记录' : '官网记录·' + kuaishouFacts.audit.checked,
   );
   if (!kuaishouCurrent) await expect(kuaishou.locator('.badges')).not.toContainText('本次');
-  const fresh = rec.DATA.find(
+  const fresh = [...rec.DATA, ...rec.EXTRA].find(
     (item) => item.audit?.checked === rec.RECHECKED && item.src === 'see',
   );
   expect(fresh).toBeTruthy();

@@ -1,3 +1,10 @@
+import fs from 'node:fs';
+const catalogCount = (kind) => {
+  const data = JSON.parse(
+    fs.readFileSync(new URL('../data/' + kind + '.json', import.meta.url), 'utf8'),
+  );
+  return data.DATA.length + (data.EXTRA?.length || 0);
+};
 import { test, expect } from '@playwright/test';
 
 const card = (page, id) => page.locator(`.card[data-entry-id="${id}"]`);
@@ -23,7 +30,7 @@ test('regular recruitment dates appear without invented midnight times or lost e
   page,
 }, testInfo) => {
   await page.goto('./');
-  await expect(page.locator('.card')).toHaveCount(57);
+  await expect(page.locator('.card')).toHaveCount(catalogCount('rec'));
   const mihoyo = card(page, 'rec-7b0537129aa42ab55ff5');
   const shopee = card(page, 'rec-2faa8bd0603d45617e25');
   await expect(mihoyo.locator('.due-v')).toHaveText('2026-10-31');
@@ -40,7 +47,7 @@ test('regular recruitment dates appear without invented midnight times or lost e
 
 test('new deadline evidence never upgrades unknown professional eligibility', async ({ page }) => {
   await page.goto('soe.html');
-  await expect(page.locator('.card')).toHaveCount(91);
+  await expect(page.locator('.card')).toHaveCount(catalogCount('soe'));
   const cmb = card(page, 'soe-53b939996659dfde59e5');
   await expect(cmb).toHaveAttribute('data-major', 'unknown');
   await expect(cmb.locator('.action-strip')).toContainText('2026-10-10');
@@ -81,5 +88,5 @@ test('one Guangfa card shows two shared-quota windows and advances only local ch
   await expect(bank.locator(`[data-position-id="${id}-window-branches"]`)).toHaveValue('pending');
   await page.reload();
   await expect(card(page, id).locator('.action-strip')).toContainText('2026-11-15');
-  await expect(page.locator('.card')).toHaveCount(91);
+  await expect(page.locator('.card')).toHaveCount(catalogCount('soe'));
 });
