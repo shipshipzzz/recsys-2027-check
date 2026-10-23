@@ -27,6 +27,10 @@ const original = (p) =>
 const old = Object.fromEntries(
   ['rec', 'soe', 'div'].map((k) => [k, original('data/' + k + '.json')]),
 );
+// 2026-10-24 期限复核轮归档的卡片由 deadline-snapshots-2026-10-24.json 逐张留底。
+const archived1024 = new Set(
+  json('docs/deadline-snapshots-2026-10-24.json').cards.map((x) => x.id),
+);
 const all = (d) => [...d.DATA, ...(d.EXTRA || [])];
 const now = new Date('2026-10-10T12:00:00+08:00');
 
@@ -76,7 +80,8 @@ test('expansion: every legacy card, source, historical snapshot and assessment s
   for (const kind of ['rec', 'soe', 'div']) {
     const current = new Map(all(catalogs[kind]).map((x) => [x.id, x]));
     for (const item of all(old[kind]))
-      assert.deepEqual(current.get(item.id), item, kind + '/' + item.name);
+      if (!archived1024.has(item.id))
+        assert.deepEqual(current.get(item.id), item, kind + '/' + item.name);
     for (const [id, s] of Object.entries(old[kind].SOURCES))
       assert.deepEqual(catalogs[kind].SOURCES[id], s);
     for (const field of ['ORIGINAL_ITEMS', 'LOG', 'TIMELINE', 'TIMELINE_EVENTS', 'DUE'])
@@ -86,7 +91,7 @@ test('expansion: every legacy card, source, historical snapshot and assessment s
     const previous = original('data/' + name + '.json').entries,
       current = json('data/' + name + '.json').entries;
     for (const [id, row] of Object.entries(previous))
-      assert.deepEqual(current[id], row, name + '/' + id);
+      if (!archived1024.has(id)) assert.deepEqual(current[id], row, name + '/' + id);
   }
   validatePrevious(old, catalogs);
 });
