@@ -16,6 +16,7 @@ const opportunities = read('data/soe-opportunities.json');
 const coverage = read('docs/recruitment-coverage-2026-10-04.json');
 const snapshots = read('docs/recruitment-snapshots-2026-10-04.json');
 const deadlineSnapshots = read('docs/deadline-snapshots-2026-10-07.json');
+const deadlineSnapshots1024 = read('docs/deadline-snapshots-2026-10-24.json');
 const find = (part) => catalog.DATA.find((item) => item.name.includes(part));
 const now = new Date('2026-10-04T12:00:00+08:00');
 
@@ -34,7 +35,8 @@ test('October review coverage accounts for all cards without backdating unreview
     // retain a verifiable before-image instead of making historical dates mutable.
     const item =
       current.rev > coverage.reviewedOn
-        ? deadlineSnapshots.cards.find((saved) => saved.id === row.id)?.before
+        ? (deadlineSnapshots.cards.find((saved) => saved.id === row.id)?.before ??
+          deadlineSnapshots1024.cards.find((saved) => saved.id === row.id)?.before)
         : current;
     assert.ok(item, 'A later review must retain the historical card: ' + row.id);
     assert.equal(item.id, current.id);

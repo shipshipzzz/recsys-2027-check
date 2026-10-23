@@ -3,7 +3,7 @@
   "reviewedOn": "2026-10-10",
   "entries": {
     "soe-15dcc83203fa8d55b59c": {
-      "basisHash": "90ea3b179e8d2874d143290108732855b0b89348908aaf6277c05fcd2acbfa6d",
+      "basisHash": "ffea653a2521a9ff597a100ccf94e3384cab8043d056074d09949c99dd632d2d",
       "reviewedOn": "2026-10-04",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -123,7 +123,7 @@
       ]
     },
     "soe-1390ea899a188a39617a": {
-      "basisHash": "cda19208857df498f03730f59c527f94fa49241dd7354d42dd6913decf7d1ada",
+      "basisHash": "e8d6d7476e298bc478e91ac5ed084892fce8e630e07a83d0a22c0a770bf243a2",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -158,7 +158,7 @@
       ]
     },
     "soe-8260438ddfcb7cfaf9c1": {
-      "basisHash": "4385e8f87738e39df6c6bcd8b341422f1622cc3b3840396f909f1e4241ced197",
+      "basisHash": "9b8eee30629ea153a7f6ae79f81bf68b7104b8208be47bbe0f27c88df7fb8b8a",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -246,7 +246,7 @@
       ]
     },
     "soe-b2bb7f2da8bb065dafbb": {
-      "basisHash": "bbc12ba695dce85bf96ed447670f447fb40e4ae167b97fdcf5d07e13cf6a9671",
+      "basisHash": "62d5486d05f73530ebf3077a6df1ddc650ca4fbfe17a720a02a904c374d0d386",
       "reviewedOn": "2026-10-04",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -351,7 +351,7 @@
       ]
     },
     "soe-3a9d68162b0165c655ac": {
-      "basisHash": "e1b59d5b82a47bcfd3f0dc714b8237885d0ccd76aeb1c8b240395ab840df57d5",
+      "basisHash": "7807ceeecbbbd006c232dd0ba3048e47c834f57e86690a577068d7c5afd6d092",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -528,7 +528,7 @@
       ]
     },
     "soe-5d5e2a79fb87bf541109": {
-      "basisHash": "9c98f75bba0bf97cb8bbf997f726477478ccdff357b4a7544a9e2e64e71f1424",
+      "basisHash": "494094eb7d25223738fa073b243968b16bf080ee554ba68f90cf3a6987152eef",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -561,7 +561,7 @@
       ]
     },
     "soe-87ef8e3ebe4b4b4bb9fc": {
-      "basisHash": "db4e4d3d483da743ce814f36c36fa499144df3155327300b751501304f50d322",
+      "basisHash": "16c7f5a6c86c5558e40a7ca1de406e40a85b28095854d1a593255d0a8bd25a97",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。 本轮仅补上述同批次报名期限，专业/地点沿用原岗位证据，未升级资格结论。",
       "positions": [
@@ -631,7 +631,7 @@
       ]
     },
     "soe-00f5a7bf22c3ecff3eff": {
-      "basisHash": "5437c93ec708f3deb021f42d9c82de7cb92646337da43057c22a1af1ed5685cb",
+      "basisHash": "33bcb7120b654a381e494bdda6648ca2e21bc017e4cbddae274cb6693300a810",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。 本轮仅补上述同批次报名期限，专业/地点沿用原岗位证据，未升级资格结论。",
       "positions": [
@@ -694,7 +694,7 @@
       ]
     },
     "soe-12aceb3925f1d9fc514e": {
-      "basisHash": "be370401935af279d1e0d3a4ed8f23b0e6777ea2c2a6b4395a9e2d4eb3414e4c",
+      "basisHash": "4fa3a7d5710ade3e12abb4e0beba929716bda5221cf9caa36292bf05787c01c9",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -728,7 +728,7 @@
       ]
     },
     "soe-3bad984c354c08ffb3a5": {
-      "basisHash": "39e35e8a083903b8bb6f73a67f1f5d83505d2bafa8504b151a8fb281079ec34a",
+      "basisHash": "c36d6a31aafb21614ae276e66f87d7c351ce99cb654f9dd9f5a1d8bc48a079ab",
       "reviewedOn": "2026-09-28",
       "scope": "只列本轮实际核到的岗位子集，不是全部岗位。",
       "positions": [
@@ -833,7 +833,7 @@
           "risks": "提交申请后岗位与资料不能修改；不能把北京统计专业要求与西安IT工作地组合。"
         }
       ],
-      "basisHash": "2e7d48f556f716850c492c9c9d8e380629b33fb7de25ef3e2c23153ffbc79eab"
+      "basisHash": "30636fb2facaf217e57f7f637f3b3260754f93c1866cab86b12849ac055f5521"
     },
     "soe-8b77a831e8fa823d9737": {
       "scope": "仅已展开的个人金融、风险管理板块金融科技岗；其他板块、分行及信用卡岗位不在本次子集。",
@@ -890,7 +890,7 @@
           "risks": "JD职责为风险、授信、信用审批、内控合规及法律等风控管理；理学/工学相关并非应用统计保证，工作地未列，不从总行通讯地址推断。"
         }
       ],
-      "basisHash": "bc69fee0155ba84cf345609302bbf665c0ce338caf80f171cd05b90b70379aac"
+      "basisHash": "7bf48a453cfab8ee19d006e39d6b3fe78fb310cebf474ebdbda706039fd903f1"
     },
     "soe-e43cb34e4c801cf57150": {
       "basisHash": "0d7598cd25c086ecf6399a5469affdd4b3b9b3d7093535cfe0ca6c0e9c921631",
@@ -1464,7 +1464,7 @@
       ]
     },
     "soe-e3a2237267065f266f77": {
-      "basisHash": "6aa1b5e6e06178fa8df1d418fa2d388287ea8be1689cdd462cd19c7832d007b2",
+      "basisHash": "7ad692e81f2afcc9587d77a0ef53d45c09785d60ab9159c57cdf8bbfb0c4fb3e",
       "reviewedOn": "2026-10-10",
       "scope": "本入口已核岗位及方向/计划记录；清单线索不计为完整JD；同招聘系统合并管理，不为各地区重复建卡。",
       "positions": [

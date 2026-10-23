@@ -11,6 +11,8 @@ const geography = json('../data/soe-locations.json');
 const opportunities = json('../data/soe-opportunities.json');
 const audit = json('../docs/deadline-review-2026-10-07.json');
 const snapshots = json('../docs/deadline-snapshots-2026-10-07.json');
+const snapshots1024 = json('../docs/deadline-snapshots-2026-10-24.json');
+const archived1024 = new Set(snapshots1024.cards.map((x) => x.id));
 const cards = new Map([...rec.DATA, ...rec.EXTRA, ...soe.DATA].map((x) => [x.id, x]));
 
 test('October deadline review accounts for every old card without claiming a full fresh review', () => {
@@ -52,6 +54,8 @@ test('Deadline-only changes preserve qualifications, locations, status and their
     'xian',
   ];
   for (const saved of snapshots.cards) {
+    // 2026-10-24 归档轮的变更由 deadline-snapshots-2026-10-24.json 记录，另有断言覆盖。
+    if (archived1024.has(saved.id)) continue;
     const now = cards.get(saved.id);
     for (const field of immutable)
       assert.deepEqual(now[field], saved.before[field], saved.id + ':' + field);
@@ -88,7 +92,8 @@ test('Missing dates gain the correct scope without fabricated clock times', () =
   }
   assert.match(cards.get('soe-53b939996659dfde59e5').dueScope, /仅.*授信.*智能科学.*系统研发/);
   assert.match(cards.get('soe-00f5a7bf22c3ecff3eff').dueScope, /不采用.*过期/);
-  assert.equal(cards.get('soe-57a02b3fc6410f063563').due, null);
+  // 2026-10-24 已核到浙商统一截止 10/25，不再是"未核统一截止"。
+  assert.equal(cards.get('soe-57a02b3fc6410f063563').due, '2026-10-25');
 });
 
 test('Secondary deadline evidence is never relabelled as an official JD', () => {
