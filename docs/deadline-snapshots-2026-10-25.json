@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-25",
+  "baseCommit": "bab51f967a934084c20fe6be3e576442050a131e",
+  "cards": [
+    {
+      "id": "div-361f32b3645bd85e7809",
+      "before": {
+        "id": "div-361f32b3645bd85e7809",
+        "name": "易方达基金",
+        "en": "E Fund",
+        "status": "verify",
+        "priority": 204,
+        "rev": "2026-10-10",
+        "city": "具体岗位工作地待核；全国范围，不以总部、考点或宣讲地点代替。",
+        "jobs": "AI人才专项：AI工程师 / AI研究员 / AI应用岗方向（方向/清单线索）；投研类：量化 / 指数 / 策略 / 多资产等研究方向（方向/清单线索）；运营与营销：量化风险 / 数据运营 / 产品 / 业务分析方向（方向/清单线索）",
+        "req": "【AI人才专项：AI工程师 / AI研究员 / AI应用岗方向】2026年9月至2027年8月应届；雇主正文列明三类AI岗位，单岗学历、专业与技术要求需招聘系统。 【投研类：量化 / 指数 / 策略 / 多资产等研究方向】2027应届毕业窗口，公告明确量化、指数、宏观、信用、ESG等研究清单；完整专业与技能分别核对。 【运营与营销：量化风险 / 数据运营 / 产品 / 业务分析方向】公告列量化风险分析、数据运营分析、产品研究、运营策略、线上运营及销售等；单岗专业条件另核，不因非算法而排除。",
+        "window": "有2027届招聘依据；具体岗位毕业窗口与到岗资格分别核对。",
+        "ownership": "招聘品牌及渠道已记录；实际用人/签约主体、性质及聘期以官方岗位和合同为准。",
+        "why": "资管领域AI、研究及数据方向已有前轮线索，当前招聘入口明确。",
+        "risk": "AI专场与普通秋招合计最多2岗位，第一志愿优先；11月开始滚动实习考察、不超过两周。具体城市、专业及学历待岗位JD，不用整体招聘范围合成单岗。",
+        "action": "先打开招聘入口定位对应岗位，确认专业、毕业窗、用工和志愿限制，再决定申请。",
+        "note": "本轮按全范围补漏纳入，0条具体岗位、3条方向或招聘计划。招聘依据、专业符合和个人全部资格通过相互独立。",
+        "links": [
+          ["招聘入口", "https://job.efunds.com.cn"],
+          ["招聘证据 1", "https://career.cuhk.edu.cn/en/job/view/id/469772"],
+          ["招聘证据 2", "https://career.nankai.edu.cn/correcruit/content/id/118048.html"]
+        ],
+        "audit": {
+          "checked": "2026-10-10",
+          "refs": ["E1010-efunds-1", "E1010-efunds-2", "E1010-efunds-3"],
+          "summary": "本轮新增机会；有待核条件不自动排除，具体读取范围见来源。",
+          "scope": "2026-10-08发布，标题倒计时3天与截止字段为10月11日；具体岗位需进入官方系统，不能套用聚合站自行扩写JD。 跳转北森系统；本轮公开文本仅网页框架，完整岗位待核。 本轮末次复核读到完整雇主简章；AI专场与普通秋招合计最多2志愿，优先第一志愿，毕业2026.09—2027.08，10月11日截止。岗位列表不作为所有单岗均接受某专业的依据。",
+          "level": "高校雇主招聘通知"
+        }
+      },
+      "screen": {
+        "category": "finance",
+        "poolKey": "efunds",
+        "basisHash": "229383b128b06ae099cfcd46c28de905942eb1589ff3ac92128bd7240d7843bf",
+        "reviewedOn": "2026-10-10",
+        "positions": [
+          {
+            "id": "div-361f32b3645bd85e7809-campus",
+            "title": "AI人才专项：AI工程师 / AI研究员 / AI应用岗方向",
+            "recordType": "direction",
+            "cities": [],
+            "directions": ["ai", "software", "data"],
+            "major": "unknown",
+            "cycle": "current",
+            "leadership": "unknown",
+            "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+            "employment": "fulltime",
+            "status": "verify",
+            "deadline": {
+              "date": "2026-10-11",
+              "time": null,
+              "scope": "完整雇主秋招简章的本次网申期限，未注明时刻；不把10月24—25笔试日期当报名截止"
+            },
+            "requirements": "2026年9月至2027年8月应届；雇主正文列明三类AI岗位，单岗学历、专业与技术要求需招聘系统。",
+            "restrictions": "AI专场与普通秋招合计最多2岗位，第一志愿优先；11月开始滚动实习考察、不超过两周。具体城市、专业及学历待岗位JD，不用整体招聘范围合成单岗。",
+            "refs": ["E1010-efunds-1", "E1010-efunds-2", "E1010-efunds-3"]
+          },
+          {
+            "id": "div-361f32b3645bd85e7809-research",
+            "title": "投研类：量化 / 指数 / 策略 / 多资产等研究方向",
+            "recordType": "direction",
+            "cities": [],
+            "directions": ["quant", "research", "data"],
+            "major": "unknown",
+            "cycle": "current",
+            "leadership": "unknown",
+            "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+            "employment": "fulltime",
+            "status": "verify",
+            "deadline": {
+              "date": "2026-10-11",
+              "time": null,
+              "scope": "完整雇主秋招简章的本次网申期限，未注明时刻；不把10月24—25笔试日期当报名截止"
+            },
+            "requirements": "2027应届毕业窗口，公告明确量化、指数、宏观、信用、ESG等研究清单；完整专业与技能分别核对。",
+            "restrictions": "AI专场与普通秋招合计最多2岗位，第一志愿优先；11月开始滚动实习考察、不超过两周。具体城市、专业及学历待岗位JD，不用整体招聘范围合成单岗。",
+            "refs": ["E1010-efunds-1", "E1010-efunds-2", "E1010-efunds-3"]
+          },
+          {
+            "id": "div-361f32b3645bd85e7809-operations-marketing",
+            "title": "运营与营销：量化风险 / 数据运营 / 产品 / 业务分析方向",
+            "recordType": "direction",
+            "cities": [],
+            "directions": ["operations", "consulting", "data", "quant"],
+            "major": "unknown",
+            "cycle": "current",
+            "leadership": "unknown",
+            "leadershipBasis": "尚未读全本岗位条件，干部、党员及其他限制仍需核对。",
+            "employment": "fulltime",
+            "status": "verify",
+            "deadline": {
+              "date": "2026-10-11",
+              "time": null,
+              "scope": "完整雇主秋招简章的本次网申期限，未注明时刻；不把10月24—25笔试日期当报名截止"
+            },
+            "requirements": "公告列量化风险分析、数据运营分析、产品研究、运营策略、线上运营及销售等；单岗专业条件另核，不因非算法而排除。",
+            "restrictions": "AI专场与普通秋招合计最多2岗位，第一志愿优先；11月开始滚动实习考察、不超过两周。具体城市、专业及学历待岗位JD，不用整体招聘范围合成单岗。",
+            "refs": ["E1010-efunds-1", "E1010-efunds-2", "E1010-efunds-3"]
+          }
+        ]
+      },
+      "location": null
+    }
+  ]
+}

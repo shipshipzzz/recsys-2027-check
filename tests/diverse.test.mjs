@@ -53,7 +53,7 @@ test('diverse: strict current publication requires three catalogs, historical co
 
 test('diverse: every qualification snapshot matches its public evidence and legacy crosslinks', () => {
   const counts = validateDiverse(catalogs, policy);
-  assert.equal(counts.cards, catalogs.div.DATA.length);
+  assert.equal(counts.cards, [...catalogs.div.DATA, ...catalogs.div.EXTRA].length);
   assert.ok(counts.positions > counts.cards);
   assert.ok(policy.existingEntries.length > 0);
   assert.ok(
@@ -61,7 +61,7 @@ test('diverse: every qualification snapshot matches its public evidence and lega
       .flatMap((row) => row.positions)
       .some((p) => p.leadership === 'preferred'),
   );
-  for (const item of catalogs.div.DATA)
+  for (const item of [...catalogs.div.DATA, ...catalogs.div.EXTRA])
     assert.equal(lookup(item, catalogs.div.SOURCES).matched, true);
   const changed = structuredClone(policy);
   changed.entries[base.id].basisHash = '0'.repeat(64);
@@ -240,7 +240,9 @@ test('diverse: cloud source index excludes unrelated legacy D1007 references', (
     title: 'Unrelated old-page source',
   };
   const shown = sourceIdsForPage(restored);
-  const expected = [...new Set(catalogs.div.DATA.flatMap((item) => item.audit.refs))];
+  const expected = [
+    ...new Set([...catalogs.div.DATA, ...catalogs.div.EXTRA].flatMap((item) => item.audit.refs)),
+  ];
   assert.deepEqual(shown.sort(), expected.sort());
   assert.ok(!shown.includes('D1007-unrelated'));
 });

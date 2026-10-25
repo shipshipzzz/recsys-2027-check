@@ -1,7 +1,7 @@
 {
   "version": 1,
   "targetGraduationYear": 2027,
-  "reviewedOn": "2026-10-10",
+  "reviewedOn": "2026-10-25",
   "entries": {
     "div-f52daa9ab597ddb3bd44": {
       "category": "foreign",
@@ -1156,8 +1156,8 @@
     "div-361f32b3645bd85e7809": {
       "category": "finance",
       "poolKey": "efunds",
-      "basisHash": "229383b128b06ae099cfcd46c28de905942eb1589ff3ac92128bd7240d7843bf",
-      "reviewedOn": "2026-10-10",
+      "basisHash": "8fcf6684b8225b127764332020e27a0cc95387e3c75c2ddc77034b74b9d6c69d",
+      "reviewedOn": "2026-10-25",
       "positions": [
         {
           "id": "div-361f32b3645bd85e7809-campus",
@@ -3257,6 +3257,208 @@
           ]
         }
       ]
+    },
+    "div-081076e8041ef2a5f32f": {
+      "category": "industry",
+      "poolKey": "dji-2027-tuojiangzhe",
+      "reviewedOn": "2026-10-25",
+      "positions": [
+        {
+          "title": "算法类方向（世界模型 / 空间智能 / 大模型推理部署 / AI Infra / SLAM）",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "ai"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读条件未列学生干部要求，逐岗仍需核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": null,
+          "requirements": "2027届校招进行中；限投1个职位且投递后不可更改；招满即止，无统一截止；具体JD以官网为准。",
+          "restrictions": "方向清单来自此前高校就业网口径，本轮未逐岗复读JD；投递后不可改志愿，选岗需一次到位。",
+          "refs": [
+            "D1025-dji-1"
+          ],
+          "id": "div-081076e8041ef2a5f32f-dji-0"
+        }
+      ],
+      "basisHash": "fce4eea07eaf44acd772517d062fc4b8768e6f0c52276c2ac188bcec0e802387"
+    },
+    "div-59c82c18cee4f63ba7c4": {
+      "category": "industry",
+      "poolKey": "unitree-2027-campus",
+      "reviewedOn": "2026-10-25",
+      "positions": [
+        {
+          "title": "深度强化学习算法工程师",
+          "recordType": "direction",
+          "cities": [
+            "杭州"
+          ],
+          "directions": [
+            "ai"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读条件未列学生干部要求，逐岗仍需核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": null,
+          "requirements": "具身机器人/AI/控制相关背景，本科及以上；看重项目、竞赛、开源贡献；深度强化学习方向与RL训练经历直接相关。",
+          "restrictions": "招满即止，多校公告截止不一；工作地以岗位为准；薪资职级以面试为准。",
+          "refs": [
+            "D1025-unitree-1",
+            "D1025-unitree-2"
+          ],
+          "id": "div-59c82c18cee4f63ba7c4-unitree-0"
+        }
+      ],
+      "basisHash": "2b096a8dc0d97cf7e0f59539650cb9d7530cfcd11b1c5c20e53423f5b6c98835"
+    },
+    "div-3b763fbfe32fd7dff61c": {
+      "category": "finance",
+      "poolKey": "webank-ai-fintech-trainee-2027",
+      "reviewedOn": "2026-10-25",
+      "positions": [
+        {
+          "title": "AI金融培训生",
+          "recordType": "direction",
+          "cities": [
+            "深圳"
+          ],
+          "directions": [
+            "ai",
+            "data"
+          ],
+          "major": "statistics",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读条件未列学生干部要求，逐岗仍需核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": {
+            "date": "2026-12-31",
+            "time": null,
+            "scope": "简历投递及测评即日起至12月；官方口径未重列日内时刻。"
+          },
+          "requirements": "2027届毕业生；理工科专业优先（含计算机、人工智能、数学、统计、电子工程、金融科技）；两年定制化轮岗；同项目最多投2岗。",
+          "restrictions": "民营银行；线上笔试每人仅一次；OFFER 11月起发放。",
+          "refs": [
+            "D1025-webank-1",
+            "D1025-webank-2"
+          ],
+          "id": "div-3b763fbfe32fd7dff61c-webank-0"
+        }
+      ],
+      "basisHash": "272c071be2c4280f47beaa9a6e272b9132b72af8b8e6028587ed0278a8815487"
+    },
+    "div-f472c615096fa5e3c78a": {
+      "category": "finance",
+      "poolKey": "springs-alpha-pioneer-2027",
+      "reviewedOn": "2026-10-25",
+      "positions": [
+        {
+          "title": "阿尔法先锋计划（投资研究方向）",
+          "recordType": "direction",
+          "cities": [],
+          "directions": [
+            "quant",
+            "data"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读条件未列学生干部要求，逐岗仍需核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": {
+            "date": "2026-10-31",
+            "time": null,
+            "scope": "申请截止2026-10-31；官方发布未标日内时刻。"
+          },
+          "requirements": "2027届应届；计划口径不限专业，理工背景优先，热衷运用模型、概率和算法；含线上测评与两轮面试。",
+          "restrictions": "不限专业为计划整体口径，具体岗位条件以申请页为准；头部机构竞争强。",
+          "refs": [
+            "D1025-springs-1"
+          ],
+          "id": "div-f472c615096fa5e3c78a-springs-0"
+        }
+      ],
+      "basisHash": "169d0d7bc6729ad39f56b5f6808eb927d1d7bbb541ce1918d3b8d6b3e27806dc"
+    },
+    "div-22778808df623bab3ed2": {
+      "category": "finance",
+      "poolKey": "ubiquant-wutong-2027",
+      "reviewedOn": "2026-10-25",
+      "positions": [
+        {
+          "title": "梧桐计划技术类岗位（量化策略 / AI算法 / 数据科学 / 开发 / 风控）",
+          "recordType": "direction",
+          "cities": [
+            "北京"
+          ],
+          "directions": [
+            "quant",
+            "ai",
+            "software"
+          ],
+          "major": "related",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "已读条件未列学生干部要求，逐岗仍需核对。",
+          "employment": "fulltime",
+          "status": "open",
+          "deadline": null,
+          "requirements": "2026.9—2027.8毕业的本硕博；计算机、数学、物理等理工科专业或交叉学科背景；网申7月起持续开放。",
+          "restrictions": "滚动招聘无统一截止；笔面试硬核；竞争极强。",
+          "refs": [
+            "D1025-ubiquant-1",
+            "D1025-ubiquant-2"
+          ],
+          "id": "div-22778808df623bab3ed2-ubiquant-0"
+        }
+      ],
+      "basisHash": "4c43590487c5efe846627de02f6baefeb68d4591894fb07aaaaa2b1654b7e2a6"
+    },
+    "div-6607571c75afa79c4991": {
+      "category": "finance",
+      "poolKey": "highflyer-2027-campus",
+      "reviewedOn": "2026-10-25",
+      "positions": [
+        {
+          "title": "策略 / 深度学习等岗位",
+          "recordType": "direction",
+          "cities": [
+            "上海",
+            "杭州",
+            "深圳",
+            "香港"
+          ],
+          "directions": [
+            "quant",
+            "ai"
+          ],
+          "major": "unknown",
+          "cycle": "current",
+          "leadership": "not_stated",
+          "leadershipBasis": "未读到学生干部要求；入口待核。",
+          "employment": "fulltime",
+          "status": "verify",
+          "deadline": null,
+          "requirements": "媒体口径：26—29届均可投；看重数理编程功底；无量化实习经历也可获笔面试机会。",
+          "restrictions": "统一截止与官网校招公告页未核到；岗位口径来自媒体报道，投递前必须核官网。",
+          "refs": [
+            "D1025-highflyer-1",
+            "D1025-highflyer-2"
+          ],
+          "id": "div-6607571c75afa79c4991-highflyer-0"
+        }
+      ],
+      "basisHash": "d447e84252f775bd0d6f849ac814616fa4c70b805709e83789016a122909bfda"
     }
   },
   "existingEntries": [

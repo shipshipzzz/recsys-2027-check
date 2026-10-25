@@ -1830,6 +1830,293 @@
       ],
       "reviewedOn": "2026-10-10",
       "basisHash": "c8cc4717e9b5737d75d6ce4ad1445deb7167312a176f08b70def4081eb00cd5f"
+    },
+    "soe-4aff5a15ce387063370e": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "stats",
+        "software"
+      ],
+      "basis": "官方启事与高校就业网转载口径一致：扬帆、启航两计划均按STEM理工专业背景或STEM+金融复合背景设定门槛，专业逐岗执行。",
+      "qualityBasis": "扬帆计划硕士起步且面向总行培养；启航计划面向一线。轮岗、考核与录用条件需按网申系统岗位页核对。",
+      "evidenceRefs": [
+        "N1025-minsheng-1",
+        "N1025-minsheng-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "e84ad2794aa43bd27a902d0826386120cebad3b5e23cdb667deba55ddfed10ce"
+    },
+    "soe-51e3c95acc1f3d3e0b5b": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "banking",
+        "software",
+        "research"
+      ],
+      "basis": "官方公告与国家大学生就业服务平台口径一致：六类岗位方向明确、限投3岗、10-25截止；专业条件整体口径须落实到岗位。",
+      "qualityBasis": "信息科技类岗位含人工智能与智能体应用方向；苏新基金研究岗在上海；各岗位学历专业要求需按官网职位页逐岗核。",
+      "evidenceRefs": [
+        "N1025-suzhou-1",
+        "N1025-suzhou-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "902a5f13e94af2ffd42f282e2d6b92a0acaa13de5459b05c96127ba22de8d16a"
+    },
+    "soe-a701e6ffd9104a31b71b": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "geo",
+        "stats",
+        "software"
+      ],
+      "basis": "人社部官网公告为报名条件与流程的权威来源；整体需求学科线索来自高校人才网汇总，逐岗专业目录未核。",
+      "qualityBasis": "188人规模、限报1岗、10-26 18:00截止等程序性条件有官方正文；具体岗位与地震研究方向的匹配需下载岗位信息表逐岗确认。",
+      "evidenceRefs": [
+        "N1025-cea-1",
+        "N1025-cea-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "8d3f1cbe788525ff83433c203835dac5d84add0756396800620f21aa9b39bc09"
+    },
+    "soe-3bf0d4de61f153006dac": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "stats",
+        "finance"
+      ],
+      "basis": "官方FAQ提供窗口、2志愿规则与投递渠道；岗位专业条件来自媒体对岗位清单的转述，未逐岗核官网JD。",
+      "qualityBasis": "申请窗口与甄选节奏明确；研究业务、固定收益等条线与统计背景的对应需按官网职位页逐岗确认。",
+      "evidenceRefs": [
+        "N1025-cicc-1",
+        "N1025-cicc-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "0db468205aed78c8da3bb31c7fb6dbab24f14beec674988e03faa94225612b28"
+    },
+    "soe-9eba744e4e68a7a6e87e": {
+      "major": "statistics",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "stats",
+        "software"
+      ],
+      "basis": "官方公告为报名条件与程序的权威来源；公众号岗位表梳理显示杭州多个区县业务岗本科专业明确列统计学、应用统计学。",
+      "qualityBasis": "浙江173岗、限报1岗、12-26笔试等口径有官方正文与汇总互证；具体目标岗位的专业代码、学历与考区需下载岗位计划表逐岗确认。",
+      "evidenceRefs": [
+        "N1025-tobacco-1",
+        "N1025-tobacco-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "545eb2f92e1a06930f5625c69eec32fa64133707b04ed05b4cb53f8d91f2fafa"
+    },
+    "soe-827113feb26ce8eb404f": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "stats",
+        "software"
+      ],
+      "basis": "官方公众号提供整体窗口与岗位类别；衍生品量化研究员的专业与职责条件来自招聘平台转载，未核官网JD。",
+      "qualityBasis": "源动力计划第九期整体口径一致（截止10-30、线下面试站点）；量化岗与统计+LLM Agent经历的对应需按官网职位页确认。",
+      "evidenceRefs": [
+        "N1025-kysec-1",
+        "N1025-kysec-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "7ddd977f1f6b8b1765f4c5ea052b83c185124f94f7b34e4b3accd708c616b35d"
+    },
+    "soe-b2a9f41ab0a630bfae38": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "software",
+        "ai",
+        "stats"
+      ],
+      "basis": "官方公众号提供岗位方向与流程；网申截止10-31来自银行招聘网汇总与官网岗位页口径，官方公众号未重列统一截止。",
+      "qualityBasis": "金融科技定向生九类方向明确、工作地宁波；算法与数据研发方向与统计+工程背景相关；杭州分行岗位需逐岗确认。",
+      "evidenceRefs": [
+        "N1025-nbcb-1",
+        "N1025-nbcb-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "0b21a790e87ea8a6e08e5646c777bf3f6150fd226999e1bc48f79353a64073b6"
+    },
+    "soe-aebd758f2c16c8e34964": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "stats",
+        "software"
+      ],
+      "basis": "吉林、安徽、四川等省分公司公告口径一致：10-31截止、每省限1职位；安徽公告明确含数据分析岗。",
+      "qualityBasis": "多省公告互证窗口与限报规则；目标省份（浙江等）的岗位与专业条件需单独读本省公告。",
+      "evidenceRefs": [
+        "N1025-post-1",
+        "N1025-post-2",
+        "N1025-post-3"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "8e0d75fba6f955fcef48736ae79d81271118ed8ab62d8bf4385f8d47296efc20"
+    },
+    "soe-dc3c29cde43dff666584": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "industrial",
+        "software",
+        "stats"
+      ],
+      "basis": "官方公告（来源西安热工院）提供13类专业类别与流程；数学类在“计算机、软件与数学类”中明确列出。",
+      "qualityBasis": "投递窗口、同单位限1职、集团统一笔试等程序性条件有官方正文；数学类对应的具体岗位研究方向需在系统内逐岗确认。",
+      "evidenceRefs": [
+        "N1025-tpri-1",
+        "N1025-tpri-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "f797a74484bf2d731bf2b150d052006478a88da55f6252438b8abc4531390607"
+    },
+    "soe-6a67fce9e88b77a7f845": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "software",
+        "stats",
+        "finance"
+      ],
+      "basis": "官方校招公告提供统一流程、3家二级单位额度与截止时间；逐岗专业以各单位公告为准。",
+      "qualityBasis": "统一投递、统一笔试的程序性条件有官方正文；各单位岗位与专业的对应需在系统内逐单位核。",
+      "evidenceRefs": [
+        "N1025-csg-1"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "625f309e7402efd6777b636af9ca18d5350a6e7732ea1b04a102ae778b8d16af"
+    },
+    "soe-a940ae755a29c7e864e7": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "industrial",
+        "software",
+        "finance"
+      ],
+      "basis": "官方公告提供岗位类别、志愿规则与截止；信息通信岗含计算机类、自动化类、通信类口径。",
+      "qualityBasis": "约160人规模与五省区布局有官方正文；经济财会岗的具体专业要求需逐岗确认。",
+      "evidenceRefs": [
+        "N1025-csges-1"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "c7804d5e752f873cb68d18a33f8499f4e45b7345a300dbe58e811ffc5de27c2e"
+    },
+    "soe-6146ddbdf65c97a280e9": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "software",
+        "finance",
+        "operations"
+      ],
+      "basis": "官方公告（深大就业转载）提供岗位类别、1岗位限制与截止；经营管理类为少量口径。",
+      "qualityBasis": "约200人规模与专业类别划分有官方正文；经济财会岗具体条件需逐岗确认。",
+      "evidenceRefs": [
+        "N1025-szpb-1",
+        "N1025-szpb-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "a20f1ce0ac7c8fd79f4875bdb54f8b3b5388d5a826a15251c8ffe85496c70ae9"
+    },
+    "soe-79d9f29f50f607dccea3": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "stats",
+        "software"
+      ],
+      "basis": "官方公告（高校就业网转载）提供报名窗口与流程；约1000人规模与专业口径来自高校职位页，逐岗条件未读。",
+      "qualityBasis": "报名窗口与流程有官方公告互证；岗位专业与工作地需在官网逐岗确认。",
+      "evidenceRefs": [
+        "N1025-ctg-1",
+        "N1025-ctg-2",
+        "N1025-ctg-3"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "95cc105508ef6db9c36b6738c5c4c11ebd8423cfa4a089a3a14caf73ba0c400e"
+    },
+    "soe-3d95b271a4d68e1fe159": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "operations",
+        "stats",
+        "software"
+      ],
+      "basis": "国资小新发布的官方简章提供报名条件、免笔试通道与限投规则；经济类、管理类在专业清单内；工作地含杭州为汇总口径。",
+      "qualityBasis": "截止11-15 18:00、限投2家单位、免笔试条件等有官方简章正文；岗位工作地与逐岗专业需在报名平台确认。",
+      "evidenceRefs": [
+        "N1025-crrg-1",
+        "N1025-crrg-2",
+        "N1025-crrg-3"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "234c521ff14a95086fe6d390d56b1780b6e6b9e60d9907ea1222e4647c99a992"
+    },
+    "soe-e3f5ba129b6f47a64580": {
+      "major": "related",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "research",
+        "finance",
+        "operations"
+      ],
+      "basis": "高校就业网转载公告提供岗位、条件与截止；专业优先口径明确但非硬门槛。",
+      "qualityBasis": "分支机构批窗口与流程有公告正文；总部批与具体分公司岗位条件未核。",
+      "evidenceRefs": [
+        "N1025-csc-1",
+        "N1025-csc-2"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "8055431225c641afbf422a820906df35183dc13c50c750e43072c952fa86738b"
+    },
+    "soe-9a9b1b12a6ca026d4b78": {
+      "major": "unknown",
+      "cycle": "current",
+      "intake": 2027,
+      "directions": [
+        "industrial",
+        "software"
+      ],
+      "basis": "官方发布提供需求领域、报名窗口与流程；逐岗专业以引才计划表为准。",
+      "qualityBasis": "报名窗口与流程有官方发布正文；应用统计对口岗位稀缺，需逐岗确认是否存在。",
+      "evidenceRefs": [
+        "N1025-casic10-1"
+      ],
+      "reviewedOn": "2026-10-25",
+      "basisHash": "a59eb96fd45261e3ac78bdea5c1c9992ea93e50458b67c0ec216fc68bd513fe0"
     }
   },
   "reviewedOn": "2026-10-04"

@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-25",
+  "baseline": "bab51f967a934084c20fe6be3e576442050a131e",
+  "counts": {
+    "newCards": 22,
+    "byKind": {
+      "soe": 16,
+      "div": 6
+    },
+    "modifiedCards": 1
+  },
+  "cards": [
+    {
+      "kind": "soe",
+      "id": "soe-4aff5a15ce387063370e",
+      "name": "中国民生银行 · 2027届校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-51e3c95acc1f3d3e0b5b",
+      "name": "苏州银行 · 2027秋季校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-a701e6ffd9104a31b71b",
+      "name": "中国地震局 · 2027年度事业单位公开招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-3bf0d4de61f153006dac",
+      "name": "中金公司 · 2027届校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-9eba744e4e68a7a6e87e",
+      "name": "国家烟草专卖局 中国烟草总公司 · 2027年度高校毕业生招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-827113feb26ce8eb404f",
+      "name": "开源证券 · 源动力计划第九期校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-b2a9f41ab0a630bfae38",
+      "name": "宁波银行 · 2027届校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-aebd758f2c16c8e34964",
+      "name": "中国邮政集团 · 2027年度校园招聘（各省分公司）"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-dc3c29cde43dff666584",
+      "name": "西安热工研究院 · 2027年校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-6a67fce9e88b77a7f845",
+      "name": "南方电网 · 2027年校园招聘（公司统一组织）"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-a940ae755a29c7e864e7",
+      "name": "南方电网储能股份有限公司 · 2027年校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-6146ddbdf65c97a280e9",
+      "name": "深圳供电局 · 2027年校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-79d9f29f50f607dccea3",
+      "name": "中国长江三峡集团 · 2027年高校毕业生招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-3d95b271a4d68e1fe159",
+      "name": "中国资源循环集团 · 2027届校园招聘（朝阳计划）"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-e3f5ba129b6f47a64580",
+      "name": "中信建投证券 · 2027届分支机构秋季校园招聘"
+    },
+    {
+      "kind": "soe",
+      "id": "soe-9a9b1b12a6ca026d4b78",
+      "name": "中国航天科工十院 · 2027届秋季招聘"
+    },
+    {
+      "kind": "div",
+      "id": "div-081076e8041ef2a5f32f",
+      "name": "大疆 · 2027拓疆者校园招聘"
+    },
+    {
+      "kind": "div",
+      "id": "div-59c82c18cee4f63ba7c4",
+      "name": "宇树科技 · 2027年校园招聘"
+    },
+    {
+      "kind": "div",
+      "id": "div-3b763fbfe32fd7dff61c",
+      "name": "微众银行 · 2027 AI金融培训生"
+    },
+    {
+      "kind": "div",
+      "id": "div-f472c615096fa5e3c78a",
+      "name": "淡水泉投资 · 2027阿尔法先锋计划"
+    },
+    {
+      "kind": "div",
+      "id": "div-22778808df623bab3ed2",
+      "name": "九坤投资 · 2027梧桐计划"
+    },
+    {
+      "kind": "div",
+      "id": "div-6607571c75afa79c4991",
+      "name": "幻方量化 · 2027校园招聘"
+    }
+  ]
+}

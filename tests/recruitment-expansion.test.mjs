@@ -31,6 +31,13 @@ const old = Object.fromEntries(
 const archived1024 = new Set(
   json('docs/deadline-snapshots-2026-10-24.json').cards.map((x) => x.id),
 );
+// 2026-10-25 增补轮：新卡片由 recruitment-expansion-2026-10-25.json 记账，
+// 被修订的既有卡片（易方达基金）由 deadline-snapshots-2026-10-25.json 留底。
+const ledger25 = json('docs/recruitment-expansion-2026-10-25.json');
+const added1025 = new Set(ledger25.cards.map((x) => x.id));
+const modified1025 = new Set(
+  json('docs/deadline-snapshots-2026-10-25.json').cards.map((x) => x.id),
+);
 const all = (d) => [...d.DATA, ...(d.EXTRA || [])];
 const now = new Date('2026-10-10T12:00:00+08:00');
 
@@ -56,13 +63,17 @@ test('expansion: every new card and role is counted once with directions separat
   const added = [];
   for (const kind of ['rec', 'soe', 'div']) {
     const prior = new Set(all(old[kind]).map((x) => x.id));
-    const fresh = all(catalogs[kind]).filter((x) => !prior.has(x.id));
+    const fresh = all(catalogs[kind]).filter((x) => !prior.has(x.id) && !added1025.has(x.id));
     assert.ok(fresh.length > 0);
     assert.equal(fresh.length, report.counts.byKind[kind]);
     added.push(...fresh.map((x) => x.id));
   }
-  assert.deepEqual(added.sort(), records.map((x) => x.entryId).sort());
-  assert.equal(new Set(added).size, report.counts.newCards);
+  added.push(...ledger25.cards.map((x) => x.id));
+  assert.deepEqual(
+    added.sort(),
+    [...records.map((x) => x.entryId), ...ledger25.cards.map((x) => x.id)].sort(),
+  );
+  assert.equal(new Set(added).size, report.counts.newCards + ledger25.counts.newCards);
   const positions = records.flatMap((x) => x.normalizedPositions);
   assert.equal(new Set(positions.map((x) => x.id)).size, positions.length);
   assert.equal(
@@ -73,14 +84,17 @@ test('expansion: every new card and role is counted once with directions separat
     positions.filter((x) => x.recordType === 'direction').length,
     report.counts.newDirectionRecords,
   );
-  assert.equal(Object.values(catalogs).flatMap(all).length, report.counts.totalCards);
+  assert.equal(
+    Object.values(catalogs).flatMap(all).length,
+    report.counts.totalCards + ledger25.counts.newCards,
+  );
 });
 
 test('expansion: every legacy card, source, historical snapshot and assessment survives unchanged', () => {
   for (const kind of ['rec', 'soe', 'div']) {
     const current = new Map(all(catalogs[kind]).map((x) => [x.id, x]));
     for (const item of all(old[kind]))
-      if (!archived1024.has(item.id))
+      if (!archived1024.has(item.id) && !modified1025.has(item.id))
         assert.deepEqual(current.get(item.id), item, kind + '/' + item.name);
     for (const [id, s] of Object.entries(old[kind].SOURCES))
       assert.deepEqual(catalogs[kind].SOURCES[id], s);
@@ -91,7 +105,8 @@ test('expansion: every legacy card, source, historical snapshot and assessment s
     const previous = original('data/' + name + '.json').entries,
       current = json('data/' + name + '.json').entries;
     for (const [id, row] of Object.entries(previous))
-      if (!archived1024.has(id)) assert.deepEqual(current[id], row, name + '/' + id);
+      if (!archived1024.has(id) && !modified1025.has(id))
+        assert.deepEqual(current[id], row, name + '/' + id);
   }
   validatePrevious(old, catalogs);
 });
