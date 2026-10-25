@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import { StateStore } from '../src/state-store.js';
 import { loadCatalogs, normalizeCatalogs } from '../scripts/catalog-data.mjs';
 const catalogs = loadCatalogs();
-const count = catalogs.div.DATA.length;
+const count = catalogs.div.DATA.length + (catalogs.div.EXTRA?.length || 0);
 const errors = new WeakMap();
 const stateKey = 'recsys:cards:v1:npqrixancnwbmzcyqafx:guest';
 async function open(page) {

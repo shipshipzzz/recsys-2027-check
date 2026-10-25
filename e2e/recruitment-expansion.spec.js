@@ -119,7 +119,9 @@ test('expansion: new evidence links resolve and full export includes the qualifi
   const promise = page.waitForEvent('download');
   await page.locator('#export-btn').click();
   const data = JSON.parse(fs.readFileSync(await (await promise).path(), 'utf8'));
-  expect(data.items.length).toBe(read('data/div.json').DATA.length);
+  expect(data.items.length).toBe(
+    read('data/div.json').DATA.length + read('data/div.json').EXTRA.length,
+  );
   expect(
     data.screening.entries[record('blackrock').entryId].positions.some(
       (p) => p.deadline?.time === '23:55',
